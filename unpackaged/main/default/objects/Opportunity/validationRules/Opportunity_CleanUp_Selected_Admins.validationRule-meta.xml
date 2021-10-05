@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_CleanUp_Selected_Admins</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( Reason_for_loss__c , "Opportunity Clean-up"),
+NOT($UserRole.Name = "CEO"),
+NOT ($UserRole.Name = "Hardware Engineer"))</errorConditionFormula>
+    <errorDisplayField>Reason_for_loss__c</errorDisplayField>
+    <errorMessage>Only Salesforce Administrator can select Opportunity Clean-up as Reason for Loss.</errorMessage>
+</ValidationRule>

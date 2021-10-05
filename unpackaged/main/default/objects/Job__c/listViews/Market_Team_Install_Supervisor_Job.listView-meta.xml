@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_Team_Install_Supervisor_Job</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Market Team (Install Supervisor)</label>
+    <queue>Market_Team_Install_Supervisor</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

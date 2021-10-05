@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?><SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>CREngineering</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share jobs with CREngineering</description>
+        <label>CREngineering</label>
+        <sharedTo>
+            <group>Current_Renewables_Engineering</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site Approval</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Structural_Stamp_By__c</field>
+            <operation>equals</operation>
+            <value>Current Renewables</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Finulent</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share jobs with Finulent</description>
+        <label>Finulent</label>
+        <sharedTo>
+            <group>Finulent</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site Approval</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Designed_By__c</field>
+            <operation>equals</operation>
+            <value>Finulent</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Illuminei</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share jobs with Illuminei</description>
+        <label>Illuminei</label>
+        <sharedTo>
+            <group>Illuminei</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site Approval</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Designed_By__c</field>
+            <operation>equals</operation>
+            <value>Illumine</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Jobs_for_Palmetto_Users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Jobs for Palmetto Users</label>
+        <sharedTo>
+            <group>Palmetto_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>PZSE</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share jobs with PZSE</description>
+        <label>PZSE</label>
+        <sharedTo>
+            <group>PZSE</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site Approval</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Structural_Stamp_By__c</field>
+            <operation>equals</operation>
+            <value>PZSE</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Wattmonk</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share jobs with Wattmonk</description>
+        <label>Wattmonk</label>
+        <sharedTo>
+            <group>Wattmonk</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site Approval</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Designed_By__c</field>
+            <operation>equals</operation>
+            <value>Wattmonk</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

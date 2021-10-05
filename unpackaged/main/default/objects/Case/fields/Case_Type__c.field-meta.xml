@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Case Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Delay in Stage</fullName>
+                <default>false</default>
+                <label>Delay in Stage</label>
+            </value>
+            <value>
+                <fullName>Install Issues</fullName>
+                <default>false</default>
+                <label>Install Issues</label>
+            </value>
+            <value>
+                <fullName>Service Call</fullName>
+                <default>false</default>
+                <label>Service Call</label>
+            </value>
+            <value>
+                <fullName>Negative Review</fullName>
+                <default>false</default>
+                <label>Negative Review</label>
+            </value>
+            <value>
+                <fullName>Financier Compliance</fullName>
+                <default>false</default>
+                <label>Financier Compliance</label>
+            </value>
+            <value>
+                <fullName>Customer Complaint</fullName>
+                <default>false</default>
+                <label>Customer Complaint</label>
+            </value>
+            <value>
+                <fullName>Re-Roof</fullName>
+                <default>false</default>
+                <label>Re-Roof</label>
+            </value>
+            <value>
+                <fullName>Electrical Upgrade</fullName>
+                <default>false</default>
+                <label>Electrical Upgrade</label>
+            </value>
+            <value>
+                <fullName>Structural Upgrade</fullName>
+                <default>false</default>
+                <label>Structural Upgrade</label>
+            </value>
+            <value>
+                <fullName>Trenching</fullName>
+                <default>false</default>
+                <label>Trenching</label>
+            </value>
+            <value>
+                <fullName>Ground Mount Coordination</fullName>
+                <default>false</default>
+                <label>Ground Mount Coordination</label>
+            </value>
+            <value>
+                <fullName>Additional Adder Coordination</fullName>
+                <default>false</default>
+                <label>Additional Adder Coordination</label>
+            </value>
+            <value>
+                <fullName>Re-Design</fullName>
+                <default>false</default>
+                <label>Re-Design</label>
+            </value>
+            <value>
+                <fullName>Customer Requested Change</fullName>
+                <default>false</default>
+                <label>Customer Requested Change</label>
+            </value>
+            <value>
+                <fullName>QC Fail</fullName>
+                <default>false</default>
+                <label>QC Fail</label>
+            </value>
+            <value>
+                <fullName>Pre-Install Change</fullName>
+                <default>false</default>
+                <label>Pre-Install Change</label>
+            </value>
+            <value>
+                <fullName>Post-Install Change</fullName>
+                <default>false</default>
+                <label>Post-Install Change</label>
+            </value>
+            <value>
+                <fullName>Contract Signed to Contract Received</fullName>
+                <default>false</default>
+                <label>Contract Signed to Contract Received</label>
+            </value>
+            <value>
+                <fullName>Contract Received to Design Queued</fullName>
+                <default>false</default>
+                <label>Contract Received to Design Queued</label>
+            </value>
+            <value>
+                <fullName>Design Queued to Design Completed</fullName>
+                <default>false</default>
+                <label>Design Queued to Design Completed</label>
+            </value>
+            <value>
+                <fullName>Design Completed to Permit Submitted</fullName>
+                <default>false</default>
+                <label>Design Completed to Permit Submitted</label>
+            </value>
+            <value>
+                <fullName>Permit Submitted to Permit Approved</fullName>
+                <default>false</default>
+                <label>Permit Submitted to Permit Approved</label>
+            </value>
+            <value>
+                <fullName>Permit Approved to Installation Ready</fullName>
+                <default>false</default>
+                <label>Permit Approved to Installation Ready</label>
+            </value>
+            <value>
+                <fullName>Installation Ready to Installation Scheduled</fullName>
+                <default>false</default>
+                <label>Installation Ready to Installation Scheduled</label>
+            </value>
+            <value>
+                <fullName>Installation Scheduled to Installation Started</fullName>
+                <default>false</default>
+                <label>Installation Scheduled to Installation Started</label>
+            </value>
+            <value>
+                <fullName>Installation Started to Installation Completed</fullName>
+                <default>false</default>
+                <label>Installation Started to Installation Completed</label>
+            </value>
+            <value>
+                <fullName>Installation Completed to Inspection Scheduled</fullName>
+                <default>false</default>
+                <label>Installation Completed to Inspection Scheduled</label>
+            </value>
+            <value>
+                <fullName>Inspection Scheduled to Inspection Complete</fullName>
+                <default>false</default>
+                <label>Inspection Scheduled to Inspection Complete</label>
+            </value>
+            <value>
+                <fullName>Inspection Complete to PTO Submitted</fullName>
+                <default>false</default>
+                <label>Inspection Complete to PTO Submitted</label>
+            </value>
+            <value>
+                <fullName>PTO Submitted to PTO Complete</fullName>
+                <default>false</default>
+                <label>PTO Submitted to PTO Complete</label>
+            </value>
+            <value>
+                <fullName>Compliance Review</fullName>
+                <default>false</default>
+                <label>Compliance Review</label>
+            </value>
+            <value>
+                <fullName>Promotion</fullName>
+                <default>false</default>
+                <label>Promotion</label>
+            </value>
+            <value>
+                <fullName>Contract Received</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contract Received</label>
+            </value>
+            <value>
+                <fullName>Contract Signed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contract Signed</label>
+            </value>
+            <value>
+                <fullName>Design Queued</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Design Queued</label>
+            </value>
+            <value>
+                <fullName>Desing Completed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Desing Completed</label>
+            </value>
+            <value>
+                <fullName>Electrical Review</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Electrical Review</label>
+            </value>
+            <value>
+                <fullName>Inspection Complete</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inspection Complete</label>
+            </value>
+            <value>
+                <fullName>Inspection Scheduled</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inspection Scheduled</label>
+            </value>
+            <value>
+                <fullName>Installation Completed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Installation Completed</label>
+            </value>
+            <value>
+                <fullName>Installation Ready</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Installation Ready</label>
+            </value>
+            <value>
+                <fullName>Installation Scheduled</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Installation Scheduled</label>
+            </value>
+            <value>
+                <fullName>Installation Started</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Installation Started</label>
+            </value>
+            <value>
+                <fullName>PTO Complete</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PTO Complete</label>
+            </value>
+            <value>
+                <fullName>PTO Submitted</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PTO Submitted</label>
+            </value>
+            <value>
+                <fullName>Permit Approved</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Permit Approved</label>
+            </value>
+            <value>
+                <fullName>Permit Submitted</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Permit Submitted</label>
+            </value>
+            <value>
+                <fullName>Roof Review</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Roof Review</label>
+            </value>
+            <value>
+                <fullName>Structural Review</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Structural Review</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

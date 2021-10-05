@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Manager__c</fullName>
+    <externalId>false</externalId>
+    <label>Partner Manager</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alaina Pianetti</fullName>
+                <default>false</default>
+                <label>Alaina Pianetti</label>
+            </value>
+            <value>
+                <fullName>Anthony Silvestri</fullName>
+                <default>false</default>
+                <label>Anthony Silvestri</label>
+            </value>
+            <value>
+                <fullName>Beau Howell</fullName>
+                <default>false</default>
+                <label>Beau Howell</label>
+            </value>
+            <value>
+                <fullName>Burke Spensky</fullName>
+                <default>false</default>
+                <label>Burke Spensky</label>
+            </value>
+            <value>
+                <fullName>Courtney Klemcke</fullName>
+                <default>false</default>
+                <label>Courtney Klemcke</label>
+            </value>
+            <value>
+                <fullName>Eric Knothe</fullName>
+                <default>false</default>
+                <label>Eric Knothe</label>
+            </value>
+            <value>
+                <fullName>Eric Knothe CPR</fullName>
+                <default>false</default>
+                <label>Eric Knothe CPR</label>
+            </value>
+            <value>
+                <fullName>Hatham Al-Shabibi</fullName>
+                <default>false</default>
+                <label>Hatham Al-Shabibi</label>
+            </value>
+            <value>
+                <fullName>JayDee Ballew</fullName>
+                <default>false</default>
+                <label>JayDee Ballew</label>
+            </value>
+            <value>
+                <fullName>Ken Crabb</fullName>
+                <default>false</default>
+                <label>Ken Crabb</label>
+            </value>
+            <value>
+                <fullName>Kevin DeSa</fullName>
+                <default>false</default>
+                <label>Kevin DeSa</label>
+            </value>
+            <value>
+                <fullName>Matt Collins</fullName>
+                <default>false</default>
+                <label>Matt Collins</label>
+            </value>
+            <value>
+                <fullName>Matt Collins - CPR</fullName>
+                <default>false</default>
+                <label>Matt Collins - CPR</label>
+            </value>
+            <value>
+                <fullName>McKenna Beam</fullName>
+                <default>false</default>
+                <label>McKenna Beam</label>
+            </value>
+            <value>
+                <fullName>Michael Crispino</fullName>
+                <default>false</default>
+                <label>Michael Crispino</label>
+            </value>
+            <value>
+                <fullName>Robert Hantges</fullName>
+                <default>false</default>
+                <label>Robert Hantges</label>
+            </value>
+            <value>
+                <fullName>Robert Hantges CPR</fullName>
+                <default>false</default>
+                <label>Robert Hantges CPR</label>
+            </value>
+            <value>
+                <fullName>Sean Fahey</fullName>
+                <default>false</default>
+                <label>Sean Fahey</label>
+            </value>
+            <value>
+                <fullName>Taylor Coppin</fullName>
+                <default>false</default>
+                <label>Taylor Coppin</label>
+            </value>
+            <value>
+                <fullName>Tyler Knode</fullName>
+                <default>false</default>
+                <label>Tyler Knode</label>
+            </value>
+            <value>
+                <fullName>William Pringle</fullName>
+                <default>false</default>
+                <label>William Pringle</label>
+            </value>
+            <value>
+                <fullName>William Pringle CPR</fullName>
+                <default>false</default>
+                <label>William Pringle CPR</label>
+            </value>
+            <value>
+                <fullName>Zack Hickerson</fullName>
+                <default>false</default>
+                <label>Zack Hickerson</label>
+            </value>
+            <value>
+                <fullName>Alyssa Haley</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alyssa Haley</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

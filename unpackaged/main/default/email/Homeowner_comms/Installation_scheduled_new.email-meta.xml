@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>installation</letterhead>
+    <name>Installation (scheduled)_new</name>
+    <style>freeForm</style>
+    <subject>Solar Installation- Ready For Take Off!</subject>
+    <textOnly>Hello {!Opportunity.Contact_First_Name__c},
+
+
+You made the smart and simple choice for clean energy with Palmetto, and now it’s time to get those solar panels up on your roof- we have you scheduled for installation starting on {!Opportunity.Installation_Start_Date__c}
+
+
+On the day of install we’ll need just a couple of things from you:
+
+An adult over the age of 18 to help our installers get started- they should arrive between 8-10 AM.
+
+Cars removed from driveway, our teams need room to work, and we want to ensure none of your valuable property is damaged!
+
+Clear access to the electrical panel- our team will generally need 3 feet of working clearance to do their job.  If you could put a phone booth in front of your panel- we’re set!
+
+Your sole and undivided attention- we appreciate you may have other home improvement work going on, but for everyone&apos;s safety, on the day of installation, we cannot have any other contractors onsite.
+
+
+
+After installation you will be receiving a call from our warehouse team in order to schedule your final inspections. Please check your schedule to find some dates that work best to have someone home so we may complete your inspection as early as possible.
+
+
+Palmetto is obsessed with delivering a great customer experience, should the inspection and permission to operate process be delayed, we&apos;ll proactively reimburse you for any Solar Payments due prior to energizing your system.
+
+An important note: You will still get a bill from your utility provider for grid interconnection fees, in addition to any electricity that you use during the year outside the amount that the solar panels on your roof generate.  Palmetto Customer Care team fields many questions and concerns about electricity charges and billing, so please connect with us if you need assistance or any additional clarification. We’re delighted to help provide our expertise on this complicated issue.
+
+
+
+
+HAVE QUESTIONS?
+We have real people who will treat you really, really incredibly well
+You can reach us via Palmetto Home, email or phone. As always, we’re here for you. Please reach out if you have any questions as your solar journey progresses. Thank you for being a Palmetto customer.
+
+
+We look forward to exceeding your expectations!
+
+
+
+The Future is Bright
+Palmetto Customer Support
+
+customer.care@palmetto.com
+
+855-339-1831</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

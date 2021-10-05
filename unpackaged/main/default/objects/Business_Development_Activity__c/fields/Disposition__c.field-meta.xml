@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disposition__c</fullName>
+    <externalId>false</externalId>
+    <label>Disposition</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Installation SLA</fullName>
+                <default>false</default>
+                <label>Installation SLA</label>
+            </value>
+            <value>
+                <fullName>PTO SLA</fullName>
+                <default>false</default>
+                <label>PTO SLA</label>
+            </value>
+            <value>
+                <fullName>Poor Communication</fullName>
+                <default>false</default>
+                <label>Poor Communication</label>
+            </value>
+            <value>
+                <fullName>Low Commission</fullName>
+                <default>false</default>
+                <label>Low Commission</label>
+            </value>
+            <value>
+                <fullName>Understanding Commission</fullName>
+                <default>false</default>
+                <label>Understanding Commission</label>
+            </value>
+            <value>
+                <fullName>Design Quality</fullName>
+                <default>false</default>
+                <label>Design Quality</label>
+            </value>
+            <value>
+                <fullName>Design SLA</fullName>
+                <default>false</default>
+                <label>Design SLA</label>
+            </value>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+                <label>Customer Service</label>
+            </value>
+            <value>
+                <fullName>Poor Training</fullName>
+                <default>false</default>
+                <label>Poor Training</label>
+            </value>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>New Job Opportunity</fullName>
+                <default>false</default>
+                <label>New Job Opportunity</label>
+            </value>
+            <value>
+                <fullName>Wants full time position</fullName>
+                <default>false</default>
+                <label>Wants full time position</label>
+            </value>
+            <value>
+                <fullName>Unresponsive Member</fullName>
+                <default>false</default>
+                <label>Unresponsive Member</label>
+            </value>
+            <value>
+                <fullName>Moving to Enterprise</fullName>
+                <default>false</default>
+                <label>Moving to Enterprise</label>
+            </value>
+            <value>
+                <fullName>Appointment Issues</fullName>
+                <default>false</default>
+                <label>Appointment Issues</label>
+            </value>
+            <value>
+                <fullName>Tech Issues</fullName>
+                <default>false</default>
+                <label>Tech Issues</label>
+            </value>
+            <value>
+                <fullName>Login Issues</fullName>
+                <default>false</default>
+                <label>Login Issues</label>
+            </value>
+            <value>
+                <fullName>Unresponsive Coach</fullName>
+                <default>false</default>
+                <label>Unresponsive Coach</label>
+            </value>
+            <value>
+                <fullName>Unsure of Next Steps</fullName>
+                <default>false</default>
+                <label>Unsure of Next Steps</label>
+            </value>
+            <value>
+                <fullName>Failed Test</fullName>
+                <default>false</default>
+                <label>Failed Test</label>
+            </value>
+            <value>
+                <fullName>Confused After Orientation</fullName>
+                <default>false</default>
+                <label>Confused After Orientation</label>
+            </value>
+            <value>
+                <fullName>Logistics Issues</fullName>
+                <default>false</default>
+                <label>Logistics Issues</label>
+            </value>
+            <value>
+                <fullName>Poor Customer Experience</fullName>
+                <default>false</default>
+                <label>Poor Customer Experience</label>
+            </value>
+            <value>
+                <fullName>Market Not Serviced</fullName>
+                <default>false</default>
+                <label>Market Not Serviced</label>
+            </value>
+            <value>
+                <fullName>Unable to Sell</fullName>
+                <default>false</default>
+                <label>Unable to Sell</label>
+            </value>
+            <value>
+                <fullName>Unsure Who to Contact</fullName>
+                <default>false</default>
+                <label>Unsure Who to Contact</label>
+            </value>
+            <value>
+                <fullName>Expectations Not Met</fullName>
+                <default>false</default>
+                <label>Expectations Not Met</label>
+            </value>
+            <value>
+                <fullName>Unsure How to Access Orientation</fullName>
+                <default>false</default>
+                <label>Unsure How to Access Orientation</label>
+            </value>
+            <value>
+                <fullName>No Closing Call Providing Next Steps</fullName>
+                <default>false</default>
+                <label>No Closing Call Providing Next Steps</label>
+            </value>
+            <value>
+                <fullName>Health Reasons</fullName>
+                <default>false</default>
+                <label>Health Reasons</label>
+            </value>
+            <value>
+                <fullName>Need More Appointments</fullName>
+                <default>false</default>
+                <label>Need More Appointments</label>
+            </value>
+            <value>
+                <fullName>Appointments Are Too Expensive</fullName>
+                <default>false</default>
+                <label>Appointments Are Too Expensive</label>
+            </value>
+            <value>
+                <fullName>Can't Generate Own Leads</fullName>
+                <default>false</default>
+                <label>Can't Generate Own Leads</label>
+            </value>
+            <value>
+                <fullName>Scared of the Financial Commitment</fullName>
+                <default>false</default>
+                <label>Scared of the Financial Commitment</label>
+            </value>
+            <value>
+                <fullName>Member Doesn't Feel Supported</fullName>
+                <default>false</default>
+                <label>Member Doesn't Feel Supported</label>
+            </value>
+            <value>
+                <fullName>No Longer Works for CP</fullName>
+                <default>false</default>
+                <label>No Longer Works for CP</label>
+            </value>
+            <value>
+                <fullName>Off-boarded</fullName>
+                <default>false</default>
+                <label>Off-boarded</label>
+            </value>
+            <value>
+                <fullName>New Contract</fullName>
+                <default>false</default>
+                <label>New Contract</label>
+            </value>
+            <value>
+                <fullName>Proposal Creation Experience</fullName>
+                <default>false</default>
+                <label>Proposal Creation Experience</label>
+            </value>
+            <value>
+                <fullName>Design Creation Experience</fullName>
+                <default>false</default>
+                <label>Design Creation Experience</label>
+            </value>
+            <value>
+                <fullName>Language Barrier</fullName>
+                <default>false</default>
+                <label>Language Barrier</label>
+            </value>
+            <value>
+                <fullName>Still Getting Setup</fullName>
+                <default>false</default>
+                <label>Still Getting Setup</label>
+            </value>
+            <value>
+                <fullName>Multiple Account Error</fullName>
+                <default>false</default>
+                <label>Multiple Account Error</label>
+            </value>
+            <value>
+                <fullName>Project Timeline Visibility</fullName>
+                <default>false</default>
+                <label>Project Timeline Visibility</label>
+            </value>
+            <value>
+                <fullName>Dealer Fee</fullName>
+                <default>false</default>
+                <label>Dealer Fee</label>
+            </value>
+            <value>
+                <fullName>This is a Second Job</fullName>
+                <default>false</default>
+                <label>This is a Second Job</label>
+            </value>
+            <value>
+                <fullName>Not a Priority</fullName>
+                <default>false</default>
+                <label>Not a Priority</label>
+            </value>
+            <value>
+                <fullName>User Experience</fullName>
+                <default>false</default>
+                <label>User Experience</label>
+            </value>
+            <value>
+                <fullName>Previous Company Failed to Pay Commission</fullName>
+                <default>false</default>
+                <label>Previous Company Failed to Pay Commission</label>
+            </value>
+            <value>
+                <fullName>Previous Company Went Out of Business</fullName>
+                <default>false</default>
+                <label>Previous Company Went Out of Business</label>
+            </value>
+            <value>
+                <fullName>Not Working/Taking a Break</fullName>
+                <default>false</default>
+                <label>Not Working/Taking a Break</label>
+            </value>
+            <value>
+                <fullName>Has Not Finished Training</fullName>
+                <default>false</default>
+                <label>Has Not Finished Training</label>
+            </value>
+            <value>
+                <fullName>Office Admin</fullName>
+                <default>false</default>
+                <label>Office Admin</label>
+            </value>
+            <value>
+                <fullName>In School - Not a Priority</fullName>
+                <default>false</default>
+                <label>In School - Not a Priority</label>
+            </value>
+            <value>
+                <fullName>SGS - Lead Generation</fullName>
+                <default>false</default>
+                <label>SGS - Lead Generation</label>
+            </value>
+            <value>
+                <fullName>Tech Issue - No Documents</fullName>
+                <default>false</default>
+                <label>Tech Issue - No Documents</label>
+            </value>
+            <value>
+                <fullName>Never Signed Up/Never Heard of Palmetto</fullName>
+                <default>false</default>
+                <label>Never Signed Up/Never Heard of Palmetto</label>
+            </value>
+            <value>
+                <fullName>Install Team Did Not Show Up</fullName>
+                <default>false</default>
+                <label>Install Team Did Not Show Up</label>
+            </value>
+            <value>
+                <fullName>Leads Not Adding Correctly</fullName>
+                <default>false</default>
+                <label>Leads Not Adding Correctly</label>
+            </value>
+            <value>
+                <fullName>10+ days No Response on Ticket</fullName>
+                <default>false</default>
+                <label>10+ days No Response on Ticket</label>
+            </value>
+            <value>
+                <fullName>Has Not Taken Test</fullName>
+                <default>false</default>
+                <label>Has Not Taken Test</label>
+            </value>
+            <value>
+                <fullName>Smartphone Access Only</fullName>
+                <default>false</default>
+                <label>Smartphone Access Only</label>
+            </value>
+            <value>
+                <fullName>Browser issues - different views for different browsers</fullName>
+                <default>false</default>
+                <label>Browser issues - different views for different browsers</label>
+            </value>
+            <value>
+                <fullName>Stuck on Training page</fullName>
+                <default>false</default>
+                <label>Stuck on Training page</label>
+            </value>
+            <value>
+                <fullName>Team Owner View Requested</fullName>
+                <default>false</default>
+                <label>Team Owner View Requested</label>
+            </value>
+            <value>
+                <fullName>Personal Issues</fullName>
+                <default>false</default>
+                <label>Personal Issues</label>
+            </value>
+            <value>
+                <fullName>Email Bounce Back</fullName>
+                <default>false</default>
+                <label>Email Bounce Back</label>
+            </value>
+            <value>
+                <fullName>Refused Ramp Service</fullName>
+                <default>false</default>
+                <label>Refused Ramp Service</label>
+            </value>
+            <value>
+                <fullName>Using Other Installers/EPC</fullName>
+                <default>false</default>
+                <label>Using Other Installers/EPC</label>
+            </value>
+            <value>
+                <fullName>Day Count Exceeded before 1st Sale</fullName>
+                <default>false</default>
+                <label>Day Count Exceeded before 1st Sale</label>
+            </value>
+            <value>
+                <fullName>Day Count Exceeded before 2nd Sale</fullName>
+                <default>false</default>
+                <label>Day Count Exceeded before 2nd Sale</label>
+            </value>
+            <value>
+                <fullName>3 Reach Outs No Response</fullName>
+                <default>false</default>
+                <label>3 Reach Outs No Response</label>
+            </value>
+            <value>
+                <fullName>Non-selling Account</fullName>
+                <default>false</default>
+                <label>Non-selling Account</label>
+            </value>
+            <value>
+                <fullName>Split Opportunity</fullName>
+                <default>false</default>
+                <label>Split Opportunity</label>
+            </value>
+            <value>
+                <fullName>Rep Has Multiple Accounts Under this CP</fullName>
+                <default>false</default>
+                <label>Rep Has Multiple Accounts Under this CP</label>
+            </value>
+            <value>
+                <fullName>Rep Has Multiple Accounts Under Other CPs</fullName>
+                <default>false</default>
+                <label>Rep Has Multiple Accounts Under Other CPs</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

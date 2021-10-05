@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incentive_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Incentive Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CT GREEN BANK</fullName>
+                <default>false</default>
+                <label>CT GREEN BANK</label>
+            </value>
+            <value>
+                <fullName>IL ABP - Illinois Shines</fullName>
+                <default>false</default>
+                <label>IL ABP - Illinois Shines</label>
+            </value>
+            <value>
+                <fullName>MA SMART</fullName>
+                <default>false</default>
+                <label>MA SMART</label>
+            </value>
+            <value>
+                <fullName>NC DUKE</fullName>
+                <default>false</default>
+                <label>NC DUKE</label>
+            </value>
+            <value>
+                <fullName>NJ CLEAN ENERGY</fullName>
+                <default>false</default>
+                <label>NJ CLEAN ENERGY</label>
+            </value>
+            <value>
+                <fullName>Rhode Island - FIT</fullName>
+                <default>false</default>
+                <label>Rhode Island - FIT</label>
+            </value>
+            <value>
+                <fullName>Rhode Island - NET</fullName>
+                <default>false</default>
+                <label>Rhode Island - NET</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

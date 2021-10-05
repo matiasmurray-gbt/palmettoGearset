@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Name_Required_for_Event_Lead</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL( LeadSource , "Event") &amp;&amp;
+ISBLANK(Campaign.Name)</errorConditionFormula>
+    <errorDisplayField>CampaignId</errorDisplayField>
+    <errorMessage>Please select the corresponding event campaign.</errorMessage>
+</ValidationRule>

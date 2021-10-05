@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Home Audit Reminder</name>
+    <style>freeForm</style>
+    <subject>REMINDER: Solar Site Audit Tomorrow</subject>
+    <textOnly>Hi {!Opportunity.Contact__c},
+
+
+
+We just wanted to send you a reminder about your Site Survey scheduled for tomorrow: {!Opportunity.Site_Survey_Time__c}
+
+
+
+We look forward to seeing you tomorrow! If for any reason you need to reschedule, please do so ASAP by calling 855-339-1831 and press 1 to speak with one of our service representatives.
+
+
+
+Thank you,
+
+Palmetto Customer Care
+
+855-339-1831
+
+
+customercare@palmetto.com
+
+
+
+
+Palmetto Solar LLC | 1505 King Street Ext #114|Charleston, SC 29408 |8431844 |www.palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

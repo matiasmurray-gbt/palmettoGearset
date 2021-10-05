@@ -1,0 +1,4 @@
+Lead: {!Lead.Name} has been assigned to you.
+
+To view the details of this lead in salesforce.com click on the following link:
+{!Lead.Link}

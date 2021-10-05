@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Capital Raise</fullName>
+    <description>Capital raise initiatives related to AUM growth strategies</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>CR2 - Qualified Lead - Interested</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>CR3 - LOI</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>CR4 - Term Sheet</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>CR5 - Contract Closed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>CR5 - Contract Lost</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

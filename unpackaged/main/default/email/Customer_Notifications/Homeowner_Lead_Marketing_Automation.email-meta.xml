@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Lead Auomation</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Homeowner Lead Marketing  Automation</name>
+    <style>freeForm</style>
+    <subject>Save Thousands with Palmetto Solar!</subject>
+    <textOnly>Dear {!Lead.FirstName} {!Lead.LastName},
+
+
+Thank you for your interest in Going Solar with Palmetto! We have received your request and one of our Energy Advisers will be in touch with you shortly.
+
+
+
+
+
+We look forward to speaking with you!
+
+
+
+
+
+The Palmetto Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

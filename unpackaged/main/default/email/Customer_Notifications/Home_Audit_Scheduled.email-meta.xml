@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Home Audit Scheduled</name>
+    <style>freeForm</style>
+    <subject>Palmetto - Home Audit Scheduled</subject>
+    <textOnly>Congratulations {!Opportunity.Contact__c},
+
+We have your site audit date scheduled for {!Opportunity.Site_Survey_Time__c}!
+
+Thank you for scheduling your site audit, here is what to expect while we are at your home.
+
+3 hour window where a Palmetto specialist will come to your home to get structural information, roof measurements, and necessary photos of your panel box, attic, and meter location.
+
+Must require that a family member or trusted individual is present for the full 3 hour window we have scheduled.
+
+Keep all areas clear of animals and obstructions for quick, safe, and easy access.
+
+For vaulted ceilings we may need to gain access to the attic by collecting the structural plans of the home.
+
+Once we complete the audit we will send you the approved design via email for your viewing. If we need to make any adjustments to your layout, we will do so at this time and will ensure you are notified and in agreement with any minor changes necessary.
+
+
+After you sign off on any layout updates, the site will be approved and we can continue moving onto the next phase of the process, Permits!
+
+
+Thank you,
+
+Palmetto Customer Care
+
+843-720-1844
+
+customercare@palmetto.com
+
+
+
+Palmetto Solar LLC | 1505 King Street Ext #114|Charleston, SC 29408 |8431844 |www.palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

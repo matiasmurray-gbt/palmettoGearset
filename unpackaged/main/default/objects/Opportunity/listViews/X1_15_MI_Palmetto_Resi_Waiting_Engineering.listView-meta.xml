@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X1_15_MI_Palmetto_Resi_Waiting_Engineering</fullName>
+    <booleanFilter>1 AND 2 AND 3</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>System_Size_Calculated_kW__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>Sub_Market__c</columns>
+    <columns>Permitting_Jurisdiction__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Contract_Signed_Date__c</columns>
+    <columns>Post_Sales_Pre_Installation_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer,Integrated Palmetto Property,Dividend Solar</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>12. Engineering Package Sent</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>equals</operation>
+        <value>Michigan</value>
+    </filters>
+    <label>1.15 MI Engineering Pending</label>
+    <sharedTo>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_MA</role>
+        <role>Project_Manager_FL</role>
+    </sharedTo>
+</ListView>

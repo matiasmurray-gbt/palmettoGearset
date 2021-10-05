@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cause__c</fullName>
+    <externalId>false</externalId>
+    <label>Cause</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Permitting</fullName>
+                <default>false</default>
+                <label>Permitting</label>
+            </value>
+            <value>
+                <fullName>CR</fullName>
+                <default>false</default>
+                <label>CR</label>
+            </value>
+            <value>
+                <fullName>Site Survey</fullName>
+                <default>false</default>
+                <label>Site Survey</label>
+            </value>
+            <value>
+                <fullName>Install</fullName>
+                <default>false</default>
+                <label>Install</label>
+            </value>
+            <value>
+                <fullName>Interconnection</fullName>
+                <default>false</default>
+                <label>Interconnection</label>
+            </value>
+            <value>
+                <fullName>AHJ inspection</fullName>
+                <default>false</default>
+                <label>AHJ inspection</label>
+            </value>
+            <value>
+                <fullName>utility inspection</fullName>
+                <default>false</default>
+                <label>utility inspection</label>
+            </value>
+            <value>
+                <fullName>Service Call</fullName>
+                <default>false</default>
+                <label>Service Call</label>
+            </value>
+            <value>
+                <fullName>Palmetto Owned</fullName>
+                <default>false</default>
+                <label>Palmetto Owned</label>
+            </value>
+            <value>
+                <fullName>CP Owned</fullName>
+                <default>false</default>
+                <label>CP Owned</label>
+            </value>
+            <value>
+                <fullName>Government incentives</fullName>
+                <default>false</default>
+                <label>Government incentives</label>
+            </value>
+            <value>
+                <fullName>Proposal is correct</fullName>
+                <default>false</default>
+                <label>Proposal is correct</label>
+            </value>
+            <value>
+                <fullName>Proposal is incorrect</fullName>
+                <default>false</default>
+                <label>Proposal is incorrect</label>
+            </value>
+            <value>
+                <fullName>NPS</fullName>
+                <default>false</default>
+                <label>NPS</label>
+            </value>
+            <value>
+                <fullName>Google</fullName>
+                <default>false</default>
+                <label>Google</label>
+            </value>
+            <value>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+                <label>Facebook</label>
+            </value>
+            <value>
+                <fullName>Yelp</fullName>
+                <default>false</default>
+                <label>Yelp</label>
+            </value>
+            <value>
+                <fullName>BBB</fullName>
+                <default>false</default>
+                <label>BBB</label>
+            </value>
+            <value>
+                <fullName>Property Damage</fullName>
+                <default>false</default>
+                <label>Property Damage</label>
+            </value>
+            <value>
+                <fullName>Equipment failure</fullName>
+                <default>false</default>
+                <label>Equipment failure</label>
+            </value>
+            <value>
+                <fullName>Roof Leak</fullName>
+                <default>false</default>
+                <label>Roof Leak</label>
+            </value>
+            <value>
+                <fullName>Panels Installed incorrectly</fullName>
+                <default>false</default>
+                <label>Panels Installed incorrectly</label>
+            </value>
+            <value>
+                <fullName>Bounce Check</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bounce Check</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Damaged Property</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Damaged Property</label>
+            </value>
+            <value>
+                <fullName>Delayed PTO/Double Bill</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Delayed PTO/Double Bill</label>
+            </value>
+            <value>
+                <fullName>Inspection</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inspection</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Production Loss</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Production Loss</label>
+            </value>
+            <value>
+                <fullName>Sales Rep</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sales Rep</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Delays/Extended Timelines</controllingFieldValue>
+            <valueName>Permitting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delays/Extended Timelines</controllingFieldValue>
+            <valueName>CR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delays/Extended Timelines</controllingFieldValue>
+            <valueName>Site Survey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delays/Extended Timelines</controllingFieldValue>
+            <valueName>Install</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delays/Extended Timelines</controllingFieldValue>
+            <valueName>Interconnection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delays/Extended Timelines</controllingFieldValue>
+            <valueName>AHJ inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delays/Extended Timelines</controllingFieldValue>
+            <valueName>utility inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delays/Extended Timelines</controllingFieldValue>
+            <valueName>Service Call</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solar Performance Expectations</controllingFieldValue>
+            <valueName>Proposal is correct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solar Performance Expectations</controllingFieldValue>
+            <valueName>Proposal is incorrect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negative Review</controllingFieldValue>
+            <valueName>NPS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negative Review</controllingFieldValue>
+            <valueName>Google</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negative Review</controllingFieldValue>
+            <valueName>Facebook</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negative Review</controllingFieldValue>
+            <valueName>Yelp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negative Review</controllingFieldValue>
+            <valueName>BBB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment/Workmanship</controllingFieldValue>
+            <valueName>Property Damage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment/Workmanship</controllingFieldValue>
+            <valueName>Equipment failure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment/Workmanship</controllingFieldValue>
+            <valueName>Roof Leak</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment/Workmanship</controllingFieldValue>
+            <valueName>Panels Installed incorrectly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Incentives</controllingFieldValue>
+            <valueName>Palmetto Owned</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Incentives</controllingFieldValue>
+            <valueName>CP Owned</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Incentives</controllingFieldValue>
+            <valueName>Government incentives</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

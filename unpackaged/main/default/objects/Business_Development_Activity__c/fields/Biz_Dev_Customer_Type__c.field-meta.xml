@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Biz_Dev_Customer_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Biz Dev Customer Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Partner - Finance</fullName>
+                <default>false</default>
+                <label>Partner - Finance</label>
+            </value>
+            <value>
+                <fullName>Enterprise</fullName>
+                <default>false</default>
+                <label>Enterprise</label>
+            </value>
+            <value>
+                <fullName>Alchemist</fullName>
+                <default>false</default>
+                <label>Alchemist</label>
+            </value>
+            <value>
+                <fullName>Alchemist - Retention</fullName>
+                <default>false</default>
+                <label>Alchemist - Retention</label>
+            </value>
+            <value>
+                <fullName>Enterprise - Retention</fullName>
+                <default>false</default>
+                <label>Enterprise - Retention</label>
+            </value>
+            <value>
+                <fullName>Enterprise (Member) - Retention</fullName>
+                <default>false</default>
+                <label>Enterprise (Member) - Retention</label>
+            </value>
+            <value>
+                <fullName>Build Only</fullName>
+                <default>false</default>
+                <label>Build Only</label>
+            </value>
+            <value>
+                <fullName>Partner Ramp</fullName>
+                <default>false</default>
+                <label>Partner Ramp</label>
+            </value>
+            <value>
+                <fullName>Corporate Development</fullName>
+                <default>false</default>
+                <label>Corporate Development</label>
+            </value>
+            <value>
+                <fullName>Services Division</fullName>
+                <default>false</default>
+                <label>Services Division</label>
+            </value>
+            <value>
+                <fullName>M&amp;A</fullName>
+                <default>false</default>
+                <label>M&amp;A</label>
+            </value>
+            <value>
+                <fullName>Strategic Partnership</fullName>
+                <default>false</default>
+                <label>Strategic Partnership</label>
+            </value>
+            <value>
+                <fullName>Seed Funding</fullName>
+                <default>false</default>
+                <label>Seed Funding</label>
+            </value>
+            <value>
+                <fullName>Partner - Top Tier</fullName>
+                <default>false</default>
+                <label>Partner - Top Tier</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

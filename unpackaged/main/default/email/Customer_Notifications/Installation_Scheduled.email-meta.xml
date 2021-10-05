@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Installation Scheduled</name>
+    <style>freeForm</style>
+    <subject>Palmetto - Installation Scheduled</subject>
+    <textOnly>Hello {!Opportunity.Contact__c},
+
+
+Congratulations, we have finalized your installation date for {!Opportunity.Installation_Start_Date__c}. Please take a moment to review what you should look forward to the day of the installation.
+
+
+What To Expect:
+
+
+We will arrive between 8 AM- 11 AM to get started unless notified otherwise.
+
+
+
+Larger systems may take up to 2 days to complete. Upon scheduling, we will go over what you should expect.
+
+
+
+It is MANDATORY that a trusted individual is available for the entirety of the installation.
+
+
+
+In most cases, we will need a clear pathway to access your attic.
+
+
+
+Keep all vehicles, obstructions, and personal items out of the driveway during the installation, to ensure they are safe from falling debris.
+
+
+
+PLEASE clear the yard of all animal waste to prevent our team from tracking it into your home.
+
+
+
+Installations are weather dependent. Any extreme weather conditions, including heavy rain, will be rescheduled to ensure the safety of our team and your home.
+
+
+
+We look forward to getting your installation scheduled. Please be on the lookout for a phone call from our scheduling team.  If you have any questions, reach out to us through your Palmetto Home app feature or give us a call.
+
+
+Thank you,
+
+Palmetto Customer Care
+
+855-339-1831
+
+customercare@palmetto.com
+
+
+Palmetto Solar LLC | 1505 King Street Ext #114|Charleston, SC 29408 |8431844 |www.palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

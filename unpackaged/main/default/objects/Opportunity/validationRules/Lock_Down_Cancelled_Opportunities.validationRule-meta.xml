@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Down_Cancelled_Opportunities</fullName>
+    <active>false</active>
+    <description>Closed Lost opportunities cannot be modified except by Sales Operations and Salesforce Administrator.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(PRIORVALUE(StageName),"Cancelled"),
+NOT($Profile.Id = "00e1a000000F1sj"),
+NOT($Profile.Id = "00e1a000000J3kS"),
+NOT($Profile.Id = "00e1a000000i3qp"),
+NOT($Profile.Id = "00e1a000000F73H"),
+NOT($Profile.Id = "00e1a000000i71H")
+)</errorConditionFormula>
+    <errorMessage>Cancelled opportunities cannot be modified except by the Sales Operations and Salesforce Administrator.</errorMessage>
+</ValidationRule>

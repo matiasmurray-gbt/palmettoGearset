@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Read</contactAccessLevel>
+    <description>Logistics and Supply Chain</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Logistics and Supply Chain</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Operations1</parentRole>
+</Role>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financier_Blockers__c</fullName>
+    <externalId>false</externalId>
+    <label>Financier Blockers</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Missing Lease/PPA</fullName>
+                <default>false</default>
+                <label>Missing Lease/PPA</label>
+            </value>
+            <value>
+                <fullName>Unsigned/Incorrectly signed docs</fullName>
+                <default>false</default>
+                <label>Unsigned/Incorrectly signed docs</label>
+            </value>
+            <value>
+                <fullName>Revised Work Order</fullName>
+                <default>false</default>
+                <label>Revised Work Order</label>
+            </value>
+            <value>
+                <fullName>Missing Change Order/Lease Amendment</fullName>
+                <default>false</default>
+                <label>Missing Change Order/Lease Amendment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

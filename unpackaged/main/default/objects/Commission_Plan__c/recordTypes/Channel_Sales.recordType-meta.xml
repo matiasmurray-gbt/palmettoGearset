@@ -1,0 +1,1452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel_Sales</fullName>
+    <active>true</active>
+    <label>Channel Sales</label>
+    <picklistValues>
+        <picklist>Commission_Plan_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Commission_Structure__c</picklist>
+        <values>
+            <fullName>Custom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Location__c</picklist>
+        <values>
+            <fullName>Alabama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alaska</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arizona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arkansas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>California</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colorado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connecticut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delaware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>District of Columbia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Florida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Georgia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hawaii</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Idaho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Illinois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indiana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iowa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kansas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kentucky</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Louisiana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maryland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Massachusetts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Michigan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minnesota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mississippi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missouri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY Metro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nebraska</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nevada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Hampshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Jersey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Mexico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New York</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Carolina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Dakota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ohio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oklahoma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oregon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pennsylvania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rhode Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Carolina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Dakota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tennessee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Texas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vermont</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virginia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Washington</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Virginia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wisconsin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wyoming</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Plan_Type__c</picklist>
+        <values>
+            <fullName>Channel Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Sales</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Plan__c</picklist>
+        <values>
+            <fullName>Canvasser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canvasser Closer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy Specialist</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>X3rd_Party_Partner__c</picklist>
+        <values>
+            <fullName>--Dj Williams %26Associates Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10x Solutions LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10x Solutions%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>180 South Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1UP Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1nnov8tivellc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>360 Total Solutions LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A Plus Business Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATJ%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUTOMATCH%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Absolute Sustainability LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accept Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ace Solar and Roofing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Activation Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adorno Consulting LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced Exteriors%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alectrona Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alliance Service Professionals LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alpha Sol LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alpha Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Altezza Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anders Jacobson LLC dba Zero Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Antares Energy Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aten Concepts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aten Concepts Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atlas Capital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Authentic Solar Power%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avantalo Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Barry Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blanton Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Booth Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Breiter Planet Properties</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bright Homes Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bright World Solar%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brighter Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightest Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bullseye Marketing Group Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C %26 D Marketing Services LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%26Vs Forever Young LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CENTURIONSOLAR INC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carolina Connections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carolina Semper Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casillan Marketing LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Circa Energy LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citi Cleaners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citrus Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clear Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Co-op Solar%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commonwealth Energy MA%2C Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conscious Energy Solutions%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crane Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crisp Clean Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D%2EP%2ES%2E Energy LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DANIEL ALEJANDRO CARDENAS ROMERO PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dash Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diamond Solar Solutions%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diesel TEK%2C Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Marketing Agencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Solar of America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diversified Energy Consultants Llc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dominion Solar LLC%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Down Under Entertainment LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dvinci Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EARTH CENTRIC SOLAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EARTH CENTRIC SOLAR LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EZ MANAGEMENT GROUP LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ebarle Marketing Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Efficient Solar Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elevated Power Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elite Solar Consulting LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Empower Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Empower Solar LLC LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Empowered Solar Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Empowered Solar Solutions LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EnergyGeeks Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EnergyGeeks Corporation Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enlight Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EnviroSolar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EnviroSolar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Essien Energy LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethical Energy%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethos Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evolve360 Smart Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expert Energy Management LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eye Hook Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ezsat and Wireless Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ferreira Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Five Strata%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FiveStrata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fix My Bill LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Florida Solar Energy Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Florida Solar Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Florida Solar Solutions LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Florida Solar experts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fortec building group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freedom Current LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fulgent Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funnel Firm Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Futuregy Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fuze Power%2C Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G Sterling Capital%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gansett Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Genesis Solar Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global-Edge solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Go Solar Guru LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GoSo Technologies Llc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green Collar Crew%2C Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green Intelligent Solar%2C GIS LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green Light solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green Power Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green Power Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harbor Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Helios Solar Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Line Leads Division of Dvinci Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holy City Energy%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homegrid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hometown Solar %2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hummingbird Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impact Solar%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Independent Alchemists Master Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inlay Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovation Global Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovative Energies%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovative Home Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insight Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrated Energy Solutions LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrity Solar By Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interactive Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interactive Solutions LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inti Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ion Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J%26M Solar Roofing LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jersey Business Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jones Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JuSolar%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kinetic Innovations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LGCY Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LKN Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laird Hometown Solar%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Last Planet Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Last Stop Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Last Stop Solar a Division of Dvinci Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legacy Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leonard Acres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liberty Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limitless Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lions Pak LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live Simply Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lunes Solar%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lux Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LymLite Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MLL Holdings LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MMLO Charities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MassProSolar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maven Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maven Energy LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mitt Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mitt Marketing LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>More Solar%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N-Lightened Solutions LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Solar Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Solar Solutions LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nationwide Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nationwide solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Choice Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Jersey Sun Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Palmetto Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NexxGen Technologies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nurlaila Niae LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Our World Energy LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROSPER SECURITY %26 SOLAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacifica Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palmetto Inside Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paramount Home Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paris Securities LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pinnacle Energy Solutions LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poly Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Marketing Group%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Wave LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Powerville Energy%2C Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Powur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proliance General Contractors%2C Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purpose Full Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quantum Energy%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radius Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ralos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revo Home Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Right Way Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Right Way Communications%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rise Energy LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ryan jaggar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SECA Power %28Solar Energy Consultants of America%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SLR Energy%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMM Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scalable Renewable%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seapoint Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shawn Roby Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sinergia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skyta Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smart Energy Today</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smart Energy Today %282%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SolGen Renewables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Brokers Of New England%2C Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Central Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Hub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Match</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Match LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Mission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Rescue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Resource Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Resource Group LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Route%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Routes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Sales Of North America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Specialists LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar United LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Veterans of America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar by Nature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SolarBuddy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SolarDot%2C Inc%2E Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SolarMatch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SolarRanger Energy LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SolarTeq</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solara Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solargreena</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solaris By Sun Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solars Phoenix LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solectus Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soliva Home Energy Services%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solza Power%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staxcapllc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sun Active Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sun Guys LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sun Nerds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sun Powered%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sun Saves Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sun Standard LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sun life solar energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SunBright</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SunLife Energy%2C Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SunLogic Energy solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SunNerds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SunPurity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SunUp Solar Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunami DBA Blink Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunergy Energy LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunnyside Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunologi%2C Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunright Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunstream Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunwave Energy LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Super Green Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Synergy Optimal Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRW Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRW Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Sunshine Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tephra Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Altitude Group LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Solar Movement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Solar Professionals LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transolar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Triton Solar Power LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TrueSolarPros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TrueSolarPros LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Truguard Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNTD Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USA clean energy association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ultra Energy Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Underground exposure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Better Homes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upcycle IL LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Victory Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Viral Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Viral Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Solar Advisors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vision Solar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Walker Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wave Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wonderful Construction LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>World Solar Pro US</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>World Solar Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZenSolar LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zenernet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zero Energy Bills LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>easymarketingusa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>easymarketingusa LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>gg merchant solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>leverage marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>team organisation name</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

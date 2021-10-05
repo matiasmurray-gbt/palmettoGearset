@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Solar Module Shortage</name>
+    <style>freeForm</style>
+    <subject>Palmetto Solar Update On Your Project</subject>
+    <textOnly>Good Afternoon {!Opportunity.Contact__c},
+
+Palmetto Solar reaching out in order to provide you with an update on your solar project.  Currently Palmetto and the majority of other solar companies across the United States, are experiencing a national shortage in solar panel modules.  The primary reason for this shortage is due to a large domestic solar panel production company declaring bankruptcy.  The main result being something similar to the long waiting lists for technology products like the most recent iPhone.
+
+We&apos;re experiencing the same thing in the solar industry.  We&apos;ve tailored your system with the most efficient panels, and getting the best value is worth the wait. The good news is we&apos;re waiting on your behalf, and we&apos;re near the front of line. So, you can carry on with your day while we wait.
+
+Your solar project is our top priority and will be installed as soon as possible. Our best estimates predict at least a 3 week adjustment to your original timeline. We commit to contacting you with an updated installation date in the next two weeks. Meanwhile, we&apos;re gearing up our team so they are ready to go when the panels hit our door.
+
+I sincerely apologize for any inconvenience this reschedule may cause you.
+
+No action needed on your end today. If you have questions about the supply shortage, we&apos;re happy to tell you what we know.
+
+Give us a call anytime at 855-339-1831
+
+Best Regards,
+
+Palmetto Customer Care Department
+Phone: 855-339-1831
+Email: customer.care@palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

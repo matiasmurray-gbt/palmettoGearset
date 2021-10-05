@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AR_Balance__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK( Opportunity__r.Installation_Complete_Date__c ) = True,
+
+     IF( Opportunity__r.Milestone_Payment_1_Complete__c = False,
+          
+        Case(Opportunity__r.Financing_Tool__c , "Cash",  Opportunity__r.Balance_Due__c , Opportunity__r.Amount),
+        IF(AND( Opportunity__r.Milestone_Payment_1_Complete__c = True, Opportunity__r.Financier_Milestone_1_Approved_Date__c  &lt; (Today())),
+              CASE(Opportunity__r.Financing_Tool__c ,
+                   "Mosaic Loan", Opportunity__r.Amount * 0.5 ,
+                   "Sunlight", Opportunity__r.Amount * 0.6 ,
+                   "Sunnova Lease", Opportunity__r.Amount * 0.6,
+                   "Loan Pal", Opportunity__r.Amount, 
+                   "Cash", Opportunity__r.Balance_Due__c,
+                   0),
+         0)),
+
+     IF( Opportunity__r.IC_Approved__c = False,
+        Case(Opportunity__r.Financing_Tool__c ,
+             "Cash", Opportunity__r.Balance_Due__c,
+             IF(Opportunity__r.Milestone_Payment_1_Complete__c = False, Opportunity__r.Amount,
+                   Case(Opportunity__r.Financing_Tool__c ,
+                       "Mosaic Loan", Opportunity__r.Amount * 0.5,
+                       "Sunlight", Opportunity__r.Amount * 0.6 ,
+                       "Sunnova Lease", Opportunity__r.Amount * 0.6,
+                         0)
+             )),
+
+        Case( Opportunity__r.Financing_Tool__c ,
+              "Mosaic Loan", Opportunity__r.Amount * 0.1 ,
+              "Sunlight", Opportunity__r.Amount * 0.2 ,
+              "Sunnova Lease", Opportunity__r.Amount * 0.2,
+              "Cash", Opportunity__r.Balance_Due__c,
+              0))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>AR Balance</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

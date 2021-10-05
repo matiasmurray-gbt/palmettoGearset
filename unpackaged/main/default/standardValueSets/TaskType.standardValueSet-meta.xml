@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Back on Platform Full Time</fullName>
+        <default>false</default>
+        <label>Back on Platform Full Time</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Back on Platform Part time</fullName>
+        <default>false</default>
+        <label>Back on Platform Part time</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Case Close</fullName>
+        <default>false</default>
+        <label>Case Close</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Case update</fullName>
+        <default>false</default>
+        <label>Case update</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Outreach</fullName>
+        <default>false</default>
+        <label>Customer Outreach</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Documents</fullName>
+        <default>false</default>
+        <label>Documents</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Financial Issues</fullName>
+        <default>false</default>
+        <label>Financial Issues</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Follow up</fullName>
+        <default>false</default>
+        <label>Follow up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>HOA</fullName>
+        <default>false</default>
+        <label>HOA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inbound call</fullName>
+        <default>false</default>
+        <label>Inbound call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inspection Follow-up</fullName>
+        <default>false</default>
+        <label>Inspection Follow-up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Install Update</fullName>
+        <default>false</default>
+        <label>Install Update</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Interconnection</fullName>
+        <default>false</default>
+        <label>Interconnection</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal update</fullName>
+        <default>false</default>
+        <label>Internal update</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IS follow up</fullName>
+        <default>false</default>
+        <label>IS follow up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IS Post F/U call 1</fullName>
+        <default>false</default>
+        <label>IS Post F/U call 1</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IS Post F/U call 2</fullName>
+        <default>false</default>
+        <label>IS Post F/U call 2</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IS Post F/U call 3</fullName>
+        <default>false</default>
+        <label>IS Post F/U call 3</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IS Post F/U email</fullName>
+        <default>false</default>
+        <label>IS Post F/U email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IS Post F/U text</fullName>
+        <default>false</default>
+        <label>IS Post F/U text</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IS Ran Appointment</fullName>
+        <default>false</default>
+        <label>IS Ran Appointment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan documents</fullName>
+        <default>false</default>
+        <label>Loan documents</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Need More Support/ Resources</fullName>
+        <default>false</default>
+        <label>Need More Support/ Resources</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Operations</fullName>
+        <default>false</default>
+        <label>Operations</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PTO</fullName>
+        <default>false</default>
+        <label>PTO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Return Call</fullName>
+        <default>false</default>
+        <label>Return Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Scheduling</fullName>
+        <default>false</default>
+        <label>Scheduling</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service call</fullName>
+        <default>false</default>
+        <label>Service call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Stage update</fullName>
+        <default>false</default>
+        <label>Stage update</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Troubleshooting</fullName>
+        <default>false</default>
+        <label>Troubleshooting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Voicemail</fullName>
+        <default>false</default>
+        <label>Voicemail</label>
+    </standardValue>
+</StandardValueSet>

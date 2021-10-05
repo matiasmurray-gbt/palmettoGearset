@@ -1,0 +1,7 @@
+Permit Filed - {!Opportunity.Permit_Filed_Date__c}
+
+{!Opportunity.Permitting_Jurisdiction__c}
+
+
+{!Account.Name} 
+{!Account.BillingAddress}

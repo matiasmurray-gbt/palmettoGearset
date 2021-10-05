@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unstamped_Engineering_Package_Upload_Dat__c</fullName>
+    <description>Enter date when Survey Partner uploads the engineering plan set for Palmetto's review.</description>
+    <externalId>false</externalId>
+    <label>Unstamped Engineering Package Upload Dat</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

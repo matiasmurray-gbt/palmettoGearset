@@ -1,0 +1,3 @@
+A lead has been assigned to you, the default owner. Click the link below to view the record in salesforce.com.
+
+{!Lead.Link}

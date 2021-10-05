@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commission_Adjustment_acct__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(AND(M3__c&lt;&gt;0,Milestone_3_Paid__c=True),AND(M3__c=0,Milestone_2_Paid__c=True)),-Balance_Due_Commissions__c,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Commission Adjustment</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

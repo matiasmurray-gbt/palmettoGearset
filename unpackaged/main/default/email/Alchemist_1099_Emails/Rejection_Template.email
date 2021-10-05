@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Dear&nbsp;{!Opportunity.Contact_First_Name__c},<div><br></div><div>Thank you for your interest in our open position, Independent Palmetto Alchemist. We have reviewed your application and regret to inform you that it has not been selected for further consideration.</div><div><br></div><div>We wish you success with your job search and thank you for your interest in Palmetto.</div><div><br></div><div><br></div><div><div>Sincerely,</div><div><br></div><div>Bryan Hoffman</div><div>Palmetto Alchemist Account Manager</div><div>(843) 996-4596</div></div>]]></td>
+</tr>
+</table>

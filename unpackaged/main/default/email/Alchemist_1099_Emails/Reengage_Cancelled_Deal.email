@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p data-pm-slice="1 1 []">Hello&nbsp;{!Opportunity.Contact_First_Name__c},&nbsp;</p><p data-pm-slice="1 1 []"><br></p><p>This is&nbsp;{!User.FirstName} from Palmetto Solar.&nbsp;<span style="font-size: 12pt;">We noticed you have a cancelled solar project through one of our sales partners, and have been trying to reach you about an exclusive offer for cancelled projects only.</span></p><p><br></p><p>With our new direct to consumer product,  we have seen homeowners save up to $10,000 through this offer.&nbsp;<span style="font-size: 12pt;">If you would like to see how much you could save please respond with a time &amp; best phone number for a quick 5 minute review of your original project.</span></p><p><br></p><p>Also, feel free to respond with any questions you may have, or give us a call at (843)-720-1844 ext 388.</p><p><br></p><p>Respectfully,&nbsp;</p><p>{!User.FirstName}.</p>]]></td>
+</tr>
+</table>

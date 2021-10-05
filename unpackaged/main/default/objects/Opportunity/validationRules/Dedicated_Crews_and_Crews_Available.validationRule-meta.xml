@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dedicated_Crews_and_Crews_Available</fullName>
+    <active>true</active>
+    <description>Dedicated crews cannot be larger than crews available.</description>
+    <errorConditionFormula>AND(
+				Dedicated_Crews__c &gt; Crews_Available__c,
+				RecordType.DeveloperName = 'Build_Partner'
+			)</errorConditionFormula>
+    <errorDisplayField>Dedicated_Crews__c</errorDisplayField>
+    <errorMessage>Dedicated crews cannot be larger than crews available.</errorMessage>
+</ValidationRule>

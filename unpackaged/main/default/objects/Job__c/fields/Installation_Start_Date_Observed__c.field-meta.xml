@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Installation_Start_Date_Observed__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>First "Installation Start Date" to have elapsed without being rescheduled, called off, or cancelled within 1 calendar day.</inlineHelpText>
+    <label>Installation Start Date - Observed</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

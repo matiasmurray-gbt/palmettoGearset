@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X_SC_Resi_Installation_Schedule</fullName>
+    <booleanFilter>(1 OR 5) AND 2 AND 3 AND 4 And 6 and 7</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>System_Size_Calculated_kW__c</columns>
+    <columns>Number_of_Solar_Panels__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Financing_Tool__c</columns>
+    <columns>Sub_Market__c</columns>
+    <columns>Installation_Team__c</columns>
+    <columns>X3rd_Party_Partner__c</columns>
+    <columns>Permitting_Jurisdiction__c</columns>
+    <columns>Installation_Start_Date__c</columns>
+    <columns>Contract_Signed_Date__c</columns>
+    <columns>Permit_Rec_d_Date__c</columns>
+    <columns>Install_Completed__c</columns>
+    <columns>Post_Sales_Pre_Installation_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer,Dividend Solar,GreenNRG - Installation</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>18. Installation</value>
+    </filters>
+    <filters>
+        <field>Install_Completed__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>equals</operation>
+        <value>South Carolina,North Carolina</value>
+    </filters>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Integrated Palmetto Property,Solcius Installation</value>
+    </filters>
+    <filters>
+        <field>Installation_Team__c</field>
+        <operation>equals</operation>
+        <value>,Palmetto Team 1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>test</value>
+    </filters>
+    <label>2.51 SC Team 1 Installation Schedule</label>
+    <sharedTo>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_SC</role>
+        <role>Project_Manager_SC</role>
+    </sharedTo>
+</ListView>

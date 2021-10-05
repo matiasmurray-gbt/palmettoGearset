@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enter_Reasons_for_Onboarding_Status</fullName>
+    <active>true</active>
+    <description>Add reason for onboarding status (particularly for Do Not Contact, Unqualified, Not Interested)</description>
+    <errorConditionFormula>AND(ISBLANK( Reasons__c ),
+(ISPICKVAL( Stage__c, "Do Not Contact")  || 
+ISPICKVAL( Stage__c, "Unqualified")  ||
+ISPICKVAL( Stage__c, "Not Interested")
+)
+)</errorConditionFormula>
+    <errorDisplayField>Reasons__c</errorDisplayField>
+    <errorMessage>Reason for Do Not Contact or Unqualified or Not Interested</errorMessage>
+</ValidationRule>

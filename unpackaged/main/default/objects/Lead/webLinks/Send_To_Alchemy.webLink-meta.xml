@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_To_Alchemy</fullName>
+    <availability>online</availability>
+    <description>The action will trigger the web service to call alchemy</description>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Send To Alchemy</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT("/soap/ajax/29.0/connection.js")} 
+{!REQUIRESCRIPT("/soap/ajax/29.0/apex.js")} 
+var strRecId = "{!Lead.Id}";
+var strDate  = "{!Lead.Appointment_Date__c}";
+var strTime  = "{!Lead.Appointment_Time__c}";
+var strStatus = "{!Lead.Status}";
+var utilityProvider = "{!Lead.Utility_Provider__c}";
+var submarket = "{!Lead.Sub_Market__c}";
+var phone = "{!Lead.Phone}";
+var dateAndTime = "{!Lead.Appointment_Date_and_Time__c}";
+var stateCode = "{!Lead.StateCode}";
+var email = "{!Lead.Email}";
+var leadSource= "{!Lead.LeadSource}";
+var firstName = "{!Lead.FirstName}";
+
+if(firstName == '' || email == '' || phone == '' || strTime == '' ||  strDate == '' ||  stateCode == ''  ||  utilityProvider == '' ||  submarket == '' || leadSource == '' ){	
+	alert('* Required Fields\n First Name nEmail\n Phone\n Sub Market\n Appointment Date\n Appointment Time\n State/Province\n Utility Provider\n Lead Source');
+}  
+else if(strDate &amp;&amp; strTime &amp;&amp; strStatus == 'Open'){
+  sforce.connection.remoteFunction({
+    url : 'https://alchemy.palmetto.com/api/savesflead/' + strRecId,
+    async : true,
+    cache : false,
+    method: "GET",
+    onSuccess : function(response) { 
+      var JSONStr = JSON.parse(response); 
+      alert(JSONStr.message); 
+    },
+    onFailure : function(response) { 
+        var JSONStr = JSON.parse(response); 
+        alert('Error : '+JSONStr.message ); 
+    }
+  });
+} else if(strStatus == 'Qualified'){
+  alert('The lead already qualified .');
+}else{
+  alert('This Lead was originated from Alchemy and brought to Salesforce. No need to send back to Alchemy');
+}</url>
+</WebLink>

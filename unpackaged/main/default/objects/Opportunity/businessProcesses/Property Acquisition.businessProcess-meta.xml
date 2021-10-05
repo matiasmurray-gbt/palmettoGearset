@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Property Acquisition</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Closed - Funded</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Contract Amount Not Accepted</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Contract Amount in Negotiation</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Contract Ratified</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Due Diligence Complete</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Final Contract Amount Accepted</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Retrade Submitted</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

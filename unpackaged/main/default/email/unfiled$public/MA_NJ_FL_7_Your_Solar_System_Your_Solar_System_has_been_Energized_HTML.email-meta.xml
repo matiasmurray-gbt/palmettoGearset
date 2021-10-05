@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>MA/NJ/FL - 7 Your Solar System - Your Solar System has been Energized! HTML</name>
+    <style>freeForm</style>
+    <subject>Update From Palmetto On Your Solar System - Time To Energize Your System!</subject>
+    <textOnly>Hello {!Opportunity.Contact__c},
+
+We have great news for you. As of {!Opportunity.Net_Meter_Install_Date__c}, your solar system has passed all of the required final inspections and is ready to be switched on.
+
+The attached guide to your new solar system has some guidelines for how to turn the system on, but you should expect to hear from us to help you ensure your system is switched on and producing power!
+
+The utility installed your net meter so you will start to see credits for energy your system sent back to the grid on next months electric bill.
+
+As always if you have any further questions, comments, concerns or referrals feel free to reach out to us here at Palmetto Solar &amp; we are always happy to help.
+
+Please download the attached guide for important information about your new solar system.
+
+
+Thank You &amp; Enjoy the power of the Sun!,
+
+Palmetto™ Customer Care Team
+Main: 855-339-1831
+Office: 843-720-1844
+Email: customer.care@palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

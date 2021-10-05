@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stipulation__c</fullName>
+    <externalId>false</externalId>
+    <label>Stipulation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACH</fullName>
+                <default>false</default>
+                <label>ACH</label>
+            </value>
+            <value>
+                <fullName>Borrower not on Title</fullName>
+                <default>false</default>
+                <label>Borrower not on Title</label>
+            </value>
+            <value>
+                <fullName>Contract Discrepancy</fullName>
+                <default>false</default>
+                <label>Contract Discrepancy</label>
+            </value>
+            <value>
+                <fullName>Elderly Verification Call Required</fullName>
+                <default>false</default>
+                <label>Elderly Verification Call Required</label>
+            </value>
+            <value>
+                <fullName>Income/W2</fullName>
+                <default>false</default>
+                <label>Income/W2</label>
+            </value>
+            <value>
+                <fullName>Legal Name</fullName>
+                <default>false</default>
+                <label>Legal Name</label>
+            </value>
+            <value>
+                <fullName>Mortgage Not Reporting</fullName>
+                <default>false</default>
+                <label>Mortgage Not Reporting</label>
+            </value>
+            <value>
+                <fullName>Multiple Stips</fullName>
+                <default>false</default>
+                <label>Multiple Stips</label>
+            </value>
+            <value>
+                <fullName>Not Legal Name</fullName>
+                <default>false</default>
+                <label>Not Legal Name</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Retirement</fullName>
+                <default>false</default>
+                <label>Retirement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

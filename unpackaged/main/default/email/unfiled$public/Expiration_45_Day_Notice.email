@@ -1,0 +1,27 @@
+<style>p{margin-top:0px; margin-bottom:0px;}</style>
+<body class="setupTab"  style=" background-color:#CCCCCC; bEditID:b1st1; bLabel:body;"><center >
+<table cellpadding="0" width="500" cellspacing="0" id="topTable" height="450" ><tr valign="top" >
+
+<tr valign="top" >
+<td styleInsert="1" height="300"  style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;">
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" ><tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" ><p class="MsoNormalCxSpFirst" style="line-height:normal">Dear
+{!Trade_Licensing__c.Vendor__c}</p><p class="MsoNormalCxSpMiddle" style="line-height:normal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormalCxSpMiddle" style="line-height:normal">A current review of
+your {!Trade_Licensing__c.Name} shows {!Trade_Licensing__c.License_Number__c} will expire on {!Trade_Licensing__c.Expiration_Date__c}.&nbsp; </p>
+<p class="MsoNormalCxSpMiddle" style="line-height:normal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormalCxSpMiddle" style="line-height:normal">Please forward a
+current copy of your {!Trade_Licensing__c.License_Number__c} no later than {!Trade_Licensing__c.Expiration_Date__c}.</p>
+<p class="MsoNormalCxSpMiddle" style="line-height:normal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormalCxSpMiddle" style="line-height:normal">Should you have any
+questions or concerns, please do not hesitate to contact us. </p>
+<p class="MsoNormalCxSpMiddle" style="line-height:normal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormalCxSpMiddle" style="line-height:normal">Thank you in advance
+for prompt attention to this matter. </p>
+<p class="MsoNormalCxSpMiddle" style="line-height:normal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormalCxSpMiddle" style="line-height:normal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormalCxSpMiddle" style="line-height:normal">Sincerely, </p>
+<p class="MsoNormalCxSpMiddle" style="line-height:normal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormalCxSpMiddle" style="line-height:normal"><o:p>&nbsp;</o:p></p><p class="normal">
+
+{!Trade_Licensing__c.Owner_Name__c}</p></td></tr></table></td></tr>

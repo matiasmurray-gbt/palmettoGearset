@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Open</fullName>
+        <default>true</default>
+        <label>Open</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Attempting to Contact</fullName>
+        <default>false</default>
+        <label>Attempting to Contact</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Verbal Response</fullName>
+        <default>false</default>
+        <label>Verbal Response</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Convert</fullName>
+        <default>false</default>
+        <label>Convert</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Qualified</fullName>
+        <default>false</default>
+        <label>Qualified</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Appointment Set</fullName>
+        <default>false</default>
+        <label>Appointment Set</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Re-Engage</fullName>
+        <default>false</default>
+        <label>Re-Engage</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Bad Information</fullName>
+        <default>false</default>
+        <label>Bad Information</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Invited</fullName>
+        <default>false</default>
+        <label>Invited</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Interested</fullName>
+        <default>false</default>
+        <label>Interested</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Intake Info Complete</fullName>
+        <default>false</default>
+        <label>Intake Info Complete</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Consumer App Sign-up Complete</fullName>
+        <default>false</default>
+        <label>Consumer App Sign-up Complete</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Unqualified</fullName>
+        <default>false</default>
+        <label>Unqualified</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Contacted</fullName>
+        <default>false</default>
+        <label>Contacted</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Underwriting</fullName>
+        <default>false</default>
+        <label>Underwriting</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Due Diligence</fullName>
+        <default>false</default>
+        <label>Due Diligence</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Submitted</fullName>
+        <default>false</default>
+        <label>Contract Submitted</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Seller Retrade</fullName>
+        <default>false</default>
+        <label>Seller Retrade</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Radification Pending</fullName>
+        <default>false</default>
+        <label>Radification Pending</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Radified</fullName>
+        <default>false</default>
+        <label>Contract Radified</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Appointment Complete</fullName>
+        <default>false</default>
+        <label>Appointment Complete</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>A-Prospect</fullName>
+        <default>false</default>
+        <label>A-Prospect</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>B-Early Discussion</fullName>
+        <default>false</default>
+        <label>B-Early Discussion</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>C-Advanced Discussion</fullName>
+        <default>false</default>
+        <label>C-Advanced Discussion</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>D-Partner Document Collection</fullName>
+        <default>false</default>
+        <label>D-Partner Document Collection</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>E-Training Assigned</fullName>
+        <default>false</default>
+        <label>E-Training Assigned</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>F-Contract Won</fullName>
+        <default>false</default>
+        <label>F-Contract Won</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>G-Contract Lost</fullName>
+        <default>false</default>
+        <label>G-Contract Lost</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Disqualified</fullName>
+        <default>false</default>
+        <label>Disqualified</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Invited/Applied</fullName>
+        <default>false</default>
+        <label>Invited/Applied</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Registered for Training</fullName>
+        <default>false</default>
+        <label>Registered for Training</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed Training</fullName>
+        <default>false</default>
+        <label>Completed Training</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Applicant Passed Testing</fullName>
+        <default>false</default>
+        <label>Applicant Passed Testing</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Applicant Failed Testing</fullName>
+        <default>false</default>
+        <label>Applicant Failed Testing</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Applicant On Platform</fullName>
+        <default>false</default>
+        <label>Applicant On Platform</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Applicant On Platform CP</fullName>
+        <default>false</default>
+        <label>Applicant On Platform CP</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Take-Off Platform</fullName>
+        <default>false</default>
+        <label>Take-Off Platform</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Out of Service Area</fullName>
+        <default>false</default>
+        <label>Out of Service Area</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Opt-Out</fullName>
+        <default>false</default>
+        <label>Opt-Out</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Deactivate</fullName>
+        <default>false</default>
+        <label>Deactivate</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>No Response</fullName>
+        <default>false</default>
+        <label>No Response</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Do Not Call</fullName>
+        <default>false</default>
+        <label>Do Not Call</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Test</fullName>
+        <default>false</default>
+        <label>Test</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Sold</fullName>
+        <default>false</default>
+        <label>Sold</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Unsupported Utility</fullName>
+        <default>false</default>
+        <label>Unsupported Utility</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Unconfirmed</fullName>
+        <default>false</default>
+        <label>Account Unconfirmed</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Confirmed without Payment</fullName>
+        <default>false</default>
+        <label>Account Confirmed without Payment</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Confirmed with Payment</fullName>
+        <default>false</default>
+        <label>Account Confirmed with Payment</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+        <label>Closed Lost</label>
+        <converted>false</converted>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,15 @@
+{!Account.Name}
+{!Account.BillingAddress}
+
+We will need the following items.
+
+1)  Stamped Engineering Plans
+2)  Stamped Structural letter
+3)  Full 3' Setbacks
+
+Rafter Info
+
+Rafter Type - {!Opportunity.00N1a000007Pix7}
+Rafter Dimensions - {!Opportunity.00N1a000007PixM}
+Rafter Length - {!Opportunity.00N1a000007PixC}
+Rafter Spacing - {!Opportunity.00N1a000007PixW}

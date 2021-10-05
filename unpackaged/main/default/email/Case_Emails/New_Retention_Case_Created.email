@@ -1,0 +1,98 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style=""><div style=""><div style="color: rgb(0, 0, 0);"><p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black; background: white;">Hello
+{!Case.X3rd_Party_Sales_Rep__c},</span><span style="font-family: Arial, sans-serif; color: black;"><br>
+<br>
+<span style="background: white;">The solar project for the customer,
+{!Case.Account} at {!Case.Customer_Address__c} is at risk.&nbsp;</span><span style="background: white;">A retention case has been opened for the
+following reason {!CaseType__c}. Associated notes include: {!Case.Description}</span><br>
+<br>
+<span style="background: white;">Reason for the retention case include:</span></span></font><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;"><o:p></o:p></span></p><p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;"><span style="background: white;"><br></span></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal;"><o:p style=""><b style=""><font size="1" style="" face="Arial, sans-serif">Unresponsive Customer:&nbsp;</font></b></o:p></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Customer Unresponsive to Requests for Do:
+{!Case.Customer_Unresponsive_to_Requests_for_Do__c}</span><span style="font-family: Arial, sans-serif;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Customer Unresponsive to
+Requests for Sch:&nbsp;</span><span style="font-family: Arial, sans-serif; color: black;">{!Case.Customer_Unresponsive_to_Requests_to_Sch__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Unresponsive to Adder Inclusion:
+{!Case.Customer_Unresponsive_to_Adder_Inclusion__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Unresponsive to Design Change:
+{!Case.Customer_Unresponsive_to_Design_Change__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Unresponseive Other Reasons:
+{!Case.Customer_Unresponsive_Other__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><span style="font-family: Arial, sans-serif; color: black;"><o:p><font size="1">&nbsp;<br><b>Customer Failing to Action:</b></font></o:p></span></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Customer Hasn't Confirmed Reroof:
+{!Case.Customer_Hasn_t_Confirmed_Reroof__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Customer Hasn’t Removed Trees: {!Case.Customer_Hasn_t_Removed_Trees__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Customer Not Scheduling Survey: {!Case.Customer_Not_Scheduling_Survey__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Customer Not Scheduling Install: {!Case.Customer_Not_Scheduling_Install__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Customer Not Signing Docs: {!Case.Customer_Not_Signing_Documents__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><span style="font-family: Arial, sans-serif; color: black;"><o:p><font size="1">&nbsp;</font></o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal;"><font face="Arial, sans-serif" size="1"><b>Customer Requested Cancellation:&nbsp;</b></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Competition: {!Case.Competition__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Decided Against Solar: {!Case.Decided_Against_Solar__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Finances: {!Case.Finances_Retention__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Offset: {!Case.Offset__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Pricing: {!Case.Pricing__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Other: {!Case.Other_Retention__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p><p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;"><br></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><span style="font-family: Arial, sans-serif; color: black;"><o:p><font size="1"><b>Customer On-Hold:&nbsp;&nbsp;</b></font></o:p></span></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Vacation: {!Case.Vacation__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Home Renovation: {!Case.Home_Renovation__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Finances: {!Case.Finances__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Illness: {!Case.Illness__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Weather: {!Case.Weather__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Reviewing Project Details: {!Case.Reviewing_Project_Details__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><span style="font-family: Arial, sans-serif; color: black;"><o:p><font size="1">&nbsp;</font></o:p></span></p><p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><span style="font-family: Arial, sans-serif; color: black;"><o:p><font size="1"><b>Disqualification:&nbsp;</b></font></o:p></span></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Structural DQ: {!Case.Structural_DQ__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Ineligible Roof Type: {!Case.Ineligible_Roof_Type__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Shading: {!Case.Shading__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><span style="font-family: Arial, sans-serif; color: black;"><font size="1">Non-Serviceable AHJ: {!Case.Non_Serviceable_AHJ__c}<o:p></o:p></font></span></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Safety Concerns: {!Case.Safety_Concerns__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><font size="1"><span style="font-family: Arial, sans-serif; color: black;">Ineligible Property Type: {!Case.Ineligible_Property_Type__c}</span><span style="font-family: Arial, sans-serif; color: black;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="font-family: arial; margin-bottom: 0.0001pt; line-height: normal;"><span style="font-family: Arial, sans-serif; color: black;"><o:p style=""><font size="1">&nbsp;</font></o:p></span></p>
+
+<p class="MsoNormal" style="font-family: arial; font-size: 12pt; margin-bottom: 0.0001pt; line-height: normal;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:black"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="font-family: arial; font-size: 12pt; margin-bottom: 0.0001pt; line-height: normal;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:black"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="font-family: arial; font-size: 12pt; margin-bottom: 0.0001pt; line-height: normal;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:black"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="font-family: arial; font-size: 12pt;"><o:p>&nbsp;</o:p></p><span style="font-family: arial; font-size: 12pt;"><font face="Arial, Helvetica, sans-serif" size="1"></font></span></div></div></div>]]></td>
+</tr>
+</table>

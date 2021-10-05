@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CaseType__c</fullName>
+    <externalId>false</externalId>
+    <label>Type(C)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Additional Adder Coordination</fullName>
+                <default>false</default>
+                <label>Additional Adder Coordination</label>
+            </value>
+            <value>
+                <fullName>Alchemy</fullName>
+                <default>false</default>
+                <label>Alchemy</label>
+            </value>
+            <value>
+                <fullName>Change Order</fullName>
+                <default>false</default>
+                <label>Change Order</label>
+            </value>
+            <value>
+                <fullName>Channel Partner</fullName>
+                <default>false</default>
+                <label>Channel Partner</label>
+            </value>
+            <value>
+                <fullName>Communication</fullName>
+                <default>false</default>
+                <label>Communication</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Customer Complaint</fullName>
+                <default>false</default>
+                <label>Customer Complaint</label>
+            </value>
+            <value>
+                <fullName>Customer Experience</fullName>
+                <default>false</default>
+                <label>Customer Experience</label>
+            </value>
+            <value>
+                <fullName>Customer Failing to Action</fullName>
+                <default>false</default>
+                <label>Customer Failing to Action</label>
+            </value>
+            <value>
+                <fullName>Customer Requested</fullName>
+                <default>false</default>
+                <label>Customer Requested</label>
+            </value>
+            <value>
+                <fullName>Customer Requested Cancellation</fullName>
+                <default>false</default>
+                <label>Customer Requested Cancellation</label>
+            </value>
+            <value>
+                <fullName>Customer Requested Change</fullName>
+                <default>false</default>
+                <label>Customer Requested Change</label>
+            </value>
+            <value>
+                <fullName>Customer Unresponsive</fullName>
+                <default>false</default>
+                <label>Customer Unresponsive</label>
+            </value>
+            <value>
+                <fullName>Customer On Hold</fullName>
+                <default>false</default>
+                <label>Customer On Hold</label>
+            </value>
+            <value>
+                <fullName>Delay in Stage</fullName>
+                <default>false</default>
+                <label>Delay in Stage</label>
+            </value>
+            <value>
+                <fullName>Design Review</fullName>
+                <default>false</default>
+                <label>Design Review</label>
+            </value>
+            <value>
+                <fullName>Disqualification</fullName>
+                <default>false</default>
+                <label>Disqualification</label>
+            </value>
+            <value>
+                <fullName>Document Collection</fullName>
+                <default>false</default>
+                <label>Document Collection</label>
+            </value>
+            <value>
+                <fullName>Document Collection - CRC</fullName>
+                <default>false</default>
+                <label>Document Collection - CRC</label>
+            </value>
+            <value>
+                <fullName>Electrical Review</fullName>
+                <default>false</default>
+                <label>Electrical Review</label>
+            </value>
+            <value>
+                <fullName>Electrical Upgrade</fullName>
+                <default>false</default>
+                <label>Electrical Upgrade</label>
+            </value>
+            <value>
+                <fullName>Escalated</fullName>
+                <default>false</default>
+                <label>Escalated</label>
+            </value>
+            <value>
+                <fullName>Expected offset / Savings</fullName>
+                <default>false</default>
+                <label>Expected offset / Savings</label>
+            </value>
+            <value>
+                <fullName>Financier Compliance</fullName>
+                <default>false</default>
+                <label>Financier Compliance</label>
+            </value>
+            <value>
+                <fullName>Financing</fullName>
+                <default>false</default>
+                <label>Financing</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>Ground Mount Coordination</fullName>
+                <default>false</default>
+                <label>Ground Mount Coordination</label>
+            </value>
+            <value>
+                <fullName>Incentives</fullName>
+                <default>false</default>
+                <label>Incentives</label>
+            </value>
+            <value>
+                <fullName>Incentive Submittal</fullName>
+                <default>false</default>
+                <label>Incentive Submittal</label>
+            </value>
+            <value>
+                <fullName>PTO</fullName>
+                <default>false</default>
+                <label>PTO</label>
+            </value>
+            <value>
+                <fullName>Inspection</fullName>
+                <default>false</default>
+                <label>Inspection</label>
+            </value>
+            <value>
+                <fullName>Inspection Closeout</fullName>
+                <default>false</default>
+                <label>Inspection Closeout</label>
+            </value>
+            <value>
+                <fullName>Installation Call Off</fullName>
+                <default>false</default>
+                <label>Installation Call Off</label>
+            </value>
+            <value>
+                <fullName>Install Issues</fullName>
+                <default>false</default>
+                <label>Install Issues</label>
+            </value>
+            <value>
+                <fullName>Inverter Alert</fullName>
+                <default>false</default>
+                <label>Inverter Alert</label>
+            </value>
+            <value>
+                <fullName>Job Closeout</fullName>
+                <default>false</default>
+                <label>Job Closeout</label>
+            </value>
+            <value>
+                <fullName>Meter/Monitoring Issue</fullName>
+                <default>false</default>
+                <label>Meter/Monitoring Issue</label>
+            </value>
+            <value>
+                <fullName>Module Alert</fullName>
+                <default>false</default>
+                <label>Module Alert</label>
+            </value>
+            <value>
+                <fullName>Negative Review</fullName>
+                <default>false</default>
+                <label>Negative Review</label>
+            </value>
+            <value>
+                <fullName>No Communication</fullName>
+                <default>false</default>
+                <label>No Communication</label>
+            </value>
+            <value>
+                <fullName>Other Incidentals</fullName>
+                <default>false</default>
+                <label>Other Incidentals</label>
+            </value>
+            <value>
+                <fullName>Permit Rejection</fullName>
+                <default>false</default>
+                <label>Permit Rejection</label>
+            </value>
+            <value>
+                <fullName>Permit Status</fullName>
+                <default>false</default>
+                <label>Permit Status</label>
+            </value>
+            <value>
+                <fullName>System Failure</fullName>
+                <default>false</default>
+                <label>System Failure</label>
+            </value>
+            <value>
+                <fullName>Monitoring</fullName>
+                <default>false</default>
+                <label>Monitoring</label>
+            </value>
+            <value>
+                <fullName>Pest Abatement</fullName>
+                <default>false</default>
+                <label>Pest Abatement</label>
+            </value>
+            <value>
+                <fullName>Physical Re-Survey</fullName>
+                <default>false</default>
+                <label>Physical Re-Survey</label>
+            </value>
+            <value>
+                <fullName>Post-Install</fullName>
+                <default>false</default>
+                <label>Post-Install</label>
+            </value>
+            <value>
+                <fullName>Post-Install Change</fullName>
+                <default>false</default>
+                <label>Post-Install Change</label>
+            </value>
+            <value>
+                <fullName>Pre-Install</fullName>
+                <default>false</default>
+                <label>Pre-Install</label>
+            </value>
+            <value>
+                <fullName>Pre-Install Change</fullName>
+                <default>false</default>
+                <label>Pre-Install Change</label>
+            </value>
+            <value>
+                <fullName>Pre-PTO</fullName>
+                <default>false</default>
+                <label>Pre-PTO</label>
+            </value>
+            <value>
+                <fullName>Preventative Maintenance</fullName>
+                <default>false</default>
+                <label>Preventative Maintenance</label>
+            </value>
+            <value>
+                <fullName>Production</fullName>
+                <default>false</default>
+                <label>Production</label>
+            </value>
+            <value>
+                <fullName>Property Damage</fullName>
+                <default>false</default>
+                <label>Property Damage</label>
+            </value>
+            <value>
+                <fullName>QC Fail</fullName>
+                <default>false</default>
+                <label>QC Fail</label>
+            </value>
+            <value>
+                <fullName>Re-Design</fullName>
+                <default>false</default>
+                <label>Re-Design</label>
+            </value>
+            <value>
+                <fullName>Removal &amp; Reinstallation</fullName>
+                <default>false</default>
+                <label>Removal &amp; Reinstallation</label>
+            </value>
+            <value>
+                <fullName>Re-Roof</fullName>
+                <default>false</default>
+                <label>Re-Roof</label>
+            </value>
+            <value>
+                <fullName>Retention</fullName>
+                <default>false</default>
+                <label>Retention</label>
+            </value>
+            <value>
+                <fullName>Roof Condition</fullName>
+                <default>false</default>
+                <label>Roof Condition</label>
+            </value>
+            <value>
+                <fullName>Roof Leak</fullName>
+                <default>false</default>
+                <label>Roof Leak</label>
+            </value>
+            <value>
+                <fullName>Roof Review</fullName>
+                <default>false</default>
+                <label>Roof Review</label>
+            </value>
+            <value>
+                <fullName>Sale Issues</fullName>
+                <default>false</default>
+                <label>Sale Issues</label>
+            </value>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+            <value>
+                <fullName>Sales Op</fullName>
+                <default>false</default>
+                <label>Sales Op</label>
+            </value>
+            <value>
+                <fullName>Service Call</fullName>
+                <default>false</default>
+                <label>Service Call</label>
+            </value>
+            <value>
+                <fullName>Service Issues</fullName>
+                <default>false</default>
+                <label>Service Issues</label>
+            </value>
+            <value>
+                <fullName>Site Conditions</fullName>
+                <default>false</default>
+                <label>Site Conditions</label>
+            </value>
+            <value>
+                <fullName>Site Validation</fullName>
+                <default>false</default>
+                <label>Site Validation</label>
+            </value>
+            <value>
+                <fullName>SOLO</fullName>
+                <default>false</default>
+                <label>SOLO</label>
+            </value>
+            <value>
+                <fullName>Structural Review</fullName>
+                <default>false</default>
+                <label>Structural Review</label>
+            </value>
+            <value>
+                <fullName>Structural Upgrade</fullName>
+                <default>false</default>
+                <label>Structural Upgrade</label>
+            </value>
+            <value>
+                <fullName>System Construction</fullName>
+                <default>false</default>
+                <label>System Construction</label>
+            </value>
+            <value>
+                <fullName>System Design</fullName>
+                <default>false</default>
+                <label>System Design</label>
+            </value>
+            <value>
+                <fullName>System Performance</fullName>
+                <default>false</default>
+                <label>System Performance</label>
+            </value>
+            <value>
+                <fullName>System Upgrade</fullName>
+                <default>false</default>
+                <label>System Upgrade</label>
+            </value>
+            <value>
+                <fullName>Trenching</fullName>
+                <default>false</default>
+                <label>Trenching</label>
+            </value>
+            <value>
+                <fullName>Virtual Re-Survey</fullName>
+                <default>false</default>
+                <label>Virtual Re-Survey</label>
+            </value>
+            <value>
+                <fullName>Weather</fullName>
+                <default>false</default>
+                <label>Weather</label>
+            </value>
+            <value>
+                <fullName>Supplemental Order</fullName>
+                <default>false</default>
+                <label>Supplemental Order</label>
+            </value>
+            <value>
+                <fullName>Materials Reclamation</fullName>
+                <default>false</default>
+                <label>Materials Reclamation</label>
+            </value>
+            <value>
+                <fullName>Time-Fence Expedite</fullName>
+                <default>false</default>
+                <label>Time-Fence Expedite</label>
+            </value>
+            <value>
+                <fullName>Cost</fullName>
+                <default>false</default>
+                <label>Cost</label>
+            </value>
+            <value>
+                <fullName>Energy Efficiency / Savings</fullName>
+                <default>false</default>
+                <label>Energy Efficiency / Savings</label>
+            </value>
+            <value>
+                <fullName>Inspection Delays</fullName>
+                <default>false</default>
+                <label>Inspection Delays</label>
+            </value>
+            <value>
+                <fullName>PTO Delays</fullName>
+                <default>false</default>
+                <label>PTO Delays</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>Timelines</fullName>
+                <default>false</default>
+                <label>Timelines</label>
+            </value>
+            <value>
+                <fullName>Incorrect score - meant to score</fullName>
+                <default>false</default>
+                <label>Incorrect score - meant to score</label>
+            </value>
+            <value>
+                <fullName>Distributor Issue</fullName>
+                <default>false</default>
+                <label>Distributor Issue</label>
+            </value>
+            <value>
+                <fullName>Design Issue</fullName>
+                <default>false</default>
+                <label>Design Issue</label>
+            </value>
+            <value>
+                <fullName>Supply Chain Issue</fullName>
+                <default>false</default>
+                <label>Supply Chain Issue</label>
+            </value>
+            <value>
+                <fullName>Scheduling Issue</fullName>
+                <default>false</default>
+                <label>Scheduling Issue</label>
+            </value>
+            <value>
+                <fullName>Build Partner Issue</fullName>
+                <default>false</default>
+                <label>Build Partner Issue</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Timeline At Risk</fullName>
+                <default>false</default>
+                <label>Timeline At Risk</label>
+            </value>
+            <value>
+                <fullName>Palmetto Protect</fullName>
+                <default>false</default>
+                <label>Palmetto Protect</label>
+            </value>
+            <value>
+                <fullName>Financier Request</fullName>
+                <default>false</default>
+                <label>Financier Request</label>
+            </value>
+            <value>
+                <fullName>System Activation</fullName>
+                <default>false</default>
+                <label>System Activation</label>
+            </value>
+            <value>
+                <fullName>Install related</fullName>
+                <default>false</default>
+                <label>Install related</label>
+            </value>
+            <value>
+                <fullName>Financier Complaint</fullName>
+                <default>false</default>
+                <label>Financier Complaint</label>
+            </value>
+            <value>
+                <fullName>Promotion</fullName>
+                <default>false</default>
+                <label>Promotion</label>
+            </value>
+            <value>
+                <fullName>Storage</fullName>
+                <default>false</default>
+                <label>Storage</label>
+            </value>
+            <value>
+                <fullName>COP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>COP</label>
+            </value>
+            <value>
+                <fullName>Design Escalation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Design Escalation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

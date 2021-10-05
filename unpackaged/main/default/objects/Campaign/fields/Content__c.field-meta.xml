@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Content__c</fullName>
+    <description>Form or medium</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Form or medium</inlineHelpText>
+    <label>Content</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Blog Post</fullName>
+                <default>false</default>
+                <label>Blog Post</label>
+            </value>
+            <value>
+                <fullName>Images</fullName>
+                <default>false</default>
+                <label>Images</label>
+            </value>
+            <value>
+                <fullName>Podcast</fullName>
+                <default>false</default>
+                <label>Podcast</label>
+            </value>
+            <value>
+                <fullName>Powerpoint Slides</fullName>
+                <default>false</default>
+                <label>Powerpoint Slides</label>
+            </value>
+            <value>
+                <fullName>Script</fullName>
+                <default>false</default>
+                <label>Script</label>
+            </value>
+            <value>
+                <fullName>Social Post</fullName>
+                <default>false</default>
+                <label>Social Post</label>
+            </value>
+            <value>
+                <fullName>Video</fullName>
+                <default>false</default>
+                <label>Video</label>
+            </value>
+            <value>
+                <fullName>White Paper</fullName>
+                <default>false</default>
+                <label>White Paper</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

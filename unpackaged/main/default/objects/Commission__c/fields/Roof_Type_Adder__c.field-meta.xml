@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Roof_Type_Adder__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(  Opportunity__r.Roof_Type__c , "Corrugated_Metal" , 100  ,
+
+"Concrete", 250  ,
+
+"Tile", Case(  Opportunity__r.Location__c ,"Arizona",0, "California",0, "Nevada", 0, 250) , 
+
+"Single Ply/ Modified Bitumen/ Rolled", 150 , 
+
+
+"Flat Roof", If( Contract_Received_Confirmed_Date__c &lt; Date(2020,04,24),  370,150)  ,0)
+
+*  Opportunity__r.System_Size_Calculated_kW__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Roof Type Adder</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <externalId>false</externalId>
+    <label>Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Engineering Complete</fullName>
+                <default>false</default>
+                <label>Engineering Complete</label>
+            </value>
+            <value>
+                <fullName>Permit Sent</fullName>
+                <default>false</default>
+                <label>Permit Sent</label>
+            </value>
+            <value>
+                <fullName>Permit Approved</fullName>
+                <default>false</default>
+                <label>Permit Approved</label>
+            </value>
+            <value>
+                <fullName>Permit Ready</fullName>
+                <default>false</default>
+                <label>Permit Ready</label>
+            </value>
+            <value>
+                <fullName>Permit Received</fullName>
+                <default>false</default>
+                <label>Permit Received</label>
+            </value>
+            <value>
+                <fullName>Install Ready</fullName>
+                <default>false</default>
+                <label>Install Ready</label>
+            </value>
+            <value>
+                <fullName>Installation</fullName>
+                <default>false</default>
+                <label>Installation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

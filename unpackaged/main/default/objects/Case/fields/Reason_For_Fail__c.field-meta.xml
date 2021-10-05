@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_For_Fail__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason For Fail</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Enginerring Plans</fullName>
+                <default>false</default>
+                <label>No Enginerring Plans</label>
+            </value>
+            <value>
+                <fullName>No Enginerring Memp</fullName>
+                <default>false</default>
+                <label>No Enginerring Memp</label>
+            </value>
+            <value>
+                <fullName>No Permit</fullName>
+                <default>false</default>
+                <label>No Permit</label>
+            </value>
+            <value>
+                <fullName>Red Line not Accepted</fullName>
+                <default>false</default>
+                <label>Red Line not Accepted</label>
+            </value>
+            <value>
+                <fullName>Incorrect Wiring</fullName>
+                <default>false</default>
+                <label>Incorrect Wiring</label>
+            </value>
+            <value>
+                <fullName>Stickers</fullName>
+                <default>false</default>
+                <label>Stickers</label>
+            </value>
+            <value>
+                <fullName>Incorrect Engineering Plans</fullName>
+                <default>false</default>
+                <label>Incorrect Engineering Plans</label>
+            </value>
+            <value>
+                <fullName>Homeowner not home</fullName>
+                <default>false</default>
+                <label>Homeowner not home</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

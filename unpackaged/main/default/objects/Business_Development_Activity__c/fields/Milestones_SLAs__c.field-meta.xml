@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Milestones_SLAs__c</fullName>
+    <externalId>false</externalId>
+    <label>Milestones &amp; SLAs</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Orientation</fullName>
+                <default>false</default>
+                <label>Orientation</label>
+            </value>
+            <value>
+                <fullName>Alchemy Training</fullName>
+                <default>false</default>
+                <label>Alchemy Training</label>
+            </value>
+            <value>
+                <fullName>Sales Training</fullName>
+                <default>false</default>
+                <label>Sales Training</label>
+            </value>
+            <value>
+                <fullName>1x1</fullName>
+                <default>false</default>
+                <label>1x1</label>
+            </value>
+            <value>
+                <fullName>First Appointment</fullName>
+                <default>false</default>
+                <label>First Appointment</label>
+            </value>
+            <value>
+                <fullName>First Sale</fullName>
+                <default>false</default>
+                <label>First Sale</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

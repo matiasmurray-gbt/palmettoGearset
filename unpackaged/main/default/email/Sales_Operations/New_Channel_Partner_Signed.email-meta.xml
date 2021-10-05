@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>New Channel Partner Signed</name>
+    <style>freeForm</style>
+    <subject>New Channel Partner Signed - {!Opportunity.Account}</subject>
+    <textOnly>New independent Alchemist Signed!
+
+Full Name: {!Opportunity.Contact__c}
+Email Address: {!Opportunity.Email__c}
+Address:
+{!Opportunity.Address__c}
+
+Opportunity - {!Opportunity.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

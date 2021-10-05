@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unqualified_Reason__c</fullName>
+    <description>Required field</description>
+    <externalId>false</externalId>
+    <inlineHelpText>select reasons as to why the customer is not qualified</inlineHelpText>
+    <label>Unqualified Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Already Has Solar</fullName>
+                <default>false</default>
+                <label>Already Has Solar</label>
+            </value>
+            <value>
+                <fullName>Co-Decision Maker Declined</fullName>
+                <default>false</default>
+                <label>Co-Decision Maker Declined</label>
+            </value>
+            <value>
+                <fullName>Credit</fullName>
+                <default>false</default>
+                <label>Credit</label>
+            </value>
+            <value>
+                <fullName>Minimum System Size</fullName>
+                <default>false</default>
+                <label>Minimum System Size</label>
+            </value>
+            <value>
+                <fullName>Moving &lt; 24 months</fullName>
+                <default>false</default>
+                <label>Moving &lt; 24 months</label>
+            </value>
+            <value>
+                <fullName>No Available Time</fullName>
+                <default>false</default>
+                <label>No Available Time</label>
+            </value>
+            <value>
+                <fullName>Renter</fullName>
+                <default>false</default>
+                <label>Renter</label>
+            </value>
+            <value>
+                <fullName>Roof Replacement Needed</fullName>
+                <default>false</default>
+                <label>Roof Replacement Needed</label>
+            </value>
+            <value>
+                <fullName>Shade</fullName>
+                <default>false</default>
+                <label>Shade</label>
+            </value>
+            <value>
+                <fullName>Tax Credit Usage</fullName>
+                <default>false</default>
+                <label>Tax Credit Usage</label>
+            </value>
+            <value>
+                <fullName>Tax Obligations</fullName>
+                <default>false</default>
+                <label>Tax Obligations</label>
+            </value>
+            <value>
+                <fullName>Townhome or Condo</fullName>
+                <default>false</default>
+                <label>Townhome or Condo</label>
+            </value>
+            <value>
+                <fullName>Utility Provider Won't Allow Solar</fullName>
+                <default>false</default>
+                <label>Utility Provider Won't Allow Solar</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

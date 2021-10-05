@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Not_Interested__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If not interested is selected, please pick the right reason.</inlineHelpText>
+    <label>Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Already Has Solar</fullName>
+                <default>false</default>
+                <label>Already Has Solar</label>
+            </value>
+            <value>
+                <fullName>Bad Contact Info</fullName>
+                <default>false</default>
+                <label>Bad Contact Info</label>
+            </value>
+            <value>
+                <fullName>Bad Credit</fullName>
+                <default>false</default>
+                <label>Bad Credit</label>
+            </value>
+            <value>
+                <fullName>Building Type</fullName>
+                <default>false</default>
+                <label>Building Type</label>
+            </value>
+            <value>
+                <fullName>Cant Contact</fullName>
+                <default>false</default>
+                <label>Cant Contact</label>
+            </value>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>Decided against Solar</fullName>
+                <default>false</default>
+                <label>Decided against Solar</label>
+            </value>
+            <value>
+                <fullName>Didn't pass credit</fullName>
+                <default>false</default>
+                <label>Didn't pass credit</label>
+            </value>
+            <value>
+                <fullName>Didn't want it on Front of House</fullName>
+                <default>false</default>
+                <label>Didn't want it on Front of House</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Ghost Call</fullName>
+                <default>false</default>
+                <label>Ghost Call</label>
+            </value>
+            <value>
+                <fullName>House Doesn't Qualify</fullName>
+                <default>false</default>
+                <label>House Doesn't Qualify</label>
+            </value>
+            <value>
+                <fullName>Lead Clean-up</fullName>
+                <default>false</default>
+                <label>Lead Clean-up</label>
+            </value>
+            <value>
+                <fullName>Mobile Home</fullName>
+                <default>false</default>
+                <label>Mobile Home</label>
+            </value>
+            <value>
+                <fullName>Moving</fullName>
+                <default>false</default>
+                <label>Moving</label>
+            </value>
+            <value>
+                <fullName>Moving Out of the Area</fullName>
+                <default>false</default>
+                <label>Moving Out of the Area</label>
+            </value>
+            <value>
+                <fullName>Moving to a New Home</fullName>
+                <default>false</default>
+                <label>Moving to a New Home</label>
+            </value>
+            <value>
+                <fullName>Need a New Roof</fullName>
+                <default>false</default>
+                <label>Need a New Roof</label>
+            </value>
+            <value>
+                <fullName>Never agreed to appointment</fullName>
+                <default>false</default>
+                <label>Never agreed to appointment</label>
+            </value>
+            <value>
+                <fullName>No Longer Interested</fullName>
+                <default>false</default>
+                <label>No Longer Interested</label>
+            </value>
+            <value>
+                <fullName>Not a single family home</fullName>
+                <default>false</default>
+                <label>Not a single family home</label>
+            </value>
+            <value>
+                <fullName>Not Enough Savings</fullName>
+                <default>false</default>
+                <label>Not Enough Savings</label>
+            </value>
+            <value>
+                <fullName>Not in Market</fullName>
+                <default>false</default>
+                <label>Not in Market</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Out of State/Range</fullName>
+                <default>false</default>
+                <label>Out of State/Range</label>
+            </value>
+            <value>
+                <fullName>Renter</fullName>
+                <default>false</default>
+                <label>Renter</label>
+            </value>
+            <value>
+                <fullName>Roof Issues</fullName>
+                <default>false</default>
+                <label>Roof Issues</label>
+            </value>
+            <value>
+                <fullName>Roof Type</fullName>
+                <default>false</default>
+                <label>Roof Type</label>
+            </value>
+            <value>
+                <fullName>Shading</fullName>
+                <default>false</default>
+                <label>Shading</label>
+            </value>
+            <value>
+                <fullName>Tax Liability</fullName>
+                <default>false</default>
+                <label>Tax Liability</label>
+            </value>
+            <value>
+                <fullName>Utiliy DQ</fullName>
+                <default>false</default>
+                <label>Utiliy DQ</label>
+            </value>
+            <value>
+                <fullName>Wants to be Off Grid</fullName>
+                <default>false</default>
+                <label>Wants to be Off Grid</label>
+            </value>
+            <value>
+                <fullName>Went with Competitor</fullName>
+                <default>false</default>
+                <label>Went with Competitor</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Geography</fullName>
+                <default>false</default>
+                <label>Geography</label>
+            </value>
+            <value>
+                <fullName>Don't subcontract</fullName>
+                <default>false</default>
+                <label>Don't subcontract</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <label>Not Interested</label>
+            </value>
+            <value>
+                <fullName>Unresponsive</fullName>
+                <default>false</default>
+                <label>Unresponsive</label>
+            </value>
+            <value>
+                <fullName>Out of Service Territory</fullName>
+                <default>false</default>
+                <label>Out of Service Territory</label>
+            </value>
+            <value>
+                <fullName>Moving Soon</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Moving Soon</label>
+            </value>
+            <value>
+                <fullName>Needs rescheduling</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Needs rescheduling</label>
+            </value>
+            <value>
+                <fullName>Not in right utility service area</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not in right utility service area</label>
+            </value>
+            <value>
+                <fullName>Too Busy Currently</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Too Busy Currently</label>
+            </value>
+            <value>
+                <fullName>Want to be completely off the grid</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Want to be completely off the grid</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Already Has Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Bad Contact Info</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Bad Credit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Building Type</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Duplicate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Mobile Home</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Moving</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>No Longer Interested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Out of State/Range</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Renter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Roof Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Roof Type</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Shading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Tax Liability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Utiliy DQ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Geography</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Don't subcontract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Not Interested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Unresponsive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Out of Service Territory</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

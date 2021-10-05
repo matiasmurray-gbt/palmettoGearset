@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X1_0_3rdParty_ContractReceived</fullName>
+    <booleanFilter>1 AND (2 OR ((6 OR 8) AND 7)) AND 3 And 4 AND 5</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>System_Size_Calculated_kW__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>Sub_Market__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>X3rd_Party_Partner__c</columns>
+    <columns>Contract_Received_Date__c</columns>
+    <columns>Days_Since_Contract_Received__c</columns>
+    <columns>Loan_Docs_Signed_Cash_Check_Received__c</columns>
+    <columns>Homeowner_Install_Agreement_Signed__c</columns>
+    <columns>Energy_Bill_Attached__c</columns>
+    <columns>Homeowners_Insurance_Docs_Attached__c</columns>
+    <columns>Post_Sales_Pre_Installation_Notes__c</columns>
+    <columns>Address__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>7. Contract Received</value>
+    </filters>
+    <filters>
+        <field>Contract_Received_Confirmed__c</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>Test</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.X3rd_Party_Contracted_Sales,Opportunity.X3rd_Party_Design_Sales</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>,1. Appointment Set,8. Site Audit Scheduled,8a. Site Audit Completed</value>
+    </filters>
+    <filters>
+        <field>X3rd_Party_Partner__c</field>
+        <operation>equals</operation>
+        <value>Skyta Solar</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>10. Site Approved</value>
+    </filters>
+    <label>1.0 3rd Party Contract Received</label>
+    <sharedTo>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_MA</role>
+        <role>Project_Coordinator_SC</role>
+        <role>Project_Manager_FL</role>
+        <role>Project_Manager_SC</role>
+    </sharedTo>
+</ListView>

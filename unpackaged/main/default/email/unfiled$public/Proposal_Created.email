@@ -1,0 +1,10 @@
+Your proposal for {!Opportunity.Account} has been created and can be found on the opportunity tab in salesforce.
+
+https://na24.salesforce.com/{!Opportunity.Id}
+
+See below if your designer wanted to share any specific information about this design.  
+
+{!Opportunity.Design_Notes__c}
+
+If your proposal is for a PPA, see details on the PPA pricing below:
+{!Opportunity.00N1a000005z0VH} / watt @ {!Opportunity.00N1a000005z0VR} % escalator

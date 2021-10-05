@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Less_than_1_inch_of_wire_exposed_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Less_than_1_inch_of_wire_exposed_to_PV__c , "Requires Service", -3, "Pass", 3, "Average", 1, "Needs improvement", 0, null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Less than 1 inch of wire exposed - Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

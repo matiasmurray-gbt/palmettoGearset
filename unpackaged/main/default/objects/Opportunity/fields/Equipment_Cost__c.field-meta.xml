@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipment_Cost__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(  Customer_Type__c, "Residential - Customer", 
+
+CASE(Panel_Wattage__c, 
+
+320, 1300 *  System_Size_Calculated_kW__c , 
+335, 1300 *  System_Size_Calculated_kW__c,
+360,1520 *  System_Size_Calculated_kW__c,
+300, 950 *  System_Size_Calculated_kW__c, 
+
+920 *  System_Size_Calculated_kW__c),
+
+
+0) - CASE( Roof_Type__c,"Ground Mount", 120 * System_Size_Calculated_kW__c,0) +  (Battery_Qty__c * 8000) +
+
+CASE( Location__c , "Massachusetts", 30 * System_Size_Calculated_kW__c, "New Jersey", 30 * System_Size_Calculated_kW__c,0) +  Solar_Edge_Extended_Warranty_Cost_Value__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Equipment Cost</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

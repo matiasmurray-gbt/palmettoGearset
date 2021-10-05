@@ -1,0 +1,22 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<span id="docs-internal-guid-90cf0002-66ed-9ba9-039a-d872e3722638"><span id="docs-internal-guid-11e7423c-66f1-09df-16c8-2cd44d1613fe"><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><font face="Arial"><span style="white-space: pre-wrap;">Hello {!Contact.FirstName}, 
+
+This is your dedicated customer care contact, {!User.FirstName} {!User.LastName}, reaching out to you again in order to collect some basic information about your property. In order to assist you in your journey to integrating free and clean energy into your home or property. 
+
+Our solar team needs to begin by identifying the following pieces of information. 
+
+- Home or Property Address 
+- Utility Provider 
+- Average monthly kilowatt usage (kWh) 
+
+With this information, our solar team can begin developing a custom proposal that outlines the amount of energy we would be able to offset with a solar system. 
+
+In order to conveniently meet your needs, you can reach us through any of these contact portals…. 
+
+Thank You, 
+
+{!User.FirstName} {!User.LastName}&nbsp;</span></font></p></span></span><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="background-color: rgb(255, 255, 255); vertical-align: baseline; white-space: pre-wrap;"><font face="Arial"><div>Palmetto&nbsp;</div><div>Customer Care Department&nbsp;</div><div><br></div><div><font size="2">701 E. Bay St. #413 Charleston, SC 29403&nbsp;</font></div><div><font size="2">Email: {!User.Email}&nbsp;</font></div><div><font size="2"><br></font></div><div><span style="font-size: small;">Toll Free: (855) 339-1831</span></div></font></span></div>]]></td>
+</tr>
+</table>

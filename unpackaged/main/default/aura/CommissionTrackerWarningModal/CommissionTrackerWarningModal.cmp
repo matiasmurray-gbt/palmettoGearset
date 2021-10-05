@@ -1,0 +1,12 @@
+<aura:component>
+    <aura:attribute name="commissions" type="List" />
+    <aura:attribute name="details" type="String" default="" />
+
+    <h3>{!v.details}</h3>
+    <aura:iteration items="{!v.commissions}" var="commission">
+        <div class="slds-align_absolute-center">
+            <span style="font-weight: bold;">{!commission.Name}</span>
+        </div>
+        
+    </aura:iteration>
+</aura:component>

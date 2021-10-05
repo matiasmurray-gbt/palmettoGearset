@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>ATTACH THE FOLLOWING DOCUMENTS: Build Partner Application, W9</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Trenching Follow Up Email</name>
+    <style>none</style>
+    <subject>Palmetto - Next Steps</subject>
+    <textOnly>Hi {!Contact.Name},
+
+Great talking with you just now. We&apos;re excited to have you onboarded as our trenching vendor in the CITY/REGION. Please compile the following for review so we can easily reach out with work in the future.
+
+Certificate of Insurance
+We require 4 insurance policies with the following limits. General Liability, Automobile, and Worker Comp policies with $500,000. An umbrella policy with $1,000,000 in coverage.
+Your insurance Carrier needs to add the following language to the Certificate of insurance for these policies.
+Project and owner(s) are additionally insured with respect to general liability, auto liability, and excess liability as required by the written contract. General liability coverage for additional insured applies on a primary and non-contributory basis and includes completed operations. Waiver of Subrogation applies in favor of Additional Insured with respect to General Liability, Automobile Liability, Excess Liability, and Workers Compensation policies as required by written contract and as permitted by law. Workers Compensation complies with the state statutes in which the work will be performed.
+Certificate Holder Information: Palmetto Solar, LLC, 1505 King St. Ext, Suite 114 Charleston, SC 29405
+We also need to collect your insurance loss runs from your carrier for the past 3 years to make sure there haven&apos;t been any major losses during that time.
+Fill out and return the attached Build Partner Application and W9.
+Please provide your state business license.
+If {STATE} has any requisite trade licenses for groundwork and excavating, please also provide a copy of that license.
+For the Insurance documentation, we’re happy to work directly with your insurance agent on that front. Please let us know if you‘d like to schedule a quick conference call with your agent, alternatively, you can just forward this email to your agent with us CCed so we can address any questions they have.
+
+Please let me know if you have any questions as you review and compile those documents. I’ll add them to the agenda for when we speak {DATE AND TIME OF SCHEDULED FOLLOW-UP MEETING}. Once we have all of that on file, we&apos;ll be able to call you when we have work. We&apos;ll issue you a purchase order for said scopes of work, and payment will be made 100% net 10 of the work being completed.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

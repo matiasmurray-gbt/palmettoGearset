@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Completed Alchemy Core Training</name>
+    <style>freeForm</style>
+    <subject>Completed Alchemy Core Training</subject>
+    <textOnly>Congratulations on successfully completing the Alchemy Core Training! This is a big step in jumpstarting your solar business with Palmetto.
+
+
+We just wanted to take a minute to point out some other learning/training resources we have in Alchemy. Our goal is to give you the knowledge and confidence you need to succeed as quickly as possible.
+
+
+1) Explore all relevant information pertaining to your market, approved   utilities, financial products, and Palmetto processes at https://intercom.help/alchemysupport
+
+
+2) See all Live Alchemy Webinars and Training available at https://intercom.help/alchemysupport/tutorials/alchemy-webinars-and-training-calendar
+
+
+If you have any questions along the way, please feel free to contact the Alchemy Success Team via the &quot;Chat&quot; feature (green bubble) on the bottom right hand corner in the Alchemy platform.
+
+
+
+You can also request a one on one training or coaching session with one of our Alchemy Success Coaches through this feature.
+
+
+
+Alchemy Success Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Installation Ready</name>
+    <style>freeForm</style>
+    <subject>Palmetto - Installation Ready</subject>
+    <textOnly>Hello {!Opportunity.Contact__c},
+
+
+Now that we have all of the correct permits and approvals it&apos;s time for us to install your solar system! If we haven’t done so already we&apos;ll be reaching out soon to schedule the date of your installation.
+
+
+
+At this point in the process we are also ordering your equipment, ensuring we have everything we need for the big day.
+
+
+
+In the meantime, please be on the lookout for a phone call from our scheduling team. And as always. if you have any questions, reach out to us through your Palmetto Home app feature or give us a call.
+
+
+
+Thank you,
+
+Palmetto Customer Care
+
+855-339-1831
+
+
+customercare@palmetto.com
+
+
+
+
+Palmetto Solar LLC | 1505 King Street Ext #114|Charleston, SC 29408 |8431844 |www.palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

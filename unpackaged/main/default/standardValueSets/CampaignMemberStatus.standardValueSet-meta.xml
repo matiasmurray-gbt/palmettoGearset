@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>1st Attempt</fullName>
+        <default>false</default>
+        <label>1st Attempt</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2nd Attempt</fullName>
+        <default>false</default>
+        <label>2nd Attempt</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3rd Attempt</fullName>
+        <default>false</default>
+        <label>3rd Attempt</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended</fullName>
+        <default>false</default>
+        <label>Attended</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call Attempted - Not successful</fullName>
+        <default>false</default>
+        <label>Call Attempted - Not successful</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call Completed</fullName>
+        <default>false</default>
+        <label>Call Completed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call Completed - Archive Alchemy User</fullName>
+        <default>false</default>
+        <label>Call Completed - Archive Alchemy User</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call Completed - Confirmed Active</fullName>
+        <default>false</default>
+        <label>Call Completed - Confirmed Active</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call Completed - EM Installed</fullName>
+        <default>false</default>
+        <label>Call Completed - EM Installed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call Completed - Not Interested</fullName>
+        <default>false</default>
+        <label>Call Completed - Not Interested</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call Completed - Opportunity Created</fullName>
+        <default>false</default>
+        <label>Call Completed - Opportunity Created</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call Completed - Solar System Offline</fullName>
+        <default>false</default>
+        <label>Call Completed - Solar System Offline</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call Completed - System Not Compatible</fullName>
+        <default>false</default>
+        <label>Call Completed - System Not Compatible</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call Completed  - Verbal Connection</fullName>
+        <default>false</default>
+        <label>Call Completed  - Verbal Connection</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Clicked</fullName>
+        <default>false</default>
+        <label>Clicked</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Invited</fullName>
+        <default>false</default>
+        <label>Invited</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Left Voice Mail</fullName>
+        <default>false</default>
+        <label>Left Voice Mail</label>
+    </standardValue>
+    <standardValue>
+        <fullName>No Show</fullName>
+        <default>false</default>
+        <label>No Show</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Open</fullName>
+        <default>false</default>
+        <label>Open</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opened</fullName>
+        <default>false</default>
+        <label>Opened</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Registered</fullName>
+        <default>false</default>
+        <label>Registered</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Responded</fullName>
+        <default>false</default>
+        <label>Responded</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sent</fullName>
+        <default>false</default>
+        <label>Sent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Set Appointment</fullName>
+        <default>false</default>
+        <label>Set Appointment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Submitted Form</fullName>
+        <default>false</default>
+        <label>Submitted Form</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Targeted</fullName>
+        <default>false</default>
+        <label>Targeted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>To be Called</fullName>
+        <default>false</default>
+        <label>To be Called</label>
+    </standardValue>
+    <standardValue>
+        <fullName>To Be Completed</fullName>
+        <default>false</default>
+        <label>To Be Completed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visited</fullName>
+        <default>false</default>
+        <label>Visited</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visited Booth</fullName>
+        <default>false</default>
+        <label>Visited Booth</label>
+    </standardValue>
+</StandardValueSet>

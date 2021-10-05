@@ -1,0 +1,1472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3rd_Party_Contracted_Sale</fullName>
+    <active>true</active>
+    <label>3rd Party - Contracted Sales</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>3rd Party Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canvassing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Partnerships %7C Partner-Sourced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dividend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy Dashboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>From Palmetto Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Institutional REIV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Market Managers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palmetto%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Policy%2FLicensing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>President</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased Leads %7C Call Box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased Leads %7C Clean Energy Experts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased Leads %7C Loyola Media Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased Leads %7C RGR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased Leads %7C Self Launch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recruiter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral %7C Affiliate Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral %7C Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral %7C Customer %7C App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral %7C Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Savings App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Generated Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small REIV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sun Systems Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunlight</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Biz_Dev_Customer_Type__c</picklist>
+        <values>
+            <fullName>Customer - Major Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - Esoteric %28i%2Ee%2E EB5%2C etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - HNWI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - Institutional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - MFO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - PE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - Private Credit Financing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - SFO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - VC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lender - IB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lender - Mid-Market%2FOther</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lender - Regional Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner - Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner - Channel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner - Deal Source</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner - Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service - Accountant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service - Broker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service - Lawyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service - Private wealth advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service - Tech Product Add</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Build_Partner_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved not Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do not Schedule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Off Boarded</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Builder_Neighborhood__c</picklist>
+        <values>
+            <fullName>Crescent Neighborhood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mungo Neighborhood</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Builder__c</picklist>
+        <values>
+            <fullName>Crescent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mungo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Manager__c</picklist>
+        <values>
+            <fullName>Alaina Pianetti</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alyssa Haley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Andrew Catapano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anthony Silvestri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brady Anderson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dan DeVito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethan Brown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>James Carter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Joe Taylor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jonathan Van Putten</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Joseph Saunders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lee Mauldin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>McKenna Beam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ron Cates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sean Fahey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taylor Coppin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wes Jones</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Partner_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Commission_Pricing__c</picklist>
+        <values>
+            <fullName>Custom - Flat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom - Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tiered - Alchemist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tiered - Enterprise</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Commission_Tier__c</picklist>
+        <values>
+            <fullName>Custom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Type__c</picklist>
+        <values>
+            <fullName>Business Development - REIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial - Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Channel Partner - Architects%2C Developers and Land Planners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Channel Partner - Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Channel Partner - Homebuilder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Channel Partner - Property Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - Corporate Debt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - Corporate Equity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - Corporate Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - Property Debt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - Property Equity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - Property Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - Solar Array %28entire system%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - Solar Debt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - Solar Sponsor Equity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor - Solar Tax Equity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential - Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential Channel Partner - Architects%2C Developers and Land Planners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential Channel Partner - Brokerage Co%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential Channel Partner - Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential Channel Partner - Homebuilder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential Channel Partner - Property Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunrun Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility - Customer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>How_did_you_hear_about_Palmetto__c</picklist>
+        <values>
+            <fullName>Finance Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Partner_Manager__c</picklist>
+        <values>
+            <fullName>Alaina Pianetti</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anthony Silvestri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beau Howell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courtney Klemcke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eric Knothe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eric Knothe CPR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hatham Al-Shabibi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JayDee Ballew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ken Crabb</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kevin DeSa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matt Collins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matt Collins - CPR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>McKenna Beam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Michael Crispino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Robert Hantges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Robert Hantges CPR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sean Fahey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taylor Coppin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tyler Knode</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>William Pringle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>William Pringle CPR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zack Hickerson</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Partner_Type__c</picklist>
+        <values>
+            <fullName>Kickstarter</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBU__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SDM__c</picklist>
+        <values>
+            <fullName>Joseph Saunders</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SDR__c</picklist>
+        <values>
+            <fullName>Alyssa Haley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beau Howell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courtney Klemcke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JayDee Ballew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kevin DeSa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mac Crispino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tyler Knode</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Territory__c</picklist>
+        <values>
+            <fullName>FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Scope_of_Work__c</picklist>
+        <values>
+            <fullName>Business Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ground Mount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Voltage %28Thermostat%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main Panel Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%26M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PV Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit and Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest Abatement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rafter %2F Structural Upgrades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roofing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tree Removal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trenching</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sector__c</picklist>
+        <values>
+            <fullName>Energy Efficiency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HVAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Builder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roofing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Teritorry__c</picklist>
+        <values>
+            <fullName>Alabama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alaska</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arizona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arkansas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>California</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colorado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connecticut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delaware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Florida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Georgia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hawaii</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Idaho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Illinois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indiana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iowa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kansas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kentucky</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Louisiana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maryland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Massachusetts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Michigan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minnesota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mississippi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missouri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nebraska</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nevada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Hampshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Jersey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Mexico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New York</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Carolina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Dakota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ohio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oklahoma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oregon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pennsylvania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rhode Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Carolina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Dakota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tennessee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Texas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vermont</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virginia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Washington</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Washington%2C D%2EC%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Virginia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wisconsin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wyoming</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Market__c</picklist>
+        <values>
+            <fullName>Ann Arbor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atlanta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boston Metro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bronx</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brooklyn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cape</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charleston</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charlotte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Columbia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Detroit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greenville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hilton Head</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jacksonville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Knoxville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA - Metrowest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA - North Shore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA - South Shore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA - Western</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manhattan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Memphis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miami</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Myrtle Beach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJ - Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJ - North</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJ - South</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nashville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Orleans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orlando</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Queens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raleigh-Durham</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rhode Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rock Hill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>St Bernard Parish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staten Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tampa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Status__c</picklist>
+        <values>
+            <fullName>Compliance Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do Not Reactivate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jobs Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License Expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Job Availability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety Issue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>3rd Party Property Management - Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Party Property Management - Providers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deal Flow Providers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debt Providers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equity Providers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REIT Relation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Providers</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Vendor_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Retention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Yet Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offboarded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospective</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>celigo_sfnsio__Channel_Tier__c</picklist>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End User</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>celigo_sfnsio__Credit_Hold__c</picklist>
+        <values>
+            <fullName>Auto</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Redesign_Requested_date_is_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(ISPICKVAL (Reason_1__c , "Revision 1"),
+ISPICKVAL (Reason_1__c , "Revision 2"),
+ISPICKVAL (Reason_1__c , "Revision 3")
+),
+ISBLANK( Re_Design_Requested_Date__c)
+)</errorConditionFormula>
+    <errorDisplayField>Re_Design_Requested_Date__c</errorDisplayField>
+    <errorMessage>Redesign Requested Date is required</errorMessage>
+</ValidationRule>

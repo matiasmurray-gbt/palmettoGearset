@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Select_Other_in_Product_Offered_to_Save</fullName>
+    <active>true</active>
+    <description>In retention cases, user must choose 'Other' in 'Product Offered to Save' to update "Other" Product Offered Description field</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName == 'Retention',
+    NOT( ISPICKVAL( Product_Offered_to_Save__c, 'Other' ) ),
+    NOT( ISBLANK( Other_Product_Offered_Description__c ) )
+)</errorConditionFormula>
+    <errorDisplayField>Other_Product_Offered_Description__c</errorDisplayField>
+    <errorMessage>To update this field, you must choose 'Other' in 'Product Offered to Save'</errorMessage>
+</ValidationRule>

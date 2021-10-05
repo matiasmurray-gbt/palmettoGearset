@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CT_GreenBank_Adder__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Opportunity__r.Location__c , "Connecticut",  
+
+ IF( OR(Installation_Complete_Date__c &gt; Date(2019,10,01),ISBLANK(Installation_Complete_Date__c) = True),
+
+Opportunity__r.Proposed_Incentive_Amount__c,0)  
+
+, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CT GreenBank Incentive</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

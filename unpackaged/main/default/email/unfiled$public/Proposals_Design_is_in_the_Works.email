@@ -1,0 +1,13 @@
+{!Opportunity.OwnerFirstName}
+
+Congratulations on setting an appointment for  {!Opportunity.Account}.
+
+{!Opportunity.Link}
+
+Your appointment date and time is {!Opportunity.Appointment_Date__c} at {!Opportunity.Appointment_Time__c}.
+
+The design team is working on an all-star proposal for your customer & it will be ready by COB the day before your appointment or within 24 hours of your appointment if possible.  
+
+Just as a note, proposals are prioritized based on appointment date rather than the day the appointment was set in Salesforce.  
+
+Good luck!

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ground_Mount_Adder__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE (  Opportunity__r.Roof_Type__c , "Ground Mount", 
+
+IF( Contract_Received_Confirmed_Date__c &gt; Date(2019,06,01),
+
+IF ( Opportunity__r.System_Size_Calculated_kW__c &gt; 15,400,
+
+IF( Opportunity__r.System_Size_Calculated_kW__c &gt; 7,500,
+
+900) ),
+
+
+350 )
+
+ , 0)
+
+* Opportunity__r.System_Size_Calculated_kW__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Ground Mount Adder</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

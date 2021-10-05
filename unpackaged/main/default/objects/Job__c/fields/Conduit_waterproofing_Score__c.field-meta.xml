@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conduit_waterproofing_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Conduit_Waterproofing__c , "Sealant used, weep holes drilled, arranged to drain", 3, "Weep holes missed", 2, "Not arranged to drain", 1, "No Sealant inside or outside Conduit/bodies", 0, "Requires service", -3, null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Conduit waterproofing - Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font style="" size="2">Hello&nbsp;{!Opportunity.Contact__c},<br><br>Attached to this email are the State and Federal Tax forms that you or your accountant will need to complete in order to take advantage of the solar tax credits.&nbsp;<br><br>On both forms you will need to include the cost of your solar system which is... <b style="">{!Opportunity.Amount}</b><br><br>On Form #1350 you do NOT need to fill in any of the three check boxes at the top of the page.<br><br>Please call the Palmetto Customer Care Department, or consult your CPA if you have any further questions about your tax forms.<br><br>Sincerely,&nbsp;<br><br>Palmetto Customer Care Team</font><div style=""><font size="2">customer.care@palmetto.com<br>Phone: 855-339-1831</font></div><div style=""><font size="2" style="">Office: 843-720-1844</font></div>]]></td>
+</tr>
+</table>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Deployment_Timeline__c</fullName>
+    <description>Draft where, when and how you want this delivered. Trainer will make edits/recommendations based on other projects, urgency of the training/messaging, etc</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Draft where, when and how you want this delivered. Trainer will make edits/recommendations based on other projects, urgency of the training/messaging, etc</inlineHelpText>
+    <label>Delivery &amp; Deployment Timeline</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

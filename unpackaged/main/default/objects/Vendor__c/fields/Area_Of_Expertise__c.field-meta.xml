@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Area_Of_Expertise__c</fullName>
+    <externalId>false</externalId>
+    <label>Area Of Expertise</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Solar Installation</fullName>
+                <default>false</default>
+                <label>Solar Installation</label>
+            </value>
+            <value>
+                <fullName>Solar Service</fullName>
+                <default>false</default>
+                <label>Solar Service</label>
+            </value>
+            <value>
+                <fullName>Electrician</fullName>
+                <default>false</default>
+                <label>Electrician</label>
+            </value>
+            <value>
+                <fullName>Roofing</fullName>
+                <default>false</default>
+                <label>Roofing</label>
+            </value>
+            <value>
+                <fullName>Permitting</fullName>
+                <default>false</default>
+                <label>Permitting</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

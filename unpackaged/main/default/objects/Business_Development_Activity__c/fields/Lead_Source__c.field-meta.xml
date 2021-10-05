@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Source__c</fullName>
+    <externalId>false</externalId>
+    <label>Lead Source</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bandwidth</fullName>
+                <default>false</default>
+                <label>Bandwidth</label>
+            </value>
+            <value>
+                <fullName>CAM</fullName>
+                <default>false</default>
+                <label>CAM</label>
+            </value>
+            <value>
+                <fullName>CEO</fullName>
+                <default>false</default>
+                <label>CEO</label>
+            </value>
+            <value>
+                <fullName>Channel Sales</fullName>
+                <default>false</default>
+                <label>Channel Sales</label>
+            </value>
+            <value>
+                <fullName>COO</fullName>
+                <default>false</default>
+                <label>COO</label>
+            </value>
+            <value>
+                <fullName>Corporate Partnerships | Partner-Sourced</fullName>
+                <default>false</default>
+                <label>Corporate Partnerships | Partner-Sourced</label>
+            </value>
+            <value>
+                <fullName>Digital Marketing</fullName>
+                <default>false</default>
+                <label>Digital Marketing</label>
+            </value>
+            <value>
+                <fullName>Email Marketing</fullName>
+                <default>false</default>
+                <label>Email Marketing</label>
+            </value>
+            <value>
+                <fullName>LinkedIn</fullName>
+                <default>false</default>
+                <label>LinkedIn</label>
+            </value>
+            <value>
+                <fullName>Market Manager</fullName>
+                <default>false</default>
+                <label>Market Manager</label>
+            </value>
+            <value>
+                <fullName>Member Page</fullName>
+                <default>false</default>
+                <label>Member Page</label>
+            </value>
+            <value>
+                <fullName>Operations</fullName>
+                <default>false</default>
+                <label>Operations</label>
+            </value>
+            <value>
+                <fullName>Policy/Licensing</fullName>
+                <default>false</default>
+                <label>Policy/Licensing</label>
+            </value>
+            <value>
+                <fullName>President</fullName>
+                <default>false</default>
+                <label>President</label>
+            </value>
+            <value>
+                <fullName>Recruiter</fullName>
+                <default>false</default>
+                <label>Recruiter</label>
+            </value>
+            <value>
+                <fullName>Referral | Affiliate Partner</fullName>
+                <default>false</default>
+                <label>Referral | Affiliate Partner</label>
+            </value>
+            <value>
+                <fullName>Referral | Employee</fullName>
+                <default>false</default>
+                <label>Referral | Employee</label>
+            </value>
+            <value>
+                <fullName>Self Generated Lead</fullName>
+                <default>false</default>
+                <label>Self Generated Lead</label>
+            </value>
+            <value>
+                <fullName>Indeed</fullName>
+                <default>false</default>
+                <label>Indeed</label>
+            </value>
+            <value>
+                <fullName>Glassdoor</fullName>
+                <default>false</default>
+                <label>Glassdoor</label>
+            </value>
+            <value>
+                <fullName>Zip Recruiter</fullName>
+                <default>false</default>
+                <label>Zip Recruiter</label>
+            </value>
+            <value>
+                <fullName>Retention Team</fullName>
+                <default>false</default>
+                <label>Retention Team</label>
+            </value>
+            <value>
+                <fullName>Verse.io</fullName>
+                <default>false</default>
+                <label>Verse.io</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

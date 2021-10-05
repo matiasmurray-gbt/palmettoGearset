@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Post_Install_Invoice_Amount_Calc__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( OR( ISPICKVAL( Type, "RR - Roof"), ISPICKVAL( Type, "RR - Siding"), ISPICKVAL( Type, "RR - System Inspection")) , Amount * 0.5, IF( 
+OR( 
+ISPICKVAL( Type, "Miscellaneous O&amp;M"), 
+ISPICKVAL( Type, "Removal Only"),
+ISPICKVAL( Type, "Reinstall Only"),
+ISPICKVAL( Type, "Pest Abatement"),
+ISPICKVAL( Type, "110230920 - RVAR Gen O&amp;M"), 
+ISPICKVAL( Type, "110230093 - AFCI Repairs/Inspections"), 
+ISPICKVAL( Type, "110230094 - Micro Inverter Replacements") ), Amount, Amount*0.3))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Post Install Invoice Amount (Calc)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

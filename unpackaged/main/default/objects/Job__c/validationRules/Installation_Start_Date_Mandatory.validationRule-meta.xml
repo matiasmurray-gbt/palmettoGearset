@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Installation_Start_Date_Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName == 'Installation_Scheduling' &amp;&amp;  ISBLANK( Installation_Start_Date__c ) &amp;&amp; TEXT( Flow_Status__c ) == 'Installation Scheduled'</errorConditionFormula>
+    <errorDisplayField>Installation_Start_Date__c</errorDisplayField>
+    <errorMessage>Enter Installation Start Date</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCEG_Max_Solar_System_Size_kW__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Utility__c , "South Carolina Electric&amp;Gas Co", X12_Months_Electricity_Usage_Total__c /1531, X12_Months_Electricity_Usage_Total__c *1)</formula>
+    <label>SCE&amp;G Max Solar System Size (kW) AC</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

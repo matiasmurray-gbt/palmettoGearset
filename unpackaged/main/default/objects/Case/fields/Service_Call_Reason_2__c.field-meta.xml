@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Call_Reason_2__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason 2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Property Damage</fullName>
+                <default>false</default>
+                <label>Property Damage</label>
+            </value>
+            <value>
+                <fullName>Failed Inspection</fullName>
+                <default>false</default>
+                <label>Failed Inspection</label>
+            </value>
+            <value>
+                <fullName>System Not Producing</fullName>
+                <default>false</default>
+                <label>System Not Producing</label>
+            </value>
+            <value>
+                <fullName>Communication Error</fullName>
+                <default>false</default>
+                <label>Communication Error</label>
+            </value>
+            <value>
+                <fullName>Product Replacement</fullName>
+                <default>false</default>
+                <label>Product Replacement</label>
+            </value>
+            <value>
+                <fullName>Courtesy Visit</fullName>
+                <default>false</default>
+                <label>Courtesy Visit</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

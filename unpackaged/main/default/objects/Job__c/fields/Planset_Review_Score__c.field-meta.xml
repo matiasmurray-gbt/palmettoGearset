@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Planset_Review_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Planset_Review__c , "Completely Matches", 3, "Layout and One Line Changes", 3, "As-Built Layout Design", 3, "One Line Changes", 3, "Requires Service", -3, null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Planset Review - Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

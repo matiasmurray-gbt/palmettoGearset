@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unresponsive_Customer_Validation</fullName>
+    <active>true</active>
+    <description>For Retention Cases Only</description>
+    <errorConditionFormula>AND(ISPICKVAL(CaseType__c , 'Customer Unresponsive'),
+RecordTypeId = '0122L000000VoX4',  
+AND(ISNULL(Customer_Unresponsive_to_Requests_for_Do__c),
+ISNULL(Customer_Unresponsive_to_Requests_to_Sch__c),ISNULL( Customer_Unresponsive_to_Adder_Inclusion__c),ISNULL( Customer_Unresponsive_Other__c),
+ISNULL( Customer_Unresponsive_to_Design_Change__c)))</errorConditionFormula>
+    <errorMessage>Enter Dates on "Unresponsive Customer Section"</errorMessage>
+</ValidationRule>

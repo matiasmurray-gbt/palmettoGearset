@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>How_are_you_connected_to_this_individual__c</fullName>
+    <externalId>false</externalId>
+    <label>How are you connected to this individual</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Family Member</fullName>
+                <default>false</default>
+                <label>Family Member</label>
+            </value>
+            <value>
+                <fullName>Friend</fullName>
+                <default>false</default>
+                <label>Friend</label>
+            </value>
+            <value>
+                <fullName>Business Associate</fullName>
+                <default>false</default>
+                <label>Business Associate</label>
+            </value>
+            <value>
+                <fullName>Neighbour</fullName>
+                <default>false</default>
+                <label>Neighbour</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

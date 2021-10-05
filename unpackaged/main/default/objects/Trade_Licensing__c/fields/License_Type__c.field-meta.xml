@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>License_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>License Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business License</fullName>
+                <default>false</default>
+                <label>Business License</label>
+            </value>
+            <value>
+                <fullName>Certification</fullName>
+                <default>false</default>
+                <label>Certification</label>
+            </value>
+            <value>
+                <fullName>Electrical License</fullName>
+                <default>false</default>
+                <label>Electrical License</label>
+            </value>
+            <value>
+                <fullName>General Contractor</fullName>
+                <default>false</default>
+                <label>General Contractor</label>
+            </value>
+            <value>
+                <fullName>Roofing License</fullName>
+                <default>false</default>
+                <label>Roofing License</label>
+            </value>
+            <value>
+                <fullName>Solar License</fullName>
+                <default>false</default>
+                <label>Solar License</label>
+            </value>
+            <value>
+                <fullName>Special Trade License</fullName>
+                <default>false</default>
+                <label>Special Trade License</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

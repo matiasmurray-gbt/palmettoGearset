@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Department__c</fullName>
+    <externalId>false</externalId>
+    <label>Department</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+            <value>
+                <fullName>CX</fullName>
+                <default>false</default>
+                <label>CX</label>
+            </value>
+            <value>
+                <fullName>Incentives</fullName>
+                <default>false</default>
+                <label>Incentives</label>
+            </value>
+            <value>
+                <fullName>Fulfillment</fullName>
+                <default>false</default>
+                <label>Fulfillment</label>
+            </value>
+            <value>
+                <fullName>Permitting / Inspection</fullName>
+                <default>false</default>
+                <label>Permitting / Inspection</label>
+            </value>
+            <value>
+                <fullName>Scheduling</fullName>
+                <default>false</default>
+                <label>Scheduling</label>
+            </value>
+            <value>
+                <fullName>Business Processing</fullName>
+                <default>false</default>
+                <label>Business Processing</label>
+            </value>
+            <value>
+                <fullName>Interconnection</fullName>
+                <default>false</default>
+                <label>Interconnection</label>
+            </value>
+            <value>
+                <fullName>Installation</fullName>
+                <default>false</default>
+                <label>Installation</label>
+            </value>
+            <value>
+                <fullName>O&amp;M</fullName>
+                <default>false</default>
+                <label>O&amp;M</label>
+            </value>
+            <value>
+                <fullName>Retention</fullName>
+                <default>false</default>
+                <label>Retention</label>
+            </value>
+            <value>
+                <fullName>Build Partner</fullName>
+                <default>false</default>
+                <label>Build Partner</label>
+            </value>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Design/Engineering</fullName>
+                <default>false</default>
+                <label>Design/Engineering</label>
+            </value>
+            <value>
+                <fullName>Field Ops</fullName>
+                <default>false</default>
+                <label>Field Ops</label>
+            </value>
+            <value>
+                <fullName>Fin Ops</fullName>
+                <default>false</default>
+                <label>Fin Ops</label>
+            </value>
+            <value>
+                <fullName>Orginations</fullName>
+                <default>false</default>
+                <label>Orginations</label>
+            </value>
+            <value>
+                <fullName>Pre-Con</fullName>
+                <default>false</default>
+                <label>Pre-Con</label>
+            </value>
+            <value>
+                <fullName>Sales Success</fullName>
+                <default>false</default>
+                <label>Sales Success</label>
+            </value>
+            <value>
+                <fullName>Supply Chain</fullName>
+                <default>false</default>
+                <label>Supply Chain</label>
+            </value>
+            <value>
+                <fullName>Transaction Services</fullName>
+                <default>false</default>
+                <label>Transaction Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

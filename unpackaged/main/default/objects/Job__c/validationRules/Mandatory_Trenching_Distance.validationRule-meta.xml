@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mandatory_Trenching_Distance</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(Roof_Type__c) &amp;&amp; RecordType.DeveloperName == 'Design' &amp;&amp; TEXT(Roof_Type__c) == 'Ground Mount' &amp;&amp; ISBLANK(Opportunity__r.Trenching_Distance__c)</errorConditionFormula>
+    <errorMessage>Please Enter Trenching Distance on related Opportunity.</errorMessage>
+</ValidationRule>

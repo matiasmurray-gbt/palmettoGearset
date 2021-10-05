@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scope_of_Work__c</fullName>
+    <externalId>false</externalId>
+    <label>Scope of Work</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business Development</fullName>
+                <default>false</default>
+                <label>Business Development</label>
+            </value>
+            <value>
+                <fullName>Electrical Vehicle Charging Equipment</fullName>
+                <default>false</default>
+                <label>Electrical Vehicle Charging Equipment</label>
+            </value>
+            <value>
+                <fullName>Electrical Work</fullName>
+                <default>false</default>
+                <label>Electrical Work</label>
+            </value>
+            <value>
+                <fullName>Ground Mount</fullName>
+                <default>false</default>
+                <label>Ground Mount</label>
+            </value>
+            <value>
+                <fullName>Inspection</fullName>
+                <default>false</default>
+                <label>Inspection</label>
+            </value>
+            <value>
+                <fullName>Installation</fullName>
+                <default>false</default>
+                <label>Installation</label>
+            </value>
+            <value>
+                <fullName>Low Voltage(Thermostat)</fullName>
+                <default>false</default>
+                <label>Low Voltage(Thermostat)</label>
+            </value>
+            <value>
+                <fullName>Main Panel Upgrade</fullName>
+                <default>false</default>
+                <label>Main Panel Upgrade</label>
+            </value>
+            <value>
+                <fullName>O&amp;M</fullName>
+                <default>false</default>
+                <label>O&amp;M</label>
+            </value>
+            <value>
+                <fullName>Permit and Installation</fullName>
+                <default>false</default>
+                <label>Permit and Installation</label>
+            </value>
+            <value>
+                <fullName>Permitting</fullName>
+                <default>false</default>
+                <label>Permitting</label>
+            </value>
+            <value>
+                <fullName>Pest Abatement</fullName>
+                <default>false</default>
+                <label>Pest Abatement</label>
+            </value>
+            <value>
+                <fullName>Plumbing</fullName>
+                <default>false</default>
+                <label>Plumbing</label>
+            </value>
+            <value>
+                <fullName>PV Installation</fullName>
+                <default>false</default>
+                <label>PV Installation</label>
+            </value>
+            <value>
+                <fullName>Rafter / Structural Upgrades</fullName>
+                <default>false</default>
+                <label>Rafter / Structural Upgrades</label>
+            </value>
+            <value>
+                <fullName>Re-Roof</fullName>
+                <default>false</default>
+                <label>Re-Roof</label>
+            </value>
+            <value>
+                <fullName>Roofing</fullName>
+                <default>false</default>
+                <label>Roofing</label>
+            </value>
+            <value>
+                <fullName>Storage</fullName>
+                <default>false</default>
+                <label>Storage</label>
+            </value>
+            <value>
+                <fullName>Survey</fullName>
+                <default>false</default>
+                <label>Survey</label>
+            </value>
+            <value>
+                <fullName>Tree Removal</fullName>
+                <default>false</default>
+                <label>Tree Removal</label>
+            </value>
+            <value>
+                <fullName>Trenching</fullName>
+                <default>false</default>
+                <label>Trenching</label>
+            </value>
+            <value>
+                <fullName>Inspections</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inspections</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?><SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>CREngineering</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share cases with CREngineering</description>
+        <label>CREngineering</label>
+        <sharedTo>
+            <group>Current_Renewables_Engineering</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Design Change</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Structural_Stamp_by__c</field>
+            <operation>equals</operation>
+            <value>Current Renewables</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Cases_for_Palmetto_Uers</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Cases_for_Palmetto_Uers</label>
+        <sharedTo>
+            <group>Palmetto_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Finulent</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share cases with Finulent</description>
+        <label>Finulent</label>
+        <sharedTo>
+            <group>Finulent</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Design Change</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Designed_by__c</field>
+            <operation>equals</operation>
+            <value>Finulent</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Illumine</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share cases with Illumine</description>
+        <label>Illumine</label>
+        <sharedTo>
+            <group>Illuminei</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Design Change</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Designed_by__c</field>
+            <operation>equals</operation>
+            <value>Illumine</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>PZSE</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share Cases with PZSE</description>
+        <label>PZSE</label>
+        <sharedTo>
+            <group>PZSE</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Design Change</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Structural_Stamp_by__c</field>
+            <operation>equals</operation>
+            <value>PZSE</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Wattmonk</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share cases with Wattmonk</description>
+        <label>Wattmonk</label>
+        <sharedTo>
+            <group>Wattmonk</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Design Change</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Designed_by__c</field>
+            <operation>equals</operation>
+            <value>Wattmonk</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

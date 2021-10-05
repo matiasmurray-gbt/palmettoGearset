@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Solar</letterhead>
+    <name>Additional_Information</name>
+    <style>freeForm</style>
+    <subject>Additional Requested Information</subject>
+    <textOnly>Hello {!Contact.FirstName} {!Contact.LastName}
+
+&quot;Palmetto Emp. Name&quot; here with Palmetto Solar.  I wanted to personally connect with you and tell you how much we appreciate your interest in working with Palmetto Solar.  We understand that you might have a lot of questions about solar energy and how it can help save you money on your energy costs. 
+
+Based on your specific questions about solar energy or Palmetto Solar we have provided several links to specific sections of our website to help answer any of your questions.
+
+How Solar Energy Systems Work
+http://www.palmetto.com/solar-energy-works/
+
+
+3 Steps to Integrating Solar Energy
+http://www.palmetto.com/home-solar-process/
+
+Benefits of Solar Energy
+http://www.palmetto.com/solar-energy-benefits/
+
+How do solar tax credits work?
+http://www.palmetto.com/solar-tax-credits/
+
+
+The first step we need to take is setting a time for our energy specialist to meet with you at your home to outline your solar system and determine the amount you could be saving with your custom designed solar system. 
+
+You can contact Palmetto Customer Care to set up a free consultation with an energy specialist.
+
+Phone: 855-339-1831
+
+Email: customer.care@palmetto.com
+
+
+Palmetto™
+
+701 East Bay Street, #413, Charleston, SC 29403
+Main: 843-720-1844
+Mobile: 843.860.6522
+Palmetto.com
+
+Leading the world towards a clean energy future.
+
+Palmetto™ is a multinational clean energy company based out of Charleston, South Carolina. Palmetto™ is a vertically integrated finance, design, development, technology, construction and management company. Our sole purpose is to drive the world towards a clean energy future. Please visit our website(s) for more information.
+
+This communication is sent by The Palmetto Group (“Palmetto”) or one of its affiliates. Palmetto™ has a Registered office at: 701 East Bay, Suite #413, Charleston, South Carolina, United States of America, 29403. More information on Palmetto™ is available at Palmetto.com Everything in this email and any attachments relating to the official business of Palmetto™ and any or all subsidiaries, (&quot;the Company&quot;), is proprietary to the Company. It is confidential, legally privileged and protected by relevant laws.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

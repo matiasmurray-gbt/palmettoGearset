@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunities_With_Contract_Signed</fullName>
+    <booleanFilter>(1 OR 3) AND 2</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Installation_Start_Date__c</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Contract Received,Site Approved,Interconnection Sent,Permit Sent</value>
+    </filters>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Permit Ready,Permit Received,Installation</value>
+    </filters>
+    <label>Resi Opportunities With Contract Signed</label>
+</ListView>

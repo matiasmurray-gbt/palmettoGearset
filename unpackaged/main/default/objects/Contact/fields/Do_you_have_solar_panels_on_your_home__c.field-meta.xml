@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_you_have_solar_panels_on_your_home__c</fullName>
+    <externalId>false</externalId>
+    <label>Do you have solar panels on your home?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Do_you_have_solar_panels_on_your_home</valueSetName>
+    </valueSet>
+</CustomField>

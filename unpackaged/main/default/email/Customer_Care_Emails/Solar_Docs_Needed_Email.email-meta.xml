@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Solar Docs Needed Email</name>
+    <style>freeForm</style>
+    <subject>Solar Document Request</subject>
+    <textOnly>Hello {!Opportunity.Contact__c},
+
+
+
+We are ready to move along with the next steps in your solar installation process. However we require a few action items in order to proceed. May we please enlist your help with the following:
+
+
+
+- Homeowner’s Insurance Declaration Page (HOI): This document is required from the utility. It details homeowner name/address, dates of coverage, and personal liability coverage amount.
+
+
+
+- Utility Bill Copy: A copy of a recent utility bill detailing your name, address, and account number.
+
+
+
+- Interconnection Documents E-SIGNATURE: This has been sent to your email for your E-SIGNATURE. They are standard documents required by the utility.
+
+
+
+- Homeowner’s Association Contact Information (H.O.A.): We must obtain H.O.A. approval in order to install your system. Please let us know your H.O.A. name/contact and we will reach out to them and sent the necessary documentation
+
+
+- Recent W-2 Form OR Copy of 2 Most Recent Pay-stubs: We are finalizing your loan paperwork and require these documents in order to finalize and move forward with the next steps
+
+
+We can receive scanned copy OR photo to customer.care@palmetto.com
+
+Once received, we will be able to move along with the next steps.
+
+
+If we can be of any assistance, please don’t hesitate to call us directly at 855-339-1831
+
+
+
+Thank You,
+
+
+
+Palmetto Customer Care Dept.
+
+855-339-1831
+
+Customer.care@palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

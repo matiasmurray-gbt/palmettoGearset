@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Step 10 - Permit Approved - Equip Ordered</name>
+    <style>freeForm</style>
+    <subject>Update From Palmetto On Your Project</subject>
+    <textOnly>Hello {!Opportunity.Contact__c},
+
+We hope your day is going well.  We here at Palmetto wanted to provide you with an update on your current solar installation.
+
+If you have any questions please reach out to the Palmetto Customer Care Team.
+
+
+
+Thank You,
+
+Palmetto Customer Care
+855-339-1831
+customer.care@palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

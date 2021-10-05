@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Solar</letterhead>
+    <name>New Job Opportunity Template for LinkedIn/Email</name>
+    <style>freeForm</style>
+    <subject>We’re hiring and we’re excited about your experience!</subject>
+    <textOnly>Dear {!Opportunity.Contact_First_Name__c},
+
+We have started hiring for a newly opened position, Independent Palmetto Alchemist--and we think you might be interested! We&apos;d love the opportunity to chat with you in further detail.
+
+We look forward to your application!
+
+Sincerely,
+
+Bryan Hoffman
+Palmetto Alchemist Account Manager
+(843) 996-4596</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

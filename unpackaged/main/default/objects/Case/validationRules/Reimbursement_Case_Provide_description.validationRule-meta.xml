@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reimbursement_Case_Provide_description</fullName>
+    <active>true</active>
+    <description>This validation rules evalutes if the record type of the case is Reimbursement and if the Reason 1 is equal to 'Other', the user should enter a value in the field 'Other:'</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName == 'Reimbursement',
+    ISPICKVAL(Reason_1__c, 'Other'),
+    ISBLANK(Other__c)
+)</errorConditionFormula>
+    <errorDisplayField>Other__c</errorDisplayField>
+    <errorMessage>Please provide a description of the Reason.</errorMessage>
+</ValidationRule>

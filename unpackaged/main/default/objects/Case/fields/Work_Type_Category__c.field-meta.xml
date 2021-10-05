@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_Type_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Work Type Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>CaseType__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Remote Troubleshoot</fullName>
+                <default>false</default>
+                <label>Remote Troubleshoot</label>
+            </value>
+            <value>
+                <fullName>System Troubleshoot</fullName>
+                <default>false</default>
+                <label>System Troubleshoot</label>
+            </value>
+            <value>
+                <fullName>System Failure</fullName>
+                <default>false</default>
+                <label>System Failure</label>
+            </value>
+            <value>
+                <fullName>Verify Activation</fullName>
+                <default>false</default>
+                <label>Verify Activation</label>
+            </value>
+            <value>
+                <fullName>Inverter Replacement</fullName>
+                <default>false</default>
+                <label>Inverter Replacement</label>
+            </value>
+            <value>
+                <fullName>Inverter Troubleshoot</fullName>
+                <default>false</default>
+                <label>Inverter Troubleshoot</label>
+            </value>
+            <value>
+                <fullName>Envoy replacement</fullName>
+                <default>false</default>
+                <label>Envoy replacement</label>
+            </value>
+            <value>
+                <fullName>Envoy Troubleshoot</fullName>
+                <default>false</default>
+                <label>Envoy Troubleshoot</label>
+            </value>
+            <value>
+                <fullName>Within Tolerance</fullName>
+                <default>false</default>
+                <label>Within Tolerance</label>
+            </value>
+            <value>
+                <fullName>Microinverter Troubleshoot</fullName>
+                <default>false</default>
+                <label>Microinverter Troubleshoot</label>
+            </value>
+            <value>
+                <fullName>Microinverter Replacement</fullName>
+                <default>false</default>
+                <label>Microinverter Replacement</label>
+            </value>
+            <value>
+                <fullName>Critter Guard Install</fullName>
+                <default>false</default>
+                <label>Critter Guard Install</label>
+            </value>
+            <value>
+                <fullName>Module repair</fullName>
+                <default>false</default>
+                <label>Module repair</label>
+            </value>
+            <value>
+                <fullName>Roof Leak Repair</fullName>
+                <default>false</default>
+                <label>Roof Leak Repair</label>
+            </value>
+            <value>
+                <fullName>Site Damage Assessment</fullName>
+                <default>false</default>
+                <label>Site Damage Assessment</label>
+            </value>
+            <value>
+                <fullName>Module Damage Assessment</fullName>
+                <default>false</default>
+                <label>Module Damage Assessment</label>
+            </value>
+            <value>
+                <fullName>Roof Leak Investigation</fullName>
+                <default>false</default>
+                <label>Roof Leak Investigation</label>
+            </value>
+            <value>
+                <fullName>System Inspection</fullName>
+                <default>false</default>
+                <label>System Inspection</label>
+            </value>
+            <value>
+                <fullName>Closeout Punchlist</fullName>
+                <default>false</default>
+                <label>Closeout Punchlist</label>
+            </value>
+            <value>
+                <fullName>Meter Troubleshoot</fullName>
+                <default>false</default>
+                <label>Meter Troubleshoot</label>
+            </value>
+            <value>
+                <fullName>Monitor Troubleshoot</fullName>
+                <default>false</default>
+                <label>Monitor Troubleshoot</label>
+            </value>
+            <value>
+                <fullName>Module Installation</fullName>
+                <default>false</default>
+                <label>Module Installation</label>
+            </value>
+            <value>
+                <fullName>Monitoring Device Installation</fullName>
+                <default>false</default>
+                <label>Monitoring Device Installation</label>
+            </value>
+            <value>
+                <fullName>Thermostat Installation</fullName>
+                <default>false</default>
+                <label>Thermostat Installation</label>
+            </value>
+            <value>
+                <fullName>System Removal</fullName>
+                <default>false</default>
+                <label>System Removal</label>
+            </value>
+            <value>
+                <fullName>System Installation</fullName>
+                <default>false</default>
+                <label>System Installation</label>
+            </value>
+            <value>
+                <fullName>System Removal and Reinstallation</fullName>
+                <default>false</default>
+                <label>System Removal and Reinstallation</label>
+            </value>
+            <value>
+                <fullName>Module Wash</fullName>
+                <default>false</default>
+                <label>Module Wash</label>
+            </value>
+            <value>
+                <fullName>System Check</fullName>
+                <default>false</default>
+                <label>System Check</label>
+            </value>
+            <value>
+                <fullName>System Reinstallation</fullName>
+                <default>false</default>
+                <label>System Reinstallation</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Site Conditions</controllingFieldValue>
+            <valueName>Module Installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Conditions</controllingFieldValue>
+            <valueName>Monitoring Device Installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Conditions</controllingFieldValue>
+            <valueName>Thermostat Installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Removal &amp; Reinstallation</controllingFieldValue>
+            <valueName>System Removal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Removal &amp; Reinstallation</controllingFieldValue>
+            <valueName>System Installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Removal &amp; Reinstallation</controllingFieldValue>
+            <valueName>System Removal and Reinstallation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Removal &amp; Reinstallation</controllingFieldValue>
+            <valueName>System Reinstallation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <controllingFieldValue>Roof Leak</controllingFieldValue>
+            <valueName>Roof Leak Repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <valueName>Site Damage Assessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <valueName>Module Damage Assessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <controllingFieldValue>Roof Leak</controllingFieldValue>
+            <valueName>Roof Leak Investigation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <controllingFieldValue>Preventative Maintenance</controllingFieldValue>
+            <valueName>System Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inverter Alert</controllingFieldValue>
+            <valueName>Inverter Replacement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inverter Alert</controllingFieldValue>
+            <valueName>Inverter Troubleshoot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inverter Alert</controllingFieldValue>
+            <valueName>Envoy replacement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inverter Alert</controllingFieldValue>
+            <valueName>Envoy Troubleshoot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Closeout</controllingFieldValue>
+            <valueName>Closeout Punchlist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter/Monitoring Issue</controllingFieldValue>
+            <valueName>Meter Troubleshoot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter/Monitoring Issue</controllingFieldValue>
+            <valueName>Monitor Troubleshoot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Module Alert</controllingFieldValue>
+            <valueName>Within Tolerance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Module Alert</controllingFieldValue>
+            <valueName>Microinverter Troubleshoot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Module Alert</controllingFieldValue>
+            <valueName>Microinverter Replacement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Communication</controllingFieldValue>
+            <controllingFieldValue>Production</controllingFieldValue>
+            <valueName>System Troubleshoot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Communication</controllingFieldValue>
+            <valueName>Verify Activation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pest Abatement</controllingFieldValue>
+            <valueName>Critter Guard Install</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pest Abatement</controllingFieldValue>
+            <valueName>Module repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preventative Maintenance</controllingFieldValue>
+            <valueName>Module Wash</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preventative Maintenance</controllingFieldValue>
+            <valueName>System Check</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Production</controllingFieldValue>
+            <valueName>Remote Troubleshoot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Production</controllingFieldValue>
+            <valueName>System Failure</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

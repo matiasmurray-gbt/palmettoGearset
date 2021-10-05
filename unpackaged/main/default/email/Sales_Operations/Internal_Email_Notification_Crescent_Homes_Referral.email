@@ -1,0 +1,7 @@
+Opportunity has reached Contract Received Stage.
+
+Account - {!Opportunity.Account}
+Opportunity Name - {!Opportunity.Name}
+Referred By - {!Opportunity.Referred_By_Name__c}
+Referred By Email - {!Opportunity.00N1a000009VRDR}
+Link to Opportunity - {!Opportunity.Link}

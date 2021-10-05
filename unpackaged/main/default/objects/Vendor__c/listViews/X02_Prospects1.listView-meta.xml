@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X02_Prospects1</fullName>
+    <columns>Interested_In__c</columns>
+    <columns>State__c</columns>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Stage__c</columns>
+    <columns>Reasons__c</columns>
+    <columns>Scope_Trademarks__c</columns>
+    <columns>Service_Territory__c</columns>
+    <columns>Vendor_Type__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>Description__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Prospect</value>
+    </filters>
+    <label>02. Prospects</label>
+</ListView>

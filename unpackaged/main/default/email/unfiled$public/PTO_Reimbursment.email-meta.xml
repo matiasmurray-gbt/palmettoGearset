@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>PTO</letterhead>
+    <name>PTO Reimbursment</name>
+    <style>freeForm</style>
+    <subject>Important Information About Your Solar Project</subject>
+    <textOnly>Hello,{!Opportunity.Contact_First_Name__c}.
+
+
+We are reaching out with important updates and instructions regarding your Solar Installation Project!
+
+
+At Palmetto, our Customers&apos; experience is our number one priority and we hope that you are as excited about your Solar project as we are. While we strive to deliver projects that move along smoothly with reputable timelines, variables outside our control sometimes arise which result in minor delays.
+
+
+In addition to our Palmetto Promise of stellar customer service, it is also our belief that you should not be responsible for any payments on your Solar Loan until we have fully completed your Solar project. We therefore guarantee that if you do not have Permission To Operate (PTO) from your Utility company within 60 days of your installation date. We will automatically reimburse you for the first loan payment! This belief, and our follow through, is one of the many things that sets up apart from our competitors and makes our partnership with you all the more solid.
+
+
+Please rest assured that we are working diligently to navigate any barriers and get your Solar project completed on time. In the interim, the below Q&amp;A will provide guidance so that you are aware of potential next steps.
+
+
+Q: At what point am I eligible to receive a payment reimbursement?
+
+A: We guarantee that if you do not have PTO from your Utility company within 60 days of your installation date, we will automatically reimburse you for the first loan payment. You MUST be 60 days from the initial installation date to be eligible.
+
+
+Q: Should I still make my initial Solar Loan payment as scheduled?
+
+A:YES. In order to be reimbursed, you will need to make your initial payment as scheduled on the due date.
+
+
+Q: When can I expect to receive the reimbursement payment?
+
+A: You will receive the reimbursement payment no later than 4-6 weeks after the 60 day mark from your initial installation date.
+
+
+Q: Aside from making my initial Solar Loan payment is there anything else I need to do?
+
+A: NO. Our Customer Care team closely monitors the progress of our Solar projects and your reimbursement payment will be automatically triggered if you do not have PTO from your Utility company within 60 days of your installation date.
+
+
+Q: What if my project is delayed longer than 60 days from my initial installation date?
+
+A: In the event that PTO from your Utility company is further delayed, please continue to make your Solar Loan payments on time as scheduled and Palmetto will continue to issue you automatic reimbursement payments until your system is energized and operational.
+
+If you have any additional questions, please contact us at 855-339-1831! Thank you again for being a part of the Palmetto family.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Material_Cost_for_Use_Tax_Actual__c</fullName>
+    <externalId>false</externalId>
+    <formula>Case(Panel_Wattage__c ,
+
+320, 1200 * System_Size_Calculated_kW__c, 
+335, 1200 * System_Size_Calculated_kW__c, 
+
+
+950 * System_Size_Calculated_kW__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Material Cost for Use Tax (Actual)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

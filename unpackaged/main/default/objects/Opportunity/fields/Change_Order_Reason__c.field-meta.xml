@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_Order_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Change Order Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cancellation Pending</fullName>
+                <default>false</default>
+                <label>Cancellation Pending</label>
+            </value>
+            <value>
+                <fullName>Sunlight Stip</fullName>
+                <default>false</default>
+                <label>Contract / Loan Change</label>
+            </value>
+            <value>
+                <fullName>Customer Failing to Action</fullName>
+                <default>false</default>
+                <label>Customer Failing to Action</label>
+            </value>
+            <value>
+                <fullName>Customer Delay</fullName>
+                <default>false</default>
+                <label>Customer Unresponsive</label>
+            </value>
+            <value>
+                <fullName>EE/Offset Discrepancy</fullName>
+                <default>false</default>
+                <label>EE/Offset Discrepancy</label>
+            </value>
+            <value>
+                <fullName>Electrical Upgrade Required</fullName>
+                <default>false</default>
+                <label>Electrical Upgrade Required</label>
+            </value>
+            <value>
+                <fullName>Design Change</fullName>
+                <default>false</default>
+                <label>Engineering / Design Change</label>
+            </value>
+            <value>
+                <fullName>Financier Hard Stipulations</fullName>
+                <default>false</default>
+                <label>Financier Hard Stipulations</label>
+            </value>
+            <value>
+                <fullName>Financier Multiple Hard Stipulations</fullName>
+                <default>false</default>
+                <label>Financier Multiple Hard Stipulations</label>
+            </value>
+            <value>
+                <fullName>Financier Soft Stipulation</fullName>
+                <default>false</default>
+                <label>Financier Soft Stipulation</label>
+            </value>
+            <value>
+                <fullName>Financier Stipulation</fullName>
+                <default>false</default>
+                <label>Financier Stipulation</label>
+            </value>
+            <value>
+                <fullName>HOA Denial</fullName>
+                <default>false</default>
+                <label>HOA Denial</label>
+            </value>
+            <value>
+                <fullName>Multiple Items to be Addressed</fullName>
+                <default>false</default>
+                <label>Multiple Items to be Addressed</label>
+            </value>
+            <value>
+                <fullName>Reroof / Tree Removal Delay</fullName>
+                <default>false</default>
+                <label>Reroof</label>
+            </value>
+            <value>
+                <fullName>Structural Issues</fullName>
+                <default>false</default>
+                <label>Structural Issues</label>
+            </value>
+            <value>
+                <fullName>Sunnova Back End Change</fullName>
+                <default>false</default>
+                <label>Sunnova Back End Change</label>
+            </value>
+            <value>
+                <fullName>Sunnova Customer Facing Change</fullName>
+                <default>false</default>
+                <label>Sunnova Customer Facing Change</label>
+            </value>
+            <value>
+                <fullName>Tree Removal Delay</fullName>
+                <default>false</default>
+                <label>Tree Removal Delay</label>
+            </value>
+            <value>
+                <fullName>Utility Denial</fullName>
+                <default>false</default>
+                <label>Utility Denial</label>
+            </value>
+            <value>
+                <fullName>Virtual Survey Incomplete</fullName>
+                <default>false</default>
+                <label>Virtual Survey Incomplete</label>
+            </value>
+            <value>
+                <fullName>Engineer Denial</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Engineer Denial</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

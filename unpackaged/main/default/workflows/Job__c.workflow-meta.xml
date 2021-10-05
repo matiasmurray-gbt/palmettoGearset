@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>AskNicely_Rocket_Promissory_Note_Signed_Survey</fullName>
+        <ccEmails>palmetto_dd32162@trigger.asknice.ly</ccEmails>
+        <description>AskNicely Rocket Promissory Note Signed Survey</description>
+        <protected>false</protected>
+        <senderAddress>customer.care@palmetto.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/AskNicely_Rocket_Promissory_Note_Signed_Survey</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Populate_QC_Approved_Date</fullName>
+        <field>QC_Approved_Date__c</field>
+        <formula>Today()</formula>
+        <name>Populate QC Approved Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateFeeAmount</fullName>
+        <description>Updates the value of Fee Amount on Job to match the value of Amount on related Opportunity</description>
+        <field>Amount__c</field>
+        <formula>Opportunity__r.Amount</formula>
+        <name>UpdateFeeAmount</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Change_Order_Notes</fullName>
+        <field>Change_Order_Notes__c</field>
+        <formula>Opportunity__r.Installation_Field_Error_Notes__c</formula>
+        <name>Update Change Order Notes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Customer_Notes</fullName>
+        <field>Customer_Notes__c</field>
+        <formula>Opportunity__r.Customer_Notes__c</formula>
+        <name>Update Customer Notes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Design_Notes</fullName>
+        <field>Design_Notes__c</field>
+        <formula>Opportunity__r.Design_Notes__c</formula>
+        <name>Update Design Notes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Post_Pre_Sale_Notes</fullName>
+        <field>Post_sale_pre_install_Notes__c</field>
+        <formula>Opportunity__r.Post_Sales_Pre_Installation_Notes__c</formula>
+        <name>Update Post/Pre Sale Notes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Site_Audit_Notes</fullName>
+        <field>Site_Audit_Notes__c</field>
+        <formula>Opportunity__r.Site_Audit_Notes__c</formula>
+        <name>Update Site Audit Notes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Utility_Incentive_Rate</fullName>
+        <field>Utility_Incentive_Rate__c</field>
+        <formula>IF(TEXT( Opportunity__r.Utility__c ) = 'Commonwealth Edison Co',  FLOOR(RECs__c * 0.8 * 70.05),  IF(TEXT(Opportunity__r.Utility__c) = 'Ameren Illinois', FlOOR(RECs__c * 0.8 * 81.70), NULL) )</formula>
+        <name>Update Utility Incentive Rate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_job_status</fullName>
+        <field>Job_Status__c</field>
+        <literalValue>Closed</literalValue>
+        <name>Update job status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Calculate Utility Incentive Rate</fullName>
+        <actions>
+            <name>Update_Utility_Incentive_Rate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Job__c.Utility_Incentive_Rate__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Job__c.RECs__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Close Pre-contract Site Approval Job</fullName>
+        <actions>
+            <name>Update_job_status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(     RecordType.DeveloperName = 'Pre_contract_Site_Approval',     ISCHANGED(Job_completed__c),     Job_completed__c = true )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Close Pre-contract Virtual Survey Job</fullName>
+        <actions>
+            <name>Update_job_status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(     RecordType.DeveloperName = 'Pre_contract_Virtual_Survey',     ISCHANGED(Job_completed__c),     Job_completed__c = true )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Pull  Notes from Opportunity to Jobs</fullName>
+        <actions>
+            <name>Update_Change_Order_Notes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Customer_Notes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Post_Pre_Sale_Notes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Site_Audit_Notes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>True</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update QC approved Date</fullName>
+        <actions>
+            <name>Populate_QC_Approved_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <field>Job__c.Flow_Status__c</field>
+            <operation>equals</operation>
+            <value>QC Approved With Exceptions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Job__c.Flow_Status__c</field>
+            <operation>equals</operation>
+            <value>QC Approved - Field Remedies Needed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Job__c.Flow_Status__c</field>
+            <operation>equals</operation>
+            <value>QC Approved Complete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Job__c.QC_Approved_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update_Amount_Fee_From_Opp</fullName>
+        <actions>
+            <name>UpdateFeeAmount</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR(
+  Amount__c  &lt;&gt;  Opportunity__r.Amount,
+  ISBLANK(TEXT(Amount__c))
+)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

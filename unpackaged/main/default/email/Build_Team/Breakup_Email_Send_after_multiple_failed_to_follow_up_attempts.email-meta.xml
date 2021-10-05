@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Breakup Email - Send after multiple failed to follow-up attempts.</name>
+    <style>none</style>
+    <subject>Palmetto Solar - We&apos;d like to Partner with {Company Name}</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+I&apos;ve tried reaching out to you since our initial conversation back on {DATE}, with no response. Please let me know if you&apos;re still interested in partnering with Palmetto to help with the occasional Scope of work(Electrical work etc), otherwise, we&apos;ll assume you&apos;ve lost interest or are too busy with existing work to partner at this time.
+
+Please let me know if I&apos;m mistaken, or feel free to reach out in the future when partnering is more of a priority.
+
+Warm Regards,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

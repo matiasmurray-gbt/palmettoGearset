@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Energy_Specialist_Commission_Plans</fullName>
+    <columns>NAME</columns>
+    <columns>Energy_Specialist_Corporate__c</columns>
+    <columns>Energy_Specialist_Self_Gen__c</columns>
+    <columns>Milestone_1_Percent__c</columns>
+    <columns>Milestone_2_Percent__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Plan__c</field>
+        <operation>equals</operation>
+        <value>Energy Specialist</value>
+    </filters>
+    <label>Energy Specialist Commission Plans</label>
+</ListView>

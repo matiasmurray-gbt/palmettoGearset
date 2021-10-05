@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Install_Cost_Watt__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(  Location__c  ,  
+"Massachusetts", 0.72,
+"New Jersey", 0.63,
+"Rhode Island", 0.72,
+"Florida", 0.48  ,
+"Illinois", Case(  Installation_Team__c,"Re-Think", 0.95, 0.67),
+0.58)</formula>
+    <label>Install $Cost / Watt</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inside_Sales_Rep__c</fullName>
+    <externalId>false</externalId>
+    <label>Inside Sales Rep</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bennett Barton</fullName>
+                <default>false</default>
+                <label>Bennett Barton</label>
+            </value>
+            <value>
+                <fullName>Chris Graham</fullName>
+                <default>false</default>
+                <label>Chris Graham</label>
+            </value>
+            <value>
+                <fullName>Elijah Brown</fullName>
+                <default>false</default>
+                <label>Elijah Brown</label>
+            </value>
+            <value>
+                <fullName>Ken Crabb</fullName>
+                <default>false</default>
+                <label>Ken Crabb</label>
+            </value>
+            <value>
+                <fullName>McKenna Beam</fullName>
+                <default>false</default>
+                <label>McKenna Beam</label>
+            </value>
+            <value>
+                <fullName>Taylor Coppin</fullName>
+                <default>false</default>
+                <label>Taylor Coppin</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

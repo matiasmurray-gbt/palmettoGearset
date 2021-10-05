@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financier_Paid_in_Full__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check if the Financier has remittance all funds for the project.</description>
+    <externalId>false</externalId>
+    <label>Financier Paid in Full</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

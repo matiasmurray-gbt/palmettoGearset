@@ -1,0 +1,67 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" controller="PermitJobOpportunityController" access="global">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="opportunity" type="Opportunity" default="{ 'sobjectType': 'Opportunity' }"/>
+    <aura:attribute name="docuSignList" type="Object[]" />
+    <aura:attribute name="googleDocsList" type="Object[]" />
+    <aura:attribute name="oppId" type="String" />
+    
+    <lightning:card >
+        <aura:set attribute="title">
+            <lightning:icon iconName="standard:opportunity" alternativeText="Opportunity" title="Opportunity" />
+            Opportunity Information
+        </aura:set>
+        <div class="slds-grid slds-box">
+            <div class="slds-col slds-size_1-of-2">
+                <div class="field"> Authority Having Jurisdiction:&nbsp; <force:outputField class="black" value="{!v.opportunity.Authority_Having_Jurisdiction__c}"/></div>
+                <hr></hr>
+                <div class="field"> Home Owner Email Address:&nbsp; <force:outputField class="black" value="{!v.opportunity.Email__c}"/></div>
+                <hr></hr>
+                <div class="field"> Home Owner Phone Number:&nbsp; <force:outputField class="black" value="{!v.opportunity.Phone__c}"/></div>
+                <hr></hr>
+                <div class="field"> Open Retention Case?:&nbsp; <force:outputField class="black" value="{!v.opportunity.Open_Retention_Case__c}"/></div>
+                <hr></hr>
+                <div class="field"> Contract Amount:&nbsp; <ui:outputCurrency class="black" value="{!v.opportunity.Contract.Amount__c}"/></div>
+                <hr></hr>
+            </div>
+
+            <div class="slds-col slds-size_1-of-2">
+                <div class="field"> Inverter 1:&nbsp; <force:outputField class="black" value="{!v.opportunity.Inverter_1__c}"/></div>
+                <hr></hr>
+                <div class="field"> Inverter 2:&nbsp; <force:outputField class="black" value="{!v.opportunity.Inverter_2__c}"/></div>
+                <hr></hr>
+                <div class="field"> Number of Solar Panels:&nbsp; <force:outputField class="black" value="{!v.opportunity.Number_of_Solar_Panels__c}"/></div>
+                <hr></hr>
+            </div>
+        </div>
+
+            <div class="slds-grid" style="margin:1rem;">
+                <div class="slds-col slds-size_1-of-2">
+                    <aura:if isTrue="{!not(empty(v.docuSignList))}">
+                        <div>
+                            <lightning:icon iconName="standard:note" alternativeText="DocuSign" title="DocuSign" />
+                            <b style="padding: 0.5rem;">DocuSign Link</b>
+                        </div>
+                        <br/>
+                        <aura:iteration items="{!v.docuSignList}" var="docuSign">
+                            <div class="field"> <a href="{!docuSign.link}" target="_blank"> {!docuSign.name}</a> </div>
+                        </aura:iteration>
+                    </aura:if>
+                </div>
+
+                <div class="slds-col slds-size_1-of-2" >
+                    <aura:if isTrue="{!not(empty(v.googleDocsList))}">
+                        <div>
+                            <lightning:icon iconName="standard:document" alternativeText="Opportunity" title="Opportunity" />
+                            <b style="padding: 0.5rem;">Google Docs Link</b>
+                        </div>
+                        <br/>
+                        <aura:iteration items="{!v.googleDocsList}" var="googleDoc">
+                            <div class="field"> <a href="{!googleDoc.link}" target="_blank"> {!googleDoc.name}</a> </div>
+                        </aura:iteration>
+                    </aura:if>
+                </div>
+
+            </div>
+    </lightning:card>
+</aura:component>

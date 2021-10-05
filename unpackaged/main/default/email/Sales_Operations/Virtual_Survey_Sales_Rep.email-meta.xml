@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Virtual Survey-Sales Rep</name>
+    <style>freeForm</style>
+    <subject>Virtual Site Survey For Solar Project</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+Thank you for opting in to the Virtual Survey for your Customer.
+
+Below is a link to the form. You&apos;ll need to allow 5 to 10 minutes to complete this.
+
+Tip: It&apos;s best to complete this from your cell phone or tablet device, as you can quickly and easily upload the photos.
+
+Click here to get started!
+https://palmetto.formstack.com/forms/remote_site_assessment
+
+Once complete, our experienced Design team will review the information, and immediately get started on the custom Design.
+
+If you have any questions or need assistance, please contact us at 843-720-1844.
+
+Palmetto Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

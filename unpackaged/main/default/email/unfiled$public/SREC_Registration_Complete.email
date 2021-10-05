@@ -1,0 +1,15 @@
+{!Account.Name} 
+
+{!Account.BillingAddress}
+
+System Size: {!Contact.System_Size_kW__c}
+
+SREC Option: Forward Contract - Monthly
+
+SREC Monthly Fix Amount:  {!Opportunity.SREC_Fixed_Payment_Amount__c}
+
+PTO Date:  {!Opportunity.Net_Meter_Install_Date__c}
+
+Thanks,
+
+Palmetto

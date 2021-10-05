@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Materials_Direct_To_Site_Confirmation_Re</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(Materials_Direct_To_Site_Confirmation__c) == 'Yes' &amp;&amp; ISBLANK( Materials_Direct_To_Site_Instructions__c)</errorConditionFormula>
+    <errorDisplayField>Materials_Direct_To_Site_Instructions__c</errorDisplayField>
+    <errorMessage>Materials-Direct-To-Site Instructions is required when Materials-Direct-To-Site Confirmation is selected as Yes.</errorMessage>
+</ValidationRule>

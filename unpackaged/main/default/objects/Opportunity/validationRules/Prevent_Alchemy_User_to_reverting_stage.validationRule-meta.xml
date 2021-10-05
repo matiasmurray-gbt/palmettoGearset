@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Alchemy_User_to_reverting_stage</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+	OR(
+	TEXT (PRIORVALUE( StageName )) = '7. Contract Received',
+	TEXT (PRIORVALUE( StageName )) = '7a. Contract Received Confirmed',
+	TEXT (PRIORVALUE( StageName )) = '8. Site Audit Scheduled',
+	TEXT (PRIORVALUE( StageName )) = '8a. Site Audit Completed',
+	TEXT (PRIORVALUE( StageName )) = '9. Change Order Pending',
+	TEXT (PRIORVALUE( StageName )) = '10. Site Approved',
+	TEXT (PRIORVALUE( StageName )) = '11. Interconnection Sent',
+	TEXT (PRIORVALUE( StageName )) = '12. Engineering Package Sent',
+	TEXT (PRIORVALUE( StageName )) = '13. Engineering Design Complete',
+	TEXT (PRIORVALUE( StageName )) = '14. Permit Sent',
+	TEXT (PRIORVALUE( StageName )) = '15. Permit Ready',
+	TEXT (PRIORVALUE( StageName )) = '16. Permit Received',
+	TEXT (PRIORVALUE( StageName )) = '17. Install Ready',
+	TEXT (PRIORVALUE( StageName )) = '18. Installation',
+	TEXT (PRIORVALUE( StageName )) = '19. Install Completed',
+	TEXT (PRIORVALUE( StageName )) = '20. Inspection Scheduled',
+	TEXT (PRIORVALUE( StageName )) = '21. Inspection Complete',
+	TEXT (PRIORVALUE( StageName )) = '22. PTO',
+	TEXT (PRIORVALUE( StageName )) = 'Closed Won'
+	),
+	( $User.FirstName + ' ' +  $User.LastName  = 'Alchemy User'),
+		ISPICKVAL(StageName, '6. Contract Signed')
+)</errorConditionFormula>
+    <errorMessage>Stages cannot be reversed.</errorMessage>
+</ValidationRule>

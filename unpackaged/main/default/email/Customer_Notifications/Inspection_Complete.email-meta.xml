@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Inspection Complete</name>
+    <style>freeForm</style>
+    <subject>Palmetto - Inspection complete</subject>
+    <textOnly>Hello {!Opportunity.Contact__c},
+
+
+
+Your county inspection has been completed and approved! The utility provider now has 14 business days to install your meter.
+
+
+
+You do not have to be home for this inspection unless your meter is located within your home or unreachable due to an obstruction.
+
+
+
+Furthermore, if your meter is behind a fence or gate, please make arrangements to have the gate unlocked and free of pets. This will allow the inspector to easily access your meter.
+
+
+
+Once your meter is installed, we will provide you a short instructional video on how to turn on your new solar system! If you need more assistance, feel free to give us a call and we will walk you through our simple 3 step process.
+
+
+
+**If you’re financing your system, you should not receive your payment for the system until it is on and operating**
+
+
+
+Please don’t hesitate to reach out to us in your Palmetto Home chat feature or by calling us at the number listed below.
+
+
+
+Thank you,
+
+Palmetto Customer Care
+
+855-339-1831
+
+
+customercare@palmetto.com
+
+
+
+
+
+Palmetto Solar LLC | 1505 King Street Ext #114|Charleston, SC 29408 |8431844 |www.palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

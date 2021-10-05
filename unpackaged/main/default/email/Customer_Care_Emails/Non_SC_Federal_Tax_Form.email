@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font size="2">Hello&nbsp;{!Opportunity.Contact__c},<br><br>Attached to this email is the Federal Tax form that you, or your accountant will need to complete in order to take advantage of the Federal solar tax credits.&nbsp;<br><br>You will need to include the cost of your solar system which is...&nbsp;<b>{!Opportunity.Amount}</b><br><br>Please call the Palmetto Customer Care Department, or consult your CPA if you have any further questions about your tax forms.<br><br>Sincerely,&nbsp;<br><br>Palmetto Customer Care Team</font><div><font size="2">customer.care@palmetto.com<br>Phone: 855-339-1831</font></div><div><font size="2">Office: 843-720-1844</font></div>]]></td>
+</tr>
+</table>

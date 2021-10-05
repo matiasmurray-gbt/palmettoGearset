@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subscription_Term__c</fullName>
+    <externalId>false</externalId>
+    <label>Subscription Term</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standard</fullName>
+                <default>false</default>
+                <label>Standard</label>
+            </value>
+            <value>
+                <fullName>1 Month</fullName>
+                <default>false</default>
+                <label>1 Month</label>
+            </value>
+            <value>
+                <fullName>1 Year</fullName>
+                <default>false</default>
+                <label>1 Year</label>
+            </value>
+            <value>
+                <fullName>3 Years</fullName>
+                <default>false</default>
+                <label>3 Years</label>
+            </value>
+            <value>
+                <fullName>5 Years</fullName>
+                <default>false</default>
+                <label>5 Years</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

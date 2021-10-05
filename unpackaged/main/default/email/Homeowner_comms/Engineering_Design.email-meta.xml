@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Engineering_Design</letterhead>
+    <name>Engineering Design</name>
+    <style>freeForm</style>
+    <subject>Solar Design/Permit Update</subject>
+    <textOnly>Hello {!Opportunity.Contact_First_Name__c},
+
+We’ve got great news, your final design is complete. We will submit the design to the City and apply for a building permit. If you’d like to have a copy of the design for your records, please respond to this email. 
+
+The process from here is very straightforward. When your design is submitted to the City for permitting, we’ll send you a text. When we receive the permit approval, you’ll be contacted and asked to set an installation date. 
+
+The permitting process takes about 2-3 weeks on average, depending on your City. We have no control over the City process and timeline, unfortunately.  
+
+If you have any questions, please contact our customer success team at (855)339-1831 or at help@palmetto.com. 
+
+Thank you for being a Palmetto customer. We look forward to serving you. 
+
+Palmetto Customer Service</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

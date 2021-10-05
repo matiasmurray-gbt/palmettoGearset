@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Solar</letterhead>
+    <name>Palmetto_Email_Template Header Footer</name>
+    <style>freeForm</style>
+    <subject>Palmetto</subject>
+    <textOnly>Dear {!Contact.Name}
+
+Many thanks for your interest in Palmetto Solar -
+
+An Energy Specialist will contact you within 24 hours.  In the meantime, please feel free to visit our website or call us at 855.339.1831
+
+Interested in our discount or referral programs? Please ask our representatives!
+
+Kind regards,
+The Palmetto Team
+
+
+Palmetto™
+
+701 East Bay Street, #413, Charleston, SC 29403
+Main: 843-720-1844
+Mobile: 843.860.6522
+Palmetto.com
+
+Leading the world towards a clean energy future.
+
+Palmetto™ is a multinational clean energy company based out of Charleston, South Carolina. Palmetto™ is a vertically integrated finance, design, development, technology, construction and management company. Our sole purpose is to drive the world towards a clean energy future. Please visit our website(s) for more information.
+
+This communication is sent by The Palmetto Group (“Palmetto”) or one of its affiliates. Palmetto™ has a Registered office at: 701 East Bay, Suite #413, Charleston, South Carolina, United States of America, 29403. More information on Palmetto™ is available at Palmetto.com Everything in this email and any attachments relating to the official business of Palmetto™ and any or all subsidiaries, (&quot;the Company&quot;), is proprietary to the Company. It is confidential, legally privileged and protected by relevant laws.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

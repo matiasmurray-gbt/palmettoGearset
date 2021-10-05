@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enter_Install_Ready_Date_to_install</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(ISBLANK(Install_Ready_Date__c),
+OR(TEXT(StageName)  = '18. Installation',
+TEXT(StageName) = '19. Install Completed',
+TEXT(StageName) = '20. Inspection Scheduled'
+),
+ RecordType.Name = '3rd Party - Design Sales'
+)</errorConditionFormula>
+    <errorDisplayField>Install_Ready_Date__c</errorDisplayField>
+    <errorMessage>Enter Install Ready Date</errorMessage>
+</ValidationRule>

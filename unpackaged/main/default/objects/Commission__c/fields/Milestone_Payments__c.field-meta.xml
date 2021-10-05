@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Milestone_Payments__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Opportunity__r.StageName  ,
+"10. Site Approved", "M1" ,
+"11. Interconnection Sent", "M1" ,
+"12. Engineering Package Sent", "M1",
+"13. Engineering Design Complete", "M1",
+"14. Permit Sent", "M1",
+"15. Permit Ready", "M1",
+"16. Permit Received", "M1",
+"17. Install Ready", "M1",
+"18. Installation", "M1",
+"9. Change Order Pending", "M1",
+"7. Contract Received", "M1",
+"7a. Contract Received Confirmed", "M1",
+"8. Site Audit Scheduled", "M1",
+"8a. Site Audit Completed", "M1",
+"19. Install Completed", "M2",
+"20. Inspection Scheduled", "M2",
+"21. Inspection Complete", "M2",
+"Closed Won", "M3",
+"22. PTO", "M3",
+"Cancelled","Cancellation Clawback",
+NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Milestone Payments</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

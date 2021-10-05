@@ -1,0 +1,15 @@
+Congratulations! This notice shall serve as Approval for Installation Scheduling. 
+
+Please contact the customer to schedule the installation date. After confirming the installation date please send a notice to solarpm@palmetto.com with the confirmed install start date. 
+
+Furthermore when the installation is completed please send a follow up notice of install completion as well as uploading the full photo set to the shared customer folder. 
+
+Thanks
+
+{!Opportunity.Contact__c}
+{!Account.BillingAddress}
+{!Account.Phone}
+
+Number of Panels - {!Opportunity.Number_of_Solar_Panels__c}
+System Size - {!Opportunity.System_Size_Calculated_kW__c}
+Utility Provider - {!Opportunity.Utility__c}

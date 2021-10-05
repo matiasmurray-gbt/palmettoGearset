@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Channel - Commissions Payback Template</name>
+    <style>freeForm</style>
+    <subject>Channel Opportunity Marked Close Lost/Cancelled - {!Opportunity.X3rd_Party_Partner__c}</subject>
+    <textOnly>Channel Opportunity Marked Closed Lost/Cancelled.
+
+Channel Partner - {!Opportunity.X3rd_Party_Partner__c}
+Sales Rep - {!Opportunity.X3rd_Party_Sales_Rep__c}
+Commissions Milestone 1 -{!Opportunity.00N1a000009bnHj}
+Commissions Milestone 2 - {!Opportunity.00N1a000009bnI3}
+
+Opportunity Link - {!Opportunity.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

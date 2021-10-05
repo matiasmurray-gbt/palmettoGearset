@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X1_1_NJ_Submit_ICA</fullName>
+    <booleanFilter>1 AND (4 OR 6 OR 7 OR 8) AND 2 AND 3 AND (5 OR 9)</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>System_Size_Calculated_kW__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Utility__c</columns>
+    <columns>Financing_Tool__c</columns>
+    <columns>Engineering_Created__c</columns>
+    <columns>Contract_Signed_Date__c</columns>
+    <columns>Site_Audit_Completed_Date__c</columns>
+    <columns>Post_Sales_Pre_Installation_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer,Integrated Palmetto Property,Dividend Solar</value>
+    </filters>
+    <filters>
+        <field>Contract_Received_Confirmed__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>equals</operation>
+        <value>New Jersey</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>7. Contract Received,8. Site Audit Scheduled,10. Site Approved</value>
+    </filters>
+    <filters>
+        <field>NMA_to_Utility_Date__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>11. Interconnection Sent,12. Engineering Package Sent</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>13. Engineering Design Complete,14. Permit Sent,15. Permit Ready</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>16. Permit Received</value>
+    </filters>
+    <label>1.12 NJ Submit ICA &amp; SREC Registration</label>
+    <sharedTo>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_MA</role>
+        <role>Project_Manager_FL</role>
+    </sharedTo>
+</ListView>

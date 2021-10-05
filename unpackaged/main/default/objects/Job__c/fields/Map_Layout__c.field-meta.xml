@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Map_Layout__c</fullName>
+    <externalId>false</externalId>
+    <label>Map Layout</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Correct to Plans</fullName>
+                <default>false</default>
+                <label>Correct to Plans</label>
+            </value>
+            <value>
+                <fullName>Layout Revision</fullName>
+                <default>false</default>
+                <label>Layout Revision</label>
+            </value>
+            <value>
+                <fullName>Missing Opto Map</fullName>
+                <default>false</default>
+                <label>Missing Opto Map</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

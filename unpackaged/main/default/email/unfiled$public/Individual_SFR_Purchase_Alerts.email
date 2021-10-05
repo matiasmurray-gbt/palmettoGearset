@@ -1,0 +1,6 @@
+Tim,
+
+This email is to inform you that {!Opportunity.Name} is closing in 10 days from now. The closing date is scheduled for {!Opportunity.CloseDate}. Please click here to view further details: {!Opportunity.Link} 
+
+Thanks,
+SF Cordes

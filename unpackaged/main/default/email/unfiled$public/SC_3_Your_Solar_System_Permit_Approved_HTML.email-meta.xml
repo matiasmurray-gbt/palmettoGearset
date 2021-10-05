@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>SC - 3 Your Solar System - Permit Approved	HTML</name>
+    <style>freeForm</style>
+    <subject>Update on Your Solar System - Building Permit Approved</subject>
+    <textOnly>Hello {!Opportunity.Contact__c},
+
+We wanted to let you know that the permits for your solar system have been approved by the local building permitting jurisdiction.
+
+We are on the home stretch now.
+
+The next steps include:
+
+1) HOA Approvals (if necessary)
+2) Interconnection Approvals
+3) Equipment Ready
+4) Installation Scheduling
+5) Installation
+
+As soon as we hear back on Interconnection and HOA approval we will be reaching out to schedule the date for your system installation.
+
+If you have already received notice about interconnection and HOA approval you will be hearing from us shortly to schedule the installation date.
+
+
+
+Thank You,
+
+Palmetto™
+Customer Care Team
+
+Main: 855-339-1831
+Office: 843-720-1844
+Email: customer.care@palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

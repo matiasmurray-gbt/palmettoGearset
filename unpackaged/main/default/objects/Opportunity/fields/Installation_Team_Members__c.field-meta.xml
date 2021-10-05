@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Installation_Team_Members__c</fullName>
+    <externalId>false</externalId>
+    <label>Installation Team Members</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aaron Mabry</fullName>
+                <default>false</default>
+                <label>Aaron Mabry</label>
+            </value>
+            <value>
+                <fullName>Benjamin Wright</fullName>
+                <default>false</default>
+                <label>Benjamin Wright</label>
+            </value>
+            <value>
+                <fullName>Blake Finley</fullName>
+                <default>false</default>
+                <label>Blake Finley</label>
+            </value>
+            <value>
+                <fullName>Eugene Wright</fullName>
+                <default>false</default>
+                <label>Eugene Wright</label>
+            </value>
+            <value>
+                <fullName>Gervis Smith</fullName>
+                <default>false</default>
+                <label>Gervis Smith</label>
+            </value>
+            <value>
+                <fullName>John Mckenna</fullName>
+                <default>false</default>
+                <label>John Mckenna</label>
+            </value>
+            <value>
+                <fullName>Matt Reece</fullName>
+                <default>false</default>
+                <label>Matt Reece</label>
+            </value>
+            <value>
+                <fullName>Rhyon Kendrick</fullName>
+                <default>false</default>
+                <label>Rhyon Kendrick</label>
+            </value>
+            <value>
+                <fullName>Steven Zack</fullName>
+                <default>false</default>
+                <label>Steven Zack</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

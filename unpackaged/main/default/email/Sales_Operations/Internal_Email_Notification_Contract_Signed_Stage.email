@@ -1,0 +1,5 @@
+Opportunity has reached Contract Signed Stage.
+
+Account - {!Opportunity.Account}
+Opportunity Name - {!Opportunity.Name}
+Link to Opportunity - {!Opportunity.Link}

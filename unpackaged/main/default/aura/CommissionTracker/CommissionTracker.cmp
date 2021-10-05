@@ -1,0 +1,636 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes"
+    controller="CommissionTrackerControllerLgtng">
+
+    <aura:attribute name="isLoading" type="Boolean" default="true"/>
+    <aura:attribute name="hasError" type="Boolean" default="false"/>
+
+	<!--Inactive Providers Picklist attributes-->
+	<aura:attribute name="includeInactives" type="Boolean" default="false"/>
+	<aura:attribute name="inactiveProviders" type="List" />
+	<aura:attribute name="inactiveProviderLabel" type="String" />
+	<aura:attribute name="selectedInactiveProvider" type="String" />	
+    <aura:attribute name="selectedAllInactiveProviders" type="Boolean" default="false" />
+	<aura:attribute name="inactiveProviderValue" 	type="String" default="" description="Selected value in single Select" />
+	<aura:attribute name="inactiveProviderValues" 	type="List"   default="" description="Selected value in Multi Select" />
+	<aura:attribute name="searchStringInactiveProvider"   type="String" access="private" default="" description="String to search"/>
+    <aura:attribute name="selectedInactiveProvidersCount" type="Integer" default="0" />
+    <!--Multiselect Picklists attributes needed-->
+    <aura:attribute name="firstExecution" type="Boolean" default="true" />
+    <aura:attribute name="selectedProvider" type="String" />	
+    <aura:attribute name="selectedAllProviders" type="Boolean" default="true" />
+    <aura:attribute name="disabled" 	type="Boolean" default="false" description="Disable the combobox" />
+    <aura:attribute name="providerLabel" type="string" default="Select Providers" description="Label will be displayed above input Box" />
+    <aura:attribute name="milestoneLabel" type="string" default="Select Milestones" description="Label will be displayed above input Box" />
+    <aura:attribute name="providerValue" 	type="String" default="" description="Selected value in single Select" />
+	<aura:attribute name="providerValues" 	type="List"   default="" description="Selected value in Multi Select" />
+    <aura:attribute name="milestoneValue" 	type="String" default="" description="Selected value in single Select" />
+	<aura:attribute name="milestoneValues" 	type="List"   default="" description="Selected value in Multi Select" />
+    <aura:attribute name="searchStringProvider"   type="String" access="private" default="" description="String to search"/>
+    <aura:attribute name="selectedProvidersCount" type="Integer" default="0" />
+
+    <aura:attribute name="availableMilestones" type="List" default="[
+        {'label':'M1', 'value':'M1'},
+        {'label':'M2', 'value':'M2'},
+        {'label':'M3', 'value':'M3'},
+        {'label':'Clawbacks', 'value':'Clawbacks'}
+    ]" />
+    <aura:attribute name="availableProviders" type="List" />
+    <aura:attribute name="multiSelect" 	type="Boolean" default="true" description="Switch between single and multiSelect" />
+    <aura:attribute name="searchStringMilestone"   type="string" access="private" default="" description="String to search"/>
+    <aura:attribute name="message" 		  type="String" access="private" default="" />
+    <aura:attribute name="minChar" 		type="Integer" default="1" description="Minimum character to type for search" />
+
+    <aura:attribute name="isSearched" type="Boolean" default="false"/>
+
+    <aura:attribute name="colLabels" type="Object[]" />
+    <!-- Data rows as obtained.-->
+    <aura:attribute name="rawTData" type="Object[]" />
+    <!--Data rows, filtered and ordered-->
+    <aura:attribute name="processedTData" type="Object[]" />
+    <!--Data rows in current page.-->
+    <aura:attribute name="tData" type="Object[]" />
+
+    <aura:attribute name="currentPage" type="Integer" default="1" />
+    <aura:attribute name="pageSize" type="Integer" default="5" />
+    <aura:attribute name="calculatedSize" type="Integer" />
+    <aura:attribute name="providersLength" type="Integer" default="0" />
+
+    <aura:attribute name="tableSortedBy" type="String" default="createdDate" />
+    <aura:attribute name="tableSortedDirection" type="String" default="desc" />
+
+    <aura:attribute name="filterState" type="Boolean" default="false" />
+    <aura:attribute name="dateFrom" type="Date" default="" />
+    <aura:attribute name="dateTo" type="Date" default="" />
+    <aura:attribute name="selectedMode" type="String" default="To Be Processed"/>
+    <aura:attribute name="display" type="String" />
+	<aura:attribute name="commissionsFilter" type="String" />
+    <aura:attribute name="selectedPaid" type="Boolean" default="false"/>
+    <aura:attribute name="showPaidMilestones" type="Boolean" default="false" />
+    <aura:attribute name="showM1" type="Boolean" default="true" />
+    <aura:attribute name="showM2" type="Boolean" default="true" />
+    <aura:attribute name="showM3" type="Boolean" default="true" />
+    <aura:attribute name="showClawback" type="Boolean" default="true" />
+
+    <aura:attribute name="selectedRows" type="Object[]" />
+
+    <aura:handler name='init' value='{!this}' action='{!c.doInit}' />
+    <aura:handler event="c:CommissionTrackerConfirmOperationEvent" action="{!c.handleApplicationEvent}"/>
+
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+
+    <lightning:card>
+        <div class="slds-grid slds-m-horizontal_xx-large">
+            <div class="slds-col slds-p-around_small">
+                <lightning:button label="Process Milestone" title="Process Milestone" onclick="{! c.handleProcess }"/>
+            </div>
+            <div class="slds-col slds-p-around_small">
+                <c:CommissionTrackerUnprocessPopup disabled="{! !and(v.isSearched, v.display != 'To Be Processed')}" 
+                                                tableSelectedRows="{! v.selectedRows}" 
+                                                messageBoxTitle="Unprocess Milestones" 
+                                                buttonLabel="Unprocess Milestone" 
+                                                tableData="{! v.processedTData}" 
+                />
+            </div>
+            <!--<div class="slds-col slds-p-around_small">
+                <c:CommissionTrackerUnprocessNegatives disabled="{! !and(v.isSearched, v.display != 'To Be Processed')}" 
+                                                    messageBoxTitle="Unprocess Negative Commissions" 
+                                                    buttonLabel="Unprocess Negatives" 
+                                                    tableData="{! v.rawTData}" 
+                />
+            </div>-->
+            <div class="slds-col slds-p-around_small">
+                <c:CommissionTrackerEmailReport disabled="{! !and(v.isSearched, v.display != 'To Be Processed')}" 
+                                                buttonLabel="Mail Report to CP" 
+                                                messageBoxTitle="Mail Report to CP" 
+                                                selectedMilestones="{! v.milestoneValues }" 
+                                                availableProviders="{!v.availableProviders}" 
+                                                fromDate="{!v.dateFrom}" 
+                                                toDate="{!v.dateTo}" 
+                                                commissionsList="{!v.rawTData}"
+                />
+            </div>
+            <div class="slds-col slds-p-around_small">
+                <c:CommissionTrackerExport selectedMode="{!v.selectedMode}" 
+                                        availableProviders="{!v.availableProviders}" 
+                                        availableMilestones="{!v.availableMilestones}" 
+                                        fromDate="{!v.dateFrom}" 
+                                        toDate="{!v.dateTo}" 
+                                        selectedProviders="{!v.providerValues}" 
+                                        selectedMilestones="{!v.milestoneValues}" 
+                                        selectedPaidMilestones="{!v.selectedPaid}" 
+                />
+            </div>
+			<div class="slds-col slds-p-around_small">
+                <c:CommissionTrackerSummaryView milestonesWrapper="{!v.rawTData}"
+										tData="{!v.tData}"
+										filter="{!v.commissionsFilter}"
+										messageBoxTitle="Partners Commissions Summary View" 
+                                        buttonLabel="Summary View"
+                />
+            </div>
+            <div class="slds-col slds-p-around_small">
+                <!--<aura:set attribute="actions">-->
+                    
+                    <lightning:buttonStateful
+                        labelWhenOff="Show Filters"
+                        iconNameWhenOff="utility:filter"
+                        labelWhenOn="Showing filters"
+                        iconNameWhenOn="Showing filters"
+                        labelWhenHover="Remove filters"
+                        iconNameWhenHover="utility:close"
+                        state="{! v.filterState }"
+                        onclick="{! c.handleFilterClick }"
+                        class="slds-hide"
+                    />
+                    
+                <!--</aura:set>-->
+            </div>
+        </div>
+        <!--<aura:if isTrue="{!v.filterState}">-->
+        <!-- 3rd Party Provider Selector-->
+        <div class="slds-grid">			
+            <lightning:layoutItem padding="around-small" size="4">
+                <aura:if isTrue="{!!empty(v.label)}">
+                    <label class="slds-form-element__label">{!v.providerLabel}</label>
+                </aura:if>
+                <div class="slds-combobox_container slds-col">
+                    <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aura:id="providerDiv" aria-expanded="true" aria-haspopup="listbox" role="combobox">
+                        <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                            <lightning:input name="providerSelector" disabled="{!v.disabled}" aura:id="inputLookup1" class="inputBox" placeholder="Select provider/s" onblur="{!c.blurEvent}" onclick="{!c.showProviders}" onkeyup="{!c.filterProvider}" value="{!v.searchStringProvider}" autoComplete="off" variant="label-hidden" id="combobox-id-1" />
+                            <lightning:icon class="slds-input__icon" iconName="utility:down" size="x-small" alternativeText="search"/>
+                        </div>
+                        <!-- Dropdown List -->
+                        <div id="listbox-id-1" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid">
+                            <ul class="slds-listbox slds-listbox_vertical recordListBox" role="presentation">
+                                <aura:if isTrue="{!empty(v.message)}" >
+                                    <!-- To display Drop down List -->
+                                    <li class="slds-listbox__item" onmousedown="{!c.selectAllProviders}">
+                                        <lightning:icon class="{!if(v.selectedAllProviders,'','slds-hide')}" iconName="utility:check" size="x-small" alternativeText="icon" />
+                                        <span class="slds-media slds-listbox__option_entity verticalAlign slds-truncate">Select All Providers</span>
+                                    </li>
+                                    <aura:iteration items="{!v.availableProviders}" var="option" >
+                                        <aura:if isTrue="{!option.disabled}">
+                                            <li class="{!'slds-listbox__item disabledItem' + if(option.isVisible,'',' slds-hide')}">
+                                                <span class="slds-media slds-listbox__option_entity verticalAlign slds-truncate">{!option.label}</span>
+                                            </li>
+                                            <aura:set attribute="else">
+                                                <li id="{!option.value}" class="{!'slds-listbox__item eachItem' + if(option.isVisible,'',' slds-hide')}" onmousedown="{!c.selectProvider}">
+                                                    <lightning:icon class="{!if(option.selected,'','slds-hide')}" iconName="utility:check" size="x-small" alternativeText="icon" />
+                                                    <span class="slds-media slds-listbox__option_entity verticalAlign slds-truncate">{!option.label}</span>
+                                                </li>
+                                            </aura:set>
+                                        </aura:if>
+                                    </aura:iteration>
+                                    <!-- To display Error Message -->
+                                    <aura:set attribute="else">
+                                        <li class="slds-listbox__item">
+                                            <span class="slds-media slds-listbox__option_entity verticalAlign slds-truncate">{!v.message}</span>
+                                        </li>
+                                    </aura:set>
+                                </aura:if>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+                <aura:if isTrue="{!and(and(lessthan(v.selectedProvidersCount, 11),greaterthan(v.selectedProvidersCount, 0)), !v.selectedAllProviders)}">
+                    <aura:iteration items="{!v.availableProviders}" var="option">
+                    
+                        <aura:if isTrue="{!option.selected}">
+                            <lightning:pill aura:id="providerPill" class="slds-m-around_xx-small" name="{!option.value}" label="{!option.label}" onremove="{!c.removePill}"/>
+                        </aura:if>
+                    </aura:iteration>
+                
+                    <aura:set attribute="else">
+                        <aura:if isTrue="{!or(v.selectedAllProviders, greaterthan(v.selectedProvidersCount, 10))}">
+                            <div class="slds-col slds-p-around_small">
+                                <c:CommissionTrackerManageSelectedProviders picklistLabel="{!v.searchStringProvider}" selectedProviders="{!v.providerValues}" providers="{! v.availableProviders}" messageBoxTitle="Selected Providers" buttonLabel="View Selected"  />
+                            </div>
+                        </aura:if>
+                    </aura:set>
+                </aura:if>
+            </lightning:layoutItem>
+        
+
+        <!-- Provider Selector Ends here-->
+		<!--Inactive providers Selectors starts here-->
+		<aura:if isTrue="{!v.inactiveProviders}">
+			<lightning:input class="slds-m-top_large" type="checkbox" name="inactiveProviders" label="Show inactive providers" checked="{!v.includeInactives}"/>
+		</aura:if>
+		<aura:if isTrue="{!v.includeInactives}">
+				<lightning:layoutItem padding="around-small" size="4">
+					<aura:if isTrue="{!!empty(v.label)}">
+						<label class="slds-form-element__label">{!v.inactiveProviderLabel}</label>
+					</aura:if>
+					<div class="slds-combobox_container slds-col">
+						<div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aura:id="inactiveProviderDiv" aria-expanded="true" aria-haspopup="listbox" role="combobox">
+							<div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+								<lightning:input name="inactiveProviderSelector" disabled="{!v.disabled}" aura:id="inputLookup1" class="inputBox" placeholder="Select provider/s" onblur="{!c.blurEvent}" onclick="{!c.showInactiveProviders}" onkeyup="{!c.filterInactiveProvider}" value="{!v.searchStringInactiveProvider}" autoComplete="off" variant="label-hidden" id="combobox-id-3" />
+								<lightning:icon class="slds-input__icon" iconName="utility:down" size="x-small" alternativeText="search"/>
+							</div>
+							<!-- Dropdown List -->
+							<div id="listbox-id-1" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid">
+								<ul class="slds-listbox slds-listbox_vertical recordListBox" role="presentation">
+									<aura:if isTrue="{!empty(v.message)}" >
+										<!-- To display Drop down List -->
+										<li class="slds-listbox__item" onmousedown="{!c.selectedAllInactiveProviders}">
+											<lightning:icon class="{!if(v.selectedAllInactiveProviders,'','slds-hide')}" iconName="utility:check" size="x-small" alternativeText="icon" />
+											<span class="slds-media slds-listbox__option_entity verticalAlign slds-truncate">Select All Inactive Providers</span>
+										</li>
+										<aura:iteration items="{!v.inactiveProviders}" var="option" >
+											<aura:if isTrue="{!option.disabled}">
+												<li class="{!'slds-listbox__item disabledItem' + if(option.isVisible,'',' slds-hide')}">
+													<span class="slds-media slds-listbox__option_entity verticalAlign slds-truncate">{!option.label}</span>
+												</li>
+												<aura:set attribute="else">
+													<li id="{!option.value}" class="{!'slds-listbox__item eachItem' + if(option.isVisible,'',' slds-hide')}" onmousedown="{!c.selectInactiveProvider}">
+														<lightning:icon class="{!if(option.selected,'','slds-hide')}" iconName="utility:check" size="x-small" alternativeText="icon" />
+														<span class="slds-media slds-listbox__option_entity verticalAlign slds-truncate">{!option.label}</span>
+													</li>
+												</aura:set>
+											</aura:if>
+										</aura:iteration>
+										<!-- To display Error Message -->
+										<aura:set attribute="else">
+											<li class="slds-listbox__item">
+												<span class="slds-media slds-listbox__option_entity verticalAlign slds-truncate">{!v.message}</span>
+											</li>
+										</aura:set>
+									</aura:if>
+								</ul>
+							</div>
+						</div>
+					</div>
+				
+					<aura:if isTrue="{!and(and(lessthan(v.selectedInactiveProvidersCount, 11),greaterthan(v.selectedInactiveProvidersCount, 0)), !v.selectedAllInactiveProviders)}">
+						<aura:iteration items="{!v.inactiveProviders}" var="option">
+						
+							<aura:if isTrue="{!option.selected}">
+								<lightning:pill aura:id="inactiveProviderPill" class="slds-m-around_xx-small" name="{!option.value}" label="{!option.label}" onremove="{!c.removePill}"/>
+							</aura:if>
+						</aura:iteration>
+					
+						<aura:set attribute="else">
+							<aura:if isTrue="{!or(v.selectedAllInactiveProviders, greaterthan(v.selectedInactiveProvidersCount, 10))}">
+								<div class="slds-col slds-p-around_small">
+									<c:CommissionTrackerManageSelectedProviders picklistLabel="{!v.searchStringInactiveProvider}" selectedProviders="{!v.inactiveProviderValues}" providers="{! v.inactiveProviders}" messageBoxTitle="Selected Inactive Providers" buttonLabel="View Selected"  />
+								</div>
+							</aura:if>
+						</aura:set>
+					</aura:if>
+				</lightning:layoutItem>
+		</aura:if>
+	</div>
+		<!--Inactive providers selectors ends here-->
+        
+            <div class="slds-grid slds-wrap slds-p-horizontal_medium">
+                <!-- Milestone Selector-->
+                <div class="slds-col slds-size_1-of-5 slds-large-size_1-of-5 slds-p-around_xx-small">			
+                    <lightning:layoutItem>
+                        <aura:if isTrue="{!!empty(v.label)}">
+                            <label class="slds-form-element__label">{!v.milestoneLabel}</label>
+                        </aura:if>
+                        <div class="slds-combobox_container">
+                            <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aura:id="milestoneDiv" aria-expanded="true" aria-haspopup="listbox" role="combobox">
+                                <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                                    <lightning:input label="Select Milestone" name="milestoneSelector" disabled="{!v.disabled}" aura:id="inputLookup1" class="inputBox" placeholder="Select a milestone" onblur="{!c.blurEvent}" onclick="{!c.showMilestones}" onkeyup="{!c.filterMilestone}" value="{!v.searchStringMilestone}" autoComplete="off" id="combobox-id-2" />
+                                    <lightning:icon style="margin-top: 5px;" class="slds-input__icon" iconName="utility:down" size="x-small" alternativeText="search"/>
+                                </div>
+                                <!-- Dropdown List -->
+                                <div id="listbox-id-2" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid">
+                                    <ul class="slds-listbox slds-listbox_vertical recordListBox" role="presentation">
+                                        <aura:if isTrue="{!empty(v.message)}" >
+                                            <!-- To display Drop down List -->
+                                            <aura:iteration items="{!v.availableMilestones}" var="option" >
+                                                <aura:if isTrue="{!option.disabled}">
+                                                    <li class="{!'slds-listbox__item disabledItem' + if(option.isVisible,'',' slds-hide')}">
+                                                        <span class="slds-media slds-listbox__option_entity verticalAlign slds-truncate">{!option.label}</span>
+                                                    </li>
+                                                    <aura:set attribute="else">
+                                                        <li id="{!option.value}" class="{!'slds-listbox__item eachItem' + if(option.isVisible,'',' slds-hide')}" onmousedown="{!c.selectMilestone}">
+                                                            <lightning:icon class="{!if(option.selected,'','slds-hide')}" iconName="utility:check" size="x-small" alternativeText="icon" />
+                                                            <span class="slds-media slds-listbox__option_entity verticalAlign slds-truncate">{!option.label}</span>
+                                                        </li>
+                                                    </aura:set>
+                                                </aura:if>
+                                            </aura:iteration>
+                                            <!-- To display Error Message -->
+                                            <aura:set attribute="else">
+                                                <li class="slds-listbox__item">
+                                                    <span class="slds-media slds-listbox__option_entity verticalAlign slds-truncate">{!v.message}</span>
+                                                </li>
+                                            </aura:set>
+                                        </aura:if>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <aura:iteration items="{!v.availableMilestones}" var="option">
+                            <aura:if isTrue="{!option.selected}">
+                                <lightning:pill aura:id="milestonePill" class="slds-m-around_xx-small" name="{!option.value}" label="{!option.label}" onremove="{!c.removePill}"/>
+                            </aura:if>
+                        </aura:iteration>
+                    </lightning:layoutItem>
+                </div>
+                <!-- Milestone Selector Ends here-->
+                <div class="slds-col slds-size_1-of-5 slds-large-size_1-of-5 slds-p-around_xx-small">
+                    <lightning:input
+                        aura:id="dateFrom" 
+                        type="date" 
+                        name="dateFromIn" 
+                        label="Date From" 
+                        value="{!v.dateFrom}"
+                    />
+                </div>
+                <div class="slds-col slds-size_1-of-5 slds-large-size_1-of-5 slds-p-around_xx-small">
+                    <lightning:input
+                        aura:id="dateTo" 
+                        type="date" 
+                        name="dateToIn" 
+                        label="Date To"
+                        value="{!v.dateTo}"  
+                    />
+                </div>
+				
+                <div class="slds-col slds-size_1-of-5 slds-large-size_1-of-5 slds-p-around_xx-small">
+                    <lightning:select aura:id="display" name="display" label="Display" value="{!v.display}" required="false" onchange="{!c.handleDisplay}">
+                        <option value="To Be Processed">To Be Processed</option>
+                        <!--<option value="Future Commissions">Future Commissions</option>-->
+                        <option value="Processed Commission">Processed Commission</option>
+                        <option value="Paid Commission">Paid Commission</option>
+                    </lightning:select>
+                    <aura:if isTrue="{!v.showPaidMilestones}">
+                        <lightning:input type="checkbox" name="includePaid" checked="{!v.selectedPaid}" label="Include Paid Commissions" />
+                    </aura:if>
+                </div>
+                <div class="slds-col slds-size_1-of-5 slds-large-size_1-of-8 slds-p-around_xx-small ">
+                    <div class="slds-p-top_large">
+                        <lightning:button variant="brand" label="Search" title="Search" onclick="{! c.handleOnSearch }"/>
+                    </div>
+                </div>
+                <aura:if isTrue="{!and(v.isSearched, v.showPaidMilestones)}">
+                    <div class="slds-col slds-size_1-of-5 slds-large-size_1-of-8 slds-p-around_xx-small ">
+                        <div class="slds-p-top_large">
+                            <lightning:button variant="success" label="Add Paid Date" title="Add paid date" onclick="{! c.handleAddPaidDate }"/>
+                        </div>
+                    </div>
+                </aura:if>
+            </div>
+        <!--</aura:if>-->
+        <div class="tableContainer">
+			<div class="slds-grid">
+            <aura:if isTrue="{!v.providersLength > v.pageSize}">
+                <div class="slds-align_absolute-center slds-m-bottom_xxx-small">
+                    <lightning:button 
+                        iconName="utility:chevronleft" 
+                        variant="bare" label="Previous page" 
+                        title="Previous page" 
+                        iconPosition="left" 
+                        onclick="{! c.handleClickPrevPage }" 
+                        disabled="{!v.currentPage == 1}"
+                    />
+                    &nbsp;Page&nbsp; <input style="width: 10%; padding: 0%" class="slds-input slds-text-align_center slds-size_small slds-size_1-of-12" id="changePageTop" name="changePageTop" value="{!v.currentPage}" onchange="{!c.handleChangePage}"/>&nbsp; of {!v.calculatedSize} ({!1 + (v.currentPage - 1) * v.pageSize}-{!v.currentPage * v.pageSize})&nbsp;
+                    <lightning:button 
+                        iconName="utility:chevronright" 
+                        variant="bare" 
+                        label="Next page" 
+                        title="Next page" 
+                        iconPosition="right" 
+                        onclick="{! c.handleClickNextPage }"
+                        disabled="{!v.currentPage == v.calculatedSize}"
+                    />
+                </div>
+				
+            </aura:if>
+				<div class="slds-col slds-size_1-of-5 slds-large-size_1-of-5 slds-p-around_xx-small slds-m-around_small">
+					<lightning:select aura:id="commissionsFilter" name="commissionsFilter" label="Filter By" value="{!v.commissionsFilter}" required="false" onchange="{!c.filterCommissions}">
+						<option value="All">All</option>
+						<!--<option value="Future Commissions">Future Commissions</option>-->
+						<option value="Positive">Positive Balances</option>
+						<option value="Negative">Negative Balances</option>
+					</lightning:select>
+				</div>
+			</div>
+            
+            <!-- COMMISSIONS DATA TABLE -->
+            
+            <div class="slds-table--header-fixed_container" style="">
+                <div class="slds-scrollable_x" style="width:100%;">
+                    <table aria-multiselectable="true" class="slds-table slds-table_bordered">
+                        <thead>
+                            <tr>
+                                <th class="slds-text-align_right" scope="col" style="width:3.25rem">
+                                    <span id="column-group-header" class="slds-assistive-text">Choose a row</span>
+                                    <div class="slds-th__action slds-th__action_form">
+                                      <div class="slds-checkbox">
+                                        <input type="checkbox" name="options" id="checkbox-unique-id-297" value="checkbox-unique-id-297" tabindex="0" aria-labelledby="check-select-all-label column-group-header" onchange="{!c.allSelected}" />
+                                        <label class="slds-checkbox__label" for="checkbox-unique-id-297" id="check-select-all-label">
+                                          <span class="slds-checkbox_faux"></span>
+                                          <span class="slds-form-element__label slds-assistive-text">Select All</span>
+                                        </label>
+                                      </div>
+                                    </div>
+                                </th>
+                                <th>Commission Number</th>
+                                <th>3rd Party Salesrep</th>
+                                <th>Opportunity Name</th>
+                                <th>Financing Tool</th>
+                                <th>Total Commissions</th>
+                                <th class="{!v.showM1 ? '' : 'slds-hide'}">Milestone1 Amount</th>
+                                <th class="{!v.showM1 ? '' : 'slds-hide'}">Milestone1 Amount(Actual Paid)</th>
+                                <th class="{!v.showM1 ? '' : 'slds-hide'}">Milestone1 Paid Date</th>
+                                <th class="{!v.showM2 ? '' : 'slds-hide'}">Milestone2 Amount</th>
+                                <th class="{!v.showM2 ? '' : 'slds-hide'}">Milestone2 Amount(Actual Paid)</th>
+                                <th class="{!v.showM2 ? '' : 'slds-hide'}">Milestone2 Paid Date</th>
+                                <th class="{!v.showM3 ? '' : 'slds-hide'}">Milestone3 Amount</th>
+                                <th class="{!v.showM3 ? '' : 'slds-hide'}">Milestone3 Amount(Actual Paid)</th>
+								<th class="{!v.showM3 ? '' : 'slds-hide'}">Milestone3 Paid Date</th>
+                                <th>Contract Received Confirmed Date</th>
+                                <th>Installation Complete Date</th>
+                                <th>Cancellation Date</th>
+                                <th class="{!v.showClawback ? '' : 'slds-hide'}">M1 Clawback Amount</th>
+                                <th class="{!v.showClawback ? '' : 'slds-hide'}">Clawback(Amount) Actual</th>
+                            </tr>
+                        </thead>
+                        <aura:if isTrue="{! greaterthan(v.rawTData.length, 0)}">
+                            <tbody>
+                                <aura:iteration items="{!v.tData}" var="milestone" indexVar="m">
+                                    <tr class="{!if(milestone.data.length == 0, 'slds-hide', '')}">
+                                        <th colspan="6" style="background-color: #297441">
+                                            <div class="slds-p-left_xx-large slds-text-color_inverse" style="font-weight: bold;">
+                                                Milestone Payments: {!milestone.milestone} - Showing {!milestone.data.length} providers
+                                            </div>
+                                        </th>
+                                        <th colspan="5">
+                                            <lightning:buttonStateful
+                                                labelWhenOff="Show M1"
+                                                iconNameWhenOff="utility:preview"
+                                                labelWhenOn="Showing M1"
+                                                iconNameWhenOn="utility:table"
+                                                labelWhenHover="Hide M1"
+                                                iconNameWhenHover="utility:hide"
+                                                state="{! v.showM1 }"
+                                                onclick="{!c.handleShowM1}"
+                                            />
+                                            <lightning:buttonStateful
+                                                labelWhenOff="Show M2"
+                                                iconNameWhenOff="utility:preview"
+                                                labelWhenOn="Showing M2"
+                                                iconNameWhenOn="utility:table"
+                                                labelWhenHover="Hide M2"
+                                                iconNameWhenHover="utility:hide"
+                                                state="{! v.showM2 }"
+                                                onclick="{!c.handleShowM2}"
+                                            />
+                                            <lightning:buttonStateful
+                                                labelWhenOff="Show M3"
+                                                iconNameWhenOff="utility:preview"
+                                                labelWhenOn="Showing M3"
+                                                iconNameWhenOn="utility:table"
+                                                labelWhenHover="Hide M3"
+                                                iconNameWhenHover="utility:hide"
+                                                state="{! v.showM3 }"
+                                                onclick="{!c.handleShowM3}"
+                                            />
+                                            <lightning:buttonStateful
+                                                labelWhenOff="Show Clawback"
+                                                iconNameWhenOff="utility:preview"
+                                                labelWhenOn="Showing Clawback"
+                                                iconNameWhenOn="utility:table"
+                                                labelWhenHover="Hide Clawback"
+                                                iconNameWhenHover="utility:hide"
+                                                state="{! v.showClawback }"
+                                                onclick="{!c.handleShowClawback}"
+                                            />
+                                        </th>
+                                    </tr>
+                                    <aura:iteration items="{!milestone.data}" var="provider" indexVar="_p">
+                                        <tr>
+                                            <th colspan="6">
+                                                <div class="slds-p-left_xx-large slds-text-color_default" style="font-weight: bold;">
+                                                    3rd Party Provider: <a href="{! '/'+provider.ProviderId}" target="_blank">{!provider.ProviderName}</a>
+                                                </div>
+                                            </th>
+                                            
+                                            <th class="{!v.showM1 ? '' : 'slds-hide'}">
+                                                <b>{!provider.Milestone1TotalAmount}</b>
+                                            </th>
+                                            <th colspan="2" class="{!v.showM1 ? '' : 'slds-hide'}">
+                                                    <div class="{! provider.Milestone1TotalAmount != provider.Milestone1ActualPaid ? 'slds-text-color_error' : 'slds-text-color_success'}">
+                                                        <b>{!provider.Milestone1ActualPaid}</b>
+                                                    </div>
+                                            </th>
+                                            <th class="{!v.showM2 ? '' : 'slds-hide'}">
+                                                <div class=""><b>{!provider.Milestone2TotalAmount}</b></div>
+                                            </th>
+                                            <th colspan="2" class="{!v.showM2 ? '' : 'slds-hide'}">
+                                                    <div class="{! provider.Milestone2TotalAmount != provider.Milestone2ActualPaid ? 'slds-text-color_error' : 'slds-text-color_success'}">
+                                                        <b>{!provider.Milestone2ActualPaid}</b>
+                                                    </div>
+                                            </th>
+                                            <th class="{!v.showM3 ? '' : 'slds-hide'}">
+                                                <b>{!provider.Milestone3TotalAmount}</b>
+                                            </th>
+                                            <th colspan="4" class="{!v.showM3 ? '' : 'slds-hide'}">
+                                                    <div class="{! provider.Milestone3TotalAmount != provider.Milestone3ActualPaid ? 'slds-text-color_error' : 'slds-text-color_success'}">
+                                                        <b>{!provider.Milestone3ActualPaid}</b>
+                                                    </div>
+                                            </th>
+                                            <!--Added the following 3 dynamic th for clawbacks totals showing in the corresponding column-->
+                                            <th class="{!v.showM3 ? 'slds-hide' : ''}"></th>
+                                            <th class="{!v.showM3 ? 'slds-hide' : ''}"></th>
+                                            <th class="{!v.showM3 ? 'slds-hide' : ''}"></th>
+                                            <th class="{!v.showClawback ? '' : 'slds-hide'}">
+                                                <b>{!provider.ClawbackTotalAmount}</b>
+                                            </th>
+                                            <th class="{!v.showCLawback ? '' : 'slds-hide'}">
+                                                <b>{!provider.ClawbackActualPaid}</b>
+                                            </th>
+                                        </tr>
+                                        
+                                        <aura:iteration items="{!provider.CommissionsList}" var="item" indexVar="i">
+                                            <tr>
+                                                <td class="slds-text-align_right" role="gridcell">
+                                                    <div class="slds-checkbox">
+                                                    <input type="checkbox" name="options" id="{!'checkbox-0' + m+_p+i}" value="{!'checkbox-0' + m+_p+i}" tabindex="{!m+_p+i}" aria-labelledby="{!'check-button-label-0'+m+_p+i+' column-group-header'}" onchange="{!c.handleCheckedRow}" />
+                                                    <label class="slds-checkbox__label" for="{!'checkbox-0'+m+_p+i}" id="{!'check-button-label-0'+m+_p+i}">
+                                                        <span class="slds-checkbox_faux"></span>
+                                                        <span class="slds-form-element__label slds-assistive-text">Select item {!_index}</span>
+                                                    </label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="{! '/'+item.Id}" target="_blank">{!item.Name}</a></td>
+                                                <td>{!item.Opportunity__r.X3rd_Party_Sales_Rep__c}</td>
+                                                <td><a href="{! '/'+item.Opportunity__r.Id}" target="_blank">{!item.Opportunity__r.Name}</a></td>
+                                                <td>{!item.Opportunity__r.Financing_Tool__c}</td>
+                                                <td>{!item.Total_Commissions__c}</td>
+                                                <td class="{!v.showM1 ? '' : 'slds-hide'}">{!item.Milestone_1_Amount__c}</td>
+                                                <td class="{!v.showM1 ? '' : 'slds-hide'}">{!item.Milestone_1_Amount_Actual_Paid__c}</td>
+                                                <td class="{!v.showM1 ? '' : 'slds-hide'}">{!item.Milestone_1_Paid_Date__c}</td>
+                                                <td class="{!v.showM2 ? '' : 'slds-hide'}">{!item.Milestone_2_Amount__c}</td>
+                                                <td class="{!v.showM2 ? '' : 'slds-hide'}">{!item.Milestone_2_Amount_Actual_Paid__c}</td>
+                                                <td class="{!v.showM2 ? '' : 'slds-hide'}">{!item.Milestone_2_Paid_Date__c}</td>
+                                                <td class="{!v.showM3 ? '' : 'slds-hide'}">{!item.Milestone_3_Amount__c}</td>
+                                                <td class="{!v.showM3 ? '' : 'slds-hide'}">{!item.Milestone_3_Actual_Paid__c}</td>
+												<td class="{!v.showM3 ? '' : 'slds-hide'}">{!item.Milestone_3_Paid_Date__c}</td>
+                                                <td>{!item.Contract_Received_Confirmed_Date__c}</td>
+                                                <td>{!item.Installation_Complete_Date__c}</td>
+                                                <td>{!item.Opportunity__r.Cancellation_Date__c}</td>
+                                                <td class="{!v.showClawback ? '' : 'slds-hide'}">{!item.M1_Clawback_Amount__c}</td>
+                                                <td class="{!v.showClawback ? '' : 'slds-hide'}">{!item.Clawback_Amount_Actual__c}</td>
+                                            </tr>
+                                        </aura:iteration>
+                                    </aura:iteration>
+                                </aura:iteration>
+                            </tbody>
+                            <aura:set attribute="else">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="12">
+                                            <p style="text-align: center" class="slds-text-heading_large slds-p-vertical_xx-large">
+                                                There are no commissions for the filters selected
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </aura:set>
+                        </aura:if>
+                    </table>
+                </div>
+            </div>
+            <!-- COMMISSIONS DATA TABLE ENDS HERE -->
+            
+            <aura:if isTrue="{!v.providersLength > v.pageSize}">
+                <div class="slds-align_absolute-center slds-m-top_small">
+                    <lightning:button 
+                    iconName="utility:chevronleft" 
+                    variant="bare" label="Previous page" 
+                    title="Previous page" 
+                    iconPosition="left" 
+                    onclick="{! c.handleClickPrevPage }" 
+                    disabled="{!v.currentPage == 1}"
+                />
+                &nbsp;Page&nbsp; <input style="width: 3%; padding: 0%" class="slds-input slds-text-align_center slds-size_small slds-size_1-of-12" id="changePageBot" name="changePageBot" value="{!v.currentPage}" onchange="{!c.handleChangePage}"/>&nbsp; of {!v.calculatedSize} ({!1 + (v.currentPage - 1) * v.pageSize}-{!v.currentPage * v.pageSize})&nbsp;
+                <lightning:button 
+                    iconName="utility:chevronright" 
+                    variant="bare" 
+                    label="Next page" 
+                    title="Next page" 
+                    iconPosition="right" 
+                    onclick="{! c.handleClickNextPage }"
+                    disabled="{!v.currentPage == v.calculatedSize}"
+                />
+                </div>
+            </aura:if>
+            <aura:if isTrue="{!v.hasError}">
+                <div class="errorOverlay">
+                    Error retrieving data
+                </div>
+            </aura:if>
+            
+        </div>
+        <aura:if isTrue="{!v.isLoading}">
+            <lightning:spinner alternativeText="Loading..." size="medium" variant="brand" />
+        </aura:if>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>2 - Customer Care Email Series</name>
+    <style>freeForm</style>
+    <subject>Palmetto Solar - Saving Money On Your Home Energy Costs!</subject>
+    <textOnly>Hello {!Contact.FirstName},
+
+
+{!User.FirstName} here with Palmetto Solar, I am reaching out to you in regards to the form you filled out requesting information on a solar system.
+
+
+I was hoping to connect with you sometime today when it would be convenient for you.  The best way for us to help you move forward with your education about solar energy would be to speak with you over the phone.
+
+
+In order to determine if your property has the ability to integrate a solar system we just need to collect some basic information about your property.
+
+
+Again, I will be your primary contact who will personally be available to answer any questions about cost, installation, or tax credits involved with your solar system.
+
+
+I look forward to hearing from you when you are available.
+
+
+Best Regards,
+
+{!User.FirstName} {!User.LastName}
+Palmetto
+Customer Care Department
+
+701 E. Bay St. #413 Charleston, SC 29403
+Email: {!User.Email}
+
+Toll Free: (855) 339-1831</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_Obtained</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(NOT ISPICKVAL( Customer_Type__c , "GreenNRG - Installation"), 
+(NOT ISPICKVAL( Customer_Type__c , "Solcius Installation")),
+NOT(RecordType.Name = "3rd Party - Contracted Sales"), 
+NOT(RecordType.Name = "3rd Party - Design Sales"),
+NOT(RecordType.Name = "Energy Monitor"),
+NOT(RecordType.Name = "O&amp;M Sales"),
+ISBLANK(TEXT(Referral_Obtained__c)),
+CASE( StageName, 
+'1. Appointment Set',1, 
+'2. Appointment Complete',2, 
+'3. Proposal Presented',3, 
+'3a. Proposal Redesign',3, 
+'4. Verbal Committment',4, 
+'5. LOI (Letter of Intent) Signed',5, 
+'6. Contract Signed',6, 
+'7. Contract Received',7, 
+'8. Site Audit Scheduled',8, 
+'9. Change Order Pending',9, 
+'10. Site Approved',10, 
+'11. Interconnection Sent',11, 
+'12. Engineering Package Sent',12, 
+'13. Engineering Design Complete',13, 
+'14. Permit Sent',14, 
+'15. Permit Ready',15, 
+'16. Permit Received',16, 
+'17. Install Ready',17, 
+'18. Installation',18, 
+'19. Closed Won',19, 
+'Closed Lost', 20, 
+'Cancelled', 21, 
+0) &gt; 2 
+)</errorConditionFormula>
+    <errorDisplayField>Referral_Obtained__c</errorDisplayField>
+    <errorMessage>Please indicate if a referral was obtained.</errorMessage>
+</ValidationRule>

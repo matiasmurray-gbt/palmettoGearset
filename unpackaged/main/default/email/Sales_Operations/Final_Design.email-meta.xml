@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to be sent when the design is complete</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Final Design</name>
+    <style>freeForm</style>
+    <subject>No - Reply. Your Final Design is Complete</subject>
+    <textOnly>*This email is not monitored. Please do not reply.*
+
+
+
+Hello {!Opportunity.Contact__c},
+
+
+We’ve got great news, your final design is complete!
+
+
+Our next step is to obtain the necessary third-party approvals and then reach out to schedule your installation.
+
+
+You can reach us via Palmetto Home, phone or email. As always, we’re here for you. Please reach out if you have any questions as your solar journey progresses and thank you for being a Palmetto customer!
+
+
+If you have any questions or concerns, we encourage you to reach out to your sales representative.
+
+Sincerely,
+
+
+Customer Support
+
+Customer.Care@Palmetto.com
+
+855.339.1831
+
+www.Palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

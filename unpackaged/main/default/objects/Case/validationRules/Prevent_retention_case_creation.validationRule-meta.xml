@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_retention_case_creation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISNEW(),
+    RecordType.DeveloperName = "Retention",
+    OR(
+        ISPICKVAL(Opportunity__r.StageName, '18. Installation'),
+        ISPICKVAL(Opportunity__r.StageName, '19. Install Completed'),
+        ISPICKVAL(Opportunity__r.StageName, '20. Inspection Scheduled'),
+        ISPICKVAL(Opportunity__r.StageName, '21. Inspection Complete'),
+        ISPICKVAL(Opportunity__r.StageName, '22. PTO'),
+        ISPICKVAL(Opportunity__r.StageName, 'Closed Won'),
+        ISPICKVAL(Opportunity__r.StageName, 'Closed Lost'), 
+        ISPICKVAL(Opportunity__r.StageName, 'Cancelled')
+    )
+)</errorConditionFormula>
+    <errorMessage>You can't create a Retention Case at this stage of the Opportunity</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Partner Onboarding Template</name>
+    <style>none</style>
+    <subject>{!Account.Name} -  &quot;New Partner Onboarded, Create Commissions Plan&quot;</subject>
+    <textOnly>Partner Name: {!Account.Name}
+
+Date Signed/Onboarded: {!Account.CreatedDate}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

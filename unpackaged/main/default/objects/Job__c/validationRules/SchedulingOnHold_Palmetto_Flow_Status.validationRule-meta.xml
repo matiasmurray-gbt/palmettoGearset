@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SchedulingOnHold_Palmetto_Flow_Status</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( $RecordType.Name = "Installation Scheduling" , (
+ISPICKVAL( Flow_Status__c, 'Scheduling on Hold- Palmetto' )
+&amp;&amp;
+(ISBLANK( Supply_Chain__c ) &amp;&amp; ISBLANK(Weather__c ) &amp;&amp; ISBLANK(Build_Partner_Capacity__c ) &amp;&amp; ISBLANK(Project_Complexity__c ) &amp;&amp; ISBLANK(Grount_Mount__c ) &amp;&amp; ISBLANK(Storage__c )) 
+))</errorConditionFormula>
+    <errorMessage>One of the following fields need to be filled: Supply Chain, Weather, Build Partner Capacity, Project Complexity, Grount Mount, or Storage for Scheduling on Hold- Palmetto Flow status</errorMessage>
+</ValidationRule>

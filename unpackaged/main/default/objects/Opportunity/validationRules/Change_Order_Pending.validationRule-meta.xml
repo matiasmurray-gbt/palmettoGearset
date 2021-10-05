@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_Order_Pending</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+PRIORVALUE(StageName) = "9. Change Order Pending",
+ISCHANGED(StageName),
+$UserRole.Name &lt;&gt; "CEO", 
+$UserRole.Name &lt;&gt; "Project Manager", 
+$UserRole.Name &lt;&gt; "Project Coordinator - MA", 
+$UserRole.Name &lt;&gt; "Project Manager - FL", 
+$UserRole.Name &lt;&gt; "Project Manager - SC", 
+$UserRole.Name &lt;&gt; "Project Coordinator - SC", 
+$UserRole.Name &lt;&gt; "General Manager",
+$UserRole.Name &lt;&gt; "Operations Manager",
+$UserRole.Name &lt;&gt; "Business Development")</errorConditionFormula>
+    <errorMessage>Only Project Managers and Project Coordinators can move an opportunity out of Change Order Pending.</errorMessage>
+</ValidationRule>

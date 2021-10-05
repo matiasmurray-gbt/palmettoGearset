@@ -1,0 +1,2972 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_2__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason 2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reason_1__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Addition of panels</fullName>
+                <default>false</default>
+                <label>Addition of panels</label>
+            </value>
+            <value>
+                <fullName>As Built Doesn’t Match Last Contract</fullName>
+                <default>false</default>
+                <label>As Built Doesn’t Match Last Contract</label>
+            </value>
+            <value>
+                <fullName>Avoidable</fullName>
+                <default>false</default>
+                <label>Avoidable</label>
+            </value>
+            <value>
+                <fullName>Bad Roof Quality</fullName>
+                <default>false</default>
+                <label>Bad Roof Quality</label>
+            </value>
+            <value>
+                <fullName>Bad Survey Photos</fullName>
+                <default>false</default>
+                <label>Bad Survey Photos</label>
+            </value>
+            <value>
+                <fullName>Bill of Materials</fullName>
+                <default>false</default>
+                <label>Bill of Materials</label>
+            </value>
+            <value>
+                <fullName>Both</fullName>
+                <default>false</default>
+                <label>Both</label>
+            </value>
+            <value>
+                <fullName>BP Availability</fullName>
+                <default>false</default>
+                <label>BP Availability</label>
+            </value>
+            <value>
+                <fullName>Ceiling</fullName>
+                <default>false</default>
+                <label>Ceiling</label>
+            </value>
+            <value>
+                <fullName>Cell/Gateway</fullName>
+                <default>false</default>
+                <label>Cell/Gateway</label>
+            </value>
+            <value>
+                <fullName>Changed Design due to Efficiency/Ease of Install</fullName>
+                <default>false</default>
+                <label>Changed Design due to Efficiency/Ease of Install</label>
+            </value>
+            <value>
+                <fullName>Commissioning Issue</fullName>
+                <default>false</default>
+                <label>Commissioning Issue</label>
+            </value>
+            <value>
+                <fullName>Consumption</fullName>
+                <default>false</default>
+                <label>Consumption</label>
+            </value>
+            <value>
+                <fullName>Consumption Monitoring</fullName>
+                <default>false</default>
+                <label>Consumption Monitoring</label>
+            </value>
+            <value>
+                <fullName>Contract/Loan  Change</fullName>
+                <default>false</default>
+                <label>Contract/Loan  Change</label>
+            </value>
+            <value>
+                <fullName>Customer Failing to Action</fullName>
+                <default>false</default>
+                <label>Customer Failing to Action</label>
+            </value>
+            <value>
+                <fullName>Customer Obligation</fullName>
+                <default>false</default>
+                <label>Customer Obligation</label>
+            </value>
+            <value>
+                <fullName>Debris</fullName>
+                <default>false</default>
+                <label>Debris</label>
+            </value>
+            <value>
+                <fullName>Design - Electrical</fullName>
+                <default>false</default>
+                <label>Design - Electrical</label>
+            </value>
+            <value>
+                <fullName>Design - Layout</fullName>
+                <default>false</default>
+                <label>Design - Layout</label>
+            </value>
+            <value>
+                <fullName>Design - Other</fullName>
+                <default>false</default>
+                <label>Design - Other</label>
+            </value>
+            <value>
+                <fullName>Detractor</fullName>
+                <default>false</default>
+                <label>Detractor</label>
+            </value>
+            <value>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+                <label>Documentation</label>
+            </value>
+            <value>
+                <fullName>EE</fullName>
+                <default>false</default>
+                <label>EE</label>
+            </value>
+            <value>
+                <fullName>EE/Offset Discrepancy</fullName>
+                <default>false</default>
+                <label>EE/Offset Discrepancy</label>
+            </value>
+            <value>
+                <fullName>Electrical</fullName>
+                <default>false</default>
+                <label>Electrical</label>
+            </value>
+            <value>
+                <fullName>Electrical One line Edit</fullName>
+                <default>false</default>
+                <label>Electrical One line Edit</label>
+            </value>
+            <value>
+                <fullName>Electrical Upgrade required</fullName>
+                <default>false</default>
+                <label>Electrical Upgrade required</label>
+            </value>
+            <value>
+                <fullName>Design Change</fullName>
+                <default>false</default>
+                <label>Engineering/Design</label>
+            </value>
+            <value>
+                <fullName>Equipment Change</fullName>
+                <default>false</default>
+                <label>Equipment Change</label>
+            </value>
+            <value>
+                <fullName>Equipment Delay</fullName>
+                <default>false</default>
+                <label>Equipment Delay</label>
+            </value>
+            <value>
+                <fullName>Expired Credit</fullName>
+                <default>false</default>
+                <label>Expired Credit</label>
+            </value>
+            <value>
+                <fullName>Extended Timeline</fullName>
+                <default>false</default>
+                <label>Extended Timeline</label>
+            </value>
+            <value>
+                <fullName>External</fullName>
+                <default>false</default>
+                <label>External</label>
+            </value>
+            <value>
+                <fullName>Failed Initial Virtual Survey</fullName>
+                <default>false</default>
+                <label>Failed Initial Virtual Survey</label>
+            </value>
+            <value>
+                <fullName>Fault Error</fullName>
+                <default>false</default>
+                <label>Fault Error</label>
+            </value>
+            <value>
+                <fullName>FinanciarStipulation</fullName>
+                <default>false</default>
+                <label>FinanciarStipulation</label>
+            </value>
+            <value>
+                <fullName>Full Survey</fullName>
+                <default>false</default>
+                <label>Full Survey</label>
+            </value>
+            <value>
+                <fullName>Ground Mount Coordination</fullName>
+                <default>false</default>
+                <label>Ground Mount Coordination</label>
+            </value>
+            <value>
+                <fullName>HOA Denial</fullName>
+                <default>false</default>
+                <label>HOA Denial</label>
+            </value>
+            <value>
+                <fullName>HOA issues</fullName>
+                <default>false</default>
+                <label>HOA issues</label>
+            </value>
+            <value>
+                <fullName>HOA issues require a design change</fullName>
+                <default>false</default>
+                <label>HOA issues require a design change</label>
+            </value>
+            <value>
+                <fullName>Homeowner Expectations</fullName>
+                <default>false</default>
+                <label>Homeowner Expectations</label>
+            </value>
+            <value>
+                <fullName>Homeowner Hold- Requested</fullName>
+                <default>false</default>
+                <label>Homeowner Hold- Requested</label>
+            </value>
+            <value>
+                <fullName>Homeowner Hold- Unresponsive</fullName>
+                <default>false</default>
+                <label>Homeowner Hold- Unresponsive</label>
+            </value>
+            <value>
+                <fullName>Home owner not Home</fullName>
+                <default>false</default>
+                <label>Home owner not Home</label>
+            </value>
+            <value>
+                <fullName>Homeowner Obligation</fullName>
+                <default>false</default>
+                <label>Homeowner Obligation</label>
+            </value>
+            <value>
+                <fullName>Homeowner Obligation - Electrical</fullName>
+                <default>false</default>
+                <label>Homeowner Obligation - Electrical</label>
+            </value>
+            <value>
+                <fullName>Homeowner Obligation - Roof</fullName>
+                <default>false</default>
+                <label>Homeowner Obligation - Roof</label>
+            </value>
+            <value>
+                <fullName>Homeowner Obligation - Site Condition</fullName>
+                <default>false</default>
+                <label>Homeowner Obligation - Site Condition</label>
+            </value>
+            <value>
+                <fullName>Homeowner Obligation - Tree</fullName>
+                <default>false</default>
+                <label>Homeowner Obligation - Tree</label>
+            </value>
+            <value>
+                <fullName>Household Items</fullName>
+                <default>false</default>
+                <label>Household Items</label>
+            </value>
+            <value>
+                <fullName>ICA issues</fullName>
+                <default>false</default>
+                <label>ICA issues</label>
+            </value>
+            <value>
+                <fullName>Inappropriate Behavior</fullName>
+                <default>false</default>
+                <label>Inappropriate Behavior</label>
+            </value>
+            <value>
+                <fullName>Internal</fullName>
+                <default>false</default>
+                <label>Internal</label>
+            </value>
+            <value>
+                <fullName>Inverter</fullName>
+                <default>false</default>
+                <label>Inverter</label>
+            </value>
+            <value>
+                <fullName>Job Close Out Photos</fullName>
+                <default>false</default>
+                <label>Job Close Out Photos</label>
+            </value>
+            <value>
+                <fullName>Layout</fullName>
+                <default>false</default>
+                <label>Layout</label>
+            </value>
+            <value>
+                <fullName>M0/Contract not approved</fullName>
+                <default>false</default>
+                <label>M0/Contract not approved</label>
+            </value>
+            <value>
+                <fullName>Master COP</fullName>
+                <default>false</default>
+                <label>Master COP</label>
+            </value>
+            <value>
+                <fullName>Meter Turndown</fullName>
+                <default>false</default>
+                <label>Meter Turndown</label>
+            </value>
+            <value>
+                <fullName>Missing Inverter Number</fullName>
+                <default>false</default>
+                <label>Missing Inverter Number</label>
+            </value>
+            <value>
+                <fullName>Missing Photos</fullName>
+                <default>false</default>
+                <label>Missing Photos</label>
+            </value>
+            <value>
+                <fullName>Move of panels</fullName>
+                <default>false</default>
+                <label>Move of panels</label>
+            </value>
+            <value>
+                <fullName>Multiple Failed Inspections</fullName>
+                <default>false</default>
+                <label>Multiple Failed Inspections</label>
+            </value>
+            <value>
+                <fullName>Needs Structural Upgrade</fullName>
+                <default>false</default>
+                <label>Needs Structural Upgrade</label>
+            </value>
+            <value>
+                <fullName>Neutral</fullName>
+                <default>false</default>
+                <label>Neutral</label>
+            </value>
+            <value>
+                <fullName>Not Standard</fullName>
+                <default>false</default>
+                <label>Not Standard</label>
+            </value>
+            <value>
+                <fullName>One Line and Plan set match install</fullName>
+                <default>false</default>
+                <label>One Line and Plan set match install</label>
+            </value>
+            <value>
+                <fullName>Optimizer</fullName>
+                <default>false</default>
+                <label>Optimizer</label>
+            </value>
+            <value>
+                <fullName>Delay in CR</fullName>
+                <default>false</default>
+                <label>Delay in CR</label>
+            </value>
+            <value>
+                <fullName>Delay in Site Survey</fullName>
+                <default>false</default>
+                <label>Delay in Site Survey</label>
+            </value>
+            <value>
+                <fullName>Delay in Permitting</fullName>
+                <default>false</default>
+                <label>Delay in Permitting</label>
+            </value>
+            <value>
+                <fullName>Delay in Install</fullName>
+                <default>false</default>
+                <label>Delay in Install</label>
+            </value>
+            <value>
+                <fullName>Delay in interconnection</fullName>
+                <default>false</default>
+                <label>Delay in interconnection</label>
+            </value>
+            <value>
+                <fullName>Delay in AHJ Inspection</fullName>
+                <default>false</default>
+                <label>Delay in AHJ Inspection</label>
+            </value>
+            <value>
+                <fullName>Delay in Utility Inspection</fullName>
+                <default>false</default>
+                <label>Delay in Utility Inspection</label>
+            </value>
+            <value>
+                <fullName>Delay in PTO</fullName>
+                <default>false</default>
+                <label>Delay in PTO</label>
+            </value>
+            <value>
+                <fullName>Delay in ICA</fullName>
+                <default>false</default>
+                <label>Delay in ICA</label>
+            </value>
+            <value>
+                <fullName>Delay in COC</fullName>
+                <default>false</default>
+                <label>Delay in COC</label>
+            </value>
+            <value>
+                <fullName>Unresponsive Customer</fullName>
+                <default>false</default>
+                <label>Unresponsive Customer</label>
+            </value>
+            <value>
+                <fullName>Poor Workmanship</fullName>
+                <default>false</default>
+                <label>Poor Workmanship</label>
+            </value>
+            <value>
+                <fullName>Savings Loss Due to Delay</fullName>
+                <default>false</default>
+                <label>Savings Loss Due to Delay</label>
+            </value>
+            <value>
+                <fullName>Damage to Property</fullName>
+                <default>false</default>
+                <label>Damage to Property</label>
+            </value>
+            <value>
+                <fullName>Install Call Off</fullName>
+                <default>false</default>
+                <label>Install Call Off</label>
+            </value>
+            <value>
+                <fullName>Cost for Replacement</fullName>
+                <default>false</default>
+                <label>Cost for Replacement</label>
+            </value>
+            <value>
+                <fullName>Product Addition</fullName>
+                <default>false</default>
+                <label>Product Addition</label>
+            </value>
+            <value>
+                <fullName>Loss in Production</fullName>
+                <default>false</default>
+                <label>Loss in Production</label>
+            </value>
+            <value>
+                <fullName>Loan Reimbursement</fullName>
+                <default>false</default>
+                <label>Loan Reimbursement</label>
+            </value>
+            <value>
+                <fullName>Structural DQ</fullName>
+                <default>false</default>
+                <label>Structural DQ</label>
+            </value>
+            <value>
+                <fullName>Ineligible Roof Type</fullName>
+                <default>false</default>
+                <label>Ineligible Roof Type</label>
+            </value>
+            <value>
+                <fullName>Compliance issues</fullName>
+                <default>false</default>
+                <label>Compliance issues</label>
+            </value>
+            <value>
+                <fullName>Net Funding</fullName>
+                <default>false</default>
+                <label>Net Funding</label>
+            </value>
+            <value>
+                <fullName>Competition</fullName>
+                <default>false</default>
+                <label>Competition</label>
+            </value>
+            <value>
+                <fullName>Downsizing</fullName>
+                <default>false</default>
+                <label>Downsizing</label>
+            </value>
+            <value>
+                <fullName>Vacation</fullName>
+                <default>false</default>
+                <label>Vacation</label>
+            </value>
+            <value>
+                <fullName>Home Renovation</fullName>
+                <default>false</default>
+                <label>Home Renovation</label>
+            </value>
+            <value>
+                <fullName>Finances</fullName>
+                <default>false</default>
+                <label>Finances</label>
+            </value>
+            <value>
+                <fullName>Offset</fullName>
+                <default>false</default>
+                <label>Offset</label>
+            </value>
+            <value>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+                <label>Pricing</label>
+            </value>
+            <value>
+                <fullName>Promised Promotion</fullName>
+                <default>false</default>
+                <label>Promised Promotion</label>
+            </value>
+            <value>
+                <fullName>Experience</fullName>
+                <default>false</default>
+                <label>Experience</label>
+            </value>
+            <value>
+                <fullName>Promised ITC/Incentive</fullName>
+                <default>false</default>
+                <label>Promised ITC/Incentive</label>
+            </value>
+            <value>
+                <fullName>Social Media Review</fullName>
+                <default>false</default>
+                <label>Social Media Review</label>
+            </value>
+            <value>
+                <fullName>BBB Review</fullName>
+                <default>false</default>
+                <label>BBB Review</label>
+            </value>
+            <value>
+                <fullName>Google / Yelp Review</fullName>
+                <default>false</default>
+                <label>Google / Yelp Review</label>
+            </value>
+            <value>
+                <fullName>NPS Review</fullName>
+                <default>false</default>
+                <label>NPS Review</label>
+            </value>
+            <value>
+                <fullName>Attorney General Complaint</fullName>
+                <default>false</default>
+                <label>Attorney General Complaint</label>
+            </value>
+            <value>
+                <fullName>Utility Bill</fullName>
+                <default>false</default>
+                <label>Utility Bill</label>
+            </value>
+            <value>
+                <fullName>Retention promotion</fullName>
+                <default>false</default>
+                <label>Retention promotion</label>
+            </value>
+            <value>
+                <fullName>Palmetto Promotion</fullName>
+                <default>false</default>
+                <label>Palmetto Promotion</label>
+            </value>
+            <value>
+                <fullName>Customer Hasn't Confirmed Reroof</fullName>
+                <default>false</default>
+                <label>Customer Hasn't Confirmed Reroof</label>
+            </value>
+            <value>
+                <fullName>Customer Hasn't Removed Trees</fullName>
+                <default>false</default>
+                <label>Customer Hasn't Removed Trees</label>
+            </value>
+            <value>
+                <fullName>Customer Not Scheduling Survey</fullName>
+                <default>false</default>
+                <label>Customer Not Scheduling Survey</label>
+            </value>
+            <value>
+                <fullName>Customer Not Scheduling Install</fullName>
+                <default>false</default>
+                <label>Customer Not Scheduling Install</label>
+            </value>
+            <value>
+                <fullName>Customer Not Signing Documents</fullName>
+                <default>false</default>
+                <label>Customer Not Signing Documents</label>
+            </value>
+            <value>
+                <fullName>Selling Home</fullName>
+                <default>false</default>
+                <label>Selling Home</label>
+            </value>
+            <value>
+                <fullName>Customer Unresponsive to Requests for Docs</fullName>
+                <default>false</default>
+                <label>Customer Unresponsive to Requests for Docs</label>
+            </value>
+            <value>
+                <fullName>Customer Unresponsive to Requests to Sch</fullName>
+                <default>false</default>
+                <label>Customer Unresponsive to Requests to Sch</label>
+            </value>
+            <value>
+                <fullName>Customer Unresponsive to Design Change</fullName>
+                <default>false</default>
+                <label>Customer Unresponsive to Design Change</label>
+            </value>
+            <value>
+                <fullName>Customer Unresponsive to Adder Inclusion</fullName>
+                <default>false</default>
+                <label>Customer Unresponsive to Adder Inclusion</label>
+            </value>
+            <value>
+                <fullName>Customer Unresponsive Other</fullName>
+                <default>false</default>
+                <label>Customer Unresponsive Other</label>
+            </value>
+            <value>
+                <fullName>Illness</fullName>
+                <default>false</default>
+                <label>Illness</label>
+            </value>
+            <value>
+                <fullName>Reviewing Project Details</fullName>
+                <default>false</default>
+                <label>Reviewing Project Details</label>
+            </value>
+            <value>
+                <fullName>Non-Serviceable AHJ</fullName>
+                <default>false</default>
+                <label>Non-Serviceable AHJ</label>
+            </value>
+            <value>
+                <fullName>Safety Concerns</fullName>
+                <default>false</default>
+                <label>Safety Concerns</label>
+            </value>
+            <value>
+                <fullName>Ineligible Property Type</fullName>
+                <default>false</default>
+                <label>Ineligible Property Type</label>
+            </value>
+            <value>
+                <fullName>Panel</fullName>
+                <default>false</default>
+                <label>Panel</label>
+            </value>
+            <value>
+                <fullName>Panels Won't Fit(Setbacks)</fullName>
+                <default>false</default>
+                <label>Panels Won't Fit(Setbacks)</label>
+            </value>
+            <value>
+                <fullName>Paperwork Error</fullName>
+                <default>false</default>
+                <label>Paperwork Error</label>
+            </value>
+            <value>
+                <fullName>PendingCancellation</fullName>
+                <default>false</default>
+                <label>PendingCancellation</label>
+            </value>
+            <value>
+                <fullName>Pending Documents to Sign</fullName>
+                <default>false</default>
+                <label>Pending Documents to Sign</label>
+            </value>
+            <value>
+                <fullName>Pending Documents to Upload</fullName>
+                <default>false</default>
+                <label>Pending Documents to Upload</label>
+            </value>
+            <value>
+                <fullName>Photos Needed</fullName>
+                <default>false</default>
+                <label>Photos Needed</label>
+            </value>
+            <value>
+                <fullName>Plan Set Updates</fullName>
+                <default>false</default>
+                <label>Plan Set Updates</label>
+            </value>
+            <value>
+                <fullName>Plans in Mail</fullName>
+                <default>false</default>
+                <label>Plans in Mail</label>
+            </value>
+            <value>
+                <fullName>PoK</fullName>
+                <default>false</default>
+                <label>PoK</label>
+            </value>
+            <value>
+                <fullName>Poor Roof Conditions</fullName>
+                <default>false</default>
+                <label>Poor Roof Conditions</label>
+            </value>
+            <value>
+                <fullName>Production</fullName>
+                <default>false</default>
+                <label>Production</label>
+            </value>
+            <value>
+                <fullName>Production Promise</fullName>
+                <default>false</default>
+                <label>Production Promise</label>
+            </value>
+            <value>
+                <fullName>Punch List Items</fullName>
+                <default>false</default>
+                <label>Punch List Items</label>
+            </value>
+            <value>
+                <fullName>Quote</fullName>
+                <default>false</default>
+                <label>Quote</label>
+            </value>
+            <value>
+                <fullName>Received</fullName>
+                <default>false</default>
+                <label>Received</label>
+            </value>
+            <value>
+                <fullName>Reduction of panels</fullName>
+                <default>false</default>
+                <label>Reduction of panels</label>
+            </value>
+            <value>
+                <fullName>ReRoof</fullName>
+                <default>false</default>
+                <label>ReRoof</label>
+            </value>
+            <value>
+                <fullName>Re-Roof Not Required</fullName>
+                <default>false</default>
+                <label>Re-Roof Not Required</label>
+            </value>
+            <value>
+                <fullName>Reroof required</fullName>
+                <default>false</default>
+                <label>Reroof required</label>
+            </value>
+            <value>
+                <fullName>Re-Roof Required</fullName>
+                <default>false</default>
+                <label>Re-Roof Required</label>
+            </value>
+            <value>
+                <fullName>Re-Survey Needed</fullName>
+                <default>false</default>
+                <label>Re-Survey Needed</label>
+            </value>
+            <value>
+                <fullName>Re-Survey Required</fullName>
+                <default>false</default>
+                <label>Re-Survey Required</label>
+            </value>
+            <value>
+                <fullName>Review</fullName>
+                <default>false</default>
+                <label>Review</label>
+            </value>
+            <value>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+                <label>Submitted</label>
+            </value>
+            <value>
+                <fullName>Roof</fullName>
+                <default>false</default>
+                <label>Roof</label>
+            </value>
+            <value>
+                <fullName>Sent</fullName>
+                <default>false</default>
+                <label>Sent</label>
+            </value>
+            <value>
+                <fullName>Service Offered</fullName>
+                <default>false</default>
+                <label>Service Offered</label>
+            </value>
+            <value>
+                <fullName>Shading</fullName>
+                <default>false</default>
+                <label>Shading</label>
+            </value>
+            <value>
+                <fullName>Sideing</fullName>
+                <default>false</default>
+                <label>Sideing</label>
+            </value>
+            <value>
+                <fullName>Site Survey</fullName>
+                <default>false</default>
+                <label>Site Survey</label>
+            </value>
+            <value>
+                <fullName>Sleep Mode</fullName>
+                <default>false</default>
+                <label>Sleep Mode</label>
+            </value>
+            <value>
+                <fullName>Software</fullName>
+                <default>false</default>
+                <label>Software</label>
+            </value>
+            <value>
+                <fullName>SoK(No)</fullName>
+                <default>false</default>
+                <label>SoK(No)</label>
+            </value>
+            <value>
+                <fullName>SolarEdge Technical Issue</fullName>
+                <default>false</default>
+                <label>SolarEdge Technical Issue</label>
+            </value>
+            <value>
+                <fullName>Standard</fullName>
+                <default>false</default>
+                <label>Standard</label>
+            </value>
+            <value>
+                <fullName>Stickers</fullName>
+                <default>false</default>
+                <label>Stickers</label>
+            </value>
+            <value>
+                <fullName>Storage</fullName>
+                <default>false</default>
+                <label>Storage</label>
+            </value>
+            <value>
+                <fullName>Structural Upgrade required</fullName>
+                <default>false</default>
+                <label>Structural Upgrade required</label>
+            </value>
+            <value>
+                <fullName>Sunnova</fullName>
+                <default>false</default>
+                <label>Sunnova</label>
+            </value>
+            <value>
+                <fullName>System Size</fullName>
+                <default>false</default>
+                <label>System Size</label>
+            </value>
+            <value>
+                <fullName>Technical Issue</fullName>
+                <default>false</default>
+                <label>Technical Issue</label>
+            </value>
+            <value>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+                <label>Tier 1</label>
+            </value>
+            <value>
+                <fullName>Tier 2</fullName>
+                <default>false</default>
+                <label>Tier 2</label>
+            </value>
+            <value>
+                <fullName>Tier 3</fullName>
+                <default>false</default>
+                <label>Tier 3</label>
+            </value>
+            <value>
+                <fullName>Timelines</fullName>
+                <default>false</default>
+                <label>Timelines</label>
+            </value>
+            <value>
+                <fullName>Transformer Upgrade</fullName>
+                <default>false</default>
+                <label>Transformer Upgrade</label>
+            </value>
+            <value>
+                <fullName>Additional costs (MPU/Re-roof)</fullName>
+                <default>false</default>
+                <label>Additional costs (MPU/Re-roof)</label>
+            </value>
+            <value>
+                <fullName>TreeRemoval</fullName>
+                <default>false</default>
+                <label>TreeRemoval</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Tree Removal</fullName>
+                <default>false</default>
+                <label>Tree Removal</label>
+            </value>
+            <value>
+                <fullName>Tree Removal required</fullName>
+                <default>false</default>
+                <label>Tree Removal required</label>
+            </value>
+            <value>
+                <fullName>Trench required</fullName>
+                <default>false</default>
+                <label>Trench required</label>
+            </value>
+            <value>
+                <fullName>Unavoidable</fullName>
+                <default>false</default>
+                <label>Unavoidable</label>
+            </value>
+            <value>
+                <fullName>Unclear Photos</fullName>
+                <default>false</default>
+                <label>Unclear Photos</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>UnresponsiveCustomer</fullName>
+                <default>false</default>
+                <label>UnresponsiveCustomer</label>
+            </value>
+            <value>
+                <fullName>Upgrade Not Required</fullName>
+                <default>false</default>
+                <label>Upgrade Not Required</label>
+            </value>
+            <value>
+                <fullName>Upgrade Required</fullName>
+                <default>false</default>
+                <label>Upgrade Required</label>
+            </value>
+            <value>
+                <fullName>Utility Denial</fullName>
+                <default>false</default>
+                <label>Utility Denial</label>
+            </value>
+            <value>
+                <fullName>Virtual Survey</fullName>
+                <default>false</default>
+                <label>Virtual Survey</label>
+            </value>
+            <value>
+                <fullName>Virtual Survey Incomplete</fullName>
+                <default>false</default>
+                <label>Virtual Survey Incomplete</label>
+            </value>
+            <value>
+                <fullName>Weather</fullName>
+                <default>false</default>
+                <label>Weather</label>
+            </value>
+            <value>
+                <fullName>Windows</fullName>
+                <default>false</default>
+                <label>Windows</label>
+            </value>
+            <value>
+                <fullName>Wrong Fuse Sizes</fullName>
+                <default>false</default>
+                <label>Wrong Fuse Sizes</label>
+            </value>
+            <value>
+                <fullName>Wrong Interconnection Method</fullName>
+                <default>false</default>
+                <label>Wrong Interconnection Method</label>
+            </value>
+            <value>
+                <fullName>Wrong Orientation of Boxes</fullName>
+                <default>false</default>
+                <label>Wrong Orientation of Boxes</label>
+            </value>
+            <value>
+                <fullName>Wrong Wire Size</fullName>
+                <default>false</default>
+                <label>Wrong Wire Size</label>
+            </value>
+            <value>
+                <fullName>Reservation Application Submitted</fullName>
+                <default>false</default>
+                <label>Reservation Application Submitted</label>
+            </value>
+            <value>
+                <fullName>Corrections Required</fullName>
+                <default>false</default>
+                <label>Corrections Required</label>
+            </value>
+            <value>
+                <fullName>Corrections Submitted</fullName>
+                <default>false</default>
+                <label>Corrections Submitted</label>
+            </value>
+            <value>
+                <fullName>Reservation Application Approved</fullName>
+                <default>false</default>
+                <label>Reservation Application Approved</label>
+            </value>
+            <value>
+                <fullName>As-Built Submitted</fullName>
+                <default>false</default>
+                <label>As-Built Submitted</label>
+            </value>
+            <value>
+                <fullName>NJCE Registration Complete</fullName>
+                <default>false</default>
+                <label>NJCE Registration Complete</label>
+            </value>
+            <value>
+                <fullName>SRECTrade Registration Submitted</fullName>
+                <default>false</default>
+                <label>SRECTrade Registration Submitted</label>
+            </value>
+            <value>
+                <fullName>Account Transfer Awaiting Customer Action</fullName>
+                <default>false</default>
+                <label>Account Transfer Awaiting Customer Action</label>
+            </value>
+            <value>
+                <fullName>Incentive Process Complete</fullName>
+                <default>false</default>
+                <label>Incentive Process Complete</label>
+            </value>
+            <value>
+                <fullName>Claim Submitted - Docs Awaiting Customer Signature</fullName>
+                <default>false</default>
+                <label>Claim Submitted - Docs Awaiting Customer Signature</label>
+            </value>
+            <value>
+                <fullName>Claim Under Review</fullName>
+                <default>false</default>
+                <label>Claim Under Review</label>
+            </value>
+            <value>
+                <fullName>Claim Corrections Required</fullName>
+                <default>false</default>
+                <label>Claim Corrections Required</label>
+            </value>
+            <value>
+                <fullName>Claim Corrections Submitted</fullName>
+                <default>false</default>
+                <label>Claim Corrections Submitted</label>
+            </value>
+            <value>
+                <fullName>Disclosure Sent</fullName>
+                <default>false</default>
+                <label>Disclosure Sent</label>
+            </value>
+            <value>
+                <fullName>Disclosure Received Signed</fullName>
+                <default>false</default>
+                <label>Disclosure Received Signed</label>
+            </value>
+            <value>
+                <fullName>App Submitted</fullName>
+                <default>false</default>
+                <label>App Submitted</label>
+            </value>
+            <value>
+                <fullName>Info Requested</fullName>
+                <default>false</default>
+                <label>Info Requested</label>
+            </value>
+            <value>
+                <fullName>Info Provided</fullName>
+                <default>false</default>
+                <label>Info Provided</label>
+            </value>
+            <value>
+                <fullName>Info Verified Processed</fullName>
+                <default>false</default>
+                <label>Info Verified Processed</label>
+            </value>
+            <value>
+                <fullName>App P1 Approved</fullName>
+                <default>false</default>
+                <label>App P1 Approved</label>
+            </value>
+            <value>
+                <fullName>Contract Awarded/P2 Submitted</fullName>
+                <default>false</default>
+                <label>Contract Awarded/P2 Submitted</label>
+            </value>
+            <value>
+                <fullName>Facility Certified</fullName>
+                <default>false</default>
+                <label>Facility Certified</label>
+            </value>
+            <value>
+                <fullName>App Rejected</fullName>
+                <default>false</default>
+                <label>App Rejected</label>
+            </value>
+            <value>
+                <fullName>App Resubmitted</fullName>
+                <default>false</default>
+                <label>App Resubmitted</label>
+            </value>
+            <value>
+                <fullName>App Approved</fullName>
+                <default>false</default>
+                <label>App Approved</label>
+            </value>
+            <value>
+                <fullName>CO Requested</fullName>
+                <default>false</default>
+                <label>CO Requested</label>
+            </value>
+            <value>
+                <fullName>CO Approved</fullName>
+                <default>false</default>
+                <label>CO Approved</label>
+            </value>
+            <value>
+                <fullName>Completion Doc Awaiting Customer Signature</fullName>
+                <default>false</default>
+                <label>Completion Doc Awaiting Customer Signature</label>
+            </value>
+            <value>
+                <fullName>Completion Doc Received Signed</fullName>
+                <default>false</default>
+                <label>Completion Doc Received Signed</label>
+            </value>
+            <value>
+                <fullName>Payment Requested</fullName>
+                <default>false</default>
+                <label>Payment Requested</label>
+            </value>
+            <value>
+                <fullName>Payment Pending</fullName>
+                <default>false</default>
+                <label>Payment Pending</label>
+            </value>
+            <value>
+                <fullName>Inspection Requested</fullName>
+                <default>false</default>
+                <label>Inspection Requested</label>
+            </value>
+            <value>
+                <fullName>Inspection Failed</fullName>
+                <default>false</default>
+                <label>Inspection Failed</label>
+            </value>
+            <value>
+                <fullName>Inspection Corrections Submitted</fullName>
+                <default>false</default>
+                <label>Inspection Corrections Submitted</label>
+            </value>
+            <value>
+                <fullName>Pending Monitoring</fullName>
+                <default>false</default>
+                <label>Pending Monitoring</label>
+            </value>
+            <value>
+                <fullName>PennAEPS Application Submitted</fullName>
+                <default>false</default>
+                <label>PennAEPS Application Submitted</label>
+            </value>
+            <value>
+                <fullName>PennAEPS Application Approved</fullName>
+                <default>false</default>
+                <label>PennAEPS Application Approved</label>
+            </value>
+            <value>
+                <fullName>SRECTrade App Submitted</fullName>
+                <default>false</default>
+                <label>SRECTrade App Submitted</label>
+            </value>
+            <value>
+                <fullName>Info Submitted</fullName>
+                <default>false</default>
+                <label>Info Submitted</label>
+            </value>
+            <value>
+                <fullName>Pipeline Report Submitted</fullName>
+                <default>false</default>
+                <label>Pipeline Report Submitted</label>
+            </value>
+            <value>
+                <fullName>MD RCEG App Submitted</fullName>
+                <default>false</default>
+                <label>MD RCEG App Submitted</label>
+            </value>
+            <value>
+                <fullName>MD Certification Submitted</fullName>
+                <default>false</default>
+                <label>MD Certification Submitted</label>
+            </value>
+            <value>
+                <fullName>SRECTrade Registration Complete</fullName>
+                <default>false</default>
+                <label>SRECTrade Registration Complete</label>
+            </value>
+            <value>
+                <fullName>Submit Incentive Docs</fullName>
+                <default>false</default>
+                <label>Submit Incentive Docs</label>
+            </value>
+            <value>
+                <fullName>Revisions Required</fullName>
+                <default>false</default>
+                <label>Revisions Required</label>
+            </value>
+            <value>
+                <fullName>Revisions Submitted</fullName>
+                <default>false</default>
+                <label>Revisions Submitted</label>
+            </value>
+            <value>
+                <fullName>Incentive Submitted</fullName>
+                <default>false</default>
+                <label>Incentive Submitted</label>
+            </value>
+            <value>
+                <fullName>CAF Sent for Signature</fullName>
+                <default>false</default>
+                <label>CAF Sent for Signature</label>
+            </value>
+            <value>
+                <fullName>CAF Received Signed</fullName>
+                <default>false</default>
+                <label>CAF Received Signed</label>
+            </value>
+            <value>
+                <fullName>LOI Received</fullName>
+                <default>false</default>
+                <label>LOI Received</label>
+            </value>
+            <value>
+                <fullName>Invoice Sent for Signature</fullName>
+                <default>false</default>
+                <label>Invoice Sent for Signature</label>
+            </value>
+            <value>
+                <fullName>Invoice Received Signed</fullName>
+                <default>false</default>
+                <label>Invoice Received Signed</label>
+            </value>
+            <value>
+                <fullName>QA Review</fullName>
+                <default>false</default>
+                <label>QA Review</label>
+            </value>
+            <value>
+                <fullName>Corrections Completed</fullName>
+                <default>false</default>
+                <label>Corrections Completed</label>
+            </value>
+            <value>
+                <fullName>Application Submitted</fullName>
+                <default>false</default>
+                <label>Application Submitted</label>
+            </value>
+            <value>
+                <fullName>Sunnova Delay</fullName>
+                <default>false</default>
+                <label>Sunnova Delay</label>
+            </value>
+            <value>
+                <fullName>Failed Inspection</fullName>
+                <default>false</default>
+                <label>Failed Inspection</label>
+            </value>
+            <value>
+                <fullName>App Expiration Pending</fullName>
+                <default>false</default>
+                <label>App Expiration Pending</label>
+            </value>
+            <value>
+                <fullName>AHJ setbacks</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AHJ setbacks</label>
+            </value>
+            <value>
+                <fullName>Appeal</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Appeal</label>
+            </value>
+            <value>
+                <fullName>Backend Change</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Backend Change</label>
+            </value>
+            <value>
+                <fullName>CP Contract Change</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CP Contract Change</label>
+            </value>
+            <value>
+                <fullName>Change order completed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Change order completed</label>
+            </value>
+            <value>
+                <fullName>Customer Delay</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer Delay</label>
+            </value>
+            <value>
+                <fullName>Customer Facing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer Facing</label>
+            </value>
+            <value>
+                <fullName>Customer out of town</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer out of town</label>
+            </value>
+            <value>
+                <fullName>Drivers license</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Drivers license</label>
+            </value>
+            <value>
+                <fullName>EM Device</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EM Device</label>
+            </value>
+            <value>
+                <fullName>Income verification</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Income verification</label>
+            </value>
+            <value>
+                <fullName>Incorrect HOI</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Incorrect HOI</label>
+            </value>
+            <value>
+                <fullName>Incorrect ROPC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Incorrect ROPC</label>
+            </value>
+            <value>
+                <fullName>Incorrect SLD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Incorrect SLD</label>
+            </value>
+            <value>
+                <fullName>Incorrect address</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Incorrect address</label>
+            </value>
+            <value>
+                <fullName>Incorrect measurements</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Incorrect measurements</label>
+            </value>
+            <value>
+                <fullName>Incorrect name</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Incorrect name</label>
+            </value>
+            <value>
+                <fullName>Indemnification Clause</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Indemnification Clause</label>
+            </value>
+            <value>
+                <fullName>Meter Order Turn Down</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Meter Order Turn Down</label>
+            </value>
+            <value>
+                <fullName>Mortgage statement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mortgage statement</label>
+            </value>
+            <value>
+                <fullName>Must reroof</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Must reroof</label>
+            </value>
+            <value>
+                <fullName>Names Don’t Match</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Names Don’t Match</label>
+            </value>
+            <value>
+                <fullName>Need new contact info</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Need new contact info</label>
+            </value>
+            <value>
+                <fullName>Panel location</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Panel location</label>
+            </value>
+            <value>
+                <fullName>Panel relocation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Panel relocation</label>
+            </value>
+            <value>
+                <fullName>Poor shingle condition</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Poor shingle condition</label>
+            </value>
+            <value>
+                <fullName>Price change</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Price change</label>
+            </value>
+            <value>
+                <fullName>Production change</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Production change</label>
+            </value>
+            <value>
+                <fullName>Redesign</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Redesign</label>
+            </value>
+            <value>
+                <fullName>Structural failure,</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Structural failure,</label>
+            </value>
+            <value>
+                <fullName>Sunlight Stip</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sunlight Stip</label>
+            </value>
+            <value>
+                <fullName>System size change</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>System size change</label>
+            </value>
+            <value>
+                <fullName>Title verification</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Title verification</label>
+            </value>
+            <value>
+                <fullName>Trees/Shading</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Trees/Shading</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Vacation</controllingFieldValue>
+            <controllingFieldValue>Home Renovation</controllingFieldValue>
+            <controllingFieldValue>Finances</controllingFieldValue>
+            <controllingFieldValue>Weather</controllingFieldValue>
+            <controllingFieldValue>Reviewing Project Details</controllingFieldValue>
+            <controllingFieldValue>Ineligible Roof Type</controllingFieldValue>
+            <controllingFieldValue>Illness</controllingFieldValue>
+            <valueName>Vacation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vacation</controllingFieldValue>
+            <controllingFieldValue>Home Renovation</controllingFieldValue>
+            <controllingFieldValue>Finances</controllingFieldValue>
+            <controllingFieldValue>Weather</controllingFieldValue>
+            <controllingFieldValue>Reviewing Project Details</controllingFieldValue>
+            <controllingFieldValue>Ineligible Roof Type</controllingFieldValue>
+            <controllingFieldValue>Illness</controllingFieldValue>
+            <valueName>Home Renovation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vacation</controllingFieldValue>
+            <controllingFieldValue>Home Renovation</controllingFieldValue>
+            <controllingFieldValue>Finances</controllingFieldValue>
+            <controllingFieldValue>Weather</controllingFieldValue>
+            <controllingFieldValue>Reviewing Project Details</controllingFieldValue>
+            <controllingFieldValue>Competition</controllingFieldValue>
+            <controllingFieldValue>Downsizing</controllingFieldValue>
+            <controllingFieldValue>Offset</controllingFieldValue>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <controllingFieldValue>Selling home</controllingFieldValue>
+            <controllingFieldValue>Timelines</controllingFieldValue>
+            <controllingFieldValue>Transformer Upgrade</controllingFieldValue>
+            <controllingFieldValue>Additional costs (MPU/Re-roof)</controllingFieldValue>
+            <controllingFieldValue>HOA denial</controllingFieldValue>
+            <controllingFieldValue>Ineligible Roof Type</controllingFieldValue>
+            <controllingFieldValue>Illness</controllingFieldValue>
+            <valueName>Finances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vacation</controllingFieldValue>
+            <controllingFieldValue>Home Renovation</controllingFieldValue>
+            <controllingFieldValue>Finances</controllingFieldValue>
+            <controllingFieldValue>Weather</controllingFieldValue>
+            <controllingFieldValue>Reviewing Project Details</controllingFieldValue>
+            <controllingFieldValue>Ineligible Roof Type</controllingFieldValue>
+            <controllingFieldValue>Illness</controllingFieldValue>
+            <valueName>Illness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vacation</controllingFieldValue>
+            <controllingFieldValue>Home Renovation</controllingFieldValue>
+            <controllingFieldValue>Finances</controllingFieldValue>
+            <controllingFieldValue>Weather</controllingFieldValue>
+            <controllingFieldValue>Reviewing Project Details</controllingFieldValue>
+            <controllingFieldValue>Ineligible Roof Type</controllingFieldValue>
+            <controllingFieldValue>Illness</controllingFieldValue>
+            <valueName>Reviewing Project Details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vacation</controllingFieldValue>
+            <controllingFieldValue>Home Renovation</controllingFieldValue>
+            <controllingFieldValue>Finances</controllingFieldValue>
+            <controllingFieldValue>Weather</controllingFieldValue>
+            <controllingFieldValue>Reviewing Project Details</controllingFieldValue>
+            <controllingFieldValue>Install Delay</controllingFieldValue>
+            <controllingFieldValue>Ineligible Roof Type</controllingFieldValue>
+            <controllingFieldValue>Install Pull Off</controllingFieldValue>
+            <controllingFieldValue>Illness</controllingFieldValue>
+            <valueName>Weather</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finances</controllingFieldValue>
+            <controllingFieldValue>Competition</controllingFieldValue>
+            <controllingFieldValue>Downsizing</controllingFieldValue>
+            <controllingFieldValue>Offset</controllingFieldValue>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <controllingFieldValue>Selling home</controllingFieldValue>
+            <controllingFieldValue>Timelines</controllingFieldValue>
+            <controllingFieldValue>Transformer Upgrade</controllingFieldValue>
+            <controllingFieldValue>Additional costs (MPU/Re-roof)</controllingFieldValue>
+            <controllingFieldValue>Change Order</controllingFieldValue>
+            <controllingFieldValue>HOA denial</controllingFieldValue>
+            <valueName>HOA Denial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finances</controllingFieldValue>
+            <controllingFieldValue>Competition</controllingFieldValue>
+            <controllingFieldValue>Downsizing</controllingFieldValue>
+            <controllingFieldValue>Offset</controllingFieldValue>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <controllingFieldValue>Selling home</controllingFieldValue>
+            <controllingFieldValue>Timelines</controllingFieldValue>
+            <controllingFieldValue>Transformer Upgrade</controllingFieldValue>
+            <controllingFieldValue>Additional costs (MPU/Re-roof)</controllingFieldValue>
+            <controllingFieldValue>HOA denial</controllingFieldValue>
+            <valueName>Competition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finances</controllingFieldValue>
+            <controllingFieldValue>Competition</controllingFieldValue>
+            <controllingFieldValue>Downsizing</controllingFieldValue>
+            <controllingFieldValue>Offset</controllingFieldValue>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <controllingFieldValue>Selling home</controllingFieldValue>
+            <controllingFieldValue>Timelines</controllingFieldValue>
+            <controllingFieldValue>Transformer Upgrade</controllingFieldValue>
+            <controllingFieldValue>Additional costs (MPU/Re-roof)</controllingFieldValue>
+            <controllingFieldValue>HOA denial</controllingFieldValue>
+            <valueName>Downsizing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finances</controllingFieldValue>
+            <controllingFieldValue>Competition</controllingFieldValue>
+            <controllingFieldValue>Downsizing</controllingFieldValue>
+            <controllingFieldValue>Offset</controllingFieldValue>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <controllingFieldValue>Selling home</controllingFieldValue>
+            <controllingFieldValue>Timelines</controllingFieldValue>
+            <controllingFieldValue>Transformer Upgrade</controllingFieldValue>
+            <controllingFieldValue>Additional costs (MPU/Re-roof)</controllingFieldValue>
+            <controllingFieldValue>HOA denial</controllingFieldValue>
+            <controllingFieldValue>Promised Promotion</controllingFieldValue>
+            <controllingFieldValue>Experience</controllingFieldValue>
+            <controllingFieldValue>Promised ITC/Incentive</controllingFieldValue>
+            <valueName>Offset</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finances</controllingFieldValue>
+            <controllingFieldValue>Competition</controllingFieldValue>
+            <controllingFieldValue>Downsizing</controllingFieldValue>
+            <controllingFieldValue>Offset</controllingFieldValue>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <controllingFieldValue>Selling home</controllingFieldValue>
+            <controllingFieldValue>Timelines</controllingFieldValue>
+            <controllingFieldValue>Transformer Upgrade</controllingFieldValue>
+            <controllingFieldValue>Additional costs (MPU/Re-roof)</controllingFieldValue>
+            <controllingFieldValue>HOA denial</controllingFieldValue>
+            <controllingFieldValue>Promised Promotion</controllingFieldValue>
+            <controllingFieldValue>Experience</controllingFieldValue>
+            <controllingFieldValue>Promised ITC/Incentive</controllingFieldValue>
+            <valueName>Pricing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finances</controllingFieldValue>
+            <controllingFieldValue>Competition</controllingFieldValue>
+            <controllingFieldValue>Downsizing</controllingFieldValue>
+            <controllingFieldValue>Offset</controllingFieldValue>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <controllingFieldValue>Selling home</controllingFieldValue>
+            <controllingFieldValue>Timelines</controllingFieldValue>
+            <controllingFieldValue>Transformer Upgrade</controllingFieldValue>
+            <controllingFieldValue>Additional costs (MPU/Re-roof)</controllingFieldValue>
+            <controllingFieldValue>HOA denial</controllingFieldValue>
+            <valueName>Selling Home</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finances</controllingFieldValue>
+            <controllingFieldValue>Customer Sales Claim</controllingFieldValue>
+            <controllingFieldValue>Competition</controllingFieldValue>
+            <controllingFieldValue>Downsizing</controllingFieldValue>
+            <controllingFieldValue>Offset</controllingFieldValue>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <controllingFieldValue>Selling home</controllingFieldValue>
+            <controllingFieldValue>Timelines</controllingFieldValue>
+            <controllingFieldValue>Transformer Upgrade</controllingFieldValue>
+            <controllingFieldValue>Additional costs (MPU/Re-roof)</controllingFieldValue>
+            <controllingFieldValue>HOA denial</controllingFieldValue>
+            <valueName>Timelines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finances</controllingFieldValue>
+            <controllingFieldValue>Competition</controllingFieldValue>
+            <controllingFieldValue>Downsizing</controllingFieldValue>
+            <controllingFieldValue>Offset</controllingFieldValue>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <controllingFieldValue>Selling home</controllingFieldValue>
+            <controllingFieldValue>Timelines</controllingFieldValue>
+            <controllingFieldValue>Transformer Upgrade</controllingFieldValue>
+            <controllingFieldValue>Additional costs (MPU/Re-roof)</controllingFieldValue>
+            <controllingFieldValue>HOA denial</controllingFieldValue>
+            <valueName>Transformer Upgrade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finances</controllingFieldValue>
+            <controllingFieldValue>Competition</controllingFieldValue>
+            <controllingFieldValue>Downsizing</controllingFieldValue>
+            <controllingFieldValue>Offset</controllingFieldValue>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <controllingFieldValue>Selling home</controllingFieldValue>
+            <controllingFieldValue>Timelines</controllingFieldValue>
+            <controllingFieldValue>Transformer Upgrade</controllingFieldValue>
+            <controllingFieldValue>Additional costs (MPU/Re-roof)</controllingFieldValue>
+            <controllingFieldValue>HOA denial</controllingFieldValue>
+            <valueName>Additional costs (MPU/Re-roof)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finances</controllingFieldValue>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <controllingFieldValue>Roof Leak</controllingFieldValue>
+            <controllingFieldValue>Crew</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Customer Sales Claim</controllingFieldValue>
+            <controllingFieldValue>Competition</controllingFieldValue>
+            <controllingFieldValue>Downsizing</controllingFieldValue>
+            <controllingFieldValue>Offset</controllingFieldValue>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <controllingFieldValue>Selling home</controllingFieldValue>
+            <controllingFieldValue>Timelines</controllingFieldValue>
+            <controllingFieldValue>Transformer Upgrade</controllingFieldValue>
+            <controllingFieldValue>Additional costs (MPU/Re-roof)</controllingFieldValue>
+            <controllingFieldValue>HOA denial</controllingFieldValue>
+            <controllingFieldValue>Ineligible Roof Type</controllingFieldValue>
+            <controllingFieldValue>Delay in CR</controllingFieldValue>
+            <controllingFieldValue>Delay in Site Survey</controllingFieldValue>
+            <controllingFieldValue>Delay in Permitting</controllingFieldValue>
+            <controllingFieldValue>Delay in Install</controllingFieldValue>
+            <controllingFieldValue>Delay in interconnection</controllingFieldValue>
+            <controllingFieldValue>Delay in AHJ Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in Utility Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in PTO</controllingFieldValue>
+            <controllingFieldValue>Delay in ICA</controllingFieldValue>
+            <controllingFieldValue>Delay in COC</controllingFieldValue>
+            <controllingFieldValue>Unresponsive Customer</controllingFieldValue>
+            <controllingFieldValue>Poor Workmanship</controllingFieldValue>
+            <controllingFieldValue>Savings Loss Due to Delay</controllingFieldValue>
+            <controllingFieldValue>Damage to Property</controllingFieldValue>
+            <controllingFieldValue>Install Call Off</controllingFieldValue>
+            <controllingFieldValue>Cost for Replacement</controllingFieldValue>
+            <controllingFieldValue>Product Addition</controllingFieldValue>
+            <controllingFieldValue>Loss in Production</controllingFieldValue>
+            <controllingFieldValue>Loan Reimbursement</controllingFieldValue>
+            <controllingFieldValue>Compliance issues</controllingFieldValue>
+            <controllingFieldValue>Net Funding</controllingFieldValue>
+            <controllingFieldValue>Promised Promotion</controllingFieldValue>
+            <controllingFieldValue>Experience</controllingFieldValue>
+            <controllingFieldValue>Promised ITC/Incentive</controllingFieldValue>
+            <controllingFieldValue>Social Media Review</controllingFieldValue>
+            <controllingFieldValue>BBB Review</controllingFieldValue>
+            <controllingFieldValue>Google / Yelp Review</controllingFieldValue>
+            <controllingFieldValue>NPS Review</controllingFieldValue>
+            <controllingFieldValue>Attorney General Complaint</controllingFieldValue>
+            <controllingFieldValue>Utility Bill</controllingFieldValue>
+            <controllingFieldValue>Retention promotion</controllingFieldValue>
+            <controllingFieldValue>Palmetto Promotion</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Hasn't Confirmed Reroof</controllingFieldValue>
+            <controllingFieldValue>Customer Hasn't Removed Trees</controllingFieldValue>
+            <controllingFieldValue>Customer Not Scheduling Survey</controllingFieldValue>
+            <controllingFieldValue>Customer Not Scheduling Install</controllingFieldValue>
+            <controllingFieldValue>Customer Not Signing Documents</controllingFieldValue>
+            <valueName>Customer Hasn't Confirmed Reroof</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Hasn't Confirmed Reroof</controllingFieldValue>
+            <controllingFieldValue>Customer Hasn't Removed Trees</controllingFieldValue>
+            <controllingFieldValue>Customer Not Scheduling Survey</controllingFieldValue>
+            <controllingFieldValue>Customer Not Scheduling Install</controllingFieldValue>
+            <controllingFieldValue>Customer Not Signing Documents</controllingFieldValue>
+            <valueName>Customer Hasn't Removed Trees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Hasn't Confirmed Reroof</controllingFieldValue>
+            <controllingFieldValue>Customer Hasn't Removed Trees</controllingFieldValue>
+            <controllingFieldValue>Customer Not Scheduling Survey</controllingFieldValue>
+            <controllingFieldValue>Customer Not Scheduling Install</controllingFieldValue>
+            <controllingFieldValue>Customer Not Signing Documents</controllingFieldValue>
+            <valueName>Customer Not Scheduling Survey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Hasn't Confirmed Reroof</controllingFieldValue>
+            <controllingFieldValue>Customer Hasn't Removed Trees</controllingFieldValue>
+            <controllingFieldValue>Customer Not Scheduling Survey</controllingFieldValue>
+            <controllingFieldValue>Customer Not Scheduling Install</controllingFieldValue>
+            <controllingFieldValue>Customer Not Signing Documents</controllingFieldValue>
+            <valueName>Customer Not Scheduling Install</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Hasn't Confirmed Reroof</controllingFieldValue>
+            <controllingFieldValue>Customer Hasn't Removed Trees</controllingFieldValue>
+            <controllingFieldValue>Customer Not Scheduling Survey</controllingFieldValue>
+            <controllingFieldValue>Customer Not Scheduling Install</controllingFieldValue>
+            <controllingFieldValue>Customer Not Signing Documents</controllingFieldValue>
+            <valueName>Customer Not Signing Documents</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install Delay</controllingFieldValue>
+            <valueName>BP Availability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install Delay</controllingFieldValue>
+            <valueName>Equipment Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install Delay</controllingFieldValue>
+            <valueName>Equipment Delay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install Delay</controllingFieldValue>
+            <valueName>Ground Mount Coordination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install Delay</controllingFieldValue>
+            <valueName>Homeowner Hold- Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install Delay</controllingFieldValue>
+            <valueName>Homeowner Hold- Unresponsive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO Delay</controllingFieldValue>
+            <valueName>Extended Timeline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO Delay</controllingFieldValue>
+            <valueName>Meter Turndown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO Delay</controllingFieldValue>
+            <valueName>Multiple Failed Inspections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <valueName>Ceiling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <valueName>Household Items</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <valueName>Roof</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <valueName>Sideing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <valueName>Windows</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Roof Leak</controllingFieldValue>
+            <valueName>External</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Roof Leak</controllingFieldValue>
+            <valueName>Internal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crew</controllingFieldValue>
+            <valueName>Debris</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crew</controllingFieldValue>
+            <valueName>Inappropriate Behavior</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non Palmetto</controllingFieldValue>
+            <valueName>EE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non Palmetto</controllingFieldValue>
+            <valueName>Tree Removal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Sales Claim</controllingFieldValue>
+            <valueName>Production Promise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Sales Claim</controllingFieldValue>
+            <valueName>Service Offered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offset</controllingFieldValue>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <controllingFieldValue>Promised Promotion</controllingFieldValue>
+            <controllingFieldValue>Experience</controllingFieldValue>
+            <controllingFieldValue>Promised ITC/Incentive</controllingFieldValue>
+            <valueName>Promised Promotion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offset</controllingFieldValue>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <controllingFieldValue>Promised Promotion</controllingFieldValue>
+            <controllingFieldValue>Experience</controllingFieldValue>
+            <controllingFieldValue>Promised ITC/Incentive</controllingFieldValue>
+            <valueName>Experience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offset</controllingFieldValue>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <controllingFieldValue>Promised Promotion</controllingFieldValue>
+            <controllingFieldValue>Experience</controllingFieldValue>
+            <controllingFieldValue>Promised ITC/Incentive</controllingFieldValue>
+            <valueName>Promised ITC/Incentive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Delay</controllingFieldValue>
+            <valueName>Site Survey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Communication Error</controllingFieldValue>
+            <valueName>Both</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Communication Error</controllingFieldValue>
+            <valueName>Consumption</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Communication Error</controllingFieldValue>
+            <valueName>Production</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Unresponsive to Requests for Docs</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive to Requests to Sch</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive to Design Change</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive to Adder Inclusion</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive Other</controllingFieldValue>
+            <valueName>Customer Unresponsive to Requests for Docs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Unresponsive to Requests for Docs</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive to Requests to Sch</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive to Design Change</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive to Adder Inclusion</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive Other</controllingFieldValue>
+            <valueName>Customer Unresponsive to Requests to Sch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Unresponsive to Requests for Docs</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive to Requests to Sch</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive to Design Change</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive to Adder Inclusion</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive Other</controllingFieldValue>
+            <valueName>Customer Unresponsive to Design Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Unresponsive to Requests for Docs</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive to Requests to Sch</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive to Design Change</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive to Adder Inclusion</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive Other</controllingFieldValue>
+            <valueName>Customer Unresponsive to Adder Inclusion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Unresponsive to Requests for Docs</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive to Requests to Sch</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive to Design Change</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive to Adder Inclusion</controllingFieldValue>
+            <controllingFieldValue>Customer Unresponsive Other</controllingFieldValue>
+            <valueName>Customer Unresponsive Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Production Device</controllingFieldValue>
+            <valueName>Fault Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Production Device</controllingFieldValue>
+            <valueName>PoK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Production Device</controllingFieldValue>
+            <valueName>Sleep Mode</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Production Device</controllingFieldValue>
+            <valueName>SoK(No)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Order</controllingFieldValue>
+            <valueName>Contract/Loan  Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Order</controllingFieldValue>
+            <controllingFieldValue>Incentives</controllingFieldValue>
+            <valueName>Customer Failing to Action</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Order</controllingFieldValue>
+            <valueName>EE/Offset Discrepancy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Order</controllingFieldValue>
+            <valueName>Design Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Order</controllingFieldValue>
+            <valueName>FinanciarStipulation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Order</controllingFieldValue>
+            <valueName>Master COP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Order</controllingFieldValue>
+            <valueName>PendingCancellation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Order</controllingFieldValue>
+            <valueName>ReRoof</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Order</controllingFieldValue>
+            <valueName>Sunnova</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Order</controllingFieldValue>
+            <valueName>TreeRemoval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Order</controllingFieldValue>
+            <valueName>UnresponsiveCustomer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Order</controllingFieldValue>
+            <valueName>Utility Denial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Order</controllingFieldValue>
+            <valueName>Virtual Survey Incomplete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Failed Rescheduled Inspection</controllingFieldValue>
+            <valueName>Home owner not Home</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Failed Rescheduled Inspection</controllingFieldValue>
+            <valueName>Paperwork Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Failed Rescheduled Inspection</controllingFieldValue>
+            <valueName>Stickers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Failed Rescheduled Inspection</controllingFieldValue>
+            <valueName>Technical Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural DQ</controllingFieldValue>
+            <controllingFieldValue>Non-Serviceable AHJ</controllingFieldValue>
+            <controllingFieldValue>Safety Concerns</controllingFieldValue>
+            <controllingFieldValue>Ineligible Property Type</controllingFieldValue>
+            <valueName>Structural DQ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural DQ</controllingFieldValue>
+            <controllingFieldValue>Ineligible Roof Type</controllingFieldValue>
+            <controllingFieldValue>Non-Serviceable AHJ</controllingFieldValue>
+            <controllingFieldValue>Safety Concerns</controllingFieldValue>
+            <controllingFieldValue>Ineligible Property Type</controllingFieldValue>
+            <controllingFieldValue>Loss in Production</controllingFieldValue>
+            <controllingFieldValue>Loan Reimbursement</controllingFieldValue>
+            <controllingFieldValue>Compliance issues</controllingFieldValue>
+            <controllingFieldValue>Net Funding</controllingFieldValue>
+            <valueName>Ineligible Roof Type</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural DQ</controllingFieldValue>
+            <controllingFieldValue>Non-Serviceable AHJ</controllingFieldValue>
+            <controllingFieldValue>Safety Concerns</controllingFieldValue>
+            <controllingFieldValue>Ineligible Property Type</controllingFieldValue>
+            <valueName>Non-Serviceable AHJ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural DQ</controllingFieldValue>
+            <controllingFieldValue>Non-Serviceable AHJ</controllingFieldValue>
+            <controllingFieldValue>Safety Concerns</controllingFieldValue>
+            <controllingFieldValue>Ineligible Property Type</controllingFieldValue>
+            <valueName>Safety Concerns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural DQ</controllingFieldValue>
+            <controllingFieldValue>Non-Serviceable AHJ</controllingFieldValue>
+            <controllingFieldValue>Safety Concerns</controllingFieldValue>
+            <controllingFieldValue>Ineligible Property Type</controllingFieldValue>
+            <valueName>Ineligible Property Type</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ineligible Roof Type</controllingFieldValue>
+            <controllingFieldValue>Cost for Replacement</controllingFieldValue>
+            <controllingFieldValue>Product Addition</controllingFieldValue>
+            <controllingFieldValue>Loss in Production</controllingFieldValue>
+            <controllingFieldValue>Loan Reimbursement</controllingFieldValue>
+            <controllingFieldValue>Compliance issues</controllingFieldValue>
+            <controllingFieldValue>Net Funding</controllingFieldValue>
+            <valueName>Loss in Production</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ineligible Roof Type</controllingFieldValue>
+            <controllingFieldValue>Loss in Production</controllingFieldValue>
+            <controllingFieldValue>Loan Reimbursement</controllingFieldValue>
+            <controllingFieldValue>Compliance issues</controllingFieldValue>
+            <controllingFieldValue>Net Funding</controllingFieldValue>
+            <valueName>Loan Reimbursement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ineligible Roof Type</controllingFieldValue>
+            <controllingFieldValue>Loss in Production</controllingFieldValue>
+            <controllingFieldValue>Loan Reimbursement</controllingFieldValue>
+            <controllingFieldValue>Compliance issues</controllingFieldValue>
+            <controllingFieldValue>Net Funding</controllingFieldValue>
+            <valueName>Compliance issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ineligible Roof Type</controllingFieldValue>
+            <controllingFieldValue>Loss in Production</controllingFieldValue>
+            <controllingFieldValue>Loan Reimbursement</controllingFieldValue>
+            <controllingFieldValue>Compliance issues</controllingFieldValue>
+            <controllingFieldValue>Net Funding</controllingFieldValue>
+            <valueName>Net Funding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delay in CR</controllingFieldValue>
+            <controllingFieldValue>Delay in Site Survey</controllingFieldValue>
+            <controllingFieldValue>Delay in Permitting</controllingFieldValue>
+            <controllingFieldValue>Delay in Install</controllingFieldValue>
+            <controllingFieldValue>Delay in interconnection</controllingFieldValue>
+            <controllingFieldValue>Delay in AHJ Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in Utility Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in PTO</controllingFieldValue>
+            <controllingFieldValue>Delay in ICA</controllingFieldValue>
+            <controllingFieldValue>Delay in COC</controllingFieldValue>
+            <controllingFieldValue>Unresponsive Customer</controllingFieldValue>
+            <valueName>Delay in CR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delay in CR</controllingFieldValue>
+            <controllingFieldValue>Delay in Site Survey</controllingFieldValue>
+            <controllingFieldValue>Delay in Permitting</controllingFieldValue>
+            <controllingFieldValue>Delay in Install</controllingFieldValue>
+            <controllingFieldValue>Delay in interconnection</controllingFieldValue>
+            <controllingFieldValue>Delay in AHJ Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in Utility Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in PTO</controllingFieldValue>
+            <controllingFieldValue>Delay in ICA</controllingFieldValue>
+            <controllingFieldValue>Delay in COC</controllingFieldValue>
+            <controllingFieldValue>Unresponsive Customer</controllingFieldValue>
+            <valueName>Delay in Site Survey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delay in CR</controllingFieldValue>
+            <controllingFieldValue>Delay in Site Survey</controllingFieldValue>
+            <controllingFieldValue>Delay in Permitting</controllingFieldValue>
+            <controllingFieldValue>Delay in Install</controllingFieldValue>
+            <controllingFieldValue>Delay in interconnection</controllingFieldValue>
+            <controllingFieldValue>Delay in AHJ Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in Utility Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in PTO</controllingFieldValue>
+            <controllingFieldValue>Delay in ICA</controllingFieldValue>
+            <controllingFieldValue>Delay in COC</controllingFieldValue>
+            <controllingFieldValue>Unresponsive Customer</controllingFieldValue>
+            <valueName>Delay in Permitting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delay in CR</controllingFieldValue>
+            <controllingFieldValue>Delay in Site Survey</controllingFieldValue>
+            <controllingFieldValue>Delay in Permitting</controllingFieldValue>
+            <controllingFieldValue>Delay in Install</controllingFieldValue>
+            <controllingFieldValue>Delay in interconnection</controllingFieldValue>
+            <controllingFieldValue>Delay in AHJ Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in Utility Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in PTO</controllingFieldValue>
+            <controllingFieldValue>Delay in ICA</controllingFieldValue>
+            <controllingFieldValue>Delay in COC</controllingFieldValue>
+            <controllingFieldValue>Unresponsive Customer</controllingFieldValue>
+            <valueName>Delay in Install</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delay in CR</controllingFieldValue>
+            <controllingFieldValue>Delay in Site Survey</controllingFieldValue>
+            <controllingFieldValue>Delay in Permitting</controllingFieldValue>
+            <controllingFieldValue>Delay in Install</controllingFieldValue>
+            <controllingFieldValue>Delay in interconnection</controllingFieldValue>
+            <controllingFieldValue>Delay in AHJ Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in Utility Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in PTO</controllingFieldValue>
+            <controllingFieldValue>Delay in ICA</controllingFieldValue>
+            <controllingFieldValue>Delay in COC</controllingFieldValue>
+            <controllingFieldValue>Unresponsive Customer</controllingFieldValue>
+            <valueName>Delay in interconnection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delay in CR</controllingFieldValue>
+            <controllingFieldValue>Delay in Site Survey</controllingFieldValue>
+            <controllingFieldValue>Delay in Permitting</controllingFieldValue>
+            <controllingFieldValue>Delay in Install</controllingFieldValue>
+            <controllingFieldValue>Delay in interconnection</controllingFieldValue>
+            <controllingFieldValue>Delay in AHJ Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in Utility Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in PTO</controllingFieldValue>
+            <controllingFieldValue>Delay in ICA</controllingFieldValue>
+            <controllingFieldValue>Delay in COC</controllingFieldValue>
+            <controllingFieldValue>Unresponsive Customer</controllingFieldValue>
+            <valueName>Delay in AHJ Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delay in CR</controllingFieldValue>
+            <controllingFieldValue>Delay in Site Survey</controllingFieldValue>
+            <controllingFieldValue>Delay in Permitting</controllingFieldValue>
+            <controllingFieldValue>Delay in Install</controllingFieldValue>
+            <controllingFieldValue>Delay in interconnection</controllingFieldValue>
+            <controllingFieldValue>Delay in AHJ Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in Utility Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in PTO</controllingFieldValue>
+            <controllingFieldValue>Delay in ICA</controllingFieldValue>
+            <controllingFieldValue>Delay in COC</controllingFieldValue>
+            <controllingFieldValue>Unresponsive Customer</controllingFieldValue>
+            <valueName>Delay in Utility Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delay in CR</controllingFieldValue>
+            <controllingFieldValue>Delay in Site Survey</controllingFieldValue>
+            <controllingFieldValue>Delay in Permitting</controllingFieldValue>
+            <controllingFieldValue>Delay in Install</controllingFieldValue>
+            <controllingFieldValue>Delay in interconnection</controllingFieldValue>
+            <controllingFieldValue>Delay in AHJ Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in Utility Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in PTO</controllingFieldValue>
+            <controllingFieldValue>Delay in ICA</controllingFieldValue>
+            <controllingFieldValue>Delay in COC</controllingFieldValue>
+            <controllingFieldValue>Unresponsive Customer</controllingFieldValue>
+            <valueName>Delay in PTO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delay in CR</controllingFieldValue>
+            <controllingFieldValue>Delay in Site Survey</controllingFieldValue>
+            <controllingFieldValue>Delay in Permitting</controllingFieldValue>
+            <controllingFieldValue>Delay in Install</controllingFieldValue>
+            <controllingFieldValue>Delay in interconnection</controllingFieldValue>
+            <controllingFieldValue>Delay in AHJ Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in Utility Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in PTO</controllingFieldValue>
+            <controllingFieldValue>Delay in ICA</controllingFieldValue>
+            <controllingFieldValue>Delay in COC</controllingFieldValue>
+            <controllingFieldValue>Unresponsive Customer</controllingFieldValue>
+            <valueName>Delay in ICA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delay in CR</controllingFieldValue>
+            <controllingFieldValue>Delay in Site Survey</controllingFieldValue>
+            <controllingFieldValue>Delay in Permitting</controllingFieldValue>
+            <controllingFieldValue>Delay in Install</controllingFieldValue>
+            <controllingFieldValue>Delay in interconnection</controllingFieldValue>
+            <controllingFieldValue>Delay in AHJ Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in Utility Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in PTO</controllingFieldValue>
+            <controllingFieldValue>Delay in ICA</controllingFieldValue>
+            <controllingFieldValue>Delay in COC</controllingFieldValue>
+            <controllingFieldValue>Unresponsive Customer</controllingFieldValue>
+            <valueName>Delay in COC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delay in CR</controllingFieldValue>
+            <controllingFieldValue>Delay in Site Survey</controllingFieldValue>
+            <controllingFieldValue>Delay in Permitting</controllingFieldValue>
+            <controllingFieldValue>Delay in Install</controllingFieldValue>
+            <controllingFieldValue>Delay in interconnection</controllingFieldValue>
+            <controllingFieldValue>Delay in AHJ Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in Utility Inspection</controllingFieldValue>
+            <controllingFieldValue>Delay in PTO</controllingFieldValue>
+            <controllingFieldValue>Delay in ICA</controllingFieldValue>
+            <controllingFieldValue>Delay in COC</controllingFieldValue>
+            <controllingFieldValue>Unresponsive Customer</controllingFieldValue>
+            <valueName>Unresponsive Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Validation</controllingFieldValue>
+            <valueName>Failed Initial Virtual Survey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Validation</controllingFieldValue>
+            <valueName>Full Survey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Validation</controllingFieldValue>
+            <valueName>Virtual Survey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural Review</controllingFieldValue>
+            <controllingFieldValue>Electrical Review</controllingFieldValue>
+            <valueName>Re-Survey Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural Review</controllingFieldValue>
+            <controllingFieldValue>Electrical Review</controllingFieldValue>
+            <valueName>Upgrade Not Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural Review</controllingFieldValue>
+            <controllingFieldValue>Electrical Review</controllingFieldValue>
+            <valueName>Upgrade Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permitting &amp; Documents</controllingFieldValue>
+            <valueName>Avoidable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permitting &amp; Documents</controllingFieldValue>
+            <valueName>Unavoidable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical One Line</controllingFieldValue>
+            <valueName>Wrong Fuse Sizes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical One Line</controllingFieldValue>
+            <valueName>Wrong Interconnection Method</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical One Line</controllingFieldValue>
+            <valueName>Wrong Orientation of Boxes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical One Line</controllingFieldValue>
+            <valueName>Wrong Wire Size</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Design Plan Set</controllingFieldValue>
+            <valueName>Changed Design due to Efficiency/Ease of Install</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Design Plan Set</controllingFieldValue>
+            <valueName>Electrical One line Edit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Design Plan Set</controllingFieldValue>
+            <valueName>HOA issues require a design change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Design Plan Set</controllingFieldValue>
+            <valueName>One Line and Plan set match install</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Design Plan Set</controllingFieldValue>
+            <valueName>Panels Won't Fit(Setbacks)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Design Plan Set</controllingFieldValue>
+            <valueName>Plan Set Updates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Design Plan Set</controllingFieldValue>
+            <valueName>Quote</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Design Plan Set</controllingFieldValue>
+            <valueName>Shading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Poor Workmanship</controllingFieldValue>
+            <controllingFieldValue>Savings Loss Due to Delay</controllingFieldValue>
+            <controllingFieldValue>Damage to Property</controllingFieldValue>
+            <controllingFieldValue>Install Call Off</controllingFieldValue>
+            <valueName>Poor Workmanship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Poor Workmanship</controllingFieldValue>
+            <controllingFieldValue>Savings Loss Due to Delay</controllingFieldValue>
+            <controllingFieldValue>Damage to Property</controllingFieldValue>
+            <controllingFieldValue>Install Call Off</controllingFieldValue>
+            <valueName>Savings Loss Due to Delay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Poor Workmanship</controllingFieldValue>
+            <controllingFieldValue>Savings Loss Due to Delay</controllingFieldValue>
+            <controllingFieldValue>Damage to Property</controllingFieldValue>
+            <controllingFieldValue>Install Call Off</controllingFieldValue>
+            <valueName>Damage to Property</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Poor Workmanship</controllingFieldValue>
+            <controllingFieldValue>Savings Loss Due to Delay</controllingFieldValue>
+            <controllingFieldValue>Damage to Property</controllingFieldValue>
+            <controllingFieldValue>Install Call Off</controllingFieldValue>
+            <valueName>Install Call Off</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural Issues</controllingFieldValue>
+            <valueName>Bad Roof Quality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural Issues</controllingFieldValue>
+            <valueName>Bad Survey Photos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural Issues</controllingFieldValue>
+            <valueName>Needs Structural Upgrade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install Pull Off</controllingFieldValue>
+            <valueName>Design - Electrical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install Pull Off</controllingFieldValue>
+            <valueName>Design - Layout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install Pull Off</controllingFieldValue>
+            <valueName>Design - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install Pull Off</controllingFieldValue>
+            <valueName>HOA issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install Pull Off</controllingFieldValue>
+            <valueName>Homeowner Expectations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install Pull Off</controllingFieldValue>
+            <valueName>Homeowner Obligation - Electrical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install Pull Off</controllingFieldValue>
+            <valueName>Homeowner Obligation - Roof</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install Pull Off</controllingFieldValue>
+            <valueName>Homeowner Obligation - Site Condition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install Pull Off</controllingFieldValue>
+            <valueName>Homeowner Obligation - Tree</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install Pull Off</controllingFieldValue>
+            <valueName>ICA issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install Pull Off</controllingFieldValue>
+            <valueName>Poor Roof Conditions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Savings</controllingFieldValue>
+            <controllingFieldValue>expected offset</controllingFieldValue>
+            <controllingFieldValue>Home damage</controllingFieldValue>
+            <controllingFieldValue>Communication</controllingFieldValue>
+            <controllingFieldValue>Financing</controllingFieldValue>
+            <controllingFieldValue>Pest complaints</controllingFieldValue>
+            <controllingFieldValue>Service Issue</controllingFieldValue>
+            <controllingFieldValue>Production Loss</controllingFieldValue>
+            <controllingFieldValue>Not Covered Under Warranty</controllingFieldValue>
+            <valueName>Tier 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Savings</controllingFieldValue>
+            <controllingFieldValue>expected offset</controllingFieldValue>
+            <controllingFieldValue>Home damage</controllingFieldValue>
+            <controllingFieldValue>Communication</controllingFieldValue>
+            <controllingFieldValue>Financing</controllingFieldValue>
+            <controllingFieldValue>Pest complaints</controllingFieldValue>
+            <controllingFieldValue>Service Issue</controllingFieldValue>
+            <controllingFieldValue>Production Loss</controllingFieldValue>
+            <controllingFieldValue>Not Covered Under Warranty</controllingFieldValue>
+            <valueName>Tier 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Savings</controllingFieldValue>
+            <controllingFieldValue>expected offset</controllingFieldValue>
+            <controllingFieldValue>Home damage</controllingFieldValue>
+            <controllingFieldValue>Communication</controllingFieldValue>
+            <controllingFieldValue>Financing</controllingFieldValue>
+            <controllingFieldValue>Pest complaints</controllingFieldValue>
+            <controllingFieldValue>Service Issue</controllingFieldValue>
+            <controllingFieldValue>Production Loss</controllingFieldValue>
+            <controllingFieldValue>Not Covered Under Warranty</controllingFieldValue>
+            <valueName>Tier 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cost for Replacement</controllingFieldValue>
+            <controllingFieldValue>Product Addition</controllingFieldValue>
+            <controllingFieldValue>Loss in Production</controllingFieldValue>
+            <valueName>Cost for Replacement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cost for Replacement</controllingFieldValue>
+            <controllingFieldValue>Product Addition</controllingFieldValue>
+            <controllingFieldValue>Loss in Production</controllingFieldValue>
+            <valueName>Product Addition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation Requirement</controllingFieldValue>
+            <valueName>Electrical Upgrade required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation Requirement</controllingFieldValue>
+            <valueName>Homeowner Obligation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation Requirement</controllingFieldValue>
+            <valueName>Reroof required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation Requirement</controllingFieldValue>
+            <valueName>Structural Upgrade required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation Requirement</controllingFieldValue>
+            <valueName>Tree Removal required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation Requirement</controllingFieldValue>
+            <valueName>Trench required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Milestone Filing Delay</controllingFieldValue>
+            <valueName>As Built Doesn’t Match Last Contract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Milestone Filing Delay</controllingFieldValue>
+            <valueName>Customer Obligation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Milestone Filing Delay</controllingFieldValue>
+            <valueName>Expired Credit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Milestone Filing Delay</controllingFieldValue>
+            <valueName>M0/Contract not approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Milestone Filing Delay</controllingFieldValue>
+            <valueName>Missing Inverter Number</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Milestone Filing Delay</controllingFieldValue>
+            <valueName>Missing Photos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Milestone Filing Delay</controllingFieldValue>
+            <valueName>SolarEdge Technical Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Milestone Filing Delay</controllingFieldValue>
+            <valueName>Unclear Photos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Market Manager Review</controllingFieldValue>
+            <valueName>Re-Roof Not Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Market Manager Review</controllingFieldValue>
+            <valueName>Re-Roof Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Market Manager Review</controllingFieldValue>
+            <valueName>Re-Survey Needed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Revision 1</controllingFieldValue>
+            <controllingFieldValue>Revision 2</controllingFieldValue>
+            <controllingFieldValue>Revision 3</controllingFieldValue>
+            <valueName>Bill of Materials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Revision 1</controllingFieldValue>
+            <controllingFieldValue>Revision 2</controllingFieldValue>
+            <controllingFieldValue>Revision 3</controllingFieldValue>
+            <valueName>Documentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Revision 1</controllingFieldValue>
+            <controllingFieldValue>Revision 2</controllingFieldValue>
+            <controllingFieldValue>Revision 3</controllingFieldValue>
+            <valueName>Electrical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Revision 1</controllingFieldValue>
+            <controllingFieldValue>Revision 2</controllingFieldValue>
+            <controllingFieldValue>Revision 3</controllingFieldValue>
+            <valueName>Layout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Revision 1</controllingFieldValue>
+            <controllingFieldValue>Revision 2</controllingFieldValue>
+            <controllingFieldValue>Revision 3</controllingFieldValue>
+            <valueName>System Size</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <valueName>Job Close Out Photos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <valueName>Punch List Items</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <valueName>Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <valueName>Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Monitoring</controllingFieldValue>
+            <valueName>Cell/Gateway</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Monitoring</controllingFieldValue>
+            <valueName>Commissioning Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Monitoring</controllingFieldValue>
+            <valueName>Software</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Failure</controllingFieldValue>
+            <valueName>Consumption Monitoring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Failure</controllingFieldValue>
+            <valueName>Inverter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Failure</controllingFieldValue>
+            <valueName>Optimizer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Failure</controllingFieldValue>
+            <valueName>Panel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Failure</controllingFieldValue>
+            <valueName>Storage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Failure</controllingFieldValue>
+            <valueName>Unknown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interconnection Kickback</controllingFieldValue>
+            <valueName>Photos Needed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NPS Score</controllingFieldValue>
+            <valueName>Detractor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NPS Score</controllingFieldValue>
+            <valueName>Neutral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bill of Materials</controllingFieldValue>
+            <valueName>Not Standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bill of Materials</controllingFieldValue>
+            <valueName>Standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural Stamp</controllingFieldValue>
+            <controllingFieldValue>Electrical Stamp</controllingFieldValue>
+            <valueName>Plans in Mail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural Stamp</controllingFieldValue>
+            <controllingFieldValue>Electrical Stamp</controllingFieldValue>
+            <valueName>Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural Stamp</controllingFieldValue>
+            <controllingFieldValue>Electrical Stamp</controllingFieldValue>
+            <valueName>Sent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Document Changes Needed</controllingFieldValue>
+            <valueName>Pending Documents to Sign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Document Changes Needed</controllingFieldValue>
+            <valueName>Pending Documents to Upload</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NJ SREC</controllingFieldValue>
+            <controllingFieldValue>MA SMART</controllingFieldValue>
+            <valueName>Reservation Application Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NJ SREC</controllingFieldValue>
+            <controllingFieldValue>MA SMART</controllingFieldValue>
+            <controllingFieldValue>PennAEPS</controllingFieldValue>
+            <controllingFieldValue>MD</controllingFieldValue>
+            <valueName>Corrections Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NJ SREC</controllingFieldValue>
+            <controllingFieldValue>MA SMART</controllingFieldValue>
+            <controllingFieldValue>PennAEPS</controllingFieldValue>
+            <controllingFieldValue>MD</controllingFieldValue>
+            <valueName>Corrections Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NJ SREC</controllingFieldValue>
+            <controllingFieldValue>MA SMART</controllingFieldValue>
+            <valueName>Reservation Application Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NJ SREC</controllingFieldValue>
+            <valueName>As-Built Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NJ SREC</controllingFieldValue>
+            <valueName>NJCE Registration Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NJ SREC</controllingFieldValue>
+            <valueName>SRECTrade Registration Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NJ SREC</controllingFieldValue>
+            <valueName>Account Transfer Awaiting Customer Action</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NJ SREC</controllingFieldValue>
+            <controllingFieldValue>MA SMART</controllingFieldValue>
+            <controllingFieldValue>IL ABP</controllingFieldValue>
+            <controllingFieldValue>CT Green Bank</controllingFieldValue>
+            <controllingFieldValue>PennAEPS</controllingFieldValue>
+            <controllingFieldValue>MD</controllingFieldValue>
+            <controllingFieldValue>RI Re-Growth</controllingFieldValue>
+            <controllingFieldValue>NV</controllingFieldValue>
+            <controllingFieldValue>Austin Rebate</controllingFieldValue>
+            <valueName>Incentive Process Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Media Review</controllingFieldValue>
+            <controllingFieldValue>BBB Review</controllingFieldValue>
+            <controllingFieldValue>Google / Yelp Review</controllingFieldValue>
+            <controllingFieldValue>NPS Review</controllingFieldValue>
+            <controllingFieldValue>Attorney General Complaint</controllingFieldValue>
+            <valueName>Social Media Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Media Review</controllingFieldValue>
+            <controllingFieldValue>BBB Review</controllingFieldValue>
+            <controllingFieldValue>Google / Yelp Review</controllingFieldValue>
+            <controllingFieldValue>NPS Review</controllingFieldValue>
+            <controllingFieldValue>Attorney General Complaint</controllingFieldValue>
+            <valueName>BBB Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Media Review</controllingFieldValue>
+            <controllingFieldValue>BBB Review</controllingFieldValue>
+            <controllingFieldValue>Google / Yelp Review</controllingFieldValue>
+            <controllingFieldValue>NPS Review</controllingFieldValue>
+            <controllingFieldValue>Attorney General Complaint</controllingFieldValue>
+            <valueName>Google / Yelp Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Media Review</controllingFieldValue>
+            <controllingFieldValue>BBB Review</controllingFieldValue>
+            <controllingFieldValue>Google / Yelp Review</controllingFieldValue>
+            <controllingFieldValue>NPS Review</controllingFieldValue>
+            <controllingFieldValue>Attorney General Complaint</controllingFieldValue>
+            <valueName>NPS Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Media Review</controllingFieldValue>
+            <controllingFieldValue>BBB Review</controllingFieldValue>
+            <controllingFieldValue>Google / Yelp Review</controllingFieldValue>
+            <controllingFieldValue>NPS Review</controllingFieldValue>
+            <controllingFieldValue>Attorney General Complaint</controllingFieldValue>
+            <valueName>Attorney General Complaint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility Bill</controllingFieldValue>
+            <controllingFieldValue>Retention promotion</controllingFieldValue>
+            <controllingFieldValue>Palmetto Promotion</controllingFieldValue>
+            <valueName>Utility Bill</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility Bill</controllingFieldValue>
+            <controllingFieldValue>Retention promotion</controllingFieldValue>
+            <controllingFieldValue>Palmetto Promotion</controllingFieldValue>
+            <valueName>Retention promotion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility Bill</controllingFieldValue>
+            <controllingFieldValue>Retention promotion</controllingFieldValue>
+            <controllingFieldValue>Palmetto Promotion</controllingFieldValue>
+            <valueName>Palmetto Promotion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MA SMART</controllingFieldValue>
+            <valueName>Claim Submitted - Docs Awaiting Customer Signature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MA SMART</controllingFieldValue>
+            <valueName>Claim Under Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MA SMART</controllingFieldValue>
+            <valueName>Claim Corrections Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MA SMART</controllingFieldValue>
+            <valueName>Claim Corrections Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IL ABP</controllingFieldValue>
+            <valueName>Disclosure Sent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IL ABP</controllingFieldValue>
+            <valueName>Disclosure Received Signed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IL ABP</controllingFieldValue>
+            <valueName>App Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IL ABP</controllingFieldValue>
+            <controllingFieldValue>PennAEPS</controllingFieldValue>
+            <controllingFieldValue>MD</controllingFieldValue>
+            <valueName>Info Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IL ABP</controllingFieldValue>
+            <valueName>Info Provided</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IL ABP</controllingFieldValue>
+            <valueName>Info Verified Processed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IL ABP</controllingFieldValue>
+            <valueName>App P1 Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IL ABP</controllingFieldValue>
+            <valueName>Contract Awarded/P2 Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IL ABP</controllingFieldValue>
+            <valueName>Facility Certified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CT Green Bank</controllingFieldValue>
+            <valueName>App Rejected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CT Green Bank</controllingFieldValue>
+            <valueName>App Resubmitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CT Green Bank</controllingFieldValue>
+            <valueName>App Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CT Green Bank</controllingFieldValue>
+            <valueName>CO Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CT Green Bank</controllingFieldValue>
+            <valueName>CO Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CT Green Bank</controllingFieldValue>
+            <valueName>Completion Doc Awaiting Customer Signature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CT Green Bank</controllingFieldValue>
+            <valueName>Completion Doc Received Signed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CT Green Bank</controllingFieldValue>
+            <valueName>Payment Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CT Green Bank</controllingFieldValue>
+            <valueName>Payment Pending</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CT Green Bank</controllingFieldValue>
+            <valueName>Inspection Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CT Green Bank</controllingFieldValue>
+            <valueName>Inspection Failed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CT Green Bank</controllingFieldValue>
+            <valueName>Inspection Corrections Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CT Green Bank</controllingFieldValue>
+            <valueName>Pending Monitoring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PennAEPS</controllingFieldValue>
+            <valueName>PennAEPS Application Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PennAEPS</controllingFieldValue>
+            <valueName>PennAEPS Application Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PennAEPS</controllingFieldValue>
+            <valueName>SRECTrade App Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PennAEPS</controllingFieldValue>
+            <controllingFieldValue>MD</controllingFieldValue>
+            <valueName>Info Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PennAEPS</controllingFieldValue>
+            <valueName>Pipeline Report Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD</controllingFieldValue>
+            <valueName>MD RCEG App Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD</controllingFieldValue>
+            <valueName>MD Certification Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD</controllingFieldValue>
+            <valueName>SRECTrade Registration Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RI Re-Growth</controllingFieldValue>
+            <valueName>Submit Incentive Docs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RI Re-Growth</controllingFieldValue>
+            <valueName>Revisions Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RI Re-Growth</controllingFieldValue>
+            <valueName>Revisions Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NV</controllingFieldValue>
+            <valueName>Incentive Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Austin Rebate</controllingFieldValue>
+            <valueName>CAF Sent for Signature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Austin Rebate</controllingFieldValue>
+            <valueName>CAF Received Signed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Austin Rebate</controllingFieldValue>
+            <valueName>LOI Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Austin Rebate</controllingFieldValue>
+            <valueName>Invoice Sent for Signature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Austin Rebate</controllingFieldValue>
+            <valueName>Invoice Received Signed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Austin Rebate</controllingFieldValue>
+            <valueName>QA Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Austin Rebate</controllingFieldValue>
+            <valueName>Corrections Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Austin Rebate</controllingFieldValue>
+            <valueName>Application Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentives</controllingFieldValue>
+            <valueName>Sunnova Delay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentives</controllingFieldValue>
+            <valueName>Failed Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentives</controllingFieldValue>
+            <valueName>App Expiration Pending</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel_Manager__c</fullName>
+    <externalId>false</externalId>
+    <label>Sales</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alaina Pianetti</fullName>
+                <default>false</default>
+                <label>Alaina Pianetti</label>
+            </value>
+            <value>
+                <fullName>Alyssa Haley</fullName>
+                <default>false</default>
+                <label>Alyssa Haley</label>
+            </value>
+            <value>
+                <fullName>Andrew Catapano</fullName>
+                <default>false</default>
+                <label>Andrew Catapano</label>
+            </value>
+            <value>
+                <fullName>Anthony Silvestri</fullName>
+                <default>false</default>
+                <label>Anthony Silvestri</label>
+            </value>
+            <value>
+                <fullName>Brady Anderson</fullName>
+                <default>false</default>
+                <label>Brady Anderson</label>
+            </value>
+            <value>
+                <fullName>Dan DeVito</fullName>
+                <default>false</default>
+                <label>Dan DeVito</label>
+            </value>
+            <value>
+                <fullName>Ethan Brown</fullName>
+                <default>false</default>
+                <label>Ethan Brown</label>
+            </value>
+            <value>
+                <fullName>James Carter</fullName>
+                <default>false</default>
+                <label>James Carter</label>
+            </value>
+            <value>
+                <fullName>Joe Taylor</fullName>
+                <default>false</default>
+                <label>Joe Taylor</label>
+            </value>
+            <value>
+                <fullName>Jonathan Van Putten</fullName>
+                <default>false</default>
+                <label>Jonathan Van Putten</label>
+            </value>
+            <value>
+                <fullName>Joseph Saunders</fullName>
+                <default>false</default>
+                <label>Joseph Saunders</label>
+            </value>
+            <value>
+                <fullName>Lee Mauldin</fullName>
+                <default>false</default>
+                <label>Lee Mauldin</label>
+            </value>
+            <value>
+                <fullName>McKenna Beam</fullName>
+                <default>false</default>
+                <label>McKenna Beam</label>
+            </value>
+            <value>
+                <fullName>Ron Cates</fullName>
+                <default>false</default>
+                <label>Ron Cates</label>
+            </value>
+            <value>
+                <fullName>Sean Fahey</fullName>
+                <default>false</default>
+                <label>Sean Fahey</label>
+            </value>
+            <value>
+                <fullName>Taylor Coppin</fullName>
+                <default>false</default>
+                <label>Taylor Coppin</label>
+            </value>
+            <value>
+                <fullName>Wes Jones</fullName>
+                <default>false</default>
+                <label>Wes Jones</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

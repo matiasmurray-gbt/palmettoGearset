@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Alchemy User Status Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Negative dealer experience</fullName>
+                <default>false</default>
+                <label>Negative dealer experience</label>
+            </value>
+            <value>
+                <fullName>No lead generation experience</fullName>
+                <default>false</default>
+                <label>No lead generation experience</label>
+            </value>
+            <value>
+                <fullName>No longer with org</fullName>
+                <default>false</default>
+                <label>No longer with org</label>
+            </value>
+            <value>
+                <fullName>No solar experience</fullName>
+                <default>false</default>
+                <label>No solar experience</label>
+            </value>
+            <value>
+                <fullName>Offboarded dealer</fullName>
+                <default>false</default>
+                <label>Offboarded dealer</label>
+            </value>
+            <value>
+                <fullName>Part time</fullName>
+                <default>false</default>
+                <label>Part time</label>
+            </value>
+            <value>
+                <fullName>Single shared login</fullName>
+                <default>false</default>
+                <label>Single shared login</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

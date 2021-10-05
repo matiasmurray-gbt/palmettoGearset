@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3_MA2_Resi_System_Activation_Final_Check</fullName>
+    <booleanFilter>1 AND ((2 AND 4) OR 7) AND 3 AND 5 And 6</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>System_Size_Calculated_kW__c</columns>
+    <columns>Financing_Tool__c</columns>
+    <columns>Utility__c</columns>
+    <columns>Net_Meter_Install_Date__c</columns>
+    <columns>Monitoring_Activated__c</columns>
+    <columns>Monitoring_Access_Sent_to_Customer__c</columns>
+    <columns>System_Activation_Submitted_to_CPF__c</columns>
+    <columns>SA_Approved__c</columns>
+    <columns>System_Activation_Section_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer,Integrated Palmetto Property</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>18. Installation,19. Closed Won,Closed Won</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>equals</operation>
+        <value>Massachusetts,Rhode Island</value>
+    </filters>
+    <filters>
+        <field>PTO_Net_Meter_Installed__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>SA_Approved__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Financing_Tool__c</field>
+        <operation>notEqual</operation>
+        <value>Cash</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>22. PTO</value>
+    </filters>
+    <label>3.20 MA / RI System Activation Final</label>
+    <sharedTo>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_MA</role>
+        <role>Project_Manager_FL</role>
+    </sharedTo>
+</ListView>

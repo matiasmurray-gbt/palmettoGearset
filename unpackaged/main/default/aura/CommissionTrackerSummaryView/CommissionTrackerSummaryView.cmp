@@ -1,0 +1,100 @@
+<aura:component>
+	<aura:attribute name="milestonesWrapper" type="Object[]" access="public" />
+
+	<aura:attribute name="commissionResultTotal" type="Decimal" default="0" />
+	<aura:attribute name="milestone1AmountTotal" type="Decimal" default="0" />
+	<aura:attribute name="milestone2AmountTotal" type="Decimal" default="0" />
+	<aura:attribute name="milestone3AmountTotal" type="Decimal" default="0" />
+	<aura:attribute name="clawbacksTotal" type="Decimal" default="0" />
+	<aura:attribute name="providers" type="List" />
+	<aura:attribute name="columns" type="List" />
+	<aura:attribute name="data" type="List" />
+
+	<!--Test attributes -->
+	<aura:attribute name="tData" type="Object[]" access="public" />
+	<aura:attribute name="filter" type="String" />
+	<aura:attribute name="messageBoxTitle" type="String" default="undefined" access="public" />
+	<aura:attribute name="buttonLabel" type="String" default="undefined" access="public" />
+	<aura:attribute name="isOpen" type="Boolean" default="false" />
+	<lightning:button label="Summary View" title="Summary View" onclick="{!c.doThis}" />
+
+	<aura:handler name='init' value='{!this}' action='{!c.doInit}' />
+	<!-- MODAL POP UP -->
+	<aura:if isTrue="{!v.isOpen}">
+		<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+			aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_large">
+			<div class="slds-modal__container">
+				<!-- MODAL POP UP HEADER -->
+				<header class="slds-modal__header">
+					<lightning:buttonIcon iconName="utility:close" onclick="{! c.closePopUp }" alternativeText="close"
+						variant="bare-inverse" class="slds-modal__close" />
+					<h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{!v.messageBoxTitle}</h2>
+				</header>
+				<!-- /MODAL POP UP HEADER -->
+				<!-- MODAL POP UP BODY -->
+				<div class="slds-table--header-fixed_container slds-scrollable slds-p-around_medium">
+					<div class="slds-scrollable_x" style="width:100%;">
+						<table>
+							<thead>
+								<th class="slds-p-horizontal_small">Provider Name</th>
+								<th class="slds-p-horizontal_small">Commission Result</th>
+								<th class="slds-p-horizontal_small">M1 Total Amount</th>
+								<!--<th class="slds-p-horizontal_small">M1 Actual Paid</th>-->
+								<th class="slds-p-horizontal_small">M2 Total Amount</th>
+								<!--<th class="slds-p-horizontal_small">M2 Actual Paid</th>-->
+								<th class="slds-p-horizontal_small">M3 Total Amount</th>
+								<!--<th class="slds-p-horizontal_small">M3 Actual Paid</th>-->
+								<th class="slds-p-horizontal_small">Clawback Total Amount</th>
+								<!--<th class="slds-p-horizontal_small">Clawback Actual Paid</th>-->
+							</thead>
+			
+							<tbody>
+								<aura:iteration items="{!v.providers}" var="item">
+									<!--<aura:iteration items="{!milestone.data}" var="item">-->
+									<tr>
+										<td>{!item.ProviderName}</td>
+										<!--
+													<aura:iteration items="{!v.PC.ComissionsList}" var="comission">
+														<td>{!comission.Amount}</td>
+													</aura:iteration>
+													-->
+										<td
+											class="{! if(lessthan(item.CommissionResult, 0), 'slds-text-color_error slds-p-horizontal_small', 'slds-text-color_success slds-p-horizontal_small')}">
+											{!item.CommissionResult}</td>
+										<td class="slds-p-horizontal_small">{!item.Milestone1TotalAmount}</td>
+										<!--<td class="{! PC.Milestone1TotalAmount != PC.Milestone1ActualPaid ? 'slds-text-color_error' : 'slds-text-color_success'}">{!PC.Milestone1ActualPaid}</td>-->
+										<td class="slds-p-horizontal_small">{!item.Milestone2TotalAmount}</td>
+										<!--<td class="{! PC.Milestone2TotalAmount != PC.Milestone2ActualPaid ? 'slds-text-color_error' : 'slds-text-color_success'}">{!PC.Milestone2ActualPaid}</td>-->
+										<td class="slds-p-horizontal_small">{!item.Milestone3TotalAmount}</td>
+										<!--<td class="{! PC.Milestone3TotalAmount != PC.Milestone3ActualPaid ? 'slds-text-color_error' : 'slds-text-color_success'}">{!PC.Milestone3ActualPaid}</td>-->
+										<td class="slds-p-horizontal_small">{!item.ClawbackTotalAmount}</td>
+										<!--<td class="{! PC.Milestone1TotalAmount != PC.Milestone1ActualPaid ? 'slds-text-color_error' : 'slds-text-color_success'}">{!PC.ClawbackActualPaid}</td>-->
+									</tr>
+									<!--</aura:iteration>-->
+								</aura:iteration>
+								<tr class="slds-text-color_inverse" style="background-color: #1589EE;">
+									<td><strong> TOTAL: </strong></td>
+									<td><strong>{!v.commissionResultTotal}</strong></td>
+									<td><strong>{!v.milestone1AmountTotal}</strong></td>
+									<td><strong>{!v.milestone2AmountTotal}</strong></td>
+									<td><strong>{!v.milestone3AmountTotal}</strong></td>
+									<td><strong>{!v.clawbacksTotal}</strong></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- /MODAL POP UP BODY -->
+				<!-- MODAL POP UP BUTTONS -->
+				<footer class="slds-modal__footer">
+					<lightning:button variant="neutral" label="Close" title="Close" onclick="{! c.closePopUp }" />
+				</footer>
+				<!-- /MODAL POP UP BUTTONS -->
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+	</aura:if>
+	<!-- /MODAL POP UP -->
+	
+
+</aura:component>

@@ -1,0 +1,7 @@
+{!Opportunity.OwnerFirstName},
+
+Congrats - Your Contract Received transition has been confirmed for {!Opportunity.Name}.
+
+Let's go get another one!!
+
+{!Opportunity.Link}

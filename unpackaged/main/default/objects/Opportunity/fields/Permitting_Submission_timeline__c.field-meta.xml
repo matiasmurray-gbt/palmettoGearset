@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permitting_Submission_timeline__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Permitting_Jurisdiction__c , "City of North Charleston",  Permit_Filed_Date__c- HOA_Approval_Date__c,
+		                    "Town of Summerville", Permit_Filed_Date__c - HOA_Approval_Date__c,
+		                    "City of Hanahan", Permit_Filed_Date__c - HOA_Approval_Date__c,
+                                    "Aiken County", Permit_Filed_Date__c - HOA_Approval_Date__c,
+                                    "Town of Garner", Permit_Filed_Date__c - HOA_Approval_Date__c,
+	                            "Mecklenburg County", Permit_Filed_Date__c - HOA_Approval_Date__c,
+                                    "Berkeley County",  Permit_Filed_Date__c - Signed_NMA_Rec_d_Date__c, 
+	                            "City of Goose Creek", Permit_Filed_Date__c - Signed_NMA_Rec_d_Date__c,
+	                            "Moncks Corner", Permit_Filed_Date__c - Signed_NMA_Rec_d_Date__c,
+	                            "Greenville County", Permit_Filed_Date__c - Signed_NMA_Rec_d_Date__c,
+	                            "City of Greer", Permit_Filed_Date__c - Signed_NMA_Rec_d_Date__c,
+Permit_Filed_Date__c - Engineering_Complete_Date__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Permitting Submission timeline</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,20 @@
+An opportunity has been created for  {!Opportunity.Account}.
+
+Contact: {!Opportunity.Contact__c}
+Email: {!Opportunity.Email__c}
+Address: {!Opportunity.Address__c}
+Home Owners Association: {!Opportunity.Home_Owners_Association__c}
+HOA Neighborhood/Subdivision Name: {!Opportunity.HOA_Neighborhood_Subdivision_Name__c}
+HOA Name: {!Opportunity.HOA_Name__c}
+HOA Phone Number: {!Opportunity.HOA_Phone_Number__c}
+HOA Contact Name: {!Opportunity.HOA_Contact_Name__c}
+HOA Email Address: {!Opportunity.HOA_Email_Address__c}
+12 Months Electrical Usage: {!Opportunity.X12_Months_Electricity_Usage_Total__c}
+Utility Provider: {!Opportunity.Utility__c}
+Number of Solar Panels:  {!Opportunity.Number_of_Solar_Panels__c}
+Panel Type: {!Opportunity.Panel_Type__c}
+Loan or Cash Sale: {!Opportunity.00N1a000008dCcW}
+Loan Type: {!Opportunity.Loan_Type__c}
+Appointment Date: {!Opportunity.Appointment_Date__c}
+Appointment Time: {!Opportunity.Appointment_Time__c}
+Notes: {!Opportunity.Canvass_Notes__c}

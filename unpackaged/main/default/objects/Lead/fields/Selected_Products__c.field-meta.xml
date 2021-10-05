@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Selected_Products__c</fullName>
+    <externalId>false</externalId>
+    <label>Products</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PV</fullName>
+                <default>false</default>
+                <label>PV</label>
+            </value>
+            <value>
+                <fullName>Storage</fullName>
+                <default>false</default>
+                <label>Storage</label>
+            </value>
+            <value>
+                <fullName>Protection Plan</fullName>
+                <default>false</default>
+                <label>Protection Plan</label>
+            </value>
+            <value>
+                <fullName>Thermostat</fullName>
+                <default>false</default>
+                <label>Thermostat</label>
+            </value>
+            <value>
+                <fullName>Palmetto Protect Subscription</fullName>
+                <default>false</default>
+                <label>Palmetto Protect Subscription</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

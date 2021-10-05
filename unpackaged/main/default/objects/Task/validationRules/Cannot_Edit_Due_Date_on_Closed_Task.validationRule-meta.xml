@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Edit_Due_Date_on_Closed_Task</fullName>
+    <active>true</active>
+    <description>Cannot Edit Due Date on Closed Task</description>
+    <errorConditionFormula>AND( 
+ISCHANGED(  ActivityDate  ), 
+ IsClosed = TRUE)</errorConditionFormula>
+    <errorMessage>Cannot Edit Due Date on Closed Task</errorMessage>
+</ValidationRule>

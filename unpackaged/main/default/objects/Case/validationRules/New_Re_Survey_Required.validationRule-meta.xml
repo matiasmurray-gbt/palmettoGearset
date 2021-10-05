@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Re_Survey_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL(CaseType__c , 'Physical Re-Survey') ,
+AND(
+ISPICKVAL( Flow_Status__c, 'New- Re-Survey Required')
+&amp;&amp;
+( Additional_Electrical_Photos_Needed_Date__c = FALSE )
+&amp;&amp; ( Additional_Structural_Photos_Needed_Date__c = FALSE )
+&amp;&amp; ( Additional_Roof_Photos_Needed_Date__c = FALSE ) &amp;&amp; ISBLANK( Add_t_Ground_Mount_Info_Date__c )))</errorConditionFormula>
+    <errorMessage>Fill at least one Date field from Additional Virtual Survey Photos Required Section.</errorMessage>
+</ValidationRule>

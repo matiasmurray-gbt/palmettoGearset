@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Party_to_Bill__c</fullName>
+    <externalId>false</externalId>
+    <label>Party to Bill</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Homeowner</fullName>
+                <default>false</default>
+                <label>Homeowner</label>
+            </value>
+            <value>
+                <fullName>Build Partner</fullName>
+                <default>false</default>
+                <label>Build Partner</label>
+            </value>
+            <value>
+                <fullName>Channel Partner</fullName>
+                <default>false</default>
+                <label>Channel Partner</label>
+            </value>
+            <value>
+                <fullName>Under Warranty</fullName>
+                <default>false</default>
+                <label>Under Warranty</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

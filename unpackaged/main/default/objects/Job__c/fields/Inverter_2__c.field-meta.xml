@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inverter_2__c</fullName>
+    <externalId>false</externalId>
+    <label>Inverter 2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SolarEdge SE3000H-US</fullName>
+                <default>false</default>
+                <label>SolarEdge SE3000H-US</label>
+            </value>
+            <value>
+                <fullName>SolarEdge SE3800H-US</fullName>
+                <default>false</default>
+                <label>SolarEdge SE3800H-US</label>
+            </value>
+            <value>
+                <fullName>SolarEdge SE5000H-US</fullName>
+                <default>false</default>
+                <label>SolarEdge SE5000H-US</label>
+            </value>
+            <value>
+                <fullName>SolarEdge SE6000H-US</fullName>
+                <default>false</default>
+                <label>SolarEdge SE6000H-US</label>
+            </value>
+            <value>
+                <fullName>SolarEdge SE7600H-US</fullName>
+                <default>false</default>
+                <label>SolarEdge SE7600H-US</label>
+            </value>
+            <value>
+                <fullName>SolarEdge SE10000A-US</fullName>
+                <default>false</default>
+                <label>SolarEdge SE10000A-US</label>
+            </value>
+            <value>
+                <fullName>SolarEdge SE11400A-US</fullName>
+                <default>false</default>
+                <label>SolarEdge SE11400A-US</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

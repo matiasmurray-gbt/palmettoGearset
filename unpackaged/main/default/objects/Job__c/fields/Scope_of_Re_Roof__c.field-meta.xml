@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scope_of_Re_Roof__c</fullName>
+    <externalId>false</externalId>
+    <label>Scope of Re-Roof</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Full Re-Roof</fullName>
+                <default>false</default>
+                <label>Full Re-Roof</label>
+            </value>
+            <value>
+                <fullName>Solar Mounting Planes Only</fullName>
+                <default>false</default>
+                <label>Solar Mounting Planes Only</label>
+            </value>
+            <value>
+                <fullName>Roof Repair/Patch</fullName>
+                <default>false</default>
+                <label>Roof Repair/Patch</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

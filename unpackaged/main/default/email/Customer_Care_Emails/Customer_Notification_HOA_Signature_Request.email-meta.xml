@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Customer Notification - HOA Signature Request</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Solar</letterhead>
+    <name>Customer Notification - HOA Signature Request</name>
+    <style>freeForm</style>
+    <subject>Your Solar Installation Project - HOA Application</subject>
+    <textOnly>Hello {!Opportunity.Contact__c},
+
+We have begun the application to your Homeowner’s Association (HOA) for permission to install your solar system to your home. Your locality may require HOA approval as part of your building permit application.
+
+
+We will be handling all aspects of this process to ensure everything is as streamlined as possible for you. If they will allow us to communicate on your behalf, we will submit the necessary application fee, the proposed system specifications, and any other initial information requested.
+
+
+Some HOAs require the homeowner to submit the fee and full application. If this is the case we will send you a check to reimburse you for the application fee as well as the fully completed application.
+
+
+Part of this process also involves your participation in signing a document that should be sent to your email soon. Please take your time to review these documents and fill them out completely. If you have any questions please reach out to our customer care team for clarification.
+
+
+We will inform you once the application is submitted. Please notify us of any communication that your HOA may have with you so that we can expedite this process for you.
+
+
+Thank you,
+
+Palmetto Customer Care
+843-720-1844</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

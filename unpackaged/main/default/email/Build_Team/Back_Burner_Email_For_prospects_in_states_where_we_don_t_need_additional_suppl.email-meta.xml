@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>If a prospect replies to this email notifying you they operate in another state, please be sure to update the Vendor, Service Territory property Attach Intro To Palmetto Presentation</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Back Burner Email - For prospects in states where we don’t need additional suppl</name>
+    <style>none</style>
+    <subject>Palmetto Solar - Partner Inquiry</subject>
+    <textOnly>Hi {!Contact.Name},
+
+I hope this message finds you well. I noticed you reached out a bit earlier through the website expressing interest in partnering with Palmetto Solar as a Build Partner. At this juncture, we have a very stable supply of installation crews in {State} with our existing build partners. So we aren&apos;t in a position where we need to bring on additional build partners in the state at this very moment. However, we are looking to increase our sales significantly throughout 2021, so I&apos;m hopeful we&apos;ll be in the position where we&apos;ll need to bring on additional partners at some point later on in the year.
+
+With that said, please let me know if you operate in any other states, as we do have needs and are planning on opening operations in additional states and territories in the months to come. Also, If you have an active sales team, you may want to look into our Sales Partner Program. This may help you increase your operational efficiency while decreasing overhead. Please let me know if either of these scenarios holds true for you, I&apos;d be happy to arrange a time to speak about other states or connect you to someone on our sales partner program.
+
+In the meantime, I&apos;ve included a presentation for you to review introducing you to our build partner program. Please let me know if you have any questions, otherwise, we&apos;ll be back in contact when as we see an increased need for build partners in your area.
+
+Regards,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

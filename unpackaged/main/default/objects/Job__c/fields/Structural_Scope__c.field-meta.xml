@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Structural_Scope__c</fullName>
+    <externalId>false</externalId>
+    <label>Structural Scope</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Full Upgrade</fullName>
+                <default>false</default>
+                <label>Full Upgrade</label>
+            </value>
+            <value>
+                <fullName>Partial Upgrade</fullName>
+                <default>false</default>
+                <label>Partial Upgrade</label>
+            </value>
+            <value>
+                <fullName>Blocking</fullName>
+                <default>false</default>
+                <label>Blocking</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

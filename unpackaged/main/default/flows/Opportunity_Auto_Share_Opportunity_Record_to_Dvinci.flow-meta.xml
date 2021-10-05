@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <name>Connection_Record_Not_Null</name>
+        <label>Connection Record Not Null</label>
+        <locationX>313</locationX>
+        <locationY>250</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>DvinciConnRecord</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Dvinci_Conn_Record</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Share_Opportunity_Record_to_Dvinci</targetReference>
+            </connector>
+            <label>DvinciConnRecord</label>
+        </rules>
+    </decisions>
+    <description>This flow share opportunity record automatically to Dvinci when 3rd Party partner is Dvinci Energy and Contract Received Date is not null</description>
+    <interviewLabel>Opportunity - Auto Share Opportunity Record to Dvinci {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity - Auto Share Opportunity Record to Dvinci</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Share_Opportunity_Record_to_Dvinci</name>
+        <label>Share Opportunity Record to Dvinci</label>
+        <locationX>308</locationX>
+        <locationY>419</locationY>
+        <inputAssignments>
+            <field>ConnectionId</field>
+            <value>
+                <elementReference>Dvinci_Conn_Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LocalRecordId</field>
+            <value>
+                <elementReference>OpportunityRecord.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>PartnerNetworkRecordConnection</object>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Dvinci_Connection_Id</name>
+        <label>Get Dvinci Connection Id</label>
+        <locationX>313</locationX>
+        <locationY>88</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Connection_Record_Not_Null</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ConnectionName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Dvinci Energy</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ConnectionStatus</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Accepted</stringValue>
+            </value>
+        </filters>
+        <object>PartnerNetworkConnection</object>
+        <outputReference>Dvinci_Conn_Record</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <startElementReference>Get_Dvinci_Connection_Id</startElementReference>
+    <status>Obsolete</status>
+    <variables>
+        <description>Connection Record for Dvinci</description>
+        <name>Dvinci_Conn_Record</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>PartnerNetworkConnection</objectType>
+    </variables>
+    <variables>
+        <description>Opportunity Record to be shared to Dvinci</description>
+        <name>OpportunityRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+</Flow>

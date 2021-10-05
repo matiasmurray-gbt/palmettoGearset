@@ -1,0 +1,17 @@
+<apex:page controller="RunCommissionBatch" lightningStylesheets="true" action="{!runBatch}">
+    <apex:slds />
+    
+    <apex:form >
+        <apex:pageMessages />
+        <center>
+            <!--<apex:commandButton value="Run Commission Batch" action="{!runBatch}" styleClass="slds-button slds-button--brand" />-->
+            <button type="button" onclick="redirectToCommissions();" class="slds-button slds-button--brand">Back to Commissions</button>
+        </center>
+    </apex:form>
+    
+    <script>
+        function redirectToCommissions(){
+            window.location.href = 'https://na90.salesforce.com/a1R?fcf=00B2L0000036U6H&rolodexIndex=-1&page=1';
+        }
+    </script>
+</apex:page>

@@ -1,0 +1,25 @@
+<aura:component access="global">
+    <aura:registerEvent name="appEvent" type="c:CommissionTrackerConfirmOperationEvent"/>
+    <aura:attribute name="operation" type="String" />
+    <aura:attribute name="selectedDate" type="Date" />
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+
+    <aura:if isTrue="{!v.operation == 'add paid date'}">
+		<div class="slds-m-around_medium">
+			<lightning:input
+							aura:id="datePicker" 
+							type="date" 
+							name="datePicker" 
+							label="Please, select a date:"
+							value="{!v.selectedDate}"  
+						/>
+		</div>
+    </aura:if>
+    
+    <!--Component Start--> 
+    <div class="slds-text-align_center slds-m-around_x-medium">
+        <lightning:button name="cancel" label="Cancel" onclick="{!c.handleCancel}"/>
+        <lightning:button name="ok" label="OK" variant="brand" onclick="{!c.handleOK}"/>
+    </div>
+    <!--Component End-->
+</aura:component>

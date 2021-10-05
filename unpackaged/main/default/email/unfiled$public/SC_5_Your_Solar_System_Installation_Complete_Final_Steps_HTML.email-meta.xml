@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>SC - 5 Your Solar System - Installation Complete - Final Steps HTML</name>
+    <style>freeForm</style>
+    <subject>Update From Palmetto On Your Solar System - Installation Complete and Final Two Inspections</subject>
+    <textOnly>Hello {!Opportunity.Contact__c},
+
+Congratulations! Your solar system has been successfully installed.
+
+We have tested the system to ensure everything is connected &amp; working properly. The system will have to remain in the OFF position while we go through the final inspections from the local permitting jurisdiction &amp; the utility.
+
+The final steps include:
+
+1) Final inspections with the local jurisdiction
+2) Final inspections from the utility
+3) Net Meter Installed by the utility / System Energized / Monitoring Access Granted
+
+We generally expect this process to take 3-4 weeks in total depending on how quickly they are able to get out for your inspections.
+
+Some jurisdictions do require access to the house to perform their final inspections. In this case, you should expect to hear from us about scheduling a convenient time to meet a local inspector at your home.
+
+Palmetto will keep you informed as you progress through these final inspections &amp; follow up again after the system has been energized to get you set up with your online monitoring access.
+
+Congratulations again on going solar!
+
+
+
+
+
+Thank You,
+
+Palmetto™ Customer Care Team
+Main: 855-339-1831
+Office: 843-720-1844
+Email: customer.care@palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

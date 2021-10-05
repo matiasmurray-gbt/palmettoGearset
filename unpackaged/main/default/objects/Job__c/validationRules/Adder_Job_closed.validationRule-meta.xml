@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adder_Job_closed</fullName>
+    <active>true</active>
+    <description>This validation rule ensures that the user completes all required fields to close the Adder Job</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = 'Adder',
+    ISPICKVAL(Job_Status__c, 'Closed'),
+    OR(
+        NOT(Notes_added__c),
+        NOT(Job_completed__c)
+    )
+)</errorConditionFormula>
+    <errorMessage>Please complete Alchemy Update Section and Job completion fields to close this Job</errorMessage>
+</ValidationRule>

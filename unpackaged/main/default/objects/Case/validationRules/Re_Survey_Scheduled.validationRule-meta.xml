@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Re_Survey_Scheduled</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL(CaseType__c , 'Physical Re-Survey') ,
+AND(
+ISPICKVAL( Flow_Status__c, 'Re-Survey Scheduled')
+&amp;&amp;
+ISBLANK( Re_Survey_Time__c ), ISBLANK( Re_Survey_Schedule_Date__c )))</errorConditionFormula>
+    <errorMessage>Enter Dates on "Re-Survey Time" and "Re-Survey Schedule Date"</errorMessage>
+</ValidationRule>

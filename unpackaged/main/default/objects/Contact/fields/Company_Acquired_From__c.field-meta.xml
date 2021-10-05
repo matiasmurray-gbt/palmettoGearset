@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Acquired_From__c</fullName>
+    <description>Name of the company this customer was acquired from</description>
+    <externalId>false</externalId>
+    <label>Company Acquired From</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Red River</fullName>
+                <default>false</default>
+                <label>Red River</label>
+            </value>
+            <value>
+                <fullName>Eco-Clean</fullName>
+                <default>false</default>
+                <label>Eco-Clean</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

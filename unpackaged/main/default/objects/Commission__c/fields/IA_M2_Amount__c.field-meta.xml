@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IA_M2_Amount__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Loan_Pal__c , "Loan Pal", IA_Total_Commissions_Value__c, 
+
+CASE( Lead_Source_Type__c , 
+"Independent", IA_Total_Commissions_Value__c * Commission_Plan__r.Milestone_2_Percent__c   , 
+
+0))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>IA - M2 Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

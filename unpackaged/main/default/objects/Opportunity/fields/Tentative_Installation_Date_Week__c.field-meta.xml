@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tentative_Installation_Date_Week__c</fullName>
+    <description>Enter a tentative installation date that represents the week we have the installation slated for. We will use this field to generate lists of expected weekly installs 2 weeks out.</description>
+    <externalId>false</externalId>
+    <label>Tentative Installation Start Date</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Date</type>
+</CustomField>

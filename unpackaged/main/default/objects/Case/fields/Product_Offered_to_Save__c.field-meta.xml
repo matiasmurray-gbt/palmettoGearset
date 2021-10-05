@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Offered_to_Save__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Offered to Save</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+                <label>Gift Card</label>
+            </value>
+            <value>
+                <fullName>Price Match</fullName>
+                <default>false</default>
+                <label>Price Match</label>
+            </value>
+            <value>
+                <fullName>Lower PPW</fullName>
+                <default>false</default>
+                <label>Lower PPW</label>
+            </value>
+            <value>
+                <fullName>Discount price</fullName>
+                <default>false</default>
+                <label>Discount price</label>
+            </value>
+            <value>
+                <fullName>VIP Service</fullName>
+                <default>false</default>
+                <label>VIP Service</label>
+            </value>
+            <value>
+                <fullName>Palmetto Protect</fullName>
+                <default>false</default>
+                <label>Palmetto Protect</label>
+            </value>
+            <value>
+                <fullName>Swag</fullName>
+                <default>false</default>
+                <label>Swag</label>
+            </value>
+            <value>
+                <fullName>Reimbursement Check</fullName>
+                <default>false</default>
+                <label>Reimbursement Check</label>
+            </value>
+            <value>
+                <fullName>Reimburse for UB</fullName>
+                <default>false</default>
+                <label>Reimburse for UB</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

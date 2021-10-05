@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notifications that goes to customers &amp; 3rd party partners to let them know that inspections have been scheduled.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Inspection Scheduled Checkbox = True</name>
+    <style>freeForm</style>
+    <subject>Update From Palmetto On Your Solar System - Building Inspections Scheduled - {!Opportunity.Contact__c} - {!Account.BillingAddress}</subject>
+    <textOnly>Dear {!Opportunity.Contact__c},
+
+Your local building permit office of inspections has scheduled their time to inspect your solar system {!Opportunity.Inspection_Completed_Date__c}.
+
+After the building permit office approves of the installation, you have one final inspection from your electric utility company before we can energize your system!
+
+
+Best Regards,
+
+Palmetto Customer Care Department
+customer.care@palmetto.com
+Main: (843) 720-1844
+Toll: (855) 339-1831</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

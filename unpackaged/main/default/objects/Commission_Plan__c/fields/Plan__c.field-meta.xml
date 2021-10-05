@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plan__c</fullName>
+    <externalId>false</externalId>
+    <label>Plan</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Plan_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Canvasser</fullName>
+                <default>false</default>
+                <label>Canvasser</label>
+            </value>
+            <value>
+                <fullName>Canvasser Closer</fullName>
+                <default>false</default>
+                <label>Canvasser Closer</label>
+            </value>
+            <value>
+                <fullName>Channel</fullName>
+                <default>false</default>
+                <label>Channel</label>
+            </value>
+            <value>
+                <fullName>Energy Specialist</fullName>
+                <default>false</default>
+                <label>Energy Specialist</label>
+            </value>
+            <value>
+                <fullName>Independent Alchemist</fullName>
+                <default>false</default>
+                <label>Independent Alchemist</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Direct Sales</controllingFieldValue>
+            <valueName>Canvasser</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Direct Sales</controllingFieldValue>
+            <valueName>Canvasser Closer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Direct Sales</controllingFieldValue>
+            <valueName>Energy Specialist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Channel Sales</controllingFieldValue>
+            <valueName>Channel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Independent Alchemists</controllingFieldValue>
+            <valueName>Independent Alchemist</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

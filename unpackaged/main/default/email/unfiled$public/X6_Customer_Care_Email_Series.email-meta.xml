@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>6 - Customer Care Email Series</name>
+    <style>freeForm</style>
+    <subject>Palmetto Solar is Ready to Help You Save!</subject>
+    <textOnly>Hello {!Contact.FirstName},  
+
+This is your dedicated customer care contact, {!User.FirstName} {!User.LastName}, reaching out to you again in order to collect some basic information about your property. In order to assist you in your journey to integrating free and clean energy into your home or property.  
+
+Our solar team needs to begin by identifying the following pieces of information.  
+
+- Home or Property Address
+- Utility Provider
+- Average monthly kilowatt usage (kWh)  
+
+With this information, our solar team can begin developing a custom proposal that outlines the amount of energy we would be able to offset with a solar system.  
+
+In order to conveniently meet your needs, you can reach us through any of these contact portals.
+
+Thank You,  
+{!User.FirstName} {!User.LastName}
+Palmetto
+Customer Care Department
+
+701 E. Bay St. #413 Charleston, SC 29403
+Email: {!User.Email}
+
+Toll Free: (855) 339-1831</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

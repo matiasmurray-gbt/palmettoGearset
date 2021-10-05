@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Third_Party_Sales</fullName>
+    <columns>X3rd_Party_Partner__c</columns>
+    <columns>Appointment_Date__c</columns>
+    <columns>Appointment_Time__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE_CODE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Unqualified</value>
+    </filters>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>3rd Party Provider</value>
+    </filters>
+    <filters>
+        <field>Test_Account__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>3rd Party Sales</label>
+    <sharedTo>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_MA</role>
+        <role>Project_Coordinator_SC</role>
+        <role>Project_Designer</role>
+        <role>Senior_Project_Designer</role>
+        <roleAndSubordinates>Project_Coordinator_SC</roleAndSubordinates>
+        <roleAndSubordinates>Project_Manager_SC</roleAndSubordinates>
+    </sharedTo>
+</ListView>

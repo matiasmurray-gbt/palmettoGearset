@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Provide_description_of_the_Reason</fullName>
+    <active>true</active>
+    <description>This validation rules evalutes if the record type of the case is Retention and if the Reason 1 is equals to 'Other' the user should enter a value in the field 'Other Reason Description'</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName == 'Retention',
+    ISPICKVAL(Reason_1__c, 'Other'),
+    ISBLANK(Other_Reason_Description__c)
+)</errorConditionFormula>
+    <errorDisplayField>Other_Reason_Description__c</errorDisplayField>
+    <errorMessage>Please provide a description of the Reason.</errorMessage>
+</ValidationRule>

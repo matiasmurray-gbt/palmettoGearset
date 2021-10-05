@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Installation_Team__c</fullName>
+    <externalId>false</externalId>
+    <label>Installation Team</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Location__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>15 Lightyears, Inc</fullName>
+                <default>false</default>
+                <label>15 Lightyears, Inc</label>
+            </value>
+            <value>
+                <fullName>3a Roofing</fullName>
+                <default>false</default>
+                <label>3a Roofing</label>
+            </value>
+            <value>
+                <fullName>AAA Solar</fullName>
+                <default>false</default>
+                <label>AAA Solar</label>
+            </value>
+            <value>
+                <fullName>Accept Solar</fullName>
+                <default>false</default>
+                <label>Accept Solar</label>
+            </value>
+            <value>
+                <fullName>AG Electric</fullName>
+                <default>false</default>
+                <label>AG Electric</label>
+            </value>
+            <value>
+                <fullName>Allsolar Energy, Inc.</fullName>
+                <default>false</default>
+                <label>Allsolar Energy, Inc.</label>
+            </value>
+            <value>
+                <fullName>Apex</fullName>
+                <default>false</default>
+                <label>Apex</label>
+            </value>
+            <value>
+                <fullName>Apex Solar</fullName>
+                <default>false</default>
+                <label>Apex Solar</label>
+            </value>
+            <value>
+                <fullName>Apollo Electric</fullName>
+                <default>false</default>
+                <label>Apollo Electric</label>
+            </value>
+            <value>
+                <fullName>Appalachian Renewable Power</fullName>
+                <default>false</default>
+                <label>Appalachian Renewable Power</label>
+            </value>
+            <value>
+                <fullName>AVA Electrical and Lighting</fullName>
+                <default>false</default>
+                <label>AVA Electrical and Lighting</label>
+            </value>
+            <value>
+                <fullName>Axis Solar</fullName>
+                <default>false</default>
+                <label>Axis Solar LLC</label>
+            </value>
+            <value>
+                <fullName>Beacon</fullName>
+                <default>false</default>
+                <label>Beacon</label>
+            </value>
+            <value>
+                <fullName>BK Linn Construction</fullName>
+                <default>false</default>
+                <label>BK Linn Construction</label>
+            </value>
+            <value>
+                <fullName>BP Derricotte Maintenance</fullName>
+                <default>false</default>
+                <label>BP Derricotte Maintenance</label>
+            </value>
+            <value>
+                <fullName>Castaways Energy LLC</fullName>
+                <default>false</default>
+                <label>Castaways Energy LLC</label>
+            </value>
+            <value>
+                <fullName>Charge Up Electric</fullName>
+                <default>false</default>
+                <label>Charge Up Electric</label>
+            </value>
+            <value>
+                <fullName>Coldwell Electric</fullName>
+                <default>false</default>
+                <label>Coldwell Electric</label>
+            </value>
+            <value>
+                <fullName>CT - Apex</fullName>
+                <default>false</default>
+                <label>CT - Apex</label>
+            </value>
+            <value>
+                <fullName>Devlin - Remote</fullName>
+                <default>false</default>
+                <label>CTFC - Remote</label>
+            </value>
+            <value>
+                <fullName>CT Renewables</fullName>
+                <default>false</default>
+                <label>CT Renewables</label>
+            </value>
+            <value>
+                <fullName>CT - Skyline Solar</fullName>
+                <default>false</default>
+                <label>CT - Skyline Solar</label>
+            </value>
+            <value>
+                <fullName>DBT Solar</fullName>
+                <default>false</default>
+                <label>DBT Solar</label>
+            </value>
+            <value>
+                <fullName>Derricotte Maintenance</fullName>
+                <default>false</default>
+                <label>Derricotte Maintenance</label>
+            </value>
+            <value>
+                <fullName>Devlin</fullName>
+                <default>false</default>
+                <label>Devlin - SC/NC</label>
+            </value>
+            <value>
+                <fullName>DK Energy</fullName>
+                <default>false</default>
+                <label>DK Energy</label>
+            </value>
+            <value>
+                <fullName>East Coast Solar Services</fullName>
+                <default>false</default>
+                <label>East Coast Solar Services</label>
+            </value>
+            <value>
+                <fullName>Eco Smart</fullName>
+                <default>false</default>
+                <label>Eco Smart</label>
+            </value>
+            <value>
+                <fullName>Eco Solar Solutions</fullName>
+                <default>false</default>
+                <label>Eco Solar Solutions</label>
+            </value>
+            <value>
+                <fullName>Emerald</fullName>
+                <default>false</default>
+                <label>Emerald</label>
+            </value>
+            <value>
+                <fullName>Emerald Energy</fullName>
+                <default>false</default>
+                <label>Emerald Energy</label>
+            </value>
+            <value>
+                <fullName>Empower</fullName>
+                <default>false</default>
+                <label>Empower</label>
+            </value>
+            <value>
+                <fullName>ETS</fullName>
+                <default>false</default>
+                <label>ETS</label>
+            </value>
+            <value>
+                <fullName>Family Solar</fullName>
+                <default>false</default>
+                <label>Family Solar</label>
+            </value>
+            <value>
+                <fullName>FirstLight Greenville</fullName>
+                <default>false</default>
+                <label>FirstLight Greenville</label>
+            </value>
+            <value>
+                <fullName>FirstLight NJ</fullName>
+                <default>false</default>
+                <label>FirstLight NJ</label>
+            </value>
+            <value>
+                <fullName>Florida Solar Power</fullName>
+                <default>false</default>
+                <label>Florida Solar Power</label>
+            </value>
+            <value>
+                <fullName>FL Solar Power</fullName>
+                <default>false</default>
+                <label>FL Solar Power</label>
+            </value>
+            <value>
+                <fullName>Fusion Solar</fullName>
+                <default>false</default>
+                <label>Fusion Solar</label>
+            </value>
+            <value>
+                <fullName>Generation Solar</fullName>
+                <default>false</default>
+                <label>Generation Solar</label>
+            </value>
+            <value>
+                <fullName>Genrenew</fullName>
+                <default>false</default>
+                <label>Genrenew</label>
+            </value>
+            <value>
+                <fullName>Green Brilliance</fullName>
+                <default>false</default>
+                <label>Green Brilliance</label>
+            </value>
+            <value>
+                <fullName>Green Light Solar</fullName>
+                <default>false</default>
+                <label>Green Light Solar</label>
+            </value>
+            <value>
+                <fullName>Green Rack</fullName>
+                <default>false</default>
+                <label>Green Rack</label>
+            </value>
+            <value>
+                <fullName>Green Rack Contracting</fullName>
+                <default>false</default>
+                <label>Green Rack Contracting</label>
+            </value>
+            <value>
+                <fullName>Green Solar Systems</fullName>
+                <default>false</default>
+                <label>Green Solar Systems</label>
+            </value>
+            <value>
+                <fullName>Guardian</fullName>
+                <default>false</default>
+                <label>Guardian</label>
+            </value>
+            <value>
+                <fullName>HDC Electric</fullName>
+                <default>false</default>
+                <label>HDC Electric</label>
+            </value>
+            <value>
+                <fullName>Hytek Energy</fullName>
+                <default>false</default>
+                <label>Hytek Energy</label>
+            </value>
+            <value>
+                <fullName>IconPower</fullName>
+                <default>false</default>
+                <label>IconPower</label>
+            </value>
+            <value>
+                <fullName>ICON Power</fullName>
+                <default>false</default>
+                <label>ICON Power</label>
+            </value>
+            <value>
+                <fullName>Illinois Crew</fullName>
+                <default>false</default>
+                <label>Illinois Crew</label>
+            </value>
+            <value>
+                <fullName>Infinity Energy</fullName>
+                <default>false</default>
+                <label>Infinity Energy</label>
+            </value>
+            <value>
+                <fullName>Innovative Solar Energy, LLC</fullName>
+                <default>false</default>
+                <label>Innovative Solar Energy, LLC</label>
+            </value>
+            <value>
+                <fullName>Julius Electric</fullName>
+                <default>false</default>
+                <label>Julius Electric</label>
+            </value>
+            <value>
+                <fullName>Kingdom Solar</fullName>
+                <default>false</default>
+                <label>Kingdom Solar</label>
+            </value>
+            <value>
+                <fullName>KW Solar</fullName>
+                <default>false</default>
+                <label>KW Solar</label>
+            </value>
+            <value>
+                <fullName>LG Solar</fullName>
+                <default>false</default>
+                <label>LG Solar</label>
+            </value>
+            <value>
+                <fullName>MA Traveling Crew</fullName>
+                <default>false</default>
+                <label>MA Traveling Crew</label>
+            </value>
+            <value>
+                <fullName>Michigan Solar Solutions</fullName>
+                <default>false</default>
+                <label>Michigan Solar Solutions</label>
+            </value>
+            <value>
+                <fullName>National Solar Service</fullName>
+                <default>false</default>
+                <label>National Solar Service</label>
+            </value>
+            <value>
+                <fullName>National Solar Services</fullName>
+                <default>false</default>
+                <label>National Solar Services</label>
+            </value>
+            <value>
+                <fullName>Nevada In-House</fullName>
+                <default>false</default>
+                <label>Nevada In-House</label>
+            </value>
+            <value>
+                <fullName>NewCo</fullName>
+                <default>false</default>
+                <label>NewCo</label>
+            </value>
+            <value>
+                <fullName>New Road Energy</fullName>
+                <default>false</default>
+                <label>New Road Energy</label>
+            </value>
+            <value>
+                <fullName>NJ - Skyline Solar</fullName>
+                <default>false</default>
+                <label>NJ - Skyline Solar</label>
+            </value>
+            <value>
+                <fullName>NV Joint Install</fullName>
+                <default>false</default>
+                <label>NV Joint Install</label>
+            </value>
+            <value>
+                <fullName>NV Rebels</fullName>
+                <default>false</default>
+                <label>NV Rebels</label>
+            </value>
+            <value>
+                <fullName>NV Traveling Crew</fullName>
+                <default>false</default>
+                <label>NV Traveling Crew</label>
+            </value>
+            <value>
+                <fullName>OH Solar LLC</fullName>
+                <default>false</default>
+                <label>OH Solar LLC</label>
+            </value>
+            <value>
+                <fullName>Palmetto Team 1</fullName>
+                <default>false</default>
+                <label>Palmetto Team 1</label>
+            </value>
+            <value>
+                <fullName>Palmetto Team 2</fullName>
+                <default>false</default>
+                <label>Palmetto Team 2</label>
+            </value>
+            <value>
+                <fullName>Palmetto Team 3</fullName>
+                <default>false</default>
+                <label>Palmetto Team 3</label>
+            </value>
+            <value>
+                <fullName>Perfection Solar</fullName>
+                <default>false</default>
+                <label>Perfection Solar</label>
+            </value>
+            <value>
+                <fullName>Plug PV</fullName>
+                <default>false</default>
+                <label>Plug PV</label>
+            </value>
+            <value>
+                <fullName>Plug PV - MA</fullName>
+                <default>false</default>
+                <label>Plug PV - MA</label>
+            </value>
+            <value>
+                <fullName>Plug PV - NY</fullName>
+                <default>false</default>
+                <label>Plug PV - NY</label>
+            </value>
+            <value>
+                <fullName>PozitivEnergy</fullName>
+                <default>false</default>
+                <label>PozitivEnergy</label>
+            </value>
+            <value>
+                <fullName>Public Service Solar</fullName>
+                <default>false</default>
+                <label>Public Service Solar</label>
+            </value>
+            <value>
+                <fullName>Re-Think</fullName>
+                <default>false</default>
+                <label>Re-Think</label>
+            </value>
+            <value>
+                <fullName>Revolution Energy Systems</fullName>
+                <default>false</default>
+                <label>Revolution Energy Systems</label>
+            </value>
+            <value>
+                <fullName>Rooftop Power</fullName>
+                <default>false</default>
+                <label>Rooftop Power</label>
+            </value>
+            <value>
+                <fullName>Rooftop Solar</fullName>
+                <default>false</default>
+                <label>Rooftop Solar</label>
+            </value>
+            <value>
+                <fullName>Sampro</fullName>
+                <default>false</default>
+                <label>Sampro</label>
+            </value>
+            <value>
+                <fullName>SAVKAT Inc.</fullName>
+                <default>false</default>
+                <label>SAVKAT Inc.</label>
+            </value>
+            <value>
+                <fullName>SC Traveling Crew</fullName>
+                <default>false</default>
+                <label>SC Traveling Crew</label>
+            </value>
+            <value>
+                <fullName>Skyline - Marlborough</fullName>
+                <default>false</default>
+                <label>Skyline - Marlborough</label>
+            </value>
+            <value>
+                <fullName>Skyline - Raynham</fullName>
+                <default>false</default>
+                <label>Skyline - Raynham</label>
+            </value>
+            <value>
+                <fullName>Skyline Solar LLC</fullName>
+                <default>false</default>
+                <label>Skyline Solar LLC</label>
+            </value>
+            <value>
+                <fullName>Solar Elite</fullName>
+                <default>false</default>
+                <label>Solar Elite</label>
+            </value>
+            <value>
+                <fullName>SolarFlair Energy</fullName>
+                <default>false</default>
+                <label>SolarFlair Energy</label>
+            </value>
+            <value>
+                <fullName>Solar Mite Solutions</fullName>
+                <default>false</default>
+                <label>Solar Mite Solutions</label>
+            </value>
+            <value>
+                <fullName>Solar Pest Solutions, LLC</fullName>
+                <default>false</default>
+                <label>Solar Pest Solutions, LLC</label>
+            </value>
+            <value>
+                <fullName>Solar Ready Solutions</fullName>
+                <default>false</default>
+                <label>Solar Ready Solutions</label>
+            </value>
+            <value>
+                <fullName>Sonovus energy</fullName>
+                <default>false</default>
+                <label>Sonovus energy</label>
+            </value>
+            <value>
+                <fullName>Source the Sun</fullName>
+                <default>false</default>
+                <label>Source the Sun</label>
+            </value>
+            <value>
+                <fullName>SunCatchers of Atlanta</fullName>
+                <default>false</default>
+                <label>SunCatchers of Atlanta</label>
+            </value>
+            <value>
+                <fullName>Sun Farm Energy</fullName>
+                <default>false</default>
+                <label>Sun Farm Energy</label>
+            </value>
+            <value>
+                <fullName>Sunwire LLC</fullName>
+                <default>false</default>
+                <label>Sunwire LLC</label>
+            </value>
+            <value>
+                <fullName>SunWise</fullName>
+                <default>false</default>
+                <label>SunWise</label>
+            </value>
+            <value>
+                <fullName>Sustainable</fullName>
+                <default>false</default>
+                <label>Sustainable</label>
+            </value>
+            <value>
+                <fullName>Synaptic Solar</fullName>
+                <default>false</default>
+                <label>Synaptic Solar</label>
+            </value>
+            <value>
+                <fullName>Tayco Electric</fullName>
+                <default>false</default>
+                <label>Tayco Electric</label>
+            </value>
+            <value>
+                <fullName>Team Mitch</fullName>
+                <default>false</default>
+                <label>Team Mitch</label>
+            </value>
+            <value>
+                <fullName>Tempo Electric</fullName>
+                <default>false</default>
+                <label>Tempo Electric</label>
+            </value>
+            <value>
+                <fullName>Texas Solar LLC</fullName>
+                <default>false</default>
+                <label>Texas Solar LLC</label>
+            </value>
+            <value>
+                <fullName>Thompson and Son</fullName>
+                <default>false</default>
+                <label>Thompson and Son</label>
+            </value>
+            <value>
+                <fullName>Titan Renewables</fullName>
+                <default>false</default>
+                <label>Titan Renewables</label>
+            </value>
+            <value>
+                <fullName>Very Good Electrical LLC</fullName>
+                <default>false</default>
+                <label>Very Good Electrical LLC</label>
+            </value>
+            <value>
+                <fullName>Vinyasun</fullName>
+                <default>false</default>
+                <label>Vinyasun</label>
+            </value>
+            <value>
+                <fullName>Vision NJ</fullName>
+                <default>false</default>
+                <label>Vision NJ</label>
+            </value>
+            <value>
+                <fullName>Von Loor and Sloof</fullName>
+                <default>false</default>
+                <label>Von Loor and Sloof</label>
+            </value>
+            <value>
+                <fullName>Wired Up Electric</fullName>
+                <default>false</default>
+                <label>Wired Up Electric</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Washington</controllingFieldValue>
+            <controllingFieldValue>West Virginia</controllingFieldValue>
+            <controllingFieldValue>Wisconsin</controllingFieldValue>
+            <controllingFieldValue>Wyoming</controllingFieldValue>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <controllingFieldValue>Rhode Island</controllingFieldValue>
+            <controllingFieldValue>Nebraska</controllingFieldValue>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <controllingFieldValue>Indiana</controllingFieldValue>
+            <controllingFieldValue>Hawaii</controllingFieldValue>
+            <controllingFieldValue>Idaho</controllingFieldValue>
+            <controllingFieldValue>Iowa</controllingFieldValue>
+            <controllingFieldValue>Kansas</controllingFieldValue>
+            <controllingFieldValue>Kentucky</controllingFieldValue>
+            <controllingFieldValue>Louisiana</controllingFieldValue>
+            <controllingFieldValue>Maine</controllingFieldValue>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <controllingFieldValue>Alabama</controllingFieldValue>
+            <controllingFieldValue>Alaska</controllingFieldValue>
+            <controllingFieldValue>Arizona</controllingFieldValue>
+            <controllingFieldValue>Arkansas</controllingFieldValue>
+            <controllingFieldValue>California</controllingFieldValue>
+            <controllingFieldValue>Colorado</controllingFieldValue>
+            <controllingFieldValue>Connecticut</controllingFieldValue>
+            <controllingFieldValue>Delaware</controllingFieldValue>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <controllingFieldValue>Minnesota</controllingFieldValue>
+            <controllingFieldValue>Mississippi</controllingFieldValue>
+            <controllingFieldValue>Missouri</controllingFieldValue>
+            <controllingFieldValue>Montana</controllingFieldValue>
+            <controllingFieldValue>Nevada</controllingFieldValue>
+            <controllingFieldValue>New Hampshire</controllingFieldValue>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <controllingFieldValue>New Mexico</controllingFieldValue>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>North Dakota</controllingFieldValue>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <controllingFieldValue>Oklahoma</controllingFieldValue>
+            <controllingFieldValue>Oregon</controllingFieldValue>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <controllingFieldValue>South Dakota</controllingFieldValue>
+            <controllingFieldValue>Tennessee</controllingFieldValue>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <controllingFieldValue>Utah</controllingFieldValue>
+            <controllingFieldValue>Vermont</controllingFieldValue>
+            <controllingFieldValue>Virginia</controllingFieldValue>
+            <valueName>East Coast Solar Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Washington</controllingFieldValue>
+            <controllingFieldValue>Rhode Island</controllingFieldValue>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>Skyline Solar LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>AAA Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <controllingFieldValue>Rhode Island</controllingFieldValue>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>Devlin - Remote</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>DK Energy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <controllingFieldValue>California</controllingFieldValue>
+            <controllingFieldValue>Nevada</controllingFieldValue>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Generation Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <valueName>Illinois Crew</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>National Solar Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <controllingFieldValue>Rhode Island</controllingFieldValue>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <controllingFieldValue>Connecticut</controllingFieldValue>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <valueName>Plug PV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <valueName>Re-Think</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <valueName>Revolution Energy Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <controllingFieldValue>Connecticut</controllingFieldValue>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Solar Elite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <controllingFieldValue>Rhode Island</controllingFieldValue>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <controllingFieldValue>California</controllingFieldValue>
+            <controllingFieldValue>Connecticut</controllingFieldValue>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Solar Pest Solutions, LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <valueName>Solar Ready Solutions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rhode Island</controllingFieldValue>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>Accept Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rhode Island</controllingFieldValue>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>AG Electric</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rhode Island</controllingFieldValue>
+            <controllingFieldValue>Connecticut</controllingFieldValue>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>Apex</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rhode Island</controllingFieldValue>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>Beacon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rhode Island</controllingFieldValue>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <controllingFieldValue>New Hampshire</controllingFieldValue>
+            <valueName>Coldwell Electric</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rhode Island</controllingFieldValue>
+            <controllingFieldValue>Connecticut</controllingFieldValue>
+            <valueName>CT Renewables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rhode Island</controllingFieldValue>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>FirstLight NJ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rhode Island</controllingFieldValue>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>HDC Electric</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rhode Island</controllingFieldValue>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>MA Traveling Crew</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rhode Island</controllingFieldValue>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>Rooftop Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Apollo Electric</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <valueName>SunCatchers of Atlanta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NY Metro</controllingFieldValue>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>NewCo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <valueName>DBT Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <valueName>Eco Solar Solutions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <controllingFieldValue>Virginia</controllingFieldValue>
+            <valueName>Green Brilliance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <valueName>KW Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Palmetto Team 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>PozitivEnergy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arizona</controllingFieldValue>
+            <controllingFieldValue>Nevada</controllingFieldValue>
+            <valueName>ICON Power</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arizona</controllingFieldValue>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Source the Sun</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>BK Linn Construction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Family Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Infinity Energy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Kingdom Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>LG Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Titan Renewables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecticut</controllingFieldValue>
+            <valueName>CT - Apex</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecticut</controllingFieldValue>
+            <valueName>CT - Skyline Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecticut</controllingFieldValue>
+            <valueName>Eco Smart</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecticut</controllingFieldValue>
+            <valueName>SAVKAT Inc.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delaware</controllingFieldValue>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Palmetto Team 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>15 Lightyears, Inc</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Allsolar Energy, Inc.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Castaways Energy LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Empower</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>ETS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>FL Solar Power</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Guardian</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Innovative Solar Energy, LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>NV Traveling Crew</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Sampro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Sun Farm Energy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Sunwire LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>SunWise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Vinyasun</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Wired Up Electric</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>Plug PV - MA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>SolarFlair Energy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <valueName>Michigan Solar Solutions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nevada</controllingFieldValue>
+            <valueName>Derricotte Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nevada</controllingFieldValue>
+            <valueName>Nevada In-House</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nevada</controllingFieldValue>
+            <valueName>NV Joint Install</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nevada</controllingFieldValue>
+            <valueName>NV Rebels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nevada</controllingFieldValue>
+            <valueName>Tempo Electric</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>AVA Electrical and Lighting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>Charge Up Electric</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>Fusion Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>Genrenew</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Hytek Energy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>New Road Energy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>NJ - Skyline Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>Public Service Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Solar Mite Solutions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>Vision NJ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <valueName>Plug PV - NY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>3a Roofing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Apex Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Devlin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Emerald</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Emerald Energy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>FirstLight Greenville</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Palmetto Team 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Perfection Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>SC Traveling Crew</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Sustainable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Tayco Electric</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Thompson and Son</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Very Good Electrical LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Von Loor and Sloof</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Appalachian Renewable Power</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Green Rack Contracting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>OH Solar LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Green Solar Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>National Solar Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Team Mitch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Axis Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Green Light Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Julius Electric</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Sonovus energy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Synaptic Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Texas Solar LLC</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

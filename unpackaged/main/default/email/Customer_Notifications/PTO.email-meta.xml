@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>PTO</name>
+    <style>freeForm</style>
+    <subject>Palmetto - PTO</subject>
+    <textOnly>Congratulations! Your solar energy system has officially been approved to be energized! Please click Energize System to log-in and watch a quick video on how to turn on your system through your Palmetto Home app.
+
+
+
+After your system is turned on, you will notice that your Palmetto Home app has changed to your Production Tracker dashboard. This new view allows you to see how well your solar system is producing energy on a daily, weekly, or monthly basis.
+
+
+
+Please click Production Tracker to log-in and watch a short video on how to navigate through your updated dashboard in your Palmetto Home app.
+
+
+
+Tips:
+
+If you added a smart thermostat, hot water heater, or any additional products; Please contact your Sales Consultant to have these products installed.
+
+
+
+
+Palmetto DOES NOT procure or install any additional items or related products listed above.
+
+
+
+
+Please be on the lookout for your next email detailing everything you need to know about your new system!
+
+
+
+
+We genuinely want to ensure that you are informed and feel confident about your decision to go solar with Palmetto. We are here to answer any questions or concerns you may have. Please reach out to us through your Palmetto Home app chat feature or give us a call.
+
+
+
+Once again, CONGRATULATIONS on going solar!
+
+
+
+Thank you,
+
+Palmetto Customer Care
+
+855-339-1831
+
+customercare@palmetto.com
+
+
+
+
+
+Palmetto Solar LLC | 1505 King Street Ext #114|Charleston, SC 29408 |8431844 |www.palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

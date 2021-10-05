@@ -1,0 +1,3 @@
+Hi {!Opportunity.Contact__c},
+
+ADD CONTENT HERE Enclosed is your referral code: {!Opportunity.00N1a000006eson}

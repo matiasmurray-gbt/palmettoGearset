@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Biz_Dev_Oppty_Type__c</fullName>
+    <description>Select a Type to categorize business development opportunities. (SetUp&gt; Build&gt;Customize&gt;Field)</description>
+    <externalId>false</externalId>
+    <label>Biz Dev Oppty Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acquisition - Other (TBD)</fullName>
+                <default>false</default>
+                <label>Acquisition - Other (TBD)</label>
+            </value>
+            <value>
+                <fullName>Acquisition - Solar Corporate</fullName>
+                <default>false</default>
+                <label>Acquisition - Solar Corporate</label>
+            </value>
+            <value>
+                <fullName>Acquisition - Solar Projects</fullName>
+                <default>false</default>
+                <label>Acquisition - Solar Projects</label>
+            </value>
+            <value>
+                <fullName>Capital Allocation - Project Finance - Commercial Strategic</fullName>
+                <default>false</default>
+                <label>Capital Allocation - Project Finance - Commercial Strategic</label>
+            </value>
+            <value>
+                <fullName>Capital Allocation - Project Finance - Other</fullName>
+                <default>false</default>
+                <label>Capital Allocation - Project Finance - Other</label>
+            </value>
+            <value>
+                <fullName>Capital Allocation - Project Finance - Project Friday</fullName>
+                <default>false</default>
+                <label>Capital Allocation - Project Finance - Project Friday</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - A1</fullName>
+                <default>false</default>
+                <label>Capital Raise - A1</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - A2</fullName>
+                <default>false</default>
+                <label>Capital Raise - A2</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - Accelerate</fullName>
+                <default>false</default>
+                <label>Capital Raise - Accelerate</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - Corporate Finance - Debt</fullName>
+                <default>false</default>
+                <label>Capital Raise - Corporate Finance - Debt</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - Corporate Finance - Facility</fullName>
+                <default>false</default>
+                <label>Capital Raise - Corporate Finance - Facility</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - Corporate Finance - Series A</fullName>
+                <default>false</default>
+                <label>Capital Raise - Corporate Finance - Series A</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - Corporate Finance - Series B</fullName>
+                <default>false</default>
+                <label>Capital Raise - Corporate Finance - Series B</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - Corporate Finance - Series C</fullName>
+                <default>false</default>
+                <label>Capital Raise - Corporate Finance - Series C</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - Corporate Finance - Tech Co</fullName>
+                <default>false</default>
+                <label>Capital Raise - Corporate Finance - Tech Co</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - Other (TBD)</fullName>
+                <default>false</default>
+                <label>Capital Raise - Other (TBD)</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - Property Fund # 6 - Debt</fullName>
+                <default>false</default>
+                <label>Capital Raise - Property Fund # 6 - Debt</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - Property Fund # 7 - Debt</fullName>
+                <default>false</default>
+                <label>Capital Raise - Property Fund # 7 - Debt</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - Property Fund #7 - Equity</fullName>
+                <default>false</default>
+                <label>Capital Raise - Property Fund #7 - Equity</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - Property Fund # 8 - Institutional</fullName>
+                <default>false</default>
+                <label>Capital Raise - Property Fund # 8 - Institutional</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - Property Fund #N - Refinance</fullName>
+                <default>false</default>
+                <label>Capital Raise - Property Fund #N - Refinance</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - Tax Equity Fund - Debt</fullName>
+                <default>false</default>
+                <label>Capital Raise - Tax Equity Fund - Debt</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - Tax Equity Fund - Equity</fullName>
+                <default>false</default>
+                <label>Capital Raise - Tax Equity Fund - Equity</label>
+            </value>
+            <value>
+                <fullName>Capital Raise - Tax Equity Fund - Tax Equity</fullName>
+                <default>false</default>
+                <label>Capital Raise - Tax Equity Fund - Tax Equity</label>
+            </value>
+            <value>
+                <fullName>Major Account - MFR REIT</fullName>
+                <default>false</default>
+                <label>Major Account - MFR REIT</label>
+            </value>
+            <value>
+                <fullName>Major Account - Other</fullName>
+                <default>false</default>
+                <label>Major Account - Other</label>
+            </value>
+            <value>
+                <fullName>Major Account - SFR REIT</fullName>
+                <default>false</default>
+                <label>Major Account - SFR REIT</label>
+            </value>
+            <value>
+                <fullName>Strategic Partner - Sales &amp; Marketing Distribution</fullName>
+                <default>false</default>
+                <label>Strategic Partner - Sales &amp; Marketing Distribution</label>
+            </value>
+            <value>
+                <fullName>Strategic Partner - Tech Co Partner</fullName>
+                <default>false</default>
+                <label>Strategic Partner - Tech Co Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

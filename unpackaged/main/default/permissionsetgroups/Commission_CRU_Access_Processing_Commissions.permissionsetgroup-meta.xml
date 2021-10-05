@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>CRU access to Commission and Commission Plan objects. Process Commission tab visibility</description>
+    <label>Commission CRU Access &amp; Processing Commissions</label>
+    <permissionSets>Commission_CRU_View_All</permissionSets>
+    <permissionSets>Commission_Plan_CRU_View_All</permissionSets>
+    <permissionSets>Processing_Commissions</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

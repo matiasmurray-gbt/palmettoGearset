@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email template is to sell P. Home to Homebuilder Enterprises</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Palmetto Home - Homebuilder Enterprise</name>
+    <style>freeForm</style>
+    <subject>Hello {!Contact.FirstName} , Make Your New Homes Even Smarter!</subject>
+    <textOnly>Hello {!Contact.FirstName} ,
+
+My name is Bryan Hoffman and I work at Palmetto a clean technology company based in Charleston, SC.  We understand that energy savings are a top priority to your customers when they are purchasing a new home.
+
+That is why we&apos;ve created Palmetto Home, a technology product that allows your customers to track their home&apos;s energy consumption down to an individual room or appliance in the home.
+
+Palmetto Home allows you as a home builder to...
+- Show your customers the real time energy savings
+- Continuously show your customers the savings from their new home
+- Direct communication to your customers
+- Mange electrical consumption, rather than accepting it as a fixed cost
+- Establish baseline measurements for you homes
+- Social media connectivity,allowing your customers to share their positive experience
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I would love to setup a time to show you the Palmetto Home app in order to provide you with a visual image of what your customers would be interacting with on a daily basis.
+
+
+Thank You,
+
+{!User.Name}
+Palmetto Clean Energy Technology Team
+bryan.hoffman@palmetto.com
+Office: 843-720-1844
+www.Palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

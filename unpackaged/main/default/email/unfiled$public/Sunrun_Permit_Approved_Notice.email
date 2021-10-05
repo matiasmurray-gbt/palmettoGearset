@@ -1,0 +1,8 @@
+Palmetto Solar Inspection Completed Update - {!Opportunity.00N1a000007mmgv} - {!Opportunity.Account}
+{!Opportunity.Account} 
+
+{!Account.BillingAddress} 
+
+Permit Filed Date:  {!Opportunity.Permit_Filed_Date__c}
+
+Permit Ready Date:  {!Opportunity.Permit_Ready_Date__c}

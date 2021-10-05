@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Active_Status_for_New_Contact</fullName>
+        <field>Contact_Status__c</field>
+        <literalValue>Active</literalValue>
+        <name>Active Status for New Contact</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Ready_for_Welcome_Email</fullName>
+        <field>Palmetto_Cloud_Paying_Customer__c</field>
+        <formula>Today()</formula>
+        <name>Date Ready for Welcome Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Palmetto_Cloud_Paying_Customer</fullName>
+        <field>Palmetto_Cloud_Paying_Customer__c</field>
+        <formula>TODAY()</formula>
+        <name>Palmetto Cloud Paying Customer</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Marketing_Cloud_Sync</fullName>
+        <field>Marketing_Cloud_Sync__c</field>
+        <literalValue>1</literalValue>
+        <name>Update Marketing Cloud Sync</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Active Status for New Contact</fullName>
+        <actions>
+            <name>Active_Status_for_New_Contact</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contact.x18_Char_Contact_ID__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Marketing Cloud Sync - Contact</fullName>
+        <actions>
+            <name>Update_Marketing_Cloud_Sync</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>Opportunity__r.Marketing_Cloud_Sync__c = TRUE</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Marketing Cloud Sync for New Independent Alchemists</fullName>
+        <actions>
+            <name>Update_Marketing_Cloud_Sync</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Account.X18CharacterId__c</field>
+            <operation>equals</operation>
+            <value>0012L00000wrpC3QAI</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Business Development</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Ready for Palmetto Cloud Welcome email</fullName>
+        <actions>
+            <name>Date_Ready_for_Welcome_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Send_Palmetto_Cloud_Welcome_Email</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
+        <criteriaItems>
+            <field>Contact.SolarEdge_Site_ID__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.SolarEdge_API_Key__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Curb_User_Name_e_mail__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Curb_Password__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Curb_SN__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Utility_cost_per_unit__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Opportunity_Fields_are_Completed__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Sync Sales Rep Contacts to Marketing Cloud</fullName>
+        <actions>
+            <name>Update_Marketing_Cloud_Sync</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Business Development</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Send_Palmetto_Cloud_Welcome_Email</fullName>
+        <assignedTo>mckenna.beam@palmetto.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>This Contact has all of the required information to create a Palmetto Cloud account.  Please send the Welcome Email using the Palmetto Cloud Admin application.</description>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Send Palmetto Cloud Welcome Email</subject>
+    </tasks>
+</Workflow>

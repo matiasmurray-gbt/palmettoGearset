@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X1_11_Need_Change_ContractCheck</fullName>
+    <booleanFilter>(1 OR 4) AND 3 AND 2 AND 5</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>System_Size_Calculated_kW__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Sub_Market__c</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>Post_Sales_Pre_Installation_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer,Integrated Palmetto Property,Dividend Solar</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>equals</operation>
+        <value>South Carolina,Massachusetts,New Jersey</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>9. Change Order Pending</value>
+    </filters>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Dividend Solar</value>
+    </filters>
+    <filters>
+        <field>Change_Order_Redesign_Complete__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>1.110 Change Order Pending ContractCheck</label>
+    <sharedTo>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_MA</role>
+        <role>Project_Coordinator_SC</role>
+        <role>Project_Manager_FL</role>
+        <role>Project_Manager_SC</role>
+    </sharedTo>
+</ListView>

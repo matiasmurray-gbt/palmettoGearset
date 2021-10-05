@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Images used in the welcome email: PTO New
+https://na153.salesforce.com/00X2L000000hxyt?setupid=CommunicationTemplatesEmail</description>
+    <internalUseOnly>false</internalUseOnly>
+    <keywords>Welcome, PTO</keywords>
+    <name>Welcome Email PTO- Step 3b</name>
+    <public>true</public>
+</Document>

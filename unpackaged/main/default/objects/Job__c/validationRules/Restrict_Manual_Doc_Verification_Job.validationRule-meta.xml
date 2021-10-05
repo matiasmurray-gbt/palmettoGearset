@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Manual_Doc_Verification_Job</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISNEW() &amp;&amp; RecordType.DeveloperName == 'Document_Verification' &amp;&amp; Automation__c == false &amp;&amp; Opportunity__r.RecordType.DeveloperName = 'X3rd_Party_Design_Sales'</errorConditionFormula>
+    <errorMessage>This Job is created at time of sale; users cannot create this Job.</errorMessage>
+</ValidationRule>

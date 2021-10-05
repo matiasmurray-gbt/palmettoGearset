@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Residential - Customer</fullName>
+                <color>#0B6FCE</color>
+                <default>true</default>
+                <label>Residential - Customer</label>
+            </value>
+            <value>
+                <fullName>Alchemist</fullName>
+                <default>false</default>
+                <label>Alchemist</label>
+            </value>
+            <value>
+                <fullName>Build Partner</fullName>
+                <default>false</default>
+                <label>Build Partner</label>
+            </value>
+            <value>
+                <fullName>Member</fullName>
+                <default>false</default>
+                <label>Member</label>
+            </value>
+            <value>
+                <fullName>Employee</fullName>
+                <default>false</default>
+                <label>Employee</label>
+            </value>
+            <value>
+                <fullName>Designer</fullName>
+                <default>false</default>
+                <label>Designer</label>
+            </value>
+            <value>
+                <fullName>Engineer</fullName>
+                <default>false</default>
+                <label>Engineer</label>
+            </value>
+            <value>
+                <fullName>Surveyor</fullName>
+                <default>false</default>
+                <label>Surveyor</label>
+            </value>
+            <value>
+                <fullName>Channel Partner</fullName>
+                <default>false</default>
+                <label>Channel Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

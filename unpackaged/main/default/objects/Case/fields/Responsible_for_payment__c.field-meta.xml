@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Responsible_for_payment__c</fullName>
+    <externalId>false</externalId>
+    <label>Responsible for payment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Palmetto</fullName>
+                <default>false</default>
+                <label>Palmetto</label>
+            </value>
+            <value>
+                <fullName>CP Charged</fullName>
+                <default>false</default>
+                <label>CP Charged</label>
+            </value>
+            <value>
+                <fullName>Rep Charged</fullName>
+                <default>false</default>
+                <label>Rep Charged</label>
+            </value>
+            <value>
+                <fullName>Financier</fullName>
+                <default>false</default>
+                <label>Financier</label>
+            </value>
+            <value>
+                <fullName>BP Charged</fullName>
+                <default>false</default>
+                <label>BP Charged</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

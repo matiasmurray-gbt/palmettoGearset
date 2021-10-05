@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Draft_report</fullName>
+    <columns>NAME</columns>
+    <columns>State__c</columns>
+    <columns>Stage__c</columns>
+    <columns>Vendor_Type__c</columns>
+    <columns>Service_Territory__c</columns>
+    <columns>Business_Info_Checklist__c</columns>
+    <columns>Follow_Up_Notes1__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage__c</field>
+        <operation>notContain</operation>
+        <value>Active,Approved,Ready to Schedule,Approved not Active,Unqualified,No</value>
+    </filters>
+    <label>Draft funnel report</label>
+</ListView>

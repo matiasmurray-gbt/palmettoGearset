@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Sunrun Inspection Complete</name>
+    <style>none</style>
+    <subject>Palmetto Solar Inspection Completed Update - {!Opportunity.00N1a000007mmgv} - {!Opportunity.Account}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

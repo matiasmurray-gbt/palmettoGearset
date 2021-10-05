@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent to customer once we receive their signed contract</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Signed Contract Received</name>
+    <style>none</style>
+    <subject>Thanks for signing your contract</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+This email is to let you know we&apos;ve received your signed contract.
+
+The next steps are:
+1) Please send either a photo or digital version of your last electric bill
+2) Please send a photo of a voided check
+3) Lastly, we will need to conduct a confirmation call with our financiers. Let me know what time works best for you. The call only takes a few minutes.
+
+Thanks and let me know if you need anything.
+
+David
+504.708.1518 (o)
+314.323.7745 (m)</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

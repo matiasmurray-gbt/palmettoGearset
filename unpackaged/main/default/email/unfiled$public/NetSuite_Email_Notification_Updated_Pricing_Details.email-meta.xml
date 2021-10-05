@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Launched by Email Alert connected to Process Builder: Pricing Detail email notifications</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>NetSuite Email Notification - Updated Pricing Details</name>
+    <style>none</style>
+    <subject>[Salesforce Alert] Pricing Detail Change Notification</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Automatic alert to inform property team of upcoming DD expiration date</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SFR DD Alert</name>
+    <style>none</style>
+    <subject>SFR DD Expiration Date Alert: {!Opportunity.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

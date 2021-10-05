@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alchemy Admin Webpage</fullName>
+                <default>false</default>
+                <label>Alchemy Admin Webpage</label>
+            </value>
+            <value>
+                <fullName>Alchemy User Webpage</fullName>
+                <default>false</default>
+                <label>Alchemy User Webpage</label>
+            </value>
+            <value>
+                <fullName>Curb Profile For Customer</fullName>
+                <default>false</default>
+                <label>Curb Profile For Customer</label>
+            </value>
+            <value>
+                <fullName>Energy Dashboard Admin Page</fullName>
+                <default>false</default>
+                <label>Energy Dashboard Admin Page</label>
+            </value>
+            <value>
+                <fullName>Financier Stips</fullName>
+                <default>false</default>
+                <label>Financier Stips</label>
+            </value>
+            <value>
+                <fullName>Inverter</fullName>
+                <default>false</default>
+                <label>Inverter</label>
+            </value>
+            <value>
+                <fullName>Palmetto Energy Dashboard Mobile App</fullName>
+                <default>false</default>
+                <label>Palmetto Energy Dashboard Mobile App</label>
+            </value>
+            <value>
+                <fullName>Palmetto Energy Dashboard Webpage</fullName>
+                <default>false</default>
+                <label>Palmetto Energy Dashboard Webpage</label>
+            </value>
+            <value>
+                <fullName>Sales Operations</fullName>
+                <default>false</default>
+                <label>Sales Operations</label>
+            </value>
+            <value>
+                <fullName>Solar Edge</fullName>
+                <default>false</default>
+                <label>Solar Edge</label>
+            </value>
+            <value>
+                <fullName>Solar Modules</fullName>
+                <default>false</default>
+                <label>Solar Modules</label>
+            </value>
+            <value>
+                <fullName>Financial</fullName>
+                <default>false</default>
+                <label>Financial</label>
+            </value>
+            <value>
+                <fullName>Palmetto Protect</fullName>
+                <default>false</default>
+                <label>Palmetto Protect</label>
+            </value>
+            <value>
+                <fullName>PV</fullName>
+                <default>false</default>
+                <label>PV</label>
+            </value>
+            <value>
+                <fullName>PV + Storage</fullName>
+                <default>false</default>
+                <label>PV + Storage</label>
+            </value>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>Smart Home</fullName>
+                <default>false</default>
+                <label>Smart Home</label>
+            </value>
+            <value>
+                <fullName>Storage</fullName>
+                <default>false</default>
+                <label>Storage</label>
+            </value>
+            <value>
+                <fullName>Warranty</fullName>
+                <default>false</default>
+                <label>Warranty</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

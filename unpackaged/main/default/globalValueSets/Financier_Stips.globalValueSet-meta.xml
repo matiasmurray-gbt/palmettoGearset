@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Not needed</fullName>
+        <default>false</default>
+        <label>Not needed</label>
+    </customValue>
+    <customValue>
+        <fullName>New Soft Stip</fullName>
+        <default>false</default>
+        <label>New Soft Stip</label>
+    </customValue>
+    <customValue>
+        <fullName>New Hard Stip</fullName>
+        <default>false</default>
+        <label>New Hard Stip</label>
+    </customValue>
+    <customValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+    </customValue>
+    <customValue>
+        <fullName>Resolved</fullName>
+        <default>false</default>
+        <label>Resolved</label>
+    </customValue>
+    <masterLabel>Financier Stips</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_On_Hold__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Project Denied by HOA, Denied by Engineer, Customer Illness, Etc</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Only Business Development and Customer Care profiles can edit this</inlineHelpText>
+    <label>Project On Hold</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

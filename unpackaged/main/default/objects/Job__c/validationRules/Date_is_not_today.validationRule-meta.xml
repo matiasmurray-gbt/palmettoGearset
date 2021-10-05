@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_is_not_today</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName == 'Document_Verification',
+    OR(
+       AND(NOT(Utility_Bill_Upload_within_2_months__c == TODAY()),ISCHANGED(Utility_Bill_Upload_within_2_months__c)), 
+       AND(NOT( ICA_Docs__c == TODAY() ),ISCHANGED(ICA_Docs__c)),
+        AND(NOT(HOA_Disclosure__c == TODAY()),ISCHANGED(HOA_Disclosure__c))
+    )
+)</errorConditionFormula>
+    <errorMessage>You cannot select a Utility Bill Uploaded, ICA Docs &amp; HOA Disclosure dates other than today</errorMessage>
+</ValidationRule>

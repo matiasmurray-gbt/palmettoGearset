@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_Comm_Oppys</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>System_Size_kW__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.PROBABILITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>contains</operation>
+        <value>Commercial,Commercial - Customer</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>contains</operation>
+        <value>MA,Massachusetts</value>
+    </filters>
+    <label>Open Commercial Oppys</label>
+</ListView>

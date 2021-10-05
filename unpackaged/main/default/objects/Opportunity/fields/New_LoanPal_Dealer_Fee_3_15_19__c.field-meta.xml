@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_LoanPal_Dealer_Fee_3_15_19__c</fullName>
+    <externalId>false</externalId>
+    <formula>Case( Financing_Tool__c, "Loan Pal", 
+
+IF(  OR(Contract_Received_Confirmed_Date__c  &gt; Date(2019,3,14),ISBLANK(Contract_Received_Confirmed_Date__c)=TRUE ),
+
+IF( ISBLANK(Text(Loan_Term__c)) = True, 0.25,
+
+IF( TEXT(APR__c) = "2.99%", 0.25,
+
+IF(   VALUE(TEXT(Loan_Term__c)) = 10, 
+     0.165, 
+
+     IF(   VALUE(TEXT(Loan_Term__c)) = 15, 
+          0.155,
+
+
+        IF(   VALUE(TEXT(Loan_Term__c)) = 20,
+           
+          IF( TEXT(APR__c) = "5.99%", 0.1275,0.205), 
+         0.25)
+       )  
+   )
+  )
+  ), 
+
+0),
+
+0)
+
+-
+
+IF( AND(Contract_Received_Confirmed_Date__c &gt; DATE(2020,6,20),Contract_Received_Confirmed_Date__c &lt; DATE(2020,7,23)),
+Case( X3rd_Party_Partner__c , "LGCY Power", 0.01455,"The Solar Movement", 0.01455, 0),0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>New LoanPal Dealer Fee</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

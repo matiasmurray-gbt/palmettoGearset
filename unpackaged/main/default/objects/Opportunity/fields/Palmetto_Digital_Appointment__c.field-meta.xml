@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Palmetto_Digital_Appointment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This is checked if a digital lead's appointment is set</description>
+    <externalId>false</externalId>
+    <label>Palmetto Digital Appointment</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

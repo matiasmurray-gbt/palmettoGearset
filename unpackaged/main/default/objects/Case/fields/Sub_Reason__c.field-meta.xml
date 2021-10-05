@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Reason__c</fullName>
+    <description>Used as a sub reason for reimbursements</description>
+    <externalId>false</externalId>
+    <label>Sub-Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reason__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Build Partner</fullName>
+                <default>false</default>
+                <label>Build Partner</label>
+            </value>
+            <value>
+                <fullName>Delayed Payment</fullName>
+                <default>false</default>
+                <label>Delayed Payment</label>
+            </value>
+            <value>
+                <fullName>Different then proposed</fullName>
+                <default>false</default>
+                <label>Different then proposed</label>
+            </value>
+            <value>
+                <fullName>Eagle Eye</fullName>
+                <default>false</default>
+                <label>Eagle Eye</label>
+            </value>
+            <value>
+                <fullName>Exactus</fullName>
+                <default>false</default>
+                <label>Exactus</label>
+            </value>
+            <value>
+                <fullName>give 1 K get 1 K</fullName>
+                <default>false</default>
+                <label>give 1 K get 1 K</label>
+            </value>
+            <value>
+                <fullName>Inspector</fullName>
+                <default>false</default>
+                <label>Inspector</label>
+            </value>
+            <value>
+                <fullName>No Tax liability</fullName>
+                <default>false</default>
+                <label>No Tax liability</label>
+            </value>
+            <value>
+                <fullName>Not the expected return</fullName>
+                <default>false</default>
+                <label>Not the expected return</label>
+            </value>
+            <value>
+                <fullName>Palmetto</fullName>
+                <default>false</default>
+                <label>Palmetto</label>
+            </value>
+            <value>
+                <fullName>Production Loss Reimbursement</fullName>
+                <default>false</default>
+                <label>Production Loss Reimbursement</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Manufacture caused</controllingFieldValue>
+            <controllingFieldValue>Installation caused</controllingFieldValue>
+            <valueName>Production Loss Reimbursement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Witness Test No call/no show</controllingFieldValue>
+            <controllingFieldValue>No call/No Show</controllingFieldValue>
+            <valueName>Build Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Witness Test No call/no show</controllingFieldValue>
+            <controllingFieldValue>No call/No Show</controllingFieldValue>
+            <controllingFieldValue>Late without notice</controllingFieldValue>
+            <valueName>Inspector</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Witness Test No call/no show</controllingFieldValue>
+            <controllingFieldValue>No call/No Show</controllingFieldValue>
+            <controllingFieldValue>Late without notice</controllingFieldValue>
+            <valueName>Palmetto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral</controllingFieldValue>
+            <valueName>give 1 K get 1 K</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Federal/State ITC</controllingFieldValue>
+            <valueName>No Tax liability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Federal/State ITC</controllingFieldValue>
+            <valueName>Not the expected return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>fill in state incentives</controllingFieldValue>
+            <valueName>Delayed Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>fill in state incentives</controllingFieldValue>
+            <valueName>Different then proposed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No call/No Show</controllingFieldValue>
+            <valueName>Eagle Eye</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No call/No Show</controllingFieldValue>
+            <valueName>Exactus</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

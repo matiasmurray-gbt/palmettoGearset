@@ -1,0 +1,2838 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flow_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Flow Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending Customer Self Activation</fullName>
+                <default>false</default>
+                <label>Pending Customer Self Activation</label>
+            </value>
+            <value>
+                <fullName>Change Order Pending</fullName>
+                <default>false</default>
+                <label>Change Order Pending</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Submission Not Required (Non Carolina Markets)</fullName>
+                <default>false</default>
+                <label>Submission Not Required (Non Carolina Markets)</label>
+            </value>
+            <value>
+                <fullName>Not Started</fullName>
+                <default>false</default>
+                <label>Not Started</label>
+            </value>
+            <value>
+                <fullName>Preparing</fullName>
+                <default>false</default>
+                <label>Preparing</label>
+            </value>
+            <value>
+                <fullName>Sent for Signature</fullName>
+                <default>false</default>
+                <label>Sent for Signature</label>
+            </value>
+            <value>
+                <fullName>Submitted/Sent to HO</fullName>
+                <default>false</default>
+                <label>Submitted/Sent to HO</label>
+            </value>
+            <value>
+                <fullName>Change Order Complete</fullName>
+                <default>false</default>
+                <label>Change Order Complete</label>
+            </value>
+            <value>
+                <fullName>Design Outsourced</fullName>
+                <default>false</default>
+                <label>Design Outsourced</label>
+            </value>
+            <value>
+                <fullName>Professional Engineering Stamp</fullName>
+                <default>false</default>
+                <label>Professional Engineering Stamp</label>
+            </value>
+            <value>
+                <fullName>Final Review</fullName>
+                <default>false</default>
+                <label>Final Review</label>
+            </value>
+            <value>
+                <fullName>Site Approved</fullName>
+                <default>false</default>
+                <label>Site Approved</label>
+            </value>
+            <value>
+                <fullName>Installation Complete- Pending Scheduling</fullName>
+                <default>false</default>
+                <label>Installation Complete- Pending Scheduling</label>
+            </value>
+            <value>
+                <fullName>Inspection Pending Customer</fullName>
+                <default>false</default>
+                <label>Inspection Pending Customer</label>
+            </value>
+            <value>
+                <fullName>Scheduling Pending As-Builts/Redesign</fullName>
+                <default>false</default>
+                <label>Scheduling Pending As-Builts/Redesign</label>
+            </value>
+            <value>
+                <fullName>Inspection Pending Inspector</fullName>
+                <default>false</default>
+                <label>Inspection Pending Inspector</label>
+            </value>
+            <value>
+                <fullName>Inspection Pending Affidavit</fullName>
+                <default>false</default>
+                <label>Inspection Pending Affidavit</label>
+            </value>
+            <value>
+                <fullName>Inspection Pending Utility</fullName>
+                <default>false</default>
+                <label>Inspection Pending Utility</label>
+            </value>
+            <value>
+                <fullName>Inspection Scheduling Blocked</fullName>
+                <default>false</default>
+                <label>Inspection Scheduling Blocked</label>
+            </value>
+            <value>
+                <fullName>Inspection Scheduled</fullName>
+                <default>false</default>
+                <label>Inspection Scheduled</label>
+            </value>
+            <value>
+                <fullName>Inspection Failed</fullName>
+                <default>false</default>
+                <label>Inspection Failed</label>
+            </value>
+            <value>
+                <fullName>Pending Remediation/Corrections</fullName>
+                <default>false</default>
+                <label>Pending Remediation/Corrections</label>
+            </value>
+            <value>
+                <fullName>Inspection Complete</fullName>
+                <default>false</default>
+                <label>Inspection Complete</label>
+            </value>
+            <value>
+                <fullName>Inspection Complete- Pending Inspection Documentation</fullName>
+                <default>false</default>
+                <label>Inspection Complete- Pending Inspection Documentation</label>
+            </value>
+            <value>
+                <fullName>Inspection Complete-Pending WO Close Out</fullName>
+                <default>false</default>
+                <label>Inspection Complete-Pending WO Close Out</label>
+            </value>
+            <value>
+                <fullName>Virtual Survey Sent to Customer</fullName>
+                <default>false</default>
+                <label>Virtual Survey Sent to Customer</label>
+            </value>
+            <value>
+                <fullName>Virtual Survey Received- Pending Review</fullName>
+                <default>false</default>
+                <label>Virtual Survey Received- Pending Review</label>
+            </value>
+            <value>
+                <fullName>Additional Photos Needed</fullName>
+                <default>false</default>
+                <label>Additional Photos Needed</label>
+            </value>
+            <value>
+                <fullName>Physical Survey Required - Palmetto Requested</fullName>
+                <default>false</default>
+                <label>Physical Survey Required - Palmetto Requested</label>
+            </value>
+            <value>
+                <fullName>Physical Survey Required - 3rd Party Requested</fullName>
+                <default>false</default>
+                <label>Physical Survey Required - 3rd Party Requested</label>
+            </value>
+            <value>
+                <fullName>New- Physical Survey Pending Scheduling</fullName>
+                <default>false</default>
+                <label>New- Physical Survey Pending Scheduling</label>
+            </value>
+            <value>
+                <fullName>Physical Survey Scheduling Pending Customer</fullName>
+                <default>false</default>
+                <label>Physical Survey Scheduling Pending Customer</label>
+            </value>
+            <value>
+                <fullName>Physical Survey Scheduled</fullName>
+                <default>false</default>
+                <label>Physical Survey Scheduled</label>
+            </value>
+            <value>
+                <fullName>Physical Survey Reschedule Required</fullName>
+                <default>false</default>
+                <label>Physical Survey Reschedule Required</label>
+            </value>
+            <value>
+                <fullName>Physical Survey Rescheduled</fullName>
+                <default>false</default>
+                <label>Physical Survey Rescheduled</label>
+            </value>
+            <value>
+                <fullName>Survey Complete - Confirmed</fullName>
+                <default>false</default>
+                <label>Survey Complete - Confirmed</label>
+            </value>
+            <value>
+                <fullName>Action Required</fullName>
+                <default>false</default>
+                <label>Action Required</label>
+            </value>
+            <value>
+                <fullName>Required</fullName>
+                <default>false</default>
+                <label>Required</label>
+            </value>
+            <value>
+                <fullName>Required - Pending Production</fullName>
+                <default>false</default>
+                <label>Required - Pending Production</label>
+            </value>
+            <value>
+                <fullName>Step 1 of 2 - Submitted</fullName>
+                <default>false</default>
+                <label>Step 1 of 2 - Submitted</label>
+            </value>
+            <value>
+                <fullName>Step 2 of 2 - Docs Sent for Signature</fullName>
+                <default>false</default>
+                <label>Step 2 of 2 - Docs Sent for Signature</label>
+            </value>
+            <value>
+                <fullName>Step 2 of 2 - Docs Received Signed</fullName>
+                <default>false</default>
+                <label>Step 2 of 2 - Docs Received Signed</label>
+            </value>
+            <value>
+                <fullName>Step 1 of 2 - Approved</fullName>
+                <default>false</default>
+                <label>Step 1 of 2 - Approved</label>
+            </value>
+            <value>
+                <fullName>Step 1 of 2 - Docs Sent for Signature</fullName>
+                <default>false</default>
+                <label>Step 1 of 2 - Docs Sent for Signature</label>
+            </value>
+            <value>
+                <fullName>Step 1 of 2 - Docs Received Signed</fullName>
+                <default>false</default>
+                <label>Step 1 of 2 - Docs Received Signed</label>
+            </value>
+            <value>
+                <fullName>Step 2 of 2 - Required - Pending Production</fullName>
+                <default>false</default>
+                <label>Step 2 of 2 - Required - Pending Production</label>
+            </value>
+            <value>
+                <fullName>Step 2 of 2 - Account Transfer Initiated</fullName>
+                <default>false</default>
+                <label>Step 2 of 2 - Account Transfer Initiated</label>
+            </value>
+            <value>
+                <fullName>Step 2 of 2 - Account Transfer Accepted</fullName>
+                <default>false</default>
+                <label>Step 2 of 2 - Account Transfer Accepted</label>
+            </value>
+            <value>
+                <fullName>Step 1 of 1 - Submitted</fullName>
+                <default>false</default>
+                <label>Step 1 of 1 - Submitted</label>
+            </value>
+            <value>
+                <fullName>Step 2 of 2 - Approved</fullName>
+                <default>false</default>
+                <label>Step 2 of 2 - Approved</label>
+            </value>
+            <value>
+                <fullName>Step 2a - Change Order Requested</fullName>
+                <default>false</default>
+                <label>Step 2a - Change Order Requested</label>
+            </value>
+            <value>
+                <fullName>Step 2a - Change Order Approved</fullName>
+                <default>false</default>
+                <label>Step 2a - Change Order Approved</label>
+            </value>
+            <value>
+                <fullName>Step 2b - Inspection Requested</fullName>
+                <default>false</default>
+                <label>Step 2b - Inspection Requested</label>
+            </value>
+            <value>
+                <fullName>Step 2a/b - Corrections Required</fullName>
+                <default>false</default>
+                <label>Step 2a/b - Corrections Required</label>
+            </value>
+            <value>
+                <fullName>Step 2a/b - Corrections Submitted</fullName>
+                <default>false</default>
+                <label>Step 2a/b - Corrections Submitted</label>
+            </value>
+            <value>
+                <fullName>Step 2c - Pending Green Bank Action</fullName>
+                <default>false</default>
+                <label>Step 2c - Pending Green Bank Action</label>
+            </value>
+            <value>
+                <fullName>Step 2 of 2 - Pipeline Report Sent</fullName>
+                <default>false</default>
+                <label>Step 2 of 2 - Pipeline Report Sent</label>
+            </value>
+            <value>
+                <fullName>Step 2 of 2 - Facility Certified - Pending Customer Action</fullName>
+                <default>false</default>
+                <label>Step 2 of 2 - Facility Certified - Pending Customer Action</label>
+            </value>
+            <value>
+                <fullName>Step 1 of 3 - Docs Sent for Signature</fullName>
+                <default>false</default>
+                <label>Step 1 of 3 - Docs Sent for Signature</label>
+            </value>
+            <value>
+                <fullName>Step 1 of 3 - Docs Received Signed</fullName>
+                <default>false</default>
+                <label>Step 1 of 3 - Docs Received Signed</label>
+            </value>
+            <value>
+                <fullName>Step 1 of 3 - Submitted</fullName>
+                <default>false</default>
+                <label>Step 1 of 3 - Submitted</label>
+            </value>
+            <value>
+                <fullName>Step 1 of 3 - Corrections Required</fullName>
+                <default>false</default>
+                <label>Step 1 of 3 - Corrections Required</label>
+            </value>
+            <value>
+                <fullName>Step 1 of 3 - Approved</fullName>
+                <default>false</default>
+                <label>Step 1 of 3 - Approved</label>
+            </value>
+            <value>
+                <fullName>Step 2 of 3 Required</fullName>
+                <default>false</default>
+                <label>Step 2 of 3 Required</label>
+            </value>
+            <value>
+                <fullName>Step 2 of 3 - Approved</fullName>
+                <default>false</default>
+                <label>Step 2 of 3 - Approved</label>
+            </value>
+            <value>
+                <fullName>Step 3 of 3 - Facility Certified - Pending Customer Action</fullName>
+                <default>false</default>
+                <label>Step 3 of 3 - Facility Certified - Pending Customer Action</label>
+            </value>
+            <value>
+                <fullName>Step 1 of 2 - RCEG App Submitted</fullName>
+                <default>false</default>
+                <label>Step 1 of 2 - RCEG App Submitted</label>
+            </value>
+            <value>
+                <fullName>Step 1 of 2 - Corrections Required</fullName>
+                <default>false</default>
+                <label>Step 1 of 2 - Corrections Required</label>
+            </value>
+            <value>
+                <fullName>Step 2 of 2 - Required</fullName>
+                <default>false</default>
+                <label>Step 2 of 2 - Required</label>
+            </value>
+            <value>
+                <fullName>Step 2 of 2 - Submitted</fullName>
+                <default>false</default>
+                <label>Step 2 of 2 - Submitted</label>
+            </value>
+            <value>
+                <fullName>Step 2 of 2 - Corrections Required</fullName>
+                <default>false</default>
+                <label>Step 2 of 2 - Corrections Required</label>
+            </value>
+            <value>
+                <fullName>Step 2 of 2 - Pending Customer Action</fullName>
+                <default>false</default>
+                <label>Step 2 of 2 - Pending Customer Action</label>
+            </value>
+            <value>
+                <fullName>Step 1 of 3 - LOI Received</fullName>
+                <default>false</default>
+                <label>Step 1 of 3 - LOI Received</label>
+            </value>
+            <value>
+                <fullName>Step 2 of 3 - Docs Sent for Signature</fullName>
+                <default>false</default>
+                <label>Step 2 of 3 - Docs Sent for Signature</label>
+            </value>
+            <value>
+                <fullName>Step 2 of 3 - Docs Received Signed</fullName>
+                <default>false</default>
+                <label>Step 2 of 3 - Docs Received Signed</label>
+            </value>
+            <value>
+                <fullName>Step 3 of 3 - Required</fullName>
+                <default>false</default>
+                <label>Step 3 of 3 - Required</label>
+            </value>
+            <value>
+                <fullName>Step 3 of 3 - Submitted</fullName>
+                <default>false</default>
+                <label>Step 3 of 3 - Submitted</label>
+            </value>
+            <value>
+                <fullName>Step 3 of 3 - Corrections Required</fullName>
+                <default>false</default>
+                <label>Step 3 of 3 - Corrections Required</label>
+            </value>
+            <value>
+                <fullName>App Submitted</fullName>
+                <default>false</default>
+                <label>App Submitted</label>
+            </value>
+            <value>
+                <fullName>Docs Sent for Signature</fullName>
+                <default>false</default>
+                <label>Docs Sent for Signature</label>
+            </value>
+            <value>
+                <fullName>Docs Received Signed</fullName>
+                <default>false</default>
+                <label>Docs Received Signed</label>
+            </value>
+            <value>
+                <fullName>Corrections Required</fullName>
+                <default>false</default>
+                <label>Corrections Required</label>
+            </value>
+            <value>
+                <fullName>Confirmed</fullName>
+                <default>false</default>
+                <label>Confirmed</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Incentive Process Complete</fullName>
+                <default>false</default>
+                <label>Incentive Process Complete</label>
+            </value>
+            <value>
+                <fullName>Contract Processing Pending Review</fullName>
+                <default>false</default>
+                <label>Contract Processing Pending Review</label>
+            </value>
+            <value>
+                <fullName>Contracts reviewed- Documents Incomplete</fullName>
+                <default>false</default>
+                <label>Contracts reviewed- Documents Incomplete</label>
+            </value>
+            <value>
+                <fullName>Contracts reviewed- Documents Incomplete(Reason 1)</fullName>
+                <default>false</default>
+                <label>Contracts reviewed- Documents Incomplete(Reason 1)</label>
+            </value>
+            <value>
+                <fullName>Contracts reviewed- Documents Incomplete(Reason 2)</fullName>
+                <default>false</default>
+                <label>Contracts reviewed- Documents Incomplete(Reason 2)</label>
+            </value>
+            <value>
+                <fullName>Contracts reviewed- Documents Incomplete(Reason 3)</fullName>
+                <default>false</default>
+                <label>Contracts reviewed- Documents Incomplete(Reason 3)</label>
+            </value>
+            <value>
+                <fullName>Contracts reviewed- Documents Incomplete(Reason 4)</fullName>
+                <default>false</default>
+                <label>Contracts reviewed- Documents Incomplete(Reason 4)</label>
+            </value>
+            <value>
+                <fullName>Contract reviewed- Third Party delay/ Discrepancy</fullName>
+                <default>false</default>
+                <label>Contract reviewed- Third Party delay/ Discrepancy</label>
+            </value>
+            <value>
+                <fullName>Contract Processing Completed</fullName>
+                <default>false</default>
+                <label>Contract Processing Completed</label>
+            </value>
+            <value>
+                <fullName>Date Field / Mirroring information to main opportunity</fullName>
+                <default>false</default>
+                <label>Date Field / Mirroring information to main opportunity</label>
+            </value>
+            <value>
+                <fullName>Pending JCO</fullName>
+                <default>false</default>
+                <label>Pending JCO</label>
+            </value>
+            <value>
+                <fullName>Punchlist / Photos Scheduled</fullName>
+                <default>false</default>
+                <label>Punchlist / Photos Scheduled</label>
+            </value>
+            <value>
+                <fullName>Punchlist / Photos Completed</fullName>
+                <default>false</default>
+                <label>Punchlist / Photos Completed</label>
+            </value>
+            <value>
+                <fullName>Field Complete in QC Review</fullName>
+                <default>false</default>
+                <label>Field Complete in QC Review</label>
+            </value>
+            <value>
+                <fullName>Incomplete JCO</fullName>
+                <default>false</default>
+                <label>Incomplete JCO</label>
+            </value>
+            <value>
+                <fullName>Field Remedies Needed - QCA</fullName>
+                <default>false</default>
+                <label>Field Remedies Needed - QCA</label>
+            </value>
+            <value>
+                <fullName>QC Review - Pending Design Revision</fullName>
+                <default>false</default>
+                <label>QC Review - Pending Design Revision</label>
+            </value>
+            <value>
+                <fullName>QC Approved With Exceptions</fullName>
+                <default>false</default>
+                <label>QC Approved With Exceptions</label>
+            </value>
+            <value>
+                <fullName>QC Approved Complete</fullName>
+                <default>false</default>
+                <label>QC Approved Complete</label>
+            </value>
+            <value>
+                <fullName>Rejected - Pending Correction</fullName>
+                <default>false</default>
+                <label>Rejected - Pending Correction</label>
+            </value>
+            <value>
+                <fullName>Escalated</fullName>
+                <default>false</default>
+                <label>Escalated</label>
+            </value>
+            <value>
+                <fullName>Denied/Appealing</fullName>
+                <default>false</default>
+                <label>Denied/Appealing</label>
+            </value>
+            <value>
+                <fullName>HO Bypass</fullName>
+                <default>false</default>
+                <label>HO Bypass</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Pending Submittal to AHJ</fullName>
+                <default>false</default>
+                <label>Pending Submittal to AHJ</label>
+            </value>
+            <value>
+                <fullName>Permit Received</fullName>
+                <default>false</default>
+                <label>Permit Received</label>
+            </value>
+            <value>
+                <fullName>Change of Contractor</fullName>
+                <default>false</default>
+                <label>Change of Contractor</label>
+            </value>
+            <value>
+                <fullName>Permit Submitted</fullName>
+                <default>false</default>
+                <label>Permit Submitted</label>
+            </value>
+            <value>
+                <fullName>Permit Rejected</fullName>
+                <default>false</default>
+                <label>Permit Rejected</label>
+            </value>
+            <value>
+                <fullName>Pending ICA Approval</fullName>
+                <default>false</default>
+                <label>Pending ICA Approval</label>
+            </value>
+            <value>
+                <fullName>Pending Work Order</fullName>
+                <default>false</default>
+                <label>Pending Work Order</label>
+            </value>
+            <value>
+                <fullName>Pending Redesign</fullName>
+                <default>false</default>
+                <label>Pending Redesign</label>
+            </value>
+            <value>
+                <fullName>Pending Resurvey</fullName>
+                <default>false</default>
+                <label>Pending Resurvey</label>
+            </value>
+            <value>
+                <fullName>Pending Wet Stamped Plans</fullName>
+                <default>false</default>
+                <label>Pending Wet Stamped Plans</label>
+            </value>
+            <value>
+                <fullName>Pending Customer Signed Docs</fullName>
+                <default>false</default>
+                <label>Pending Customer Signed Docs</label>
+            </value>
+            <value>
+                <fullName>Pending Customer Callback</fullName>
+                <default>false</default>
+                <label>Pending Customer Callback</label>
+            </value>
+            <value>
+                <fullName>Pending Customer Action</fullName>
+                <default>false</default>
+                <label>Pending Customer Action</label>
+            </value>
+            <value>
+                <fullName>Pending AHJ</fullName>
+                <default>false</default>
+                <label>Pending AHJ</label>
+            </value>
+            <value>
+                <fullName>Pending HOA</fullName>
+                <default>false</default>
+                <label>Pending HOA</label>
+            </value>
+            <value>
+                <fullName>Pending Submission</fullName>
+                <default>false</default>
+                <label>Pending Submission</label>
+            </value>
+            <value>
+                <fullName>Docket Number Requested</fullName>
+                <default>false</default>
+                <label>Docket Number Requested</label>
+            </value>
+            <value>
+                <fullName>Docket Number Received</fullName>
+                <default>false</default>
+                <label>Docket Number Received</label>
+            </value>
+            <value>
+                <fullName>Customer Signature Requested</fullName>
+                <default>false</default>
+                <label>Customer Signature Requested</label>
+            </value>
+            <value>
+                <fullName>Customer Signature Received</fullName>
+                <default>false</default>
+                <label>Customer Signature Received</label>
+            </value>
+            <value>
+                <fullName>Customer Action Required</fullName>
+                <default>false</default>
+                <label>Customer Action Required</label>
+            </value>
+            <value>
+                <fullName>Internal Action Required</fullName>
+                <default>false</default>
+                <label>Internal Action Required</label>
+            </value>
+            <value>
+                <fullName>Revision Signature Requested</fullName>
+                <default>false</default>
+                <label>Revision Signature Requested</label>
+            </value>
+            <value>
+                <fullName>Revision Request Resubmitted</fullName>
+                <default>false</default>
+                <label>Revision Request Resubmitted</label>
+            </value>
+            <value>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+                <label>Submitted</label>
+            </value>
+            <value>
+                <fullName>Final Signature Pending</fullName>
+                <default>false</default>
+                <label>Final Signature Pending</label>
+            </value>
+            <value>
+                <fullName>Kickback</fullName>
+                <default>false</default>
+                <label>Kickback</label>
+            </value>
+            <value>
+                <fullName>Kickback &amp; Pending WO Closeout</fullName>
+                <default>false</default>
+                <label>Kickback &amp; Pending WO Closeout</label>
+            </value>
+            <value>
+                <fullName>Pending WO Closeout</fullName>
+                <default>false</default>
+                <label>Pending WO Closeout</label>
+            </value>
+            <value>
+                <fullName>Kickback Signature Requested</fullName>
+                <default>false</default>
+                <label>Kickback Signature Requested</label>
+            </value>
+            <value>
+                <fullName>Kickback Signature Received</fullName>
+                <default>false</default>
+                <label>Kickback Signature Received</label>
+            </value>
+            <value>
+                <fullName>Resubmitted</fullName>
+                <default>false</default>
+                <label>Resubmitted</label>
+            </value>
+            <value>
+                <fullName>Work Order Number Requested Status</fullName>
+                <default>false</default>
+                <label>Work Order Number Requested</label>
+            </value>
+            <value>
+                <fullName>Work Order Number Received</fullName>
+                <default>false</default>
+                <label>Work Order Number Received</label>
+            </value>
+            <value>
+                <fullName>Interconnection Approved</fullName>
+                <default>false</default>
+                <label>Interconnection Approved</label>
+            </value>
+            <value>
+                <fullName>Net Metering Approved</fullName>
+                <default>false</default>
+                <label>Net Metering Approved</label>
+            </value>
+            <value>
+                <fullName>Utility Approval for Install</fullName>
+                <default>false</default>
+                <label>Utility Approval for Install</label>
+            </value>
+            <value>
+                <fullName>Meter Ordered</fullName>
+                <default>false</default>
+                <label>Meter Ordered</label>
+            </value>
+            <value>
+                <fullName>PTO Granted</fullName>
+                <default>false</default>
+                <label>PTO Granted</label>
+            </value>
+            <value>
+                <fullName>Document Verification - Pending Review</fullName>
+                <default>false</default>
+                <label>Document Verification - Pending Review</label>
+            </value>
+            <value>
+                <fullName>Document Verification - Incomplete</fullName>
+                <default>false</default>
+                <label>Document Verification - Incomplete</label>
+            </value>
+            <value>
+                <fullName>Document Verification - Incomplete (Reason 1)</fullName>
+                <default>false</default>
+                <label>Document Verification - Incomplete (Reason 1)</label>
+            </value>
+            <value>
+                <fullName>Document Verification - Incomplete (Reason 2)</fullName>
+                <default>false</default>
+                <label>Document Verification - Incomplete (Reason 2)</label>
+            </value>
+            <value>
+                <fullName>Document Verification - Incomplete (Reason 3)</fullName>
+                <default>false</default>
+                <label>Document Verification - Incomplete (Reason 3)</label>
+            </value>
+            <value>
+                <fullName>Document Verification - Documentation Delay</fullName>
+                <default>false</default>
+                <label>Document Verification - Documentation Delay</label>
+            </value>
+            <value>
+                <fullName>Document Verification - Documentation Delay (Reason 1)</fullName>
+                <default>false</default>
+                <label>Document Verification - Documentation Delay (Reason 1)</label>
+            </value>
+            <value>
+                <fullName>Document Verification - Documentation Delay (Reason 2)</fullName>
+                <default>false</default>
+                <label>Document Verification - Documentation Delay (Reason 2)</label>
+            </value>
+            <value>
+                <fullName>Document Verification - Documentation Delay (Reason 3)</fullName>
+                <default>false</default>
+                <label>Document Verification - Documentation Delay (Reason 3)</label>
+            </value>
+            <value>
+                <fullName>Document Verification - Document Reviewed CRC completed</fullName>
+                <default>false</default>
+                <label>Document Verification - Document Reviewed CRC completed</label>
+            </value>
+            <value>
+                <fullName>M0 - Pending NTP</fullName>
+                <default>false</default>
+                <label>M0 - Pending NTP</label>
+            </value>
+            <value>
+                <fullName>M0 - Submitted</fullName>
+                <default>false</default>
+                <label>M0 - Submitted</label>
+            </value>
+            <value>
+                <fullName>M0 - Kickback</fullName>
+                <default>false</default>
+                <label>M0 - Kickback</label>
+            </value>
+            <value>
+                <fullName>M0 - Pending Invoice</fullName>
+                <default>false</default>
+                <label>M0 - Pending Invoice</label>
+            </value>
+            <value>
+                <fullName>Notice to Proceed</fullName>
+                <default>false</default>
+                <label>Notice to Proceed</label>
+            </value>
+            <value>
+                <fullName>M1 - Pending Submittal</fullName>
+                <default>false</default>
+                <label>M1 - Pending Submittal</label>
+            </value>
+            <value>
+                <fullName>M1 - Submitted</fullName>
+                <default>false</default>
+                <label>M1 - Submitted</label>
+            </value>
+            <value>
+                <fullName>M1 - Kickback</fullName>
+                <default>false</default>
+                <label>M1 - Kickback</label>
+            </value>
+            <value>
+                <fullName>M1 - Kickback FinOps</fullName>
+                <default>false</default>
+                <label>M1 - Kickback FinOps</label>
+            </value>
+            <value>
+                <fullName>M1 - Kickback Ops</fullName>
+                <default>false</default>
+                <label>M1 - Kickback Ops</label>
+            </value>
+            <value>
+                <fullName>M1 - Kickback Design</fullName>
+                <default>false</default>
+                <label>M1 - Kickback Design</label>
+            </value>
+            <value>
+                <fullName>M1 -  Approved</fullName>
+                <default>false</default>
+                <label>M1 -  Approved</label>
+            </value>
+            <value>
+                <fullName>M2 - Pending Submittal</fullName>
+                <default>false</default>
+                <label>M2 - Pending Submittal</label>
+            </value>
+            <value>
+                <fullName>M2 - Submtted</fullName>
+                <default>false</default>
+                <label>M2 - Submtted</label>
+            </value>
+            <value>
+                <fullName>M2 - Kickback</fullName>
+                <default>false</default>
+                <label>M2 - Kickback</label>
+            </value>
+            <value>
+                <fullName>M2 - Approved</fullName>
+                <default>false</default>
+                <label>M2 - Approved</label>
+            </value>
+            <value>
+                <fullName>M2 - Kickback Design</fullName>
+                <default>false</default>
+                <label>M2 - Kickback Design</label>
+            </value>
+            <value>
+                <fullName>M2 - Kickback FinOps</fullName>
+                <default>false</default>
+                <label>M2 - Kickback FinOps</label>
+            </value>
+            <value>
+                <fullName>M2 - Kickback Ops</fullName>
+                <default>false</default>
+                <label>M2 - Kickback Ops</label>
+            </value>
+            <value>
+                <fullName>M3 - Pending Submittal</fullName>
+                <default>false</default>
+                <label>M3 - Pending Submittal</label>
+            </value>
+            <value>
+                <fullName>M3 - Submitted</fullName>
+                <default>false</default>
+                <label>M3 - Submitted</label>
+            </value>
+            <value>
+                <fullName>M3 - Approved Incomplete</fullName>
+                <default>false</default>
+                <label>M3 - Approved Incomplete</label>
+            </value>
+            <value>
+                <fullName>M3 - Kickback Design</fullName>
+                <default>false</default>
+                <label>M3 - Kickback Design</label>
+            </value>
+            <value>
+                <fullName>M3 - Kickback FinOps</fullName>
+                <default>false</default>
+                <label>M3 - Kickback FinOps</label>
+            </value>
+            <value>
+                <fullName>M3 - Kickback Ops</fullName>
+                <default>false</default>
+                <label>M3 - Kickback Ops</label>
+            </value>
+            <value>
+                <fullName>M3 - Submtted</fullName>
+                <default>false</default>
+                <label>M3 - Submtted</label>
+            </value>
+            <value>
+                <fullName>M3 - Kickback</fullName>
+                <default>false</default>
+                <label>M3 - Kickback</label>
+            </value>
+            <value>
+                <fullName>Project Closed</fullName>
+                <default>false</default>
+                <label>Project Closed</label>
+            </value>
+            <value>
+                <fullName>Preparing for Scheduling</fullName>
+                <default>false</default>
+                <label>Preparing for Scheduling</label>
+            </value>
+            <value>
+                <fullName>New- Pending Scheduling</fullName>
+                <default>false</default>
+                <label>New- Pending Scheduling</label>
+            </value>
+            <value>
+                <fullName>Scheduling Pending Homeowner</fullName>
+                <default>false</default>
+                <label>Scheduling Pending Homeowner</label>
+            </value>
+            <value>
+                <fullName>Scheduling on Hold- Palmetto</fullName>
+                <default>false</default>
+                <label>Scheduling on Hold- Palmetto</label>
+            </value>
+            <value>
+                <fullName>Scheduling on Hold- Homeowner</fullName>
+                <default>false</default>
+                <label>Scheduling on Hold- Homeowner</label>
+            </value>
+            <value>
+                <fullName>Installation Scheduled</fullName>
+                <default>false</default>
+                <label>Installation Scheduled</label>
+            </value>
+            <value>
+                <fullName>Installation Reschedule Required</fullName>
+                <default>false</default>
+                <label>Installation Reschedule Required</label>
+            </value>
+            <value>
+                <fullName>Installation Rescheduled</fullName>
+                <default>false</default>
+                <label>Installation Rescheduled</label>
+            </value>
+            <value>
+                <fullName>Installation Completion Required</fullName>
+                <default>false</default>
+                <label>Installation Completion Required</label>
+            </value>
+            <value>
+                <fullName>Installation Completion Scheduled</fullName>
+                <default>false</default>
+                <label>Installation Completion Scheduled</label>
+            </value>
+            <value>
+                <fullName>Installation Complete</fullName>
+                <default>false</default>
+                <label>Installation Complete</label>
+            </value>
+            <value>
+                <fullName>Pending Open Service Case</fullName>
+                <default>false</default>
+                <label>Pending Open Service Case</label>
+            </value>
+            <value>
+                <fullName>System Activation Completed</fullName>
+                <default>false</default>
+                <label>System Activation cCmpleted</label>
+            </value>
+            <value>
+                <fullName>Pending Build Only Partner Action</fullName>
+                <default>false</default>
+                <label>Pending Build Only Partner Action</label>
+            </value>
+            <value>
+                <fullName>Pending AHJ Research/Registration</fullName>
+                <default>false</default>
+                <label>Pending AHJ Research/Registration</label>
+            </value>
+            <value>
+                <fullName>Ground Mount Coordination Required</fullName>
+                <default>false</default>
+                <label>Ground Mount Coordination Required</label>
+            </value>
+            <value>
+                <fullName>Permit Approved, Pending Issuance</fullName>
+                <default>false</default>
+                <label>Permit Approved, Pending Issuance</label>
+            </value>
+            <value>
+                <fullName>Start Date for Materials Delivery Committed</fullName>
+                <default>false</default>
+                <label>Start Date for Materials Delivery Committed</label>
+            </value>
+            <value>
+                <fullName>Materials Delivery Exception</fullName>
+                <default>false</default>
+                <label>Materials Delivery Exception</label>
+            </value>
+            <value>
+                <fullName>Materials Delivery Confirmed</fullName>
+                <default>false</default>
+                <label>Materials Delivery Confirmed</label>
+            </value>
+            <value>
+                <fullName>Fulfilled</fullName>
+                <default>false</default>
+                <label>Fulfilled</label>
+            </value>
+            <value>
+                <fullName>Virtual Survey Pending</fullName>
+                <default>false</default>
+                <label>Virtual Survey Pending</label>
+            </value>
+            <value>
+                <fullName>Virtual Survey Insufficient</fullName>
+                <default>false</default>
+                <label>Virtual Survey Insufficient</label>
+            </value>
+            <value>
+                <fullName>Virtual Survey Rejected by Customer</fullName>
+                <default>false</default>
+                <label>Virtual Survey Rejected by Customer</label>
+            </value>
+            <value>
+                <fullName>Survey Complete</fullName>
+                <default>false</default>
+                <label>Survey Complete</label>
+            </value>
+            <value>
+                <fullName>New-Case Created</fullName>
+                <default>false</default>
+                <label>New-Case Created</label>
+            </value>
+            <value>
+                <fullName>Reimbursement Under Review</fullName>
+                <default>false</default>
+                <label>Reimbursement Under Review</label>
+            </value>
+            <value>
+                <fullName>Reimbursement Approved</fullName>
+                <default>false</default>
+                <label>Reimbursement Approved</label>
+            </value>
+            <value>
+                <fullName>Reimbursement Declined</fullName>
+                <default>false</default>
+                <label>Reimbursement Declined</label>
+            </value>
+            <value>
+                <fullName>Roof Review Required</fullName>
+                <default>false</default>
+                <label>Roof Review Required</label>
+            </value>
+            <value>
+                <fullName>Roof Review Pending Site Visit</fullName>
+                <default>false</default>
+                <label>Roof Review Pending Site Visit</label>
+            </value>
+            <value>
+                <fullName>Re-Roof Required Pending Quote</fullName>
+                <default>false</default>
+                <label>Re-Roof Required Pending Quote</label>
+            </value>
+            <value>
+                <fullName>Customer Accepted - Pending Coordination</fullName>
+                <default>false</default>
+                <label>Customer Accepted - Pending Coordination</label>
+            </value>
+            <value>
+                <fullName>Re-Roof Underway</fullName>
+                <default>false</default>
+                <label>Re-Roof Underway</label>
+            </value>
+            <value>
+                <fullName>Re-Roof Complete - Pending JCO</fullName>
+                <default>false</default>
+                <label>Re-Roof Complete - Pending JCO</label>
+            </value>
+            <value>
+                <fullName>Roof Complete - Ready for invoice</fullName>
+                <default>false</default>
+                <label>Roof Complete - Ready for invoice</label>
+            </value>
+            <value>
+                <fullName>Roof Reviewed - Re-Roof Not Needed</fullName>
+                <default>false</default>
+                <label>Roof Reviewed - Re-Roof Not Needed</label>
+            </value>
+            <value>
+                <fullName>Electrical Review Required</fullName>
+                <default>false</default>
+                <label>Electrical Review Required</label>
+            </value>
+            <value>
+                <fullName>Electrical Review Pending Site Visit</fullName>
+                <default>false</default>
+                <label>Electrical Review Pending Site Visit</label>
+            </value>
+            <value>
+                <fullName>Electrical Upgrade Required Pending Quote</fullName>
+                <default>false</default>
+                <label>Electrical Upgrade Required Pending Quote</label>
+            </value>
+            <value>
+                <fullName>Electrical Upgrade Pending Utility Disconnect</fullName>
+                <default>false</default>
+                <label>Electrical Upgrade Pending Utility Disconnect</label>
+            </value>
+            <value>
+                <fullName>Electrical Upgrade Scheduled</fullName>
+                <default>false</default>
+                <label>Electrical Upgrade Scheduled</label>
+            </value>
+            <value>
+                <fullName>Electrical Upgrade at Installation</fullName>
+                <default>false</default>
+                <label>Electrical Upgrade at Installation</label>
+            </value>
+            <value>
+                <fullName>Electrical Upgrade Complete</fullName>
+                <default>false</default>
+                <label>Electrical Upgrade Complete</label>
+            </value>
+            <value>
+                <fullName>Electrical Reviewed - No Upgrade Required</fullName>
+                <default>false</default>
+                <label>Electrical Reviewed - No Upgrade Required</label>
+            </value>
+            <value>
+                <fullName>Structural Review Required</fullName>
+                <default>false</default>
+                <label>Structural Review Required</label>
+            </value>
+            <value>
+                <fullName>Structural Review Pending Site Visit</fullName>
+                <default>false</default>
+                <label>Structural Review Pending Site Visit</label>
+            </value>
+            <value>
+                <fullName>Structural Upgrade Required Pending Quote</fullName>
+                <default>false</default>
+                <label>Structural Upgrade Required Pending Quote</label>
+            </value>
+            <value>
+                <fullName>Structural Upgrade Scheduled</fullName>
+                <default>false</default>
+                <label>Structural Upgrade Scheduled</label>
+            </value>
+            <value>
+                <fullName>Structural Upgrade at Installation</fullName>
+                <default>false</default>
+                <label>Structural Upgrade at Installation</label>
+            </value>
+            <value>
+                <fullName>Structural Upgrade Complete</fullName>
+                <default>false</default>
+                <label>Structural Upgrade Complete</label>
+            </value>
+            <value>
+                <fullName>Structural Reviewed - No Upgrade Needed</fullName>
+                <default>false</default>
+                <label>Structural Reviewed - No Upgrade Needed</label>
+            </value>
+            <value>
+                <fullName>Trenching Review Required</fullName>
+                <default>false</default>
+                <label>Trenching Review Required</label>
+            </value>
+            <value>
+                <fullName>Trenching Review Pending Site Visit</fullName>
+                <default>false</default>
+                <label>Trenching Review Pending Site Visit</label>
+            </value>
+            <value>
+                <fullName>Trenching Required Pending Quote</fullName>
+                <default>false</default>
+                <label>Trenching Required Pending Quote</label>
+            </value>
+            <value>
+                <fullName>Trenching Scheduled</fullName>
+                <default>false</default>
+                <label>Trenching Scheduled</label>
+            </value>
+            <value>
+                <fullName>Trenching at Installation</fullName>
+                <default>false</default>
+                <label>Trenching at Installation</label>
+            </value>
+            <value>
+                <fullName>Trenching Complete</fullName>
+                <default>false</default>
+                <label>Trenching Complete</label>
+            </value>
+            <value>
+                <fullName>Trenching Reviewed - Not Required</fullName>
+                <default>false</default>
+                <label>Trenching Reviewed - Not Required</label>
+            </value>
+            <value>
+                <fullName>Planset Sent to Contractor</fullName>
+                <default>false</default>
+                <label>Planset Sent to Contractor</label>
+            </value>
+            <value>
+                <fullName>Ground Mount Required</fullName>
+                <default>false</default>
+                <label>Ground Mount Required</label>
+            </value>
+            <value>
+                <fullName>Ground Mount Pending Coordination</fullName>
+                <default>false</default>
+                <label>Ground Mount Pending Coordination</label>
+            </value>
+            <value>
+                <fullName>Ground Mount Plot Staked</fullName>
+                <default>false</default>
+                <label>Ground Mount Plot Staked</label>
+            </value>
+            <value>
+                <fullName>Ground Mount Scheduled</fullName>
+                <default>false</default>
+                <label>Ground Mount Scheduled</label>
+            </value>
+            <value>
+                <fullName>Ground Mount Complete</fullName>
+                <default>false</default>
+                <label>Ground Mount Complete</label>
+            </value>
+            <value>
+                <fullName>Ground Mount Not Required</fullName>
+                <default>false</default>
+                <label>Ground Mount Not Required</label>
+            </value>
+            <value>
+                <fullName>Additional Pre-Construction Work Required</fullName>
+                <default>false</default>
+                <label>Additional Pre-Construction Work Required</label>
+            </value>
+            <value>
+                <fullName>Additional Pre-Construction Work Underway</fullName>
+                <default>false</default>
+                <label>Additional Pre-Construction Work Underway</label>
+            </value>
+            <value>
+                <fullName>Additional Pre-Construction Work Complete</fullName>
+                <default>false</default>
+                <label>Additional Pre-Construction Work Complete</label>
+            </value>
+            <value>
+                <fullName>Additional Pre-Construction Work Not Required</fullName>
+                <default>false</default>
+                <label>Additional Pre-Construction Work Not Required</label>
+            </value>
+            <value>
+                <fullName>Pending Customer Acceptance</fullName>
+                <default>false</default>
+                <label>Pending Customer Acceptance</label>
+            </value>
+            <value>
+                <fullName>Required - Pending Internal Review</fullName>
+                <default>false</default>
+                <label>Required - Pending Internal Review</label>
+            </value>
+            <value>
+                <fullName>Step 1 - Submitted</fullName>
+                <default>false</default>
+                <label>Step 1 - Submitted</label>
+            </value>
+            <value>
+                <fullName>Step 1 - Corrections Required</fullName>
+                <default>false</default>
+                <label>Step 1 - Corrections Required</label>
+            </value>
+            <value>
+                <fullName>Step 1 - Approved</fullName>
+                <default>false</default>
+                <label>Step 1 - Approved</label>
+            </value>
+            <value>
+                <fullName>Step 2 - Pending</fullName>
+                <default>false</default>
+                <label>Step 2 - Pending</label>
+            </value>
+            <value>
+                <fullName>Step 2 - Submitted</fullName>
+                <default>false</default>
+                <label>Step 2 - Submitted</label>
+            </value>
+            <value>
+                <fullName>Step 2 - Corrections Required</fullName>
+                <default>false</default>
+                <label>Step 2 - Corrections Required</label>
+            </value>
+            <value>
+                <fullName>Step 2 - Approved</fullName>
+                <default>false</default>
+                <label>Step 2 - Approved</label>
+            </value>
+            <value>
+                <fullName>Certification Complete</fullName>
+                <default>false</default>
+                <label>Certification Complete</label>
+            </value>
+            <value>
+                <fullName>Pending Submittal</fullName>
+                <default>false</default>
+                <label>Pending Submittal</label>
+            </value>
+            <value>
+                <fullName>Account Submitted</fullName>
+                <default>false</default>
+                <label>Account Submitted</label>
+            </value>
+            <value>
+                <fullName>Account Approved</fullName>
+                <default>false</default>
+                <label>Account Approved</label>
+            </value>
+            <value>
+                <fullName>Facility Transfer Sent - Pending HO Action</fullName>
+                <default>false</default>
+                <label>Facility Transfer Sent - Pending HO Action</label>
+            </value>
+            <value>
+                <fullName>Facility Transfer Accepted - Pending Internal Review</fullName>
+                <default>false</default>
+                <label>Facility Transfer Accepted - Pending Internal Review</label>
+            </value>
+            <value>
+                <fullName>Complete</fullName>
+                <default>false</default>
+                <label>Complete</label>
+            </value>
+            <value>
+                <fullName>Complete Pending Payment</fullName>
+                <default>false</default>
+                <label>Complete Pending Payment</label>
+            </value>
+            <value>
+                <fullName>Net Fund - Pending PTO</fullName>
+                <default>false</default>
+                <label>Net Fund - Pending PTO</label>
+            </value>
+            <value>
+                <fullName>Net Fund - Build Issue</fullName>
+                <default>false</default>
+                <label>Net Fund - Build Issue</label>
+            </value>
+            <value>
+                <fullName>Net Fund - CX Issue</fullName>
+                <default>false</default>
+                <label>Net Fund - CX Issue</label>
+            </value>
+            <value>
+                <fullName>Financing Operations Completed</fullName>
+                <default>false</default>
+                <label>Financing Operations Completed</label>
+            </value>
+            <value>
+                <fullName>Allowance - Build Issue</fullName>
+                <default>false</default>
+                <label>Allowance - Build Issue</label>
+            </value>
+            <value>
+                <fullName>Allowance - CX Issue</fullName>
+                <default>false</default>
+                <label>Allowance - CX Issue</label>
+            </value>
+            <value>
+                <fullName>Write-off - Build Issue</fullName>
+                <default>false</default>
+                <label>Write-off - Build Issue</label>
+            </value>
+            <value>
+                <fullName>Write-off - CX Issue</fullName>
+                <default>false</default>
+                <label>Write-off - CX Issue</label>
+            </value>
+            <value>
+                <fullName>Closed - Legal Referral</fullName>
+                <default>false</default>
+                <label>Closed - Legal Referral</label>
+            </value>
+            <value>
+                <fullName>Closed - Paid</fullName>
+                <default>false</default>
+                <label>Closed - Paid</label>
+            </value>
+            <value>
+                <fullName>Facility Transfer Sent</fullName>
+                <default>false</default>
+                <label>Facility Transfer Sent</label>
+            </value>
+            <value>
+                <fullName>Needs Info</fullName>
+                <default>false</default>
+                <label>Needs Info</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Pending Submission</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Customer Signature Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Customer Signature Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Customer Action Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Internal Action Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (San Antonio TX)</controllingFieldValue>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Final Signature Pending</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Kickback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <valueName>Kickback &amp; Pending WO Closeout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <valueName>Pending WO Closeout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Kickback Signature Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Kickback Signature Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Resubmitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <valueName>Meter Ordered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <valueName>PTO Granted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MD)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (NV)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (San Antonio TX)</controllingFieldValue>
+            <controllingFieldValue>Contract Processing- Document Verification</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <controllingFieldValue>Document Verification</controllingFieldValue>
+            <controllingFieldValue>Cash</controllingFieldValue>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <controllingFieldValue>HOA</controllingFieldValue>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <controllingFieldValue>Site Approval</controllingFieldValue>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <controllingFieldValue>Physical Survey</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MA SMART)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (IL ABP)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (RI ReGrowth)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (PennAEPS)</controllingFieldValue>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Complete Pending Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MD)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (NV)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (San Antonio TX)</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Contract Processing- Document Verification</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <controllingFieldValue>Document Verification</controllingFieldValue>
+            <controllingFieldValue>Cash</controllingFieldValue>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <controllingFieldValue>HOA</controllingFieldValue>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <controllingFieldValue>Site Approval</controllingFieldValue>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <controllingFieldValue>Physical Survey</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MA SMART)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (IL ABP)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (RI ReGrowth)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (PennAEPS)</controllingFieldValue>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Net Fund - Pending PTO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MD)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (NV)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (San Antonio TX)</controllingFieldValue>
+            <controllingFieldValue>Contract Processing- Document Verification</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <controllingFieldValue>Document Verification</controllingFieldValue>
+            <controllingFieldValue>Cash</controllingFieldValue>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <controllingFieldValue>HOA</controllingFieldValue>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <controllingFieldValue>Site Approval</controllingFieldValue>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <controllingFieldValue>Physical Survey</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MA SMART)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (IL ABP)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (RI ReGrowth)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (PennAEPS)</controllingFieldValue>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Net Fund - Build Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MD)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (NV)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (San Antonio TX)</controllingFieldValue>
+            <controllingFieldValue>Contract Processing- Document Verification</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <controllingFieldValue>Document Verification</controllingFieldValue>
+            <controllingFieldValue>Cash</controllingFieldValue>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <controllingFieldValue>HOA</controllingFieldValue>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <controllingFieldValue>Site Approval</controllingFieldValue>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <controllingFieldValue>Physical Survey</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MA SMART)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (IL ABP)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (RI ReGrowth)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (PennAEPS)</controllingFieldValue>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Net Fund - CX Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MD)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (NV)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (San Antonio TX)</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Contract Processing- Document Verification</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <controllingFieldValue>Document Verification</controllingFieldValue>
+            <controllingFieldValue>Cash</controllingFieldValue>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <controllingFieldValue>HOA</controllingFieldValue>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <controllingFieldValue>Site Approval</controllingFieldValue>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <controllingFieldValue>Physical Survey</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MA SMART)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (IL ABP)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (RI ReGrowth)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (PennAEPS)</controllingFieldValue>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Closed - Legal Referral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTO</controllingFieldValue>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MD)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (NV)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (San Antonio TX)</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Contract Processing- Document Verification</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <controllingFieldValue>Document Verification</controllingFieldValue>
+            <controllingFieldValue>Cash</controllingFieldValue>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <controllingFieldValue>HOA</controllingFieldValue>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <controllingFieldValue>Site Approval</controllingFieldValue>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <controllingFieldValue>Physical Survey</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MA SMART)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (IL ABP)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (RI ReGrowth)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (PennAEPS)</controllingFieldValue>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Closed - Paid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>M0 - Pending NTP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>M0 - Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>M0 - Kickback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>Notice to Proceed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>M1 - Pending Submittal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>M1 - Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <valueName>M1 - Kickback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>M2 - Pending Submittal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>M2 - Submtted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <valueName>M2 - Kickback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <valueName>Project Closed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <valueName>Financing Operations Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>M0 - Pending Invoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>M1 - Kickback FinOps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>M1 - Kickback Ops</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>M1 - Kickback Design</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>M1 -  Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>M2 - Kickback Design</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>M2 - Kickback FinOps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>M2 - Kickback Ops</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>Allowance - Build Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>Allowance - CX Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>Write-off - Build Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <controllingFieldValue>LoanPal</controllingFieldValue>
+            <controllingFieldValue>Sunlight</controllingFieldValue>
+            <valueName>Write-off - CX Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <valueName>M2 - Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <valueName>M3 - Pending Submittal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <valueName>M3 - Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <valueName>M3 - Approved Incomplete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <valueName>M3 - Kickback Design</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <valueName>M3 - Kickback FinOps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <valueName>M3 - Kickback Ops</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <valueName>M3 - Submtted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <valueName>M3 - Kickback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation Scheduling</controllingFieldValue>
+            <valueName>Preparing for Scheduling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation Scheduling</controllingFieldValue>
+            <valueName>New- Pending Scheduling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation Scheduling</controllingFieldValue>
+            <valueName>Scheduling Pending Homeowner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation Scheduling</controllingFieldValue>
+            <valueName>Scheduling on Hold- Palmetto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation Scheduling</controllingFieldValue>
+            <valueName>Scheduling on Hold- Homeowner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation Scheduling</controllingFieldValue>
+            <valueName>Installation Scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation Scheduling</controllingFieldValue>
+            <valueName>Installation Reschedule Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation Scheduling</controllingFieldValue>
+            <valueName>Installation Rescheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation Scheduling</controllingFieldValue>
+            <valueName>Installation Completion Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation Scheduling</controllingFieldValue>
+            <valueName>Installation Completion Scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation Scheduling</controllingFieldValue>
+            <valueName>Installation Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>System Activation</controllingFieldValue>
+            <valueName>Pending Customer Self Activation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>System Activation</controllingFieldValue>
+            <controllingFieldValue>HOA</controllingFieldValue>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <valueName>New</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>System Activation</controllingFieldValue>
+            <valueName>Pending Customer Callback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>System Activation</controllingFieldValue>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Pending Customer Action</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>System Activation</controllingFieldValue>
+            <valueName>Pending Open Service Case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>System Activation</controllingFieldValue>
+            <valueName>System Activation Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PV Materials Verification</controllingFieldValue>
+            <valueName>Start Date for Materials Delivery Committed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PV Materials Verification</controllingFieldValue>
+            <valueName>Materials Delivery Exception</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PV Materials Verification</controllingFieldValue>
+            <valueName>Materials Delivery Confirmed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PV Materials Verification</controllingFieldValue>
+            <valueName>Fulfilled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Certification</controllingFieldValue>
+            <controllingFieldValue>Incentives SRECTrade</controllingFieldValue>
+            <valueName>Required - Pending Internal Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Certification</controllingFieldValue>
+            <valueName>Step 1 - Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Certification</controllingFieldValue>
+            <valueName>Step 1 - Corrections Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Certification</controllingFieldValue>
+            <valueName>Step 1 - Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Certification</controllingFieldValue>
+            <valueName>Step 2 - Pending</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Certification</controllingFieldValue>
+            <valueName>Step 2 - Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Certification</controllingFieldValue>
+            <valueName>Step 2 - Corrections Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Certification</controllingFieldValue>
+            <valueName>Step 2 - Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Certification</controllingFieldValue>
+            <valueName>Certification Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentives SRECTrade</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MD)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (NV)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (San Antonio TX)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (IL ABP)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (RI ReGrowth)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <valueName>Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentives SRECTrade</controllingFieldValue>
+            <valueName>Pending Submittal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentives SRECTrade</controllingFieldValue>
+            <valueName>Account Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentives SRECTrade</controllingFieldValue>
+            <valueName>Account Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentives SRECTrade</controllingFieldValue>
+            <valueName>Facility Transfer Accepted - Pending Internal Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentives SRECTrade</controllingFieldValue>
+            <valueName>Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentives SRECTrade</controllingFieldValue>
+            <valueName>Facility Transfer Sent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentives SRECTrade</controllingFieldValue>
+            <valueName>Needs Info</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Additional Adder Coordination</controllingFieldValue>
+            <valueName>Additional Pre-Construction Work Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Additional Adder Coordination</controllingFieldValue>
+            <valueName>Additional Pre-Construction Work Underway</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Additional Adder Coordination</controllingFieldValue>
+            <valueName>Additional Pre-Construction Work Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Additional Adder Coordination</controllingFieldValue>
+            <valueName>Additional Pre-Construction Work Not Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <valueName>Step 1 of 3 - Docs Sent for Signature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <valueName>Step 1 of 3 - Docs Received Signed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <valueName>Step 1 of 3 - Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <valueName>Step 1 of 3 - Corrections Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <valueName>Step 1 of 3 - Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <valueName>Step 2 of 3 Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <valueName>Step 2 of 3 - Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <valueName>Step 3 of 3 - Facility Certified - Pending Customer Action</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MD)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MA SMART)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (IL ABP)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (PennAEPS)</controllingFieldValue>
+            <valueName>Step 2 of 2 - Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MD)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MA SMART)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (IL ABP)</controllingFieldValue>
+            <valueName>Step 2 of 2 - Corrections Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <valueName>Step 3 of 3 - Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (NJ TREC)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MD)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (NV)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MA SMART)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (IL ABP)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (RI ReGrowth)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (PennAEPS)</controllingFieldValue>
+            <valueName>Incentive Process Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical Upgrade</controllingFieldValue>
+            <controllingFieldValue>Re-Roof</controllingFieldValue>
+            <controllingFieldValue>Structural Upgrade</controllingFieldValue>
+            <controllingFieldValue>Trenching</controllingFieldValue>
+            <valueName>Customer Accepted - Pending Coordination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical Upgrade</controllingFieldValue>
+            <valueName>Electrical Review Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical Upgrade</controllingFieldValue>
+            <valueName>Electrical Review Pending Site Visit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical Upgrade</controllingFieldValue>
+            <valueName>Electrical Upgrade Required Pending Quote</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical Upgrade</controllingFieldValue>
+            <valueName>Electrical Upgrade Pending Utility Disconnect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical Upgrade</controllingFieldValue>
+            <valueName>Electrical Upgrade Scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical Upgrade</controllingFieldValue>
+            <valueName>Electrical Upgrade at Installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical Upgrade</controllingFieldValue>
+            <valueName>Electrical Upgrade Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical Upgrade</controllingFieldValue>
+            <valueName>Electrical Reviewed - No Upgrade Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical Upgrade</controllingFieldValue>
+            <controllingFieldValue>Re-Roof</controllingFieldValue>
+            <controllingFieldValue>Structural Upgrade</controllingFieldValue>
+            <controllingFieldValue>Trenching</controllingFieldValue>
+            <valueName>Pending Customer Acceptance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (MD)</controllingFieldValue>
+            <valueName>Step 1 of 2 - RCEG App Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (MD)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (MA SMART)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (PennAEPS)</controllingFieldValue>
+            <valueName>Step 1 of 2 - Corrections Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (MD)</controllingFieldValue>
+            <valueName>Step 2 of 2 - Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (MD)</controllingFieldValue>
+            <valueName>Step 2 of 2 - Pending Customer Action</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ground Mount Coordination</controllingFieldValue>
+            <valueName>Planset Sent to Contractor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ground Mount Coordination</controllingFieldValue>
+            <valueName>Ground Mount Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ground Mount Coordination</controllingFieldValue>
+            <valueName>Ground Mount Pending Coordination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ground Mount Coordination</controllingFieldValue>
+            <valueName>Ground Mount Plot Staked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ground Mount Coordination</controllingFieldValue>
+            <valueName>Ground Mount Scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ground Mount Coordination</controllingFieldValue>
+            <valueName>Ground Mount Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ground Mount Coordination</controllingFieldValue>
+            <valueName>Ground Mount Not Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (NV)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (San Antonio TX)</controllingFieldValue>
+            <valueName>Docs Sent for Signature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (NV)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (San Antonio TX)</controllingFieldValue>
+            <valueName>Docs Received Signed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Re-Roof</controllingFieldValue>
+            <valueName>Roof Review Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Re-Roof</controllingFieldValue>
+            <valueName>Roof Review Pending Site Visit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Re-Roof</controllingFieldValue>
+            <valueName>Re-Roof Required Pending Quote</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Re-Roof</controllingFieldValue>
+            <valueName>Re-Roof Underway</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Re-Roof</controllingFieldValue>
+            <valueName>Re-Roof Complete - Pending JCO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Re-Roof</controllingFieldValue>
+            <valueName>Roof Complete - Ready for invoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Re-Roof</controllingFieldValue>
+            <valueName>Roof Reviewed - Re-Roof Not Needed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <valueName>Step 1 of 3 - LOI Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <valueName>Step 2 of 3 - Docs Sent for Signature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <valueName>Step 2 of 3 - Docs Received Signed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <valueName>Step 3 of 3 - Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (Austin TX)</controllingFieldValue>
+            <valueName>Step 3 of 3 - Corrections Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural Upgrade</controllingFieldValue>
+            <valueName>Structural Review Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural Upgrade</controllingFieldValue>
+            <valueName>Structural Review Pending Site Visit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural Upgrade</controllingFieldValue>
+            <valueName>Structural Upgrade Required Pending Quote</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural Upgrade</controllingFieldValue>
+            <valueName>Structural Upgrade Scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural Upgrade</controllingFieldValue>
+            <valueName>Structural Upgrade at Installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural Upgrade</controllingFieldValue>
+            <valueName>Structural Upgrade Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Structural Upgrade</controllingFieldValue>
+            <valueName>Structural Reviewed - No Upgrade Needed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (San Antonio TX)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (RI ReGrowth)</controllingFieldValue>
+            <valueName>Corrections Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (San Antonio TX)</controllingFieldValue>
+            <controllingFieldValue>HOA</controllingFieldValue>
+            <valueName>Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trenching</controllingFieldValue>
+            <valueName>Trenching Review Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trenching</controllingFieldValue>
+            <valueName>Trenching Review Pending Site Visit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trenching</controllingFieldValue>
+            <valueName>Trenching Required Pending Quote</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trenching</controllingFieldValue>
+            <valueName>Trenching Scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trenching</controllingFieldValue>
+            <valueName>Trenching at Installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trenching</controllingFieldValue>
+            <valueName>Trenching Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trenching</controllingFieldValue>
+            <valueName>Trenching Reviewed - Not Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contract Processing- Document Verification</controllingFieldValue>
+            <valueName>Contract Processing Pending Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contract Processing- Document Verification</controllingFieldValue>
+            <valueName>Contracts reviewed- Documents Incomplete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contract Processing- Document Verification</controllingFieldValue>
+            <valueName>Contracts reviewed- Documents Incomplete(Reason 1)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contract Processing- Document Verification</controllingFieldValue>
+            <valueName>Contracts reviewed- Documents Incomplete(Reason 2)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contract Processing- Document Verification</controllingFieldValue>
+            <valueName>Contracts reviewed- Documents Incomplete(Reason 3)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contract Processing- Document Verification</controllingFieldValue>
+            <valueName>Contracts reviewed- Documents Incomplete(Reason 4)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contract Processing- Document Verification</controllingFieldValue>
+            <valueName>Contract reviewed- Third Party delay/ Discrepancy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contract Processing- Document Verification</controllingFieldValue>
+            <valueName>Contract Processing Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Document Verification</controllingFieldValue>
+            <valueName>Document Verification - Pending Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Document Verification</controllingFieldValue>
+            <valueName>Document Verification - Incomplete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Document Verification</controllingFieldValue>
+            <valueName>Document Verification - Incomplete (Reason 1)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Document Verification</controllingFieldValue>
+            <valueName>Document Verification - Incomplete (Reason 2)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Document Verification</controllingFieldValue>
+            <valueName>Document Verification - Incomplete (Reason 3)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Document Verification</controllingFieldValue>
+            <valueName>Document Verification - Documentation Delay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Document Verification</controllingFieldValue>
+            <valueName>Document Verification - Documentation Delay (Reason 1)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Document Verification</controllingFieldValue>
+            <valueName>Document Verification - Documentation Delay (Reason 2)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Document Verification</controllingFieldValue>
+            <valueName>Document Verification - Documentation Delay (Reason 3)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Document Verification</controllingFieldValue>
+            <valueName>Document Verification - Document Reviewed CRC completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <valueName>Pending JCO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <valueName>Field Complete in QC Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <valueName>Incomplete JCO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <valueName>Field Remedies Needed - QCA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <valueName>QC Review - Pending Design Revision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <valueName>QC Approved With Exceptions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <valueName>QC Approved Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <valueName>Rejected - Pending Correction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HOA</controllingFieldValue>
+            <valueName>Submission Not Required (Non Carolina Markets)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HOA</controllingFieldValue>
+            <controllingFieldValue>Site Approval</controllingFieldValue>
+            <valueName>Preparing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HOA</controllingFieldValue>
+            <valueName>Sent for Signature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HOA</controllingFieldValue>
+            <valueName>Submitted/Sent to HO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HOA</controllingFieldValue>
+            <valueName>Confirmed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HOA</controllingFieldValue>
+            <valueName>Denied/Appealing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HOA</controllingFieldValue>
+            <valueName>HO Bypass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HOA</controllingFieldValue>
+            <valueName>Cancelled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <valueName>Installation Complete- Pending Scheduling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <valueName>Inspection Pending Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <valueName>Scheduling Pending As-Builts/Redesign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <valueName>Inspection Pending Inspector</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <valueName>Inspection Pending Affidavit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <valueName>Inspection Pending Utility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <valueName>Inspection Scheduling Blocked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <valueName>Inspection Scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <valueName>Inspection Failed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <valueName>Pending Remediation/Corrections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <valueName>Inspection Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <valueName>Inspection Complete- Pending Inspection Documentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <valueName>Inspection Complete-Pending WO Close Out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Approval</controllingFieldValue>
+            <valueName>Change Order Pending</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Approval</controllingFieldValue>
+            <valueName>Not Started</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Approval</controllingFieldValue>
+            <valueName>Change Order Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Approval</controllingFieldValue>
+            <valueName>Design Outsourced</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Approval</controllingFieldValue>
+            <valueName>Professional Engineering Stamp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Approval</controllingFieldValue>
+            <valueName>Final Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Approval</controllingFieldValue>
+            <valueName>Site Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <valueName>Virtual Survey Sent to Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <valueName>Virtual Survey Received- Pending Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <valueName>Additional Photos Needed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <valueName>Physical Survey Required - Palmetto Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <valueName>Physical Survey Required - 3rd Party Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <controllingFieldValue>Physical Survey</controllingFieldValue>
+            <valueName>Physical Survey Scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <controllingFieldValue>Physical Survey</controllingFieldValue>
+            <valueName>Physical Survey Reschedule Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <controllingFieldValue>Physical Survey</controllingFieldValue>
+            <valueName>Physical Survey Rescheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <controllingFieldValue>Physical Survey</controllingFieldValue>
+            <valueName>Survey Complete - Confirmed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <valueName>Virtual Survey Pending</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <valueName>Virtual Survey Insufficient</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <valueName>Virtual Survey Rejected by Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Survey</controllingFieldValue>
+            <valueName>Survey Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Survey</controllingFieldValue>
+            <valueName>New- Physical Survey Pending Scheduling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Survey</controllingFieldValue>
+            <valueName>Physical Survey Scheduling Pending Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (MA SMART)</controllingFieldValue>
+            <valueName>Action Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (MA SMART)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (PennAEPS)</controllingFieldValue>
+            <valueName>Step 1 of 2 - Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (MA SMART)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <valueName>Step 2 of 2 - Docs Sent for Signature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (MA SMART)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <valueName>Step 2 of 2 - Docs Received Signed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (MA SMART)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (PennAEPS)</controllingFieldValue>
+            <valueName>Step 1 of 2 - Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (IL ABP)</controllingFieldValue>
+            <valueName>Step 1 of 2 - Docs Sent for Signature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (IL ABP)</controllingFieldValue>
+            <valueName>Step 1 of 2 - Docs Received Signed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (IL ABP)</controllingFieldValue>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <valueName>Step 2 of 2 - Required - Pending Production</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (IL ABP)</controllingFieldValue>
+            <valueName>Step 2 of 2 - Account Transfer Initiated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (IL ABP)</controllingFieldValue>
+            <valueName>Step 2 of 2 - Account Transfer Accepted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (RI ReGrowth)</controllingFieldValue>
+            <valueName>App Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <valueName>Step 1 of 1 - Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <valueName>Step 2 of 2 - Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <valueName>Step 2a - Change Order Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <valueName>Step 2a - Change Order Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <valueName>Step 2b - Inspection Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <valueName>Step 2a/b - Corrections Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <valueName>Step 2a/b - Corrections Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (CT Green Bank)</controllingFieldValue>
+            <valueName>Step 2c - Pending Green Bank Action</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (PennAEPS)</controllingFieldValue>
+            <valueName>Required - Pending Production</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (PennAEPS)</controllingFieldValue>
+            <valueName>Step 2 of 2 - Pipeline Report Sent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incentive Submittal (PennAEPS)</controllingFieldValue>
+            <valueName>Step 2 of 2 - Facility Certified - Pending Customer Action</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Pending Submittal to AHJ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Permit Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Change of Contractor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Permit Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Permit Rejected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Pending ICA Approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Pending Work Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Pending Redesign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Pending Resurvey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Pending Wet Stamped Plans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Pending Customer Signed Docs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Pending AHJ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Pending HOA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Pending Build Only Partner Action</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Pending AHJ Research/Registration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Ground Mount Coordination Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Issuance</controllingFieldValue>
+            <valueName>Permit Approved, Pending Issuance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Docket Number Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Docket Number Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Revision Signature Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Revision Request Resubmitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Work Order Number Requested Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Work Order Number Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Interconnection Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Net Metering Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Utility Approval for Install</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

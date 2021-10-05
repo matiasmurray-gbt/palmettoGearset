@@ -1,0 +1,5 @@
+{!Account.Name}
+{!Account.BillingAddress}
+{!Opportunity.Installation_Team__c}
+
+The customer has approved the final design. Please move forward with the final engineering plan set.

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Indeed Response Message</name>
+    <style>none</style>
+    <subject>Palmetto Solar - We&apos;d like to Partner with Company Name</subject>
+    <textOnly>Hi {!Contact.Name},
+
+Thank you for expressing interest in our posting. I&apos;d like to arrange a time to discuss the opportunity to work with Palmetto in more detail. When you have a moment, use the meeting link below to view my availability and book time directly on my calendar. You&apos;ll be sent an invite with a Zoom meeting link shortly thereafter for our conversation.
+
+https://calendly.com/mike-schamp/45min. I look forward to speaking with you soon!
+
+Cheers, Mike Schamp Senior Manager - Build Partner 781-439-5572</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

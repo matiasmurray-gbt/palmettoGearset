@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AAA Solar</fullName>
+        <default>false</default>
+        <label>AAA Solar</label>
+    </customValue>
+    <customValue>
+        <fullName>AG Electric</fullName>
+        <default>false</default>
+        <label>AG Electric</label>
+    </customValue>
+    <customValue>
+        <fullName>AVA Electrical and Lighting</fullName>
+        <default>false</default>
+        <label>AVA Electrical and Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>Beacon</fullName>
+        <default>false</default>
+        <label>Beacon</label>
+    </customValue>
+    <customValue>
+        <fullName>Castaways Energy LLC</fullName>
+        <default>false</default>
+        <label>Castaways Energy LLC</label>
+    </customValue>
+    <customValue>
+        <fullName>CFTC</fullName>
+        <default>false</default>
+        <label>CFTC</label>
+    </customValue>
+    <customValue>
+        <fullName>Charge Up Electric</fullName>
+        <default>false</default>
+        <label>Charge Up Electric</label>
+    </customValue>
+    <customValue>
+        <fullName>CT Renewables</fullName>
+        <default>false</default>
+        <label>CT Renewables</label>
+    </customValue>
+    <customValue>
+        <fullName>DBT Solar</fullName>
+        <default>false</default>
+        <label>DBT Solar</label>
+    </customValue>
+    <customValue>
+        <fullName>Devlin</fullName>
+        <default>false</default>
+        <label>Devlin</label>
+    </customValue>
+    <customValue>
+        <fullName>DK energy</fullName>
+        <default>false</default>
+        <label>DK energy</label>
+    </customValue>
+    <customValue>
+        <fullName>Eco Solar Solutions</fullName>
+        <default>false</default>
+        <label>Eco Solar Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>First Light</fullName>
+        <default>false</default>
+        <label>First Light</label>
+    </customValue>
+    <customValue>
+        <fullName>FirstLight Greenville</fullName>
+        <default>false</default>
+        <label>FirstLight Greenville</label>
+    </customValue>
+    <customValue>
+        <fullName>FirstLight NJ</fullName>
+        <default>false</default>
+        <label>FirstLight NJ</label>
+    </customValue>
+    <customValue>
+        <fullName>Guardian</fullName>
+        <default>false</default>
+        <label>Guardian</label>
+    </customValue>
+    <customValue>
+        <fullName>Hytek Energy</fullName>
+        <default>false</default>
+        <label>Hytek Energy</label>
+    </customValue>
+    <customValue>
+        <fullName>Illinois Crew</fullName>
+        <default>false</default>
+        <label>Illinois Crew</label>
+    </customValue>
+    <customValue>
+        <fullName>Internal</fullName>
+        <default>false</default>
+        <label>Internal</label>
+    </customValue>
+    <customValue>
+        <fullName>KW Solar</fullName>
+        <default>false</default>
+        <label>KW Solar</label>
+    </customValue>
+    <customValue>
+        <fullName>Michigan Solar Solutions</fullName>
+        <default>false</default>
+        <label>Michigan Solar Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>National Solar Service</fullName>
+        <default>false</default>
+        <label>National Solar Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Service Solar</fullName>
+        <default>false</default>
+        <label>Public Service Solar</label>
+    </customValue>
+    <customValue>
+        <fullName>Re-Think</fullName>
+        <default>false</default>
+        <label>Re-Think</label>
+    </customValue>
+    <customValue>
+        <fullName>Revolution Energy Systems</fullName>
+        <default>false</default>
+        <label>Revolution Energy Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Skyline</fullName>
+        <default>false</default>
+        <label>Skyline</label>
+    </customValue>
+    <customValue>
+        <fullName>Solar Elite</fullName>
+        <default>false</default>
+        <label>Solar Elite</label>
+    </customValue>
+    <customValue>
+        <fullName>Solar Ready Solutions</fullName>
+        <default>false</default>
+        <label>Solar Ready Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>SunWise</fullName>
+        <default>false</default>
+        <label>SunWise</label>
+    </customValue>
+    <customValue>
+        <fullName>Traveling Crew</fullName>
+        <default>false</default>
+        <label>Traveling Crew</label>
+    </customValue>
+    <customValue>
+        <fullName>Vision NJ</fullName>
+        <default>false</default>
+        <label>Vision NJ</label>
+    </customValue>
+    <customValue>
+        <fullName>Xtreme Solar</fullName>
+        <default>false</default>
+        <label>Xtreme Solar</label>
+    </customValue>
+    <masterLabel>Build Partners</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_BP_Team__c</fullName>
+    <externalId>false</externalId>
+    <label>Service BP Team</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AAA Solar</fullName>
+                <default>false</default>
+                <label>AAA Solar</label>
+            </value>
+            <value>
+                <fullName>Beacon</fullName>
+                <default>false</default>
+                <label>Beacon</label>
+            </value>
+            <value>
+                <fullName>Castaways Energy LLC</fullName>
+                <default>false</default>
+                <label>Castaways Energy LLC</label>
+            </value>
+            <value>
+                <fullName>Coldwell Electric</fullName>
+                <default>false</default>
+                <label>Coldwell Electric</label>
+            </value>
+            <value>
+                <fullName>DBT Solar</fullName>
+                <default>false</default>
+                <label>DBT Solar</label>
+            </value>
+            <value>
+                <fullName>DK energy</fullName>
+                <default>false</default>
+                <label>DK energy</label>
+            </value>
+            <value>
+                <fullName>East Coast Solar Services</fullName>
+                <default>false</default>
+                <label>East Coast Solar Services</label>
+            </value>
+            <value>
+                <fullName>EcoSmart Home Solutions</fullName>
+                <default>false</default>
+                <label>EcoSmart Home Solutions</label>
+            </value>
+            <value>
+                <fullName>Essien Energy</fullName>
+                <default>false</default>
+                <label>Essien Energy</label>
+            </value>
+            <value>
+                <fullName>Generation Solar</fullName>
+                <default>false</default>
+                <label>Generation Solar</label>
+            </value>
+            <value>
+                <fullName>Green Light Solar</fullName>
+                <default>false</default>
+                <label>Green Light Solar</label>
+            </value>
+            <value>
+                <fullName>Green Rack Contracting</fullName>
+                <default>false</default>
+                <label>Green Rack Contracting</label>
+            </value>
+            <value>
+                <fullName>Green Solar Systems</fullName>
+                <default>false</default>
+                <label>Green Solar Systems</label>
+            </value>
+            <value>
+                <fullName>Hytek Energy</fullName>
+                <default>false</default>
+                <label>Hytek Energy</label>
+            </value>
+            <value>
+                <fullName>IconPower</fullName>
+                <default>false</default>
+                <label>IconPower</label>
+            </value>
+            <value>
+                <fullName>KW Solar</fullName>
+                <default>false</default>
+                <label>KW Solar</label>
+            </value>
+            <value>
+                <fullName>National Solar Service</fullName>
+                <default>false</default>
+                <label>National Solar Service</label>
+            </value>
+            <value>
+                <fullName>NV Rebels</fullName>
+                <default>false</default>
+                <label>NV Rebels</label>
+            </value>
+            <value>
+                <fullName>Plug PV</fullName>
+                <default>false</default>
+                <label>Plug PV</label>
+            </value>
+            <value>
+                <fullName>Public Service Solar</fullName>
+                <default>false</default>
+                <label>Public Service Solar</label>
+            </value>
+            <value>
+                <fullName>Revolution Energy Systems</fullName>
+                <default>false</default>
+                <label>Revolution Energy Systems</label>
+            </value>
+            <value>
+                <fullName>Rooftop Solar</fullName>
+                <default>false</default>
+                <label>Rooftop Solar</label>
+            </value>
+            <value>
+                <fullName>SAVKAT Solar</fullName>
+                <default>false</default>
+                <label>SAVKAT Solar</label>
+            </value>
+            <value>
+                <fullName>Skyline Solar</fullName>
+                <default>false</default>
+                <label>Skyline Solar</label>
+            </value>
+            <value>
+                <fullName>Solar Elite</fullName>
+                <default>false</default>
+                <label>Solar Elite</label>
+            </value>
+            <value>
+                <fullName>Solar Ready Solutions</fullName>
+                <default>false</default>
+                <label>Solar Ready Solutions</label>
+            </value>
+            <value>
+                <fullName>SunWire</fullName>
+                <default>false</default>
+                <label>SunWire</label>
+            </value>
+            <value>
+                <fullName>Sustainable Energy</fullName>
+                <default>false</default>
+                <label>Sustainable Energy</label>
+            </value>
+            <value>
+                <fullName>Synaptic</fullName>
+                <default>false</default>
+                <label>Synaptic</label>
+            </value>
+            <value>
+                <fullName>Tempo Electric</fullName>
+                <default>false</default>
+                <label>Tempo Electric</label>
+            </value>
+            <value>
+                <fullName>Very Good Electrical</fullName>
+                <default>false</default>
+                <label>Very Good Electrical</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

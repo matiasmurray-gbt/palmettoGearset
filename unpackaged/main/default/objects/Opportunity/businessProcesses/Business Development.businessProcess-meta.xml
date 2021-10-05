@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business Development</fullName>
+    <description>Business development activities related to major accounts (&gt;$10mm+)</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>A - Prospect</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>B - Early Discussion</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>C - Advanced Discussion%28Term Sheet Sent%29</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>D - Partner Documentation Collection%28Initial%29</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>E - Partner Documents Review</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>F - Partner Documents Confirm</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>G - Term Sheet Executed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>H - Training Assigned</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>I - Definitive Docs Sent</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>J - Contract Won %28Definitive Docs Signed%29</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>K - Deal Funded</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>L - Closed Lost</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

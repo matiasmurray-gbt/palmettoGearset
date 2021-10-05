@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>In_Person_Signing</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>In Person Signing</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT("/apex/dsfs__DocuSign_JavaScript")}
+ 
+//********* Option Declarations (Do not modify )*********//
+var CCRM='';var CRL='';var CCTM=''; var LA='';
+//*************************************************//
+ 
+// Modify individual options here:
+ 
+// Custom Contact Role Map (default config role)
+CCRM = 'PrimaryContact~HomeOwner 1;SalesContact~Sales Rep';
+ 
+// Custom Recipient List (Individual)
+CRL = 'Email~{!Opportunity.OwnerEmail};LastName~{!Opportunity.OwnerLastName};FirstName~{!Opportunity.OwnerFirstName};SignInPersonName~{!Opportunity.Contact_DocuSign__c};RoutingOrder~1;Role~PrimaryContact;SignNow~1,Email~{!Opportunity.OwnerEmail};LastName~{!Opportunity.OwnerLastName};FirstName~{!Opportunity.OwnerFirstName};RoutingOrder~2;Role~SalesContact;SignNow~1';
+ 
+// Custom Contact Type Map
+CCTM = 'PrimaryContact~Sign In Person;SalesContact~Signer';
+ 
+// Load Attachments parameter
+LA = '0';
+ 
+ 
+//********* Page Callout (Do not modify) *********//
+window.location.href = "/apex/dsfs__DocuSign_CreateEnvelope?DSEID=0&amp;SourceID={!Opportunity.Id}&amp;CCRM="+CCRM+"&amp;CRL="+CRL+"&amp;CCTM="+CCTM+"&amp;LA="+LA;
+//*******************************************//</url>
+</WebLink>

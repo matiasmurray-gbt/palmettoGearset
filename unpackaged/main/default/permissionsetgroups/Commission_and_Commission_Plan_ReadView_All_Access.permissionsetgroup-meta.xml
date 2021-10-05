@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Object: Commission and Commission Plan
+Access: Read/View All
+NO access to Processing Commission Tab</description>
+    <label>Commission and Commission Plan Read/View All Access</label>
+    <permissionSets>Commission_Plan_Read_View_All</permissionSets>
+    <permissionSets>Commission_Read_View_All</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

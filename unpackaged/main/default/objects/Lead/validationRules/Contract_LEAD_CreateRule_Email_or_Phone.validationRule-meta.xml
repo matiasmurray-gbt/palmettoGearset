@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_LEAD_CreateRule_Email_or_Phone</fullName>
+    <active>true</active>
+    <description>Email or Phone is needed to create a Lead.</description>
+    <errorConditionFormula>RecordTypeId = "0121a000000eQYP" /* Inside/Outside Sales */
+&amp;&amp; 
+ISNEW() 
+&amp;&amp;
+ISBLANK(Email) &amp;&amp; ISBLANK(Phone)</errorConditionFormula>
+    <errorDisplayField>Email</errorDisplayField>
+    <errorMessage>You must complete either an Email or Phone to create a Lead.</errorMessage>
+</ValidationRule>

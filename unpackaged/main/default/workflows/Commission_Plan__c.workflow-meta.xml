@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Plan_Field</fullName>
+        <field>Plan__c</field>
+        <literalValue>Channel</literalValue>
+        <name>Plan Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Plan_Type_Field</fullName>
+        <field>Plan_Type__c</field>
+        <literalValue>Channel Sales</literalValue>
+        <name>Plan Type Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Activation Dept - Intro Fee</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Commission_Plan__c.Name</field>
+            <operation>equals</operation>
+            <value>Activation Dept - Intro Fee</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Channel Sales Commission Fields</fullName>
+        <actions>
+            <name>Plan_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Plan_Type_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Commission_Plan__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Channel Sales</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Dealer Fee Price Match update - Commission Plan</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Commission_Plan__c.Dealer_Fee_Price_Match_Active__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Commission Plan Created</fullName>
+        <actions>
+            <name>New_Commission_Plan_Created</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Commission_Plan__c.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

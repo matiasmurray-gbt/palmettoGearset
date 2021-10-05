@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sunlight</fullName>
+                <default>false</default>
+                <label>Sunlight</label>
+            </value>
+            <value>
+                <fullName>Lease</fullName>
+                <default>false</default>
+                <label>Lease</label>
+            </value>
+            <value>
+                <fullName>PPA</fullName>
+                <default>false</default>
+                <label>PPA</label>
+            </value>
+            <value>
+                <fullName>Loanpal</fullName>
+                <default>false</default>
+                <label>Loanpal</label>
+            </value>
+            <value>
+                <fullName>Loan</fullName>
+                <default>false</default>
+                <label>Loan</label>
+            </value>
+            <value>
+                <fullName>LoanPal Subprime</fullName>
+                <default>false</default>
+                <label>LoanPal Subprime</label>
+            </value>
+            <value>
+                <fullName>JCO - General</fullName>
+                <default>false</default>
+                <label>JCO - General</label>
+            </value>
+            <value>
+                <fullName>JCO - Comprehensive</fullName>
+                <default>false</default>
+                <label>JCO - Comprehensive</label>
+            </value>
+            <value>
+                <fullName>Rocket</fullName>
+                <default>false</default>
+                <label>Rocket</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <valueName>Sunlight</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <valueName>Loanpal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <valueName>LoanPal Subprime</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan except Sunnova</controllingFieldValue>
+            <valueName>Rocket</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <valueName>Lease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <controllingFieldValue>SunRun</controllingFieldValue>
+            <valueName>PPA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sunnova</controllingFieldValue>
+            <valueName>Loan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <valueName>JCO - General</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Close Out</controllingFieldValue>
+            <valueName>JCO - Comprehensive</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

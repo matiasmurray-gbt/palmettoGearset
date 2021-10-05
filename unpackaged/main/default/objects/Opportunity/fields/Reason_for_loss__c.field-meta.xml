@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_loss__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason for Loss</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cancelled with Finance Partner</fullName>
+                <default>false</default>
+                <label>Cancelled with Finance Partner</label>
+            </value>
+            <value>
+                <fullName>Customer unresponsive</fullName>
+                <default>false</default>
+                <label>Customer unresponsive</label>
+            </value>
+            <value>
+                <fullName>Decided against Solar</fullName>
+                <default>false</default>
+                <label>Decided against Solar</label>
+            </value>
+            <value>
+                <fullName>Decreased production after redesign</fullName>
+                <default>false</default>
+                <label>Decreased production after redesign</label>
+            </value>
+            <value>
+                <fullName>Desires Lead Gen Service</fullName>
+                <default>false</default>
+                <label>Desires Lead Gen Service</label>
+            </value>
+            <value>
+                <fullName>Didn't want it on Front of House</fullName>
+                <default>false</default>
+                <label>Didn't want it on Front of House</label>
+            </value>
+            <value>
+                <fullName>Dislike Comp Structure</fullName>
+                <default>false</default>
+                <label>Dislike Comp Structure</label>
+            </value>
+            <value>
+                <fullName>Disqualified</fullName>
+                <default>false</default>
+                <label>Disqualified</label>
+            </value>
+            <value>
+                <fullName>Doesn't like subscription</fullName>
+                <default>false</default>
+                <label>Doesn't like subscription</label>
+            </value>
+            <value>
+                <fullName>Doesn't like upfront install cost</fullName>
+                <default>false</default>
+                <label>Doesn't like upfront install cost</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Didn't pass credit</fullName>
+                <default>false</default>
+                <label>Finance Stipulation or Credit Issue</label>
+            </value>
+            <value>
+                <fullName>Has EM already</fullName>
+                <default>false</default>
+                <label>Has EM already</label>
+            </value>
+            <value>
+                <fullName>HOA Denied</fullName>
+                <default>false</default>
+                <label>HOA Denied</label>
+            </value>
+            <value>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+                <label>Inactive</label>
+            </value>
+            <value>
+                <fullName>Moving Out of the Area</fullName>
+                <default>false</default>
+                <label>Moving Out of the Area</label>
+            </value>
+            <value>
+                <fullName>Needs rescheduling</fullName>
+                <default>false</default>
+                <label>Needs rescheduling</label>
+            </value>
+            <value>
+                <fullName>Never agreed to appointment</fullName>
+                <default>false</default>
+                <label>Never agreed to appointment</label>
+            </value>
+            <value>
+                <fullName>No Response</fullName>
+                <default>false</default>
+                <label>No Response</label>
+            </value>
+            <value>
+                <fullName>No Solar Experience</fullName>
+                <default>false</default>
+                <label>No Solar Experience</label>
+            </value>
+            <value>
+                <fullName>Not able to Use Tax Credits/Incentives</fullName>
+                <default>false</default>
+                <label>Not able to Use Tax Credits/Incentives</label>
+            </value>
+            <value>
+                <fullName>Not a single family home</fullName>
+                <default>false</default>
+                <label>Not a single family home</label>
+            </value>
+            <value>
+                <fullName>Not enough Savings</fullName>
+                <default>false</default>
+                <label>Not Enough Savings/ROI too Long</label>
+            </value>
+            <value>
+                <fullName>Not in right utility service area</fullName>
+                <default>false</default>
+                <label>Not in right utility service area</label>
+            </value>
+            <value>
+                <fullName>Opportunity Clean-up</fullName>
+                <default>false</default>
+                <label>Opportunity Clean-up</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Roof/Structural Total DQ</fullName>
+                <default>false</default>
+                <label>Roof/Structural Total DQ</label>
+            </value>
+            <value>
+                <fullName>Roof Issues</fullName>
+                <default>false</default>
+                <label>Roof Issues-Addressable</label>
+            </value>
+            <value>
+                <fullName>Moving to a New Home</fullName>
+                <default>false</default>
+                <label>Selling Home Soon</label>
+            </value>
+            <value>
+                <fullName>Shading</fullName>
+                <default>false</default>
+                <label>Shading</label>
+            </value>
+            <value>
+                <fullName>SLA Issues</fullName>
+                <default>false</default>
+                <label>SLA Issues</label>
+            </value>
+            <value>
+                <fullName>System producing so well doesn't see need</fullName>
+                <default>false</default>
+                <label>System producing so well doesn't see need</label>
+            </value>
+            <value>
+                <fullName>Timelines</fullName>
+                <default>false</default>
+                <label>Timelines</label>
+            </value>
+            <value>
+                <fullName>Want to be completely off the grid</fullName>
+                <default>false</default>
+                <label>Want to be completely off the grid</label>
+            </value>
+            <value>
+                <fullName>Went with Competitor</fullName>
+                <default>false</default>
+                <label>Went with Competitor</label>
+            </value>
+            <value>
+                <fullName>Won't change consumption habits</fullName>
+                <default>false</default>
+                <label>Won't change consumption habits</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

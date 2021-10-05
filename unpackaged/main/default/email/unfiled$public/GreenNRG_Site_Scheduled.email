@@ -1,0 +1,2 @@
+The Site Audit has been scheduled for Account Name: {!Account.Name} - 
+on {!Opportunity.Site_Audit_Completed_Date__c}

@@ -1,0 +1,5 @@
+{!Opportunity.Account}
+
+{!Account.BillingAddress}
+
+Inspection Completed Date:  {!Opportunity.Inspection_Completed_Date__c}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X1_SC_Resi_Pre_Install_Checklist</fullName>
+    <booleanFilter>1 AND (2 OR 6 OR 7) AND 4 AND 3 And 5</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>System_Size_Calculated_kW__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>Sub_Market__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Contract_Received_Date__c</columns>
+    <columns>Days_Since_Contract_Received__c</columns>
+    <columns>Loan_Docs_Signed_Cash_Check_Received__c</columns>
+    <columns>Homeowner_Install_Agreement_Signed__c</columns>
+    <columns>Energy_Bill_Attached__c</columns>
+    <columns>Homeowners_Insurance_Docs_Attached__c</columns>
+    <columns>Post_Sales_Pre_Installation_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>7. Contract Received,8. Site Audit Scheduled,10. Site Approved</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>equals</operation>
+        <value>Florida</value>
+    </filters>
+    <filters>
+        <field>Contract_Received_Confirmed__c</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>Test</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>,12. Engineering Package Sent,13. Engineering Design Complete</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>14. Permit Sent,15. Permit Ready</value>
+    </filters>
+    <label>1.0 FLA Contract Received Confirmation</label>
+    <sharedTo>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_MA</role>
+        <role>Project_Manager_FL</role>
+    </sharedTo>
+</ListView>

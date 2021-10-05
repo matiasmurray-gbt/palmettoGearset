@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>CRC_Corporate_Actual_Paid</fullName>
+        <field>CRC_Corporate_Profit_Actual_Paid__c</field>
+        <formula>M1_Corporate_Profit_Draw__c</formula>
+        <name>CRC - Corporate Actual Paid</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CRC_Corporate_Paid_Date</fullName>
+        <field>CRC_Corporate_Profit_Paid_Date__c</field>
+        <formula>Today()</formula>
+        <name>CRC - Corporate Paid Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CRC_Profit_Clawback</fullName>
+        <field>CRC_Corporate_Profit_Clawback_Date__c</field>
+        <formula>Today()</formula>
+        <name>CRC Profit Clawback</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CRC_Profit_Clawback_Amount</fullName>
+        <field>CRC_Corporate_Profit_Actual_Paid__c</field>
+        <formula>0</formula>
+        <name>CRC Profit Clawback Amount</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Install_Corporate_Profit_Actual_Paid</fullName>
+        <field>Install_Corporate_Profit_Actual_Paid__c</field>
+        <formula>M2_Corporate_Profit_Draw__c</formula>
+        <name>Install - Corporate Profit Actual Paid</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Install_Corporate_Profit_Paid_Date</fullName>
+        <field>Install_Corporate_Profit_Paid_Date__c</field>
+        <formula>Today()</formula>
+        <name>Install - Corporate Profit Paid Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Solar_Install_Gross_Margin_Value</fullName>
+        <field>Solar_Install_Gross_Margin_Value__c</field>
+        <formula>Solar_Install_Gross_Margin__c</formula>
+        <name>Solar Install Gross Margin Value</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>CRC - Corporate Paid Date</fullName>
+        <actions>
+            <name>CRC_Corporate_Actual_Paid</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>CRC_Corporate_Paid_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Treasury_Mgmt__c.CRC_Corporate_Profit_Paid__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CRC Profit Clawback</fullName>
+        <actions>
+            <name>CRC_Profit_Clawback</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>CRC_Profit_Clawback_Amount</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Treasury_Mgmt__c.CRC_Corporate_Profit_Clawback__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Install - Corporate Profit Paid Date</fullName>
+        <actions>
+            <name>Install_Corporate_Profit_Actual_Paid</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Install_Corporate_Profit_Paid_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Treasury_Mgmt__c.Install_Corporate_Profit_Paid__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Solar Install Gross Margin Value</fullName>
+        <actions>
+            <name>Solar_Install_Gross_Margin_Value</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Treasury_Mgmt__c.CreatedById</field>
+            <operation>notEqual</operation>
+            <value>XXXX</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_since_contract_received_confirmed__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(Installation_Complete_Date__c) = True, IF( TODAY() - Contract_Received_Confirmed_Date__c &gt; 0, TODAY() - Contract_Received_Confirmed_Date__c, 0), Installation_Complete_Date__c - Contract_Received_Confirmed_Date__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days since contract received confirmed</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Business Development</fullName>
+        <default>false</default>
+        <label>Business Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Electrical Vehicle Charging Equipment</fullName>
+        <default>false</default>
+        <label>Electrical Vehicle Charging Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Electrical Work</fullName>
+        <default>false</default>
+        <label>Electrical Work</label>
+    </customValue>
+    <customValue>
+        <fullName>Ground Mount</fullName>
+        <default>false</default>
+        <label>Ground Mount</label>
+    </customValue>
+    <customValue>
+        <fullName>Inspection</fullName>
+        <default>false</default>
+        <label>Inspection</label>
+    </customValue>
+    <customValue>
+        <fullName>Installation</fullName>
+        <default>false</default>
+        <label>Installation</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Voltage (Thermostat)</fullName>
+        <default>false</default>
+        <label>Low Voltage (Thermostat)</label>
+    </customValue>
+    <customValue>
+        <fullName>Main Panel Upgrade</fullName>
+        <default>false</default>
+        <label>Main Panel Upgrade</label>
+    </customValue>
+    <customValue>
+        <fullName>O&amp;M</fullName>
+        <default>false</default>
+        <label>O&amp;M</label>
+    </customValue>
+    <customValue>
+        <fullName>Permit and Installation</fullName>
+        <default>false</default>
+        <label>Permit and Installation</label>
+    </customValue>
+    <customValue>
+        <fullName>Permitting</fullName>
+        <default>false</default>
+        <label>Permitting</label>
+    </customValue>
+    <customValue>
+        <fullName>Pest Abatement</fullName>
+        <default>false</default>
+        <label>Pest Abatement</label>
+    </customValue>
+    <customValue>
+        <fullName>Plumbing</fullName>
+        <default>false</default>
+        <label>Plumbing</label>
+    </customValue>
+    <customValue>
+        <fullName>PV Installation</fullName>
+        <default>false</default>
+        <label>PV Installation</label>
+    </customValue>
+    <customValue>
+        <fullName>Rafter / Structural Upgrades</fullName>
+        <default>false</default>
+        <label>Rafter / Structural Upgrades</label>
+    </customValue>
+    <customValue>
+        <fullName>Roofing</fullName>
+        <default>false</default>
+        <label>Roofing</label>
+    </customValue>
+    <customValue>
+        <fullName>Storage</fullName>
+        <default>false</default>
+        <label>Storage</label>
+    </customValue>
+    <customValue>
+        <fullName>Survey</fullName>
+        <default>false</default>
+        <label>Survey</label>
+    </customValue>
+    <customValue>
+        <fullName>Tree Removal</fullName>
+        <default>false</default>
+        <label>Tree Removal</label>
+    </customValue>
+    <customValue>
+        <fullName>Trenching</fullName>
+        <default>false</default>
+        <label>Trenching</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales</fullName>
+        <default>false</default>
+        <label>Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Design</fullName>
+        <default>false</default>
+        <label>Design</label>
+    </customValue>
+    <customValue>
+        <fullName>Site Survey</fullName>
+        <default>false</default>
+        <label>Site Survey</label>
+    </customValue>
+    <customValue>
+        <fullName>Engineering</fullName>
+        <default>false</default>
+        <label>Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>Warranty &amp; Maintenance</fullName>
+        <default>false</default>
+        <label>Warranty &amp; Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Inspections</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Inspections</label>
+    </customValue>
+    <masterLabel>Partner Scope of Work</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

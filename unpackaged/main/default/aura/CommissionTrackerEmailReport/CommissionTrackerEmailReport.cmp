@@ -1,0 +1,102 @@
+<aura:component controller="CommissionTrackerControllerLgtng">
+
+    <!--For event confirmation -->
+    <aura:handler event="c:CommissionTrackerConfirmOperationEvent" action="{!c.handleApplicationEvent}"/>
+    
+    <!--Attributes from parent -->
+    <aura:attribute name="commissionsList" type="Object[]"/>
+    <aura:attribute name="toDate" type="Date" />
+    <aura:attribute name="fromDate" type="Date" />
+    <aura:attribute name="selectedMilestones" type="List"/>
+    <aura:attribute name="availableProviders" type="List"/>
+    <aura:attribute name="disabled" type="Boolean" default="false" />
+    <aura:attribute name="messageBoxTitle" type="String" default="undefined" access="public"/>
+    <aura:attribute name="buttonLabel" type="String" default="undefined" access="public"/>
+    <aura:attribute name="display" type="String" />
+
+    <!--Child attributes-->
+    <aura:attribute name="isOpen" type="Boolean" default="false" access="private" />
+    <aura:attribute name="isLoading" type="Boolean" default="true" />
+    
+    <!--first Table-->
+    <aura:attribute name="selectedRowsCount" type="Integer" default="0" />
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="v.columns" type="Object[]" default="[
+        {label: 'Party Provider', fieldName: 'ProviderName', type: 'text'},
+        {label: 'Contacts', fieldName: 'ContactNames', type: 'text'},
+        {label: 'Emails', fieldName: 'ContactEmails', type: 'text'}
+    ]"/>
+    <!--2do Table-->
+    <aura:attribute name="selectedRowsCountTwo" type="Integer" default="0" />
+    <aura:attribute name="dataTwo" type="Object"/>
+    <aura:attribute name="v.columnsTwo" type="Object[]" default="[
+        {label: 'Party Provider', fieldName: 'ProviderName', type: 'text'},
+        {label: 'Contacts', fieldName: 'ContactNames', type: 'text'},
+        {label: 'Emails', fieldName: 'ContactEmails', type: 'text'}
+    ]"/>
+
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+
+    <aura:handler name='init' value='{!this}' action='{!c.doInit}' />
+
+    <lightning:button label="{!v.buttonLabel}" title="{!v.buttonLabel}" onclick="{! c.openModal }" disabled="{!v.disabled}"/>
+    
+    <!-- MODAL POP UP -->
+    <aura:if isTrue="{!v.isOpen}">
+        <aura:if isTrue="{!v.isLoading}">
+            <lightning:spinner alternativeText="alternativeText" size="medium" variant="brand" />
+        </aura:if>    
+        
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_large">
+            <div class="slds-modal__container slds-is-relative">
+                <!--MODAL POP UP HEADER-->
+                <header class="slds-modal__header">
+                    <lightning:buttonIcon iconName="utility:close" 
+                                        variant="bare-inverse" 
+                                        onclick="{! c.closeModal }"
+                                        class="slds-modal__close"
+                                        alternativeText="close" />
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{!v.messageBoxTitle}</h2>
+                </header>
+                <div class="slds-table--header-fixed_container slds-scrollable">
+                    <div class="slds-scrollable_x" style="width:100%;">
+                        <!--MODAL BODY-->
+						<lightning:accordion aura:id="accordion" activeSectionName="WithCommissions" allowMultipleSectionsOpen="true">
+							<lightning:accordionSection name="WithCommissions" label="Channel Partners with commissions for the period selected:">
+								<lightning:datatable
+											keyField="Id"
+											data="{! v.data }"
+											columns="{! v.columns }"
+											onrowselection="{! c.updateSelectedText }"
+											aura:id="providersData"
+								/>
+							</lightning:accordionSection>
+							<lightning:accordionSection name="WithoutCommissions" label="Channel Partners with no commissions for the period selected:">
+								<lightning:datatable
+											keyField="Id"
+											data="{! v.dataTwo }"
+											columns="{! v.columnsTwo }"
+											onrowselection="{! c.updateSelectedTextSecondTable }"
+											aura:id="providersDataTwo"
+								/>
+							</lightning:accordionSection>
+						</lightning:accordion>
+                    </div>
+                </div>
+                
+                <!--MODAL FOOTER-->
+                <footer class="slds-modal__footer">
+                    <aura:if isTrue="{! or(greaterthan(v.selectedRowsCount, 0), greaterthan(v.selectedRowsCountTwo, 0))}">
+                        <div class="slds-text-align_left">
+                            Selected providers: {! v.selectedRowsCount + v.selectedRowsCountTwo }
+                        </div>
+                        
+                    </aura:if>
+                    <lightning:button variant="neutral" label="Cancel" title="Cancel" onclick="{! c.closeModal }"/>
+                    <lightning:button variant="brand" label="Send" title="Send" onclick="{! c.handleShowConfirmationModal }"/>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+</aura:component>

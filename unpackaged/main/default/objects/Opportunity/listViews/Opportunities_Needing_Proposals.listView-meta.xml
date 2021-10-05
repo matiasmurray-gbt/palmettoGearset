@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunities_Needing_Proposals</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Appointment_Date__c</columns>
+    <columns>Appointment_Time__c</columns>
+    <columns>Proposal_Created__c</columns>
+    <columns>Site_Needs_Verification__c</columns>
+    <columns>Site_Verification_Request_Date__c</columns>
+    <columns>Sub_Market__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>1. Appointment Set,3a. Proposal Redesign</value>
+    </filters>
+    <filters>
+        <field>Proposal_Created__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer,Dividend Solar</value>
+    </filters>
+    <label>Opportunities Needing Proposals</label>
+</ListView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Construction_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>Construction_Case_Type__c</columns>
+    <columns>Construction_Sub_Type__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CASES.CLOSED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Construction</value>
+    </filters>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Closed Construction Cases</label>
+    <sharedTo>
+        <role>Accounting</role>
+        <role>Business_Development</role>
+        <role>CEO</role>
+        <role>Customer_Care</role>
+        <role>Hardware_Engineer</role>
+        <role>Hardware_Installation_Manager</role>
+        <role>Operations</role>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_MA</role>
+        <role>Project_Coordinator_SC</role>
+        <role>Project_Manager_FL</role>
+        <role>Project_Manager_SC</role>
+        <role>Warehouse_Manager</role>
+    </sharedTo>
+</ListView>

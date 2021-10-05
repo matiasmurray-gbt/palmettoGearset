@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Solar</letterhead>
+    <name>New Retention Case Created</name>
+    <style>freeForm</style>
+    <subject>Project at Risk - {!Case.Opportunity__c}</subject>
+    <textOnly>Hello {!Case.X3rd_Party_Sales_Rep__c},
+
+The solar project for the customer, {!Case.Account} at {!Case.Customer_Address__c} is at risk. A retention case has been opened for the following reason {!CaseType__c}. Associated notes include: {!Case.Description}
+
+Reason for the retention case include:
+
+Unresponsive Customer:
+Customer Unresponsive to Requests for Do: {!Case.Customer_Unresponsive_to_Requests_for_Do__c}
+Customer Unresponsive to Requests for Sch: {!Case.Customer_Unresponsive_to_Requests_to_Sch__c}
+Unresponsive to Adder Inclusion: {!Case.Customer_Unresponsive_to_Adder_Inclusion__c}
+Unresponsive to Design Change: {!Case.Customer_Unresponsive_to_Design_Change__c}
+Unresponseive Other Reasons: {!Case.Customer_Unresponsive_Other__c}
+
+Customer Failing to Action:
+Customer Hasn&apos;t Confirmed Reroof: {!Case.Customer_Hasn_t_Confirmed_Reroof__c}
+Customer Hasn’t Removed Trees: {!Case.Customer_Hasn_t_Removed_Trees__c}
+Customer Not Scheduling Survey: {!Case.Customer_Not_Scheduling_Survey__c}
+Customer Not Scheduling Install: {!Case.Customer_Not_Scheduling_Install__c}
+Customer Not Signing Docs: {!Case.Customer_Not_Signing_Documents__c}
+
+Customer Requested Cancellation:
+Competition: {!Case.Competition__c}
+Decided Against Solar: {!Case.Decided_Against_Solar__c}
+Finances: {!Case.Finances_Retention__c}
+Offset: {!Case.Offset__c}
+Pricing: {!Case.Pricing__c}
+Other: {!Case.Other_Retention__c}
+
+Customer On-Hold:
+Vacation: {!Case.Vacation__c}
+Home Renovation: {!Case.Home_Renovation__c}
+Finances: {!Case.Finances__c}
+Illness: {!Case.Illness__c}
+Weather: {!Case.Weather__c}
+Reviewing Project Details: {!Case.Reviewing_Project_Details__c}
+
+Disqualification:
+Structural DQ: {!Case.Structural_DQ__c}
+Ineligible Roof Type: {!Case.Ineligible_Roof_Type__c}
+Shading: {!Case.Shading__c}
+Non-Serviceable AHJ: {!Case.Non_Serviceable_AHJ__c}
+Safety Concerns: {!Case.Safety_Concerns__c}
+Ineligible Property Type: {!Case.Ineligible_Property_Type__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

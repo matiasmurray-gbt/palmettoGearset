@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel_Partner_Commission_Plans</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Channel_Partner_Account__c</columns>
+    <columns>NAME</columns>
+    <columns>Location__c</columns>
+    <columns>X6kW__c</columns>
+    <columns>Base_6kW__c</columns>
+    <columns>X5K__c</columns>
+    <columns>X5kW__c</columns>
+    <columns>Milestone_1_Percent__c</columns>
+    <columns>Milestone_2_Percent__c</columns>
+    <columns>Milestone_3_Percent__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>LAST_ACTIVITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Plan__c</field>
+        <operation>equals</operation>
+        <value>Channel</value>
+    </filters>
+    <label>Channel Partner Commission Plans</label>
+</ListView>

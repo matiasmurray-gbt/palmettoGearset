@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sum_Adders__c</fullName>
+    <externalId>false</externalId>
+    <formula>Battery_Pricing__c +  Rafter_Upgrade_Pricing__c +  Steep_Roof_Charge_Pricing__c +  Tile_Pricing__c +  Flat_Roof_Pricing__c +  Ele_Upgrade_Pricing__c +  Ground_Mount_Pricing__c +  ICO_Fee__c +  Trenching_Pricing__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sum Adders</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

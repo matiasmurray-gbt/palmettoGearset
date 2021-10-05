@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Harbor_Total_Adders__c</fullName>
+    <externalId>false</externalId>
+    <formula>Battery_Adder_Value__c +    Panel_Type_Adder__c +   Roof_Type_Adder__c +  Trenching_Distance_Adder__c +  Solar_Edge_Warranty_Adder__c +  Ground_Mount_Adder__c  + Main_Service_Panel_Upgrade_Adder__c +  Palmetto_Home_Adder__c +  Appointment_Success_Fee__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Harbor Total Adders</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

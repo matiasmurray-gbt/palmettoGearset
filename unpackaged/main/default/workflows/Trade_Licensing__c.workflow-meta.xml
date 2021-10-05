@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Expiration</fullName>
+        <description>Expiration</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Expiration_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>Expiration_15_Day_Notice</fullName>
+        <description>Expiration 15 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Expiration_15_Day_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>Expiration_45_Day_Notice</fullName>
+        <description>Expiration 45 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Expiration_45_Day_Notice</template>
+    </alerts>
+</Workflow>

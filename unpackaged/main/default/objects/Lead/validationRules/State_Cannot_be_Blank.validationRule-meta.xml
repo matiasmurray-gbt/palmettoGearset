@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State_Cannot_be_Blank</fullName>
+    <active>false</active>
+    <errorConditionFormula>State_Blank_check__c = 1
+&amp;&amp;
+IsConverted</errorConditionFormula>
+    <errorDisplayField>State</errorDisplayField>
+    <errorMessage>Please select a State</errorMessage>
+</ValidationRule>

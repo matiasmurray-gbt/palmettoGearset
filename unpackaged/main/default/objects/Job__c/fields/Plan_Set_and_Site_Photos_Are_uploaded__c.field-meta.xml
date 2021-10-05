@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plan_Set_and_Site_Photos_Are_uploaded__c</fullName>
+    <externalId>false</externalId>
+    <label>Plan Set and Site Photos Are uploaded</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Jobs_Global_Pick_List</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trenching_Distance_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT ISPICKVAL( Customer_Type__c , "GreenNRG - Installation"), 
+ISPICKVAL(  Roof_Type__c  , "Ground Mount"),
+ISBLANK(  Trenching_Distance__c  ))</errorConditionFormula>
+    <errorMessage>Please provide Trenching Distance.</errorMessage>
+</ValidationRule>

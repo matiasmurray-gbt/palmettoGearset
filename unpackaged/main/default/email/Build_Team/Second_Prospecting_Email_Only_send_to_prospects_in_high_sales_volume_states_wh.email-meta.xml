@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Second Prospecting Email - Only send to prospects in high sales volume states wh</name>
+    <style>none</style>
+    <subject>Palmetto Solar - We&apos;d like to Partner with {Company Name}</subject>
+    <textOnly>Hi {!Contact.Name},
+
+I just wanted to follow up on my last email to see if you had time to connect in the coming days to discuss partnering with Palmetto. One topic I didn&apos;t mention before, if we were to partner and you wanted to stand up additional installation crews, we have a 0% Kickstarter loan program for our partners of up to $100,000 which can help you stand up that crew quicker and with zero impact to your current budget. We just ask that you pay back a portion of that loan each time you install a job for us. In most instances, our build partners are able to pay us back in a matter of a few months. At this juncture, we&apos;d easily be able to keep one or more of your crews busy on a full-time basis. Better yet, this would have little impact on your overhead as we provide fully ready-to-install residential solar projects and handle all of the project management, design, and permitting. Use This Meeting Link to view my availability and schedule a time directly on my calendar.
+
+Cheers,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

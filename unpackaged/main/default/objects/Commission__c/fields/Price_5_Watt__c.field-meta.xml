@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_5_Watt__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Opportunity__r.Contract_Received_Date__c &lt; DATE(2020,6,15) ,
+
+IF (Price_Watt_Solar_Value__c &gt; 5, 
+
+(Price_Watt_Solar_Value__c - 5) * 1000 * System_Size_DC__c
+
+
+, 0)
+
+, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>$Price &gt; $5/Watt</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

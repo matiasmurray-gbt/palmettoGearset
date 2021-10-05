@@ -1,0 +1,6 @@
+Final Inspections are complete. Inspection docs will be uploaded into google drive shortly.
+
+{!Opportunity.Inspection_Completed_Date__c}
+
+{!Account.Name} 
+{!Account.BillingAddress}

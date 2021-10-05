@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Change in commissions payment due to Christmas</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Commissions Information for Christmas holiday</name>
+    <style>freeForm</style>
+    <subject>Important Palmetto Commissions Information for Christmas Holiday</subject>
+    <textOnly>Hello {!Contact.FirstName} {!Contact.LastName}
+
+
+       This year, Christmas Eve falls on Monday, December 24th &amp; Christmas Day falls on Tuesday, December 25th. To accommodate the Holiday schedule Palmetto&apos;s Commissions payments &amp; report timing will adjust as follows over the next 2 weeks:
+
+1) Tues Dec 18th - Commissions Report; Weds Dec 19th - Commissions Payment
+2) Weds Dec 26th - Commissions Report &amp; Commissions Payment
+3) Weds Jan 2nd - Commissions Report &amp; Commissions Payment
+
+Commissions processing will return to its normal schedule with the Friday, Jan 4th Commissions Run.
+
+Commissions will continue to process for all projects hitting a milestone up to 1 business day before the processing day.
+
+Feel free to reach out to your Account Manager with any questions.
+
+Wishing you a very happy holiday season.
+
+- Team Palmetto</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

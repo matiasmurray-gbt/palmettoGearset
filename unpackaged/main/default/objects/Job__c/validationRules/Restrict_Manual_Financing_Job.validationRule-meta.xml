@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Manual_Financing_Job</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISNEW(),
+    RecordType.DeveloperName == 'Financing',
+    $User.ProfileId != "00e1a000000YIFs" /* System Admin */,
+    OR(
+        Opportunity__r.RecordType.DeveloperName = 'X3rd_Party_Design_Sales',
+        Opportunity__r.RecordType.DeveloperName = 'Storage'
+    ),
+    Automation__c == false
+)</errorConditionFormula>
+    <errorMessage>This Job is created when the project has achieved the [Design Queued Date - Milestone]. Please satisfy the Criteria - Linear Milestones (https://app.getguru.com/card/cx6oa77i/Linear-Milestones) and the Job will be created by the system.</errorMessage>
+</ValidationRule>

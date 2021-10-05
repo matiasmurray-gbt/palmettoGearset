@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X1_11_SC_Palmetto_Resi_Need_Site_Audit</fullName>
+    <booleanFilter>1 AND (4 OR 7 OR 8 OR 9) AND 2 AND 3  AND 5 AND 6</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Days_Since_Contract_Received__c</columns>
+    <columns>HOA_Application_Sent_Date__c</columns>
+    <columns>HOA_Application_Sent__c</columns>
+    <columns>HOA_Processing_Time__c</columns>
+    <columns>HOA_Email_Address__c</columns>
+    <columns>HOA_Notes__c</columns>
+    <columns>X3rd_Party_Partner__c</columns>
+    <columns>HOA_Name__c</columns>
+    <columns>HOA_Neighborhood_Subdivision_Name__c</columns>
+    <columns>HOA_Contact_Name__c</columns>
+    <columns>HOA_Phone_Number__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer,Integrated Palmetto Property,Dividend Solar</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>equals</operation>
+        <value>South Carolina</value>
+    </filters>
+    <filters>
+        <field>Contract_Received_Confirmed__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>7. Contract Received,8. Site Audit Scheduled,16. Permit Received</value>
+    </filters>
+    <filters>
+        <field>Home_Owners_Association__c</field>
+        <operation>notEqual</operation>
+        <value>No</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>10. Site Approved,11. Interconnection Sent,14. Permit Sent,15. Permit Ready</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>12. Engineering Package Sent,13. Engineering Design Complete</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>7a. Contract Received Confirmed,8a. Site Audit Completed</value>
+    </filters>
+    <label>1.13 SC Need HOA Approval</label>
+    <sharedTo>
+        <role>Operations</role>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_SC</role>
+        <role>Project_Manager_FL</role>
+        <role>Project_Manager_SC</role>
+    </sharedTo>
+</ListView>

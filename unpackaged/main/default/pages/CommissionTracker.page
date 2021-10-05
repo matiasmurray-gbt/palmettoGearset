@@ -1,0 +1,955 @@
+<apex:page controller="CommissionTrackerController" id="thePage" sidebar="true" showHeader="true" standardStylesheets="true" docType="html-5.0"> 
+    <style type="text/css">
+        .custPopup{
+        background-color: white;
+        border-width: 2px;
+        border-style: solid;
+        z-index: 9999;
+        left: 10%;
+        padding:10px;
+        position: absolute;
+        /* These are the 3 css properties you will need to change so the popup 
+        displays in the center of the screen. First set the width. Then set 
+        margin-left to negative half of what the width is. You can add 
+        the height property for a fixed size pop up if you want.*/
+        width: 900px;
+        margin-left: -100px;
+        top:100px;
+        }
+        .popupBackground{
+        background-color:black;
+        opacity: 0.20;
+        filter: alpha(opacity = 20);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9998;
+        }
+        .dateFormat{
+         visibility:hidden;
+        }
+        table.fixedTable td{
+        min-width:70px;
+    }
+      
+    </style>
+    <apex:pageBlock id="theBlock">
+        <apex:form id="theForm">
+            <apex:actionFunction name="callUprocess" rerender="unprocessComm" action="{!unprocessCommission}" status="sts"/>
+            <apex:outputPanel id="unprocessComm">
+                <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayUnprocessPopup}"/>
+                <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayUnprocessPopup}">
+                    <div>
+                        <table width="100%" border="2" style="border-collapse: collapse;">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox" onchange="allChecked(this.checked, 'unprocessList')"/>
+                                    </th>
+                                    <th>Milestone</th>
+                                    <th>Commission<br/>Number</th>
+                                    <th>3rd Party<br/>Partner</th>
+                                    <th>3rd Party<br/>Salesrep</th>
+                                    <th>Opportunity<br/>Name</th>
+                                    <th>Total<br/>Commissions</th>
+                                    <th>Milestone 1<br/>Amount (Actual Paid)</th>
+                                    <th>Milestone 2<br/>Amount (Actual Paid)</th>
+                                    <th>Milestone 3<br/>Amount(Actual Paid)</th>
+                                    <th>Clawback<br/>Amount (Actual)</th>
+                                </tr>    
+                            </thead>
+                            <tbody>
+                                <apex:repeat value="{!lstUnprocessCommissionWrapper}" var="objWrapper">
+                                    <tr>
+                                        <td>
+                                            <apex:inputCheckbox value="{!objWrapper.isSelected}" styleclass="unprocessList"/>
+                                        </td>                                                            
+                                        <td>{!objWrapper.milestone}</td>
+                                        <td>{!objWrapper.objCommission.Name}</td>
+                                        <td>{!objWrapper.objCommission.Opportunity__r.X3rd_Party_Partner__c}</td>
+                                        <td>{!objWrapper.objCommission.Opportunity__r.X3rd_Party_Sales_Rep__c}</td>
+                                        <td>{!objWrapper.objCommission.Opportunity__r.Name}</td>
+                                        <td>{!objWrapper.objCommission.Total_Commissions__c}</td>
+                                        <td>{!objWrapper.objCommission.Milestone_1_Amount_Actual_Paid__c}</td>
+                                        <td>{!objWrapper.objCommission.Milestone_2_Amount_Actual_Paid__c}</td>
+                                        <td>{!objWrapper.objCommission.Milestone_3_Actual_Paid__c}</td>
+                                        <td>{!objWrapper.objCommission.Clawback_Amount_Actual__c}</td>
+                                    </tr>
+                                </apex:repeat>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br/><br/><br/>
+                    <apex:commandButton value="Close" action="{!closeEmailPopup}" rerender="unprocessComm"/>
+                    <!--<apex:commandButton value="Unprocess" rerender="unprocessComm" action="{!unprocessCommission}" status="sts"/>-->
+                    <button type="button" style="cursor:pointer;height:21px;" onclick="confirmUprocess();">Unprocess</button>
+                    <apex:outputPanel rendered="{!isUnprocessed == true}">
+                        {!unprocessMsg}
+                    </apex:outputPanel>
+                    <apex:actionStatus id="sts">
+                       <apex:facet name="start">
+                             <img src="/img/loading.gif"/>
+                         </apex:facet>
+                    </apex:actionStatus>
+                </apex:outputPanel>
+            </apex:outputPanel>
+        
+            
+            <apex:outputPanel id="commSummaryView">
+                <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!showSummaryView}"/>
+                <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!showSummaryView}">
+                    <div>
+                        <table width="100%" border="2" style="border-collapse: collapse;">
+                            <thead>
+                                <tr>
+                                    <th>Channel Partner</th>
+                                    <th>Commission</th>
+                                    <th>M1</th>
+                                    <th>M2</th>
+                                    <th>M3</th>
+                                    <th>Clawback</th>
+                                </tr>    
+                            </thead>
+                            <tbody>
+                                <apex:variable var="commissionAmount" value="{!0}"/>
+                                <apex:variable var="m1Amount" value="{!0}"/>
+                                <apex:variable var="m2Amount" value="{!0}"/>
+                                <apex:variable var="m3Amount" value="{!0}"/>
+                                <apex:variable var="clawbackAmount" value="{!0}"/>
+                               
+                                
+                                <apex:repeat value="{!lstCommissionSummayWrapper}" var="objWrapper">
+                                    <tr>                                                       
+                                        <td>{!objWrapper.provideName}</td>
+                                        <td>${!objWrapper.commissionAmount}</td>
+                                        <td>${!objWrapper.milestone1Amount}</td>
+                                        <td>${!objWrapper.milestone2Amount}</td>
+                                        <td>${!objWrapper.milestone3Amount}</td>
+                                        <td>${!objWrapper.clawBackAmount}</td>
+                                        <apex:variable var="commissionAmount" value="{!commissionAmount + objWrapper.commissionAmount}"/>
+                                        <apex:variable var="m1Amount" value="{!m1Amount + objWrapper.milestone1Amount}"/>
+                                        <apex:variable var="m2Amount" value="{!m2Amount + objWrapper.milestone2Amount}"/>
+                                        <apex:variable var="m3Amount" value="{!m3Amount + objWrapper.milestone3Amount}"/>
+                                        <apex:variable var="clawbackAmount" value="{!clawbackAmount + objWrapper.clawBackAmount}"/>
+                                    </tr>
+                                </apex:repeat>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td>${!commissionAmount}</td>
+                                        <td>${!m1Amount}</td>
+                                        <td>${!m2Amount}</td>
+                                        <td>${!m3Amount}</td>
+                                        <td>${!clawbackAmount}</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br/><br/>
+                    <apex:commandButton value="Close" action="{!closeSummaryView}" rerender="commSummaryView"/>
+                </apex:outputPanel>
+            </apex:outputPanel>
+            
+            
+            
+        
+            <apex:outputPanel rendered="{!if(CPError=='yes',true,false)}">
+              You do not have access to processed commission page.
+            </apex:outputPanel>
+            <apex:outputPanel rendered="{!if(CPError=='no',true,false)}">
+            <apex:inputText id="elementonfocus" style="display:none;"/>
+            <apex:outputPanel id="emailpopup">
+                <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayEmailPopUp}"/>
+                <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayEmailPopUp}">
+                    <table width="100%">
+                        <tr>
+                            <th>
+                                <input type="checkbox" onchange="allChecked(this.checked, 'providerList')"/>
+                            </th>
+                            <th>Party Provider</th>
+                            <th>Contacts</th>
+                            <th>Emails</th>
+                        </tr>
+                        <apex:repeat value="{!partyProviderEmailList}" var="item1">
+                            <tr>
+                                <td><apex:inputCheckbox value="{!item1.isChecked}" styleclass="providerList"/></td>
+                                <td>{!item1.partyProvider}</td>
+                                <td>{!item1.names}</td>
+                                <td>{!item1.emails}</td>
+                            </tr>
+                        </apex:repeat>
+                    </table><br/><br/><br/>
+                    <apex:commandButton value="Close" action="{!closeEmailPopup}" rerender="emailpopup"/>
+                    <apex:commandButton value="Send" rerender="emailpopup" action="{!sendEmailToProviders}" status="emailSent"/> 
+                    <apex:outputPanel rendered="{!isEmailSent == true}">
+                      {!emailMessageStatus}
+                    </apex:outputPanel>
+                    <apex:actionStatus id="emailSent">
+                       <apex:facet name="start">
+                             <img src="/img/loading.gif"/>
+                         </apex:facet>
+                    </apex:actionStatus>
+                </apex:outputPanel>
+            </apex:outputPanel>
+            <table width="100%">
+                <tr>
+                    <td>
+                        <table width="100%" >
+                            <tr>
+                                <td>
+                                    <apex:commandButton value="Commission to be Processed" action="{!commissionToBeProcessedOnSearch}"/>
+                                </td>
+                            </tr>  
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <apex:pageMessages ></apex:pageMessages>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table width="100%" style="max-width:1200px;">
+                            <tr>
+                                <td style="padding-left:100px;width:100px;">
+                                    <strong> From: </strong>  <apex:input type="date" value="{!fromDate}" html-autocomplete="off">
+                                      <apex:actionSupport event="onblur" status="filter_loading_date" rerender="theForm"/>
+                                    </apex:input>
+                                </td>
+                                <td style="width:100px;">
+                                    <strong>To:</strong>   <apex:input type="date" value="{!toDate}" html-autocomplete="off" styleClass="disable">
+                                      <apex:actionSupport event="onblur" status="filter_loading_date" rerender="theForm"/>
+                                    </apex:input>
+                                </td>
+                                <td style="width:200px;">
+                                    <strong>Display</strong>   <apex:selectList value="{!selectedCommission}" size="1" multiselect="false" styleClass="disable">
+                                    <apex:selectOptions value="{!commissionPickListOptions}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </td>
+                                <td style="width:50px;">
+                                    <apex:commandButton value="Search"  action="{!processTrackerWhenSearch}"/>   
+                                </td>
+                                
+                                <td style="width:50px;">
+                                    <apex:commandButton value="Unprocess"  action="{!openUpprocessPopup}" status="filter_loading" rerender="theForm" disabled="{!CPOwner}"/>   
+                                </td>
+                                
+                                <td style="width:50px;">
+                                    <apex:commandButton value="Summary view"  action="{!showSummaryCommissions}" status="filter_loading" rerender="theForm" disabled="{!CPOwner}"/>   
+                                </td>
+                                
+                                <td style="width:155px;">
+                                   <apex:outputPanel rendered="{!AND(selectedCommission=='Processed Commissions',isCommissionProcessed)}">
+                                        <apex:commandButton value="Assign Pay Date " action="{!assignDateToCommissionProcessed}" status="filter_loading" rerender="theForm" disabled="{!CPOwner}"/>
+                                    </apex:outputPanel>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table width="100%" style="padding-top:30px;max-width:1200px;">
+                            <tr>
+                                <td width="40%" style="padding-left:{!IF(isCommissionToBeProcessed == true,'350px;','450px;')}">
+                                    <!--<apex:outputPanel rendered="{!AND(isCommissionToBeProcessed == true,selectedCommission !='Commission to be Processed')}">-->
+                                      <apex:commandButton value="Process Milestone" action="{!processMilestone}" status="filter_loading" rerender="theForm" disabled="{!CPOwner}"/>    
+                                    <!--</apex:outputPanel>-->
+                                    <apex:commandButton value="Mail report to CP" action="{!showEmailPopup}" status="filter_loading" rerender="theForm" disabled="{!CPOwner}"/>    
+                                    <apex:commandLink value="Export the report" action="{!commissionTrackerExport}" target="_blank"/>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table width="100%" style="padding-top:30px;">
+                            <tr>
+                                <td>
+                                    
+                                    <apex:outputPanel rendered="{!AND(selectedCommission=='Processed Commissions',isCommissionProcessed)}">
+                                        
+                                        <apex:inputCheckbox label="Include Opportunities with Paid MileStone" value="{!paidMileStone}">
+                                            <apex:actionSupport event="onchange" status="filter_loading" rerender="theForm" action="{!changeFilter}"/>
+                                        </apex:inputCheckbox>   
+                                        <strong>Include Opportunities with Paid Milestone(s)</strong>
+                                    </apex:outputPanel>
+                                     
+                                     
+                                     
+                                     
+                                    <strong>MileStones:</strong> <apex:selectList id="milestone" value="{!selectedAllMilestone}" size="4" multiselect="true">
+                                    <apex:selectOptions value="{!mileStoneOptions}"></apex:selectOptions> 
+                                    <apex:actionSupport event="onchange" status="filter_loading" rerender="theForm" action="{!changeFilter}"/>
+                                    </apex:selectList>
+                                    
+                                     
+                                     
+                                     
+                                     
+                                    <strong>3rd Party Provider:</strong> <apex:selectList size="4" multiselect="true" value="{!selectedAll3rdPartyProvider}">
+                                    <apex:actionSupport event="onchange" status="filter_loading" rerender="theForm" action="{!changeFilter}"/>
+                                    <apex:selectOptions value="{!partyProvidersOptions}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table width="100%">
+                            <tr>
+                                <td colspan="40"> 
+                                    <apex:actionstatus id="filter_loading">
+                                        <apex:facet name="start">
+                                            <img src="/img/loading.gif"/>
+                                        </apex:facet>
+                                        
+                                        
+                                    </apex:actionstatus>
+                                    <apex:actionstatus id="filter_loading_date" onStart="disableInputs();" onStop="enableInputs();">
+                                        <apex:facet name="start">
+                                            <img src="/img/loading.gif"/>
+                                        </apex:facet>
+                                        
+                                        
+                                    </apex:actionstatus>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> 
+                                    <apex:outputPanel rendered="{!isCommissionToBeProcessed == true}">
+                                        <table cellspacing="0" class="fixedTable" style="border:1px solid #CCCCCC">
+                                            <tr style="background-color:#F2F3F3">
+                                                <td style="border-left:1px solid #CCCCCC;border-right:1px solid #CCCCCC"><apex:inputCheckbox value="{!selectAllForCommissionToBeProcessed}"  >
+                                                      <apex:actionSupport event="onchange" action="{!selectCommissionToBeProcessedRecords}" status="filter_loading" rerender="theForm"/>
+                                                    </apex:inputCheckbox>All</td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Commission Number</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>18 Character Opportunity ID</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>3rd Party Partner</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>3rd Party Salesrep</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Opportunity Name</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Financing Tool</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Total Commissions</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Opportunity Owner</strong></td>
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Notes</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone1 Amount</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone1 Amount(Actual Paid)</strong></td>
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Milestone1 Processed Date</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone1 Paid Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone2 Commission TrueUp</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone2 Amount</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone2 Amount(Actual Paid)</strong></td>
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Milestone2 Processed Date</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone2 Paid Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone3 Commission TrueUp</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone3 Amount</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone3 Amount(Actual Paid)</strong></td>
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Milestone3 Processed Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone3 Paid Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Site Approved Date</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Contract Received Confirmed Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Installation Complete Date</strong></td>
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Install Completion Approved Date</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Cancellation Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>M1 Clawback Amount</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Clawback(Amount) Actual</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Amount</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Price / Watt</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>System Size Calculated(kW)</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>CP Base</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>CP Base / Watt</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Loan Term</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Dealer Fee</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Dealer Fee%</strong></td>
+                                                <!-- new fields headers added 11/12/2019 start -->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>APR %</strong></td>
+                                                 <!-- new fields column headers headers added 11/12/2019 end -->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Total Adders, Upgrade &amp; Incentives</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>CT GreenBank Incentive</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Total Upgrades Cost</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Re-Roof Upgrade Cost</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Electrical Upgrade Cost</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Structural Upgrade Cost</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Tree Removal / Other Upgrade Cost</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Other / Misc Adjustments</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Total Adders</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Roof Type Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Roof Tilt Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>High Roof Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Panel Type Adders</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Solar Edge Warranty Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Appointment Success Fee (Adder)</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Battery Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Ground Mount Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Trenching Distance Adder</strong></td>
+                                                
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Total Adders Quote</strong></td>-->                                            
+                                                
+                                                
+                                                
+                                                
+                                                <!--<<td style="border-right:1px solid #CCCCCC"><strong>Total Upgrades Quote</strong></td>
+                                                td style="border-right:1px solid #CCCCCC"><strong>Trenching Adder</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Contract Received Date</strong></td>
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>M3 %</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Stage</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Change Order Reason</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Lead Source Type</strong></td>
+                                            </tr>
+                                            <apex:repeat value="{!commissionToBeProcessed}" var="milestonePayment">
+                                                <tr style="background-color:#D5DDF3">
+                                                    <td colspan="9" ><strong>Milestone Payments</strong>:{!milestonePayment}</td>
+                                                    <td><strong>${!milestone1AmountTotalMap[milestonePayment]}</strong></td>
+                                                    <td><strong>${!milestone1AmountActualPaidTotalMap[milestonePayment]}</strong></td>
+                                                    <td  colspan="3"></td>
+                                                    <td><strong>${!milestone2AmountTotalMap[milestonePayment]}</strong></td>
+                                                    <td><strong>${!milestone2AmountActualPaidTotalMap[milestonePayment]}</strong></td>
+                                                    <td colspan="3"></td>
+                                                    <td><strong>${!milestone3AmountTotalMap[milestonePayment]}</strong></td>
+                                                    <td><strong>${!milestone3AmountActualPaidTotalMap[milestonePayment]}</strong></td>
+                                                    <td  colspan="6"></td>
+                                                    <td><strong>${!milestoneClawBackAmountTotalMap[milestonePayment]}</strong></td>
+                                                    <td><strong>${!milestoneClawBackAmountActualPaidTotalMap[milestonePayment]}</strong></td>
+                                                     <td colspan="19"></td>
+                                                </tr>
+                                                <apex:repeat value="{!commissionToBeProcessed[milestonePayment]}" var="provider">
+                                                    <tr style="background-color:#EFF4FC;">
+                                                        <td colspan="9" >   <strong>3rd Party Provider</strong>:{!provider}</td>
+                                                        <td><strong>${!partyProviderMilestone1AmountTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td><strong>${!partyProviderMilestone1AmountActualPaidTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td colspan="3"></td>
+                                                        <td><strong>${!partyProviderMilestone2AmountTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td><strong>${!partyProviderMilestone2AmountActualPaidTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td colspan="3"></td>
+                                                        <td><strong>${!partyProviderMilestone3AmountTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td><strong>${!partyProviderMilestone3AmountActualPaidTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td colspan="6"></td>
+                                                        <td><strong>${!partyProviderMilestoneClawBackAmountTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td><strong>${!partyProviderMilestoneClawBackAmountActualPaidTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                         <td colspan="19"></td>
+                                                    </tr>
+                                                    <apex:repeat value="{!commissionToBeProcessed[milestonePayment][provider]}" var="item">
+                                                        <tr>
+                                                            <td><apex:inputCheckbox value="{!item.isChecked}"/></td>
+                                                            <td><a href="/{!item.commission.id}" target="_blank">{!item.commission.Name}</a></td>
+                                                            <td>{!item.commission.X18_Character_Opportunity_ID__c}</td>
+                                                            <td>{!item.commission.Opportunity__r.X3rd_Party_Partner__c}</td>
+                                                            <td>{!item.commission.Opportunity__r.X3rd_Party_Sales_Rep__c}</td>
+                                                            <td><a href="/{!item.commission.Opportunity__r.id}" target="_blank">{!item.commission.Opportunity__r.Name}</a></td>
+                                                            <td>{!item.commission.Opportunity__r.Financing_Tool__c}</td>
+                                                            <td>{!item.commission.Total_Commissions__c}</td>
+                                                            <td>{!item.commission.Opportunity__r.Owner.Name}</td>
+                                                            <!--<td>{!item.commission.Notes__c}</td>-->
+                                                            <td>{!item.commission.Milestone_1_Amount__c}</td>
+                                                            <td>{!item.commission.Milestone_1_Amount_Actual_Paid__c}</td>
+                                                            <!--<td><apex:outputfield value="{!item.commission.Milestone_1_Processed_Date__c}"></apex:outputfield></td>-->
+                                                            <td><apex:outputfield value="{!item.commission.Milestone_1_Paid_Date__c}"></apex:outputfield></td>
+                                                            <td>{!item.commission.Milestone_2_Commission_True_Up__c}</td>
+                                                            <td>{!item.commission.Milestone_2_Amount__c}</td>
+                                                            <td>{!item.commission.Milestone_2_Amount_Actual_Paid__c}</td>
+                                                            <!--<td><apex:outputfield value="{!item.commission.Milestone_2_Processed_Date__c}"></apex:outputfield></td>-->
+                                                            <td><apex:outputfield value="{!item.commission.Milestone_2_Paid_Date__c}"></apex:outputfield></td>
+                                                            <td>{!item.commission.Milestone_3_Commission_True_Up__c}</td>
+                                                            <td>{!item.commission.Milestone_3_Amount__c}</td>
+                                                            <td>{!item.commission.Milestone_3_Actual_Paid__c}</td>
+                                                            <!--<td><apex:outputfield value="{!item.commission.Milestone_3_Processed_Date__c}"></apex:outputfield></td>
+                                                            <td><apex:outputfield value="{!item.commission.Milestone_3_Paid_Date__c}"></apex:outputfield></td>
+                                                            <td><apex:outputfield value="{!item.commission.Site_Approved_Date__c}"></apex:outputfield></td>-->
+                                                            <td><apex:outputfield value="{!item.commission.Contract_Received_Confirmed_Date__c}"></apex:outputfield></td>
+                                                            <td><apex:outputfield value="{!item.commission.Installation_Complete_Date__c}"></apex:outputfield></td>
+                                                            <!--<td><apex:outputfield value="{!item.commission.Install_Completion_Approved_Date__c}"></apex:outputfield></td>-->
+                                                            <td><apex:outputfield value="{!item.commission.Opportunity__r.Cancellation_Date__c}"></apex:outputfield></td>
+                                                            <td>{!item.commission.M1_Clawback_Amount__c}</td>
+                                                            <td>{!item.commission.Clawback_Amount_Actual__c}</td>
+                                                            <td>{!item.commission.Opportunity_Amount__c}</td>
+                                                            <td>{!item.commission.Price_Watt__c}</td>
+                                                            <td>{!item.commission.Opportunity__r.System_Size_Calculated_kW__c}</td>
+                                                            <td>{!item.commission.CP_Base__c}</td>
+                                                            <td>{!item.commission.CP_Base_Watt__c}</td>
+                                                            <td>{!item.commission.Loan_Term__c}</td>
+                                                            <td>{!item.commission.Dealer_Fees__c}</td>
+                                                            <td>{!item.commission.Dealer_Fee_Percent__c}</td>
+                                                            <!-- new fields added 11/12/2019 start -->
+                                                            <td>{!item.commission.APR__c}</td>
+                                                            <!-- new fields added 11/12/2019 End -->
+                                                            <td>{!item.commission.Total_Adders_Upgrade_Incentives__c}</td>
+                                                            <td>{!item.commission.CT_GreenBank_Adder__c}</td>
+                                                            <td>{!item.commission.Structural_Electrical_Upgrade_Adder__c}</td>
+                                                            <td>{!item.commission.Roofing_Adder__c}</td>
+                                                            <td>{!item.commission.Electrical_Upgrade_Adder__c}</td>
+                                                            <td>{!item.commission.Structural_Upgrade_Adder__c}</td>
+                                                            <td>{!item.commission.Tree_Removal_Other_Adder__c}</td>
+                                                            <td>{!item.commission.Other_Misc_Adders__c}</td>
+                                                            <td>{!item.commission.Total_Adders__c}</td>
+                                                            <td>{!item.commission.Roof_Type_Adder__c}</td>
+                                                            <td>{!item.commission.Roof_Tilt_Adder__c}</td>
+                                                            <td>{!item.commission.High_Roof_Adder__c}</td>
+                                                            <td>{!item.commission.Panel_Type_Adder__c}</td>
+                                                            <td>{!item.commission.Solar_Edge_Warranty_Adder__c}</td>
+                                                            <td>{!item.commission.Appointment_Success_Fee__c}</td>
+                                                            <td>{!item.commission.Battery_Adder__c}</td>
+                                                            <td>{!item.commission.Ground_Mount_Adder__c}</td>
+                                                            <td>{!item.commission.Trenching_Distance_Adder__c}</td>
+                                                            
+                                                            <!--<td>{!item.commission.Total_Adders_Quote__c}</td>-->                                                            
+                                                            
+                                                            
+                                                            <!--<td>{!item.commission.Total_Adders_Quote__c}</td>
+                                                            <td>{!item.commission.Trenching_Adder__c}</td>-->
+                                                            <td><apex:outputfield value="{!item.commission.Contract_Received_Date__c}" /></td>
+                                                            <!--<td>{!item.commission.M3__c}</td>-->
+                                                            <td>{!item.commission.Opportunity__r.StageName}</td>
+                                                            <td>{!item.commission.Opportunity__r.Change_Order_Reason__c}</td>
+                                                            <td>{!item.commission.Opportunity__r.Lead_Source_Type__c}</td>
+                                                        </tr>
+                                                    </apex:repeat>
+                                                </apex:repeat>
+                                            </apex:repeat>
+                                        </table>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel rendered="{!AND(isCommissionProcessed == true,selectedCommission != 'Processed Commissions')}">
+                                        <table width="100%" cellspacing="0" style="border:1px solid #CCCCCC">
+                                            <tr style="background-color:#F2F3F3">
+                                                <td style="border-left:1px solid #CCCCCC;border-right:1px solid #CCCCCC"><strong>Commission Number</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>18 Character Opportunity ID</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>3rd Party Partner</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>3rd Party Salesrep</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Opportunity Name</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Financing Tool</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Total Commissions</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Opportunity Owner</strong></td>
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Notes</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone1 Amount</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone1 Amount(Actual Paid)</strong></td>
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Milestone1 Processed Date</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone1 Paid Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone2 Commission TrueUp</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone2 Amount</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone2 Amount(Actual Paid)</strong></td>
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Milestone2 Processed Date</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone2 Paid Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone3 Commission TrueUp</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone3 Amount</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone3 Amount(Actual Paid)</strong></td>
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Milestone3 Processed Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone3 Paid Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Site Approved Date</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Contract Received Confirmed Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Installation Complete Date</strong></td>
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Install Completion Approved Date</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Cancellation Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>M1 Clawback Amount</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Clawback(Amount) Actual</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Amount</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Price / Watt</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>System Size Calculated(kW)</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>CP Base</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>CP Base / Watt</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Loan Term</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Dealer Fee</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Dealer Fee%</strong></td>
+                                                 <!-- new fields headers added 11/12/2019 start -->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>APR %</strong></td>
+                                                 <!-- new fields column headers headers added 11/12/2019 end -->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Total Adders, Upgrade &amp; Incentives</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>CT GreenBank Incentive</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Total Upgrades Cost</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Re-Roof Upgrade Cost</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Electrical Upgrade Cost</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Structural Upgrade Cost</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Tree Removal / Other Upgrade Cost</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Other / Misc Adjustments</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Total Adders</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Roof Type Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Roof Tilt Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>High Roof Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Panel Type Adders</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Solar Edge Warranty Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Appointment Success Fee (Adder)</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Battery Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Ground Mount Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Trenching Distance Adder</strong></td>
+                                                
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Total Adders Quote</strong></td>-->                                            
+                                                
+                                                
+                                                
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Total Upgrades Quote</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Trenching Adder</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Contract Received Date</strong></td>
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>M3 %</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Stage</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Change Order Reason</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Lead Source Type</strong></td>
+                                            </tr>
+                                            <apex:repeat value="{!commissionProcessed}" var="milestonePayment">
+                                                <tr style="background-color:#D5DDF3">
+                                                    <td colspan="8"><strong>Milestone Payments</strong>:{!milestonePayment}</td>
+                                                    <td><strong>${!milestone1AmountTotalMap[milestonePayment]}</strong></td>
+                                                    <td><strong>${!milestone1AmountActualPaidTotalMap[milestonePayment]}</strong></td>
+                                                    <td colspan="3"></td>
+                                                    <td><strong>${!milestone2AmountTotalMap[milestonePayment]}</strong></td>
+                                                    <td><strong>${!milestone2AmountActualPaidTotalMap[milestonePayment]}</strong></td>
+                                                    <td colspan="3"></td>
+                                                    <td><strong>${!milestone3AmountTotalMap[milestonePayment]}</strong></td>
+                                                    <td><strong>${!milestone3AmountActualPaidTotalMap[milestonePayment]}</strong></td>
+                                                    <td colspan="6"></td>
+                                                    <td><strong>${!milestoneClawBackAmountTotalMap[milestonePayment]}</strong></td>
+                                                    <td><strong>${!milestoneClawBackAmountActualPaidTotalMap[milestonePayment]}</strong></td>
+                                                     <td colspan="20"></td>
+                                                </tr>
+                                                <apex:repeat value="{!commissionProcessed[milestonePayment]}" var="provider">
+                                                    <tr style="background-color:#EFF4FC;">
+                                                        <td colspan="8">   <strong>3rd Party Provider</strong>:{!provider}</td>
+                                                        <td><strong>${!partyProviderMilestone1AmountTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td><strong>${!partyProviderMilestone1AmountActualPaidTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td  colspan="3"></td>
+                                                        <td><strong>${!partyProviderMilestone2AmountTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td><strong>${!partyProviderMilestone2AmountActualPaidTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td colspan="3"></td>
+                                                        <td><strong>${!partyProviderMilestone3AmountTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td><strong>${!partyProviderMilestone3AmountActualPaidTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td colspan="6"></td>
+                                                        <td><strong>${!partyProviderMilestoneClawBackAmountTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td><strong>${!partyProviderMilestoneClawBackAmountActualPaidTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td colspan="20"></td>
+                                                    </tr>
+                                                    <apex:repeat value="{!commissionProcessed[milestonePayment][provider]}" var="item">
+                                                        <tr>
+                                                            <td><a href="/{!item.id}" target="_blank">{!item.Name}</a></td>
+                                                            <td>{!item.commission.X18_Character_Opportunity_ID__c}</td>
+                                                            <td>{!item.Opportunity__r.X3rd_Party_Partner__c}</td>
+                                                            <td>{!item.Opportunity__r.X3rd_Party_Sales_Rep__c}</td>
+                                                            <td><a href="/{!item.Opportunity__r.id}" target="_blank">{!item.Opportunity__r.Name}</a></td>
+                                                            <td>{!item.Opportunity__r.Financing_Tool__c}</td>
+                                                            <td>{!item.Total_Commissions__c}</td>
+                                                            <td>{!item.Opportunity__r.Owner.Name}</td>
+                                                            <!--<td>{!item.Notes__c}</td>-->
+                                                            <td>{!item.Milestone_1_Amount__c}</td>
+                                                            <td>{!item.Milestone_1_Amount_Actual_Paid__c}</td>
+                                                            <!--<td><apex:outputfield value="{!item.Milestone_1_Processed_Date__c}"></apex:outputfield></td>-->
+                                                            <td><apex:outputfield value="{!item.Milestone_1_Paid_Date__c}"></apex:outputfield></td>
+                                                            <td>{!item.Milestone_2_Commission_True_Up__c}</td>
+                                                            <td>{!item.Milestone_2_Amount__c}</td>
+                                                            <td>{!item.Milestone_2_Amount_Actual_Paid__c}</td>
+                                                            <!--<td><apex:outputfield value="{!item.Milestone_2_Processed_Date__c}"></apex:outputfield></td>-->
+                                                            <td><apex:outputfield value="{!item.Milestone_2_Paid_Date__c}"></apex:outputfield></td>
+                                                            <td>{!item.Milestone_3_Commission_True_Up__c}</td>
+                                                            <td>{!item.Milestone_3_Amount__c}</td>
+                                                            <td>{!item.Milestone_3_Actual_Paid__c}</td>
+                                                            <!--<td><apex:outputfield value="{!item.Milestone_3_Processed_Date__c}"></apex:outputfield></td>
+                                                            <td><apex:outputfield value="{!item.Milestone_3_Paid_Date__c}"></apex:outputfield></td>
+                                                            <td><apex:outputfield value="{!item.Site_Approved_Date__c}"></apex:outputfield></td>-->
+                                                            <td><apex:outputfield value="{!item.Contract_Received_Confirmed_Date__c}"></apex:outputfield></td>
+                                                            <td><apex:outputfield value="{!item.Installation_Complete_Date__c}"></apex:outputfield></td>
+                                                            <!--<td><apex:outputfield value="{!item.Install_Completion_Approved_Date__c}"></apex:outputfield></td>-->
+                                                            <td><apex:outputfield value="{!item.Opportunity__r.Cancellation_Date__c}"></apex:outputfield></td>
+                                                            <td>{!item.M1_Clawback_Amount__c}</td>
+                                                            <td>{!item.Clawback_Amount_Actual__c}</td>
+                                                            <td>{!item.Opportunity_Amount__c}</td>
+                                                            <td>{!item.Price_Watt__c}</td>
+                                                            <td>{!item.Opportunity__r.System_Size_Calculated_kW__c}</td>
+                                                            <td>{!item.CP_Base__c}</td>
+                                                            <td>{!item.CP_Base_Watt__c}</td>
+                                                            <td>{!item.Loan_Term__c}</td>
+                                                            <td>{!item.Dealer_Fees__c}</td>
+                                                            <td>{!item.Dealer_Fee_Percent__c}</td>
+                                                           <!-- new fields added 11/12/2019 start -->
+                                                            <td>{!item.APR__c}</td>                                                           
+                                                            <!-- new fields added 11/12/2019 end -->
+                                                            <td>{!item.Total_Adders_Upgrade_Incentives__c}</td>
+                                                            <td>{!item.CT_GreenBank_Adder__c}</td> 
+                                                            <td>{!item.commission.Structural_Electrical_Upgrade_Adder__c}</td> 
+                                                            <td>{!item.Roofing_Adder__c}</td>  
+                                                            <td>{!item.Electrical_Upgrade_Adder__c}</td>  
+                                                            <td>{!item.Structural_Upgrade_Adder__c}</td> 
+                                                            <td>{!item.Tree_Removal_Other_Adder__c}</td>
+                                                            <td>{!item.Other_Misc_Adders__c}</td> 
+                                                            <td>{!item.Total_Adders__c}</td>                                                    
+                                                            <td>{!item.Roof_Type_Adder__c}</td>
+                                                            <td>{!item.Roof_Tilt_Adder__c}</td>
+                                                            <td>{!item.High_Roof_Adder__c}</td>
+                                                            <td>{!item.Panel_Type_Adder__c}</td>
+                                                            <td>{!item.Solar_Edge_Warranty_Adder__c}</td>
+                                                            <td>{!item.Appointment_Success_Fee__c}</td>
+                                                            <td>{!item.Battery_Adder__c}</td>
+                                                            <td>{!item.Ground_Mount_Adder__c}</td>
+                                                            <td>{!item.Trenching_Distance_Adder__c}</td>
+                                                            
+                                                            <!--<td>{!item.Total_Adders_Quote__c}</td>-->                                                            
+                                                            
+                                                            
+                                                            
+                                                            <!--<td>{!item.commission.Total_Adders_Quote__c}</td>
+                                                            <td>{!item.Trenching_Adder__c}</td>-->
+                                                            <td><apex:outputfield value="{!item.Contract_Received_Date__c}" /></td>
+                                                            <!--<td>{!item.M3__c}</td>-->
+                                                            <td>{!item.Opportunity__r.StageName}</td>
+                                                            <td>{!item.Opportunity__r.Change_Order_Reason__c}</td>
+                                                            <td>{!item.Opportunity__r.Lead_Source_Type__c}</td>
+                                                        </tr>
+                                                    </apex:repeat>
+                                                </apex:repeat>
+                                            </apex:repeat>
+                                        </table>     
+                                    </apex:outputPanel>
+                                    <apex:outputPanel rendered="{!AND(isCommissionProcessed == true,selectedCommission == 'Processed Commissions')}">
+                                        <table width="100%" cellspacing="0" style="border:1px solid #CCCCCC">
+                                            <tr style="background-color:#F2F3F3">
+                                                <td style="border-left:1px solid #CCCCCC;border-right:1px solid #CCCCCC"><strong><apex:inputCheckbox value="{!selectAllForProcessedCommission}"  >
+                                                      <apex:actionSupport event="onchange" action="{!selectProcessedCommissionRecords}" status="filter_loading" rerender="theForm"/>
+                                                    </apex:inputCheckbox>All</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Commission Number</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>18 Character Opportunity ID</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>3rd Party Partner</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>3rd Party Salesrep</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Opportunity Name</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Financing Tool</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Total Commissions</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Opportunity Owner</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone1 Amount</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone1 Amount(Actual Paid)</strong></td>
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Milestone1 Processed Date</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone1 Paid Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone2 Commission TrueUp</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone2 Amount</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone2 Amount(Actual Paid)</strong></td>
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Milestone2 Processed Date</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone2 Paid Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone3 Commission TrueUp</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone3 Amount</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone3 Amount(Actual Paid)</strong></td>
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Milestone3 Processed Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Milestone3 Paid Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Site Approved Date</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Contract Received Confirmed Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Installation Complete Date</strong></td>
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Install Completion Approved Date</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Cancellation Date</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>M1 Clawback Amount</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Clawback(Amount) Actual</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Amount</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Price / Watt</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>System Size Calculated(kW)</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>CP Base</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>CP Base / Watt</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Loan Term</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Dealer Fee</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Dealer Fee%</strong></td>
+                                                <!-- new fields headers added 11/12/2019 start -->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>APR %</strong></td>                                                
+                                                 <!-- new fields column headers headers added 11/12/2019 end -->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Total Adders, Upgrade &amp; Incentives</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>CT GreenBank Incentive</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Total Upgrades Cost</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Re-Roof Upgrade Cost</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Electrical Upgrade Cost</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Structural Upgrade Cost</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Tree Removal / Other Upgrade Cost</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Other / Misc Adjustments</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Total Adders</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Roof Type Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Roof Tilt Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>High Roof Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Panel Type Adders</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Solar Edge Warranty Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Appointment Success Fee (Adder)</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Battery Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Ground Mount Adder</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Trenching Distance Adder</strong></td>
+                                                
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Total Adders Quote</strong></td>-->                                            
+                                                
+                                                
+                                                
+                                                
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>Total Upgrades Quote</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Trenching Adder</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Contract Received Date</strong></td>
+                                                <!--<td style="border-right:1px solid #CCCCCC"><strong>M3 %</strong></td>-->
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Stage</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Change Order Reason</strong></td>
+                                                <td style="border-right:1px solid #CCCCCC"><strong>Lead Source Type</strong></td>
+                                            </tr>
+                                            <apex:repeat value="{!commissionProcessedWithCustomClass}" var="milestonePayment">
+                                                <tr style="background-color:#D5DDF3">
+                                                    <td colspan="8"><strong>Milestone Payments</strong>:{!milestonePayment}</td>
+                                                    <td><strong>${!milestone1AmountTotalMap[milestonePayment]}</strong></td>
+                                                    <td><strong>${!milestone1AmountActualPaidTotalMap[milestonePayment]}</strong></td>
+                                                    <td  colspan="3"></td>
+                                                    <td><strong>${!milestone2AmountTotalMap[milestonePayment]}</strong></td>
+                                                    <td><strong>${!milestone2AmountActualPaidTotalMap[milestonePayment]}</strong></td>
+                                                    <td colspan="3"></td>
+                                                    <td><strong>${!milestone3AmountTotalMap[milestonePayment]}</strong></td>
+                                                    <td><strong>${!milestone3AmountActualPaidTotalMap[milestonePayment]}</strong></td>
+                                                    <td colspan="6"></td>
+                                                    <td><strong>${!milestoneClawBackAmountTotalMap[milestonePayment]}</strong></td>
+                                                    <td><strong>${!milestoneClawBackAmountActualPaidTotalMap[milestonePayment]}</strong></td>
+                                                    <td colspan="20"></td>
+                                                </tr>
+                                                <apex:repeat value="{!commissionProcessedWithCustomClass[milestonePayment]}" var="provider">
+                                                    <tr style="background-color:#EFF4FC;">
+                                                        <td colspan="8">   <strong>3rd Party Provider</strong>:{!provider}</td>
+                                                        <td><strong>${!partyProviderMilestone1AmountTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td><strong>${!partyProviderMilestone1AmountActualPaidTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td colspan="3"></td>
+                                                        <td><strong>${!partyProviderMilestone2AmountTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td><strong>${!partyProviderMilestone2AmountActualPaidTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td colspan="3"></td>
+                                                        <td><strong>${!partyProviderMilestone3AmountTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td><strong>${!partyProviderMilestone3AmountActualPaidTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td colspan="6"></td>
+                                                        <td><strong>${!partyProviderMilestoneClawBackAmountTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                        <td><strong>${!partyProviderMilestoneClawBackAmountActualPaidTotalMap[provider+"-"+milestonePayment]}</strong></td>
+                                                         <td colspan="20"></td>
+                                                    </tr>
+                                                    <apex:repeat value="{!commissionProcessedWithCustomClass[milestonePayment][provider]}" var="item">
+                                                        <tr>
+                                                            <td><apex:inputCheckbox value="{!item.isChecked}"/></td>
+                                                            <td><a href="/{!item.commission.id}" target="_blank">{!item.commission.Name}</a></td>
+                                                            <td>{!item.commission.X18_Character_Opportunity_ID__c}</td>
+                                                            <td>{!item.commission.Opportunity__r.X3rd_Party_Partner__c}</td>
+                                                            <td>{!item.commission.Opportunity__r.X3rd_Party_Sales_Rep__c}</td>
+                                                            <td><a href="/{!item.commission.Opportunity__r.id}" target="_blank">{!item.commission.Opportunity__r.Name}</a></td>
+                                                            <td>{!item.commission.Opportunity__r.Financing_Tool__c}</td>
+                                                            <td>{!item.commission.Total_Commissions__c}</td>
+                                                            <td>{!item.commission.Opportunity__r.Owner.Name}</td>
+                                                            <td>{!item.commission.Milestone_1_Amount__c}</td>
+                                                            <td>{!item.commission.Milestone_1_Amount_Actual_Paid__c}</td>
+                                                            <!--<td><apex:outputfield value="{!item.commission.Milestone_1_Processed_Date__c}"></apex:outputfield></td>-->
+                                                            <td><apex:outputfield value="{!item.commission.Milestone_1_Paid_Date__c}"></apex:outputfield></td>
+                                                            <td>{!item.commission.Milestone_2_Commission_True_Up__c}</td>
+                                                            <td>{!item.commission.Milestone_2_Amount__c}</td>
+                                                            <td>{!item.commission.Milestone_2_Amount_Actual_Paid__c}</td>
+                                                            <!--<td><apex:outputfield value="{!item.commission.Milestone_2_Processed_Date__c}"></apex:outputfield></td>-->
+                                                            <td><apex:outputfield value="{!item.commission.Milestone_2_Paid_Date__c}"></apex:outputfield></td>
+                                                            <td>{!item.commission.Milestone_3_Commission_True_Up__c}</td>
+                                                            <td>{!item.commission.Milestone_3_Amount__c}</td>
+                                                            <td>{!item.commission.Milestone_3_Actual_Paid__c}</td>
+                                                            <!--<td><apex:outputfield value="{!item.commission.Milestone_3_Processed_Date__c}"></apex:outputfield></td>
+                                                            <td><apex:outputfield value="{!item.commission.Milestone_3_Paid_Date__c}"></apex:outputfield></td>
+                                                            <td><apex:outputfield value="{!item.commission.Site_Approved_Date__c}"></apex:outputfield></td>-->
+                                                            <td><apex:outputfield value="{!item.commission.Contract_Received_Confirmed_Date__c}"></apex:outputfield></td>
+                                                            <td><apex:outputfield value="{!item.commission.Installation_Complete_Date__c}"></apex:outputfield></td>
+                                                            <!--<td><apex:outputfield value="{!item.commission.Install_Completion_Approved_Date__c}"></apex:outputfield></td>-->
+                                                            <td><apex:outputfield value="{!item.commission.Opportunity__r.Cancellation_Date__c}"></apex:outputfield></td>
+                                                            <td>{!item.commission.M1_Clawback_Amount__c}</td>
+                                                            <td>{!item.commission.Clawback_Amount_Actual__c}</td>
+                                                            <td>{!item.commission.Opportunity_Amount__c}</td>
+                                                            <td>{!item.commission.Price_Watt__c}</td>
+                                                            <td>{!item.commission.Opportunity__r.System_Size_Calculated_kW__c}</td>
+                                                            <td>{!item.commission.CP_Base__c}</td>
+                                                            <td>{!item.commission.CP_Base_Watt__c}</td>
+                                                            <td>{!item.commission.Loan_Term__c}</td>
+                                                            <td>{!item.commission.Dealer_Fees__c}</td>
+                                                            <td>{!item.commission.Dealer_Fee_Percent__c}</td>
+                                                            <!-- new fields added 11/12/2019 start -->
+                                                            <td>{!item.commission.APR__c}</td>                                                            
+                                                            <!-- new fields added 11/12/2019 end -->
+                                                            <td>{!item.commission.Total_Adders_Upgrade_Incentives__c}</td>
+                                                            <td>{!item.commission.CT_GreenBank_Adder__c}</td>
+                                                            <td>{!item.commission.Structural_Electrical_Upgrade_Adder__c}</td>
+                                                            <td>{!item.commission.Roofing_Adder__c}</td>
+                                                            <td>{!item.commission.Electrical_Upgrade_Adder__c}</td>
+                                                            <td>{!item.commission.Structural_Upgrade_Adder__c}</td>
+                                                            <td>{!item.commission.Tree_Removal_Other_Adder__c}</td>
+                                                            <td>{!item.commission.Other_Misc_Adders__c}</td>
+                                                            <td>{!item.commission.Total_Adders__c}</td>
+                                                            <td>{!item.commission.Roof_Type_Adder__c}</td>
+                                                            <td>{!item.commission.Roof_Tilt_Adder__c}</td>
+                                                            <td>{!item.commission.High_Roof_Adder__c}</td>
+                                                            <td>{!item.commission.Panel_Type_Adder__c}</td>
+                                                            <td>{!item.commission.Solar_Edge_Warranty_Adder__c}</td>
+                                                            <td>{!item.commission.Appointment_Success_Fee__c}</td>
+                                                            <td>{!item.commission.Battery_Adder__c}</td>
+                                                            <td>{!item.commission.Ground_Mount_Adder__c}</td>
+                                                            <td>{!item.commission.Trenching_Distance_Adder__c}</td>
+                                                            
+                                                            <!--<td>{!item.commission.Total_Adders_Quote__c}</td>-->                                                            
+                                                            
+                                                            <!--<td>{!item.commission.Total_Adders_Quote__c}</td>
+                                                            <td>{!item.commission.Trenching_Adder__c}</td>-->
+                                                            <td><apex:outputfield value="{!item.commission.Contract_Received_Date__c}" /></td>
+                                                            <!--<td>{!item.commission.M3__c}</td>-->
+                                                            <td>{!item.commission.Opportunity__r.StageName}</td>
+                                                            <td>{!item.commission.Opportunity__r.Change_Order_Reason__c}</td>
+                                                            <td>{!item.commission.Opportunity__r.Lead_Source_Type__c}</td>
+                                                        </tr>
+                                                    </apex:repeat>
+                                                </apex:repeat>
+                                            </apex:repeat>
+                                        </table>     
+                                    </apex:outputPanel>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>               
+                
+            </table>
+                </apex:outputPanel>
+        </apex:form>
+    </apex:pageBlock>
+    <script type="text/javascript">
+    /* window.onload = setFocus
+        function setFocus() 
+        {
+          document.getElementById('thePage:theBlock:theForm:elementonfocus').focus();
+        }*/
+      function setFocusOnLoad() {
+          document.getElementById('thePage:theBlock:theForm:elementonfocus').focus();
+        }
+
+      </script>
+    <script>
+        function disableInputs(){
+            var page = document.getElementById("thePage:theBlock:theForm");
+            var inputs = page.getElementsByClassName("disable");
+            for (var i = 0; i < inputs.length; i++) {
+                inputs[i].disabled = true;
+            }
+        }
+        
+        function enableInputs(){
+            var page = document.getElementById("thePage:theBlock:theForm");
+            var inputs = page.getElementsByClassName("disable");
+            for (var i = 0; i < inputs.length; i++) {
+                inputs[i].disabled = false;
+            }
+        }
+        
+        function allChecked(checked, className){
+            var providerElems = document.getElementsByClassName(className);
+            
+            for(var i = 0; i < providerElems.length; i++){
+                providerElems[i].checked = checked;
+            }
+        }
+        
+        function confirmUprocess(){
+            var rowsSelected = false;
+            var providerElems = document.getElementsByClassName('unprocessList');
+            for(var i = 0; i < providerElems.length; i++){
+                if(providerElems[i].checked){
+                    rowsSelected = true;
+                    break;
+                }
+            }
+            
+            if(rowsSelected){
+                var r = confirm("Are you sure you want to continue?");
+                if (r == true) {
+                    callUprocess();
+                }
+            } else{
+                alert('Please select at least one commission to unprocess.');
+            }
+        }
+    </script>
+</apex:page>

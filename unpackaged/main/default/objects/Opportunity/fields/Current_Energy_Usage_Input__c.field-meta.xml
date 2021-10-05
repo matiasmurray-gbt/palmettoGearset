@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Energy_Usage_Input__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>On the Current Energy Usage tab, ensure the correct utility provider is listed.  You will need an actual utility bill from the customer to enter the data in this section.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>On the Current Energy Usage tab, ensure the correct utility provider is listed.  You will need an actual utility bill from the customer to enter the data in this section.</inlineHelpText>
+    <label>Current Energy Usage Input</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Panel_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Panel Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>LG 310N1C-G4</fullName>
+                <default>false</default>
+                <label>LG 310N1C-G4</label>
+            </value>
+            <value>
+                <fullName>LG 320 Black/Black</fullName>
+                <default>false</default>
+                <label>LG 320 Black/Black</label>
+            </value>
+            <value>
+                <fullName>LG 320W</fullName>
+                <default>false</default>
+                <label>LG 320W</label>
+            </value>
+            <value>
+                <fullName>LG 330W</fullName>
+                <default>false</default>
+                <label>LG 330W</label>
+            </value>
+            <value>
+                <fullName>LG 335W</fullName>
+                <default>false</default>
+                <label>LG 335W</label>
+            </value>
+            <value>
+                <fullName>Q.PEAK Duo BLK-G5 305</fullName>
+                <default>false</default>
+                <label>Q.PEAK Duo BLK-G5 305</label>
+            </value>
+            <value>
+                <fullName>Q.PEAK Duo BLK-G5 310</fullName>
+                <default>false</default>
+                <label>Q.PEAK Duo BLK-G5 310</label>
+            </value>
+            <value>
+                <fullName>Q Cells 295W Black on Black</fullName>
+                <default>false</default>
+                <label>Q Cells 295W Black on Black</label>
+            </value>
+            <value>
+                <fullName>QCells 300W</fullName>
+                <default>false</default>
+                <label>QCells 300W</label>
+            </value>
+            <value>
+                <fullName>Q Cells 310W Q.Peak Duo</fullName>
+                <default>false</default>
+                <label>Q Cells 310W Q.Peak Duo</label>
+            </value>
+            <value>
+                <fullName>REC 280TP BLK</fullName>
+                <default>false</default>
+                <label>REC 280TP BLK</label>
+            </value>
+            <value>
+                <fullName>REC 290TP BLK</fullName>
+                <default>false</default>
+                <label>REC 290TP BLK</label>
+            </value>
+            <value>
+                <fullName>SLA-M 290</fullName>
+                <default>false</default>
+                <label>SLA-M 290</label>
+            </value>
+            <value>
+                <fullName>Trina_280_Black_on_Black</fullName>
+                <default>false</default>
+                <label>Trina 280 Black on Black</label>
+            </value>
+            <value>
+                <fullName>Trina 295W</fullName>
+                <default>false</default>
+                <label>Trina 295W</label>
+            </value>
+            <value>
+                <fullName>330W All Black Module</fullName>
+                <default>false</default>
+                <label>330W All Black Module</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

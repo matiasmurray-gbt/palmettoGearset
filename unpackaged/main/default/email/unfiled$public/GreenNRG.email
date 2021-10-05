@@ -1,0 +1,8 @@
+Permits have been approved. As soon as they are picked up we will upload into google drive.
+
+Permit Ready Date - {!Opportunity.Permit_Ready_Date__c}
+
+Permit Jurisdiction - {!Opportunity.Permitting_Jurisdiction__c}
+
+{!Account.Name} 
+{!Account.BillingAddress}

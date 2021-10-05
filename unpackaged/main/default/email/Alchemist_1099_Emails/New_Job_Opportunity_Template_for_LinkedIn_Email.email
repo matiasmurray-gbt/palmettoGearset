@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Dear&nbsp;{!Opportunity.Contact_First_Name__c},<div><br></div><div>We have started hiring for a newly opened position, Independent Palmetto Alchemist--and we think you might be interested! We'd love the opportunity to chat with you in further detail.</div><div><br></div><div>We look forward to your application!</div><div><div><br></div><div>Sincerely,</div><div><br></div><div>Bryan Hoffman</div><div>Palmetto Alchemist Account Manager</div><div>(843) 996-4596</div></div>]]></td>
+</tr>
+</table>

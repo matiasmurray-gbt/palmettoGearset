@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Commissions_Paid_To_Date__c</fullName>
+    <externalId>false</externalId>
+    <formula>Milestone_1_Amount_Actual_Paid__c + Milestone_2_Amount_Actual_Paid__c + Milestone_3_Actual_Paid__c + M1_Sales_Rep_Payroll_Paid__c + M2_Sales_Rep_Payroll_Paid__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Commissions Paid (To Date)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

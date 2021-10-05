@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Assign_Mary_as_Inside_Sales_Rep</fullName>
+        <field>Inside_Sales_Rep__c</field>
+        <lookupValue>mary.cole@palmetto.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Assign Mary as Inside Sales Rep</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Assign_McKenna_as_Inside_Sales_Rep</fullName>
+        <field>Inside_Sales_Rep__c</field>
+        <lookupValue>mckenna.beam@palmetto.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Assign McKenna as Inside Sales Rep</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Assign_Tia_as_Inside_Sales_Rep</fullName>
+        <field>Inside_Sales_Rep__c</field>
+        <lookupValue>tia.cline@palmetto.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Assign Tia as Inside Sales Rep</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Business_Development_Company_Name</fullName>
+        <field>Company</field>
+        <formula>Company_Legal_Name__c  &amp; " - Account"</formula>
+        <name>Business Development - Company Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Canvass_Closers_Lead_Source_Self_Gen</fullName>
+        <field>LeadSource</field>
+        <literalValue>Self Generated Lead</literalValue>
+        <name>Canvass Closers - Lead Source = Self-Gen</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Company_Name</fullName>
+        <field>Company</field>
+        <formula>FirstName&amp;" "&amp;LastName  &amp; " - Account"</formula>
+        <name>Company Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Copy_SalesRabbit_Appt_to_Lead_Appt</fullName>
+        <description>Copies the value of the SalesRabbit custom Appointment datetime field to the general Lead appointment field.</description>
+        <field>Appointment_Date_and_Time__c</field>
+        <formula>Sales_Rabbit_Appointment__c</formula>
+        <name>Copy SalesRabbit Appt to Lead Appt</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Harbor_Blair_Townsend</fullName>
+        <field>X3rd_Party_Sales_Rep__c</field>
+        <literalValue>Blair Townsend</literalValue>
+        <name>Harbor - Blair Townsend</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Harbor_Darren_Carter</fullName>
+        <field>X3rd_Party_Sales_Rep__c</field>
+        <literalValue>Darren Carter</literalValue>
+        <name>Harbor - Darren Carter</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Harbor_Kevin_Nordeen</fullName>
+        <field>X3rd_Party_Sales_Rep__c</field>
+        <literalValue>Kevin Nordeen</literalValue>
+        <name>Harbor - Kevin Nordeen</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Harbor_Travis_Jones</fullName>
+        <field>X3rd_Party_Sales_Rep__c</field>
+        <literalValue>Travis Jones</literalValue>
+        <name>Harbor - Travis Jones</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Desc_Copy_to_2nd_Field</fullName>
+        <description>Copies value of standard Description field to the custom Customer Notes field.</description>
+        <field>Customer_Notes__c</field>
+        <formula>Description</formula>
+        <name>Lead Desc Copy to 2nd Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Record_Type_3rd_Party_Contracted</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>X3rd_Party_Contracted_Sales</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Lead Record Type = 3rd Party Contracted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Record_Type_3rd_Party_Design</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>X3rd_Party_Design_Sales</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Lead Record Type = 3rd Party Design</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Record_Type_Biz_Development</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Business_Development</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Lead Record Type = Biz Development</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Record_Type_Energy_Monitor</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Energy_Monitor</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Lead Record Type = Energy Monitor</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Source_3rd_Party_Provider</fullName>
+        <field>LeadSource</field>
+        <literalValue>3rd Party Provider</literalValue>
+        <name>Lead Source = 3rd Party Provider</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Source_Type_Independent</fullName>
+        <field>Lead_Source_Type__c</field>
+        <literalValue>Independent</literalValue>
+        <name>Lead Source Type = Independent</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_CHS_Sub_Market</fullName>
+        <field>Sub_Market__c</field>
+        <literalValue>Charleston</literalValue>
+        <name>Populate CHS Sub-Market</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_COL_Sub_Market</fullName>
+        <field>Sub_Market__c</field>
+        <literalValue>Columbia</literalValue>
+        <name>Populate COL Sub-Market</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_Country</fullName>
+        <field>Country</field>
+        <formula>"United States"</formula>
+        <name>Populate Country</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_GNV_Sub_Market</fullName>
+        <field>Sub_Market__c</field>
+        <literalValue>Greenville</literalValue>
+        <name>Populate GNV Sub-Market</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_Lead_Source</fullName>
+        <field>LeadSource</field>
+        <literalValue>Self Generated Lead</literalValue>
+        <name>Populate Lead Source</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Leadsource_to_Canvassing</fullName>
+        <description>Sets value to Canvassing picklist value.</description>
+        <field>LeadSource</field>
+        <literalValue>Canvassing</literalValue>
+        <name>Set Leadsource to Canvassing</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Site_Verification_Request_Date</fullName>
+        <field>Site_Verification_Request_Date__c</field>
+        <formula>Today()</formula>
+        <name>Site Verification Request Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Campaign_for_Harbor_Leads</fullName>
+        <field>Campaign_ID__c</field>
+        <formula>"7011a000000bmVx"</formula>
+        <name>Update Campaign for Harbor Leads</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Lead_Record_Type_Business_Devel</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Business_Development</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Lead Record Type - Business Devel</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Lead_Source_Type_Channel</fullName>
+        <field>Lead_Source_Type__c</field>
+        <literalValue>Channel</literalValue>
+        <name>Update Lead Source Type = Channel</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Lead_Source_Type_Corp</fullName>
+        <field>Lead_Source_Type__c</field>
+        <literalValue>Corporate</literalValue>
+        <name>Update Lead Source Type = Corp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Lead_Source_Type_Self_Gen</fullName>
+        <field>Lead_Source_Type__c</field>
+        <literalValue>Self-Generated</literalValue>
+        <name>Update Lead Source Type = Self Gen</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Manager_Email</fullName>
+        <field>Manager_Email__c</field>
+        <formula>Owner:User.Manager.Email</formula>
+        <name>Update Manager Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X3rd_Party_Partner_Ion_Solar</fullName>
+        <field>X3rd_Party_Partner__c</field>
+        <literalValue>Ion Solar</literalValue>
+        <name>3rd Party Partner - Ion Solar</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>tmpComboNote</fullName>
+        <field>TMP_combo_note__c</field>
+        <formula>Customer_Notes__c &amp; IF(NOT(ISBLANK(Description)), BR() + Description, "")</formula>
+        <name>tmpComboNote</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>3rd Party Partner - Ion Solar</fullName>
+        <actions>
+            <name>Lead_Source_3rd_Party_Provider</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>X3rd_Party_Partner_Ion_Solar</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.CreatedById</field>
+            <operation>equals</operation>
+            <value>Ion Solar</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Dupe Lead Desc to 2nd Field</fullName>
+        <actions>
+            <name>Lead_Desc_Copy_to_2nd_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.IsConverted</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>Duplicates the standard Lead desc field that converted to the Contact to a 2nd field that can be mapped to the Opportunity as well.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Independent Alchemists Leads</fullName>
+        <actions>
+            <name>Lead_Record_Type_Biz_Development</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Lead_Source_Type_Independent</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.Biz_Dev_Customer_Type__c</field>
+            <operation>equals</operation>
+            <value>Partner - Alchemist</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LEAD - Company Name</fullName>
+        <actions>
+            <name>Company_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Inside/Outside Sales,3rd Party - Contracted Sales,3rd Party - Design Sales</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>notEqual</operation>
+            <value>Palmetto.com | Channel Partners</value>
+        </criteriaItems>
+        <description>For an inside / outside sales and CP Leads, sets the Company Name automatically.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LEAD - Company Name - Business Development</fullName>
+        <actions>
+            <name>Business_Development_Company_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Palmetto.com | Channel Partners</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Inside/Outside Sales,3rd Party - Contracted Sales,3rd Party - Design Sales</value>
+        </criteriaItems>
+        <description>For BD, sets the Company Name automatically.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead Assignment Rule</fullName>
+        <active>false</active>
+        <formula>Owner:Queue.QueueName == 'GoSolar'</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead Conversion SLA Not Met</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.Lead_Conversion_Overdue__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Lead_Conversion_SLA__c</field>
+            <operation>equals</operation>
+            <value>Not Met</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Alchemist Lead</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Business Development</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LastName</field>
+            <operation>notContain</operation>
+            <value>test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Biz_Dev_Customer_Type__c</field>
+            <operation>equals</operation>
+            <value>Partner - Alchemist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.FirstName</field>
+            <operation>notContain</operation>
+            <value>test</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Ambassador Lead</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Alchemist BD Referral</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LastName</field>
+            <operation>notContain</operation>
+            <value>test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Palmetto.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.FirstName</field>
+            <operation>notContain</operation>
+            <value>test</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Home Owner Lead</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Inside/Outside Sales</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LastName</field>
+            <operation>notContain</operation>
+            <value>test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Digital Marketing,Palmetto.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.FirstName</field>
+            <operation>notContain</operation>
+            <value>test</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Home Owner Lead - Notifies Homewoner</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Inside/Outside Sales</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LastName</field>
+            <operation>notContain</operation>
+            <value>test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Digital Marketing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.FirstName</field>
+            <operation>notContain</operation>
+            <value>test</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Home Owner Lead - Notify Lead</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Inside/Outside Sales</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LastName</field>
+            <operation>notContain</operation>
+            <value>test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Digital Marketing,Palmetto.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.FirstName</field>
+            <operation>notContain</operation>
+            <value>test</value>
+        </criteriaItems>
+        <description>Notify the lead when its created</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>No Canvass Rep Listed</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Canvassing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Canvass_Rep__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify Customer Care for Canvass Lead</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Canvassing</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Palmetto Home Lead</fullName>
+        <actions>
+            <name>Lead_Record_Type_Energy_Monitor</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.Campaign_ID__c</field>
+            <operation>equals</operation>
+            <value>7011a000000pdPH</value>
+        </criteriaItems>
+        <description>Change lead record to Energy Monitor when submitted to 1126 [Awareness] - TS Palmetto Home Landing Page - [Website] - 12.1.17.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate City</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Palmetto.com,3rd Party Provider,Canvassing,Home Builder,Palmetto.com | Channel Partners,Email Marketing,Energy Dashboard,Event</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate State</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Palmetto.com,3rd Party Provider,Canvassing,Home Builder,Palmetto.com | Channel Partners,Email Marketing,Energy Dashboard,Event</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Self-Gen Charleston</fullName>
+        <actions>
+            <name>Populate_CHS_Sub_Market</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Populate_Lead_Source</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.CreatedById</field>
+            <operation>equals</operation>
+            <value>Craig Lynberg,Craig Maynard,Dail Zimmermann,Ethan Brown,Josh Scher,Matthew Hochstatter,Michael Dulaney,Michael Epps</value>
+        </criteriaItems>
+        <description>Populate sub-market and lead source.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Self-Gen Columbia</fullName>
+        <actions>
+            <name>Populate_COL_Sub_Market</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Populate_Lead_Source</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.CreatedById</field>
+            <operation>equals</operation>
+            <value>Marlon Clemmons,Chaz Williams</value>
+        </criteriaItems>
+        <description>Populate sub-market and lead source.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Self-Gen Greenville</fullName>
+        <actions>
+            <name>Populate_GNV_Sub_Market</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Populate_Lead_Source</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.CreatedById</field>
+            <operation>equals</operation>
+            <value>Nick Sinclair,Jason Smith</value>
+        </criteriaItems>
+        <description>Populate sub-market and lead source.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Site Verification Request Date</fullName>
+        <actions>
+            <name>Site_Verification_Request_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.Site_Needs_Verification__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Campaign for Harbor Leads</fullName>
+        <actions>
+            <name>Update_Campaign_for_Harbor_Leads</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.CreatedById</field>
+            <operation>equals</operation>
+            <value>Katie Owen</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Lead Record Type - Business Development</fullName>
+        <actions>
+            <name>Update_Lead_Record_Type_Business_Devel</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 AND 2) or 3</booleanFilter>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Palmetto.com | Channel Partners</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Biz_Dev_Customer_Type__c</field>
+            <operation>equals</operation>
+            <value>Partner - Channel</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Biz_Dev_Customer_Type__c</field>
+            <operation>equals</operation>
+            <value>Partner - Alchemist</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Lead Record for 3rd Party - Contracted Sales</fullName>
+        <actions>
+            <name>Lead_Record_Type_3rd_Party_Contracted</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>3rd Party Provider</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.X3rd_Party_Partner__c</field>
+            <operation>equals</operation>
+            <value>Skyta Solar,Y Go Solar,Clear Solar,Ion Solar</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Lead Record for 3rd Party - Design Sales</fullName>
+        <actions>
+            <name>Lead_Record_Type_3rd_Party_Design</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 or 3)</booleanFilter>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>3rd Party Provider</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.X3rd_Party_Partner__c</field>
+            <operation>equals</operation>
+            <value>Harbor Energy,Brightest,World Solar Solutions,Inti Solar,180 South Solar,Poly Energy,"Solar Route, LLC",Super Green Solutions,New Choice Solar,Solar by Nature,Solaris By Sun Energy,Florida Solar Energy Group,Bright Homes Solar,New Jersey Sun Tech</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.X3rd_Party_Partner__c</field>
+            <operation>equals</operation>
+            <value>Barry Enterprises,NexxGen Technologies,Radius Solar,Jersey Business Group,Dvinci Energy,Solar Rescue</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Lead Source Type %3D Channel</fullName>
+        <actions>
+            <name>Update_Lead_Source_Type_Channel</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Campaign_ID__c</field>
+            <operation>notEqual</operation>
+            <value>7011a000000UzAJ</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Manager Email - Lead</fullName>
+        <actions>
+            <name>Update_Manager_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.Manager_Email__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Connected_with_Lead_Follow_UP</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Follow Up with email and/or phone call</description>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Connected with Lead - Follow UP</subject>
+    </tasks>
+    <tasks>
+        <fullName>Contact_New_Lead</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Contact new Lead today or if after hours/weekend next business day.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Contact New Lead</subject>
+    </tasks>
+    <tasks>
+        <fullName>Convert_Interested_Lead</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Lead Status "Connceted Interested" Convert Lead</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Convert Interested Lead</subject>
+    </tasks>
+    <tasks>
+        <fullName>Email_Sorry_we_missed_you</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Left Voice Mail Lead Status sent Sorry we missed you email</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Completed</status>
+        <subject>Email: Sorry we missed you</subject>
+    </tasks>
+    <tasks>
+        <fullName>Follow_Up_Tomorrow</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Follow up with Lead tomorrow</description>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Follow Up Tomorrow</subject>
+    </tasks>
+    <tasks>
+        <fullName>Follow_Up_on_email_sent</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Follow Up on email sent with a phone call, if you still can't connect send "Sorry I missed you" email.</description>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Follow Up on email sent</subject>
+    </tasks>
+</Workflow>

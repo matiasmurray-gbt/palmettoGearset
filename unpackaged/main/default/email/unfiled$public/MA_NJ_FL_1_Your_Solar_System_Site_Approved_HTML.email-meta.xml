@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>MA/NJ/FL - 1 Your Solar System - Site Approved HTML</name>
+    <style>freeForm</style>
+    <subject>Palmetto Solar Update On Your Project - System Design Complete</subject>
+    <textOnly>Hello {!Contact.Name},
+
+Congratulations! We have finalized your system design &amp; are now ready to move forward with the approval process as we get closer to the installation of your panels.
+
+The next steps include:
+
+1a) Submitting the interconnection application to the utility
+1b) Submitting Homeowners Association Approval Application – If you have an HOA that requires separate approval, please let us know so we can help facilitate this process. If not we will continue on with the rest of the process!
+
+2) Completing the full engineering package
+3) Filing for the building &amp; electrical permits with the local permitting jurisdiction
+4) Permit Approvals
+5) HOA Approvals (If you have an HOA)
+6) Interconnection Approvals
+7) Equipment Ready
+8) Installation Scheduling
+9) Installation
+
+
+You will be receiving notices from us as we make progress through these steps towards getting your solar system installed.
+
+
+
+As always feel free to reach out to us if you have any questions along the way.
+
+Thanks,
+Palmetto Solar Customer Care
+855-339-1831
+customer.care@palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

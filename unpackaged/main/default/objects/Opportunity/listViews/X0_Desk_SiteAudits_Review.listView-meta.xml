@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X0_Desk_SiteAudits_Review</fullName>
+    <booleanFilter>3 AND 4 AND (2 OR 8) AND 7 AND ((1 AND 6)  OR 5) AND 9 AND 10</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>System_Size_Calculated_kW__c</columns>
+    <columns>Post_Sales_Pre_Installation_Notes__c</columns>
+    <columns>Customer_Notes__c</columns>
+    <columns>X3rd_Party_Partner__c</columns>
+    <columns>Location__c</columns>
+    <columns>Sub_Market__c</columns>
+    <columns>Home_Owners_Association__c</columns>
+    <columns>Days_Since_Contract_Received__c</columns>
+    <columns>Site_Audit_FieldCompleted_Date__c</columns>
+    <columns>Site_Audit_Completed_Date__c</columns>
+    <columns>Contract_Received_Confirmed_Date__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Financing_Tool__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>5. LOI (Letter of Intent) Signed</value>
+    </filters>
+    <filters>
+        <field>Site_Audit_Completed__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer,Dividend Solar</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>equals</operation>
+        <value>Michigan,North Carolina,South Carolina</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>8a. Site Audit Completed</value>
+    </filters>
+    <filters>
+        <field>LOI_Design_Confirmed__c</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.X3rd_Party_Contracted_Sales,Opportunity.X3rd_Party_Design_Sales</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>8a. Site Audit Completed</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>fianance</value>
+    </filters>
+    <filters>
+        <field>Test_Account__c</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <label>0.1 Site Survey Review - SC/NC/MI</label>
+    <sharedTo>
+        <role>Director_Sales</role>
+        <role>Marketing</role>
+        <role>Operations_Manager</role>
+        <role>Project_Designer</role>
+        <role>Project_Manager_FL</role>
+        <role>Project_Manager_SC</role>
+        <role>Senior_Project_Designer</role>
+    </sharedTo>
+</ListView>

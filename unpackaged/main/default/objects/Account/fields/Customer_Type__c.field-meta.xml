@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Residential - Customer</fullName>
+                <default>false</default>
+                <label>Residential - Customer</label>
+            </value>
+            <value>
+                <fullName>Residential Channel Partner - Architects, Developers and Land Planners</fullName>
+                <default>false</default>
+                <label>Residential Channel Partner - Architects, Developers and Land Planners</label>
+            </value>
+            <value>
+                <fullName>Residential Channel Partner - Brokerage Co.</fullName>
+                <default>false</default>
+                <label>Residential Channel Partner - Brokerage Co.</label>
+            </value>
+            <value>
+                <fullName>Residential Channel Partner - Contractor</fullName>
+                <default>false</default>
+                <label>Residential Channel Partner - Contractor</label>
+            </value>
+            <value>
+                <fullName>Residential Channel Partner - Homebuilder</fullName>
+                <default>false</default>
+                <label>Residential Channel Partner - Homebuilder</label>
+            </value>
+            <value>
+                <fullName>Residential Channel Partner - Property Manager</fullName>
+                <default>false</default>
+                <label>Residential Channel Partner - Property Manager</label>
+            </value>
+            <value>
+                <fullName>Commercial Channel Partner - Architects, Developers and Land Planners</fullName>
+                <default>false</default>
+                <label>Commercial Channel Partner - Architects, Developers and Land Planners</label>
+            </value>
+            <value>
+                <fullName>Commercial Channel Partner - Contractor</fullName>
+                <default>false</default>
+                <label>Commercial Channel Partner - Contractor</label>
+            </value>
+            <value>
+                <fullName>Commercial Channel Partner - Homebuilder</fullName>
+                <default>false</default>
+                <label>Commercial Channel Partner - Homebuilder</label>
+            </value>
+            <value>
+                <fullName>Commercial Channel Partner - Property Manager</fullName>
+                <default>false</default>
+                <label>Commercial Channel Partner - Property Manager</label>
+            </value>
+            <value>
+                <fullName>Commercial - Customer</fullName>
+                <default>false</default>
+                <label>Commercial - Customer</label>
+            </value>
+            <value>
+                <fullName>Investor - Corporate Debt</fullName>
+                <default>false</default>
+                <label>Investor - Corporate Debt</label>
+            </value>
+            <value>
+                <fullName>Investor - Corporate Equity</fullName>
+                <default>false</default>
+                <label>Investor - Corporate Equity</label>
+            </value>
+            <value>
+                <fullName>Investor - Corporate Other</fullName>
+                <default>false</default>
+                <label>Investor - Corporate Other</label>
+            </value>
+            <value>
+                <fullName>Investor - Property Debt</fullName>
+                <default>false</default>
+                <label>Investor - Property Debt</label>
+            </value>
+            <value>
+                <fullName>Investor - Property Equity</fullName>
+                <default>false</default>
+                <label>Investor - Property Equity</label>
+            </value>
+            <value>
+                <fullName>Investor - Property Other</fullName>
+                <default>false</default>
+                <label>Investor - Property Other</label>
+            </value>
+            <value>
+                <fullName>Investor - Solar Array (entire system)</fullName>
+                <default>false</default>
+                <label>Investor - Solar Array (entire system)</label>
+            </value>
+            <value>
+                <fullName>Investor - Solar Debt</fullName>
+                <default>false</default>
+                <label>Investor - Solar Debt</label>
+            </value>
+            <value>
+                <fullName>Investor - Solar Sponsor Equity</fullName>
+                <default>false</default>
+                <label>Investor - Solar Sponsor Equity</label>
+            </value>
+            <value>
+                <fullName>Investor - Solar Tax Equity</fullName>
+                <default>false</default>
+                <label>Investor - Solar Tax Equity</label>
+            </value>
+            <value>
+                <fullName>Sunrun Installation</fullName>
+                <default>false</default>
+                <label>Sunrun Installation</label>
+            </value>
+            <value>
+                <fullName>Utility - Customer</fullName>
+                <default>false</default>
+                <label>Utility - Customer</label>
+            </value>
+            <value>
+                <fullName>Business Development - REIT</fullName>
+                <default>false</default>
+                <label>Business Development - REIT</label>
+            </value>
+            <value>
+                <fullName>Residential Channel Partner - Build Only</fullName>
+                <default>false</default>
+                <label>Residential Channel Partner - Build Only</label>
+            </value>
+            <value>
+                <fullName>Ambassador</fullName>
+                <default>false</default>
+                <label>Ambassador</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,2132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>Email_Opportunity</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_11_A1</name>
+        <label>Email Alert</label>
+        <locationX>1100</locationX>
+        <locationY>200</locationY>
+        <actionName>Opportunity.Email_Opportunity</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myDecision12</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>Email_Opportunity</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_13_A1</name>
+        <label>Email Alert</label>
+        <locationX>1300</locationX>
+        <locationY>200</locationY>
+        <actionName>Opportunity.Email_Opportunity</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myDecision14</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>Email_Opportunity</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_15_A1</name>
+        <label>Email Alert</label>
+        <locationX>1500</locationX>
+        <locationY>200</locationY>
+        <actionName>Opportunity.Email_Opportunity</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>ActionCallType</name>
+            <value>
+                <stringValue>flow</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>flowSelection</name>
+            <value>
+                <stringValue>Update Contact from Opportunity Contact Roles</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>Launch Contact Role flow</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <actionName>Update_Contact_from_Opportunity_Contact_Roles</actionName>
+        <actionType>flow</actionType>
+        <connector>
+            <targetReference>myDecision2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>varOpportunityID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>varOpportunityID</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>ActionCallType</name>
+            <value>
+                <stringValue>process</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>flowSelection</name>
+            <value>
+                <stringValue>Change Opportunity Owner</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_3_A1</name>
+        <label>Launch Change Opp Owner Process</label>
+        <locationX>300</locationX>
+        <locationY>200</locationY>
+        <actionName>Change_Opportunity_Owner</actionName>
+        <actionType>flow</actionType>
+        <connector>
+            <targetReference>myDecision4</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>0.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue>Opportunity</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>SObject</name>
+            <value>
+                <elementReference>myVariable_current</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>Send Textey Message</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_5_A1</name>
+        <label>SMS1</label>
+        <locationX>500</locationX>
+        <locationY>200</locationY>
+        <actionName>simplesms__Invocable_SendMessage</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>myDecision6</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>To Phone</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>0.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>toNumber</name>
+            <value>
+                <elementReference>myVariable_current.Phone_Textey__c</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>From Phone</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>0.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>fromNumber</name>
+            <value>
+                <stringValue>8437018055</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Owner Id</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>0.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>ownerId</name>
+            <value>
+                <stringValue>0052L000003HoWsQAK</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Parent Id</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>0.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>parentId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Template Code</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>templateCode</name>
+            <value>
+                <stringValue>Contact-1429</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>Send Textey Message</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_7_A1</name>
+        <label>SMS2</label>
+        <locationX>700</locationX>
+        <locationY>200</locationY>
+        <actionName>simplesms__Invocable_SendMessage</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>myDecision8</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>To Phone</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>0.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>toNumber</name>
+            <value>
+                <elementReference>myVariable_current.Phone_Textey__c</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>From Phone</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>0.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>fromNumber</name>
+            <value>
+                <stringValue>8437018055</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Owner Id</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>0.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>ownerId</name>
+            <value>
+                <stringValue>0052L000003HoWsQAK</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Parent Id</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>0.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>parentId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Template Code</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>templateCode</name>
+            <value>
+                <stringValue>Contact-8096</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>Send Textey Message</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_9_A1</name>
+        <label>SMS3</label>
+        <locationX>900</locationX>
+        <locationY>200</locationY>
+        <actionName>simplesms__Invocable_SendMessage</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>myDecision10</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>To Phone</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>0.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>toNumber</name>
+            <value>
+                <elementReference>myVariable_current.Phone_Textey__c</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>From Phone</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>0.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>fromNumber</name>
+            <value>
+                <stringValue>8437018055</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Owner Id</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>0.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>ownerId</name>
+            <value>
+                <stringValue>0052L000003HoWsQAK</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Parent Id</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>0.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>parentId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Template Code</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>templateCode</name>
+            <value>
+                <stringValue>Contact-6846</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_pmetdec</targetReference>
+            </connector>
+            <label>Is contact empty?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>5.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision10</name>
+        <label>myDecision10</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision12</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_11</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_11</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_11_pmetdec</targetReference>
+            </connector>
+            <label>No PTO after 45 Days</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>6.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision12</name>
+        <label>myDecision12</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision14</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_13</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_13</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_13_pmetdec</targetReference>
+            </connector>
+            <label>No PTO after 75 days</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>7.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision14</name>
+        <label>myDecision14</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_15</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_15</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_15_pmetdec</targetReference>
+            </connector>
+            <label>No PTO after 105 days</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision2</name>
+        <label>myDecision2</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision4</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_3</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_3_pmetdec</targetReference>
+            </connector>
+            <label>Check Opp Owner</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>2.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision4</name>
+        <label>myDecision4</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision6</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_5</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_5</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_5_pmetdec</targetReference>
+            </connector>
+            <label>No PTO after 60 days</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>3.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision6</name>
+        <label>myDecision6</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision8</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_7</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_7</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_7_pmetdec</targetReference>
+            </connector>
+            <label>No PTO after 90 days</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>4.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision8</name>
+        <label>myDecision8</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision10</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_9</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_9</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_9_pmetdec</targetReference>
+            </connector>
+            <label>No PTO after 120 days</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_11_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>1100</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_11_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_11_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_11_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_11_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_11_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myDecision12</targetReference>
+            </connector>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_13_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>1300</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_13_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_13_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_13_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_13_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_13_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myDecision14</targetReference>
+            </connector>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_15_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>1500</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_15_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_15_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_15_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_15_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_15_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_1_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>100</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_1_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_1_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myDecision2</targetReference>
+            </connector>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_3_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>300</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_3_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_3_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_3_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_3_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_3_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myDecision4</targetReference>
+            </connector>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_5_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>500</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_5_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_5_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_5_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_5_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_5_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myDecision6</targetReference>
+            </connector>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_7_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>700</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_7_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_7_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_7_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_7_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_7_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myDecision8</targetReference>
+            </connector>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_9_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>900</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_9_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_9_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_9_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_9_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_9_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myDecision10</targetReference>
+            </connector>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>$Setup.Automation_On__c.Opportunity__c == true &amp;&amp;
+ISNULL([Opportunity].Contact__c ) &amp;&amp;
+[Opportunity].RecordTypeId = &apos;0122L000000kDhgQAE&apos;</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Setup.Automation_On__c.Opportunity__c} == true &amp;&amp;
+ISNULL({!myVariable_current.Contact__c} ) &amp;&amp;
+{!myVariable_current.RecordTypeId} = &apos;0122L000000kDhgQAE&apos;</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>(
+  (
+    TEXT([Opportunity].StageName) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT([Opportunity].StageName) != &apos;Closed Won&apos; &amp;&amp;
+    [Opportunity].RecordType.Name == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES([Opportunity].Additional_Alchemy_Products__c,&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL([Opportunity].Installation_Complete_Date__c ) ) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Contact__c )) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Contact__r.Email )) &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &gt;= 45 &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &lt; 75 &amp;&amp;
+    (
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Sunlight&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loan Pal&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loanpal&apos; 
+    )
+  ) &amp;&amp;
+  ([Opportunity].PTO_Processed__c  == false)
+) &amp;&amp;
+$Setup.Automation_On__c.Opportunity__c == true</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_11</name>
+        <dataType>Boolean</dataType>
+        <expression>(
+  (
+    TEXT({!myVariable_current.StageName}) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT({!myVariable_current.StageName}) != &apos;Closed Won&apos; &amp;&amp;
+    {!myVariable_current.RecordType.Name} == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES({!myVariable_current.Additional_Alchemy_Products__c},&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL({!myVariable_current.Installation_Complete_Date__c} ) ) &amp;&amp;
+    NOT(ISBLANK({!myVariable_current.Contact__c} )) &amp;&amp;
+    NOT(ISBLANK({!myVariable_current.Contact__r.Email} )) &amp;&amp;
+    {!myVariable_current.Days_Since_Installation__c} &gt;= 45 &amp;&amp;
+    {!myVariable_current.Days_Since_Installation__c} &lt; 75 &amp;&amp;
+    (
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Sunlight&apos; ||
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Loan Pal&apos; ||
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Loanpal&apos; 
+    )
+  ) &amp;&amp;
+  ({!myVariable_current.PTO_Processed__c}  == false)
+) &amp;&amp;
+{!$Setup.Automation_On__c.Opportunity__c} == true</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>(
+  (
+    TEXT([Opportunity].StageName) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT([Opportunity].StageName) != &apos;Closed Won&apos; &amp;&amp;
+    [Opportunity].RecordType.Name == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES([Opportunity].Additional_Alchemy_Products__c,&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL([Opportunity].Installation_Complete_Date__c ) ) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Contact__c )) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Contact__r.Email )) &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &gt;= 45 &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &lt; 75 &amp;&amp;
+    (
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Sunlight&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loan Pal&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loanpal&apos; 
+    )
+  ) &amp;&amp;
+  ([Opportunity].PTO_Processed__c  == false)
+) &amp;&amp;
+$Setup.Automation_On__c.Opportunity__c == true</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_11_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>(
+  (
+    TEXT({!myVariable_old.StageName}) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT({!myVariable_old.StageName}) != &apos;Closed Won&apos; &amp;&amp;
+    {!myVariable_old.RecordType.Name} == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES({!myVariable_old.Additional_Alchemy_Products__c},&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL({!myVariable_old.Installation_Complete_Date__c} ) ) &amp;&amp;
+    NOT(ISBLANK({!myVariable_old.Contact__c} )) &amp;&amp;
+    NOT(ISBLANK({!myVariable_old.Contact__r.Email} )) &amp;&amp;
+    {!myVariable_old.Days_Since_Installation__c} &gt;= 45 &amp;&amp;
+    {!myVariable_old.Days_Since_Installation__c} &lt; 75 &amp;&amp;
+    (
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Sunlight&apos; ||
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Loan Pal&apos; ||
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Loanpal&apos; 
+    )
+  ) &amp;&amp;
+  ({!myVariable_old.PTO_Processed__c}  == false)
+) &amp;&amp;
+{!$Setup.Automation_On__c.Opportunity__c} == true</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>(
+  (
+    TEXT([Opportunity].StageName) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT([Opportunity].StageName) != &apos;Closed Won&apos; &amp;&amp;
+    [Opportunity].RecordType.Name == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES([Opportunity].Additional_Alchemy_Products__c,&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL([Opportunity].Installation_Complete_Date__c ) ) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Contact__c )) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Contact__r.Email )) &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &gt;= 75 &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &lt; 105 &amp;&amp;
+    (
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Sunlight&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loan Pal&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loanpal&apos;
+    )
+  ) &amp;&amp;
+  ([Opportunity].PTO_Processed__c  == false)
+) &amp;&amp;
+$Setup.Automation_On__c.Opportunity__c == true</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_13</name>
+        <dataType>Boolean</dataType>
+        <expression>(
+  (
+    TEXT({!myVariable_current.StageName}) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT({!myVariable_current.StageName}) != &apos;Closed Won&apos; &amp;&amp;
+    {!myVariable_current.RecordType.Name} == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES({!myVariable_current.Additional_Alchemy_Products__c},&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL({!myVariable_current.Installation_Complete_Date__c} ) ) &amp;&amp;
+    NOT(ISBLANK({!myVariable_current.Contact__c} )) &amp;&amp;
+    NOT(ISBLANK({!myVariable_current.Contact__r.Email} )) &amp;&amp;
+    {!myVariable_current.Days_Since_Installation__c} &gt;= 75 &amp;&amp;
+    {!myVariable_current.Days_Since_Installation__c} &lt; 105 &amp;&amp;
+    (
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Sunlight&apos; ||
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Loan Pal&apos; ||
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Loanpal&apos;
+    )
+  ) &amp;&amp;
+  ({!myVariable_current.PTO_Processed__c}  == false)
+) &amp;&amp;
+{!$Setup.Automation_On__c.Opportunity__c} == true</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>(
+  (
+    TEXT([Opportunity].StageName) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT([Opportunity].StageName) != &apos;Closed Won&apos; &amp;&amp;
+    [Opportunity].RecordType.Name == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES([Opportunity].Additional_Alchemy_Products__c,&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL([Opportunity].Installation_Complete_Date__c ) ) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Contact__c )) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Contact__r.Email )) &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &gt;= 75 &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &lt; 105 &amp;&amp;
+    (
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Sunlight&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loan Pal&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loanpal&apos;
+    )
+  ) &amp;&amp;
+  ([Opportunity].PTO_Processed__c  == false)
+) &amp;&amp;
+$Setup.Automation_On__c.Opportunity__c == true</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_13_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>(
+  (
+    TEXT({!myVariable_old.StageName}) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT({!myVariable_old.StageName}) != &apos;Closed Won&apos; &amp;&amp;
+    {!myVariable_old.RecordType.Name} == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES({!myVariable_old.Additional_Alchemy_Products__c},&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL({!myVariable_old.Installation_Complete_Date__c} ) ) &amp;&amp;
+    NOT(ISBLANK({!myVariable_old.Contact__c} )) &amp;&amp;
+    NOT(ISBLANK({!myVariable_old.Contact__r.Email} )) &amp;&amp;
+    {!myVariable_old.Days_Since_Installation__c} &gt;= 75 &amp;&amp;
+    {!myVariable_old.Days_Since_Installation__c} &lt; 105 &amp;&amp;
+    (
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Sunlight&apos; ||
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Loan Pal&apos; ||
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Loanpal&apos;
+    )
+  ) &amp;&amp;
+  ({!myVariable_old.PTO_Processed__c}  == false)
+) &amp;&amp;
+{!$Setup.Automation_On__c.Opportunity__c} == true</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>(
+  (
+    TEXT([Opportunity].StageName) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT([Opportunity].StageName) != &apos;Closed Won&apos; &amp;&amp;
+    [Opportunity].RecordType.Name == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES([Opportunity].Additional_Alchemy_Products__c,&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL([Opportunity].Installation_Complete_Date__c ) ) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Contact__c )) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Contact__r.Email )) &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &gt;= 105 &amp;&amp;
+    (
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Sunlight&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loan Pal&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loanpal&apos;
+    )
+  ) &amp;&amp;
+  ([Opportunity].PTO_Processed__c  == false)
+) &amp;&amp;
+$Setup.Automation_On__c.Opportunity__c == true</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_15</name>
+        <dataType>Boolean</dataType>
+        <expression>(
+  (
+    TEXT({!myVariable_current.StageName}) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT({!myVariable_current.StageName}) != &apos;Closed Won&apos; &amp;&amp;
+    {!myVariable_current.RecordType.Name} == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES({!myVariable_current.Additional_Alchemy_Products__c},&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL({!myVariable_current.Installation_Complete_Date__c} ) ) &amp;&amp;
+    NOT(ISBLANK({!myVariable_current.Contact__c} )) &amp;&amp;
+    NOT(ISBLANK({!myVariable_current.Contact__r.Email} )) &amp;&amp;
+    {!myVariable_current.Days_Since_Installation__c} &gt;= 105 &amp;&amp;
+    (
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Sunlight&apos; ||
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Loan Pal&apos; ||
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Loanpal&apos;
+    )
+  ) &amp;&amp;
+  ({!myVariable_current.PTO_Processed__c}  == false)
+) &amp;&amp;
+{!$Setup.Automation_On__c.Opportunity__c} == true</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>(
+  (
+    TEXT([Opportunity].StageName) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT([Opportunity].StageName) != &apos;Closed Won&apos; &amp;&amp;
+    [Opportunity].RecordType.Name == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES([Opportunity].Additional_Alchemy_Products__c,&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL([Opportunity].Installation_Complete_Date__c ) ) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Contact__c )) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Contact__r.Email )) &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &gt;= 105 &amp;&amp;
+    (
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Sunlight&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loan Pal&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loanpal&apos;
+    )
+  ) &amp;&amp;
+  ([Opportunity].PTO_Processed__c  == false)
+) &amp;&amp;
+$Setup.Automation_On__c.Opportunity__c == true</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_15_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>(
+  (
+    TEXT({!myVariable_old.StageName}) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT({!myVariable_old.StageName}) != &apos;Closed Won&apos; &amp;&amp;
+    {!myVariable_old.RecordType.Name} == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES({!myVariable_old.Additional_Alchemy_Products__c},&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL({!myVariable_old.Installation_Complete_Date__c} ) ) &amp;&amp;
+    NOT(ISBLANK({!myVariable_old.Contact__c} )) &amp;&amp;
+    NOT(ISBLANK({!myVariable_old.Contact__r.Email} )) &amp;&amp;
+    {!myVariable_old.Days_Since_Installation__c} &gt;= 105 &amp;&amp;
+    (
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Sunlight&apos; ||
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Loan Pal&apos; ||
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Loanpal&apos;
+    )
+  ) &amp;&amp;
+  ({!myVariable_old.PTO_Processed__c}  == false)
+) &amp;&amp;
+{!$Setup.Automation_On__c.Opportunity__c} == true</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>$Setup.Automation_On__c.Opportunity__c == true &amp;&amp;
+ISNULL([Opportunity].Contact__c ) &amp;&amp;
+[Opportunity].RecordTypeId = &apos;0122L000000kDhgQAE&apos;</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Setup.Automation_On__c.Opportunity__c} == true &amp;&amp;
+ISNULL({!myVariable_old.Contact__c} ) &amp;&amp;
+{!myVariable_old.RecordTypeId} = &apos;0122L000000kDhgQAE&apos;</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>[Opportunity].OwnerId == &apos;0051a000002g8qcAAA&apos; &amp;&amp;
+[Opportunity].RecordTypeId  == &apos;0121a000000eQb4AAE&apos; &amp;&amp;
+[Opportunity].Test_Account__c  = FALSE &amp;&amp;
+$Setup.Automation_On__c.Opportunity__c == true</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_3</name>
+        <dataType>Boolean</dataType>
+        <expression>{!myVariable_current.OwnerId} == &apos;0051a000002g8qcAAA&apos; &amp;&amp;
+{!myVariable_current.RecordTypeId}  == &apos;0121a000000eQb4AAE&apos; &amp;&amp;
+{!myVariable_current.Test_Account__c}  = FALSE &amp;&amp;
+{!$Setup.Automation_On__c.Opportunity__c} == true</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>[Opportunity].OwnerId == &apos;0051a000002g8qcAAA&apos; &amp;&amp;
+[Opportunity].RecordTypeId  == &apos;0121a000000eQb4AAE&apos; &amp;&amp;
+[Opportunity].Test_Account__c  = FALSE &amp;&amp;
+$Setup.Automation_On__c.Opportunity__c == true</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_3_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>{!myVariable_old.OwnerId} == &apos;0051a000002g8qcAAA&apos; &amp;&amp;
+{!myVariable_old.RecordTypeId}  == &apos;0121a000000eQb4AAE&apos; &amp;&amp;
+{!myVariable_old.Test_Account__c}  = FALSE &amp;&amp;
+{!$Setup.Automation_On__c.Opportunity__c} == true</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>(
+  (
+    TEXT([Opportunity].StageName) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT([Opportunity].StageName) != &apos;Closed Won&apos; &amp;&amp;
+    [Opportunity].RecordType.Name == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES([Opportunity].Additional_Alchemy_Products__c,&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL([Opportunity].Installation_Complete_Date__c ) ) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Phone_Textey__c) ) &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &gt;= 60 &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &lt; 90 &amp;&amp;
+    (
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Sunlight&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loan Pal&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loanpal&apos;
+    )
+  ) &amp;&amp;
+  ([Opportunity].PTO_Processed__c  == false)
+) &amp;&amp;
+$Setup.Automation_On__c.Opportunity__c == true</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_5</name>
+        <dataType>Boolean</dataType>
+        <expression>(
+  (
+    TEXT({!myVariable_current.StageName}) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT({!myVariable_current.StageName}) != &apos;Closed Won&apos; &amp;&amp;
+    {!myVariable_current.RecordType.Name} == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES({!myVariable_current.Additional_Alchemy_Products__c},&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL({!myVariable_current.Installation_Complete_Date__c} ) ) &amp;&amp;
+    NOT(ISBLANK({!myVariable_current.Phone_Textey__c}) ) &amp;&amp;
+    {!myVariable_current.Days_Since_Installation__c} &gt;= 60 &amp;&amp;
+    {!myVariable_current.Days_Since_Installation__c} &lt; 90 &amp;&amp;
+    (
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Sunlight&apos; ||
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Loan Pal&apos; ||
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Loanpal&apos;
+    )
+  ) &amp;&amp;
+  ({!myVariable_current.PTO_Processed__c}  == false)
+) &amp;&amp;
+{!$Setup.Automation_On__c.Opportunity__c} == true</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>(
+  (
+    TEXT([Opportunity].StageName) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT([Opportunity].StageName) != &apos;Closed Won&apos; &amp;&amp;
+    [Opportunity].RecordType.Name == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES([Opportunity].Additional_Alchemy_Products__c,&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL([Opportunity].Installation_Complete_Date__c ) ) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Phone_Textey__c) ) &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &gt;= 60 &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &lt; 90 &amp;&amp;
+    (
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Sunlight&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loan Pal&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loanpal&apos;
+    )
+  ) &amp;&amp;
+  ([Opportunity].PTO_Processed__c  == false)
+) &amp;&amp;
+$Setup.Automation_On__c.Opportunity__c == true</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_5_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>(
+  (
+    TEXT({!myVariable_old.StageName}) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT({!myVariable_old.StageName}) != &apos;Closed Won&apos; &amp;&amp;
+    {!myVariable_old.RecordType.Name} == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES({!myVariable_old.Additional_Alchemy_Products__c},&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL({!myVariable_old.Installation_Complete_Date__c} ) ) &amp;&amp;
+    NOT(ISBLANK({!myVariable_old.Phone_Textey__c}) ) &amp;&amp;
+    {!myVariable_old.Days_Since_Installation__c} &gt;= 60 &amp;&amp;
+    {!myVariable_old.Days_Since_Installation__c} &lt; 90 &amp;&amp;
+    (
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Sunlight&apos; ||
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Loan Pal&apos; ||
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Loanpal&apos;
+    )
+  ) &amp;&amp;
+  ({!myVariable_old.PTO_Processed__c}  == false)
+) &amp;&amp;
+{!$Setup.Automation_On__c.Opportunity__c} == true</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>(
+  (
+    TEXT([Opportunity].StageName) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT([Opportunity].StageName) != &apos;Closed Won&apos; &amp;&amp;
+    [Opportunity].RecordType.Name == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES([Opportunity].Additional_Alchemy_Products__c,&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL([Opportunity].Installation_Complete_Date__c ) ) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Phone_Textey__c) ) &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &gt;= 90 &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &lt; 120 &amp;&amp;
+    (
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Sunlight&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loan Pal&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loanpal&apos; 
+    )
+  ) &amp;&amp;
+  ([Opportunity].PTO_Processed__c  == false)
+) &amp;&amp;
+$Setup.Automation_On__c.Opportunity__c == true</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_7</name>
+        <dataType>Boolean</dataType>
+        <expression>(
+  (
+    TEXT({!myVariable_current.StageName}) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT({!myVariable_current.StageName}) != &apos;Closed Won&apos; &amp;&amp;
+    {!myVariable_current.RecordType.Name} == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES({!myVariable_current.Additional_Alchemy_Products__c},&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL({!myVariable_current.Installation_Complete_Date__c} ) ) &amp;&amp;
+    NOT(ISBLANK({!myVariable_current.Phone_Textey__c}) ) &amp;&amp;
+    {!myVariable_current.Days_Since_Installation__c} &gt;= 90 &amp;&amp;
+    {!myVariable_current.Days_Since_Installation__c} &lt; 120 &amp;&amp;
+    (
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Sunlight&apos; ||
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Loan Pal&apos; ||
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Loanpal&apos; 
+    )
+  ) &amp;&amp;
+  ({!myVariable_current.PTO_Processed__c}  == false)
+) &amp;&amp;
+{!$Setup.Automation_On__c.Opportunity__c} == true</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>(
+  (
+    TEXT([Opportunity].StageName) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT([Opportunity].StageName) != &apos;Closed Won&apos; &amp;&amp;
+    [Opportunity].RecordType.Name == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES([Opportunity].Additional_Alchemy_Products__c,&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL([Opportunity].Installation_Complete_Date__c ) ) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Phone_Textey__c) ) &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &gt;= 90 &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &lt; 120 &amp;&amp;
+    (
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Sunlight&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loan Pal&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loanpal&apos; 
+    )
+  ) &amp;&amp;
+  ([Opportunity].PTO_Processed__c  == false)
+) &amp;&amp;
+$Setup.Automation_On__c.Opportunity__c == true</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_7_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>(
+  (
+    TEXT({!myVariable_old.StageName}) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT({!myVariable_old.StageName}) != &apos;Closed Won&apos; &amp;&amp;
+    {!myVariable_old.RecordType.Name} == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES({!myVariable_old.Additional_Alchemy_Products__c},&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL({!myVariable_old.Installation_Complete_Date__c} ) ) &amp;&amp;
+    NOT(ISBLANK({!myVariable_old.Phone_Textey__c}) ) &amp;&amp;
+    {!myVariable_old.Days_Since_Installation__c} &gt;= 90 &amp;&amp;
+    {!myVariable_old.Days_Since_Installation__c} &lt; 120 &amp;&amp;
+    (
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Sunlight&apos; ||
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Loan Pal&apos; ||
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Loanpal&apos; 
+    )
+  ) &amp;&amp;
+  ({!myVariable_old.PTO_Processed__c}  == false)
+) &amp;&amp;
+{!$Setup.Automation_On__c.Opportunity__c} == true</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>(
+  (
+    TEXT([Opportunity].StageName) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT([Opportunity].StageName) != &apos;Closed Won&apos; &amp;&amp;
+    [Opportunity].RecordType.Name == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES([Opportunity].Additional_Alchemy_Products__c,&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL([Opportunity].Installation_Complete_Date__c ) ) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Phone_Textey__c) ) &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &gt;= 120 &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &lt; 150 &amp;&amp;
+    (
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Sunlight&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loan Pal&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loanpal&apos;
+    )
+  ) &amp;&amp;
+  ([Opportunity].PTO_Processed__c  == false)
+) &amp;&amp;
+$Setup.Automation_On__c.Opportunity__c == true</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_9</name>
+        <dataType>Boolean</dataType>
+        <expression>(
+  (
+    TEXT({!myVariable_current.StageName}) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT({!myVariable_current.StageName}) != &apos;Closed Won&apos; &amp;&amp;
+    {!myVariable_current.RecordType.Name} == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES({!myVariable_current.Additional_Alchemy_Products__c},&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL({!myVariable_current.Installation_Complete_Date__c} ) ) &amp;&amp;
+    NOT(ISBLANK({!myVariable_current.Phone_Textey__c}) ) &amp;&amp;
+    {!myVariable_current.Days_Since_Installation__c} &gt;= 120 &amp;&amp;
+    {!myVariable_current.Days_Since_Installation__c} &lt; 150 &amp;&amp;
+    (
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Sunlight&apos; ||
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Loan Pal&apos; ||
+      TEXT({!myVariable_current.Financing_Tool__c} ) == &apos;Loanpal&apos;
+    )
+  ) &amp;&amp;
+  ({!myVariable_current.PTO_Processed__c}  == false)
+) &amp;&amp;
+{!$Setup.Automation_On__c.Opportunity__c} == true</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>(
+  (
+    TEXT([Opportunity].StageName) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT([Opportunity].StageName) != &apos;Closed Won&apos; &amp;&amp;
+    [Opportunity].RecordType.Name == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES([Opportunity].Additional_Alchemy_Products__c,&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL([Opportunity].Installation_Complete_Date__c ) ) &amp;&amp;
+    NOT(ISBLANK([Opportunity].Phone_Textey__c) ) &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &gt;= 120 &amp;&amp;
+    [Opportunity].Days_Since_Installation__c &lt; 150 &amp;&amp;
+    (
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Sunlight&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loan Pal&apos; ||
+      TEXT([Opportunity].Financing_Tool__c ) == &apos;Loanpal&apos;
+    )
+  ) &amp;&amp;
+  ([Opportunity].PTO_Processed__c  == false)
+) &amp;&amp;
+$Setup.Automation_On__c.Opportunity__c == true</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_9_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>(
+  (
+    TEXT({!myVariable_old.StageName}) != &apos;22. PTO&apos; &amp;&amp;
+    TEXT({!myVariable_old.StageName}) != &apos;Closed Won&apos; &amp;&amp;
+    {!myVariable_old.RecordType.Name} == &apos;3rd Party - Design Sales&apos; &amp;&amp;
+    NOT(INCLUDES({!myVariable_old.Additional_Alchemy_Products__c},&quot;Promo UB6&quot;) ) &amp;&amp;
+    NOT(ISNULL({!myVariable_old.Installation_Complete_Date__c} ) ) &amp;&amp;
+    NOT(ISBLANK({!myVariable_old.Phone_Textey__c}) ) &amp;&amp;
+    {!myVariable_old.Days_Since_Installation__c} &gt;= 120 &amp;&amp;
+    {!myVariable_old.Days_Since_Installation__c} &lt; 150 &amp;&amp;
+    (
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Sunlight&apos; ||
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Loan Pal&apos; ||
+      TEXT({!myVariable_old.Financing_Tool__c} ) == &apos;Loanpal&apos;
+    )
+  ) &amp;&amp;
+  ({!myVariable_old.PTO_Processed__c}  == false)
+) &amp;&amp;
+{!$Setup.Automation_On__c.Opportunity__c} == true</expression>
+    </formulas>
+    <interviewLabel>AskNicely_Surveys-19_InterviewLabel</interviewLabel>
+    <label>Invocable Opportunity Processes</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Opportunity</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onAllChanges</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <startElementReference>myDecision</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+</Flow>

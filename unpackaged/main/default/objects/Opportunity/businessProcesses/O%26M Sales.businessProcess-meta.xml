@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>O%26M Sales</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Won</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>OM1 Proposal Requested</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>OM2 Proposal Sent</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>OM3 Contract Received</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>OM4 Initial Payment Received</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>OM6 Removal WIP</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>OM6a Removal Complete</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>OM7 Install WIP</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>OM8 Installation Complete</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

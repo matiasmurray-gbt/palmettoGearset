@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X1_1_SC_Palmetto_Resi_Permit_Checklist</fullName>
+    <booleanFilter>1 AND (4 OR 5 OR 8) AND 2 AND 3 AND (6 OR 7)</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>System_Size_Calculated_kW__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>Net_Metering_Application_to_Utility__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Days_Since_Contract_Received__c</columns>
+    <columns>Utility__c</columns>
+    <columns>Engineering_Created__c</columns>
+    <columns>X3rd_Party_Partner__c</columns>
+    <columns>Post_Sales_Pre_Installation_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer,Integrated Palmetto Property,Dividend Solar</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>equals</operation>
+        <value>South Carolina</value>
+    </filters>
+    <filters>
+        <field>Contract_Received_Confirmed__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>15. Permit Ready,16. Permit Received</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>10. Site Approved,12. Engineering Package Sent</value>
+    </filters>
+    <filters>
+        <field>Net_Metering_Application_to_Utility__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>NMA_to_Utility_Date__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>11. Interconnection Sent,13. Engineering Design Complete,14. Permit Sent</value>
+    </filters>
+    <label>1.12 SC Submit ICA</label>
+    <sharedTo>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_MA</role>
+        <role>Project_Coordinator_SC</role>
+        <role>Project_Manager_SC</role>
+    </sharedTo>
+</ListView>

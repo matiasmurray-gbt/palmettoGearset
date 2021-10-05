@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opt_out_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Opt-out Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rocket Mortgage</fullName>
+                <default>false</default>
+                <label>Rocket Mortgage</label>
+            </value>
+            <value>
+                <fullName>Email response</fullName>
+                <default>false</default>
+                <label>Email response</label>
+            </value>
+            <value>
+                <fullName>SMS response</fullName>
+                <default>false</default>
+                <label>SMS response</label>
+            </value>
+            <value>
+                <fullName>Phone response</fullName>
+                <default>false</default>
+                <label>Phone response</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

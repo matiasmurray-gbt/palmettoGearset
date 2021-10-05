@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>System_Size_kW_AC__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Inverter_1__c , "SolarEdge SE6000H-US", 6.00, "SolarEdge SE5000H-US", 5.00, "SolarEdge SE7600H-US", 7.60, "SolarEdge SE10000H-US", 10.00, "SolarEdge SE11400A-US", 11.40,"SolarEdge SE3800H-US", 3.8, "SolarEdge SE3000H-US", 3.0, 0.00)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>System Size (kW) AC</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

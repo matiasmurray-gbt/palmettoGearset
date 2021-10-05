@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2_1_SC_Resi_ISA_Ready_to_Schedule</fullName>
+    <booleanFilter>(1 OR 4) AND 3 AND (2 OR (5 and 6 and 7)) And 8 And (9 OR 10)</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>System_Size_Calculated_kW__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Customer_Type__c</columns>
+    <columns>Days_Since_Contract_Received__c</columns>
+    <columns>Sub_Market__c</columns>
+    <columns>Permitting_Jurisdiction__c</columns>
+    <columns>Contract_Signed_Date__c</columns>
+    <columns>Permit_Ready_Date__c</columns>
+    <columns>Permit_Rec_d_Date__c</columns>
+    <columns>Installation_Start_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer,Sunrun Installation,Integrated Palmetto Property</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>17. Install Ready</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>equals</operation>
+        <value>South Carolina</value>
+    </filters>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>GreenNRG - Installation,Solcius Installation</value>
+    </filters>
+    <filters>
+        <field>Signed_NMA_Rec_d__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>14. Permit Sent,15. Permit Ready,16. Permit Received</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>Test</value>
+    </filters>
+    <filters>
+        <field>Permit_Paid__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>2.1 SC Install Ready Permits To Pay</label>
+    <sharedTo>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_SC</role>
+        <role>Project_Manager_SC</role>
+    </sharedTo>
+</ListView>

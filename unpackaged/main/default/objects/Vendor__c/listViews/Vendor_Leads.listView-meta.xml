@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vendor_Leads</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>Stage__c</columns>
+    <columns>NAME</columns>
+    <columns>State__c</columns>
+    <columns>Scope_Trademarks__c</columns>
+    <columns>Service_Territory__c</columns>
+    <columns>Vendor_Type__c</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Lead</value>
+    </filters>
+    <label>03. Vendor Leads</label>
+</ListView>

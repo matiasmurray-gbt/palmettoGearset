@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Solar</letterhead>
+    <name>Internal Notification - Case Closure</name>
+    <style>freeForm</style>
+    <subject>Salesforce Case # {!Case.CaseNumber} has been Closed.</subject>
+    <textOnly>Hello {!Case.Contact} ,
+
+Salesforce Case # {!Case.CaseNumber} regarding {!Case.Subject} has been closed.
+
+Please respond to this email if this case has been closed in error.
+
+Regards,
+{!Case.OwnerFullName}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

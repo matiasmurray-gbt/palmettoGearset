@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>only_CAM_can_edit_HOA_fields</fullName>
+    <active>true</active>
+    <description>restrict HOA Approval Date and HOA Approval Not Requied to other departments</description>
+    <errorConditionFormula>AND(OR(ISCHANGED(HOA_Approval_Date__c), 
+        ISCHANGED(HOA_Approval_Not_Required__c)
+        ),
+ $User.Id = '0051a000001Mas7')</errorConditionFormula>
+    <errorMessage>Only the CAM team can modify HOA fields</errorMessage>
+</ValidationRule>

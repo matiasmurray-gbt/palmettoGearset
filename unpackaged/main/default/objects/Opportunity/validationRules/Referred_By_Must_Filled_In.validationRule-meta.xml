@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referred_By_Must_Filled_In</fullName>
+    <active>true</active>
+    <description>Referred By Must Filled In if Referral Obtained = Yes</description>
+    <errorConditionFormula>ISPICKVAL( Referral_Obtained__c , "Yes") &amp;&amp;
+ ISBLANK(  Referral__c  )</errorConditionFormula>
+    <errorDisplayField>Referral__c</errorDisplayField>
+    <errorMessage>Please provide the referral name.</errorMessage>
+</ValidationRule>

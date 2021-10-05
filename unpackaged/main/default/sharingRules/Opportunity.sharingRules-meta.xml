@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?><SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>AmeriSave_Solar</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>AmeriSave Solar</label>
+        <sharedTo>
+            <group>AmeriSave_Solar</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>X3rd_Party_Partner__c</field>
+            <operation>equals</operation>
+            <value>AmeriSave Solar</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Commonwealth_Energy_MA_Inc</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Commonwealth Energy MA, Inc</label>
+        <sharedTo>
+            <group>Commonwealth_Energy_MA_Inc</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>X3rd_Party_Partner__c</field>
+            <operation>equals</operation>
+            <value>267</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EnergyGeeks_Corporation_EnergyGeeks_Corporation_Corporation</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>EnergyGeeks Corporation,EnergyGeeks Corporation Corporation</label>
+        <sharedTo>
+            <group>EnergyGeeks_Corporation_EnergyGeeks_Corp</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>X3rd_Party_Partner__c</field>
+            <operation>equals</operation>
+            <value>177,EnergyGeeks Corporation</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Expert_Energy_Management</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Expert Energy Management</label>
+        <sharedTo>
+            <group>Expert_Energy_Management</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>X3rd_Party_Partner__c</field>
+            <operation>equals</operation>
+            <value>Expert Energy Management LLC</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>LGCY</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>LGCY</label>
+        <sharedTo>
+            <group>LGCY</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>X3rd_Party_Partner__c</field>
+            <operation>equals</operation>
+            <value>LGCY Power</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Opportunities_for_Palmetto_Users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Opportunities for Palmetto Users</label>
+        <sharedTo>
+            <group>Palmetto_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Paris_Securities_LLC</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Paris Securities LLC</label>
+        <sharedTo>
+            <group>Paris_Securities_LLC</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>X3rd_Party_Partner__c</field>
+            <operation>equals</operation>
+            <value>Paris Securities LLC</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Exactus</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Exactus</label>
+        <sharedTo>
+            <role>Site_Auditor</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CEO</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

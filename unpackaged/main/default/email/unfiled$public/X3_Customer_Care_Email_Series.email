@@ -1,0 +1,17 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<span id="docs-internal-guid-90cf0002-66ed-9ba9-039a-d872e3722638"><span id="docs-internal-guid-11e7423c-66f1-09df-16c8-2cd44d1613fe"><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><font face="Arial"><span style="white-space: pre-wrap;">Good Day {!Contact.FirstName}, 
+
+{!User.FirstName} {!User.LastName}, here with Palmetto Solar. I am still trying to connect with you in order to determine if your home or property is eligible for solar energy. 
+
+If you would be able to provide me with a time that is convenient to speak with you, I would be more than happy to call you at the specified time. We understand you have a busy schedule and want you to know we can set up a consultative phone call to speak with you before or after normal business hours. 
+
+We here at Palmetto Solar, pride ourselves in going above and beyond what is expected of us by our customers which is why we are willing to speak with you at whatever time works best for you. 
+
+Please do not hesitate to email or call us at any time to speak with myself or one of our energy specialists. 
+
+Thank You, 
+{!User.FirstName} {!User.LastName}</span></font></p></span></span><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="background-color: rgb(255, 255, 255); vertical-align: baseline; white-space: pre-wrap;"><font face="Arial"><div>Palmetto&nbsp;</div><div>Customer Care Department&nbsp;</div><div><br></div><div><font size="2">701 E. Bay St. #413 Charleston, SC 29403&nbsp;</font></div><div><font size="2">Email: {!User.Email}&nbsp;</font></div><div><font size="2"><br></font></div><div><span style="font-size: small;">Toll Free: (855) 339-1831</span></div></font></span></div>]]></td>
+</tr>
+</table>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solar_Install_Gross_Margin_Watt__c</fullName>
+    <externalId>false</externalId>
+    <formula>Solar_Install_Gross_Margin__c /  Opportunity__r.System_Size_Calculated_kW__c / 1000</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Solar Install Gross Margin / Watt</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

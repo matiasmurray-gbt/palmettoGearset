@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Care_Projects_to_be_Assigned</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>startsWith</operation>
+        <value>7,8,9,10,11,12,13,14,15,16,17,18</value>
+    </filters>
+    <filters>
+        <field>Customer_Care_Representative__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSE_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2017</value>
+    </filters>
+    <filters>
+        <field>Test_Account__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.X3rd_Party_Design_Sales</value>
+    </filters>
+    <label>Customer Care Projects to be Assigned</label>
+    <sharedTo>
+        <role>Business_Development</role>
+        <role>Customer_Care</role>
+    </sharedTo>
+</ListView>

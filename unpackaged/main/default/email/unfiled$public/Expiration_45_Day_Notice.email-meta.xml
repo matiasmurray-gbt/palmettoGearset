@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Expiration 45 Day Notice</name>
+    <style>none</style>
+    <subject>45 Day Notice</subject>
+    <textOnly>Dear {!Trade_Licensing__c.Vendor__c}
+
+
+A current review of your {!Trade_Licensing__c.Name} shows {!Trade_Licensing__c.License_Number__c} will expire on {!Trade_Licensing__c.Expiration_Date__c}.
+
+
+Please forward a current copy of your {!Trade_Licensing__c.License_Number__c} no later than {!Trade_Licensing__c.Expiration_Date__c}.
+
+
+Should you have any questions or concerns, please do not hesitate to contact us.
+
+
+Thank you in advance for prompt attention to this matter.
+
+
+
+Sincerely,
+
+
+
+{!Trade_Licensing__c.Owner_Name__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

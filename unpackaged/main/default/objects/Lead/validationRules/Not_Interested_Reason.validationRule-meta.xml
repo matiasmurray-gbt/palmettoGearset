@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Not_Interested_Reason</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL(Status, "Connected Not Interested") &amp;&amp;
+ISPICKVAL( Reason_Not_Interested__c , "Other") &amp;&amp;
+ISBLANK(Other_Reason__c)</errorConditionFormula>
+    <errorDisplayField>Other_Reason__c</errorDisplayField>
+    <errorMessage>Please enter Other reason for Not Interested, or choose from one of the preset choices.</errorMessage>
+</ValidationRule>

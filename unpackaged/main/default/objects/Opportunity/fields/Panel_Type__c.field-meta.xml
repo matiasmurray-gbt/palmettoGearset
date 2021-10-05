@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Panel_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Panel Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>LG 310N1C-G4</fullName>
+                <default>false</default>
+                <label>LG 310N1C-G4</label>
+            </value>
+            <value>
+                <fullName>LG 320 Black/Black</fullName>
+                <default>false</default>
+                <label>LG 320 Black/Black</label>
+            </value>
+            <value>
+                <fullName>LG335N1C-A5</fullName>
+                <default>false</default>
+                <label>LG335N1C-A5</label>
+            </value>
+            <value>
+                <fullName>LG 335W</fullName>
+                <default>false</default>
+                <label>LG 335W</label>
+            </value>
+            <value>
+                <fullName>LG 360W</fullName>
+                <default>false</default>
+                <label>LG 360W</label>
+            </value>
+            <value>
+                <fullName>Q-Peak G4.1 305</fullName>
+                <default>false</default>
+                <label>Q-Peak G4.1 305</label>
+            </value>
+            <value>
+                <fullName>Q.PEAK Duo BLK-G5 310</fullName>
+                <default>false</default>
+                <label>Q.PEAK Duo BLK-G5 310</label>
+            </value>
+            <value>
+                <fullName>Q.PEAK-G4.1 300</fullName>
+                <default>false</default>
+                <label>Q.PEAK-G4.1 300</label>
+            </value>
+            <value>
+                <fullName>Q Cells 310W Q.Peak Duo</fullName>
+                <default>false</default>
+                <label>Q Cells 310W Q.Peak Duo</label>
+            </value>
+            <value>
+                <fullName>Silfab 300W - All black</fullName>
+                <default>false</default>
+                <label>Silfab 300W - All black</label>
+            </value>
+            <value>
+                <fullName>Trina 300TSM-DD05A.08(II)</fullName>
+                <default>false</default>
+                <label>Trina 300TSM-DD05A.08(II)</label>
+            </value>
+            <value>
+                <fullName>Axitec 300 AXIblackpremium</fullName>
+                <default>false</default>
+                <label>Axitec 300 AXIblackpremium</label>
+            </value>
+            <value>
+                <fullName>Yingli 310D-30b</fullName>
+                <default>false</default>
+                <label>Yingli 310D-30b</label>
+            </value>
+            <value>
+                <fullName>Hanwha 315w</fullName>
+                <default>false</default>
+                <label>Hanwha 315w</label>
+            </value>
+            <value>
+                <fullName>330W All Black Module</fullName>
+                <default>false</default>
+                <label>330W All Black Module</label>
+            </value>
+            <value>
+                <fullName>Qcell 340W</fullName>
+                <default>false</default>
+                <label>Qcell 340W</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

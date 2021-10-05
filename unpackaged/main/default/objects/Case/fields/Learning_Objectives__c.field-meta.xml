@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Learning_Objectives__c</fullName>
+    <description>Clearly state what you want the audience to learn by the end of the session(s). This should not be more than three to five brief bullet points unless it is software based (and you’re listing specific functions the audience needs to be able to perform by training’s end).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Clearly state what you want the audience to learn by the end of the session(s). This should not be more than three to five brief bullet points unless it is software based (and you’re listing specific functions the audience needs to be able to perform by t</inlineHelpText>
+    <label>Learning Objectives</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>How_long_have_you_had_your_system__c</fullName>
+    <externalId>false</externalId>
+    <label>Have you had any problems?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>Yes - Does not work</fullName>
+                <default>false</default>
+                <label>Yes - Does not work</label>
+            </value>
+            <value>
+                <fullName>Yes - Can't get ahold of anyone</fullName>
+                <default>false</default>
+                <label>Yes - Can't get ahold of anyone</label>
+            </value>
+            <value>
+                <fullName>Yes - Don't know who owns</fullName>
+                <default>false</default>
+                <label>Yes - Don't know who owns</label>
+            </value>
+            <value>
+                <fullName>Yes - Who do I pay</fullName>
+                <default>false</default>
+                <label>Yes - Who do I pay</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

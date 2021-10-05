@@ -1,0 +1,5 @@
+Account Name: {!Pricing_Detail__c.Account_Name__c}
+Base Price: {!Pricing_Detail__c.Base_Price__c}
+Product: {!Pricing_Detail__c.Product__c}
+Location: {!Pricing_Detail__c.State__c}
+Pricing Detail: {!Pricing_Detail__c.Link}

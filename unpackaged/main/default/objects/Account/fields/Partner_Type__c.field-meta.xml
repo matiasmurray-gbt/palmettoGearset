@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Partner Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Crew Expansion Kickstarter</fullName>
+                <default>false</default>
+                <label>Crew Expansion Kickstarter</label>
+            </value>
+            <value>
+                <fullName>Electrician</fullName>
+                <default>false</default>
+                <label>Electrician</label>
+            </value>
+            <value>
+                <fullName>Existing Build Partner New State/s</fullName>
+                <default>false</default>
+                <label>Existing Build Partner New State/s</label>
+            </value>
+            <value>
+                <fullName>Existing Solar Company</fullName>
+                <default>false</default>
+                <label>Existing Solar Company</label>
+            </value>
+            <value>
+                <fullName>Kickstarter</fullName>
+                <default>false</default>
+                <label>Kickstarter</label>
+            </value>
+            <value>
+                <fullName>Permitting</fullName>
+                <default>false</default>
+                <label>Permitting</label>
+            </value>
+            <value>
+                <fullName>Pre-construction</fullName>
+                <default>false</default>
+                <label>Pre-construction</label>
+            </value>
+            <value>
+                <fullName>Roofing</fullName>
+                <default>false</default>
+                <label>Roofing</label>
+            </value>
+            <value>
+                <fullName>Service Provider</fullName>
+                <default>false</default>
+                <label>Service Provider</label>
+            </value>
+            <value>
+                <fullName>Surveyor</fullName>
+                <default>false</default>
+                <label>Surveyor</label>
+            </value>
+            <value>
+                <fullName>Trenching</fullName>
+                <default>false</default>
+                <label>Trenching</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Promotions__c</fullName>
+    <externalId>false</externalId>
+    <label>Promotions</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Give 1k Get 1k</fullName>
+                <default>false</default>
+                <label>Give 1k Get 1k</label>
+            </value>
+            <value>
+                <fullName>Refer a Friend ($500)</fullName>
+                <default>false</default>
+                <label>Refer a Friend ($500)</label>
+            </value>
+            <value>
+                <fullName>Solar Stimulus</fullName>
+                <default>false</default>
+                <label>Solar Stimulus</label>
+            </value>
+            <value>
+                <fullName>UB6</fullName>
+                <default>false</default>
+                <label>UB6</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

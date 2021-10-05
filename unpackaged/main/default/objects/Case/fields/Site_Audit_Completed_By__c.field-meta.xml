@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Site_Audit_Completed_By__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Opportunity__r.Site_Audit_Completed_By__c, "CTFC Northeast"), "CTFC Northeast", NULL)+ BR() + 
+IF(ISPICKVAL(Opportunity__r.Site_Audit_Completed_By__c, "CTFC Southeast"), "CTFC Southeast", NULL)+ BR() + 
+IF(ISPICKVAL(Opportunity__r.Site_Audit_Completed_By__c, "EagleView"), "EagleView", NULL)+ BR() + 
+IF(ISPICKVAL(Opportunity__r.Site_Audit_Completed_By__c, "Exactus"), "Exactus", NULL)+ BR() + 
+IF(ISPICKVAL(Opportunity__r.Site_Audit_Completed_By__c, "Palmetto Survey"), "Palmetto Survey", NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Site Audit Completed By</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

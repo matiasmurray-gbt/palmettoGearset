@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>110230093 - AFCI Repairs/Inspections</fullName>
+        <default>false</default>
+        <label>110230093 - AFCI Repairs/Inspections</label>
+    </standardValue>
+    <standardValue>
+        <fullName>110230094 - Micro Inverter Replacements</fullName>
+        <default>false</default>
+        <label>110230094 - Micro Inverter Replacements</label>
+    </standardValue>
+    <standardValue>
+        <fullName>110230920 - RVAR Gen O&amp;M</fullName>
+        <default>false</default>
+        <label>110230920 - RVAR Gen O&amp;M</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Annual Visual Inspection</fullName>
+        <default>false</default>
+        <label>Annual Visual Inspection</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ECSC</fullName>
+        <default>false</default>
+        <label>ECSC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Electrical Work</fullName>
+        <default>false</default>
+        <label>Electrical Work</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing Business</fullName>
+        <default>false</default>
+        <label>Existing Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Full System Inspection</fullName>
+        <default>false</default>
+        <label>Full System Inspection</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ground Mount</fullName>
+        <default>false</default>
+        <label>Ground Mount</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Low Voltage (Thermostat)</fullName>
+        <default>false</default>
+        <label>Low Voltage (Thermostat)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Micro Inverter/ Optimizer Replacement</fullName>
+        <default>false</default>
+        <label>Micro Inverter/ Optimizer Replacement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Miscellaneous O&amp;M</fullName>
+        <default>false</default>
+        <label>Miscellaneous O&amp;M</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Business</fullName>
+        <default>false</default>
+        <label>New Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>O&amp;M</fullName>
+        <default>false</default>
+        <label>O&amp;M</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Panel Cleaning</fullName>
+        <default>false</default>
+        <label>Panel Cleaning</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pest Abatement</fullName>
+        <default>false</default>
+        <label>Pest Abatement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Plumbing</fullName>
+        <default>false</default>
+        <label>Plumbing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Proactive Monitoring Services</fullName>
+        <default>false</default>
+        <label>Proactive Monitoring Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PV Installation</fullName>
+        <default>false</default>
+        <label>PV Installation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>R&amp;R and Re-roof Services</fullName>
+        <default>false</default>
+        <label>R&amp;R and Re-roof Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reinstall Only</fullName>
+        <default>false</default>
+        <label>Reinstall Only</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Removal Only</fullName>
+        <default>false</default>
+        <label>Removal Only</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Re-Roof</fullName>
+        <default>false</default>
+        <label>Re-Roof</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RR - Roof</fullName>
+        <default>false</default>
+        <label>RR - Roof</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RR - Siding</fullName>
+        <default>false</default>
+        <label>RR - Siding</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RR - System Inspection</fullName>
+        <default>false</default>
+        <label>RR - System Inspection</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Storage Upfit and Maintenance</fullName>
+        <default>false</default>
+        <label>Storage Upfit and Maintenance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>String Inverter Replacement</fullName>
+        <default>false</default>
+        <label>String Inverter Replacement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tree Removal</fullName>
+        <default>false</default>
+        <label>Tree Removal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trenching</fullName>
+        <default>false</default>
+        <label>Trenching</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Troubleshooting/ Misc.</fullName>
+        <default>false</default>
+        <label>Troubleshooting/ Misc.</label>
+    </standardValue>
+</StandardValueSet>

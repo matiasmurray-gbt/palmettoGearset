@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scope_Trademarks__c</fullName>
+    <externalId>false</externalId>
+    <label>Scope of Work</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business Development</fullName>
+                <default>false</default>
+                <label>Business Development</label>
+            </value>
+            <value>
+                <fullName>Electrical Work</fullName>
+                <default>false</default>
+                <label>Electrical Work</label>
+            </value>
+            <value>
+                <fullName>Ground Mount</fullName>
+                <default>false</default>
+                <label>Ground Mount</label>
+            </value>
+            <value>
+                <fullName>Inspections</fullName>
+                <default>false</default>
+                <label>Inspections</label>
+            </value>
+            <value>
+                <fullName>Low Voltage (Thermostat)</fullName>
+                <default>false</default>
+                <label>Low Voltage (Thermostat)</label>
+            </value>
+            <value>
+                <fullName>O&amp;M</fullName>
+                <default>false</default>
+                <label>O&amp;M</label>
+            </value>
+            <value>
+                <fullName>Permitting</fullName>
+                <default>false</default>
+                <label>Permitting</label>
+            </value>
+            <value>
+                <fullName>Pest Abatement</fullName>
+                <default>false</default>
+                <label>Pest Abatement</label>
+            </value>
+            <value>
+                <fullName>PV Installation</fullName>
+                <default>false</default>
+                <label>PV Installation</label>
+            </value>
+            <value>
+                <fullName>Rafter / Structural Upgrades</fullName>
+                <default>false</default>
+                <label>Rafter / Structural Upgrades</label>
+            </value>
+            <value>
+                <fullName>Roofing</fullName>
+                <default>false</default>
+                <label>Roofing</label>
+            </value>
+            <value>
+                <fullName>Storage</fullName>
+                <default>false</default>
+                <label>Storage</label>
+            </value>
+            <value>
+                <fullName>Survey</fullName>
+                <default>false</default>
+                <label>Survey</label>
+            </value>
+            <value>
+                <fullName>Tree Removal</fullName>
+                <default>false</default>
+                <label>Tree Removal</label>
+            </value>
+            <value>
+                <fullName>Trenching</fullName>
+                <default>false</default>
+                <label>Trenching</label>
+            </value>
+            <value>
+                <fullName>Main Panel Upgrade</fullName>
+                <default>false</default>
+                <label>Main Panel Upgrade</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

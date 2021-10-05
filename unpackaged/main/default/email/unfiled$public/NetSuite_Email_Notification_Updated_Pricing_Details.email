@@ -1,0 +1,4 @@
+Build Partner: {!Service_Agreement__r.Account__r.Name}
+Base Price: ${!Pricing_Detail__c.Base_Price__c}
+
+{!Pricing_Detail__c.Link}

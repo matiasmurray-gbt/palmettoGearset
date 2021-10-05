@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Contributing_ICO_Reasons__c</fullName>
+    <externalId>false</externalId>
+    <label>Additional Contributing ICO Reasons</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>System Design - Layout</fullName>
+                <default>false</default>
+                <label>System Design - Layout</label>
+            </value>
+            <value>
+                <fullName>System Design - Electrical</fullName>
+                <default>false</default>
+                <label>System Design - Electrical</label>
+            </value>
+            <value>
+                <fullName>System Design - Structural</fullName>
+                <default>false</default>
+                <label>System Design - Structural</label>
+            </value>
+            <value>
+                <fullName>Customer - Payment Term Discrepancy</fullName>
+                <default>false</default>
+                <label>Customer - Payment Term Discrepancy</label>
+            </value>
+            <value>
+                <fullName>Customer - HOA Approval Conflict</fullName>
+                <default>false</default>
+                <label>Customer - HOA Approval Conflict</label>
+            </value>
+            <value>
+                <fullName>Customer - Sales Education Issue</fullName>
+                <default>false</default>
+                <label>Customer - Sales Education Issue</label>
+            </value>
+            <value>
+                <fullName>Customer - Unfulfilled Obligations</fullName>
+                <default>false</default>
+                <label>Customer - Unfulfilled Obligations</label>
+            </value>
+            <value>
+                <fullName>Site Conditions - Roof Condition</fullName>
+                <default>false</default>
+                <label>Site Conditions - Roof Condition</label>
+            </value>
+            <value>
+                <fullName>Site Conditions - Roof Accessibility</fullName>
+                <default>false</default>
+                <label>Site Conditions - Roof Accessibility</label>
+            </value>
+            <value>
+                <fullName>Site Conditions - Roof Obstruction</fullName>
+                <default>false</default>
+                <label>Site Conditions - Roof Obstruction</label>
+            </value>
+            <value>
+                <fullName>Site Conditions - Safety</fullName>
+                <default>false</default>
+                <label>Site Conditions - Safety</label>
+            </value>
+            <value>
+                <fullName>Site Conditions - Electrical Condition</fullName>
+                <default>false</default>
+                <label>Site Conditions - Electrical Condition</label>
+            </value>
+            <value>
+                <fullName>Site Conditions - Electrical Access</fullName>
+                <default>false</default>
+                <label>Site Conditions - Electrical Access</label>
+            </value>
+            <value>
+                <fullName>Site Conditions - Structural Condition</fullName>
+                <default>false</default>
+                <label>Site Conditions - Structural Condition</label>
+            </value>
+            <value>
+                <fullName>Weather - Rain</fullName>
+                <default>false</default>
+                <label>Weather - Rain</label>
+            </value>
+            <value>
+                <fullName>Weather - Snow</fullName>
+                <default>false</default>
+                <label>Weather - Snow</label>
+            </value>
+            <value>
+                <fullName>Weather - Wind</fullName>
+                <default>false</default>
+                <label>Weather - Wind</label>
+            </value>
+            <value>
+                <fullName>Weather - Heat</fullName>
+                <default>false</default>
+                <label>Weather - Heat</label>
+            </value>
+            <value>
+                <fullName>Other Incidentals - Injury</fullName>
+                <default>false</default>
+                <label>Other Incidentals - Injury</label>
+            </value>
+            <value>
+                <fullName>Other Incidentals - Illness</fullName>
+                <default>false</default>
+                <label>Other Incidentals - Illness</label>
+            </value>
+            <value>
+                <fullName>Other Incidentals - Materials</fullName>
+                <default>false</default>
+                <label>Other Incidentals - Materials</label>
+            </value>
+            <value>
+                <fullName>Other Incidentals - Scheduling</fullName>
+                <default>false</default>
+                <label>Other Incidentals - Scheduling</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

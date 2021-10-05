@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Provide_Installation_Reschedule_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISBLANK( PRIORVALUE(Installation_Start_Date__c) )) &amp;&amp; ISCHANGED(Installation_Start_Date__c) &amp;&amp; ISBLANK(TEXT( Installation_Reschedule_Reason__c )) &amp;&amp;  RecordType.DeveloperName == 'Installation_Scheduling'</errorConditionFormula>
+    <errorDisplayField>Installation_Reschedule_Reason__c</errorDisplayField>
+    <errorMessage>Please Provide Installation Reschedule Reason</errorMessage>
+</ValidationRule>

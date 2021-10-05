@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Exactus - Re Engineering</name>
+    <style>freeForm</style>
+    <subject>Palmetto - ReEngineering Request</subject>
+    <textOnly>{!Account.Name}
+{!Account.BillingAddress}
+
+
+Project has been previously stamped. Will require re-engineering and new stamp.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

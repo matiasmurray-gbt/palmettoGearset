@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Contract_Signed</letterhead>
+    <name>Contract Signed Notification</name>
+    <style>freeForm</style>
+    <subject>Palmetto Solar- Welcome Aboard!</subject>
+    <textOnly>Hello {!Opportunity.Contact_First_Name__c},
+
+
+
+Congratulations on going solar and making the most of the sun shining on your roof! You’ve taken the first step into a bright future. We understand going solar is a big decision, and we’re delighted you’ve made the switch and chose Palmetto to power your home. Get ready for 20 years of best-in-class service.
+
+Our Customer Support team is committed to making your switch to solar as smooth as possible and will be by your side at every stage of the process from this point forward. This email is designed to help our customers through the next steps in your solar journey.
+
+
+
+A CUSTOMER SURVEY IS ON THE WAY!
+
+We want to hear from you!  Palmetto strives to provide the best experience possible to every single one of our customers.  Within 24 hours you will receive an NPS survey. As we continue to take steps to improve our customer experience, it is important to share your feedback with us.
+
+
+HAVE QUESTIONS?
+We have real people who will treat you really, really incredibly well
+
+
+Honestly, our Customer Care team is the greatest. When you call, we won’t send you overseas or through an automated maze— a real person will answer. Not only will we pick up the phone, we’ll give you helpful, knowledgeable and straightforward answers to your questions. We promise that you’ll like chatting with us.
+
+
+You can reach us via Palmetto Home, email or phone. As always, we’re here for you. Please reach out if you have any questions as your solar journey progresses. Thank you for being a Palmetto customer.
+
+
+We look forward to exceeding your expectations!
+
+
+The Future is Bright
+Palmetto Customer Support
+
+customer.care@palmetto.com
+
+855-339-1831</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

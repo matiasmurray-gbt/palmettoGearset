@@ -1,0 +1,5940 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Re_Survey</fullName>
+    <active>true</active>
+    <businessProcess>Construction Support Process</businessProcess>
+    <label>Physical Site Visit</label>
+    <picklistValues>
+        <picklist>AHJ_Setbacks__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Adders__c</picklist>
+        <values>
+            <fullName>Damaged Plywood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Leaks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fascia Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flashing Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple MPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steep Roof</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Additional_Contributing_ICO_Reasons__c</picklist>
+        <values>
+            <fullName>Customer - HOA Approval Conflict</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer - Payment Term Discrepancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer - Sales Education Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer - Unfulfilled Obligations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Incidentals - Illness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Incidentals - Injury</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Incidentals - Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Incidentals - Scheduling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Conditions - Electrical Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Conditions - Electrical Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Conditions - Roof Accessibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Conditions - Roof Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Conditions - Roof Obstruction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Conditions - Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Conditions - Structural Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Design - Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Design - Layout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Design - Structural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weather - Heat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weather - Rain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weather - Snow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weather - Wind</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Additional_doc_needed__c</picklist>
+        <values>
+            <fullName>Final Affidavit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Firepath Load Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Snowload Calc Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wind Calcs Page</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Anticipated_Payment_Date__c</picklist>
+        <values>
+            <fullName>mid-Apr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>mid-Jan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>mid-Jul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>mid-Oct</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>At_Fault__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Bill_To__c</picklist>
+        <values>
+            <fullName>Build Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Rep</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Build_Partner__c</picklist>
+        <values>
+            <fullName>AAA Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AG Electric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AVA Electrical and Lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beacon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFTC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Renewables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Castaways Energy LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charge Up Electric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBT Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DK energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devlin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eco Solar Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First Light</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FirstLight Greenville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FirstLight NJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guardian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hytek Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Illinois Crew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KW Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Michigan Solar Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Solar Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Service Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Think</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revolution Energy Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skyline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Elite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Ready Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SunWise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traveling Crew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vision NJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Xtreme Solar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CM_Approval_Required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CaseType__c</picklist>
+        <values>
+            <fullName>Physical Re-Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Re-Survey</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Approver__c</picklist>
+        <values>
+            <fullName>CEO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Market Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ops Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Member</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Assigned_to__c</picklist>
+        <values>
+            <fullName>Ana Havliand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dawn Heck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machias Schoen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mary Cole</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meghan Eggers</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Owner__c</picklist>
+        <values>
+            <fullName>Ability to add more Third Party Contractors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Market Mgr Name%2C CX Name%2C Service Sales Name%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sun Systems Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunnova</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Type__c</picklist>
+        <values>
+            <fullName>Additional Adder Coordination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Requested Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delay in Stage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financier Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ground Mount Coordination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negative Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post-Install Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-Install Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QC Fail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Roof</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structural Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trenching</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Urgency__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Med</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cause__c</picklist>
+        <values>
+            <fullName>AHJ inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BBB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CP Owned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government incentives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interconnection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palmetto Owned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panels Installed incorrectly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal is correct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal is incorrect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roof Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yelp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>utility inspection</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Clawback__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Company_Cost__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Compensation_Required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Compliant__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Construction_Case_Type__c</picklist>
+        <values>
+            <fullName>Customer Complaints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed Inspections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ground Mounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M%2EP%2EU%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metal Roofs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Past Due Completion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rafter Upgrades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trenching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workmanship Failures</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Construction_Sub_Type__c</picklist>
+        <values>
+            <fullName>AC tie in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Best practices %28catch all%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clearances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commissioning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corrugated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC wire pull</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Designed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dig safe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drywall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical layout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field BOM change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field design change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire set back</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ground Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gutter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Isolation Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landscaping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paperwork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pictures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning%5CMaterial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Racked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ridge Cap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rip %26 Replace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roof Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roof layout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Siding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staked out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standing seam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stickers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surveyed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trencher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water intrusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wire management</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Consumption_Calculator_Form__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cost__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Credit_Expired__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Issue_Hold__c</picklist>
+        <values>
+            <fullName>In Progress - Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress - Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Temperament__c</picklist>
+        <values>
+            <fullName>Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yellow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Department__c</picklist>
+        <values>
+            <fullName>Business Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fulfillment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incentives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interconnection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%26M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permitting %2F Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduling</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Designed_by__c</picklist>
+        <values>
+            <fullName>Exactus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finulent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Illumine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wattmonk</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Detractor__c</picklist>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Tactics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Savings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timelines</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Drivers_License__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Electrical_Stamp_by__c</picklist>
+        <values>
+            <fullName>Current Renewables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exactus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Electrical_Upgrade_Scope__c</picklist>
+        <values>
+            <fullName>Field Listed Supply Side Connection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Main Relocation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Isolated Load Side Tap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main Breaker Relocation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main Panel Insert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main breaker downsize</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Relocation Tap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Socket Adapter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous Electrical Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panel Swap %3E150A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panel Swap %3E200A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewable Meter Adapter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Upgrade%2C %3E200A overhead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Upgrade%2C %3E200A underground</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Upgrade%2C %3E400A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sub Panel Insert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply Side Connection Breaker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply Side Connection Tap</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Electrical_Upgrade__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Flow_Status__c</picklist>
+        <values>
+            <fullName>New- Additional Photos Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New- Re-Survey Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photos Pending Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Survey Complete - Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Survey Reschedule Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Survey Rescheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Survey Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Survey Scheduling Pending Customer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HOA_Redesign__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>How_likely_to_recommend__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ICA_Kickback_Reasons__c</picklist>
+        <values>
+            <fullName>Customer Incorrect Signature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Issue%2FHold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Entry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering %E2%80%93 Customer Name</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering %E2%80%93 One line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering %E2%80%93 Site Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering %E2%80%93 Tech Sheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect CRC Document%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Document Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Size</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third-Party Supplier Breakage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transformer Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility Issue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Income_Verification__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Incorrect_Address__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Incorrect_Measurements__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Incorrect_Name__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Incorrect_Panel_Count__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Incorrectly_odeled__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Internet_Connection_Type__c</picklist>
+        <values>
+            <fullName>hard line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>wifi</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Item__c</picklist>
+        <values>
+            <fullName>GSM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inverter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loan_Terms_Change__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Main_Panel_Size_AMPS__c</picklist>
+        <values>
+            <fullName>100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>125</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>150</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>225</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>greater than 400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>less than 100</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mortgage_Statement__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NPS_Score__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NTP_Incomplete__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Offset_Discrepancy__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Account Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bussiness Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Manager</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PTO_Kickback_Reasons__c</picklist>
+        <values>
+            <fullName>Customer Incorrect Signature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Issue%2FHold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Entry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed Inspection - Utility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspector Clearing Work Orders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Document Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pictures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third-Party Supplier Breakage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility Issue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Paid_To__c</picklist>
+        <values>
+            <fullName>Homeowner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Rep</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Party_to_Bill__c</picklist>
+        <values>
+            <fullName>Build Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homeowner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Warranty</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Form__c</picklist>
+        <values>
+            <fullName>Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Card</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Method_Change__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Platform__c</picklist>
+        <values>
+            <fullName>AskNicely</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BBB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SolarReview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yelp</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Price_Change__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Showstopper</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Offered_to_Save__c</picklist>
+        <values>
+            <fullName>Discount price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lower PPW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palmetto Protect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Match</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reimburse for UB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reimbursement Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIP Service</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product__c</picklist>
+        <values>
+            <fullName>Alchemy Admin Webpage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alchemy User Webpage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curb Profile For Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy Dashboard Admin Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financier Stips</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inverter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palmetto Energy Dashboard Mobile App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palmetto Energy Dashboard Webpage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Edge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Modules</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Production_Loss__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Promotion__c</picklist>
+        <values>
+            <fullName>NO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Proof_of_Citizenship_Residency__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RMA__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>180 South</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alpha Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>At Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Barry Enter%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closing incentive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Communication Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FL Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HOA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HOA Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harbor Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homeowner Not Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homeowners not home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issue already resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple documents missing onsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Alchemist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Choice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New DocuSign template</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New channel partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New field</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New page layout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New record type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New report%2Fdashboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New validation rule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New value for existing field</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New workflow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nexxgen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Engineering Plans on site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Engineering memo onsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Permit onsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No longer needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No show inspector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Palmetto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not at fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offboarding Alchemist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organizational change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property altercation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radius</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral incentive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roof Leaking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SolGen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Route</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SolarEdge communication error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solectus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soliva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stickers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Super Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Not Producing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System not Energized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax credits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update existing DocuSign temaplate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update existing page layout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update existing report%2Fdashboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update existing validation rule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update existing workflow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility denial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>World Solar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_1__c</picklist>
+        <values>
+            <fullName>AHJ Assigned Pending Customer E-Sign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AHJ Assigned Pending Customer Wet Sign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AHJ Assigned Pending Palmetto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AHJ Pending Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Management Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Austin Rebate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bill of Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Green Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Order Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Order Pending Homeowner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Order Pending Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Order Pending Sales Member- 72 Hour Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Order Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Order Resolution in Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Order Resolution in Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Order Resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clean up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed- Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumption change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Received - Documents Pending Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer On Hold Period Complete- Project Progressing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Sales Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damage person property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Communication Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design Outsourced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design Plan Set</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Document Changes Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical One Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical Stamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy Efficiency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed Rescheduled Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>False expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fell through ceiling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HOA Approval Conflict</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IL ABP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITC Not eligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITC partial eligibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Illness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Customer%2FSales Member Engaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incentives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inconsistent %2F Lack of</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Loan Amount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initial Design QC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injury</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Complete-Pending WO Close Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Pending Affidavit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Pending Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Pending Inspector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Scheduling Blocked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install Pull Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation Complete- Pending Scheduling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation Requirement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interconnection %2F Utility Delays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interconnection Kickback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Close Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Layout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loan Awareness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loan Terms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA SMART</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Market Manager Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Milestone Filing Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitoring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>More Information Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJ SREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPS Score</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negative Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Pending Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New- Pending Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New- Pending Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Palmetto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Covered Under Warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PTO Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PTO kickback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Term Discrepancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Build Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Documents to Sign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Documents to upload</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Remediation%2FCorrections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PennAEPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permitting %26 Documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest complaints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preparing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Device</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Loss</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Engineering Stamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Timelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project updates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI Re-Growth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Survey Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-am period %28wording%3F%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready for Submittal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral Bonus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved- Pending Re-Scheduling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retention Outreach Underway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retention Successful- Project In Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retention Unsuccessful- Project Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review Underway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revision 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revision 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revision 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revision 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revision 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roof Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roof Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roof Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roof Obstruction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Education Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Savings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduling pending As-Builts%2FRedesign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shading Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Validation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Snow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State incentive delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structural Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structural Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structural Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structural Stamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermal Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timeline to repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unfulfilled Obligations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wants EOY install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wind</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>expected offset</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_2__c</picklist>
+        <values>
+            <fullName>Account Transfer Awaiting Customer Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Addition of panels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>App Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>App Expiration Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>App P1 Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>App Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>App Resubmitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>App Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>As Built Doesn%E2%80%99t Match Last Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>As-Built Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avoidable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BP Availability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad Roof Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad Survey Photos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bill of Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Both</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAF Received Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAF Sent for Signature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceiling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cell%2FGateway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changed Design due to Efficiency%2FEase of Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim Corrections Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim Corrections Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim Submitted - Docs Awaiting Customer Signature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim Under Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commissioning Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completion Doc Awaiting Customer Signature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completion Doc Received Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumption Monitoring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Awarded%2FP2 Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract%2FLoan  Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corrections Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corrections Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corrections Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Failing to Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Obligation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design - Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design - Layout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Detractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disclosure Received Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disclosure Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EE%2FOffset Discrepancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical One line Edit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical Upgrade required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extended Timeline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facility Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed Initial Virtual Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fault Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FinanciarStipulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ground Mount Coordination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HOA Denial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HOA issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HOA issues require a design change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home owner not Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homeowner Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homeowner Hold- Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homeowner Hold- Unresponsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homeowner Obligation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homeowner Obligation - Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homeowner Obligation - Roof</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homeowner Obligation - Site Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homeowner Obligation - Tree</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Household Items</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICA issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inappropriate Behavior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incentive Process Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incentive Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Info Provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Info Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Info Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Info Verified Processed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Corrections Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inverter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Received Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Sent for Signature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Close Out Photos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOI Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Layout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M0%2FContract not approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD Certification Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD RCEG App Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Master COP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Turndown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Inverter Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Photos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Move of panels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple Failed Inspections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJCE Registration Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs Structural Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One Line and Plan set match install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optimizer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panels Won%27t Fit%28Setbacks%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paperwork Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Documents to Sign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Documents to Upload</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Monitoring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PendingCancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PennAEPS Application Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PennAEPS Application Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photos Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline Report Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plan Set Updates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plans in Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PoK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Roof Conditions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Promise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Punch List Items</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QA Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Roof Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Roof Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Survey Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Survey Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ReRoof</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reduction of panels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reroof required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reservation Application Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reservation Application Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revisions Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revisions Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roof</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SRECTrade App Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SRECTrade Registration Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SRECTrade Registration Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Offered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sideing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sleep Mode</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SoK%28No%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SolarEdge Technical Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stickers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structural Upgrade required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submit Incentive Docs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunnova</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunnova Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Size</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tree Removal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tree Removal required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TreeRemoval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trench required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unavoidable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unclear Photos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UnresponsiveCustomer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility Denial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Survey Incomplete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weather</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Fuse Sizes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Interconnection Method</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Orientation of Boxes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Wire Size</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_3__c</picklist>
+        <values>
+            <fullName>%3C1Week</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3C2Weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3C3Weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AHJ SetBacks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adding Disconnect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adding Optimizers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adding Subpanels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adding Sunnova Energy Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ApplicationData</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BBB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CP Coordination Underway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Order Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changing Solar Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer hasn%27t confirmed re-roof</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer hasn%27t removed trees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer not scheduling Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer not scheduling a survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer not signing documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decided Against Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drivers License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eagle View</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical upgrades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exactus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extended timeline to solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HOI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homeowner Coordination Underway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-House</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Income Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Measurements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Name</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Panel Count</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrectly Modeled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interconnection Type Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inverter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loan Terms Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Order Turn Down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mortgage Statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple Edits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple Reasons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Panels in community</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outsourced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overbooked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palmetto Coordination Underway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panel Type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panels Visible From Street</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panels in front of the home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Reschedule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Method Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Quote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preparing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Loss</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof of Citizenship%2FResidency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROPC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redesign Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SLD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SpecSheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structural upgrades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supervisor Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Size Kickback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tilt Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Title Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weather</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_4__c</picklist>
+        <values>
+            <fullName>1 Week</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 Weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 Weeks</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_For_Fail__c</picklist>
+        <values>
+            <fullName>Homeowner not home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Engineering Plans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Wiring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Enginerring Memp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Enginerring Plans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red Line not Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stickers</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason__c</picklist>
+        <values>
+            <fullName>AHJ Delays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Designed by Dvinci</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Designed by palmetto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EE Package</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federal%2FState ITC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High EE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation caused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late without notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacture caused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJ SREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Bill%27 Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No call%2FNo Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not HOA Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Homeowner approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not engineering approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit not submitted in time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spiff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility kickbacks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting ICA approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Witness Test No call%2Fno show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>fill in state incentives</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Redesign_Request__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reimburement_Type__c</picklist>
+        <values>
+            <fullName>Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit to Loan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loan Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reroof__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resonsible_Party__c</picklist>
+        <values>
+            <fullName>BP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CP Charged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palmetto Pays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rep Charged</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Responsible_Department__c</picklist>
+        <values>
+            <fullName>Account Executives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Build Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Designers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Market Managers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Surveyors</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Responsible_for_payment__c</picklist>
+        <values>
+            <fullName>BP Charged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CP Charged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palmetto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rep Charged</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resulted_in_Official_Complaint__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Roof_Coordination_Owner__c</picklist>
+        <values>
+            <fullName>Homeowner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palmetto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Roofing_Type__c</picklist>
+        <values>
+            <fullName>Comp Shingle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corrugated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mixed Surfaces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standing Seam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tile</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Salesforce_Request_Type__c</picklist>
+        <values>
+            <fullName>Automation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Channel Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question%2FProblem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report%2FDashboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Administration</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Scope_of_Re_Roof__c</picklist>
+        <values>
+            <fullName>Full Re-Roof</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roof Repair%2FPatch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Mounting Planes Only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Score__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E0</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Call_Charge__c</picklist>
+        <values>
+            <fullName>Build partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homeowner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Call_Completed_By__c</picklist>
+        <values>
+            <fullName>AAA Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AG Electric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AVA Electrical and Lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beacon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFTC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Renewables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Castaways Energy LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charge Up Electric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBT Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DK energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devlin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eco Solar Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First Light</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FirstLight Greenville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FirstLight NJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guardian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hytek Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Illinois Crew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KW Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Michigan Solar Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Solar Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Service Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Think</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revolution Energy Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skyline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Elite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Ready Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SunWise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traveling Crew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vision NJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Xtreme Solar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Call_Reason_1__c</picklist>
+        <values>
+            <fullName>Communication Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courtesy Visit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inverter Alert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Closeout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter %2F Monitoring Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module Alert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest Abatement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest Concerns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preventative Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Removal %26 Reinstall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roof Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Not Producing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Upgrade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Call_Reason_2__c</picklist>
+        <values>
+            <fullName>Communication Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courtesy Visit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Not Producing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Call_Reason_3__c</picklist>
+        <values>
+            <fullName>Communication Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courtesy Visit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Not Producing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Call_Sub_Type__c</picklist>
+        <values>
+            <fullName>Closeout Punchlist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conduit and Inverter Removal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Critter Guard Upsell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error Code</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Fail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installer Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inverter Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leak Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module Addition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitor Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitoring Device</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optimizer Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panel Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reinstallation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Removal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Removal %26 Reinstallation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roof Leak Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smart Devices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>String Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Activation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Damage from Pest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under-Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visual Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weather Damage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Provider__c</picklist>
+        <values>
+            <fullName>Ability to add more Third Party Contractors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Market Mgr Name%2C CX Name%2C Service Sales Name%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sun Systems Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunnova</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shading_Errors__c</picklist>
+        <values>
+            <fullName>Other Homes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roof Obstructions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trees</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Site_Audit_Completed_By_survey__c</picklist>
+        <values>
+            <fullName>Eagleview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exactus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palmetto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Survey</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Size_of_Required_Service_Wire__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 AWT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 AWT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 AWT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 AWT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Source__c</picklist>
+        <values>
+            <fullName>Avoidable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unavoidable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stage__c</picklist>
+        <values>
+            <fullName>Engineering Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install Ready</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Ready</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Star_Rating__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Storage_System_Type__c</picklist>
+        <values>
+            <fullName>Sonnen Core</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sonnen Eco20</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Structural_Scope__c</picklist>
+        <values>
+            <fullName>Blocking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial Upgrade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Structural_Stamp_by__c</picklist>
+        <values>
+            <fullName>Current Renewables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exactus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZSE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Structural_Upgrade__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Structural__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Reason__c</picklist>
+        <values>
+            <fullName>Build Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delayed Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Different then proposed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eagle Eye</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exactus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Tax liability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not the expected return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palmetto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Loss Reimbursement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>give 1 K get 1 K</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Type__c</picklist>
+        <values>
+            <fullName>Clean up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumption change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damage person property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy Efficiency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>False expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fell through ceiling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITC Not eligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITC partial eligibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inconsistent %2F Lack of</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Loan Amount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interconnection %2F Utility Delays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loan Awareness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loan Terms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Covered under Warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Loss</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Timelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project updates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-am period %28wording%3F%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral Bonus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roof leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State incentive delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermal Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timeline to repair</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SunRun__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sunnova__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Survey_Type__c</picklist>
+        <values>
+            <fullName>Physical Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Survey</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>System_Size_DQ__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>System_Size_Kickback__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Time_of_conversation__c</picklist>
+        <values>
+            <fullName>Activation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Signing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PTO %280-3 months%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PTO %2812%2B months%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PTO %283-6 months%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PTO %286-12 months%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Title_Verification__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Transformer_Upgrade__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tree_Removal_Change_Order__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Trenching__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Sales Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Software Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expected offset %2F Savings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incentives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Reschedule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negative Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-PTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reimbursement Request - Customer Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reimbursement Request - Direct Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SolarEdge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Customer Incentives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delays%2FExtended Timelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment%2FWorkmanship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negative Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Performance Expectations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Complaint__c</picklist>
+        <values>
+            <fullName>AG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BBB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Updated_Customer_Review__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ys</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Utility_Hard_Denial__c</picklist>
+        <values>
+            <fullName>In Progress- Block Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress- Block Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Waiting_on_response_from__c</picklist>
+        <values>
+            <fullName>Exactus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palmetto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Work_Type_Category__c</picklist>
+        <values>
+            <fullName>Closeout Punchlist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Critter Guard Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Envoy Troubleshoot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Envoy replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inverter Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inverter Troubleshoot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Troubleshoot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microinverter Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microinverter Troubleshoot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module Damage Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module Wash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitor Troubleshoot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitoring Device Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remote Troubleshoot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roof Leak Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roof Leak Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Damage Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Removal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Removal and Reinstallation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Troubleshoot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermostat Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify Activation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Within Tolerance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

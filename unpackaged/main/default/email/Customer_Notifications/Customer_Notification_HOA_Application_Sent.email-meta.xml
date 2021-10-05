@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Customer Notification - HOA Application Sent</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Solar</letterhead>
+    <name>Customer Notification - HOA Application Sent</name>
+    <style>freeForm</style>
+    <subject>Your Solar Installation Project</subject>
+    <textOnly>Hello {!Opportunity.Contact__c},
+
+Today, {!Opportunity.HOA_Application_Sent_Date__c}, the application to your HOA was submitted. {!Opportunity.HOA_Name__c} has 30-60 days to come to a decision in regards to your solar installation project. During this time span, please be on the lookout for your approval letter from your HOA.
+
+If we sent you an individual request to submit the application to your HOA personally, you should find that message and the appropriate forwarding information in your inbox. Please submit that to the HOA as soon as possible in order to get approval back in a timely manner.
+
+Upon receipt of the approval letter, please forward it to us for our records.
+
+If you have any questions please reach out to our Palmetto Customer Care team at 843-720-1844.
+
+Regards,
+Palmetto</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

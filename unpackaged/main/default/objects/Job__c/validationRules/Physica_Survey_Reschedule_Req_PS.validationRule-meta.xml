@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Physica_Survey_Reschedule_Req_PS</fullName>
+    <active>true</active>
+    <description>For Physical Survey Job type only</description>
+    <errorConditionFormula>AND(ISPICKVAL(Flow_Status__c , 'Physical Survey Reschedule Required'),
+ISPICKVAL(Type__c, 'Physical Survey'),
+RecordTypeId = '0122L000000VoVr',  
+AND(ISNULL( Reschedule_Needed_Access__c ),
+ISNULL( Reschedule_Needed_Complexity__c ),
+ISNULL( Reschedule_Needed_Weather__c ))
+)</errorConditionFormula>
+    <errorMessage>Update "Survey Rescheduled" section</errorMessage>
+</ValidationRule>

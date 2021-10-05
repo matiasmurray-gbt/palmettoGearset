@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Lead Auto Response</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>notEqual</operation>
+                <value>Energy Dashboard,Property Aquisition</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Sales_Rabbit_Date_Created__c</field>
+                <operation>equals</operation>
+            </criteriaItems>
+            <senderEmail>insidesales@palmettoventures.com</senderEmail>
+            <senderName>Palmetto Sales</senderName>
+            <template>unfiled$public/Palmetto_Solar_Follow_Up</template>
+        </ruleEntry>
+    </autoResponseRule>
+    <autoResponseRule>
+        <fullName>LeadMaretPlace</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Inside/Outside Sales</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.FirstName</field>
+                <operation>notContain</operation>
+                <value>Test</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LastName</field>
+                <operation>notContain</operation>
+                <value>test</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Digital Marketing,Palmetto.com</value>
+            </criteriaItems>
+            <senderEmail>gosolartoday@palmettoventures.com</senderEmail>
+            <senderName>GoSolarToday</senderName>
+            <template>Customer_Notifications/Homeowner_Lead_Marketing_Automation</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

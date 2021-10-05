@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email template is to sell P. Home to HVAC Enterprises</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Palmetto Home - HVAC Enterprise</name>
+    <style>freeForm</style>
+    <subject>Hello {!Contact.FirstName} , Here Is A Consumption Activity Tracker For Your Customers Homes</subject>
+    <textOnly>Hello {!Contact.FirstName} ,
+
+My name is Bryan Hoffman and I work locally at Palmetto a clean technology company in Charleston.  We understand that energy savings are a top priority to your customers when they are purchasing a new HVAC system.
+
+This is why we&apos;ve created Palmetto Home, a technology product that allows your customers to track their home&apos;s energy consumption down to an individual circuit within the home...or in this case their HVAC system.
+
+Palmetto Home allows you to...
+- Show your customers the real time savings from their HVAC system
+- Show customers the benefits of a maintenance contract with you
+- Communicate directly to your customers in order to better meet their service needs
+- Mange electrical consumption, rather than accepting it as a fixed cost
+- Gain actionable insights on how to improve their existing system
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I would love to setup a time to show you the Palmetto Home app in order to provide you with a visual image of what your customers would be interacting with on a daily basis.
+
+
+Thank You,
+
+{!User.Name}
+Palmetto Clean Energy Technology Team
+bryan.hoffman@palmetto.com
+Office: 843-720-1844
+www.Palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canvassers_Commission_Plans</fullName>
+    <columns>NAME</columns>
+    <columns>Canvass_Appointment_Rate__c</columns>
+    <columns>Canvass_Install_Complete_Rate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Plan__c</field>
+        <operation>equals</operation>
+        <value>Canvasser</value>
+    </filters>
+    <label>Canvassers Commission Plans</label>
+</ListView>

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?><CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>API_Key</fullName>
+        <categories>Logistics API</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>API Key</shortDescription>
+        <value>0wVLwD0osesYhTXMCcLM</value>
+    </labels>
+    <labels>
+        <fullName>Adder_Job_Record_Type_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Adder Job Record Type ID</shortDescription>
+        <value>0127d000000Gs4dAAC</value>
+    </labels>
+    <labels>
+        <fullName>Alchemy_End_Point</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Alchemy End-Point</shortDescription>
+        <value>https://alchemy.palmetto.com/updateOpportunityStatus</value>
+    </labels>
+    <labels>
+        <fullName>AskNicely_Survey_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email to send AskNicely surveys in flows</shortDescription>
+        <value>palmetto_dd32162@trigger.asknice.ly</value>
+    </labels>
+    <labels>
+        <fullName>AssignBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssignBtn</shortDescription>
+        <value>Assign</value>
+    </labels>
+    <labels>
+        <fullName>AssignSuccessSummary</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssignSuccessSummary</shortDescription>
+        <value>The opportunities you selected and their attached open activities have successfully been reassigned.</value>
+    </labels>
+    <labels>
+        <fullName>AssignSuccessTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssignSuccessTitle</shortDescription>
+        <value>Reassignment successfully completed!</value>
+    </labels>
+    <labels>
+        <fullName>AssignToBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssignToBtn</shortDescription>
+        <value>Assign to:</value>
+    </labels>
+    <labels>
+        <fullName>AssigningBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssigningBtn</shortDescription>
+        <value>In progress ...</value>
+    </labels>
+    <labels>
+        <fullName>Build_Inspection_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Build_Inspection_Owner</shortDescription>
+        <value>00G2L000001elsx</value>
+    </labels>
+    <labels>
+        <fullName>CASE_ASSIGNMENT_API</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CASE ASSIGNMENT API</shortDescription>
+        <value>https://api-next.palmetto.com/api/v1/webhooks/salesforce/opportunity-case-assignment</value>
+    </labels>
+    <labels>
+        <fullName>CloseDateCriteriaLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CloseDateCriteriaLabel</shortDescription>
+        <value>Closed Date</value>
+    </labels>
+    <labels>
+        <fullName>CreatedDateCriteriaLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CreatedDateCriteriaLabel</shortDescription>
+        <value>Created date:</value>
+    </labels>
+    <labels>
+        <fullName>CriteriaSearchSection</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CriteriaSearchSection</shortDescription>
+        <value>Search with a search criteria</value>
+    </labels>
+    <labels>
+        <fullName>DisplayViewLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DisplayViewLabel</shortDescription>
+        <value>Display:</value>
+    </labels>
+    <labels>
+        <fullName>Encor_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Encor_Id</shortDescription>
+        <value>0012L000012HMHy</value>
+    </labels>
+    <labels>
+        <fullName>HeaderText</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HeaderText</shortDescription>
+        <value>Mass reassign opportunities</value>
+    </labels>
+    <labels>
+        <fullName>JOB_ASSIGNMENT_API</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JOB_ASSIGNMENT_API</shortDescription>
+        <value>https://api-next.palmetto.com/api/v1/webhooks/salesforce/opportunity-job-assignment</value>
+    </labels>
+    <labels>
+        <fullName>LGCY_Endpoint</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LGCY_Endpoint</shortDescription>
+        <value>https://panel.lgcypower.com/cron/updatePartnerData/palmetto</value>
+    </labels>
+    <labels>
+        <fullName>NewViewLinkLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewViewLinkLabel</shortDescription>
+        <value>Create new view</value>
+    </labels>
+    <labels>
+        <fullName>NoResultSummary</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NoResultSummary</shortDescription>
+        <value>Please modify your search criteria</value>
+    </labels>
+    <labels>
+        <fullName>NoResultTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NoResultTitle</shortDescription>
+        <value>No results</value>
+    </labels>
+    <labels>
+        <fullName>NoViewSelection</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NoViewSelection</shortDescription>
+        <value>- None -</value>
+    </labels>
+    <labels>
+        <fullName>ORDER_STATUS_API</fullName>
+        <categories>Logistics API</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ORDER_STATUS_API</shortDescription>
+        <value>https://invalid-alchemy-endpoint/api/v1/webhooks/external/orderStatus</value>
+    </labels>
+    <labels>
+        <fullName>OppQuery</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OppQuery</shortDescription>
+        <value>SELECT Opp_Primary_Contact__r.AccountId from Opportunity where Channel_Partner__c = null and Opp_Primary_Contact__r.AccountId != null and RecordType.Name in ('3rd Party - Design Sales', 'Opportunity - Process', '3rd Party - Contracted Sales', '3rd Party - Design Sales') and Test_Account__c = false and StageName NOT in ('6. Contract Signed', 'Unqualified Leads', 'Cancelled', 'Closed Lost', '1. Appointment Set', '9. Change Order Pending', '2. Appointment Complete', '3. Proposal Presented', '3a. Proposal Redesign', 'Closed Won', '20. Inspection Scheduled', '21. Inspection Complete', '22. PTO') and Contract_Received_Confirmed_Date__c &gt;= 2020-01-01 and Customer_Type__c = 'Residential - Customer' and X3rd_Party_Partner__c NOT in ('Ion Solar', 'EnviroSolar LLC', 'EnviroSolar', 'Dvinci Energy', 'Palmetto Inside Sales', 'Independent Alchemists Master Account') and LeadSource in ('3rd Party Provider', 'Self Generated Lead') and ID not in (select Opportunity__c from Commission__c)</value>
+    </labels>
+    <labels>
+        <fullName>Opp_Commission_Query</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opp Commission Query</shortDescription>
+        <value>select Id, Financing_Tool__c, APR__c, Loan_Term__c, Location__c, Channel_Partner__c, Contract_Received_Date__c from Opportunity where Contract_Received_Date__c &gt;= 2018-01-01 AND Contract_Received_Date__c &lt;= 2020-11-01 and Internal_Dealer_Fee_Product2__c = null</value>
+    </labels>
+    <labels>
+        <fullName>Permitting</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Permitting</shortDescription>
+        <value>00G2L000001elsx</value>
+    </labels>
+    <labels>
+        <fullName>Pre_contract_Site_Approval_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pre-contract Site Approval ID</shortDescription>
+        <value>0127d000000Gs4eAAC</value>
+    </labels>
+    <labels>
+        <fullName>Pre_contract_Virtual_Survey_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pre-contract Virtual Survey ID</shortDescription>
+        <value>0127d000000Gs4fAAC</value>
+    </labels>
+    <labels>
+        <fullName>ProjectEngineersId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ProjectEngineersId</shortDescription>
+        <value>00G2L000001kuBn</value>
+    </labels>
+    <labels>
+        <fullName>Project_Engineers</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project_Engineers</shortDescription>
+        <value>00G2L000001kuBn</value>
+    </labels>
+    <labels>
+        <fullName>Project_Milestone_Query</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Milestone Query</shortDescription>
+        <value>select Id, Name from Opportunity where Id Not IN (SELECT Opportunity__c FROM Project_Milestone__c) AND RecordType.DeveloperName = 'X3rd_Party_Design_Sales'</value>
+    </labels>
+    <labels>
+        <fullName>Project_Milestone_Query_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Milestone Query 2</shortDescription>
+        <value>Select Id, Name, Contract_Received_Milestone__c, Contract_Signed_Milestone__c, Design_Completed_Milestone__c, Design_Queued_Milestone__c, Inspection_Complete_Milestone__c, Inspection_Scheduled_Milestone__c, Installation_Completed_Milestone__c, Installation_Ready_Milestone__c, Installation_Scheduled_Milestone__c, Installation_Started_Milestone__c, Opportunity__c, Permit_Received_Milestone__c, Permit_Submitted_Milestone__c, PTO_Complete_Milestone__c, PTO_Submitted_Milestone__c, Survey_Complete_Confirmed__c, Energy_Bill_checked__c FROM Project_Milestone__c where Opportunity__c IN (select Opportunity__c from Job__c)</value>
+    </labels>
+    <labels>
+        <fullName>Project_Milestone_Query_3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Milestone Query 3</shortDescription>
+        <value>Select Id, Name, Lease_Loan_M1_Approval_Milestone__c, Site_Survey_Completed_Milestone__c, Energy_Usage_Verification_Milestone__c, Contract_Received_Confirmed_Milestone__c, Energy_Bill_checked__c, Survey_Complete_Confirmed__c, Contract_Received_Milestone__c, Opportunity__c FROM Project_Milestone__c WHERE Contract_Signed_Milestone__c != null</value>
+    </labels>
+    <labels>
+        <fullName>Project_Milestone_V3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Milestone V3</shortDescription>
+        <value>select Id, Design_Completed_Milestone__c, Opportunity__c ,Opportunity__r.Contact__c, Opportunity__r.Contact__r.Name, Opportunity__r.OwnerId, Opportunity__r.Owner.IsActive, Opportunity__r.Fulfillment_Method__c, Opportunity__r.Materials_Direct_To_Site_Instructions__c, Opportunity__r.Materials_Direct_To_Site_Confirmation__c, Opportunity__r.NetSuite_Inventory_Location__c from Project_Milestone__c WHERE Contract_Signed_Milestone__c != null and Opportunity__c NOT IN (SELECT Opportunity__c from Job__c WHERE RecordType.DeveloperName = 'Supply_Chain')</value>
+    </labels>
+    <labels>
+        <fullName>Project_Milestone_V5</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project_Milestone_V5</shortDescription>
+        <value>Select Id, Name, Opportunity__c, Interconnection_Process_Initiated__c, Interconnection_Application_Submitted__c, Interconnection_Application_Approved__c, Net_Metering_Application_Approved__c, Utility_Approval_for_Installation__c FROM Project_Milestone__c where Opportunity__c IN (select Opportunity__c from Job__c WHERE RecordType.DeveloperName = 'Interconnection')</value>
+    </labels>
+    <labels>
+        <fullName>ResultBlockTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ResultBlockTitle</shortDescription>
+        <value>Results</value>
+    </labels>
+    <labels>
+        <fullName>SRECTrade_Registration_Job_Creation_States</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SRECTrade Registration Job Creation States</shortDescription>
+        <value>New Jersey,Maryland,Pennsylvania,Illinois,Ohio,Washington,Virginia</value>
+    </labels>
+    <labels>
+        <fullName>Scheduling_Team</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Scheduling_Team</shortDescription>
+        <value>00G2L000001MYlX</value>
+    </labels>
+    <labels>
+        <fullName>SearchBlockTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SearchBlockTitle</shortDescription>
+        <value>Search opportunities</value>
+    </labels>
+    <labels>
+        <fullName>SearchBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SearchBtn</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>SearchingBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SearchingBtn</shortDescription>
+        <value>Searching ...</value>
+    </labels>
+    <labels>
+        <fullName>State_Certification_Job_Creation_States</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>State Certification Job Creation States</shortDescription>
+        <value>New Jersey,Maryland,Pennsylvania,Illinois,Ohio,Washington</value>
+    </labels>
+    <labels>
+        <fullName>TooManyRowsError</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TooManyRowsError</shortDescription>
+        <value>The total number of open activities on the opportunities you selected is greater than the system can handle. Please reduce the number of opportunities to reassign</value>
+    </labels>
+    <labels>
+        <fullName>TooManyRowsSummary</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TooManyRowsSummary</shortDescription>
+        <value>The view you selected returned more than 1000 rows. Only the 1000 first ones will be displayed</value>
+    </labels>
+    <labels>
+        <fullName>TooManyRowsTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TooManyRowsTitle</shortDescription>
+        <value>Too many rows returned</value>
+    </labels>
+    <labels>
+        <fullName>TotalFooterLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TotalFooterLabel</shortDescription>
+        <value>Number</value>
+    </labels>
+    <labels>
+        <fullName>ViewSearchSection</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ViewSearchSection</shortDescription>
+        <value>Search with a view</value>
+    </labels>
+    <labels>
+        <fullName>Wrong_scope_of_work</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wrong scope of work</shortDescription>
+        <value>The build partner you are trying to assing doesn't have the selected capability</value>
+    </labels>
+    <labels>
+        <fullName>caseQuery</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>caseQuery</shortDescription>
+        <value>SELECT Id, Open_Retention_Case__c FROM Opportunity WHERE Id IN (SELECT Opportunity__c FROM Case WHERE RecordType.DeveloperName = 'Retention' AND IsClosed = false) AND Open_Retention_Case__c = false</value>
+    </labels>
+    <labels>
+        <fullName>commission_report_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>commission report Email</shortDescription>
+        <value>no-reply.commissions@palmetto.com</value>
+    </labels>
+    <labels>
+        <fullName>rocket_support_email_addres</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>rocket support email address</shortDescription>
+        <value>ivan.gomez@palmetto.com</value>
+    </labels>
+</CustomLabels>

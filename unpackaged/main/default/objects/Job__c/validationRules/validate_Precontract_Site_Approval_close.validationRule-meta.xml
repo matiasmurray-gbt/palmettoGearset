@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>validate_Precontract_Site_Approval_close</fullName>
+    <active>true</active>
+    <description>This rue is used to make mandatory some fields of Pre-contract Site Approval job at the moment of closing it</description>
+    <errorConditionFormula>AND(
+  RecordType.DeveloperName = 'Pre_contract_Site_Approval',
+  OR(
+    ISPICKVAL(Job_Status__c, 'Closed'),
+    Job_completed__c
+  ),
+  OR(
+    ISBLANK(TEXT(Phys_Site_Survey_needs_to_be_requested__c)),
+    ISBLANK(TEXT(Physical_Site_Survey_Case_is_created__c)),
+    ISBLANK(TEXT(Is_a_re_roof_required__c)),
+    ISBLANK(TEXT(Is_a_structural_upgrade_required__c)),
+    ISBLANK(TEXT(Is_trenching_required__c)),
+    ISBLANK(TEXT(Is_an_electrical_upgrade_required__c))
+  )
+)</errorConditionFormula>
+    <errorMessage>Site survey section and Adder product section has to be completed before closing the job</errorMessage>
+</ValidationRule>

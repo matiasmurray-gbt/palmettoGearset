@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EIP_Interest_Calc__c</fullName>
+    <externalId>false</externalId>
+    <formula>0.02 *  ( Commissions_Expense__c + COGS_Materials__c + COGS_Install_Labor__c + Design_Permitting_Interconnection_QC__c + Sales_Tax_Expense__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>EIP Interest Calc</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

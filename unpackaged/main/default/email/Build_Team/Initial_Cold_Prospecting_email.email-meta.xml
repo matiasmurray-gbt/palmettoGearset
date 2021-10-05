@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Initial Cold Prospecting email</name>
+    <style>none</style>
+    <subject>Palmetto Solar - We&apos;d like to Partner with &lt;Company Name&gt;</subject>
+    <textOnly>Hi {!Contact.Name},
+
+My name is Mike Schamp and I’m reaching out from Palmetto Solar. I&apos;m responsible for building our nationwide network of Build Partners.
+
+We have a unique marketplace model that delivers ready-to-install projects to our Build Partners. We handle all the upfront work and provide a permit packet, design, and bill of materials. We are currently providing ready-to-install projects across more than 20 states with more than 75 current Build Partners.
+
+We need more capacity in the {State or Region}. I would love to connect and have an introductory call to see if partnering with Palmetto makes sense for {Company Name}. If we feel like it&apos;s a good fit, I&apos;m happy to share our MSA and other resources I&apos;m sure you&apos;ll find helpful. Please Use This Meeting Link to view my availability and schedule a time directly on my calendar at your earliest convenience.
+
+Cheers,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

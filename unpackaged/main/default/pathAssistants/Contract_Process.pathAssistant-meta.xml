@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <entityName>Job__c</entityName>
+    <fieldName>Flow_Status__c</fieldName>
+    <masterLabel>Contract Process</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Contract_Signed__c</fieldNames>
+        <info>&lt;p&gt;Update Contract Signed Field&lt;/p&gt;</info>
+        <picklistValueName>Sent for Signature</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Business_Processing</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Palmetto_Relation__c</fullName>
+    <externalId>false</externalId>
+    <label>Palmetto Relation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cordes Lucas</fullName>
+                <default>false</default>
+                <label>Cordes Lucas</label>
+            </value>
+            <value>
+                <fullName>Tim Zwerner</fullName>
+                <default>false</default>
+                <label>Tim Zwerner</label>
+            </value>
+            <value>
+                <fullName>Chris Graham</fullName>
+                <default>false</default>
+                <label>Chris Graham</label>
+            </value>
+            <value>
+                <fullName>Kelly Lewis</fullName>
+                <default>false</default>
+                <label>Kelly Lewis</label>
+            </value>
+            <value>
+                <fullName>Chris Kemper</fullName>
+                <default>false</default>
+                <label>Chris Kemper</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

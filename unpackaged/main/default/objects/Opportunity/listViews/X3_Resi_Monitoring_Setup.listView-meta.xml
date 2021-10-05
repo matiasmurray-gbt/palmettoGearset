@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3_Resi_Monitoring_Setup</fullName>
+    <booleanFilter>1 AND ((2 AND 3) OR 7) AND 4 AND 5 AND 6 and 8 and 9</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>System_Size_Calculated_kW__c</columns>
+    <columns>Financing_Tool__c</columns>
+    <columns>Installation_Team__c</columns>
+    <columns>Installation_Complete_Date__c</columns>
+    <columns>Inverter_Serial_Numbers__c</columns>
+    <columns>String_Map_Complete__c</columns>
+    <columns>Inspection_Comp_Permit_Closed__c</columns>
+    <columns>System_Activation_Section_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer,Integrated Palmetto Property</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>18. Installation,19. Closed Won,Closed Won</value>
+    </filters>
+    <filters>
+        <field>Install_Completed__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Monitoring_Activated__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>notEqual</operation>
+        <value>Louisiana</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>equals</operation>
+        <value>South Carolina,North Carolina</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>19. Install Completed,20. Inspection Scheduled,21. Inspection Complete,22. PTO</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>test</value>
+    </filters>
+    <filters>
+        <field>X3rd_Party_Partner__c</field>
+        <operation>notEqual</operation>
+        <value>Ion Solar</value>
+    </filters>
+    <label>3.21. SC / NC Monitoring To Setup</label>
+    <sharedTo>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_SC</role>
+        <role>Project_Designer</role>
+        <role>Project_Manager_SC</role>
+        <role>Senior_Project_Designer</role>
+    </sharedTo>
+</ListView>

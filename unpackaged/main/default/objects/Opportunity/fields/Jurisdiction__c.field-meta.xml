@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Jurisdiction__c</fullName>
+    <externalId>false</externalId>
+    <label>Jurisdiction</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Location__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>St Bernard</fullName>
+                <default>false</default>
+                <label>St Bernard</label>
+            </value>
+            <value>
+                <fullName>Jefferson</fullName>
+                <default>false</default>
+                <label>Jefferson</label>
+            </value>
+            <value>
+                <fullName>Orleans</fullName>
+                <default>false</default>
+                <label>Orleans</label>
+            </value>
+            <value>
+                <fullName>St Charles</fullName>
+                <default>false</default>
+                <label>St Charles</label>
+            </value>
+            <value>
+                <fullName>St Tammany</fullName>
+                <default>false</default>
+                <label>St Tammany</label>
+            </value>
+            <value>
+                <fullName>Tangipahoa</fullName>
+                <default>false</default>
+                <label>Tangipahoa</label>
+            </value>
+            <value>
+                <fullName>City of Charleston</fullName>
+                <default>false</default>
+                <label>City of Charleston</label>
+            </value>
+            <value>
+                <fullName>Charleston County</fullName>
+                <default>false</default>
+                <label>Charleston County</label>
+            </value>
+            <value>
+                <fullName>City of North Charleston</fullName>
+                <default>false</default>
+                <label>City of North Charleston</label>
+            </value>
+            <value>
+                <fullName>Dorchester County</fullName>
+                <default>false</default>
+                <label>Dorchester County</label>
+            </value>
+            <value>
+                <fullName>Town of Mt Pleasant</fullName>
+                <default>false</default>
+                <label>Town of Mt Pleasant</label>
+            </value>
+            <value>
+                <fullName>Sullivans Island</fullName>
+                <default>false</default>
+                <label>Sullivans Island</label>
+            </value>
+            <value>
+                <fullName>Kiawah Island</fullName>
+                <default>false</default>
+                <label>Kiawah Island</label>
+            </value>
+            <value>
+                <fullName>Town of Summerville</fullName>
+                <default>false</default>
+                <label>Town of Summerville</label>
+            </value>
+            <value>
+                <fullName>York County</fullName>
+                <default>false</default>
+                <label>York County</label>
+            </value>
+            <value>
+                <fullName>City of Columbia</fullName>
+                <default>false</default>
+                <label>City of Columbia</label>
+            </value>
+            <value>
+                <fullName>Lexington County</fullName>
+                <default>false</default>
+                <label>Lexington County</label>
+            </value>
+            <value>
+                <fullName>Greenville</fullName>
+                <default>false</default>
+                <label>Greenville</label>
+            </value>
+            <value>
+                <fullName>Spartanburg</fullName>
+                <default>false</default>
+                <label>Spartanburg</label>
+            </value>
+            <value>
+                <fullName>Town of Fort Mill</fullName>
+                <default>false</default>
+                <label>Town of Fort Mill</label>
+            </value>
+            <value>
+                <fullName>City of Anderson</fullName>
+                <default>false</default>
+                <label>City of Anderson</label>
+            </value>
+            <value>
+                <fullName>Chatham County</fullName>
+                <default>false</default>
+                <label>Chatham County</label>
+            </value>
+            <value>
+                <fullName>New Hanover County</fullName>
+                <default>false</default>
+                <label>New Hanover County</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Louisiana</controllingFieldValue>
+            <valueName>St Bernard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisiana</controllingFieldValue>
+            <valueName>Jefferson</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisiana</controllingFieldValue>
+            <valueName>Orleans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisiana</controllingFieldValue>
+            <valueName>St Charles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisiana</controllingFieldValue>
+            <valueName>St Tammany</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisiana</controllingFieldValue>
+            <valueName>Tangipahoa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>City of Charleston</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Charleston County</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>City of North Charleston</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Dorchester County</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Town of Mt Pleasant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Sullivans Island</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Kiawah Island</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Town of Summerville</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>York County</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>City of Columbia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Lexington County</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Greenville</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Spartanburg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Town of Fort Mill</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

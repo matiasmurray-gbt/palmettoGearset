@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Install Scheduling for all Residential - Customer opportunities (including channel partner &amp; direct sales)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Install Scheduling for all Residential - Customer opportunities</name>
+    <style>freeForm</style>
+    <subject>{!Opportunity.Name} - {!Account.BillingAddress} Installation Scheduled Date - {!Opportunity.Installation_Start_Date__c}</subject>
+    <textOnly>Hello {!Opportunity.Contact__c},
+
+We are excited to confirm the installation date of your solar system!
+
+Your installation is scheduled to begin {!Opportunity.Installation_Start_Date__c}.
+
+We ask that you are present between the hours of 8-10 am in order for the Palmetto Install Team Leader, to show you one final time where your panels will be located on your home.
+
+After installation you will be receiving a call from our warehouse team in order to schedule your final inspections.  Please research your schedule to find some dates that work best to have someone home so we may complete your inspection as early as possible.
+
+If you do have any further questions about your system before the installation begins, feel free to give our Customer Care Team a call at 855-339-1831
+
+Regards,
+Palmetto Customer Care Team
+customer.care@palmetto.com
+Phone: 855-339-1831
+Office: 843-720-1844</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

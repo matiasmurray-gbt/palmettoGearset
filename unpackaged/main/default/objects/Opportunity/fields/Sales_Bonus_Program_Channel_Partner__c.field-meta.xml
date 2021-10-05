@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Bonus_Program_Channel_Partner__c</fullName>
+    <externalId>false</externalId>
+    <formula>Channel_Partner__r.Sales_Bonus_Program__c</formula>
+    <label>Sales Bonus Program(Channel Partner)</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

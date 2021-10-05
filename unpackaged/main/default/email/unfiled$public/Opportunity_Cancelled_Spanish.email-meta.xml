@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Triggered by Process Builder &quot;Automated Process&quot; which launches the immediate action workflow email alert &quot;Opportunity Cancelled Spanish&quot;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Opportunity Cancelled Spanish</name>
+    <style>none</style>
+    <subject>Cancelacion Confirmada</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

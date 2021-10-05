@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Expiration 15 Day Notice</name>
+    <style>none</style>
+    <subject>15 Day Notice</subject>
+    <textOnly>Dear {!Trade_Licensing__c.Vendor__c}
+
+
+We sent a request for a copy of your updated {!Trade_Licensing__c.License_Number__c}, however, we have not received the requested documentation.
+
+
+Please forward a copy of your information to us within the next 10 days to avoid suspension of your account.
+
+
+Thank you for your prompt attention to this matter.
+
+
+
+Sincerely,
+
+
+
+{!Trade_Licensing__c.Owner_Name__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

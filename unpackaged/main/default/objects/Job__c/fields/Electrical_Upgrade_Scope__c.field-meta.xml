@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Electrical_Upgrade_Scope__c</fullName>
+    <externalId>false</externalId>
+    <label>Electrical Upgrade Scope</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Panel Swap &gt;150A</fullName>
+                <default>false</default>
+                <label>Panel Swap &gt;150A</label>
+            </value>
+            <value>
+                <fullName>Panel Swap &gt;200A</fullName>
+                <default>false</default>
+                <label>Panel Swap &gt;200A</label>
+            </value>
+            <value>
+                <fullName>Service Upgrade, &gt;200A overhead</fullName>
+                <default>false</default>
+                <label>Service Upgrade, &gt;200A overhead</label>
+            </value>
+            <value>
+                <fullName>Service Upgrade, &gt;200A underground</fullName>
+                <default>false</default>
+                <label>Service Upgrade, &gt;200A underground</label>
+            </value>
+            <value>
+                <fullName>Service Upgrade, &gt;400A</fullName>
+                <default>false</default>
+                <label>Service Upgrade, &gt;400A</label>
+            </value>
+            <value>
+                <fullName>Field Listed Supply Side Connection</fullName>
+                <default>false</default>
+                <label>Field Listed Supply Side Connection</label>
+            </value>
+            <value>
+                <fullName>Gas Main Relocation</fullName>
+                <default>false</default>
+                <label>Gas Main Relocation</label>
+            </value>
+            <value>
+                <fullName>Isolated Load Side Tap</fullName>
+                <default>false</default>
+                <label>Isolated Load Side Tap</label>
+            </value>
+            <value>
+                <fullName>Main breaker downsize</fullName>
+                <default>false</default>
+                <label>Main breaker downsize</label>
+            </value>
+            <value>
+                <fullName>Main Breaker Relocation</fullName>
+                <default>false</default>
+                <label>Main Breaker Relocation</label>
+            </value>
+            <value>
+                <fullName>Main Panel Insert</fullName>
+                <default>false</default>
+                <label>Main Panel Insert</label>
+            </value>
+            <value>
+                <fullName>Meter Relocation Tap</fullName>
+                <default>false</default>
+                <label>Meter Relocation Tap</label>
+            </value>
+            <value>
+                <fullName>Meter Socket Adapter</fullName>
+                <default>false</default>
+                <label>Meter Socket Adapter</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Electrical Work</fullName>
+                <default>false</default>
+                <label>Miscellaneous Electrical Work</label>
+            </value>
+            <value>
+                <fullName>Renewable Meter Adapter</fullName>
+                <default>false</default>
+                <label>Renewable Meter Adapter</label>
+            </value>
+            <value>
+                <fullName>Sub Panel Insert</fullName>
+                <default>false</default>
+                <label>Sub Panel Insert</label>
+            </value>
+            <value>
+                <fullName>Supply Side Connection Breaker</fullName>
+                <default>false</default>
+                <label>Supply Side Connection Breaker</label>
+            </value>
+            <value>
+                <fullName>Supply Side Connection Tap</fullName>
+                <default>false</default>
+                <label>Supply Side Connection Tap</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<span style="font-family: Slack-Lato, appleLogo, sans-serif; font-size: 15px; font-variant-ligatures: common-ligatures; background-color: rgb(255, 255, 255);">Sales Team - We have a new lead! To view the full lead details visit:&nbsp;</span><font face="Slack-Lato, appleLogo, sans-serif"><span style="font-size: 15px; font-variant-ligatures: common-ligatures;">{!Lead.Link}</span></font>]]></td>
+</tr>
+</table>

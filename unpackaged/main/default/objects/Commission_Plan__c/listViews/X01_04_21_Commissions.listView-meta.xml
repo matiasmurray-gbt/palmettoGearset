@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X01_04_21_Commissions</fullName>
+    <columns>Channel_Partner_Account__c</columns>
+    <columns>NAME</columns>
+    <columns>Location__c</columns>
+    <columns>X5K__c</columns>
+    <columns>X5kW__c</columns>
+    <columns>Milestone_1_Percent__c</columns>
+    <columns>Milestone_2_Percent__c</columns>
+    <columns>Milestone_3_Percent__c</columns>
+    <columns>CommPlan_Start_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>2021</value>
+    </filters>
+    <label>1/04/2021 Commissions</label>
+</ListView>

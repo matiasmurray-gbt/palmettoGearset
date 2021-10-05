@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Case</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Create Case</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT("/soap/ajax/30.0/connection.js")} 
+{!REQUIRESCRIPT("/soap/ajax/24.0/apex.js")} 
+
+var metadataString = "Select Contact__c from Opportunity where Id ='{!Opportunity.Id}'"; 
+var LenderRecords = sforce.connection.query(metadataString); 
+var Lender = LenderRecords.getArray('records'); 
+var c = new sforce.SObject("Case");
+c.Opportunity__c = '{!Opportunity.Id}';
+c.ContactId = Lender[0].Contact__c;
+c.Origin = 'Account Manager';
+c.RecordTypeId = '0121a000000EzrPAAS';
+var result = sforce.connection.create([c]);
+
+if (result[0].getBoolean("success")) {
+    window.location.href = '/'+result[0].id;
+} else {
+    alert("Failed to create case: " + result[0]);
+}</url>
+</WebLink>

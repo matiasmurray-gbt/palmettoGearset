@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Reason_for_Loss</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(  Reason_for_loss__c  , "Other") &amp;&amp;
+ISBLANK( Other_Reason_for_Loss__c )</errorConditionFormula>
+    <errorDisplayField>Other_Reason_for_Loss__c</errorDisplayField>
+    <errorMessage>Please type in another reason for loss not in the Reason for Loss list.</errorMessage>
+</ValidationRule>

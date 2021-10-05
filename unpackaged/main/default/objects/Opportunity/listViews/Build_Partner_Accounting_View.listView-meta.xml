@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Build_Partner_Accounting_View</fullName>
+    <columns>OPPORTUNITY.RECORDTYPE</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Address__c</columns>
+    <columns>Location__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Installation_Complete_Date__c</columns>
+    <columns>Number_of_Solar_Panels__c</columns>
+    <columns>System_Size_Calculated_kW__c</columns>
+    <columns>Installation_Team__c</columns>
+    <columns>Cancellation_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>1. Appointment Set,Closed Lost,Cancelled</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.X3rd_Party_Contracted_Sales,Opportunity.X3rd_Party_Design_Sales,Opportunity.Storage,Opportunity.O_M_Sales</value>
+    </filters>
+    <label>Build Partner Accounting View</label>
+    <sharedTo>
+        <role>Accounting</role>
+        <role>Operations_Manager</role>
+    </sharedTo>
+</ListView>

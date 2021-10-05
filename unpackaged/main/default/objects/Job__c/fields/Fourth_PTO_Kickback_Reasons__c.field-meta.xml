@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fourth_PTO_Kickback_Reasons__c</fullName>
+    <externalId>false</externalId>
+    <label>Fourth PTO Kickback Reasons</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Data Entry</fullName>
+                <default>false</default>
+                <label>Data Entry</label>
+            </value>
+            <value>
+                <fullName>Pictures</fullName>
+                <default>false</default>
+                <label>Pictures</label>
+            </value>
+            <value>
+                <fullName>Inspector Clearing Work Orders</fullName>
+                <default>false</default>
+                <label>Inspector Clearing Work Orders</label>
+            </value>
+            <value>
+                <fullName>Third-Party Supplier Breakage</fullName>
+                <default>false</default>
+                <label>Third-Party Supplier Breakage</label>
+            </value>
+            <value>
+                <fullName>Customer Issue/Hold</fullName>
+                <default>false</default>
+                <label>Customer Issue/Hold</label>
+            </value>
+            <value>
+                <fullName>Incorrect Documents</fullName>
+                <default>false</default>
+                <label>Incorrect Documents</label>
+            </value>
+            <value>
+                <fullName>Failed Inspection - Utility</fullName>
+                <default>false</default>
+                <label>Failed Inspection - Utility</label>
+            </value>
+            <value>
+                <fullName>Customer Incorrect Signature</fullName>
+                <default>false</default>
+                <label>Customer Incorrect Signature</label>
+            </value>
+            <value>
+                <fullName>New Document Required</fullName>
+                <default>false</default>
+                <label>New Document Required</label>
+            </value>
+            <value>
+                <fullName>Install Issue</fullName>
+                <default>false</default>
+                <label>Install Issue</label>
+            </value>
+            <value>
+                <fullName>Utility Issue</fullName>
+                <default>false</default>
+                <label>Utility Issue</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

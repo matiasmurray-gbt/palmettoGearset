@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LEAD_ConversionRule_SubMarket</fullName>
+    <active>true</active>
+    <description>Validates that required fields needed for Converting the Lead are present.</description>
+    <errorConditionFormula>RecordTypeId = "0121a00000028v5" /* Inside/Outside Sales */
+&amp;&amp;
+isBlank(Sales_Rabbit_Date_Created__c) /* not sales rabbit lead */
+&amp;&amp; 
+IsConverted
+&amp;&amp;
+ISBLANK(TEXT(Sub_Market__c))</errorConditionFormula>
+    <errorDisplayField>Sub_Market__c</errorDisplayField>
+    <errorMessage>You must complete the Sub Market in order to convert this Lead.</errorMessage>
+</ValidationRule>

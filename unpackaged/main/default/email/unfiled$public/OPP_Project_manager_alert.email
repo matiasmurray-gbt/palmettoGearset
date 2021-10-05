@@ -1,0 +1,3 @@
+{!Opportunity.Name} : Contract Received Notification
+
+Link to Opportunity Record: {!Opportunity.Link}

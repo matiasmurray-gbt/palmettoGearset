@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Solar</letterhead>
+    <name>CHANNEL - Internal Notification - CMG Managed Property</name>
+    <style>freeForm</style>
+    <subject>Action Required: Please contact your Palmetto customer - {!Opportunity.Account}</subject>
+    <textOnly>{!Opportunity.Opp_Primary_Contact__c},
+
+Congratulations on a new Palmetto Sale!
+
+Please note this home is located within a Community Management Group (CMG) managed property. CMG will not correspond with Palmetto or your company. They require all communication and requests come directly from the homeowner.
+
+Please let your customer know that they will have to request the application from CMG and be responsible for all followup. Palmetto will continue to submit on their behalf and pay reasonable application fees.
+
+Please contact your account manager with any questions.
+
+Thanks,
+Palmetto Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

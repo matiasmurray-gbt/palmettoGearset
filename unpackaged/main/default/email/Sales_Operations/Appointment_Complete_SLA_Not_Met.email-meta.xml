@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Appointment Complete SLA Not Met</name>
+    <style>freeForm</style>
+    <subject>Appointment Complete SLA Not Met - {!Opportunity.Name}</subject>
+    <textOnly>Opportunity Name: {!Opportunity.Name}
+
+Opportunity Owner: {!Opportunity.OwnerFullName}
+
+Opportunity Create Date: {!Opportunity.CreatedDate}
+
+Target Appointment Complete Stage Reached Date: {!Opportunity.00N1a000008xUBB}
+
+Current Stage: {!Opportunity.StageName}
+
+Appointment Date: {!Opportunity.Appointment_Date__c}
+
+Opportunity Link: {!Opportunity.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

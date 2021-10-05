@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HOA_Processing_Time__c</fullName>
+    <externalId>false</externalId>
+    <formula>Case(Home_Owners_Association__c,"No", 0,"Yes", 
+
+IF( ISBLANK(HOA_Approval_Date__c) = True, Today() -  Customer_Sent_HOA_Application_Date__c , HOA_Approval_Date__c - Customer_Sent_HOA_Application_Date__c),0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>HOA Processing Time</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

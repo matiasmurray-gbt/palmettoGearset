@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Inspection</fullName>
+                <default>false</default>
+                <label>Inspection</label>
+            </value>
+            <value>
+                <fullName>Site Approval</fullName>
+                <default>false</default>
+                <label>Site Approval</label>
+            </value>
+            <value>
+                <fullName>Virtual Survey</fullName>
+                <default>false</default>
+                <label>Virtual Survey</label>
+            </value>
+            <value>
+                <fullName>Physical Survey</fullName>
+                <default>false</default>
+                <label>Physical Survey</label>
+            </value>
+            <value>
+                <fullName>Incentive Submittal (MA SMART)</fullName>
+                <default>false</default>
+                <label>Incentive Submittal (MA SMART)</label>
+            </value>
+            <value>
+                <fullName>Incentive Submittal (IL ABP)</fullName>
+                <default>false</default>
+                <label>Incentive Submittal (IL ABP)</label>
+            </value>
+            <value>
+                <fullName>Incentive Submittal (RI ReGrowth)</fullName>
+                <default>false</default>
+                <label>Incentive Submittal (RI ReGrowth)</label>
+            </value>
+            <value>
+                <fullName>Incentive Submittal (CT Green Bank)</fullName>
+                <default>false</default>
+                <label>Incentive Submittal (CT Green Bank)</label>
+            </value>
+            <value>
+                <fullName>Incentive Submittal (PennAEPS)</fullName>
+                <default>false</default>
+                <label>Incentive Submittal (PennAEPS)</label>
+            </value>
+            <value>
+                <fullName>Incentive Submittal (NJ TREC)</fullName>
+                <default>false</default>
+                <label>Incentive Submittal (NJ TREC)</label>
+            </value>
+            <value>
+                <fullName>Incentive Submittal (MD)</fullName>
+                <default>false</default>
+                <label>Incentive Submittal (MD)</label>
+            </value>
+            <value>
+                <fullName>Incentive Submittal (NV)</fullName>
+                <default>false</default>
+                <label>Incentive Submittal (NV)</label>
+            </value>
+            <value>
+                <fullName>Incentive Submittal (Austin TX)</fullName>
+                <default>false</default>
+                <label>Incentive Submittal (Austin TX)</label>
+            </value>
+            <value>
+                <fullName>Incentive Submittal (San Antonio TX)</fullName>
+                <default>false</default>
+                <label>Incentive Submittal (San Antonio TX)</label>
+            </value>
+            <value>
+                <fullName>Contract Processing- Document Verification</fullName>
+                <default>false</default>
+                <label>Contract Processing- Document Verification</label>
+            </value>
+            <value>
+                <fullName>Document Verification</fullName>
+                <default>false</default>
+                <label>Document Verification</label>
+            </value>
+            <value>
+                <fullName>Job Close Out</fullName>
+                <default>false</default>
+                <label>Job Close Out</label>
+            </value>
+            <value>
+                <fullName>HOA</fullName>
+                <default>false</default>
+                <label>HOA</label>
+            </value>
+            <value>
+                <fullName>Permit Issuance</fullName>
+                <default>false</default>
+                <label>Permit Issuance</label>
+            </value>
+            <value>
+                <fullName>Interconnection</fullName>
+                <default>false</default>
+                <label>Interconnection</label>
+            </value>
+            <value>
+                <fullName>PTO</fullName>
+                <default>false</default>
+                <label>PTO</label>
+            </value>
+            <value>
+                <fullName>Loan except Sunnova</fullName>
+                <default>false</default>
+                <label>Loan except Sunnova</label>
+            </value>
+            <value>
+                <fullName>Sunnova</fullName>
+                <default>false</default>
+                <label>Sunnova</label>
+            </value>
+            <value>
+                <fullName>SunRun</fullName>
+                <default>false</default>
+                <label>SunRun</label>
+            </value>
+            <value>
+                <fullName>Installation Scheduling</fullName>
+                <default>false</default>
+                <label>Installation Scheduling</label>
+            </value>
+            <value>
+                <fullName>System Activation</fullName>
+                <default>false</default>
+                <label>System Activation</label>
+            </value>
+            <value>
+                <fullName>PV Materials Verification</fullName>
+                <default>false</default>
+                <label>PV Materials Verification</label>
+            </value>
+            <value>
+                <fullName>Additional Adder Coordination</fullName>
+                <default>false</default>
+                <label>Additional Adder Coordination</label>
+            </value>
+            <value>
+                <fullName>Electrical Upgrade</fullName>
+                <default>false</default>
+                <label>Electrical Upgrade</label>
+            </value>
+            <value>
+                <fullName>Ground Mount Coordination</fullName>
+                <default>false</default>
+                <label>Ground Mount Coordination</label>
+            </value>
+            <value>
+                <fullName>Re-Roof</fullName>
+                <default>false</default>
+                <label>Re-Roof</label>
+            </value>
+            <value>
+                <fullName>Structural Upgrade</fullName>
+                <default>false</default>
+                <label>Structural Upgrade</label>
+            </value>
+            <value>
+                <fullName>Trenching</fullName>
+                <default>false</default>
+                <label>Trenching</label>
+            </value>
+            <value>
+                <fullName>Incentives SRECTrade</fullName>
+                <default>false</default>
+                <label>Incentives SRECTrade</label>
+            </value>
+            <value>
+                <fullName>State Certification</fullName>
+                <default>false</default>
+                <label>State Certification</label>
+            </value>
+            <value>
+                <fullName>LoanPal</fullName>
+                <default>false</default>
+                <label>LoanPal</label>
+            </value>
+            <value>
+                <fullName>Sunlight</fullName>
+                <default>false</default>
+                <label>Sunlight</label>
+            </value>
+            <value>
+                <fullName>Cash</fullName>
+                <default>false</default>
+                <label>Cash</label>
+            </value>
+            <value>
+                <fullName>Contract Processing- Contract Verification</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contract Processing- Contract Verification</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

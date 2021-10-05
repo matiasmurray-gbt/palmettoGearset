@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X0_0_Proposals_Needed_Benno_and_KP</fullName>
+    <booleanFilter>1 AND 2 AND (3 or 4) AND (5) AND 6 AND 7 and 8</booleanFilter>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Appointment_Date__c</columns>
+    <columns>Appointment_Time__c</columns>
+    <columns>Canvass_Notes__c</columns>
+    <columns>X3rd_Party_Sales_Rep__c</columns>
+    <columns>X3rd_Party_Partner__c</columns>
+    <columns>Appointment_Date_and_Time__c</columns>
+    <columns>Customer_Notes__c</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>Sub_Market__c</columns>
+    <columns>Location__c</columns>
+    <columns>Proposal_Created__c</columns>
+    <columns>Site_Needs_Verification__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Appointment Set,1. Appointment Set,3a. Proposal Redesign</value>
+    </filters>
+    <filters>
+        <field>Proposal_Created__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer,Dividend Solar</value>
+    </filters>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Commercial - Customer</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.X3rd_Party_Design_Sales,Opportunity.X3rd_Party_Contracted_Sales</value>
+    </filters>
+    <filters>
+        <field>Test_Account__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Appointment_Date__c</field>
+        <operation>notEqual</operation>
+        <value>1/1/2099</value>
+    </filters>
+    <label>0.0 Proposals Needed - Initial Design</label>
+    <sharedTo>
+        <role>Channel_Partner</role>
+        <role>Operations_Manager</role>
+        <role>Project_Designer</role>
+        <role>Senior_Project_Designer</role>
+        <role>Technology</role>
+    </sharedTo>
+</ListView>

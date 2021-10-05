@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>3rd Party - Contracted Sales Opportunity created</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Third Party Contracted Sales Opportunity Created</name>
+    <style>none</style>
+    <subject>Opportunity Created for {!Opportunity.Account}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

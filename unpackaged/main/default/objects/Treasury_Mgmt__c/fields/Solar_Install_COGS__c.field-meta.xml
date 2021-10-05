@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solar_Install_COGS__c</fullName>
+    <externalId>false</externalId>
+    <formula>COGS_Materials__c +  COGS_Install_Labor__c +  Commissions_Expense__c +  Dealer_Fee_Expense__c +  Design_Permitting_Interconnection_QC__c +  Sales_Tax_Expense__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Solar Install COGS</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

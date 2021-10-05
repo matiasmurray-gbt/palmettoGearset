@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Install Complete Email</name>
+    <style>freeForm</style>
+    <subject>Solar Installation Complete Confirmation</subject>
+    <textOnly>Hello {!Opportunity.Contact__c},
+
+
+
+We are ready to move along with the next steps in your solar installation process. However we require a few action items in order to proceed.
+
+
+
+May we please enlist your help with obtaining your signature on the &quot;Installation Complete&quot; documents that you should have received in your email at {!Contact.Email} .  After Palmetto receives your notification that your system has been installed on your home we can move ahead with the final two inspections.
+
+
+
+- Inspection from the local municipality (City, County, Town, etc)
+
+- Inspection from your utility provider
+
+
+
+Please call your customer care representative at 855-339-1831, if you have any further questions.
+
+
+
+Thank You,
+
+
+
+Palmetto Customer Care Team
+
+855-339-1831
+
+customer.care@palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

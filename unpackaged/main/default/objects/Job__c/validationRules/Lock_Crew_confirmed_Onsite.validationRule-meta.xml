@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Crew_confirmed_Onsite</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(Crew_Confirmed_Onsite__c) &amp;&amp; NOT(ISBLANK( PRIORVALUE(Crew_Confirmed_Onsite__c) )) &amp;&amp;  RecordType.DeveloperName == 'Installation_Scheduling'</errorConditionFormula>
+    <errorMessage>Crew Confirmed Onsite field is locked and can't be edited.</errorMessage>
+</ValidationRule>

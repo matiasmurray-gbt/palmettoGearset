@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Solar</letterhead>
+    <name>Palmetto Solar Follow Up | 1st Autoresponse</name>
+    <style>freeForm</style>
+    <subject>Congrats! You are on your way to going solar with Palmetto!</subject>
+    <textOnly>Dear {!Contact.Name},
+
+
+
+We are excited about helping you move forward with your decision to go solar!  A local energy specialist will contact you soon to address any questions that you have.
+
+
+A little bit about Palmetto Solar, we were established in 2009, we pride ourselves with our local experience, and dedicated customer service. We have a dedicated team of customer care specialists to help you address any questions that you have.
+
+
+What you can look forward to when going solar!
+
+Drastically reducing your energy bill
+Turning your monthly electric bill into an investment
+Having your neighbors look on in envy with your new investment
+
+Palmetto Solar makes it easy to go solar with worry-free, no money down financing. If you are probably like most, you have a lot of questions about installing a solar power system, and we can’t wait to help answer your questions.
+
+
+Kind regards,
+The Palmetto Team
+
+
+
+Palmetto.com
+
+
+Saving Through Sustainability.
+
+701 E. Bay St. #413 Charleston, SC 29403
+Toll Free: (855) 339-1831
+
+
+Palmetto™ is a multinational clean energy company based out of Charleston, South Carolina. Palmetto™ is a vertically integrated finance, design, development, technology, construction and management company. Our sole purpose is to drive the world towards a clean energy future. Please visit our website(s) for more information.
+
+This communication is sent by The Palmetto Group (“Palmetto”) or one of its affiliates. Palmetto™ has a Registered office at: 701 East Bay, Suite #413, Charleston, South Carolina, United States of America, 29403. More information on Palmetto™ is available at Palmetto.com Everything in this email and any attachments relating to the official business of Palmetto™ and any or all subsidiaries, (&quot;the Company&quot;), is proprietary to the Company. It is confidential, legally privileged and protected by relevant laws.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

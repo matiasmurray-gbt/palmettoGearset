@@ -1,0 +1,9 @@
+{!Lead.FirstName},
+
+Sorry I missed you today.  I tried to give you a call, but didn't connect.  
+
+I will try and get you back in the next day or so, however in the mean time, I can be reached at 843-720-1844.  
+
+Thanks,
+{!Lead.OwnerFullName}
+{!Lead.OwnerEmail}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loss_Reason_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT ISPICKVAL( Customer_Type__c , "GreenNRG - Installation"), 
+NOT(RecordType.Name = "3rd Party - Bright Homes Solar"), 
+NOT(RecordType.Name = "O&amp;M Sales"), 
+ISPICKVAL( StageName , "Closed Lost"),
+ISBLANK(TEXT( Reason_for_loss__c )))</errorConditionFormula>
+    <errorDisplayField>Reason_for_loss__c</errorDisplayField>
+    <errorMessage>Please select a Loss Reason.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Not Applicable</fullName>
+        <default>true</default>
+        <label>Not Applicable</label>
+    </customValue>
+    <customValue>
+        <fullName>New</fullName>
+        <default>false</default>
+        <label>New</label>
+    </customValue>
+    <customValue>
+        <fullName>In Progress- Block Permitting</fullName>
+        <default>false</default>
+        <label>In Progress- Block Permitting</label>
+    </customValue>
+    <customValue>
+        <fullName>In Progress- Block Install</fullName>
+        <default>false</default>
+        <label>In Progress- Block Install</label>
+    </customValue>
+    <customValue>
+        <fullName>Resolved</fullName>
+        <default>false</default>
+        <label>Resolved</label>
+    </customValue>
+    <masterLabel>Change Order Cases</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

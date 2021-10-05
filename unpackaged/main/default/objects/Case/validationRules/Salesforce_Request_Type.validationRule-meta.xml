@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salesforce_Request_Type</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL( Type , "Salesforce")&amp;&amp;
+ISBLANK(TEXT( Salesforce_Request_Type__c ))</errorConditionFormula>
+    <errorDisplayField>Salesforce_Request_Type__c</errorDisplayField>
+    <errorMessage>Please select the Salesforce Request Type.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Hello&nbsp;{!Opportunity.Contact__c},&nbsp;<br><br>In order to provide you with clarity on your solar installation project we are providing you with a visual that shows where your project currently is.&nbsp;<br><br>Click the link below in order to see the checklist for your solar project.<br><br><br><br><br>Please contact Palmetto's Customer Care Team if you have any further questions.&nbsp;<div><br></div><div>Toll Free: 855-339-1831</div><div><br></div><div>Thank You,&nbsp;</div><div><br></div><div><br></div><div>Palmetto Customer Care Team</div><div>customer.care@palmetto.com<br>Toll Free: 855-339-1831</div><div>Direct Line: 843-720-1844</div><div><br></div>]]></td>
+</tr>
+</table>

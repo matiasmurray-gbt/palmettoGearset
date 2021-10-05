@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enter_Build_Accelerate_Fee</fullName>
+    <active>true</active>
+    <errorConditionFormula>and(
+ISBLANK( Build_Accelerate_Requested_Date__c ) = False,
+ISBLANK( Build_Accelerate_Fee__c ) = True
+)</errorConditionFormula>
+    <errorDisplayField>Build_Accelerate_Fee__c</errorDisplayField>
+    <errorMessage>Enter Build Accelerate Fee</errorMessage>
+</ValidationRule>

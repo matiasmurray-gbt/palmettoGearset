@@ -1,0 +1,24 @@
+We have finalized the system design & shared the approved plan set in the customer folder. 
+
+Please begin with the permit application process. 
+
+Upon notice of permit approval please sent an approval notice to solarpm@palmetto.com. 
+
+As soon as the project is ready for install we will send an Install Scheduling notice.
+
+{!Opportunity.Contact__c} 
+{!Account.BillingAddress} 
+{!Account.Phone} 
+{!Opportunity.Email__c} 
+
+Panel Type - {!Opportunity.Panel_Type__c}
+Number of Panels - {!Opportunity.Number_of_Solar_Panels__c} 
+Inverter - {!Opportunity.Inverter_1__c} 
+System Size - {!Opportunity.System_Size_Calculated_kW__c} 
+Utility Provider - {!Opportunity.Utility__c}
+Trenching Distance - {!Opportunity.Trenching_Distance__c} 
+Contract Amount - {!Opportunity.Amount}
+Financier - {!Opportunity.Financing_Tool__c}
+
+
+Thanks

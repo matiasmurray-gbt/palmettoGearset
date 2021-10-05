@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Milestone_3_Commission_True_Up__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( OR( Milestone_2_Paid__c = True,IA_M2_Paid__c = True), 
+
+(Milestone_1_Amount__c + Milestone_2_Amount__c - Milestone_2_Commission_True_Up__c) 
+- (Milestone_1_Amount_Actual_Paid__c + Milestone_2_Amount_Actual_Paid__c), 
+
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Milestone 3 Commission True-Up</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>3rd Party Property Management - Customer</fullName>
+        <default>false</default>
+        <label>3rd Party Property Management - Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3rd Party Property Management - Providers</fullName>
+        <default>false</default>
+        <label>3rd Party Property Management - Providers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Deal Flow Providers</fullName>
+        <default>false</default>
+        <label>Deal Flow Providers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Debt Providers</fullName>
+        <default>false</default>
+        <label>Debt Providers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Equity Providers</fullName>
+        <default>false</default>
+        <label>Equity Providers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>For Sale By Owner</fullName>
+        <default>false</default>
+        <label>For Sale By Owner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Off-Market Opportunity</fullName>
+        <default>false</default>
+        <label>Off-Market Opportunity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Online Database</fullName>
+        <default>false</default>
+        <label>Online Database</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Palmetto Employee</fullName>
+        <default>false</default>
+        <label>Palmetto Employee</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Real Estate Agent</fullName>
+        <default>false</default>
+        <label>Real Estate Agent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REIT Relation</fullName>
+        <default>false</default>
+        <label>REIT Relation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service Providers</fullName>
+        <default>true</default>
+        <label>Service Providers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Channel Partner</fullName>
+        <default>false</default>
+        <label>Channel Partner</label>
+    </standardValue>
+</StandardValueSet>

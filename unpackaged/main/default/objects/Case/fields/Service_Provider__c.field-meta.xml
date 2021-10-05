@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Provider__c</fullName>
+    <externalId>false</externalId>
+    <label>Service Provider</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Internal (Market Mgr Name, CX Name, Service Sales Name)</fullName>
+                <default>false</default>
+                <label>Internal (Market Mgr Name, CX Name, Service Sales Name)</label>
+            </value>
+            <value>
+                <fullName>Sunnova</fullName>
+                <default>false</default>
+                <label>Sunnova</label>
+            </value>
+            <value>
+                <fullName>Sun Systems Technology</fullName>
+                <default>false</default>
+                <label>Sun Systems Technology</label>
+            </value>
+            <value>
+                <fullName>Apex</fullName>
+                <default>false</default>
+                <label>Apex</label>
+            </value>
+            <value>
+                <fullName>Ability to add more Third Party Contractors</fullName>
+                <default>false</default>
+                <label>Ability to add more Third Party Contractors</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

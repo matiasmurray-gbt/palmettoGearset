@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Audience__c</fullName>
+    <externalId>false</externalId>
+    <label>Audience</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alchemists</fullName>
+                <default>false</default>
+                <label>Alchemists</label>
+            </value>
+            <value>
+                <fullName>Channel Partner Leadership</fullName>
+                <default>false</default>
+                <label>Channel Partner Leadership</label>
+            </value>
+            <value>
+                <fullName>Dealer Alchemists</fullName>
+                <default>false</default>
+                <label>Dealer Alchemists</label>
+            </value>
+            <value>
+                <fullName>Employees</fullName>
+                <default>false</default>
+                <label>Employees</label>
+            </value>
+            <value>
+                <fullName>Full Database</fullName>
+                <default>false</default>
+                <label>Full Database</label>
+            </value>
+            <value>
+                <fullName>Homeowners</fullName>
+                <default>false</default>
+                <label>Homeowners</label>
+            </value>
+            <value>
+                <fullName>Independent Alchemists</fullName>
+                <default>false</default>
+                <label>Independent Alchemists</label>
+            </value>
+            <value>
+                <fullName>Investors</fullName>
+                <default>false</default>
+                <label>Investors</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Solar Install Checklist</name>
+    <style>freeForm</style>
+    <subject>Update From Palmetto: In Regards to Your Solar Project</subject>
+    <textOnly>Hello {!Opportunity.Contact__c},
+
+In order to provide you with clarity on your solar installation project we are providing you with a visual that shows where your project currently is.
+
+Click the link below in order to see the checklist for your solar project.
+
+
+
+
+Please contact Palmetto&apos;s Customer Care Team if you have any further questions.
+
+Toll Free: 855-339-1831
+
+Thank You,
+
+
+Palmetto Customer Care Team
+customer.care@palmetto.com
+Toll Free: 855-339-1831
+Direct Line: 843-720-1844</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

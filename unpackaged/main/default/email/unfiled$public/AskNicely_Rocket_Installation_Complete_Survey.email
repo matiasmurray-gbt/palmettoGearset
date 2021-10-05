@@ -1,0 +1,6 @@
+name: {!Opportunity.Contact_First_Name__c} 
+email: {!Opportunity.Email__c} 
+sfcontactid: {!Opportunity.ContactId__c} 
+sfopportunityid: {!Opportunity.Id} 
+sfBuildPartner: {!Opportunity.Vendor__c}
+segment: Rocket Install Complete

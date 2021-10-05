@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LEAD_ConversionRule_Appointment</fullName>
+    <active>true</active>
+    <description>Validates that required fields needed for Converting the Lead are present. (Inside/Outside Sales)</description>
+    <errorConditionFormula>(RecordTypeId = "0121a00000028v5" &amp;&amp; IsConverted &amp;&amp; ISBLANK( Appointment_Date__c ) &amp;&amp;ISBLANK( Appointment_Time__c ))</errorConditionFormula>
+    <errorDisplayField>Appointment_Date__c</errorDisplayField>
+    <errorMessage>You must enter an Appointment Date and Appointment Time to convert this Lead</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Alchemist On-Boarding</name>
+    <style>freeForm</style>
+    <subject>Welcome to Palmetto!</subject>
+    <textOnly>Hello {!Opportunity.X3rd_Party_Sales_Rep__c},
+
+Congratulations on joining Palmetto, you’ve completed your on-boarding documentation!
+
+The next step is to log into Alchemy with your email and password you created. Here is the link to login to Alchemy: https://alchemy.palmetto.com
+Once you login an automatic pop up will appear with the next steps to complete Alchemy training.
+
+Whether this will be your first time helping a homeowner enjoy the great benefits of solar or if you have been doing this for years, we are here to help you every step of the way, one homeowner at a time.
+
+If you have any questions, contact the Alchemy Success team via the &quot;Chat&quot; feature (green bubble) on the bottom right of your Alchemy platform.
+
+Good luck and happy selling!
+
+The Alchemy Success Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

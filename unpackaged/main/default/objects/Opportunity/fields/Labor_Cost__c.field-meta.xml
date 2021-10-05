@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Labor_Cost__c</fullName>
+    <externalId>false</externalId>
+    <formula>Number_of_Solar_Panels__c  *  Vendor__r.Price_Per_Panel__c</formula>
+    <label>Labor Cost</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Physical_Site_Survey_Scheduled_PS</fullName>
+    <active>false</active>
+    <description>For Physical Survey Job type only</description>
+    <errorConditionFormula>AND(ISPICKVAL(Flow_Status__c , 'Physical Survey Scheduled'),
+ISPICKVAL(Type__c, 'Physical Survey'),
+RecordTypeId = '0122L000000VoVr',  
+AND(ISNULL( Physical_Site_Survey_Time__c ),
+ISNULL( Physical_Site_Survey_Schedule_Date__c ))
+)</errorConditionFormula>
+    <errorDisplayField>Physical_Site_Survey_Time__c</errorDisplayField>
+    <errorMessage>Specify Physical Survey Time &amp; Date</errorMessage>
+</ValidationRule>

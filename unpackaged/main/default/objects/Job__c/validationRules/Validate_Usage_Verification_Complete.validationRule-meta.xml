@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Usage_Verification_Complete</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISNULL(Usage_Verification_Complete__c)) &amp;&amp; Usage_Verification_Complete__c &lt;&gt; TODAY() &amp;&amp; (ISNEW() || ISCHANGED(Usage_Verification_Complete__c))</errorConditionFormula>
+    <errorMessage>Usage Verification complete date should have today date only</errorMessage>
+</ValidationRule>

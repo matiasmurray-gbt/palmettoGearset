@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Planning_Training_Materials__c</fullName>
+    <description>Everything that is required for this training session. Be very specific. Everything from calendar  invites sent out for training sessions to a training deck that needs to be created and/or edited. This will be OUR blueprint for creation, planning, delivery and follow up/certification process (if needed) for  the requested training session. Please make your best effort to list each item in order of priority. For example, writing a training deck  trumps sending out calendar invites as far as importance and time it takes to complete. So, please list them as such (first to last).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Everything that is required for this training session. Be very specific. Everything from calendar  invites sent out for training sessions to a training deck that needs to be created and/or edited. This will be OUR blueprint.</inlineHelpText>
+    <label>Required Planning &amp; Training Materials</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

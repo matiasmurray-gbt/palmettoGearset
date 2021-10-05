@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HO_Does_Not_Want_to_Proceed__c</fullName>
+    <externalId>false</externalId>
+    <label>HO Does Not Want to Proceed</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Does not want to appeal</fullName>
+                <default>false</default>
+                <label>Does not want to appeal</label>
+            </value>
+            <value>
+                <fullName>Does not want redesign</fullName>
+                <default>false</default>
+                <label>Does not want redesign</label>
+            </value>
+            <value>
+                <fullName>Is no longer interested</fullName>
+                <default>false</default>
+                <label>Is no longer interested</label>
+            </value>
+            <value>
+                <fullName>Does not want to fight with HOA</fullName>
+                <default>false</default>
+                <label>Does not want to fight with HOA</label>
+            </value>
+            <value>
+                <fullName>HO request</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HO request</label>
+            </value>
+            <value>
+                <fullName>HOA rules may change</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HOA rules may change</label>
+            </value>
+            <value>
+                <fullName>HOA will decide later</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HOA will decide later</label>
+            </value>
+            <value>
+                <fullName>Rule change in process</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rule change in process</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

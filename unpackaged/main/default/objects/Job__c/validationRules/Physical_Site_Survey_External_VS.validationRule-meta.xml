@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Physical_Site_Survey_External_VS</fullName>
+    <active>true</active>
+    <description>For Virtual Survey Job type only</description>
+    <errorConditionFormula>AND(ISPICKVAL(Flow_Status__c , 'Physical Survey Required - External'),
+ISPICKVAL( Type__c ,'Virtual Survey'),
+RecordTypeId = '0122L000000VoVr',  
+AND(ISNULL( Rep_Request__c ),
+ISNULL(  Customer_Request__c  ))
+)</errorConditionFormula>
+    <errorMessage>Specify Why Physical Site Survey is Required on "Physical Survey Required - External" section</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Add_Ground_Mount_Info</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISCHANGED (Add_t_Ground_Mount_Info_Date__c),
+ISBLANK(Add_t_Ground_Mount_Info_Notes__c)
+)</errorConditionFormula>
+    <errorDisplayField>Add_t_Ground_Mount_Info_Notes__c</errorDisplayField>
+    <errorMessage>Add’t Ground Mount Info Notes cannot be blank</errorMessage>
+</ValidationRule>

@@ -1,0 +1,6 @@
+name:{!Job__c.Contact_Name__c}
+email: {!Job__c.Contact_Email__c}
+sfcontactid: {!Job__c.Contact_Id__c}
+sfopportunityid:{!Job__c.OpportunityId__c}
+sfBuildPartner: {!Job__c.Build_Partner__c}
+segment: Rocket Promissory Note Signed

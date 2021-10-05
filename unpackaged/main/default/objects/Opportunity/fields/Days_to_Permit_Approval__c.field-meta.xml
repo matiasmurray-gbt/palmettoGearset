@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_to_Permit_Approval__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK( Permit_Ready_Date__c ) = False, Permit_Ready_Date__c -  Permit_Filed_Date__c , If(ISBLANK(Permit_Filed_Date__c) = False, Today() - Permit_Filed_Date__c, 0))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days Permit Submitted to Permit Approval</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

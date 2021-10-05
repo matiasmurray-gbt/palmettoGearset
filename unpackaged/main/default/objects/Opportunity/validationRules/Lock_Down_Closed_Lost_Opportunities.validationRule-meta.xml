@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Down_Closed_Lost_Opportunities</fullName>
+    <active>false</active>
+    <description>Closed Lost opportunities cannot be modified except by Sales Operations and Salesforce Administrator.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(PRIORVALUE(StageName),"Closed Lost"),
+NOT($Profile.Id = "00e1a000000F1sj"),
+NOT($Profile.Id = "00e1a000000J3kS"),
+NOT($Profile.Id = "00e1a000000i3qp"),
+NOT($Profile.Id = "00e1a000000F73H")
+)</errorConditionFormula>
+    <errorMessage>Closed Lost opportunities cannot be modified except by Sales Operations and Salesforce Administrator.</errorMessage>
+</ValidationRule>

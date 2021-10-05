@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Market__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-Market</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ann Arbor</fullName>
+                <default>false</default>
+                <label>Ann Arbor</label>
+            </value>
+            <value>
+                <fullName>Atlanta</fullName>
+                <default>false</default>
+                <label>Atlanta</label>
+            </value>
+            <value>
+                <fullName>Boston Metro</fullName>
+                <default>false</default>
+                <label>Boston Metro</label>
+            </value>
+            <value>
+                <fullName>Bronx</fullName>
+                <default>false</default>
+                <label>Bronx</label>
+            </value>
+            <value>
+                <fullName>Brooklyn</fullName>
+                <default>false</default>
+                <label>Brooklyn</label>
+            </value>
+            <value>
+                <fullName>Cape</fullName>
+                <default>false</default>
+                <label>Cape</label>
+            </value>
+            <value>
+                <fullName>Charleston</fullName>
+                <default>false</default>
+                <label>Charleston</label>
+            </value>
+            <value>
+                <fullName>Charlotte</fullName>
+                <default>false</default>
+                <label>Charlotte</label>
+            </value>
+            <value>
+                <fullName>Columbia</fullName>
+                <default>false</default>
+                <label>Columbia</label>
+            </value>
+            <value>
+                <fullName>Detroit</fullName>
+                <default>false</default>
+                <label>Detroit</label>
+            </value>
+            <value>
+                <fullName>Greenville</fullName>
+                <default>false</default>
+                <label>Greenville</label>
+            </value>
+            <value>
+                <fullName>Hilton Head</fullName>
+                <default>false</default>
+                <label>Hilton Head</label>
+            </value>
+            <value>
+                <fullName>Jacksonville</fullName>
+                <default>false</default>
+                <label>Jacksonville</label>
+            </value>
+            <value>
+                <fullName>Knoxville</fullName>
+                <default>false</default>
+                <label>Knoxville</label>
+            </value>
+            <value>
+                <fullName>Long Island</fullName>
+                <default>false</default>
+                <label>Long Island</label>
+            </value>
+            <value>
+                <fullName>MA - Metrowest</fullName>
+                <default>false</default>
+                <label>MA - Metrowest</label>
+            </value>
+            <value>
+                <fullName>Manhattan</fullName>
+                <default>false</default>
+                <label>Manhattan</label>
+            </value>
+            <value>
+                <fullName>MA - North Shore</fullName>
+                <default>false</default>
+                <label>MA - North Shore</label>
+            </value>
+            <value>
+                <fullName>MA - South Shore</fullName>
+                <default>false</default>
+                <label>MA - South Shore</label>
+            </value>
+            <value>
+                <fullName>MA - Western</fullName>
+                <default>false</default>
+                <label>MA - Western</label>
+            </value>
+            <value>
+                <fullName>Memphis</fullName>
+                <default>false</default>
+                <label>Memphis</label>
+            </value>
+            <value>
+                <fullName>Miami</fullName>
+                <default>false</default>
+                <label>Miami</label>
+            </value>
+            <value>
+                <fullName>Myrtle Beach</fullName>
+                <default>false</default>
+                <label>Myrtle Beach</label>
+            </value>
+            <value>
+                <fullName>Nashville</fullName>
+                <default>false</default>
+                <label>Nashville</label>
+            </value>
+            <value>
+                <fullName>New Orleans</fullName>
+                <default>false</default>
+                <label>New Orleans</label>
+            </value>
+            <value>
+                <fullName>NJ - Central</fullName>
+                <default>false</default>
+                <label>NJ - Central</label>
+            </value>
+            <value>
+                <fullName>NJ - North</fullName>
+                <default>false</default>
+                <label>NJ - North</label>
+            </value>
+            <value>
+                <fullName>NJ - South</fullName>
+                <default>false</default>
+                <label>NJ - South</label>
+            </value>
+            <value>
+                <fullName>North Augusta</fullName>
+                <default>false</default>
+                <label>North Augusta</label>
+            </value>
+            <value>
+                <fullName>Orlando</fullName>
+                <default>false</default>
+                <label>Orlando</label>
+            </value>
+            <value>
+                <fullName>Queens</fullName>
+                <default>false</default>
+                <label>Queens</label>
+            </value>
+            <value>
+                <fullName>Raleigh-Durham</fullName>
+                <default>false</default>
+                <label>Raleigh-Durham</label>
+            </value>
+            <value>
+                <fullName>Rhode Island</fullName>
+                <default>false</default>
+                <label>Rhode Island</label>
+            </value>
+            <value>
+                <fullName>Rock Hill</fullName>
+                <default>false</default>
+                <label>Rock Hill</label>
+            </value>
+            <value>
+                <fullName>Staten Island</fullName>
+                <default>false</default>
+                <label>Staten Island</label>
+            </value>
+            <value>
+                <fullName>St Bernard Parish</fullName>
+                <default>false</default>
+                <label>St Bernard Parish</label>
+            </value>
+            <value>
+                <fullName>Tampa</fullName>
+                <default>false</default>
+                <label>Tampa</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

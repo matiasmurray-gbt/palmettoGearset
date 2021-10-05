@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dealer_Fee_Calc__c</fullName>
+    <externalId>false</externalId>
+    <formula>Case( Financing_Tool__c, 
+
+"Sunlight", Sunlight_Internal_Dealer_Fee_Value__c,
+
+"Loanpal", IF( TEXT(APR__c) = "2.99%", IF (VALUE(TEXT(Loan_Term__c)) = 20,0.225 ,0.2355), IF (VALUE(TEXT(Loan_Term__c)) = 10, 0.1399, IF (VALUE(TEXT(Loan_Term__c)) = 10, 0.1399, IF( TEXT(APR__c) = "5.99%",0.1025, 0.1799)))),
+
+"Sunnova Loan/Ownership", IF( TEXT(APR__c) = "3.99%", 0.1949, 0.1449),
+
+0) * Amount</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Dealer Fee Calc</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

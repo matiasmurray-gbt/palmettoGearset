@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_Yes_How_Much__c</fullName>
+    <externalId>false</externalId>
+    <label>If Yes - How Much?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>$10-$20</fullName>
+                <default>false</default>
+                <label>$10-$20</label>
+            </value>
+            <value>
+                <fullName>$21-$30</fullName>
+                <default>false</default>
+                <label>$21-$30</label>
+            </value>
+            <value>
+                <fullName>$31-$40</fullName>
+                <default>false</default>
+                <label>$31-$40</label>
+            </value>
+            <value>
+                <fullName>$41-$50</fullName>
+                <default>false</default>
+                <label>$41-$50</label>
+            </value>
+            <value>
+                <fullName>$50+</fullName>
+                <default>false</default>
+                <label>$50+</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

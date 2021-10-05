@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>COP</name>
+    <style>freeForm</style>
+    <subject>ACTION REQUIRED!</subject>
+    <textOnly>Mr./Mrs.
+
+The purpose of this letter is to inform you that we have attempted to contact you unsuccessfully several times by email and telephone.  We are emailing to {!Case.Reason_2__c}. Due to the amount of time it has taken for us to receive a response we are at risk of your financing expiring and your project to be placed on hold or canceled.  We are happy to help progress you along the solar journey but need your response to allow us to better serve you.  
+
+If we do not have a response from you within 7 days after receipt of this letter we will officially cancel your solar project. If you would like to cancel your solar project please respond to this email. Please be aware that if you wish to discontinue your solar contract there may be a cancellation fee depending on the stage in which the solar project is currently in. Please contact Palmetto at (843) 720-1844 or {!User.Email}  if you have any questions or concerns. 
+
+
+									
+
+
+
+
+Best regards,
+{!User.FirstName} {!User.LastName} 
+Palmetto</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Pre-Construction Prospecting Email</name>
+    <style>none</style>
+    <subject>Palmetto Solar - We&apos;d like to Partner with Company Name</subject>
+    <textOnly>Hi {!Contact.Name},
+
+I hope this message finds you well. I spoke with your front desk (Insert Name in place of Front Desk if you caught their name) a bit earlier today, and they mentioned this email would be the best way of contacting you. Palmetto solar is steadily growing in the State or Region area. With this growth, we are seeing an increase in the need for a Roofer/Electrician/ECT partner to assist with projects. I&apos;d like to arrange a time to speak with you to understand more surrounding your service area, availability to take on additional projects, pricing, and if our partnership would be a good fit for your team moving forward.
+
+Do you have time in the following days to discuss further? Use This Meeting Link https://calendly.com/mike-schamp/15min to view my availability and book a time directly on my calendar. You’ll receive a calendar invite with a Zoom meeting link for our conversation.
+
+Cheers, Mike</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

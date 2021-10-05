@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <rules>
+        <fullName>Assign Tech Tickets to Chase</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Technology_Ticket__c.Products__c</field>
+            <operation>equals</operation>
+            <value>Alchemy</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Assign Tech Tickets to Juan</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Technology_Ticket__c.Products__c</field>
+            <operation>equals</operation>
+            <value>Web Application,Mobile Application,Admin Panel</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

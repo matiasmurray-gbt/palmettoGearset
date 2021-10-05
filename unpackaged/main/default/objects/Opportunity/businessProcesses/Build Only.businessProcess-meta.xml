@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Build Only</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>13%2E Engineering Design Complete</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>14%2E Permit Sent</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>15%2E Permit Ready</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>16%2E Permit Received</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>17%2E Install Ready</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>18%2E Installation</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>19%2E Install Completed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>20%2E Inspection Scheduled</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>21%2E Inspection Complete</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>22%2E PTO</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Won</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

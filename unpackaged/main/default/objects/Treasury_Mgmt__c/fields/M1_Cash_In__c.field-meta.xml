@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>M1_Cash_In__c</fullName>
+    <externalId>false</externalId>
+    <formula>Case( Financier__c , 
+"Sunlight", 0.4 * (Opportunity__r.Amount -  Dealer_Fee_Expense__c) , 
+"Sunnova Lease", 0.4 * Opportunity__r.Amount, 
+"Cash", 0.6 * Opportunity__r.Amount , 
+"Loan Pal",Opportunity__r.Amount -  Dealer_Fee_Expense__c  ,
+"Mosaic Loan", 0.78 * Opportunity__r.Amount,
+
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>M1 Cash In</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

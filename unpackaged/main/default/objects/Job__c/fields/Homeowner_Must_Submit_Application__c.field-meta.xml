@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Homeowner_Must_Submit_Application__c</fullName>
+    <externalId>false</externalId>
+    <label>Homeowner Must Submit Application</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Required - NC/SC</fullName>
+                <default>false</default>
+                <label>Not Required - NC/SC</label>
+            </value>
+            <value>
+                <fullName>Online Portal</fullName>
+                <default>false</default>
+                <label>Online Portal</label>
+            </value>
+            <value>
+                <fullName>HO only communication</fullName>
+                <default>false</default>
+                <label>HO only communication</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

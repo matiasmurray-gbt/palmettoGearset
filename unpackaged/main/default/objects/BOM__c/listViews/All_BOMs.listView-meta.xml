@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_BOMs</fullName>
+    <columns>NAME</columns>
+    <columns>Opportunity__c</columns>
+    <columns>Panel_Wattage__c</columns>
+    <columns>Part_Description__c</columns>
+    <columns>Part_Number__c</columns>
+    <columns>Quantity__c</columns>
+    <columns>Inverter__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All BOMs</label>
+</ListView>

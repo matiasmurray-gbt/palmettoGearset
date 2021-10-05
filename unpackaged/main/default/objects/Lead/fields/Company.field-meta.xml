@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company</fullName>
+    <inlineHelpText>For B2C Inside / Outside sales leads, enter any value like the letter "x", and upon saving, The field will be automatically filled in with "[Lead Name] - Account"</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+</CustomField>

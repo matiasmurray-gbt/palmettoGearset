@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>TTACH THE FOLLOWING DOCUMENTS: Build Partner Application, W9, Blank MSA Add PDR to CC</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Roofing Follow Up Email</name>
+    <style>none</style>
+    <subject>Palmetto - Next Steps</subject>
+    <textOnly>Hi {!Contact.Name},
+Great talking with you two today. Below is an overview of everything we&apos;ll need in order to get you approved as a roofing vendor.
+New Build Partner Checklist - This outlines all of the documentation we&apos;ll need to collect from your team in order to be compliant with our onboarding requirements and approved as a vendor.
+Insurance Requirements - This document outlines what insurance policies our partners need to carry, and what limits those policies must have to be compliant with our onboarding requirements.
+We require 4 policies, all with a $1,000,000 coverage minimum (General Liability, Automobile, Workers Compensation, and Umbrella Policy).
+We need your insurance carrier to add the following verbiage to the Certificate of insurance naming us as the additionally insured on those policies.
+&quot;Project and owner(s) are additional insured as respects to general liability, auto liability, and excess liability as required by written contract. General liability coverage for additional insured applies on a primary and non-contributory basis and includes completed operations. Waiver of Subrogation applies in favor of Additional Insured with respect to General Liability, Automobile Liability, Excess Liability, and Workers Compensation policies as required by written contract and as permitted by law. Workers Compensation complies with the state statutes in which the work will be performed.&quot;
+Certificate Holder Information: Palmetto Solar, LLC, 1505 King St. Ext, Suite 114 Charleston, SC 29405
+Licenses: Please provide us with a copy of your state business licenses and any trade-specific licenses if needed in {STATE}.
+Fill out and Return the attached Build Partner Application in addition to the W9 attached.
+I’ve also attached a copy of our Master Service Agreement for you to review.
+For the Insurance documentation, we’re happy to work directly with your insurance agent on that front. Please let us know if you‘d like to schedule a quick conference call with your agent, alternatively, you can just forward this email to your agent with us CCed so we can address any questions they have.
+
+Please let me know if you have any questions as you review the Master Service Agreement and compile that documentation. I’m happy to address them on when we meet next, {DATE AND TIME OF SCHEDULED FOLLOW UP MEETING},
+
+Cheers,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

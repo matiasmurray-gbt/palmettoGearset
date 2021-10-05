@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Internal Notification - $1K Referral Payment to Send</name>
+    <style>freeForm</style>
+    <subject>Send $1K Amazon Gift Card to {!Contact.FirstName} {!Contact.LastName}</subject>
+    <textOnly>Please Send $1000 Amazon Gift Card to {!Contact.FirstName}{!Contact.LastName} within 48 hours and check the Referral Gift Sent checkbox under the Referral Section of the Opportunity.
+
+Address:
+{!Account.BillingAddress}
+
+Account Link - {!Account.Link}
+
+Click Account Link above. Then click Opportunities at the top of the account page. You will be taken to the Opportunities section. Click on the name of the Opportunity to edit the Opportunity to check the Referral Gift Sent checkbox.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

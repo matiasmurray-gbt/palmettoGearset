@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dividend_Energy_Efficiency_Adder__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  Opportunity__r.Dividend_Energy_Efficiency_Option__c  = True, Case(  Opportunity__r.Financing_Tool__c  , "Dividend Loan", 375,0), 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Dividend Energy Efficiency Adder</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

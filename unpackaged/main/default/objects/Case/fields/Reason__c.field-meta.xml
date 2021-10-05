@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Cause__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AHJ Delays</fullName>
+                <default>false</default>
+                <label>AHJ Delays</label>
+            </value>
+            <value>
+                <fullName>Designed by Dvinci</fullName>
+                <default>false</default>
+                <label>Designed by Dvinci</label>
+            </value>
+            <value>
+                <fullName>Designed by palmetto</fullName>
+                <default>false</default>
+                <label>Designed by palmetto</label>
+            </value>
+            <value>
+                <fullName>EE Package</fullName>
+                <default>false</default>
+                <label>EE Package</label>
+            </value>
+            <value>
+                <fullName>Federal/State ITC</fullName>
+                <default>false</default>
+                <label>Federal/State ITC</label>
+            </value>
+            <value>
+                <fullName>fill in state incentives</fullName>
+                <default>false</default>
+                <label>fill in state incentives</label>
+            </value>
+            <value>
+                <fullName>High EE</fullName>
+                <default>false</default>
+                <label>High EE</label>
+            </value>
+            <value>
+                <fullName>Install</fullName>
+                <default>false</default>
+                <label>Install</label>
+            </value>
+            <value>
+                <fullName>Installation caused</fullName>
+                <default>false</default>
+                <label>Installation caused</label>
+            </value>
+            <value>
+                <fullName>Late without notice</fullName>
+                <default>false</default>
+                <label>Late without notice</label>
+            </value>
+            <value>
+                <fullName>Manufacture caused</fullName>
+                <default>false</default>
+                <label>Manufacture caused</label>
+            </value>
+            <value>
+                <fullName>NJ SREC</fullName>
+                <default>false</default>
+                <label>NJ SREC</label>
+            </value>
+            <value>
+                <fullName>No Bill' Expectations</fullName>
+                <default>false</default>
+                <label>No Bill' Expectations</label>
+            </value>
+            <value>
+                <fullName>No call/No Show</fullName>
+                <default>false</default>
+                <label>No call/No Show</label>
+            </value>
+            <value>
+                <fullName>Not engineering approved</fullName>
+                <default>false</default>
+                <label>Not engineering approved</label>
+            </value>
+            <value>
+                <fullName>Not HOA Approved</fullName>
+                <default>false</default>
+                <label>Not HOA Approved</label>
+            </value>
+            <value>
+                <fullName>Not Homeowner approved</fullName>
+                <default>false</default>
+                <label>Not Homeowner approved</label>
+            </value>
+            <value>
+                <fullName>Permit not submitted in time</fullName>
+                <default>false</default>
+                <label>Permit not submitted in time</label>
+            </value>
+            <value>
+                <fullName>Referral</fullName>
+                <default>false</default>
+                <label>Referral</label>
+            </value>
+            <value>
+                <fullName>Sales Referral</fullName>
+                <default>false</default>
+                <label>Sales Referral</label>
+            </value>
+            <value>
+                <fullName>Service Call</fullName>
+                <default>false</default>
+                <label>Service Call</label>
+            </value>
+            <value>
+                <fullName>Site Survey</fullName>
+                <default>false</default>
+                <label>Site Survey</label>
+            </value>
+            <value>
+                <fullName>Spiff</fullName>
+                <default>false</default>
+                <label>Spiff</label>
+            </value>
+            <value>
+                <fullName>Utility kickbacks</fullName>
+                <default>false</default>
+                <label>Utility kickbacks</label>
+            </value>
+            <value>
+                <fullName>Waiting ICA approval</fullName>
+                <default>false</default>
+                <label>Waiting ICA approval</label>
+            </value>
+            <value>
+                <fullName>Witness Test No call/no show</fullName>
+                <default>false</default>
+                <label>Witness Test No call/no show</label>
+            </value>
+            <value>
+                <fullName>Failed Inspection</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Failed Inspection</label>
+            </value>
+            <value>
+                <fullName>Hold for Incentive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hold for Incentive</label>
+            </value>
+            <value>
+                <fullName>Meter release Delay</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Meter release Delay</label>
+            </value>
+            <value>
+                <fullName>No permit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No permit</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Site Survey</controllingFieldValue>
+            <controllingFieldValue>Install</controllingFieldValue>
+            <controllingFieldValue>AHJ inspection</controllingFieldValue>
+            <controllingFieldValue>Service Call</controllingFieldValue>
+            <valueName>No call/No Show</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Install</controllingFieldValue>
+            <valueName>Late without notice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interconnection</controllingFieldValue>
+            <valueName>Utility kickbacks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AHJ inspection</controllingFieldValue>
+            <valueName>Waiting ICA approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>utility inspection</controllingFieldValue>
+            <valueName>Witness Test No call/no show</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <valueName>Install</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <valueName>Service Call</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <valueName>Site Survey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Palmetto Owned</controllingFieldValue>
+            <valueName>Referral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Palmetto Owned</controllingFieldValue>
+            <valueName>Spiff</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment failure</controllingFieldValue>
+            <valueName>Installation caused</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment failure</controllingFieldValue>
+            <valueName>Manufacture caused</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CP Owned</controllingFieldValue>
+            <valueName>EE Package</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CP Owned</controllingFieldValue>
+            <valueName>Sales Referral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government incentives</controllingFieldValue>
+            <valueName>Federal/State ITC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government incentives</controllingFieldValue>
+            <valueName>fill in state incentives</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government incentives</controllingFieldValue>
+            <valueName>NJ SREC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permitting</controllingFieldValue>
+            <valueName>AHJ Delays</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permitting</controllingFieldValue>
+            <valueName>Permit not submitted in time</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Panels Installed incorrectly</controllingFieldValue>
+            <valueName>Not engineering approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Panels Installed incorrectly</controllingFieldValue>
+            <valueName>Not HOA Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Panels Installed incorrectly</controllingFieldValue>
+            <valueName>Not Homeowner approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proposal is correct</controllingFieldValue>
+            <valueName>High EE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proposal is correct</controllingFieldValue>
+            <valueName>No Bill' Expectations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proposal is incorrect</controllingFieldValue>
+            <valueName>Designed by Dvinci</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proposal is incorrect</controllingFieldValue>
+            <valueName>Designed by palmetto</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

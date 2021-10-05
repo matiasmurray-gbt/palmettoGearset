@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Build_Partner_Status__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Compliance Issue</fullName>
+                <default>false</default>
+                <label>Compliance Issue</label>
+            </value>
+            <value>
+                <fullName>Do Not Reactivate</fullName>
+                <default>false</default>
+                <label>Do Not Reactivate</label>
+            </value>
+            <value>
+                <fullName>Install Issue</fullName>
+                <default>false</default>
+                <label>Install Issue</label>
+            </value>
+            <value>
+                <fullName>Install Quality</fullName>
+                <default>false</default>
+                <label>Install Quality</label>
+            </value>
+            <value>
+                <fullName>Insurance Expired</fullName>
+                <default>false</default>
+                <label>Insurance Expired</label>
+            </value>
+            <value>
+                <fullName>Jobs Declined</fullName>
+                <default>false</default>
+                <label>Jobs Declined</label>
+            </value>
+            <value>
+                <fullName>License Expired</fullName>
+                <default>false</default>
+                <label>License Expired</label>
+            </value>
+            <value>
+                <fullName>No Job Availability</fullName>
+                <default>false</default>
+                <label>No Job Availability</label>
+            </value>
+            <value>
+                <fullName>No Show</fullName>
+                <default>false</default>
+                <label>No Show</label>
+            </value>
+            <value>
+                <fullName>NPS</fullName>
+                <default>false</default>
+                <label>NPS</label>
+            </value>
+            <value>
+                <fullName>Safety Issue</fullName>
+                <default>false</default>
+                <label>Safety Issue</label>
+            </value>
+            <value>
+                <fullName>BP Requested</fullName>
+                <default>false</default>
+                <label>BP Requested</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Approved not Active</controllingFieldValue>
+            <valueName>Jobs Declined</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approved not Active</controllingFieldValue>
+            <valueName>No Job Availability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Do not Schedule</controllingFieldValue>
+            <valueName>Install Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Do not Schedule</controllingFieldValue>
+            <valueName>Insurance Expired</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Do not Schedule</controllingFieldValue>
+            <valueName>License Expired</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Do not Schedule</controllingFieldValue>
+            <valueName>No Show</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Do not Schedule</controllingFieldValue>
+            <valueName>Safety Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Do not Schedule</controllingFieldValue>
+            <controllingFieldValue>Off Boarded</controllingFieldValue>
+            <valueName>BP Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off Boarded</controllingFieldValue>
+            <valueName>Compliance Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off Boarded</controllingFieldValue>
+            <valueName>Do Not Reactivate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off Boarded</controllingFieldValue>
+            <valueName>Install Quality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off Boarded</controllingFieldValue>
+            <valueName>NPS</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

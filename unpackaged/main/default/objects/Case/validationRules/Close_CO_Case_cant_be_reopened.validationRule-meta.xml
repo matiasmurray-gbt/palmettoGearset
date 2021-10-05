@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Close_CO_Case_cant_be_reopened</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = 'Change_Order' &amp;&amp; ISCHANGED(Status) &amp;&amp; TEXT( PRIORVALUE(Status)) == 'Closed' &amp;&amp; $User.Full_Name__c  != 'Robert Mariani' &amp;&amp; $User.Full_Name__c  != 'Nick Stefan' &amp;&amp; $User.Full_Name__c  != 'Alvin Aldaz'</errorConditionFormula>
+    <errorMessage>You are not authorized to reopen the case.</errorMessage>
+</ValidationRule>

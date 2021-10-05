@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>BOMs_for_Palmeto_Users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>BOMs for Palmeto Users</label>
+        <sharedTo>
+            <group>Palmetto_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

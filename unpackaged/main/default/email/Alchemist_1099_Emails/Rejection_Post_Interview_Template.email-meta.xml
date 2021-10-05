@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Solar</letterhead>
+    <name>Rejection Post Interview Template</name>
+    <style>freeForm</style>
+    <subject>Thank you for chatting with us.</subject>
+    <textOnly>Dear {!Opportunity.Contact_First_Name__c},
+
+Thank you for taking the time to discuss the Independent Palmetto Alchemists opportunity with us. We regret to inform you that we have decided not to proceed with your application at this time.
+
+We wish you success with your job search and thank you for your interest in Palmetto.
+
+
+Sincerely,
+
+Bryan Hoffman
+Palmetto Alchemist Account Manager
+(843) 996-4596</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

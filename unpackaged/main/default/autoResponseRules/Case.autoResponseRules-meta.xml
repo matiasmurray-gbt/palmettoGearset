@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Cases</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email</value>
+            </criteriaItems>
+            <notifyCcRecipients>true</notifyCcRecipients>
+            <replyToEmail>andrew.catapano@palmetto.com</replyToEmail>
+            <senderEmail>customer.care@palmetto.com</senderEmail>
+            <senderName>Customer Care</senderName>
+            <template>Case_Emails/Customer_Notification_New_Case</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Salesforce</value>
+            </criteriaItems>
+            <notifyCcRecipients>true</notifyCcRecipients>
+            <replyToEmail>bhargav.rentala@palmetto.com</replyToEmail>
+            <senderEmail>customer.care@palmetto.com</senderEmail>
+            <senderName>Bhargav Rentala</senderName>
+            <template>Case_Emails/Internal_Notification_New_Case</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Construction</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <senderEmail>customer.care@palmetto.com</senderEmail>
+            <senderName>Warren Hammond</senderName>
+            <template>Case_Emails/Internal_Notification_New_Construction_Case</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

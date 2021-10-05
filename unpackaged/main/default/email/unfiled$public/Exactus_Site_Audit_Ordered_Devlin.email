@@ -1,0 +1,23 @@
+We have a new customer ready for their site audit.
+
+The proposed system layout has been shared in the customer folder. Upon completion of the site audit please upload all site audit completion documents into the shared customer folder & notify us if there are any material changes from the proposed system.
+
+Installation team is {!Opportunity.Installation_Team__c}
+
+{!Opportunity.Contact__c}
+{!Account.BillingAddress}
+{!Account.Phone}
+{!Opportunity.Email__c}
+
+
+
+Panel  Type - {!Opportunity.Panel_Type__c}
+Number of Panels - {!Opportunity.Number_of_Solar_Panels__c}
+Inverter - {!Opportunity.Inverter_1__c}
+System Size - {!Opportunity.System_Size_Calculated_kW__c}
+Utility Provider - {!Opportunity.Utility__c}
+Name on Utility Bill - {!Name_on_Util_Bill_Exact_Name_Required__c}	
+Roof Type - {!Opportunity.Roof_Type__c}
+
+
+Thanks,

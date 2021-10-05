@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Milestone_3_Date_PTO_3_Days__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Opportunity__r.Net_Meter_Install_Date__c &gt; DATE(2020,8,26), Opportunity__r.Net_Meter_Install_Date__c,
+
+Case( Loan_Pal__c , 
+
+"Sunnova Lease", IF( Opportunity__r.Contract_Received_Confirmed_Date__c &lt; Date(2019,4,1),Opportunity__r.Net_Meter_Install_Date__c + 15, Opportunity__r.Net_Meter_Install_Date__c + 3),
+
+Opportunity__r.Net_Meter_Install_Date__c + 3)
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Milestone 3 Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

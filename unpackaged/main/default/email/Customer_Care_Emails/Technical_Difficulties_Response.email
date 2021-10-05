@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Hello&nbsp;{!Opportunity.Contact__c},<div><br>We wanted to let you know that the current issues you are experiencing with the Palmetto App have been recorded and are currently being resolved.&nbsp; We apologize for the technical difficulties, however we want to assure you that your solar system is functioning just fine.&nbsp;&nbsp;<br><br>Your system is still on and saving you money!&nbsp; You are more than welcome to call our Customer Care Department to confirm your solar production status.&nbsp;<br><br>Please let us know if you have any further questions by emailing or calling the Palmetto Customer Care Team.&nbsp;<div><br></div><div>Thank You,&nbsp;</div><div><br></div><div>Palmetto Customer Care Deparment<br>Toll Free - (855) 339-1831<br>Office - (843) 720-1844</div><div>Email: customer.care@palmetto.com</div></div>]]></td>
+</tr>
+</table>

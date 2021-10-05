@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Energy Monitor</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Won</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>EM1 Appointment Set</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>EM2 Proposal%2FQuote Provided</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>EM3 Subscription Invoice Sent</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>EM4 Payment%2FContract Received</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>EM5 Installation Ready</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>EM6 Installation Scheduled</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>EM7 Installation Complete</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

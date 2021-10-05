@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>SC - 4 Your Solar System - Install Scheduling Notice HTML</name>
+    <style>freeForm</style>
+    <subject>Update From Palmetto On Your Solar System - Countdown To Installation!</subject>
+    <textOnly>Hello {!Opportunity.Contact__c},
+
+Congratulations on receiving all of the approvals for your solar system. Let the countdown to installation begin!
+
+The next steps include:
+
+1) Equipment Ready
+2) Installation Scheduling
+3) Installation
+
+From here we just need to confirm the availability of equipment in our warehouse &amp; schedule the installation date. We will be reaching out to let you know the schedule soon.
+
+Generally we will give about a week&apos;s notice of a tentative installation date just to let you know we have you on the schedule, take any scheduling requests &amp; answer any remaining questions you might have about the installation process.
+
+We will call again to confirm the exact installation date no later than 24 hours before the installation date.
+
+
+
+
+Thank You,
+
+Palmetto™ Customer Care Team
+Main: 855-339-1831
+Office: 843-720-1844
+Email: customer.care@palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_Engineering_Complete_to_PermitFiled__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(Engineering_Complete_Date__c) = True, 0, IF(ISBLANK(Permit_Filed_Date__c) = False,   Permit_Filed_Date__c - Engineering_Complete_Date__c, Today() - Engineering_Complete_Date__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days Engineering Complete to PermitFiled</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inside_Sales_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Inside Sales</label>
+    <queue>Inside_Sales</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

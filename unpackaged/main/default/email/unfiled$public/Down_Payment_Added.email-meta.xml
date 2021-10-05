@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Down Payment Added</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Down Payment Added</name>
+    <style>freeForm</style>
+    <subject>Down Payment Added</subject>
+    <textOnly>Hello,
+
+This homeowner made a cash down payment of {!Opportunity.Down_Payment__c} for {!Opportunity.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SDR__c</fullName>
+    <externalId>false</externalId>
+    <label>SDR</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tyler Knode</fullName>
+                <default>false</default>
+                <label>Tyler Knode</label>
+            </value>
+            <value>
+                <fullName>Kevin DeSa</fullName>
+                <default>false</default>
+                <label>Kevin DeSa</label>
+            </value>
+            <value>
+                <fullName>Mac Crispino</fullName>
+                <default>false</default>
+                <label>Mac Crispino</label>
+            </value>
+            <value>
+                <fullName>Alyssa Haley</fullName>
+                <default>false</default>
+                <label>Alyssa Haley</label>
+            </value>
+            <value>
+                <fullName>Beau Howell</fullName>
+                <default>false</default>
+                <label>Beau Howell</label>
+            </value>
+            <value>
+                <fullName>JayDee Ballew</fullName>
+                <default>false</default>
+                <label>JayDee Ballew</label>
+            </value>
+            <value>
+                <fullName>Courtney Klemcke</fullName>
+                <default>false</default>
+                <label>Courtney Klemcke</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

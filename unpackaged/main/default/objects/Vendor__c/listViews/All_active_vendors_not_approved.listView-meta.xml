@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_active_vendors_not_approved</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>NAME</columns>
+    <columns>Description__c</columns>
+    <columns>Scope_Trademarks__c</columns>
+    <columns>Trade_Licensing__c</columns>
+    <columns>Stage__c</columns>
+    <columns>Service_Territory__c</columns>
+    <columns>City__c</columns>
+    <columns>State__c</columns>
+    <columns>Lead_Source__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage__c</field>
+        <operation>notEqual</operation>
+        <value>Ready for Orientation,Ready to Schedule,Active,Approved not Active,Do not Schedule,Off Boarded,Docs Approved,Unqualified,Not Interested,Do Not Contact</value>
+    </filters>
+    <label>All active vendors (not approved)</label>
+</ListView>

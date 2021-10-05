@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warranty_Sun_Systems__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Extended solar warranty that costs Palmetto $600/system</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Extended solar warranty that costs Palmetto $600/system</inlineHelpText>
+    <label>Warranty (Sun Systems)</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

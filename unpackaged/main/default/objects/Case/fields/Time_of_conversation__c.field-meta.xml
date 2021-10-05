@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_of_conversation__c</fullName>
+    <externalId>false</externalId>
+    <label>Time of conversation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Activation</fullName>
+                <default>false</default>
+                <label>Activation</label>
+            </value>
+            <value>
+                <fullName>Contract Signing</fullName>
+                <default>false</default>
+                <label>Contract Signing</label>
+            </value>
+            <value>
+                <fullName>Inspection</fullName>
+                <default>false</default>
+                <label>Inspection</label>
+            </value>
+            <value>
+                <fullName>Install</fullName>
+                <default>false</default>
+                <label>Install</label>
+            </value>
+            <value>
+                <fullName>PTO (0-3 months)</fullName>
+                <default>false</default>
+                <label>PTO (0-3 months)</label>
+            </value>
+            <value>
+                <fullName>PTO (12+ months)</fullName>
+                <default>false</default>
+                <label>PTO (12+ months)</label>
+            </value>
+            <value>
+                <fullName>PTO (3-6 months)</fullName>
+                <default>false</default>
+                <label>PTO (3-6 months)</label>
+            </value>
+            <value>
+                <fullName>PTO (6-12 months)</fullName>
+                <default>false</default>
+                <label>PTO (6-12 months)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

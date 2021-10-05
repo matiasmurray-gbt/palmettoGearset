@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contracted_LEAD_ConversionRule_Address</fullName>
+    <active>false</active>
+    <description>Validates that required fields needed for Converting the Lead are present.</description>
+    <errorConditionFormula>RecordTypeId = "0121a000000eQYP" /* Inside/Outside Sales */
+&amp;&amp; 
+IsConverted
+&amp;&amp;
+ISBLANK(Street)
+&amp;&amp;
+ISBLANK(City)
+&amp;&amp;
+ISBLANK(State)
+&amp;&amp;
+ISBLANK(PostalCode)</errorConditionFormula>
+    <errorMessage>You must complete the Address in order to convert this Lead.</errorMessage>
+</ValidationRule>

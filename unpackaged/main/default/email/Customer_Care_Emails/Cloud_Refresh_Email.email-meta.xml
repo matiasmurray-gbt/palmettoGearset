@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Cloud Refresh Email</name>
+    <style>freeForm</style>
+    <subject>Updating Your Palmetto Home Account</subject>
+    <textOnly>Hello {!Contact.Name},
+
+If you are experiencing a data communication error on your Palmetto Home app please take the following steps to refresh your account.
+
+CLICK HERE to login to your dashboard.
+
+Using your credentials please sign into your account.
+
+Logging in on your web browser will refresh your account. If this does not resolve the issue please us know so that we can troubleshoot this issue further.
+
+Thank You,
+
+
+Palmetto Customer Care Team
+Email: Customer.care@palmetto.com
+Phone: 855-339-1831</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

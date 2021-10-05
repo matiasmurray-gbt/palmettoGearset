@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Solar</letterhead>
+    <name>Arrange a phone call Template</name>
+    <style>freeForm</style>
+    <subject>We’d love to chat about the job.</subject>
+    <textOnly>Dear {!Opportunity.Contact_First_Name__c},
+
+Thanks for you interest in our organization! We&apos;d like to set up a call with you to discuss the Independent Palmetto Alchemist opportunity. Can you please reply with times when you will be available in the next few days to chat over phone about this position? We look forward to speaking with you soon!
+
+Sincerely,
+
+Bryan Hoffman
+Palmetto Alchemist Account Manager
+(843) 996-4596</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

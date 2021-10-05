@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LEAD_ConversionRule_Leadsource</fullName>
+    <active>true</active>
+    <description>Validates that required fields needed for Converting the Lead are present.</description>
+    <errorConditionFormula>RecordTypeId = "0121a00000028v5" /* Inside/Outside Sales */
+&amp;&amp; 
+IsConverted
+&amp;&amp;
+ISBLANK(TEXT(LeadSource))</errorConditionFormula>
+    <errorDisplayField>LeadSource</errorDisplayField>
+    <errorMessage>You must complete the Lead Source before converting this Lead</errorMessage>
+</ValidationRule>

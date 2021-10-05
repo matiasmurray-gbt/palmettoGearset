@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adders__c</fullName>
+    <externalId>false</externalId>
+    <label>Adders</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Damaged Plywood</fullName>
+                <default>false</default>
+                <label>Damaged Plywood</label>
+            </value>
+            <value>
+                <fullName>Multiple MPS</fullName>
+                <default>false</default>
+                <label>Multiple MPS</label>
+            </value>
+            <value>
+                <fullName>Poor Access</fullName>
+                <default>false</default>
+                <label>Poor Access</label>
+            </value>
+            <value>
+                <fullName>Steep Roof</fullName>
+                <default>false</default>
+                <label>Steep Roof</label>
+            </value>
+            <value>
+                <fullName>Flashing Work</fullName>
+                <default>false</default>
+                <label>Flashing Work</label>
+            </value>
+            <value>
+                <fullName>Fascia Replacement</fullName>
+                <default>false</default>
+                <label>Fascia Replacement</label>
+            </value>
+            <value>
+                <fullName>Existing Leaks</fullName>
+                <default>false</default>
+                <label>Existing Leaks</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

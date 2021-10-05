@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X1_2_NC_Palmetto_Resi_Permits_to_File</fullName>
+    <booleanFilter>(1 OR 4) AND 2 AND 3</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Permitting_Jurisdiction__c</columns>
+    <columns>Utility__c</columns>
+    <columns>Signed_NMA_Rec_d__c</columns>
+    <columns>Post_Sales_Pre_Installation_Notes__c</columns>
+    <columns>HOA_Application_Sent__c</columns>
+    <columns>HOA_Approved__c</columns>
+    <columns>HOA_Notes__c</columns>
+    <columns>Install_Completion_Section_Notes__c</columns>
+    <columns>Days_Site_Approved_to_Permit_Submitted__c</columns>
+    <columns>Days_Engineering_Complete_to_PermitFiled__c</columns>
+    <columns>Days_Since_Contract_Received__c</columns>
+    <columns>Sub_Market__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer,Integrated Palmetto Property,Dividend Solar</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>13. Engineering Design Complete</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>equals</operation>
+        <value>North Carolina</value>
+    </filters>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>GreenNRG - Installation,Solcius Installation</value>
+    </filters>
+    <label>1.2 NC Permits to File</label>
+    <sharedTo>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_MA</role>
+        <role>Project_Coordinator_SC</role>
+        <role>Project_Designer</role>
+        <role>Project_Manager_FL</role>
+        <role>Project_Manager_SC</role>
+        <role>Senior_Project_Designer</role>
+    </sharedTo>
+</ListView>

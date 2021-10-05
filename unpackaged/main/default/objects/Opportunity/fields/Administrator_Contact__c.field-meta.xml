@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Administrator_Contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>For the usage by all internal teams, this will ensure that the team is contacting the member of the sales organization that is actually able to action documentation and change orders. This will also limit the</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For the usage by all internal teams, this will ensure that the team is contacting the member of the sales organization that is actually able to action documentation and change orders. This will also limit the</inlineHelpText>
+    <label>Administrator Contact</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Opportunities (Administrator Contact)</relationshipLabel>
+    <relationshipName>AdministratingOpportunity</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

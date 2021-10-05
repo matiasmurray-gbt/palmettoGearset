@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_Order_Case_Creation</fullName>
+    <active>true</active>
+    <description>Prevent user to save a change order case w/o change order statuses</description>
+    <errorConditionFormula>AND(TEXT(CaseType__c) = 'Change Order',
+ISBLANK(TEXT( Loan_Terms_Change__c )),
+ISBLANK(TEXT( Price_Change__c )),
+ISBLANK(TEXT( Payment_Method_Change__c )),
+ISBLANK(TEXT( AHJ_Setbacks__c )),
+ISBLANK(TEXT(Redesign_Request__c )),
+ISBLANK(TEXT( Incorrectly_odeled__c )),
+ISBLANK(TEXT( Incorrect_Measurements__c )),
+ISBLANK(TEXT(Incorrect_Panel_Count__c )),
+ISBLANK(TEXT( Production_Loss__c )),
+ISBLANK(TEXT( Offset_Discrepancy__c )),
+ISBLANK(TEXT( Sunnova__c )),
+ISBLANK(TEXT( SunRun__c )),
+ISBLANK(TEXT( HOA_Redesign__c )),
+ISBLANK(TEXT( System_Size_Kickback__c )),
+ISBLANK(TEXT( Customer_Issue_Hold__c )),
+ISBLANK(TEXT( Consumption_Calculator_Form__c )),
+ISBLANK(TEXT(Drivers_License__c)),
+ISBLANK(TEXT(Income_Verification__c)),
+ISBLANK(TEXT(Incorrect_Address__c)),
+ISBLANK(TEXT(Credit_Expired__c)),
+ISBLANK(TEXT(NTP_Incomplete__c)),
+ISBLANK(TEXT(Incorrect_Name__c)),
+ISBLANK(TEXT(Mortgage_Statement__c)),
+ISBLANK(TEXT(Proof_of_Citizenship_Residency__c)),
+ISBLANK(TEXT(Title_Verification__c)),
+ISBLANK(TEXT(Reroof__c)),
+ISBLANK(TEXT(Electrical_Upgrade__c)),
+ISBLANK(TEXT(Tree_Removal_Change_Order__c)),
+ISBLANK(TEXT(Trenching__c)),
+ISBLANK(TEXT(Structural_Upgrade__c)),
+ISBLANK(TEXT(Transformer_Upgrade__c)),
+ISBLANK(TEXT(System_Size_DQ__c)),
+ISBLANK(TEXT(Utility_Hard_Denial__c)),
+ISBLANK(TEXT(Structural__c)))</errorConditionFormula>
+    <errorMessage>Select at least one field on Contact Loan Change or Design Change or Financier Stipulation or Adder Required or Disqualification</errorMessage>
+</ValidationRule>

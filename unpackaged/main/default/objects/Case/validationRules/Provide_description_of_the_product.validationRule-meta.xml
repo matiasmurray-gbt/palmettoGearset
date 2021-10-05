@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Provide_description_of_the_product</fullName>
+    <active>true</active>
+    <description>This validation rules evalutes if the record type of the case is Retention and if the 'Product Offered to Save' is equals to 'Other' the user should enter a value in the field 'Other Product Offered Description'</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName == 'Retention',
+    ISPICKVAL(Product_Offered_to_Save__c, 'Other'),
+    ISBLANK( Other_Product_Offered_Description__c )
+)</errorConditionFormula>
+    <errorDisplayField>Other_Product_Offered_Description__c</errorDisplayField>
+    <errorMessage>Please provide a description of the product offered to save</errorMessage>
+</ValidationRule>

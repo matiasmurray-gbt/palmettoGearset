@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Technical Difficulties Response</name>
+    <style>freeForm</style>
+    <subject>Palmetto Update On Your System - Monitoring Technical Difficulties</subject>
+    <textOnly>Hello {!Opportunity.Name},
+
+We wanted to let you know that the current issues you are experiencing with the Palmetto App have been recorded and are currently being resolved.  We apologize for the technical difficulties, however we want to assure you that your solar system is functioning just fine.
+
+Your system is still on and saving you money!  You are more than welcome to call our Customer Care Department to confirm your solar production status.
+
+Please let us know if you have any further questions by emailing or calling the Palmetto Customer Care Team.
+
+Thank You,
+
+Palmetto Customer Care Deparment
+Toll Free - (855) 339-1831
+Office - (843) 720-1844
+Email: customer.care@palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

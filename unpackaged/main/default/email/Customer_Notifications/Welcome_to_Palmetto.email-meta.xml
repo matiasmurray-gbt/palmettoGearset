@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Welcome to Palmetto!</name>
+    <style>freeForm</style>
+    <subject>Welcome to Palmetto!</subject>
+    <textOnly>Welcome to Palmetto Solar! We want to thank you and congratulate you on your decision to implement solar energy into your home. We work hand in hand with your sales partner to deliver the installation of your solar system.
+
+
+
+The next step for you is to download the Palmetto Home app. This tool will provide you with full transparency of your project over the next 75 days and will also allow you to upload any missing documentation that we may need such as a utility bill.
+
+
+
+Remember, the quicker we collect all of the requested documentation, the sooner we are able to move to the next steps of the process. If you haven’t downloaded this yet please call us at 855-339-1831 and one of our support specialists will help you set up your new account.
+
+
+
+Also, if you haven’t completed your Palmetto Welcome Call where you schedule a home audit, please do so now by calling 855-339-1831 During the call, we will schedule a home audit for you. If you’ve already completed this, fantastic! Now it’s time to sit back relax and remain confident in the decision you made while we take care of the rest!
+
+
+
+Thank you,
+
+Palmetto Customer Care
+
+855-339-1831
+
+
+customercare@palmetto.com
+
+
+
+
+Palmetto Solar LLC | 1505 King Street Ext #114|Charleston, SC 29408 |8431844 |www.palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

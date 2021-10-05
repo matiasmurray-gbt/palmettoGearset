@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Care_Cannot_Edit_Due_Date</fullName>
+    <active>true</active>
+    <description>Customer Care cannot edit due date.</description>
+    <errorConditionFormula>AND( 
+ISCHANGED(  ActivityDate  ), 
+ $Profile.Id = "00e1a000000F1tX")</errorConditionFormula>
+    <errorMessage>Customer Care cannot edit due date.</errorMessage>
+</ValidationRule>

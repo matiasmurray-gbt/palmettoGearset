@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_CleanUp_Selected_Admins</fullName>
+    <active>true</active>
+    <description>Only Salesforce Administrator can select Lead Clean-up as Reason Not Interested.</description>
+    <errorConditionFormula>AND($UserRole.Name &lt;&gt; "CEO", 
+ISPICKVAL(  Reason_Not_Interested__c  , "Lead Clean-up"))</errorConditionFormula>
+    <errorDisplayField>Reason_Not_Interested__c</errorDisplayField>
+    <errorMessage>Only Salesforce Administrator can select Lead Clean-up as Reason Not Interested.</errorMessage>
+</ValidationRule>

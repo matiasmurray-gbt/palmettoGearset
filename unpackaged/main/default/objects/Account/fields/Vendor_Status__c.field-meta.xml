@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vendor_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Vendor Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Yet Approved</fullName>
+                <default>false</default>
+                <label>Not Yet Approved</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Prospective</fullName>
+                <default>false</default>
+                <label>Prospective</label>
+            </value>
+            <value>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+                <label>Inactive</label>
+            </value>
+            <value>
+                <fullName>In Retention</fullName>
+                <default>false</default>
+                <label>In Retention</label>
+            </value>
+            <value>
+                <fullName>Offboarded</fullName>
+                <default>false</default>
+                <label>Offboarded</label>
+            </value>
+            <value>
+                <fullName>Lost Account</fullName>
+                <default>false</default>
+                <label>Lost Account</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

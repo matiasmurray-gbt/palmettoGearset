@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_System_Changes_Post_Contract_Signed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(ISCHANGED(Panel_Type__c),
+ISCHANGED(Panel_Wattage__c),
+ISCHANGED(Amount),
+ISCHANGED( Financing_Tool__c),
+ISCHANGED(Number_of_Solar_Panels__c)),
+$User.Id = "0051a000002g8qcAAA",
+Alchemy_Bypass__c  = True   
+)</errorConditionFormula>
+    <errorMessage>Alchemy API cannot modify System Changes after Stage Contract Signed</errorMessage>
+</ValidationRule>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Customer is ready for Palmetto Cloud Registration</name>
+    <style>freeForm</style>
+    <subject>Customer is ready for Palmetto Cloud Registration</subject>
+    <textOnly>Customer is ready for Palmetto Cloud Registration.
+
+Contact Name - {!Contact.FirstName} {!Contact.LastName}
+Email Address - {!Contact.Email}
+Phone - {!Contact.Phone}
+Address - {!Account.BillingAddress}
+
+Contact Record - {!Contact.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

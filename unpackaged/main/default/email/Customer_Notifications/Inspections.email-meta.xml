@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Inspections</name>
+    <style>freeForm</style>
+    <subject>Palmetto - Inspections</subject>
+    <textOnly>Congratulations! Your system has been successfully installed! We will be contacting you within the next 5 business days to schedule your final inspections.
+
+
+
+You should expect a county inspection along with a utility inspection. Both ensuring your system is up to codes, compliance, and safety standards.
+
+
+
+Depending on your jurisdiction we may ask that a trusted individual be present for the inspections as they may need access to the attic.
+
+
+
+Once your county inspection is passed, the utility company will have 14 business days to come and install your meter.
+
+
+
+We will update you when all of your inspections are completed and approved. We are excited as you embark on your new solar journey and look forward to turning on your system as soon as possible!
+
+
+
+**If you are financing your system, please expect your first bill 15 - 45 days after your system is turned on and operating.**
+
+
+
+As always, if you have any questions, reach out to us through your Palmetto Home app chat feature or give us a call.
+
+
+
+Thank you,
+
+Palmetto Customer Care
+
+855-339-1831
+
+
+customercare@palmetto.com
+
+
+
+
+Palmetto Solar LLC | 1505 King Street Ext #114|Charleston, SC 29408 |8431844 |www.palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,8 @@
+name: {!Opportunity.Opp_Primary_Contact__c}
+email: {!Opportunity.Sales_Rep_Email__c}
+sfcontactid: {!Opportunity.Opp_Primary_ContactId__c}
+sfopportunityid: {!Opportunity.Id} 
+Sales_Rep: {!Opportunity.X3rd_Party_Sales_Rep__c}
+Sales_Partner: {!Opportunity.X3rd_Party_Partner__c}
+sfopportunitylocation: {!Opportunity.Location__c}
+segment: Sales Member Feedback - Install

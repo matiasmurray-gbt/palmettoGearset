@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Complete_Array__c</fullName>
+    <externalId>false</externalId>
+    <label>Complete Array</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fully Completed</fullName>
+                <default>false</default>
+                <label>Fully Completed</label>
+            </value>
+            <value>
+                <fullName>Missing an Array</fullName>
+                <default>false</default>
+                <label>Missing an Array</label>
+            </value>
+            <value>
+                <fullName>Missing Some Modules</fullName>
+                <default>false</default>
+                <label>Missing Some Modules</label>
+            </value>
+            <value>
+                <fullName>Not Completed</fullName>
+                <default>false</default>
+                <label>Not Completed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

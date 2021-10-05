@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Manual_Inspection_Job</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISNEW() &amp;&amp; RecordType.DeveloperName == 'Inspection' &amp;&amp; Automation__c == false &amp;&amp; Opportunity__r.RecordType.DeveloperName = 'X3rd_Party_Design_Sales' &amp;&amp;  $User.ProfileId != "00e1a000000YIFs" /* System Admin  */</errorConditionFormula>
+    <errorMessage>This Job is created when the project has achieved the [Installation Completed Date - Milestone]. Please satisfy the Criteria - Linear Milestones (https://app.getguru.com/card/cx6oa77i/Linear-Milestones) and the Job will be created by the system.</errorMessage>
+</ValidationRule>

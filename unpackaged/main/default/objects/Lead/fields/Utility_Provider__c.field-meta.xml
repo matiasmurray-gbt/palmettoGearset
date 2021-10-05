@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Utility_Provider__c</fullName>
+    <externalId>false</externalId>
+    <label>Utility Provider</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A &amp; N Electric Coop</fullName>
+                <default>false</default>
+                <label>A &amp; N Electric Coop</label>
+            </value>
+            <value>
+                <fullName>Abbeville City of</fullName>
+                <default>false</default>
+                <label>Abbeville City of</label>
+            </value>
+            <value>
+                <fullName>Aiken Electric Coop Inc</fullName>
+                <default>false</default>
+                <label>Aiken Electric Coop Inc</label>
+            </value>
+            <value>
+                <fullName>Alger-Delta Coop Electric Assn</fullName>
+                <default>false</default>
+                <label>Alger-Delta Coop Electric Assn</label>
+            </value>
+            <value>
+                <fullName>Alpena Power Co</fullName>
+                <default>false</default>
+                <label>Alpena Power Co</label>
+            </value>
+            <value>
+                <fullName>Bamberg Board of Public Works</fullName>
+                <default>false</default>
+                <label>Bamberg Board of Public Works</label>
+            </value>
+            <value>
+                <fullName>Bath Electric Gas &amp; Water Sys</fullName>
+                <default>false</default>
+                <label>Bath Electric Gas &amp; Water Sys</label>
+            </value>
+            <value>
+                <fullName>Belmont Light</fullName>
+                <default>false</default>
+                <label>Belmont Light</label>
+            </value>
+            <value>
+                <fullName>Berkeley Electric Co-op</fullName>
+                <default>false</default>
+                <label>Berkeley Electric Co-op</label>
+            </value>
+            <value>
+                <fullName>Berkeley Electric Coop Inc</fullName>
+                <default>false</default>
+                <label>Berkeley Electric Coop Inc</label>
+            </value>
+            <value>
+                <fullName>Black River Electric Co-op</fullName>
+                <default>false</default>
+                <label>Black River Electric Co-op</label>
+            </value>
+            <value>
+                <fullName>Blue Ridge Electric Coop Inc</fullName>
+                <default>false</default>
+                <label>Blue Ridge Electric Coop Inc</label>
+            </value>
+            <value>
+                <fullName>Braintree Electric Light Department</fullName>
+                <default>false</default>
+                <label>Braintree Electric Light Department</label>
+            </value>
+            <value>
+                <fullName>Broad River Electric Coop, Inc</fullName>
+                <default>false</default>
+                <label>Broad River Electric Coop, Inc</label>
+            </value>
+            <value>
+                <fullName>Central Electric Power Co-op</fullName>
+                <default>false</default>
+                <label>Central Electric Power Co-op</label>
+            </value>
+            <value>
+                <fullName>Chicopee City of</fullName>
+                <default>false</default>
+                <label>Chicopee City of</label>
+            </value>
+            <value>
+                <fullName>City of Camden</fullName>
+                <default>false</default>
+                <label>City of Camden</label>
+            </value>
+            <value>
+                <fullName>City of Georgetown</fullName>
+                <default>false</default>
+                <label>City of Georgetown</label>
+            </value>
+            <value>
+                <fullName>City of Gladstone</fullName>
+                <default>false</default>
+                <label>City of Gladstone</label>
+            </value>
+            <value>
+                <fullName>City of Marquette</fullName>
+                <default>false</default>
+                <label>City of Marquette</label>
+            </value>
+            <value>
+                <fullName>City of Newberry</fullName>
+                <default>false</default>
+                <label>City of Newberry</label>
+            </value>
+            <value>
+                <fullName>City of Rock Hill</fullName>
+                <default>false</default>
+                <label>City of Rock Hill</label>
+            </value>
+            <value>
+                <fullName>City of Russell</fullName>
+                <default>false</default>
+                <label>City of Russell</label>
+            </value>
+            <value>
+                <fullName>City of Union</fullName>
+                <default>false</default>
+                <label>City of Union</label>
+            </value>
+            <value>
+                <fullName>City of Westminster</fullName>
+                <default>false</default>
+                <label>City of Westminster</label>
+            </value>
+            <value>
+                <fullName>Cleco Power LLC</fullName>
+                <default>false</default>
+                <label>Cleco Power LLC</label>
+            </value>
+            <value>
+                <fullName>Clinton Combined Utility Sys</fullName>
+                <default>false</default>
+                <label>Clinton Combined Utility Sys</label>
+            </value>
+            <value>
+                <fullName>Clinton Village of</fullName>
+                <default>false</default>
+                <label>Clinton Village of</label>
+            </value>
+            <value>
+                <fullName>Coastal Electric Coop, Inc</fullName>
+                <default>false</default>
+                <label>Coastal Electric Coop, Inc</label>
+            </value>
+            <value>
+                <fullName>Concord Municipal Light Plant</fullName>
+                <default>false</default>
+                <label>Concord Municipal Light Plant</label>
+            </value>
+            <value>
+                <fullName>Consolidated Edison Co-NY Inc</fullName>
+                <default>false</default>
+                <label>Consolidated Edison Co-NY Inc</label>
+            </value>
+            <value>
+                <fullName>Consumers Energy Co</fullName>
+                <default>false</default>
+                <label>Consumers Energy Co</label>
+            </value>
+            <value>
+                <fullName>Department of Public Utilities - Orangeburg</fullName>
+                <default>false</default>
+                <label>Department of Public Utilities - Orangeburg</label>
+            </value>
+            <value>
+                <fullName>Detroit Edison Co</fullName>
+                <default>false</default>
+                <label>Detroit Edison Co</label>
+            </value>
+            <value>
+                <fullName>Duke Energy (Progress Energy Carolinas Inc)</fullName>
+                <default>false</default>
+                <label>Duke Energy (Progress Energy Carolinas Inc)</label>
+            </value>
+            <value>
+                <fullName>Duke Energy Carolinas, LLC</fullName>
+                <default>false</default>
+                <label>Duke Energy Carolinas, LLC</label>
+            </value>
+            <value>
+                <fullName>Duke Energy Florida (prev. Progress Energy Florida)</fullName>
+                <default>false</default>
+                <label>Duke Energy Florida (prev. Progress Energy Florida)</label>
+            </value>
+            <value>
+                <fullName>Edisto Electric Co-op</fullName>
+                <default>false</default>
+                <label>Edisto Electric Co-op</label>
+            </value>
+            <value>
+                <fullName>Entergy Louisiana Inc</fullName>
+                <default>false</default>
+                <label>Entergy Louisiana Inc</label>
+            </value>
+            <value>
+                <fullName>Entergy New Orleans Inc</fullName>
+                <default>false</default>
+                <label>Entergy New Orleans Inc</label>
+            </value>
+            <value>
+                <fullName>Eversource Energy (Formerly Western Massachusetts Elec Co)</fullName>
+                <default>false</default>
+                <label>Eversource Energy (Formerly Western Massachusetts Elec Co)</label>
+            </value>
+            <value>
+                <fullName>Fairfield Electric Coop, Inc</fullName>
+                <default>false</default>
+                <label>Fairfield Electric Coop, Inc</label>
+            </value>
+            <value>
+                <fullName>Florida Power &amp; Light Co</fullName>
+                <default>false</default>
+                <label>Florida Power &amp; Light Co</label>
+            </value>
+            <value>
+                <fullName>Great Lakes Energy Coop</fullName>
+                <default>false</default>
+                <label>Great Lakes Energy Coop</label>
+            </value>
+            <value>
+                <fullName>Greenwood Commissioners-Pub Wk</fullName>
+                <default>false</default>
+                <label>Greenwood Commissioners-Pub Wk</label>
+            </value>
+            <value>
+                <fullName>Hillsdale Board of Public Wks</fullName>
+                <default>false</default>
+                <label>Hillsdale Board of Public Wks</label>
+            </value>
+            <value>
+                <fullName>Hingham Municipal Lighting Plant</fullName>
+                <default>false</default>
+                <label>Hingham Municipal Lighting Plant</label>
+            </value>
+            <value>
+                <fullName>Holyoke Gas and Electric</fullName>
+                <default>false</default>
+                <label>Holyoke Gas and Electric</label>
+            </value>
+            <value>
+                <fullName>Horry Electric Coop Inc</fullName>
+                <default>false</default>
+                <label>Horry Electric Coop Inc</label>
+            </value>
+            <value>
+                <fullName>Ipswhich Electric</fullName>
+                <default>false</default>
+                <label>Ipswhich Electric</label>
+            </value>
+            <value>
+                <fullName>Jersey Central Power &amp; Lt Co</fullName>
+                <default>false</default>
+                <label>Jersey Central Power &amp; Lt Co</label>
+            </value>
+            <value>
+                <fullName>Kissimmee Utility Authority</fullName>
+                <default>false</default>
+                <label>Kissimmee Utility Authority</label>
+            </value>
+            <value>
+                <fullName>Lakeland Electric</fullName>
+                <default>false</default>
+                <label>Lakeland Electric</label>
+            </value>
+            <value>
+                <fullName>Lansing Board of Water &amp; Light</fullName>
+                <default>false</default>
+                <label>Lansing Board of Water &amp; Light</label>
+            </value>
+            <value>
+                <fullName>Laurens Commission of Public Works</fullName>
+                <default>false</default>
+                <label>Laurens Commission of Public Works</label>
+            </value>
+            <value>
+                <fullName>Laurens Electric Co-op</fullName>
+                <default>false</default>
+                <label>Laurens Electric Co-op</label>
+            </value>
+            <value>
+                <fullName>Little River Electric Coop Inc</fullName>
+                <default>false</default>
+                <label>Little River Electric Coop Inc</label>
+            </value>
+            <value>
+                <fullName>Lockhart Power Co</fullName>
+                <default>false</default>
+                <label>Lockhart Power Co</label>
+            </value>
+            <value>
+                <fullName>Lynches River Elec Coop, Inc</fullName>
+                <default>false</default>
+                <label>Lynches River Elec Coop, Inc</label>
+            </value>
+            <value>
+                <fullName>Madison Gas &amp; Electric Co</fullName>
+                <default>false</default>
+                <label>Madison Gas &amp; Electric Co</label>
+            </value>
+            <value>
+                <fullName>Marblehead Municipal Light Department</fullName>
+                <default>false</default>
+                <label>Marblehead Municipal Light Department</label>
+            </value>
+            <value>
+                <fullName>Marlboro Electric Coop, Inc</fullName>
+                <default>false</default>
+                <label>Marlboro Electric Coop, Inc</label>
+            </value>
+            <value>
+                <fullName>Mid-Carolina Electric Coop Inc</fullName>
+                <default>false</default>
+                <label>Mid-Carolina Electric Coop Inc</label>
+            </value>
+            <value>
+                <fullName>Midwest Energy Cooperative</fullName>
+                <default>false</default>
+                <label>Midwest Energy Cooperative</label>
+            </value>
+            <value>
+                <fullName>Muddleborough Gas and Electric</fullName>
+                <default>false</default>
+                <label>Muddleborough Gas and Electric</label>
+            </value>
+            <value>
+                <fullName>National Grid - Massachusetts</fullName>
+                <default>false</default>
+                <label>National Grid - Massachusetts</label>
+            </value>
+            <value>
+                <fullName>National Grid - New York</fullName>
+                <default>false</default>
+                <label>National Grid - New York</label>
+            </value>
+            <value>
+                <fullName>National Grid - Rhode Island (The Narragansett Electric Co)</fullName>
+                <default>false</default>
+                <label>National Grid - Rhode Island (The Narragansett Electric Co)</label>
+            </value>
+            <value>
+                <fullName>New Horizon Electric Co-op</fullName>
+                <default>false</default>
+                <label>New Horizon Electric Co-op</label>
+            </value>
+            <value>
+                <fullName>Orange &amp; Rockland Utils Inc</fullName>
+                <default>false</default>
+                <label>Orange &amp; Rockland Utils Inc</label>
+            </value>
+            <value>
+                <fullName>Orlando Utilities Comm</fullName>
+                <default>false</default>
+                <label>Orlando Utilities Comm</label>
+            </value>
+            <value>
+                <fullName>Palmetto Electric Coop Inc</fullName>
+                <default>false</default>
+                <label>Palmetto Electric Coop Inc</label>
+            </value>
+            <value>
+                <fullName>Pascoag Utility District</fullName>
+                <default>false</default>
+                <label>Pascoag Utility District</label>
+            </value>
+            <value>
+                <fullName>Peabody Municipal Light plant</fullName>
+                <default>false</default>
+                <label>Peabody Municipal Light plant</label>
+            </value>
+            <value>
+                <fullName>Pee Dee Electric Coop, Inc</fullName>
+                <default>false</default>
+                <label>Pee Dee Electric Coop, Inc</label>
+            </value>
+            <value>
+                <fullName>PSE&amp;G (Long Island)</fullName>
+                <default>false</default>
+                <label>PSE&amp;G (Long Island)</label>
+            </value>
+            <value>
+                <fullName>Public Service Elec &amp; Gas Co</fullName>
+                <default>false</default>
+                <label>Public Service Elec &amp; Gas Co</label>
+            </value>
+            <value>
+                <fullName>Readying Municipal Light</fullName>
+                <default>false</default>
+                <label>Readying Municipal Light</label>
+            </value>
+            <value>
+                <fullName>Rockland Electric Co</fullName>
+                <default>false</default>
+                <label>Rockland Electric Co</label>
+            </value>
+            <value>
+                <fullName>Rowley Municipal Light Plant</fullName>
+                <default>false</default>
+                <label>Rowley Municipal Light Plant</label>
+            </value>
+            <value>
+                <fullName>Santee Cooper (South Carolina Pub Serv Auth)</fullName>
+                <default>false</default>
+                <label>Santee Cooper (South Carolina Pub Serv Auth)</label>
+            </value>
+            <value>
+                <fullName>Santee Electric Coop, Inc</fullName>
+                <default>false</default>
+                <label>Santee Electric Coop, Inc</label>
+            </value>
+            <value>
+                <fullName>Shrewsbury Electric &amp; Cable Operations</fullName>
+                <default>false</default>
+                <label>Shrewsbury Electric &amp; Cable Operations</label>
+            </value>
+            <value>
+                <fullName>South Carolina Electric&amp;Gas Co</fullName>
+                <default>false</default>
+                <label>South Carolina Electric&amp;Gas Co</label>
+            </value>
+            <value>
+                <fullName>Sterling Municipal Light Department</fullName>
+                <default>false</default>
+                <label>Sterling Municipal Light Department</label>
+            </value>
+            <value>
+                <fullName>Taunton Municipal Lighting Plant</fullName>
+                <default>false</default>
+                <label>Taunton Municipal Lighting Plant</label>
+            </value>
+            <value>
+                <fullName>Templeton Municipal Light &amp; Water Plant</fullName>
+                <default>false</default>
+                <label>Templeton Municipal Light &amp; Water Plant</label>
+            </value>
+            <value>
+                <fullName>The Electric Co-ops of South Carolina</fullName>
+                <default>false</default>
+                <label>The Electric Co-ops of South Carolina</label>
+            </value>
+            <value>
+                <fullName>Town of Ashburnham</fullName>
+                <default>false</default>
+                <label>Town of Ashburnham</label>
+            </value>
+            <value>
+                <fullName>Town of Boylston</fullName>
+                <default>false</default>
+                <label>Town of Boylston</label>
+            </value>
+            <value>
+                <fullName>Town of Concord</fullName>
+                <default>false</default>
+                <label>Town of Concord</label>
+            </value>
+            <value>
+                <fullName>Town of Holden</fullName>
+                <default>false</default>
+                <label>Town of Holden</label>
+            </value>
+            <value>
+                <fullName>Town of Winnsboro</fullName>
+                <default>false</default>
+                <label>Town of Winnsboro</label>
+            </value>
+            <value>
+                <fullName>Tri-County Elec Member Corp</fullName>
+                <default>false</default>
+                <label>Tri-County Elec Member Corp</label>
+            </value>
+            <value>
+                <fullName>Tri-County Electric Coop, Inc</fullName>
+                <default>false</default>
+                <label>Tri-County Electric Coop, Inc</label>
+            </value>
+            <value>
+                <fullName>Wakefield Municipal Gas &amp; Light</fullName>
+                <default>false</default>
+                <label>Wakefield Municipal Gas &amp; Light</label>
+            </value>
+            <value>
+                <fullName>Wellesley Municipal Light Plant</fullName>
+                <default>false</default>
+                <label>Wellesley Municipal Light Plant</label>
+            </value>
+            <value>
+                <fullName>West Boylston Town of</fullName>
+                <default>false</default>
+                <label>West Boylston Town of</label>
+            </value>
+            <value>
+                <fullName>York Electric Coop Inc</fullName>
+                <default>false</default>
+                <label>York Electric Coop Inc</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

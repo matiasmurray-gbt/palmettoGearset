@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Planset_Review__c</fullName>
+    <externalId>false</externalId>
+    <label>Planset Review</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Completely Matches</fullName>
+                <default>false</default>
+                <label>Completely Matches</label>
+            </value>
+            <value>
+                <fullName>Layout and One Line Changes</fullName>
+                <default>false</default>
+                <label>Layout and One Line Changes</label>
+            </value>
+            <value>
+                <fullName>As-Built Layout Design</fullName>
+                <default>false</default>
+                <label>As-Built Layout Design</label>
+            </value>
+            <value>
+                <fullName>One Line Changes</fullName>
+                <default>false</default>
+                <label>One Line Changes</label>
+            </value>
+            <value>
+                <fullName>Requires Service</fullName>
+                <default>false</default>
+                <label>Requires Service</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

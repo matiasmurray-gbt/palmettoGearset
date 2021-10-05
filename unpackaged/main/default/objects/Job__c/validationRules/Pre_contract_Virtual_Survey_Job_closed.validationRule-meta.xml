@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pre_contract_Virtual_Survey_Job_closed</fullName>
+    <active>true</active>
+    <description>This validation rule ensures that the user completes all required fields to close the Pre-contract Virtual Survey Job</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = 'Pre_contract_Virtual_Survey',
+    ISPICKVAL(Job_Status__c, 'Closed'),
+    OR(
+        NOT(Virtual_Site_Survey_results_uploaded__c),
+        NOT(Copy_of_the_utility_bill_in_Alchemy__c),
+        NOT(Update_usage_information_in_Alchemy__c),
+        NOT(Job_completed__c)
+   )
+)</errorConditionFormula>
+    <errorMessage>Please complete Virtual Site Survey Section and Job completion fields to close this Job</errorMessage>
+</ValidationRule>

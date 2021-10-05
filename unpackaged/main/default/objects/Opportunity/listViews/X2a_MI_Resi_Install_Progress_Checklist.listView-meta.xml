@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2a_MI_Resi_Install_Progress_Checklist</fullName>
+    <booleanFilter>(1) AND ( 8)  AND 3 AND (4 OR 5 OR 6 OR 7 OR 9) and 2</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Sub_Market__c</columns>
+    <columns>Financing_Tool__c</columns>
+    <columns>Installation_Team__c</columns>
+    <columns>Electrical_Photos__c</columns>
+    <columns>Inverter_Serial_Numbers__c</columns>
+    <columns>String_Map_Complete__c</columns>
+    <columns>Monitoring_Activated__c</columns>
+    <columns>Job_Invoice_Sent__c</columns>
+    <columns>IC_Approved__c</columns>
+    <columns>Install_Completion_Section_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer,GreenNRG - Installation,Solcius Installation</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>test</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>equals</operation>
+        <value>Michigan</value>
+    </filters>
+    <filters>
+        <field>Electrical_Photos__c</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>String_Map_Complete__c</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>19. Install Completed,20. Inspection Scheduled,21. Inspection Complete,22. PTO</value>
+    </filters>
+    <filters>
+        <field>Inverter_Serial_Numbers__c</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <label>2.61 MI Completion Docs Checklist</label>
+    <sharedTo>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_MA</role>
+        <role>Project_Manager_FL</role>
+    </sharedTo>
+</ListView>

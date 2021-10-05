@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>ATTACH THE FOLLOWING DOCUMENTS: Insurance Requirements, Build Partner Application, W9 Form</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Initial Meeting Follow Up</name>
+    <style>none</style>
+    <subject>Palmetto - Documents for Review</subject>
+    <textOnly>Hi {!Contact.Name},
+
+Great talking with you just now. Below is an overview of the documentation we need to collect, and forms for you to fill out and return in order to approve you as a vendor.
+Insurance Requirement - We require 4 insurance policies (General Liability, Automobile, Worker Comp, Umbrella) with $1,000,000 in coverage.
+Your insurance Carrier needs to add the following language to the Certificate of insurance for these policies.
+Additionally Insured Language: &quot;Project and owner(s) are additionally insured as respects to general liability, auto liability, and excess liability as required by written contract. General liability coverage for additional insured applies on a primary and non-contributory basis and includes completed operations. Waiver of Subrogation applies in favor of Additional Insured with respect to General Liability, Automobile Liability, Excess Liability, and Workers Compensation policies as required by written contract and as permitted by law. Workers Compensation complies with the state statutes in which the work will be performed.
+Certificate Holder Information: Palmetto Solar, LLC, 1505 King St. Ext, Suite 114 Charleston, SC 29405
+Loss Runs: Please work with your insurance carrier to provide a Loss Run report for the past 3 years.
+Fill out and return the attached Build Partner Application and W9.
+Trade Licenses: Please provide copies of the requisite trade licenses required in the state of {STATE}.
+Business Licence/State Registration
+Please provide a copy of your Safety Manual
+For the Insurance documentation, we’re happy to work directly with your insurance agent on that front. Please let us know if you‘d like to schedule a quick conference call with your agent, alternatively, you can just forward this email to your agent with us CCed so we can address any questions they have.
+
+As you review these documents, don&apos;t hesitate to reach out with questions. If I can easily address them, I&apos;ll reply via email, otherwise, I&apos;ll add them to the agenda for when we connect DATE AND TIME OF SCHEDULED FOLLOW UP MEETING.
+
+Cheers,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

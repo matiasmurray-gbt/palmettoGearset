@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3rd_Party_Partner__c</fullName>
+    <externalId>false</externalId>
+    <label>3rd Party Partner</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>360 Total Solutions LLC</fullName>
+                <default>false</default>
+                <label>360 Total Solutions LLC</label>
+            </value>
+            <value>
+                <fullName>Ace Solar and Roofing</fullName>
+                <default>false</default>
+                <label>Ace Solar and Roofing</label>
+            </value>
+            <value>
+                <fullName>Alectrona Solar LLC</fullName>
+                <default>false</default>
+                <label>Alectrona Solar LLC</label>
+            </value>
+            <value>
+                <fullName>Alpha Solar</fullName>
+                <default>false</default>
+                <label>Alpha Solar</label>
+            </value>
+            <value>
+                <fullName>Authentic Solar Power, LLC</fullName>
+                <default>false</default>
+                <label>Authentic Solar Power, LLC</label>
+            </value>
+            <value>
+                <fullName>Barry Enterprises</fullName>
+                <default>false</default>
+                <label>Barry Enterprises</label>
+            </value>
+            <value>
+                <fullName>Brightest Solar</fullName>
+                <default>false</default>
+                <label>Brightest Solar</label>
+            </value>
+            <value>
+                <fullName>Bullseye Marketing Group Inc.</fullName>
+                <default>false</default>
+                <label>Bullseye Marketing Group Inc.</label>
+            </value>
+            <value>
+                <fullName>C &amp; D Marketing Services LLC</fullName>
+                <default>false</default>
+                <label>C &amp; D Marketing Services LLC</label>
+            </value>
+            <value>
+                <fullName>Carolina Semper Solar LLC</fullName>
+                <default>false</default>
+                <label>Carolina Semper Solar LLC</label>
+            </value>
+            <value>
+                <fullName>Citrus Solar LLC</fullName>
+                <default>false</default>
+                <label>Citrus Solar LLC</label>
+            </value>
+            <value>
+                <fullName>Diesel TEK, Inc</fullName>
+                <default>false</default>
+                <label>Diesel TEK, Inc</label>
+            </value>
+            <value>
+                <fullName>Dvinci Energy</fullName>
+                <default>false</default>
+                <label>Dvinci Energy</label>
+            </value>
+            <value>
+                <fullName>Enlight Energy</fullName>
+                <default>false</default>
+                <label>Enlight Energy</label>
+            </value>
+            <value>
+                <fullName>FiveStrata</fullName>
+                <default>false</default>
+                <label>FiveStrata</label>
+            </value>
+            <value>
+                <fullName>Florida Solar Energy Group</fullName>
+                <default>false</default>
+                <label>Florida Solar Energy Group</label>
+            </value>
+            <value>
+                <fullName>Fuze Power, Inc.</fullName>
+                <default>false</default>
+                <label>Fuze Power, Inc.</label>
+            </value>
+            <value>
+                <fullName>Gansett Solar</fullName>
+                <default>false</default>
+                <label>Gansett Solar</label>
+            </value>
+            <value>
+                <fullName>G Sterling Capital, LLC</fullName>
+                <default>false</default>
+                <label>G Sterling Capital, LLC</label>
+            </value>
+            <value>
+                <fullName>Harbor Energy</fullName>
+                <default>false</default>
+                <label>Harbor Energy</label>
+            </value>
+            <value>
+                <fullName>Independent Alchemists Master Account</fullName>
+                <default>false</default>
+                <label>Independent Alchemists Master Account</label>
+            </value>
+            <value>
+                <fullName>Inti Solar</fullName>
+                <default>false</default>
+                <label>Inti Solar</label>
+            </value>
+            <value>
+                <fullName>Ion Solar</fullName>
+                <default>false</default>
+                <label>Ion Solar</label>
+            </value>
+            <value>
+                <fullName>Jersey Business Group</fullName>
+                <default>false</default>
+                <label>Jersey Business Group</label>
+            </value>
+            <value>
+                <fullName>Laird Hometown Solar, LLC</fullName>
+                <default>false</default>
+                <label>Laird Hometown Solar, LLC</label>
+            </value>
+            <value>
+                <fullName>Mitt Marketing LLC</fullName>
+                <default>false</default>
+                <label>Mitt Marketing LLC</label>
+            </value>
+            <value>
+                <fullName>MLL Holdings LLC</fullName>
+                <default>false</default>
+                <label>MLL Holdings LLC</label>
+            </value>
+            <value>
+                <fullName>New Choice Solar</fullName>
+                <default>false</default>
+                <label>New Choice Solar</label>
+            </value>
+            <value>
+                <fullName>New Jersey Sun Tech</fullName>
+                <default>false</default>
+                <label>New Jersey Sun Tech</label>
+            </value>
+            <value>
+                <fullName>NexxGen Technologies</fullName>
+                <default>false</default>
+                <label>NexxGen Technologies</label>
+            </value>
+            <value>
+                <fullName>Poly Energy</fullName>
+                <default>false</default>
+                <label>Poly Energy</label>
+            </value>
+            <value>
+                <fullName>Quantum Energy, LLC</fullName>
+                <default>false</default>
+                <label>Quantum Energy, LLC</label>
+            </value>
+            <value>
+                <fullName>Radius Solar</fullName>
+                <default>false</default>
+                <label>Radius Solar</label>
+            </value>
+            <value>
+                <fullName>SLR Energy, LLC</fullName>
+                <default>false</default>
+                <label>SLR Energy, LLC</label>
+            </value>
+            <value>
+                <fullName>Solar Rescue</fullName>
+                <default>false</default>
+                <label>Solar Rescue</label>
+            </value>
+            <value>
+                <fullName>Solar Route, LLC</fullName>
+                <default>false</default>
+                <label>Solar Route, LLC</label>
+            </value>
+            <value>
+                <fullName>Solar United LLC</fullName>
+                <default>false</default>
+                <label>Solar United LLC</label>
+            </value>
+            <value>
+                <fullName>Solectus Solar</fullName>
+                <default>false</default>
+                <label>Solectus Solar</label>
+            </value>
+            <value>
+                <fullName>SolGen Renewables</fullName>
+                <default>false</default>
+                <label>SolGen Renewables</label>
+            </value>
+            <value>
+                <fullName>Soliva Home Energy Services, LLC</fullName>
+                <default>false</default>
+                <label>Soliva Home Energy Services, LLC</label>
+            </value>
+            <value>
+                <fullName>Solza Power, LLC</fullName>
+                <default>false</default>
+                <label>Solza Power, LLC</label>
+            </value>
+            <value>
+                <fullName>SunNerds</fullName>
+                <default>false</default>
+                <label>SunNerds</label>
+            </value>
+            <value>
+                <fullName>Super Green Solutions</fullName>
+                <default>false</default>
+                <label>Super Green Solutions</label>
+            </value>
+            <value>
+                <fullName>Tephra Solar LLC</fullName>
+                <default>false</default>
+                <label>Tephra Solar LLC</label>
+            </value>
+            <value>
+                <fullName>World Solar Solutions</fullName>
+                <default>false</default>
+                <label>World Solar Solutions</label>
+            </value>
+            <value>
+                <fullName>Zero Energy Bills LLC</fullName>
+                <default>false</default>
+                <label>Zero Energy Bills LLC</label>
+            </value>
+            <value>
+                <fullName>Green Power Solar</fullName>
+                <default>false</default>
+                <label>Green Power Solar</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

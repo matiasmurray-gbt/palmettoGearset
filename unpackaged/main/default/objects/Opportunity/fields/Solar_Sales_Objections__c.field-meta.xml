@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solar_Sales_Objections__c</fullName>
+    <description>Customer's Objections</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Complete this information by ticking the box of each of the customer's objections</inlineHelpText>
+    <label>Solar Sales Objections</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Co-Decision maker not available</fullName>
+                <default>false</default>
+                <label>Co-Decision maker not available</label>
+            </value>
+            <value>
+                <fullName>Co-decision maker not interested</fullName>
+                <default>false</default>
+                <label>Co-decision maker not interested</label>
+            </value>
+            <value>
+                <fullName>Competitor has better pricing</fullName>
+                <default>false</default>
+                <label>Competitor has better pricing</label>
+            </value>
+            <value>
+                <fullName>Competitor has superior product</fullName>
+                <default>false</default>
+                <label>Competitor has superior product</label>
+            </value>
+            <value>
+                <fullName>Customer is conflicted with</fullName>
+                <default>false</default>
+                <label>Customer is conflicted with</label>
+            </value>
+            <value>
+                <fullName>Customers has shaded roof</fullName>
+                <default>false</default>
+                <label>Customers has shaded roof</label>
+            </value>
+            <value>
+                <fullName>Design on front of house</fullName>
+                <default>false</default>
+                <label>Design on front of house</label>
+            </value>
+            <value>
+                <fullName>Doesn't want to be first on street</fullName>
+                <default>false</default>
+                <label>Doesn't want to be first on street</label>
+            </value>
+            <value>
+                <fullName>HOA submittal hesitancy</fullName>
+                <default>false</default>
+                <label>HOA submittal hesitancy</label>
+            </value>
+            <value>
+                <fullName>Moving 24 months (over)</fullName>
+                <default>false</default>
+                <label>Moving 24 months (over)</label>
+            </value>
+            <value>
+                <fullName>Moving within 12 months to 24 months</fullName>
+                <default>false</default>
+                <label>Moving within 12 months to 24 months</label>
+            </value>
+            <value>
+                <fullName>No like the proposal design</fullName>
+                <default>false</default>
+                <label>No like the proposal design</label>
+            </value>
+            <value>
+                <fullName>Not enough cost savings</fullName>
+                <default>false</default>
+                <label>Not enough cost savings</label>
+            </value>
+            <value>
+                <fullName>Not enough tax obligation</fullName>
+                <default>false</default>
+                <label>Not enough tax obligation</label>
+            </value>
+            <value>
+                <fullName>Price is too high</fullName>
+                <default>false</default>
+                <label>Price is too high</label>
+            </value>
+            <value>
+                <fullName>Replacing roof soon</fullName>
+                <default>false</default>
+                <label>Replacing roof soon</label>
+            </value>
+            <value>
+                <fullName>Residence &lt;12 months</fullName>
+                <default>false</default>
+                <label>Residence &lt;12 months</label>
+            </value>
+            <value>
+                <fullName>System doesn't produce enough</fullName>
+                <default>false</default>
+                <label>System doesn't produce enough</label>
+            </value>
+            <value>
+                <fullName>The return is too low</fullName>
+                <default>false</default>
+                <label>The return is too low</label>
+            </value>
+            <value>
+                <fullName>Thinks solar is ugly</fullName>
+                <default>false</default>
+                <label>Thinks solar is ugly</label>
+            </value>
+            <value>
+                <fullName>This is not a priority (right now)</fullName>
+                <default>false</default>
+                <label>This is not a priority (right now)</label>
+            </value>
+            <value>
+                <fullName>Wants to see another sytem</fullName>
+                <default>false</default>
+                <label>Wants to see another sytem</label>
+            </value>
+            <value>
+                <fullName>Wants to see a system first</fullName>
+                <default>false</default>
+                <label>Wants to see a system first</label>
+            </value>
+            <value>
+                <fullName>Want to be cash buyers (no financing)</fullName>
+                <default>false</default>
+                <label>Want to be cash buyers (no financing)</label>
+            </value>
+            <value>
+                <fullName>Want to consider home equity line</fullName>
+                <default>false</default>
+                <label>Want to consider home equity line</label>
+            </value>
+            <value>
+                <fullName>Want to finance roof</fullName>
+                <default>false</default>
+                <label>Want to finance roof</label>
+            </value>
+            <value>
+                <fullName>Want to wait until cash is saved up</fullName>
+                <default>false</default>
+                <label>Want to wait until cash is saved up</label>
+            </value>
+            <value>
+                <fullName>Refinancing House</fullName>
+                <default>false</default>
+                <label>Refinancing House</label>
+            </value>
+            <value>
+                <fullName>Wants Home Improvements</fullName>
+                <default>false</default>
+                <label>Wants Home Improvements</label>
+            </value>
+            <value>
+                <fullName>Travelling Soon</fullName>
+                <default>false</default>
+                <label>Travelling Soon</label>
+            </value>
+            <value>
+                <fullName>Elder &amp; Not Interested</fullName>
+                <default>false</default>
+                <label>Elder &amp; Not Interested</label>
+            </value>
+            <value>
+                <fullName>Adverse impact home value</fullName>
+                <default>false</default>
+                <label>Adverse impact home value</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

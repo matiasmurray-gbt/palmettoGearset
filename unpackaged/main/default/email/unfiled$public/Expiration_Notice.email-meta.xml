@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Expiration Notice</name>
+    <style>none</style>
+    <subject>Account Suspended</subject>
+    <textOnly>Dear {!Trade_Licensing__c.Vendor__c}
+
+
+Please be advised as of {!Trade_Licensing__c.Expiration_Date__c} your account has been placed inactive until the following information has been received.
+
+
+{!Trade_Licensing__c.License_Number__c}
+
+
+Once the information has been received your account will be reinstated.
+
+
+Should no information be received within 30 days from the date of this letter the account will be terminated.
+
+
+Your cooperation in this matter is greatly appreciated.
+
+
+Sincerely,
+
+
+{!Trade_Licensing__c.Owner_Name__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

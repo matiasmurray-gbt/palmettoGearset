@@ -1,0 +1,7 @@
+name: {!Opportunity.Contact_First_Name__c} 
+email: {!Opportunity.Email__c} 
+sfcontactid: {!Opportunity.ContactId__c}
+Sales_Rep: {!Opportunity.X3rd_Party_Sales_Rep__c}
+Sales_Partner: {!Opportunity.X3rd_Party_Partner__c}
+sfopportunityid: {!Opportunity.Id} 
+segment: Sales Rep's Rating

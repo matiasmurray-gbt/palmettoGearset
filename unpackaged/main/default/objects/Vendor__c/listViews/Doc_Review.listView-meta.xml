@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Doc_Review</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>State__c</columns>
+    <columns>Description__c</columns>
+    <columns>Scope_Trademarks__c</columns>
+    <columns>Service_Territory__c</columns>
+    <columns>Vendor_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Doc Review</value>
+    </filters>
+    <label>05. Doc Review</label>
+</ListView>

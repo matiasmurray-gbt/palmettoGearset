@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Access</fullName>
+        <default>false</default>
+        <label>Access</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>At Fault</fullName>
+        <default>false</default>
+        <label>At Fault</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Cancellation fees</fullName>
+        <default>false</default>
+        <label>Cancellation fees</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Cancelled contract</fullName>
+        <default>false</default>
+        <label>Cancelled contract</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closing incentive</fullName>
+        <default>false</default>
+        <label>Closing incentive</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Damaged property</fullName>
+        <default>false</default>
+        <label>Damaged property</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Communication Error</fullName>
+        <default>false</default>
+        <label>Data Communication Error</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Equipment delay</fullName>
+        <default>false</default>
+        <label>Equipment delay</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>HOA</fullName>
+        <default>false</default>
+        <label>HOA</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Homeowners not home</fullName>
+        <default>false</default>
+        <label>Homeowners not home</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Issue already resolved</fullName>
+        <default>false</default>
+        <label>Issue already resolved</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New Alchemist</fullName>
+        <default>false</default>
+        <label>New Alchemist</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New channel partner</fullName>
+        <default>false</default>
+        <label>New channel partner</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New DocuSign template</fullName>
+        <default>false</default>
+        <label>New DocuSign template</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New employee</fullName>
+        <default>false</default>
+        <label>New employee</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New field</fullName>
+        <default>false</default>
+        <label>New field</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New page layout</fullName>
+        <default>false</default>
+        <label>New page layout</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New problem</fullName>
+        <default>false</default>
+        <label>New problem</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New record type</fullName>
+        <default>false</default>
+        <label>New record type</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New report/dashboard</fullName>
+        <default>false</default>
+        <label>New report/dashboard</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New validation rule</fullName>
+        <default>false</default>
+        <label>New validation rule</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New value for existing field</fullName>
+        <default>false</default>
+        <label>New value for existing field</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New workflow</fullName>
+        <default>false</default>
+        <label>New workflow</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>No longer needed</fullName>
+        <default>false</default>
+        <label>No longer needed</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>No show inspector</fullName>
+        <default>false</default>
+        <label>No show inspector</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Not at fault</fullName>
+        <default>false</default>
+        <label>Not at fault</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Offboarding Alchemist</fullName>
+        <default>false</default>
+        <label>Offboarding Alchemist</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Organizational change</fullName>
+        <default>false</default>
+        <label>Organizational change</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Property altercation</fullName>
+        <default>false</default>
+        <label>Property altercation</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral incentive</fullName>
+        <default>false</default>
+        <label>Referral incentive</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Roof Leaking</fullName>
+        <default>false</default>
+        <label>Roof Leaking</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>SolarEdge communication error</fullName>
+        <default>false</default>
+        <label>SolarEdge communication error</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>System Not Producing</fullName>
+        <default>false</default>
+        <label>System Not Producing</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Tax credits</fullName>
+        <default>false</default>
+        <label>Tax credits</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Technical Issue</fullName>
+        <default>false</default>
+        <label>Technical Issue</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Training issue</fullName>
+        <default>false</default>
+        <label>Training issue</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Update existing DocuSign temaplate</fullName>
+        <default>false</default>
+        <label>Update existing DocuSign temaplate</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Update existing page layout</fullName>
+        <default>false</default>
+        <label>Update existing page layout</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Update existing report/dashboard</fullName>
+        <default>false</default>
+        <label>Update existing report/dashboard</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Update existing validation rule</fullName>
+        <default>false</default>
+        <label>Update existing validation rule</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Update existing workflow</fullName>
+        <default>false</default>
+        <label>Update existing workflow</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Utility denial</fullName>
+        <default>false</default>
+        <label>Utility denial</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>System not Energized</fullName>
+        <default>false</default>
+        <label>System not Energized</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Non-Palmetto</fullName>
+        <default>false</default>
+        <label>Non-Palmetto</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Homeowner Not Home</fullName>
+        <default>false</default>
+        <label>Homeowner Not Home</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Stickers</fullName>
+        <default>false</default>
+        <label>Stickers</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Multiple Issues</fullName>
+        <default>false</default>
+        <label>Multiple Issues</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>No Engineering Plans on site</fullName>
+        <default>false</default>
+        <label>No Engineering Plans on site</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>No Permit onsite</fullName>
+        <default>false</default>
+        <label>No Permit onsite</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>No Engineering memo onsite</fullName>
+        <default>false</default>
+        <label>No Engineering memo onsite</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Multiple documents missing onsite</fullName>
+        <default>false</default>
+        <label>Multiple documents missing onsite</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Harbor Energy</fullName>
+        <default>false</default>
+        <label>Harbor Energy</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Brightest</fullName>
+        <default>false</default>
+        <label>Brightest</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Poly</fullName>
+        <default>false</default>
+        <label>Poly</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>World Solar</fullName>
+        <default>false</default>
+        <label>World Solar</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Nexxgen</fullName>
+        <default>false</default>
+        <label>Nexxgen</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>180 South</fullName>
+        <default>false</default>
+        <label>180 South</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Solar Route</fullName>
+        <default>false</default>
+        <label>Solar Route</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Super Green</fullName>
+        <default>false</default>
+        <label>Super Green</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New Choice</fullName>
+        <default>false</default>
+        <label>New Choice</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Barry Enter.</fullName>
+        <default>false</default>
+        <label>Barry Enter.</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Radius</fullName>
+        <default>false</default>
+        <label>Radius</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>FL Solar</fullName>
+        <default>false</default>
+        <label>FL Solar</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Solectus</fullName>
+        <default>false</default>
+        <label>Solectus</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Soliva</fullName>
+        <default>false</default>
+        <label>Soliva</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Alpha Solar</fullName>
+        <default>false</default>
+        <label>Alpha Solar</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>SolGen</fullName>
+        <default>false</default>
+        <label>SolGen</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>HOA Approval</fullName>
+        <default>false</default>
+        <label>HOA Approval</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>ICA</fullName>
+        <default>false</default>
+        <label>ICA</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Financial</fullName>
+        <default>false</default>
+        <label>Financial</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Site_Audit_Rescheduled_Date__c</fullName>
+    <description>Enter a date when an initial Site Survey has been rescheduled or needs an additional visit to complete. Do not change the Site Survey Time field.</description>
+    <externalId>false</externalId>
+    <label>Site Audit Rescheduled Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

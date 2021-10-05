@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Assigned_to__c</fullName>
+    <externalId>false</externalId>
+    <label>Case Assigned to</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alejandra Torricos</fullName>
+                <default>false</default>
+                <label>Alejandra Torricos</label>
+            </value>
+            <value>
+                <fullName>Amy Denheyer</fullName>
+                <default>false</default>
+                <label>Amy Denheyer</label>
+            </value>
+            <value>
+                <fullName>Ana Havliand</fullName>
+                <default>false</default>
+                <label>Ana Havliand</label>
+            </value>
+            <value>
+                <fullName>Dawn Heck</fullName>
+                <default>false</default>
+                <label>Dawn Heck</label>
+            </value>
+            <value>
+                <fullName>Machias Schoen</fullName>
+                <default>false</default>
+                <label>Machias Schoen</label>
+            </value>
+            <value>
+                <fullName>Mary Cole</fullName>
+                <default>false</default>
+                <label>Mary Cole</label>
+            </value>
+            <value>
+                <fullName>Meghan Eggers</fullName>
+                <default>false</default>
+                <label>Meghan Eggers</label>
+            </value>
+            <value>
+                <fullName>Sandy Feliz Dominguez</fullName>
+                <default>false</default>
+                <label>Sandy Feliz Dominguez</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

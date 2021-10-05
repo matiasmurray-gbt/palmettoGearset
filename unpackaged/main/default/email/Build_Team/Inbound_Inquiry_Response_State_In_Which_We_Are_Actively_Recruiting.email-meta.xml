@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Inbound Inquiry Response- State In Which We Are Actively Recruiting</name>
+    <style>none</style>
+    <subject>Palmetto - Interested in Partnering?</subject>
+    <textOnly>Hi {!Contact.Name},
+
+I hope this message finds you well. I noticed you recently expressed interest in partnering with Palmetto Solar in {STATE}. I’d like to arrange a time to discuss your interest, experience, and our build partner program? We&apos;ll need between 30 and 45 minutes to talk through everything and answer all your questions. You can Use This Meeting Link to view my availability and schedule a time directly on my calendar.
+
+Please let me know if you have any questions or topics you&apos;d like to make sure we cover during our conversation.
+
+Cheers,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

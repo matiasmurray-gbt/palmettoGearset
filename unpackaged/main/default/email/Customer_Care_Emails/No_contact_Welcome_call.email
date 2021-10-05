@@ -1,0 +1,7 @@
+Hi {!Opportunity.X3rd_Party_Sales_Rep__c}, 
+
+We have made several attempts to reach {!Opportunity.Account} for their welcome call with no success. Could you please assist by setting up a time with the customer that is best for us to call? 
+
+Thank you, 
+
+{!Opportunity.Customer_Care_Representative__c}

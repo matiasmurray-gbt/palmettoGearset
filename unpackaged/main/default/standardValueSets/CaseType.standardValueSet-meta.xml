@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Cancellation</fullName>
+        <default>false</default>
+        <label>Cancellation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Change Order</fullName>
+        <default>false</default>
+        <label>Change Order</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Construction Issue</fullName>
+        <default>false</default>
+        <label>Construction Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Complaint</fullName>
+        <default>false</default>
+        <label>Customer Complaint</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Sales Claim</fullName>
+        <default>false</default>
+        <label>Customer Sales Claim</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Software Issue</fullName>
+        <default>false</default>
+        <label>Customer Software Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inspection Reschedule</fullName>
+        <default>false</default>
+        <label>Inspection Reschedule</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Install Delay</fullName>
+        <default>false</default>
+        <label>Install Delay</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Legal Action</fullName>
+        <default>false</default>
+        <label>Legal Action</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Negative Review</fullName>
+        <default>false</default>
+        <label>Negative Review</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reimbursement Request - Customer Issue</fullName>
+        <default>false</default>
+        <label>Reimbursement Request - Customer Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reimbursement Request - Direct Sales</fullName>
+        <default>false</default>
+        <label>Reimbursement Request - Direct Sales</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Salesforce</fullName>
+        <default>false</default>
+        <label>Salesforce</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service Call</fullName>
+        <default>false</default>
+        <label>Service Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SolarEdge</fullName>
+        <default>false</default>
+        <label>SolarEdge</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Technology Feature Request</fullName>
+        <default>false</default>
+        <label>Technology Feature Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Technology Product</fullName>
+        <default>false</default>
+        <label>Technology Product</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Training</fullName>
+        <default>false</default>
+        <label>Training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Failed Inspection</fullName>
+        <default>false</default>
+        <label>Failed Inspection</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Permit Delay</fullName>
+        <default>false</default>
+        <label>Permit Delay</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Communication</fullName>
+        <default>false</default>
+        <label>Communication</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Expected offset / Savings</fullName>
+        <default>false</default>
+        <label>Expected offset / Savings</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Financing</fullName>
+        <default>false</default>
+        <label>Financing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Property Damage</fullName>
+        <default>false</default>
+        <label>Property Damage</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service Issues</fullName>
+        <default>false</default>
+        <label>Service Issues</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Incentives</fullName>
+        <default>false</default>
+        <label>Incentives</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pre-PTO</fullName>
+        <default>false</default>
+        <label>Pre-PTO</label>
+    </standardValue>
+</StandardValueSet>

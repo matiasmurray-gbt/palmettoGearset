@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Re_Survey_Reschedule_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL(CaseType__c , 'Physical Re-Survey') ,
+OR(
+ISPICKVAL( Flow_Status__c, 'Re-Survey Reschedule Required')
+&amp;&amp;
+ISBLANK( Reschedule_Needed_Weather_Date__c )
+&amp;&amp; ISBLANK( Reschedule_Needed_Access_Date__c )
+&amp;&amp; ISBLANK( Reschedule_Needed_Complexity_Date__c )))</errorConditionFormula>
+    <errorMessage>Fill at least one Date field from Re-Survey Reschedule Data Fields Section.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Source_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Lead Source Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Become a Sales Member</fullName>
+                <default>false</default>
+                <label>Become a Sales Member</label>
+            </value>
+            <value>
+                <fullName>Channel</fullName>
+                <default>false</default>
+                <label>Channel</label>
+            </value>
+            <value>
+                <fullName>Give 1k Get 1k</fullName>
+                <default>false</default>
+                <label>Give 1k Get 1k</label>
+            </value>
+            <value>
+                <fullName>Independent</fullName>
+                <default>false</default>
+                <label>Independent</label>
+            </value>
+            <value>
+                <fullName>Palmetto Protect</fullName>
+                <default>false</default>
+                <label>Palmetto Protect</label>
+            </value>
+            <value>
+                <fullName>Self-Generated</fullName>
+                <default>false</default>
+                <label>Self-Generated</label>
+            </value>
+            <value>
+                <fullName>Solar</fullName>
+                <default>false</default>
+                <label>Solar</label>
+            </value>
+            <value>
+                <fullName>Solar Stimulus</fullName>
+                <default>false</default>
+                <label>Solar Stimulus</label>
+            </value>
+            <value>
+                <fullName>Storage</fullName>
+                <default>false</default>
+                <label>Storage</label>
+            </value>
+            <value>
+                <fullName>Thermostat</fullName>
+                <default>false</default>
+                <label>Thermostat</label>
+            </value>
+            <value>
+                <fullName>Virtual Appointment</fullName>
+                <default>false</default>
+                <label>Virtual Appointment</label>
+            </value>
+            <value>
+                <fullName>1st Party</fullName>
+                <default>false</default>
+                <label>1st Party</label>
+            </value>
+            <value>
+                <fullName>3rd Party</fullName>
+                <default>false</default>
+                <label>3rd Party</label>
+            </value>
+            <value>
+                <fullName>Affiliate</fullName>
+                <default>false</default>
+                <label>Affiliate</label>
+            </value>
+            <value>
+                <fullName>Member</fullName>
+                <default>false</default>
+                <label>Member</label>
+            </value>
+            <value>
+                <fullName>Corporate Partner</fullName>
+                <default>false</default>
+                <label>Corporate Partner</label>
+            </value>
+            <value>
+                <fullName>Channel Partner</fullName>
+                <default>false</default>
+                <label>Channel Partner</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Employee</fullName>
+                <default>false</default>
+                <label>Employee</label>
+            </value>
+            <value>
+                <fullName>Home Builder</fullName>
+                <default>false</default>
+                <label>Home Builder</label>
+            </value>
+            <value>
+                <fullName>Recruiter</fullName>
+                <default>false</default>
+                <label>Recruiter</label>
+            </value>
+            <value>
+                <fullName>Powerup2020</fullName>
+                <default>false</default>
+                <label>Powerup2020</label>
+            </value>
+            <value>
+                <fullName>Solar Energy</fullName>
+                <default>false</default>
+                <label>Solar Energy</label>
+            </value>
+            <value>
+                <fullName>Request Service</fullName>
+                <default>false</default>
+                <label>Request Service</label>
+            </value>
+            <value>
+                <fullName>Clean Energy Experts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Clean Energy Experts</label>
+            </value>
+            <value>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Corporate</label>
+            </value>
+            <value>
+                <fullName>EnergyBillCruncher</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EnergyBillCruncher</label>
+            </value>
+            <value>
+                <fullName>Modernize</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Modernize</label>
+            </value>
+            <value>
+                <fullName>PX.com</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PX.com</label>
+            </value>
+            <value>
+                <fullName>RMC Solar</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RMC Solar</label>
+            </value>
+            <value>
+                <fullName>Teq Leaders</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Teq Leaders</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

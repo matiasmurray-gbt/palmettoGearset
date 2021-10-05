@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Installation_Team__c</fullName>
+    <externalId>false</externalId>
+    <label>Installation Team</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>15 Lightyears, Inc</fullName>
+                <default>false</default>
+                <label>15 Lightyears, Inc</label>
+            </value>
+            <value>
+                <fullName>3a Roofing</fullName>
+                <default>false</default>
+                <label>3a Roofing</label>
+            </value>
+            <value>
+                <fullName>AAA Solar</fullName>
+                <default>false</default>
+                <label>AAA Solar</label>
+            </value>
+            <value>
+                <fullName>Accept Solar</fullName>
+                <default>false</default>
+                <label>Accept Solar</label>
+            </value>
+            <value>
+                <fullName>AG Electric</fullName>
+                <default>false</default>
+                <label>AG Electric</label>
+            </value>
+            <value>
+                <fullName>Allsolar Energy, Inc.</fullName>
+                <default>false</default>
+                <label>Allsolar Energy, Inc.</label>
+            </value>
+            <value>
+                <fullName>Ambient Solar</fullName>
+                <default>false</default>
+                <label>Ambient Solar</label>
+            </value>
+            <value>
+                <fullName>Apex</fullName>
+                <default>false</default>
+                <label>Apex</label>
+            </value>
+            <value>
+                <fullName>Apollo Electric</fullName>
+                <default>false</default>
+                <label>Apollo Electric</label>
+            </value>
+            <value>
+                <fullName>AVA Electrical and Lighting</fullName>
+                <default>false</default>
+                <label>AVA Electrical and Lighting</label>
+            </value>
+            <value>
+                <fullName>Axis Solar</fullName>
+                <default>false</default>
+                <label>Axis Solar</label>
+            </value>
+            <value>
+                <fullName>Beacon</fullName>
+                <default>false</default>
+                <label>Beacon</label>
+            </value>
+            <value>
+                <fullName>Castaways Energy LLC</fullName>
+                <default>false</default>
+                <label>Castaways Energy LLC</label>
+            </value>
+            <value>
+                <fullName>Charge Up Electric</fullName>
+                <default>false</default>
+                <label>Charge Up Electric</label>
+            </value>
+            <value>
+                <fullName>Coldwell Electric</fullName>
+                <default>false</default>
+                <label>Coldwell Electric</label>
+            </value>
+            <value>
+                <fullName>CT - Apex</fullName>
+                <default>false</default>
+                <label>CT - Apex</label>
+            </value>
+            <value>
+                <fullName>CTFC - Remote</fullName>
+                <default>false</default>
+                <label>CTFC - Remote</label>
+            </value>
+            <value>
+                <fullName>CT Renewables</fullName>
+                <default>false</default>
+                <label>CT Renewables</label>
+            </value>
+            <value>
+                <fullName>CT - Skyline Solar</fullName>
+                <default>false</default>
+                <label>CT - Skyline Solar</label>
+            </value>
+            <value>
+                <fullName>DBT Solar</fullName>
+                <default>false</default>
+                <label>DBT Solar</label>
+            </value>
+            <value>
+                <fullName>Devlin - SC/NC</fullName>
+                <default>false</default>
+                <label>Devlin - SC/NC</label>
+            </value>
+            <value>
+                <fullName>DK energy</fullName>
+                <default>false</default>
+                <label>DK energy</label>
+            </value>
+            <value>
+                <fullName>East Coast Solar Services</fullName>
+                <default>false</default>
+                <label>East Coast Solar Services</label>
+            </value>
+            <value>
+                <fullName>Eco Smart</fullName>
+                <default>false</default>
+                <label>Eco Smart</label>
+            </value>
+            <value>
+                <fullName>Eco Solar Solutions</fullName>
+                <default>false</default>
+                <label>Eco Solar Solutions</label>
+            </value>
+            <value>
+                <fullName>Emerald</fullName>
+                <default>false</default>
+                <label>Emerald</label>
+            </value>
+            <value>
+                <fullName>Empower</fullName>
+                <default>false</default>
+                <label>Empower</label>
+            </value>
+            <value>
+                <fullName>ETS</fullName>
+                <default>false</default>
+                <label>ETS</label>
+            </value>
+            <value>
+                <fullName>FirstLight Greenville</fullName>
+                <default>false</default>
+                <label>FirstLight Greenville</label>
+            </value>
+            <value>
+                <fullName>FirstLight NJ</fullName>
+                <default>false</default>
+                <label>FirstLight NJ</label>
+            </value>
+            <value>
+                <fullName>Florida Solar Power</fullName>
+                <default>false</default>
+                <label>Florida Solar Power</label>
+            </value>
+            <value>
+                <fullName>FL Solar Power</fullName>
+                <default>false</default>
+                <label>FL Solar Power</label>
+            </value>
+            <value>
+                <fullName>Fusion Solar</fullName>
+                <default>false</default>
+                <label>Fusion Solar</label>
+            </value>
+            <value>
+                <fullName>Generation Solar</fullName>
+                <default>false</default>
+                <label>Generation Solar</label>
+            </value>
+            <value>
+                <fullName>Genrenew</fullName>
+                <default>false</default>
+                <label>Genrenew</label>
+            </value>
+            <value>
+                <fullName>Green Brilliance</fullName>
+                <default>false</default>
+                <label>Green Brilliance</label>
+            </value>
+            <value>
+                <fullName>Green Light Solar</fullName>
+                <default>false</default>
+                <label>Green Light Solar</label>
+            </value>
+            <value>
+                <fullName>Green Rack</fullName>
+                <default>false</default>
+                <label>Green Rack</label>
+            </value>
+            <value>
+                <fullName>Green Rack Contracting</fullName>
+                <default>false</default>
+                <label>Green Rack Contracting</label>
+            </value>
+            <value>
+                <fullName>Green Solar Systems</fullName>
+                <default>false</default>
+                <label>Green Solar Systems</label>
+            </value>
+            <value>
+                <fullName>Guardian</fullName>
+                <default>false</default>
+                <label>Guardian</label>
+            </value>
+            <value>
+                <fullName>HDC Electric</fullName>
+                <default>false</default>
+                <label>HDC Electric</label>
+            </value>
+            <value>
+                <fullName>Hytek Energy</fullName>
+                <default>false</default>
+                <label>Hytek Energy</label>
+            </value>
+            <value>
+                <fullName>IconPower</fullName>
+                <default>false</default>
+                <label>IconPower</label>
+            </value>
+            <value>
+                <fullName>ICON Power</fullName>
+                <default>false</default>
+                <label>ICON Power</label>
+            </value>
+            <value>
+                <fullName>Illinois Crew</fullName>
+                <default>false</default>
+                <label>Illinois Crew</label>
+            </value>
+            <value>
+                <fullName>Infinity Energy</fullName>
+                <default>false</default>
+                <label>Infinity Energy</label>
+            </value>
+            <value>
+                <fullName>Innovative Solar Energy, LLC</fullName>
+                <default>false</default>
+                <label>Innovative Solar Energy, LLC</label>
+            </value>
+            <value>
+                <fullName>Julius Electric</fullName>
+                <default>false</default>
+                <label>Julius Electric</label>
+            </value>
+            <value>
+                <fullName>KW Solar</fullName>
+                <default>false</default>
+                <label>KW Solar</label>
+            </value>
+            <value>
+                <fullName>LG Solar</fullName>
+                <default>false</default>
+                <label>LG Solar</label>
+            </value>
+            <value>
+                <fullName>MA Traveling Crew</fullName>
+                <default>false</default>
+                <label>MA Traveling Crew</label>
+            </value>
+            <value>
+                <fullName>Michigan Solar Solutions</fullName>
+                <default>false</default>
+                <label>Michigan Solar Solutions</label>
+            </value>
+            <value>
+                <fullName>National Solar Service</fullName>
+                <default>false</default>
+                <label>National Solar Service</label>
+            </value>
+            <value>
+                <fullName>National Solar Services</fullName>
+                <default>false</default>
+                <label>National Solar Services</label>
+            </value>
+            <value>
+                <fullName>Nevada In-House</fullName>
+                <default>false</default>
+                <label>Nevada In-House</label>
+            </value>
+            <value>
+                <fullName>New Road Energy</fullName>
+                <default>false</default>
+                <label>New Road Energy</label>
+            </value>
+            <value>
+                <fullName>NJ - Skyline Solar</fullName>
+                <default>false</default>
+                <label>NJ - Skyline Solar</label>
+            </value>
+            <value>
+                <fullName>NV Joint Install</fullName>
+                <default>false</default>
+                <label>NV Joint Install</label>
+            </value>
+            <value>
+                <fullName>NV Rebels</fullName>
+                <default>false</default>
+                <label>NV Rebels</label>
+            </value>
+            <value>
+                <fullName>NV Traveling Crew</fullName>
+                <default>false</default>
+                <label>NV Traveling Crew</label>
+            </value>
+            <value>
+                <fullName>OH Solar LLC</fullName>
+                <default>false</default>
+                <label>OH Solar LLC</label>
+            </value>
+            <value>
+                <fullName>Palmetto Team 1</fullName>
+                <default>false</default>
+                <label>Palmetto Team 1</label>
+            </value>
+            <value>
+                <fullName>Palmetto Team 2</fullName>
+                <default>false</default>
+                <label>Palmetto Team 2</label>
+            </value>
+            <value>
+                <fullName>Palmetto Team 3</fullName>
+                <default>false</default>
+                <label>Palmetto Team 3</label>
+            </value>
+            <value>
+                <fullName>Perfection Solar</fullName>
+                <default>false</default>
+                <label>Perfection Solar</label>
+            </value>
+            <value>
+                <fullName>Plug PV</fullName>
+                <default>false</default>
+                <label>Plug PV</label>
+            </value>
+            <value>
+                <fullName>Plug PV - MA</fullName>
+                <default>false</default>
+                <label>Plug PV - MA</label>
+            </value>
+            <value>
+                <fullName>Plug PV - NY</fullName>
+                <default>false</default>
+                <label>Plug PV - NY</label>
+            </value>
+            <value>
+                <fullName>Public Service Solar</fullName>
+                <default>false</default>
+                <label>Public Service Solar</label>
+            </value>
+            <value>
+                <fullName>Re-Think</fullName>
+                <default>false</default>
+                <label>Re-Think</label>
+            </value>
+            <value>
+                <fullName>Revolution Energy Systems</fullName>
+                <default>false</default>
+                <label>Revolution Energy Systems</label>
+            </value>
+            <value>
+                <fullName>Rooftop Power</fullName>
+                <default>false</default>
+                <label>Rooftop Power</label>
+            </value>
+            <value>
+                <fullName>Rooftop Solar</fullName>
+                <default>false</default>
+                <label>Rooftop Solar</label>
+            </value>
+            <value>
+                <fullName>Sampro</fullName>
+                <default>false</default>
+                <label>Sampro</label>
+            </value>
+            <value>
+                <fullName>SAVKAT Inc.</fullName>
+                <default>false</default>
+                <label>SAVKAT Inc.</label>
+            </value>
+            <value>
+                <fullName>SC Traveling Crew</fullName>
+                <default>false</default>
+                <label>SC Traveling Crew</label>
+            </value>
+            <value>
+                <fullName>Skyline - Marlborough</fullName>
+                <default>false</default>
+                <label>Skyline - Marlborough</label>
+            </value>
+            <value>
+                <fullName>Skyline - Raynham</fullName>
+                <default>false</default>
+                <label>Skyline - Raynham</label>
+            </value>
+            <value>
+                <fullName>Skyline Solar</fullName>
+                <default>false</default>
+                <label>Skyline Solar</label>
+            </value>
+            <value>
+                <fullName>Solar Elite</fullName>
+                <default>false</default>
+                <label>Solar Elite</label>
+            </value>
+            <value>
+                <fullName>SolarFlair Energy</fullName>
+                <default>false</default>
+                <label>SolarFlair Energy</label>
+            </value>
+            <value>
+                <fullName>Solar Mite Solutions</fullName>
+                <default>false</default>
+                <label>Solar Mite Solutions</label>
+            </value>
+            <value>
+                <fullName>Solar Pest Solutions, LLC</fullName>
+                <default>false</default>
+                <label>Solar Pest Solutions, LLC</label>
+            </value>
+            <value>
+                <fullName>Solar Ready Solutions</fullName>
+                <default>false</default>
+                <label>Solar Ready Solutions</label>
+            </value>
+            <value>
+                <fullName>Sonovus Energy</fullName>
+                <default>false</default>
+                <label>Sonovus energy</label>
+            </value>
+            <value>
+                <fullName>SunCatchers of Atlanta</fullName>
+                <default>false</default>
+                <label>SunCatchers of Atlanta</label>
+            </value>
+            <value>
+                <fullName>Sun Farm Energy</fullName>
+                <default>false</default>
+                <label>Sun Farm Energy</label>
+            </value>
+            <value>
+                <fullName>Sunwire LLC</fullName>
+                <default>false</default>
+                <label>Sunwire LLC</label>
+            </value>
+            <value>
+                <fullName>SunWise</fullName>
+                <default>false</default>
+                <label>SunWise</label>
+            </value>
+            <value>
+                <fullName>Sustainable</fullName>
+                <default>false</default>
+                <label>Sustainable</label>
+            </value>
+            <value>
+                <fullName>Synaptic Solar</fullName>
+                <default>false</default>
+                <label>Synaptic Solar</label>
+            </value>
+            <value>
+                <fullName>Tayco Electric</fullName>
+                <default>false</default>
+                <label>Tayco Electric</label>
+            </value>
+            <value>
+                <fullName>Team Mitch</fullName>
+                <default>false</default>
+                <label>Team Mitch</label>
+            </value>
+            <value>
+                <fullName>Tempo Electric</fullName>
+                <default>false</default>
+                <label>Tempo Electric</label>
+            </value>
+            <value>
+                <fullName>Texas Solar LLC</fullName>
+                <default>false</default>
+                <label>Texas Solar LLC</label>
+            </value>
+            <value>
+                <fullName>Thompson and Son</fullName>
+                <default>false</default>
+                <label>Thompson and Son</label>
+            </value>
+            <value>
+                <fullName>Traveling Crew</fullName>
+                <default>false</default>
+                <label>Traveling Crew</label>
+            </value>
+            <value>
+                <fullName>Very Good Electrical LLC</fullName>
+                <default>false</default>
+                <label>Very Good Electrical LLC</label>
+            </value>
+            <value>
+                <fullName>Vision NJ</fullName>
+                <default>false</default>
+                <label>Vision NJ</label>
+            </value>
+            <value>
+                <fullName>Von Loor and Sloof</fullName>
+                <default>false</default>
+                <label>Von Loor and Sloof</label>
+            </value>
+            <value>
+                <fullName>Wired Up Electric</fullName>
+                <default>false</default>
+                <label>Wired Up Electric</label>
+            </value>
+            <value>
+                <fullName>Titan Renewables</fullName>
+                <default>false</default>
+                <label>Titan Renewables</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

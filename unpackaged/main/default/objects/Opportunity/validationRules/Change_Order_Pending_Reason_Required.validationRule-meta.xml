@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_Order_Pending_Reason_Required</fullName>
+    <active>true</active>
+    <description>If selecting Stage 9. Change Order Pending, then you must also select a Change Order Pending Reason.</description>
+    <errorConditionFormula>AND(NOT ISPICKVAL( Customer_Type__c , "GreenNRG - Installation"), 
+ISPICKVAL( StageName , "9. Change Order Pending"),
+ISBLANK(TEXT( Change_Order_Reason__c )))</errorConditionFormula>
+    <errorDisplayField>Change_Order_Reason__c</errorDisplayField>
+    <errorMessage>Please select a Change Order Pending Reason.</errorMessage>
+</ValidationRule>

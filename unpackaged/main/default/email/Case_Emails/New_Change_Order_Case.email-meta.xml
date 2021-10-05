@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>New Change Order Case</name>
+    <style>freeForm</style>
+    <subject>{!Case.Opportunity__c} -  Change Order Pending</subject>
+    <textOnly>Hello from the Palmetto Team,
+
+
+
+
+
+This project requires a change order for the below reasons. The best and quickest way to resolve this is to reply to this email with any information that may help our Fulfillment team action the issue. Thank you and have a great day!
+
+
+
+
+
+Notes: {!Case.Case_Owner_Notes__c}
+
+
+
+Change Order Reason(s):
+
+
+
+Contract Loan Change
+
+
+
+1.       Loan Terms Change: {!Case.Loan_Terms_Change__c}
+
+2.       Price Change: {!Case.Price_Change__c}
+
+3.       Payment Method Change: {!Case.Payment_Method_Change__c}
+
+
+
+Design Change
+
+
+
+1.       AHJ Setbacks: {!Case.AHJ_Setbacks__c}
+
+2.       Incorrectly Modelled: {!Case.Incorrectly_odeled__c}
+
+3.       Incorrect Measurements: {!Case.Incorrect_Measurements__c}
+
+4.       Incorrect Panel Count: {!Case.Incorrect_Panel_Count__c}
+
+5.       Production Loss: {!Case.Production_Loss__c}
+
+6.       Redesign Request: {!Case.Redesign_Request__c}
+
+7.       Offset Discrepancy: {!Case.Offset_Discrepancy__c}
+
+8.       Sunrun Customer Facing Change: {!Case.SunRun__c}
+
+9.       Sunnova Customer Facing Change: {!Case.Sunnova__c}
+
+10.     System Size Kickback: {!Case.System_Size_Kickback__c}
+
+11.     HOA Redesign: {!Case.HOA_Redesign__c}
+
+
+
+Financier Stipulation
+
+
+
+1.       Consumption Calculator Form: {!Case.Consumption_Calculator_Form__c}
+
+2.       Incorrect Name: {!Case.Incorrect_Name__c}
+
+3.       Driver’s License: {!Case.Drivers_License__c}
+
+4.       Income Verification: {!Case.Income_Verification__c}
+
+5.       Incorrect Address: {!Case.Incorrect_Address__c}
+
+6.       Mortgage Statement: {!Case.Mortgage_Statement__c}
+
+7.       Proof of Citizenship: {!Case.Proof_of_Citizenship_Residency__c}
+
+8.       Title Verification: {!Case.Title_Verification__c}
+
+9.      Credit Expired: {!Case.Credit_Expired__c}
+
+10.     NTP Incomplete: {!Case.NTP_Incomplete__c}
+
+
+
+Adder Required
+
+
+
+1.       Reroof: {!Case.Reroof__c}
+
+2.       Electrical Upgrade: {!Case.Electrical_Upgrade__c}
+
+3.       Tree Removal: {!Case.Tree_Removal_Change_Order__c}
+
+4.       Trenching: {!Case.Trenching__c}
+
+5.       Structural Upgrade: {!Case.Structural_Upgrade__c}
+
+6.      Transformer Upgrade: {!Case.Transformer_Upgrade__c}
+
+
+
+Disqualification
+
+
+
+1.     System Size: {!Case.System_Size_DQ__c}
+
+2.     Utility Hard Denial: {!Case.Utility_Hard_Denial__c}
+
+3.     Structural: {!Case.Structural__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

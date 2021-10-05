@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_LEAD_ConversionRule_Utility</fullName>
+    <active>true</active>
+    <description>Validates that required fields needed for Converting the Lead are present.</description>
+    <errorConditionFormula>RecordTypeId = "0121a000000eQYP" /* Inside/Outside Sales */
+&amp;&amp;
+IsConverted
+&amp;&amp;
+ISBLANK(TEXT(Utility_Provider__c))</errorConditionFormula>
+    <errorDisplayField>Utility_Provider__c</errorDisplayField>
+    <errorMessage>You must complete the Utility Provider before converting this Lead.</errorMessage>
+</ValidationRule>

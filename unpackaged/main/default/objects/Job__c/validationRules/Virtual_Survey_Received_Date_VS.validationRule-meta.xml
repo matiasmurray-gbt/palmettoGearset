@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Virtual_Survey_Received_Date_VS</fullName>
+    <active>true</active>
+    <description>For Virtual Survey Job type only</description>
+    <errorConditionFormula>AND(RecordTypeId = '0122L000000VoVr',ISPICKVAL(Flow_Status__c,'Virtual Survey Received- Pending Review'),
+ISNULL(Virtual_Survey_Received_Date__c))</errorConditionFormula>
+    <errorDisplayField>Virtual_Survey_Received_Date__c</errorDisplayField>
+    <errorMessage>Enter Virtual Survey Received Date</errorMessage>
+</ValidationRule>

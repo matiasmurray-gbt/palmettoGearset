@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Denial_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Denial Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No streetfacing</fullName>
+                <default>false</default>
+                <label>No streetfacing</label>
+            </value>
+            <value>
+                <fullName>Front panels</fullName>
+                <default>false</default>
+                <label>Front panels</label>
+            </value>
+            <value>
+                <fullName>No panels in community</fullName>
+                <default>false</default>
+                <label>No panels in community</label>
+            </value>
+            <value>
+                <fullName>Application incorrect</fullName>
+                <default>false</default>
+                <label>Application incorrect</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Yes, from Palmetto</fullName>
+        <default>false</default>
+        <label>Yes, from Palmetto</label>
+    </customValue>
+    <customValue>
+        <fullName>Yes, from another company</fullName>
+        <default>false</default>
+        <label>Yes, from another company</label>
+    </customValue>
+    <customValue>
+        <fullName>No</fullName>
+        <default>false</default>
+        <label>No</label>
+    </customValue>
+    <masterLabel>Do you have solar panels on your home?</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

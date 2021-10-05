@@ -1,0 +1,7 @@
+<p>
+Partner Name:&nbsp;
+<a href="https://cs123.salesforce.com/{!Account.Id}" target="_blank">{!Account.Name}</a>
+</p>
+<p>
+Date Signed/Onboarded:&nbsp;{!Account.CreatedDate}
+</p>

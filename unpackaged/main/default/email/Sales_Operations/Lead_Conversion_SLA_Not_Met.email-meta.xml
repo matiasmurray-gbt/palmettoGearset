@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Lead Conversion SLA Not Met</name>
+    <style>freeForm</style>
+    <subject>Lead Conversion SLA Not Met - {!Lead.Name}</subject>
+    <textOnly>Lead Name: {!Lead.Name}
+
+Lead Owner: {!Lead.OwnerFullName}
+
+Lead Create Date: {!Lead.CreatedDate}
+
+Target Conversion Date: {!Lead.Lead_Conversion_Threshold__c}
+
+Current Lead Status: {!Lead.Status}
+
+Lead Link: {!Lead.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

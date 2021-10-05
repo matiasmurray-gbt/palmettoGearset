@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3a_FL_Resi_Install_Progress_Checklist</fullName>
+    <booleanFilter>1 AND ((2 AND 5) OR 6) AND 3 AND 4 AND 7 AND 8</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>Financing_Tool__c</columns>
+    <columns>Installation_Complete_Date__c</columns>
+    <columns>Install_Completion_Submitted__c</columns>
+    <columns>Sub_Market__c</columns>
+    <columns>Installation_Team__c</columns>
+    <columns>Milestone_Payment_1_Complete__c</columns>
+    <columns>Install_Completion_Section_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer,Sunrun Installation,Integrated Palmetto Property</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>18. Installation,19. Closed Won,Closed Won</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>equals</operation>
+        <value>Florida</value>
+    </filters>
+    <filters>
+        <field>IC_Approved__c</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Install_Completed__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>19. Install Completed,20. Inspection Scheduled,21. Inspection Complete,22. PTO</value>
+    </filters>
+    <filters>
+        <field>Financing_Tool__c</field>
+        <operation>notEqual</operation>
+        <value>Bluewave/MassLoan,Cash</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>test</value>
+    </filters>
+    <label>2.62 FL Waiting for IC Approval</label>
+    <sharedTo>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_MA</role>
+        <role>Project_Manager_FL</role>
+    </sharedTo>
+</ListView>

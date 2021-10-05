@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Requested_Cancel_Validation</fullName>
+    <active>false</active>
+    <description>For Retention Cases Only</description>
+    <errorConditionFormula>AND(ISPICKVAL(CaseType__c , 'Customer Requested Cancellation'),
+RecordTypeId = '0122L000000VoX4',  
+AND(ISNULL(Competition__c),
+ISNULL(Decided_Against_Solar__c),ISNULL(Finances_Retention__c),ISNULL( Offset__c),ISNULL( Other_Retention__c),
+ISNULL(Pricing__c)))</errorConditionFormula>
+    <errorMessage>Enter Dates on "Customer Requested Cancellation Section"</errorMessage>
+</ValidationRule>

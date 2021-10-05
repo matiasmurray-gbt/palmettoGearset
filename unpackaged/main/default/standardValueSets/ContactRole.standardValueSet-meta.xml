@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Homeowner</fullName>
+        <default>true</default>
+        <label>Homeowner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3rd Party Sales Rep</fullName>
+        <default>false</default>
+        <label>3rd Party Sales Rep</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ambassador</fullName>
+        <default>false</default>
+        <label>Ambassador</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Business User</fullName>
+        <default>false</default>
+        <label>Business User</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Community Lead</fullName>
+        <default>false</default>
+        <label>Community Lead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Decision Maker</fullName>
+        <default>false</default>
+        <label>Decision Maker</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Economic Buyer</fullName>
+        <default>false</default>
+        <label>Economic Buyer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Economic Decision Maker</fullName>
+        <default>false</default>
+        <label>Economic Decision Maker</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Evaluator</fullName>
+        <default>false</default>
+        <label>Evaluator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Executive Sponsor</fullName>
+        <default>false</default>
+        <label>Executive Sponsor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Financier Remittance</fullName>
+        <default>false</default>
+        <label>Financier Remittance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Former Homeowner</fullName>
+        <default>false</default>
+        <label>Former Homeowner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Influencer</fullName>
+        <default>false</default>
+        <label>Influencer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Technical Buyer</fullName>
+        <default>false</default>
+        <label>Technical Buyer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+</StandardValueSet>

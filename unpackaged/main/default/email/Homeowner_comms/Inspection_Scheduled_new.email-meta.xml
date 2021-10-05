@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Inspection</letterhead>
+    <name>Inspection Scheduled new</name>
+    <style>freeForm</style>
+    <subject>Solar Inspection Update- The Home Stretch.</subject>
+    <textOnly>Hello {!Opportunity.Contact_First_Name__c},
+
+
+Great news! We&apos;ve scheduled your final building inspection to ensure that your system is installed safely and correctly. The typical approval process for inspection completion is 1-3 weeks. Once the city has given us an A-OK, we’ll submit final documents to your utility provider requesting to connect your system to the grid.
+
+Your utility provider will review all documentation and grant approval to turn on your solar system, aka Permission to Operate (PTO). Depending on your utility provider, this process can take between 2-4 weeks. Once you receive PTO, you can now flip the switch and begin producing clean, money-saving energy right from your roof. Don’t worry, we’ll walk you through each step of the way!
+
+
+HAVE QUESTIONS?
+We have real people who will treat you really, really incredibly well
+You can reach us via Palmetto Home, email or phone. As always, we’re here for you. Please reach out if you have any questions as your solar journey progresses. Thank you for being a Palmetto customer.
+
+
+We look forward to exceeding your expectations!
+
+
+All aboard the solar train!
+Palmetto Customer Support
+
+customer.care@palmetto.com
+
+855-339-1831</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

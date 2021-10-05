@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Needs_Review_From__c</fullName>
+    <description>used for Design reviews</description>
+    <externalId>false</externalId>
+    <label>Needs Review From</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Palmetto</fullName>
+                <default>false</default>
+                <label>Palmetto</label>
+            </value>
+            <value>
+                <fullName>Exactus</fullName>
+                <default>false</default>
+                <label>Exactus</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

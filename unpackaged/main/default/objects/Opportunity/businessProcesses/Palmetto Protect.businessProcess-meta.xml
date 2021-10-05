@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Palmetto Protect</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Won</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Contract %26 Authorization Received</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Proposal Requested</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Proposal Sent%09%60</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

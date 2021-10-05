@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loan_Pal_Dealer_Fee__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Text(Financing_Tool__c) &lt;&gt; "Loan Pal", 0,
+
+Case( Financing_Tool__c, 
+
+"Loanpal", 
+
+IF( (CloseDate &gt; Date(2018,9,23)),
+
+IF( ISBLANK(Text(Loan_Term__c)) = True, 0.185,
+
+IF(   VALUE(TEXT(Loan_Term__c)) = 10, 
+     0.145, 
+
+     IF(   VALUE(TEXT(Loan_Term__c)) = 20,
+           
+          IF( TEXT(APR__c) = "5.99%", 0.1175,0.185),
+          0.185))),
+
+  0.215),
+
+0))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Loan Pal Dealer Fee</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

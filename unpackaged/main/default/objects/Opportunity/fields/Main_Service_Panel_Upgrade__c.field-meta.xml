@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Main_Service_Panel_Upgrade__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Main Service Panel Upgrade (Up to 200 Amps)</description>
+    <externalId>false</externalId>
+    <label>Main Service Panel Upgrade</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

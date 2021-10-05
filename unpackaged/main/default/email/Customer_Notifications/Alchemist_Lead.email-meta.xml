@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Alchemist Lead</name>
+    <style>freeForm</style>
+    <subject>Thank you for your interest in Alchemy</subject>
+    <textOnly>Dear {!Lead.FirstName} {!Lead.LastName},
+
+
+Thank you for your interest in becoming a  Palmetto Alchemist. We appreciate you reaching out. Please set up an appointment with a Palmetto Account Executive so that we may properly assist you.
+
+
+https://forms.gle/FJUt4Pddecd4VUKW9
+
+
+https://calendly.com/bennett-barton/alchemist
+
+
+Thank you,
+
+The Palmetto Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

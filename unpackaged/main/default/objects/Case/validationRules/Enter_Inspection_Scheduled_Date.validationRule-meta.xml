@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enter_Inspection_Scheduled_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(TEXT(Reason_1__c ) = 'Inspection Scheduled',
+  ISNULL(Inspection_Scheduled_Date__c) = True)</errorConditionFormula>
+    <errorDisplayField>Inspection_Scheduled_Date__c</errorDisplayField>
+    <errorMessage>Enter Inspection Scheduled Date</errorMessage>
+</ValidationRule>

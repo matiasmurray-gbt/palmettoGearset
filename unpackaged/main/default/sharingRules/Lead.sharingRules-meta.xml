@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>AmeriSave_Solar</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>AmeriSave Solar</label>
+        <sharedTo>
+            <group>AmeriSave_Solar</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>X3rd_Party_Partner__c</field>
+            <operation>equals</operation>
+            <value>AmeriSave Solar</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Leads_for_Palmetto_Users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Leads for Palmetto Users</label>
+        <sharedTo>
+            <group>Palmetto_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

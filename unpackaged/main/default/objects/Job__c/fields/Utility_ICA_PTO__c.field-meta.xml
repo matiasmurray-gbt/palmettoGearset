@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Utility_ICA_PTO__c</fullName>
+    <externalId>false</externalId>
+    <label>Utility - ICA/PTO</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Schedule Z</fullName>
+                <default>false</default>
+                <label>Schedule Z</label>
+            </value>
+            <value>
+                <fullName>COC</fullName>
+                <default>false</default>
+                <label>COC</label>
+            </value>
+            <value>
+                <fullName>PTO / Net Metering Letter</fullName>
+                <default>false</default>
+                <label>PTO / Net Metering Letter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

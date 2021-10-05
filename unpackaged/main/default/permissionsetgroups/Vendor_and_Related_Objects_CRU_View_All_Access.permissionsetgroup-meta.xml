@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Objects: Vendor, Service Agreements, Licenses/Certifications, Insurance, 
+Pricing Details, Operations Inputs, Logistics Inputs, Dispatch Service Providers
+Access: CRU and View All</description>
+    <label>Vendor and Related Objects CRU View All Access</label>
+    <permissionSets>Dispatch_Service_Provider_Service_Provider_CRU_View_All_Access</permissionSets>
+    <permissionSets>Insurance_CRU_View_All_Access</permissionSets>
+    <permissionSets>Licenses_Certifications_Trade_Licensing_CRU_View_All_Access</permissionSets>
+    <permissionSets>Logistics_Inputs_CRU_View_All_Access</permissionSets>
+    <permissionSets>Operations_Inputs_CRU_View_All_Access</permissionSets>
+    <permissionSets>Pricing_Details_CRU_View_All_Access</permissionSets>
+    <permissionSets>Service_Agreements_CRU_View_All_Access</permissionSets>
+    <permissionSets>Vendor_CRU_View_All_Access</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

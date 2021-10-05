@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Commissions__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check Off if the Contact would like Commission Reports to be emailed to them.</description>
+    <externalId>false</externalId>
+    <label>Email Commissions</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

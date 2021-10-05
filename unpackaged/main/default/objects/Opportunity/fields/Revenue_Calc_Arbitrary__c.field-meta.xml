@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Revenue_Calc_Arbitrary__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(Customer_Type__c) = "Sunrun Installation", System_Size_Calculated_kW__c *1000*3.25, Amount)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Revenue Calc - Arbitrary</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

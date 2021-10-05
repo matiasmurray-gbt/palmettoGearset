@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solar_Edge_25_yr_Extended_Warranty__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <label>Solar Edge 25 yr Extended Warranty</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

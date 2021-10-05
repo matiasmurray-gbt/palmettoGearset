@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Customer Care Rep</fullName>
+        <default>false</default>
+        <label>Customer Care Rep</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Designer</fullName>
+        <default>false</default>
+        <label>Designer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Finance Rep</fullName>
+        <default>false</default>
+        <label>Finance Rep</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Market Manager</fullName>
+        <default>false</default>
+        <label>Market Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Project Manager</fullName>
+        <default>false</default>
+        <label>Project Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Regional Director</fullName>
+        <default>false</default>
+        <label>Regional Director</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Rep</fullName>
+        <default>false</default>
+        <label>Sales Rep</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Success Manager</fullName>
+        <default>false</default>
+        <label>Success Manager</label>
+    </standardValue>
+</StandardValueSet>

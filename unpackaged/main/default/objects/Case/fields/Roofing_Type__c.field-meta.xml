@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Roofing_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Roofing Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Flat</fullName>
+                <default>false</default>
+                <label>Flat</label>
+            </value>
+            <value>
+                <fullName>Comp Shingle</fullName>
+                <default>false</default>
+                <label>Comp Shingle</label>
+            </value>
+            <value>
+                <fullName>Corrugated</fullName>
+                <default>false</default>
+                <label>Corrugated</label>
+            </value>
+            <value>
+                <fullName>Standing Seam</fullName>
+                <default>false</default>
+                <label>Standing Seam</label>
+            </value>
+            <value>
+                <fullName>Tile</fullName>
+                <default>false</default>
+                <label>Tile</label>
+            </value>
+            <value>
+                <fullName>Mixed Surfaces</fullName>
+                <default>false</default>
+                <label>Mixed Surfaces</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

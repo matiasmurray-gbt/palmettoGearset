@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Residential - Customer</fullName>
+                <default>true</default>
+                <label>Residential - Customer</label>
+            </value>
+            <value>
+                <fullName>Alchemy</fullName>
+                <default>false</default>
+                <label>Alchemy</label>
+            </value>
+            <value>
+                <fullName>Build Partner</fullName>
+                <default>false</default>
+                <label>Build Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

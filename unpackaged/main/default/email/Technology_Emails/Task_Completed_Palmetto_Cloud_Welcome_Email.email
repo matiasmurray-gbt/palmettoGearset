@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div><b>Task Subject</b> -&nbsp;{!Task.Subject}</div><div><br></div><div><b>Task Status</b> -&nbsp;{!Task.Status}</div><div><br></div><div><b>Related To</b> -&nbsp;{!Task.What}</div><div><br></div><div><b>Link to Task</b> -&nbsp;{!Task.Link}</div>]]></td>
+</tr>
+</table>

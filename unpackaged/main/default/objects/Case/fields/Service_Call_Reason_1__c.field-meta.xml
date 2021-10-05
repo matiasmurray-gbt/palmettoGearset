@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Call_Reason_1__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Legacy Reason 1 Field</inlineHelpText>
+    <label>Service Call Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Property Damage</fullName>
+                <default>false</default>
+                <label>Property Damage</label>
+            </value>
+            <value>
+                <fullName>Failed Inspection</fullName>
+                <default>false</default>
+                <label>Failed Inspection</label>
+            </value>
+            <value>
+                <fullName>System Not Producing</fullName>
+                <default>false</default>
+                <label>System Not Producing</label>
+            </value>
+            <value>
+                <fullName>Communication Error</fullName>
+                <default>false</default>
+                <label>Communication Error</label>
+            </value>
+            <value>
+                <fullName>Product Replacement</fullName>
+                <default>false</default>
+                <label>Product Replacement</label>
+            </value>
+            <value>
+                <fullName>Courtesy Visit</fullName>
+                <default>false</default>
+                <label>Courtesy Visit</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Failed Equipment</fullName>
+                <default>false</default>
+                <label>Failed Equipment</label>
+            </value>
+            <value>
+                <fullName>Pest Concerns</fullName>
+                <default>false</default>
+                <label>Pest Concerns</label>
+            </value>
+            <value>
+                <fullName>Roof Leak</fullName>
+                <default>false</default>
+                <label>Roof Leak</label>
+            </value>
+            <value>
+                <fullName>Production</fullName>
+                <default>false</default>
+                <label>Production</label>
+            </value>
+            <value>
+                <fullName>No Communication</fullName>
+                <default>false</default>
+                <label>No Communication</label>
+            </value>
+            <value>
+                <fullName>Inverter Alert</fullName>
+                <default>false</default>
+                <label>Inverter Alert</label>
+            </value>
+            <value>
+                <fullName>Module Alert</fullName>
+                <default>false</default>
+                <label>Module Alert</label>
+            </value>
+            <value>
+                <fullName>Pest Abatement</fullName>
+                <default>false</default>
+                <label>Pest Abatement</label>
+            </value>
+            <value>
+                <fullName>Inspection</fullName>
+                <default>false</default>
+                <label>Inspection</label>
+            </value>
+            <value>
+                <fullName>Job Closeout</fullName>
+                <default>false</default>
+                <label>Job Closeout</label>
+            </value>
+            <value>
+                <fullName>Meter / Monitoring Issue</fullName>
+                <default>false</default>
+                <label>Meter / Monitoring Issue</label>
+            </value>
+            <value>
+                <fullName>System Upgrade</fullName>
+                <default>false</default>
+                <label>System Upgrade</label>
+            </value>
+            <value>
+                <fullName>Removal &amp; Reinstall</fullName>
+                <default>false</default>
+                <label>Removal &amp; Reinstall</label>
+            </value>
+            <value>
+                <fullName>Preventative Maintenance</fullName>
+                <default>false</default>
+                <label>Preventative Maintenance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

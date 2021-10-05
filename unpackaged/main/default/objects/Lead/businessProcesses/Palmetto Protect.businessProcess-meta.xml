@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Palmetto Protect</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Account Confirmed with Payment</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Account Confirmed without Payment</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Account Unconfirmed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Appointment Complete</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Appointment Set</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Attempting to Contact</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Disqualified</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Do Not Call</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>No Response</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Open</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Re-Engage</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Sold</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Test</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Unsupported Utility</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Verbal Response</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

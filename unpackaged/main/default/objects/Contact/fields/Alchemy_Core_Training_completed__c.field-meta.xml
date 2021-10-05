@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alchemy_Core_Training_completed__c</fullName>
+    <externalId>false</externalId>
+    <label>Alchemy Core Training completed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alchemy Core Training</fullName>
+                <default>false</default>
+                <label>Alchemy Core Training</label>
+            </value>
+            <value>
+                <fullName>Walk the Walk</fullName>
+                <default>false</default>
+                <label>Walk the Walk</label>
+            </value>
+            <value>
+                <fullName>How U Read the UB</fullName>
+                <default>false</default>
+                <label>How U Read the UB</label>
+            </value>
+            <value>
+                <fullName>The Nitty Gritty</fullName>
+                <default>false</default>
+                <label>The Nitty Gritty</label>
+            </value>
+            <value>
+                <fullName>ITC, Rates, and Utilities</fullName>
+                <default>false</default>
+                <label>ITC, Rates, and Utilities</label>
+            </value>
+            <value>
+                <fullName>Just…Ask…Questions</fullName>
+                <default>false</default>
+                <label>Just…Ask…Questions</label>
+            </value>
+            <value>
+                <fullName>Dirty Power vs. Clean Power</fullName>
+                <default>false</default>
+                <label>Dirty Power vs. Clean Power</label>
+            </value>
+            <value>
+                <fullName>The Many Ways to Buy Solar</fullName>
+                <default>false</default>
+                <label>The Many Ways to Buy Solar</label>
+            </value>
+            <value>
+                <fullName>The Solar Journey</fullName>
+                <default>false</default>
+                <label>The Solar Journey</label>
+            </value>
+            <value>
+                <fullName>The Phone is Your Friend</fullName>
+                <default>false</default>
+                <label>The Phone is Your Friend</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

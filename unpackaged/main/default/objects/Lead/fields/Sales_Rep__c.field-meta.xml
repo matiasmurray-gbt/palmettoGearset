@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Rep__c</fullName>
+    <externalId>false</externalId>
+    <label>Sales Rep</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chris Graham</fullName>
+                <default>false</default>
+                <label>Chris Graham</label>
+            </value>
+            <value>
+                <fullName>Alex LaCon</fullName>
+                <default>false</default>
+                <label>Alex LaCon</label>
+            </value>
+            <value>
+                <fullName>Barry Gentry</fullName>
+                <default>false</default>
+                <label>Barry Gentry</label>
+            </value>
+            <value>
+                <fullName>John Brady</fullName>
+                <default>false</default>
+                <label>John Brady</label>
+            </value>
+            <value>
+                <fullName>Colton Smith</fullName>
+                <default>false</default>
+                <label>Colton Smith</label>
+            </value>
+            <value>
+                <fullName>Lane Todd</fullName>
+                <default>false</default>
+                <label>Lane Todd</label>
+            </value>
+            <value>
+                <fullName>Vincent Smith</fullName>
+                <default>false</default>
+                <label>Vincent Smith</label>
+            </value>
+            <value>
+                <fullName>Sean Buchanan</fullName>
+                <default>false</default>
+                <label>Sean Buchanan</label>
+            </value>
+            <value>
+                <fullName>Sales Associate</fullName>
+                <default>false</default>
+                <label>Sales Associate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

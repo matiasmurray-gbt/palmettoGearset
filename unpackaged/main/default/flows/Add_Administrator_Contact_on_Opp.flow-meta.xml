@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <assignments>
+        <description>Assigns Dan Devito under New Palmetto Team as the Administrator Contact when the 3rd party partner is Independent Alchemist Master Account</description>
+        <name>Assign_Dan_Devito_as_Administrator_Contact</name>
+        <label>Assign Dan Devito as Administrator Contact</label>
+        <locationX>50</locationX>
+        <locationY>398</locationY>
+        <assignmentItems>
+            <assignToReference>administratorContactID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>0031a00000jZWgLAAW</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Opp</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Automation_is_true</name>
+        <label>Automation is true</label>
+        <locationX>380</locationX>
+        <locationY>158</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Opp_automation_is_true</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Setup.Automation_On__c.Opportunity__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_3rd_Party_Partner_Independent_Alchemists</targetReference>
+            </connector>
+            <label>Opp automation is true</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks&apos; the 3rd Party Partner value to see if it is Independent Alchemists Master Account</description>
+        <name>Is_3rd_Party_Partner_Independent_Alchemists</name>
+        <label>Is 3rd Party Partner Independent Alchemists</label>
+        <locationX>182</locationX>
+        <locationY>278</locationY>
+        <defaultConnector>
+            <targetReference>Get_Admin_Contact_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Independent_Alchemists_Master_Account</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>X3rdPartyPartner</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Independent Alchemists Master Account</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Dan_Devito_as_Administrator_Contact</targetReference>
+            </connector>
+            <label>Is Independent Alchemists Master Account</label>
+        </rules>
+    </decisions>
+    <description>Adds the Channel Partner Administrator Contact to the Administrator Contact field on an Opportunity. Launched from Automated Process process builder.</description>
+    <interviewLabel>Add Administrator Contact on Opp {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Add Administrator Contact on Opp</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Admin_Contact_0</name>
+        <label>Get Admin Contact</label>
+        <locationX>314</locationX>
+        <locationY>398</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Opp</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Administrator Contact</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ChannelPartnerId</elementReference>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <outputAssignments>
+            <assignToReference>administratorContactID</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Opp</name>
+        <label>Update Opp</label>
+        <locationX>182</locationX>
+        <locationY>614</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OpportunityId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Administrator_Contact__c</field>
+            <value>
+                <elementReference>administratorContactID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Automation_is_true</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Contact record ID for Administrator Contact</description>
+        <name>administratorContactID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ChannelPartnerId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>OpportunityId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>3rd Party Partner</description>
+        <name>X3rdPartyPartner</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

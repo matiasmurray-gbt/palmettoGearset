@@ -1,0 +1,15 @@
+<aura:component controller="CommissionTrackerExportControllerLgtng">
+
+    <aura:attribute name="fromDate" type="Date" default="" />
+    <aura:attribute name="toDate" type="Date" default="" />
+    <aura:attribute name="availableProviders" type="List"   default="" />
+    <aura:attribute name="selectedProviders" type="List"   default="" />
+    <aura:attribute name="availableMilestones" 	type="List"   default="" />
+    <aura:attribute name="selectedMilestones" 	type="List"   default="" />
+    <aura:attribute name="selectedPaidMilestones" type="Boolean" default="false"/>
+    <aura:attribute name="selectedMode" type="String" default="false"/>
+
+    <aura:attribute name="exportData" type="Object[]" access="public"/>
+    <lightning:button label="Export Report" title="Export Report" onclick="{! c.handleExportReport }"/>
+    
+</aura:component>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Yes</fullName>
+        <default>false</default>
+        <label>Yes</label>
+    </customValue>
+    <customValue>
+        <fullName>No</fullName>
+        <default>false</default>
+        <label>No</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Applicable</fullName>
+        <default>false</default>
+        <label>Not Applicable</label>
+    </customValue>
+    <customValue>
+        <fullName>Breaker Tie In</fullName>
+        <default>false</default>
+        <label>Breaker Tie In</label>
+    </customValue>
+    <customValue>
+        <fullName>Breaker Tie In, Main Breaker Downsize</fullName>
+        <default>false</default>
+        <label>Breaker Tie In, Main Breaker Downsize</label>
+    </customValue>
+    <customValue>
+        <fullName>Breaker Tie In, Relocated Loads</fullName>
+        <default>false</default>
+        <label>Breaker Tie In, Relocated Loads</label>
+    </customValue>
+    <customValue>
+        <fullName>Supply Side Tap</fullName>
+        <default>false</default>
+        <label>Supply Side Tap</label>
+    </customValue>
+    <customValue>
+        <fullName>Hoffman Tap</fullName>
+        <default>false</default>
+        <label>Hoffman Tap</label>
+    </customValue>
+    <customValue>
+        <fullName>Load Side Tap</fullName>
+        <default>false</default>
+        <label>Load Side Tap</label>
+    </customValue>
+    <customValue>
+        <fullName>Main Panel Upgrade</fullName>
+        <default>false</default>
+        <label>Main Panel Upgrade</label>
+    </customValue>
+    <masterLabel>Jobs Global Pick List</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

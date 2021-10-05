@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Permits</name>
+    <style>freeForm</style>
+    <subject>Palmetto - Permits</subject>
+    <textOnly>{!Opportunity.Contact__c},
+
+
+Your site has been approved and you should have received the site approval layout! Next, we will focus on receiving any necessary utility, engineering, and permit approvals to install your solar system.
+
+
+
+If you have an HOA, this is also where we will be submitting your application for approval. Most of these entities are outside of our direct control. Therefore, the majority of your project&apos;s timeline will be allocated here.
+
+
+
+Keep in mind that every utility and permitting jurisdiction is different. Some timelines will naturally be longer due to your state, county and utility providers processing capabilities.
+
+
+
+We have an internal team working diligently to receive these approvals as quickly as possible. Please remember to contact us through your Palmetto Home app chat feature or call us if you have any questions.
+
+
+
+Thank you,
+
+Palmetto Customer Care
+
+855-339-1831
+
+
+customercare@palmetto.com
+
+
+
+
+Palmetto Solar LLC | 1505 King Street Ext #114|Charleston, SC 29408 |8431844 |www.palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

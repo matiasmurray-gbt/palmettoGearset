@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Construction_Case_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Construction Case Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Failed Inspections</fullName>
+                <default>false</default>
+                <label>Failed Inspections</label>
+            </value>
+            <value>
+                <fullName>Workmanship Failures</fullName>
+                <default>false</default>
+                <label>Workmanship Failures</label>
+            </value>
+            <value>
+                <fullName>Home Repair</fullName>
+                <default>false</default>
+                <label>Home Repair</label>
+            </value>
+            <value>
+                <fullName>Customer Complaints</fullName>
+                <default>false</default>
+                <label>Customer Complaints</label>
+            </value>
+            <value>
+                <fullName>Metal Roofs</fullName>
+                <default>false</default>
+                <label>Metal Roofs</label>
+            </value>
+            <value>
+                <fullName>Ground Mounts</fullName>
+                <default>false</default>
+                <label>Ground Mounts</label>
+            </value>
+            <value>
+                <fullName>Trenching</fullName>
+                <default>false</default>
+                <label>Trenching</label>
+            </value>
+            <value>
+                <fullName>Rafter Upgrades</fullName>
+                <default>false</default>
+                <label>Rafter Upgrades</label>
+            </value>
+            <value>
+                <fullName>M.P.U.</fullName>
+                <default>false</default>
+                <label>M.P.U.</label>
+            </value>
+            <value>
+                <fullName>Past Due Completion</fullName>
+                <default>false</default>
+                <label>Past Due Completion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

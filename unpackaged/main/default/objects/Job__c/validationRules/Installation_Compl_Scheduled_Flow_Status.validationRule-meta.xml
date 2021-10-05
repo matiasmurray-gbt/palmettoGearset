@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Installation_Compl_Scheduled_Flow_Status</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( $RecordType.Name = "Installation Scheduling" , (
+ISPICKVAL( Flow_Status__c, 'Installation Completion Scheduled' )
+&amp;&amp;
+(ISBLANK( Installation_Reschedule_End_Date__c ) || ISBLANK( Installation_Completion_Start_Date__c ) )))</errorConditionFormula>
+    <errorMessage>The following fields need to be filled for Installation Completion Scheduled Flow status: Installation Reschedule End Date and Installation Completion Start Date</errorMessage>
+</ValidationRule>

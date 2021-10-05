@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X05_Doc_Review_Fire_Drill</fullName>
+    <booleanFilter>1 AND 4 and  (2 OR 3)</booleanFilter>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>State__c</columns>
+    <columns>Description__c</columns>
+    <columns>Scope_Trademarks__c</columns>
+    <columns>Service_Territory__c</columns>
+    <columns>Vendor_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage__c</field>
+        <operation>notEqual</operation>
+        <value>Do not Schedule,Off Boarded,Unqualified,Not Interested,Do Not Contact</value>
+    </filters>
+    <filters>
+        <field>State__c</field>
+        <operation>equals</operation>
+        <value>Connecticut</value>
+    </filters>
+    <filters>
+        <field>Service_Territory__c</field>
+        <operation>includes</operation>
+        <value>Connecticut</value>
+    </filters>
+    <filters>
+        <field>Scope_Trademarks__c</field>
+        <operation>includes</operation>
+        <value>PV Installation</value>
+    </filters>
+    <label>05. Doc Review Fire Drill</label>
+</ListView>

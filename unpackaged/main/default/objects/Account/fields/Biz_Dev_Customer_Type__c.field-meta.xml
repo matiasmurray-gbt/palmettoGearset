@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Biz_Dev_Customer_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Biz Dev Customer Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer - Major Account</fullName>
+                <default>false</default>
+                <label>Customer - Major Account</label>
+            </value>
+            <value>
+                <fullName>Investor - Esoteric (i.e. EB5, etc.)</fullName>
+                <default>false</default>
+                <label>Investor - Esoteric (i.e. EB5, etc.)</label>
+            </value>
+            <value>
+                <fullName>Investor - HNWI</fullName>
+                <default>false</default>
+                <label>Investor - HNWI</label>
+            </value>
+            <value>
+                <fullName>Investor - Institutional</fullName>
+                <default>false</default>
+                <label>Investor - Institutional</label>
+            </value>
+            <value>
+                <fullName>Investor - MFO</fullName>
+                <default>false</default>
+                <label>Investor - MFO</label>
+            </value>
+            <value>
+                <fullName>Investor - PE</fullName>
+                <default>false</default>
+                <label>Investor - PE</label>
+            </value>
+            <value>
+                <fullName>Investor - Private Credit Financing</fullName>
+                <default>false</default>
+                <label>Investor - Private Credit Financing</label>
+            </value>
+            <value>
+                <fullName>Investor - SFO</fullName>
+                <default>false</default>
+                <label>Investor - SFO</label>
+            </value>
+            <value>
+                <fullName>Investor - VC</fullName>
+                <default>false</default>
+                <label>Investor - VC</label>
+            </value>
+            <value>
+                <fullName>Lender - IB</fullName>
+                <default>false</default>
+                <label>Lender - IB</label>
+            </value>
+            <value>
+                <fullName>Lender - Mid-Market/Other</fullName>
+                <default>false</default>
+                <label>Lender - Mid-Market/Other</label>
+            </value>
+            <value>
+                <fullName>Lender - Regional Bank</fullName>
+                <default>false</default>
+                <label>Lender - Regional Bank</label>
+            </value>
+            <value>
+                <fullName>Partner - Advisor</fullName>
+                <default>false</default>
+                <label>Partner - Advisor</label>
+            </value>
+            <value>
+                <fullName>Partner - Alchemist</fullName>
+                <default>false</default>
+                <label>Partner - Alchemist</label>
+            </value>
+            <value>
+                <fullName>Partner - Ambassador</fullName>
+                <default>false</default>
+                <label>Partner - Ambassador</label>
+            </value>
+            <value>
+                <fullName>Partner - Build</fullName>
+                <default>false</default>
+                <label>Partner - Build</label>
+            </value>
+            <value>
+                <fullName>Partner - Channel</fullName>
+                <default>false</default>
+                <label>Partner - Channel</label>
+            </value>
+            <value>
+                <fullName>Partner - Community Lead</fullName>
+                <default>false</default>
+                <label>Partner - Community Lead</label>
+            </value>
+            <value>
+                <fullName>Partner - Deal Source</fullName>
+                <default>false</default>
+                <label>Partner - Deal Source</label>
+            </value>
+            <value>
+                <fullName>Partner - Distribution</fullName>
+                <default>false</default>
+                <label>Partner - Distribution</label>
+            </value>
+            <value>
+                <fullName>Service - Accountant</fullName>
+                <default>false</default>
+                <label>Service - Accountant</label>
+            </value>
+            <value>
+                <fullName>Service - Broker</fullName>
+                <default>false</default>
+                <label>Service - Broker</label>
+            </value>
+            <value>
+                <fullName>Service - Lawyer</fullName>
+                <default>false</default>
+                <label>Service - Lawyer</label>
+            </value>
+            <value>
+                <fullName>Service - Private wealth advisor</fullName>
+                <default>false</default>
+                <label>Service - Private wealth advisor</label>
+            </value>
+            <value>
+                <fullName>Service - Tech Product Add</fullName>
+                <default>false</default>
+                <label>Service - Tech Product Add</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Utility_Rec_d_Permit_NM_Install_Sched__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <label>Utility Rec'd Meter Release</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

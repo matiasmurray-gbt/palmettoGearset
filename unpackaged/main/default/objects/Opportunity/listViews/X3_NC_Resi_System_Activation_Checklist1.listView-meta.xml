@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3_NC_Resi_System_Activation_Checklist1</fullName>
+    <booleanFilter>1 AND ((2 AND 4) OR 6) AND 3  AND 5</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Utility__c</columns>
+    <columns>Permitting_Jurisdiction__c</columns>
+    <columns>Inspection_Completed_Date__c</columns>
+    <columns>Inspection_Complete_Date__c</columns>
+    <columns>Utility_Rec_d_Permit_NM_Install_Sched__c</columns>
+    <columns>PTO_Net_Meter_Installed__c</columns>
+    <columns>System_Activation_Section_Notes__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer,Integrated Palmetto Property</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>18. Installation,19. Closed Won,21. Inspection Complete</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>equals</operation>
+        <value>North Carolina</value>
+    </filters>
+    <filters>
+        <field>Inspection_Comp_Permit_Closed__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>PTO_Net_Meter_Installed__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>21. Inspection Complete</value>
+    </filters>
+    <label>3.20 NC PTO Checklist</label>
+    <sharedTo>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_MA</role>
+        <role>Project_Coordinator_SC</role>
+        <role>Project_Manager_FL</role>
+        <role>Project_Manager_SC</role>
+    </sharedTo>
+</ListView>

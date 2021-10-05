@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Build_Partner_Contact_Info_Form__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <label>New Build Partner Contact Info Form</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

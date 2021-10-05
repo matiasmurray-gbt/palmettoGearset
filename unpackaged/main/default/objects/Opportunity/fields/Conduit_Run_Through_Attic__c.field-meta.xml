@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conduit_Run_Through_Attic__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>Conduit run through attic is a $500 adder plus $200 per floor above the first.</inlineHelpText>
+    <label>Conduit Run Through Attic</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

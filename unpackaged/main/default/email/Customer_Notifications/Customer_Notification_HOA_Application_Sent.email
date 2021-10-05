@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Hello&nbsp;{!Opportunity.Contact__c},<div><br></div><div>Today,&nbsp;{!Opportunity.HOA_Application_Sent_Date__c}, the application to your HOA was submitted.&nbsp;{!Opportunity.HOA_Name__c} has 30-60 days to come to a decision in regards to your solar installation project. During this time span, please be on the lookout for your approval letter from your HOA.</div><div><br></div><div>If we sent you an individual request to submit the application to your HOA personally, you should find that message and the appropriate forwarding information in your inbox. Please submit that to the HOA as soon as possible in order to get approval back in a timely manner.</div><div><br></div><div>Upon receipt of the approval letter, please forward it to us for our records.</div><div><br></div><div>If you have any questions please reach out to our Palmetto Customer Care team at 843-720-1844.</div><div><br></div><div>Regards,</div><div>Palmetto</div>]]></td>
+</tr>
+</table>

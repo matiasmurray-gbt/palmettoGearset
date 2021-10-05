@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ToSaveANewCase</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL( Status , 'New')  &amp;&amp; (AND( $RecordType.Name = "Installation Call Off",(
+ISBLANK( Design_Electrical__c) &amp;&amp; ISBLANK(Design_Layout__c ) &amp;&amp; ISBLANK( Design_Other__c ) &amp;&amp; ISBLANK( Design_Structural__c ) &amp;&amp; ISBLANK( HOA_Issues__c ) &amp;&amp; ISBLANK( Homeowner_Expectations__c ) &amp;&amp; ISBLANK( Homeowner_Obligation_Electrical__c ) &amp;&amp; ISBLANK( Homeowner_Obligation_Roof__c ) &amp;&amp; ISBLANK( Homeowner_Obligation_Site_Condition__c ) &amp;&amp; ISBLANK( Homeowner_Obligation_Tree__c ) &amp;&amp; ISBLANK( Poor_Roof_Conditions__c ) &amp;&amp; ISBLANK( Weather__c ) &amp;&amp; ISBLANK( Inventory__c ))))</errorConditionFormula>
+    <errorMessage>Select atleast one field from the 'Installation Call of Reason' section in order to save the record</errorMessage>
+</ValidationRule>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Call_Sub_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Service Call  Sub-Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Service_Call_Reason_1__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Under-Performance</fullName>
+                <default>false</default>
+                <label>Under-Performance</label>
+            </value>
+            <value>
+                <fullName>Design Assessment</fullName>
+                <default>false</default>
+                <label>Design Assessment</label>
+            </value>
+            <value>
+                <fullName>System Activation</fullName>
+                <default>false</default>
+                <label>System Activation</label>
+            </value>
+            <value>
+                <fullName>No Data</fullName>
+                <default>false</default>
+                <label>No Data</label>
+            </value>
+            <value>
+                <fullName>No Production</fullName>
+                <default>false</default>
+                <label>No Production</label>
+            </value>
+            <value>
+                <fullName>Error Code</fullName>
+                <default>false</default>
+                <label>Error Code</label>
+            </value>
+            <value>
+                <fullName>RMA</fullName>
+                <default>false</default>
+                <label>RMA</label>
+            </value>
+            <value>
+                <fullName>Optimizer Replacement</fullName>
+                <default>false</default>
+                <label>Optimizer Replacement</label>
+            </value>
+            <value>
+                <fullName>String Failure</fullName>
+                <default>false</default>
+                <label>String Failure</label>
+            </value>
+            <value>
+                <fullName>Critter Guard Upsell</fullName>
+                <default>false</default>
+                <label>Critter Guard Upsell</label>
+            </value>
+            <value>
+                <fullName>System Damage from Pest</fullName>
+                <default>false</default>
+                <label>System Damage from Pest</label>
+            </value>
+            <value>
+                <fullName>Leak Inspection</fullName>
+                <default>false</default>
+                <label>Leak Inspection</label>
+            </value>
+            <value>
+                <fullName>Roof Leak Repair</fullName>
+                <default>false</default>
+                <label>Roof Leak Repair</label>
+            </value>
+            <value>
+                <fullName>Installer Damage</fullName>
+                <default>false</default>
+                <label>Installer Damage</label>
+            </value>
+            <value>
+                <fullName>Module Damage</fullName>
+                <default>false</default>
+                <label>Module Damage</label>
+            </value>
+            <value>
+                <fullName>Weather Damage</fullName>
+                <default>false</default>
+                <label>Weather Damage</label>
+            </value>
+            <value>
+                <fullName>Pest Damage</fullName>
+                <default>false</default>
+                <label>Pest Damage</label>
+            </value>
+            <value>
+                <fullName>Inspection Fail</fullName>
+                <default>false</default>
+                <label>Inspection Fail</label>
+            </value>
+            <value>
+                <fullName>Closeout Punchlist</fullName>
+                <default>false</default>
+                <label>Closeout Punchlist</label>
+            </value>
+            <value>
+                <fullName>Meter Issue</fullName>
+                <default>false</default>
+                <label>Meter Issue</label>
+            </value>
+            <value>
+                <fullName>Monitor Issue</fullName>
+                <default>false</default>
+                <label>Monitor Issue</label>
+            </value>
+            <value>
+                <fullName>Module Addition</fullName>
+                <default>false</default>
+                <label>Module Addition</label>
+            </value>
+            <value>
+                <fullName>Inverter Upgrade</fullName>
+                <default>false</default>
+                <label>Inverter Upgrade</label>
+            </value>
+            <value>
+                <fullName>Monitoring Device</fullName>
+                <default>false</default>
+                <label>Monitoring Device</label>
+            </value>
+            <value>
+                <fullName>Smart Devices</fullName>
+                <default>false</default>
+                <label>Smart Devices</label>
+            </value>
+            <value>
+                <fullName>Removal</fullName>
+                <default>false</default>
+                <label>Removal</label>
+            </value>
+            <value>
+                <fullName>Reinstallation</fullName>
+                <default>false</default>
+                <label>Reinstallation</label>
+            </value>
+            <value>
+                <fullName>Removal &amp; Reinstallation</fullName>
+                <default>false</default>
+                <label>Removal &amp; Reinstallation</label>
+            </value>
+            <value>
+                <fullName>Conduit and Inverter Removal</fullName>
+                <default>false</default>
+                <label>Conduit and Inverter Removal</label>
+            </value>
+            <value>
+                <fullName>Panel Cleaning</fullName>
+                <default>false</default>
+                <label>Panel Cleaning</label>
+            </value>
+            <value>
+                <fullName>Full Inspection</fullName>
+                <default>false</default>
+                <label>Full Inspection</label>
+            </value>
+            <value>
+                <fullName>Visual Inspection</fullName>
+                <default>false</default>
+                <label>Visual Inspection</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Production</controllingFieldValue>
+            <valueName>Under-Performance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Production</controllingFieldValue>
+            <valueName>Design Assessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Communication</controllingFieldValue>
+            <valueName>System Activation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Communication</controllingFieldValue>
+            <valueName>No Data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inverter Alert</controllingFieldValue>
+            <valueName>No Production</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inverter Alert</controllingFieldValue>
+            <valueName>Error Code</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inverter Alert</controllingFieldValue>
+            <valueName>RMA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Module Alert</controllingFieldValue>
+            <valueName>Optimizer Replacement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Module Alert</controllingFieldValue>
+            <valueName>String Failure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pest Abatement</controllingFieldValue>
+            <valueName>Critter Guard Upsell</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pest Abatement</controllingFieldValue>
+            <valueName>System Damage from Pest</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection</controllingFieldValue>
+            <valueName>Inspection Fail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Closeout</controllingFieldValue>
+            <valueName>Closeout Punchlist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter / Monitoring Issue</controllingFieldValue>
+            <valueName>Meter Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter / Monitoring Issue</controllingFieldValue>
+            <valueName>Monitor Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>System Upgrade</controllingFieldValue>
+            <valueName>Module Addition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>System Upgrade</controllingFieldValue>
+            <valueName>Inverter Upgrade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>System Upgrade</controllingFieldValue>
+            <valueName>Monitoring Device</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>System Upgrade</controllingFieldValue>
+            <valueName>Smart Devices</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <valueName>Installer Damage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <valueName>Module Damage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <valueName>Weather Damage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <valueName>Pest Damage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Removal &amp; Reinstall</controllingFieldValue>
+            <valueName>Removal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Removal &amp; Reinstall</controllingFieldValue>
+            <valueName>Reinstallation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Removal &amp; Reinstall</controllingFieldValue>
+            <valueName>Removal &amp; Reinstallation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Removal &amp; Reinstall</controllingFieldValue>
+            <valueName>Conduit and Inverter Removal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Roof Leak</controllingFieldValue>
+            <valueName>Leak Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Roof Leak</controllingFieldValue>
+            <valueName>Roof Leak Repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preventative Maintenance</controllingFieldValue>
+            <valueName>Panel Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preventative Maintenance</controllingFieldValue>
+            <valueName>Full Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preventative Maintenance</controllingFieldValue>
+            <valueName>Visual Inspection</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

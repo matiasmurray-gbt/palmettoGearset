@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sunlight_2_99_APR_Dealer_Fee_Products</fullName>
+    <columns>Active_Status__c</columns>
+    <columns>NAME</columns>
+    <columns>Financing_Tool__c</columns>
+    <columns>Loan_Term__c</columns>
+    <columns>APR__c</columns>
+    <columns>Classification__c</columns>
+    <columns>Dealer_Fee_Rate__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>End_Date__c</columns>
+    <columns>Channel_Partner__c</columns>
+    <columns>State__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Financing_Tool__c</field>
+        <operation>equals</operation>
+        <value>Sunlight</value>
+    </filters>
+    <filters>
+        <field>Classification__c</field>
+        <operation>equals</operation>
+        <value>Internal</value>
+    </filters>
+    <filters>
+        <field>APR__c</field>
+        <operation>equals</operation>
+        <value>2.99%</value>
+    </filters>
+    <filters>
+        <field>Loan_Term__c</field>
+        <operation>equals</operation>
+        <value>20</value>
+    </filters>
+    <label>Sunlight 2.99% APR Dealer Fee Products</label>
+    <sharedTo>
+        <role>Accounting</role>
+        <role>Operations_Manager</role>
+    </sharedTo>
+</ListView>

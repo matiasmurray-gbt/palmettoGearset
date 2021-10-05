@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Install_Completed_Mandatory</fullName>
+    <active>false</active>
+    <errorConditionFormula>RecordType.Name == '3rd Party - Design Sales' &amp;&amp; ISCHANGED(StageName) &amp;&amp;  (Install_Completed__c = False  || ISBLANK( Installation_Complete_Date__c )) &amp;&amp;
+(TEXT(StageName) == '20. Inspection Scheduled' || TEXT(StageName) == '21. Inspection Complete' || TEXT(StageName) == '22. PTO')</errorConditionFormula>
+    <errorDisplayField>Installation_Complete__c</errorDisplayField>
+    <errorMessage>Projects cannot be moved to stage 20, 21, or 22 unless they have previously touched stage “19. Install Completed” at some point.</errorMessage>
+</ValidationRule>

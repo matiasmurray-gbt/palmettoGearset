@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>Palmetto Property Contacts</name>
+    <style>freeForm</style>
+    <subject>Palmetto Property Contact Info.</subject>
+    <textOnly>Dear Tenant,
+
+Your point of contact for rent payment has changed.  Please contact the following...
+
+Suzanne Woolever
+Email: suzanne.woolever@palmetto.com
+Phone: 854-999-1803
+
+Katherine Morales
+Email: katherine.morales@palmetto.com
+Phone: 854-999-1784
+
+You can pay your rent two different ways.
+
+1) Mail Certified Funds to:
+Palmetto Property Management
+PO Box 22615
+Charleston, SC 29413
+
+2) Pay with credit card or bank account online through the tenant portal:
+
+www.gopalmettoproperty.com
+
+Thank you</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

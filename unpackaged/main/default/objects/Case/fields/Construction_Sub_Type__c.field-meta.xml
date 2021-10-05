@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Construction_Sub_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Construction Sub Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Construction_Case_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AC tie in</fullName>
+                <default>false</default>
+                <label>AC tie in</label>
+            </value>
+            <value>
+                <fullName>Best practices (catch all)</fullName>
+                <default>false</default>
+                <label>Best practices (catch all)</label>
+            </value>
+            <value>
+                <fullName>Clearances</fullName>
+                <default>false</default>
+                <label>Clearances</label>
+            </value>
+            <value>
+                <fullName>Commissioning</fullName>
+                <default>false</default>
+                <label>Commissioning</label>
+            </value>
+            <value>
+                <fullName>Communication</fullName>
+                <default>false</default>
+                <label>Communication</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Corrugated</fullName>
+                <default>false</default>
+                <label>Corrugated</label>
+            </value>
+            <value>
+                <fullName>DC wire pull</fullName>
+                <default>false</default>
+                <label>DC wire pull</label>
+            </value>
+            <value>
+                <fullName>Debris</fullName>
+                <default>false</default>
+                <label>Debris</label>
+            </value>
+            <value>
+                <fullName>Designed</fullName>
+                <default>false</default>
+                <label>Designed</label>
+            </value>
+            <value>
+                <fullName>Dig safe</fullName>
+                <default>false</default>
+                <label>Dig safe</label>
+            </value>
+            <value>
+                <fullName>Drywall</fullName>
+                <default>false</default>
+                <label>Drywall</label>
+            </value>
+            <value>
+                <fullName>Electrical</fullName>
+                <default>false</default>
+                <label>Electrical</label>
+            </value>
+            <value>
+                <fullName>Electrical layout</fullName>
+                <default>false</default>
+                <label>Electrical layout</label>
+            </value>
+            <value>
+                <fullName>Field BOM change</fullName>
+                <default>false</default>
+                <label>Field BOM change</label>
+            </value>
+            <value>
+                <fullName>Field design change</fullName>
+                <default>false</default>
+                <label>Field design change</label>
+            </value>
+            <value>
+                <fullName>Fire set back</fullName>
+                <default>false</default>
+                <label>Fire set back</label>
+            </value>
+            <value>
+                <fullName>Furniture</fullName>
+                <default>false</default>
+                <label>Furniture</label>
+            </value>
+            <value>
+                <fullName>Ground Fault</fullName>
+                <default>false</default>
+                <label>Ground Fault</label>
+            </value>
+            <value>
+                <fullName>Gutter</fullName>
+                <default>false</default>
+                <label>Gutter</label>
+            </value>
+            <value>
+                <fullName>Isolation Leak</fullName>
+                <default>false</default>
+                <label>Isolation Leak</label>
+            </value>
+            <value>
+                <fullName>Landscaping</fullName>
+                <default>false</default>
+                <label>Landscaping</label>
+            </value>
+            <value>
+                <fullName>Paperwork</fullName>
+                <default>false</default>
+                <label>Paperwork</label>
+            </value>
+            <value>
+                <fullName>Permitted</fullName>
+                <default>false</default>
+                <label>Permitted</label>
+            </value>
+            <value>
+                <fullName>Pictures</fullName>
+                <default>false</default>
+                <label>Pictures</label>
+            </value>
+            <value>
+                <fullName>Planning\Material</fullName>
+                <default>false</default>
+                <label>Planning\Material</label>
+            </value>
+            <value>
+                <fullName>Racked</fullName>
+                <default>false</default>
+                <label>Racked</label>
+            </value>
+            <value>
+                <fullName>Ridge Cap</fullName>
+                <default>false</default>
+                <label>Ridge Cap</label>
+            </value>
+            <value>
+                <fullName>Rip &amp; Replace</fullName>
+                <default>false</default>
+                <label>Rip &amp; Replace</label>
+            </value>
+            <value>
+                <fullName>RMA</fullName>
+                <default>false</default>
+                <label>RMA</label>
+            </value>
+            <value>
+                <fullName>Roof layout</fullName>
+                <default>false</default>
+                <label>Roof layout</label>
+            </value>
+            <value>
+                <fullName>Roof Leak</fullName>
+                <default>false</default>
+                <label>Roof Leak</label>
+            </value>
+            <value>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+                <label>Scheduled</label>
+            </value>
+            <value>
+                <fullName>Siding</fullName>
+                <default>false</default>
+                <label>Siding</label>
+            </value>
+            <value>
+                <fullName>Staked out</fullName>
+                <default>false</default>
+                <label>Staked out</label>
+            </value>
+            <value>
+                <fullName>Standing seam</fullName>
+                <default>false</default>
+                <label>Standing seam</label>
+            </value>
+            <value>
+                <fullName>Stickers</fullName>
+                <default>false</default>
+                <label>Stickers</label>
+            </value>
+            <value>
+                <fullName>Surveyed</fullName>
+                <default>false</default>
+                <label>Surveyed</label>
+            </value>
+            <value>
+                <fullName>Trencher</fullName>
+                <default>false</default>
+                <label>Trencher</label>
+            </value>
+            <value>
+                <fullName>Water intrusion</fullName>
+                <default>false</default>
+                <label>Water intrusion</label>
+            </value>
+            <value>
+                <fullName>Wire management</fullName>
+                <default>false</default>
+                <label>Wire management</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Failed Inspections</controllingFieldValue>
+            <valueName>Clearances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Failed Inspections</controllingFieldValue>
+            <valueName>Electrical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Failed Inspections</controllingFieldValue>
+            <valueName>Fire set back</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Failed Inspections</controllingFieldValue>
+            <valueName>Paperwork</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Failed Inspections</controllingFieldValue>
+            <valueName>Stickers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Workmanship Failures</controllingFieldValue>
+            <valueName>Best practices (catch all)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Workmanship Failures</controllingFieldValue>
+            <valueName>Field BOM change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Workmanship Failures</controllingFieldValue>
+            <valueName>Field design change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Workmanship Failures</controllingFieldValue>
+            <valueName>Isolation Leak</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Workmanship Failures</controllingFieldValue>
+            <valueName>Rip &amp; Replace</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Workmanship Failures</controllingFieldValue>
+            <valueName>Roof Leak</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Workmanship Failures</controllingFieldValue>
+            <valueName>Water intrusion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Workmanship Failures</controllingFieldValue>
+            <valueName>Wire management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Repair</controllingFieldValue>
+            <valueName>Drywall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Repair</controllingFieldValue>
+            <valueName>Furniture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Repair</controllingFieldValue>
+            <valueName>Gutter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Repair</controllingFieldValue>
+            <valueName>Landscaping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Repair</controllingFieldValue>
+            <valueName>Ridge Cap</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Repair</controllingFieldValue>
+            <valueName>Siding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Complaints</controllingFieldValue>
+            <valueName>Communication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Complaints</controllingFieldValue>
+            <valueName>Debris</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Complaints</controllingFieldValue>
+            <valueName>Electrical layout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Complaints</controllingFieldValue>
+            <valueName>Roof layout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metal Roofs</controllingFieldValue>
+            <valueName>Corrugated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metal Roofs</controllingFieldValue>
+            <valueName>Standing seam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ground Mounts</controllingFieldValue>
+            <valueName>Designed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ground Mounts</controllingFieldValue>
+            <valueName>Permitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ground Mounts</controllingFieldValue>
+            <valueName>Racked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ground Mounts</controllingFieldValue>
+            <valueName>Staked out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trenching</controllingFieldValue>
+            <valueName>Dig safe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trenching</controllingFieldValue>
+            <valueName>Surveyed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trenching</controllingFieldValue>
+            <valueName>Trencher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rafter Upgrades</controllingFieldValue>
+            <controllingFieldValue>M.P.U.</controllingFieldValue>
+            <valueName>Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rafter Upgrades</controllingFieldValue>
+            <controllingFieldValue>M.P.U.</controllingFieldValue>
+            <valueName>Planning\Material</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rafter Upgrades</controllingFieldValue>
+            <controllingFieldValue>M.P.U.</controllingFieldValue>
+            <valueName>Scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Past Due Completion</controllingFieldValue>
+            <valueName>AC tie in</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Past Due Completion</controllingFieldValue>
+            <valueName>Commissioning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Past Due Completion</controllingFieldValue>
+            <valueName>DC wire pull</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Past Due Completion</controllingFieldValue>
+            <valueName>Pictures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Past Due Completion</controllingFieldValue>
+            <valueName>RMA</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

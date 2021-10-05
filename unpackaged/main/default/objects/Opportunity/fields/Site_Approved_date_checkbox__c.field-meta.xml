@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Site_Approved_date_checkbox__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>this field is to prevent the workflow rule to update the site approved date field every time the stage is moved from/to Site approved.</description>
+    <externalId>false</externalId>
+    <label>Site Approved date checkbox</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

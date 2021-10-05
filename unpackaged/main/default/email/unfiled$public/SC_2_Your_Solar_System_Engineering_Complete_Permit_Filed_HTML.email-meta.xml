@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Palmetto_Email_Template_Header_Footer</letterhead>
+    <name>SC - 2 Your Solar System - Engineering Complete - Permit Filed HTML</name>
+    <style>freeForm</style>
+    <subject>Your Solar System - Engineer&apos;s Plans Complete/Permit Filed</subject>
+    <textOnly>Hello {!Opportunity.Contact__c},
+
+We wanted to let you know that we have completed the final engineer&apos;s plans for your solar system &amp; have submitted the plans &amp; permit applications to the local permitting jurisdiction.
+
+Generally this process can take between 3-5 weeks, this all depends on speed in which the building permit offices process your permit request from Palmetto.
+
+Please bear with us as we wait for these approvals from the local jurisdiction.
+
+The next steps include:
+
+1) Permit Approvals
+2) HOA Approvals (if necessary)
+3) Interconnection Approvals
+4) Equipment Ready
+5) Installation Scheduling
+6) Installation
+
+As soon as we hear back on all of these approvals we will be reaching out to schedule the date for your system installation.
+
+As always feel free to reach out to us if you have any questions along the way.
+
+
+
+Thank You,
+
+Palmetto™ Customer Care Team
+Office: 843-720-1844
+Main: 855-339-1831
+Email: customer.care@palmetto.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

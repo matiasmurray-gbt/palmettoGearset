@@ -1,0 +1,12 @@
+This project has moved into change order pending.
+
+Change Order Reason: {!Opportunity.Change_Order_Reason__c} 
+3rd Party Partner: {!Opportunity.X3rd_Party_Partner__c}
+Change Order Notes: 
+{!Opportunity.Installation_Field_Error_Notes__c}
+
+Thanks,
+
+Palmetto Team
+
+{!Opportunity.Link}

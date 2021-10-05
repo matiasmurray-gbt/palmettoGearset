@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business Development</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>A-Prospect</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>B-Early Discussion</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>C-Advanced Discussion</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>D-Partner Document Collection</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>E-Training Assigned</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>F-Contract Won</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>G-Contract Lost</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2_1_MI_Install_Ready</fullName>
+    <booleanFilter>1 AND (2 OR 4) AND 3 AND 5</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>System_Size_Calculated_kW__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Days_Since_Contract_Received__c</columns>
+    <columns>Customer_Type__c</columns>
+    <columns>Sub_Market__c</columns>
+    <columns>Permitting_Jurisdiction__c</columns>
+    <columns>Contract_Signed_Date__c</columns>
+    <columns>Permit_Ready_Date__c</columns>
+    <columns>Permit_Rec_d_Date__c</columns>
+    <columns>Installation_Start_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Residential - Customer,Sunrun Installation,Integrated Palmetto Property</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>17. Install Ready,13. Engineering Design Complete</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>equals</operation>
+        <value>Michigan</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>14. Permit Sent,15. Permit Ready,16. Permit Received</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>test</value>
+    </filters>
+    <label>2.1 MI Install Ready</label>
+    <sharedTo>
+        <role>Operations_Manager</role>
+        <role>Project_Coordinator_MA</role>
+        <role>Project_Manager_FL</role>
+    </sharedTo>
+</ListView>

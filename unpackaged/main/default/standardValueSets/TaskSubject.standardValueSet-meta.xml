@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Call - Welcome call</fullName>
+        <default>false</default>
+        <label>Call - Welcome call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - Site Approved</fullName>
+        <default>false</default>
+        <label>Call - Site Approved</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - Engineering Sent</fullName>
+        <default>false</default>
+        <label>Call - Engineering Sent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - Engineering Approved</fullName>
+        <default>false</default>
+        <label>Call - Engineering Approved</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - Permit Sent</fullName>
+        <default>false</default>
+        <label>Call - Permit Sent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - Permit Approved</fullName>
+        <default>false</default>
+        <label>Call - Permit Approved</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - Install schedule</fullName>
+        <default>false</default>
+        <label>Call - Install schedule</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - Install complete</fullName>
+        <default>false</default>
+        <label>Call - Install complete</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - Install update/reschedule</fullName>
+        <default>false</default>
+        <label>Call - Install update/reschedule</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - Install complete/ Loan Doc</fullName>
+        <default>false</default>
+        <label>Call - Install complete/ Loan Doc</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - Inspection Schedule/Reschedule</fullName>
+        <default>false</default>
+        <label>Call - Inspection Schedule/Reschedule</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - Inspection Complete</fullName>
+        <default>false</default>
+        <label>Call - Inspection Complete</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - PTO</fullName>
+        <default>false</default>
+        <label>Call - PTO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - Service Call Schedule</fullName>
+        <default>false</default>
+        <label>Call - Service Call Schedule</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - Update/ Follow up</fullName>
+        <default>false</default>
+        <label>Call - Update/ Follow up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - QT Call</fullName>
+        <default>false</default>
+        <label>Call - QT Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - Signature Needed</fullName>
+        <default>false</default>
+        <label>Call - Signature Needed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - HOA Info needed</fullName>
+        <default>false</default>
+        <label>Call - HOA Info needed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - Documents Needed</fullName>
+        <default>false</default>
+        <label>Call - Documents Needed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call - ICA</fullName>
+        <default>false</default>
+        <label>Call - ICA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inbound Call</fullName>
+        <default>false</default>
+        <label>Inbound Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Follow up call</fullName>
+        <default>false</default>
+        <label>Follow up call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call</fullName>
+        <default>false</default>
+        <label>Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Letter</fullName>
+        <default>false</default>
+        <label>Send Letter</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Quote</fullName>
+        <default>false</default>
+        <label>Send Quote</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Touchpoint call</fullName>
+        <default>false</default>
+        <label>Touchpoint call</label>
+    </standardValue>
+</StandardValueSet>

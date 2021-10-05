@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Save_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Project Save Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Called, confirmed lost</fullName>
+                <default>false</default>
+                <label>Called, confirmed lost</label>
+            </value>
+            <value>
+                <fullName>Called, High Interest - Now</fullName>
+                <default>false</default>
+                <label>Called, High Interest - Now</label>
+            </value>
+            <value>
+                <fullName>Called, No Response</fullName>
+                <default>false</default>
+                <label>Called, No Response</label>
+            </value>
+            <value>
+                <fullName>Called, Some interest - Long Term</fullName>
+                <default>false</default>
+                <label>Called, Some interest - Long Term</label>
+            </value>
+            <value>
+                <fullName>Lost, no call necessary</fullName>
+                <default>false</default>
+                <label>Lost, no call necessary</label>
+            </value>
+            <value>
+                <fullName>Saved, given to Palmetto</fullName>
+                <default>false</default>
+                <label>Saved, given to Palmetto</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interconnection_Kickback_Flow_Status</fullName>
+    <active>true</active>
+    <description>When a job gets moved to Kickback Flow Status and if an Interconnection Kickback Reason is not selected, then the job update can not be saved</description>
+    <errorConditionFormula>AND( $RecordType.Name = "Interconnection" , (
+ISPICKVAL( Flow_Status__c, 'Kickback' )
+&amp;&amp;
+ ISBLANK((Interconnection_Kickback_Reasons__c))
+))</errorConditionFormula>
+    <errorMessage>Interconnection Kickback Reason cannot be blank</errorMessage>
+</ValidationRule>

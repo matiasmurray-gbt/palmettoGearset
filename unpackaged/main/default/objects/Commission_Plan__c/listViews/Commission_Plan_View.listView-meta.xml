@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commission_Plan_View</fullName>
+    <columns>Commission_Plan_Status__c</columns>
+    <columns>Channel_Partner_Account__c</columns>
+    <columns>X3rd_Party_Partner__c</columns>
+    <columns>NAME</columns>
+    <columns>X5kW__c</columns>
+    <columns>X5K__c</columns>
+    <columns>Location__c</columns>
+    <columns>Dealer_Fee_Price_Match_Active__c</columns>
+    <columns>Milestone_1_Percent__c</columns>
+    <columns>Milestone_2_Percent__c</columns>
+    <columns>Milestone_3_Percent__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>Commission Plans Detail View</label>
+    <sharedTo>
+        <role>Business_Development</role>
+    </sharedTo>
+</ListView>

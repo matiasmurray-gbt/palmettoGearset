@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Escalation Process</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Closed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Negotiating with Customer</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>New</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Pending Follow Up - internal</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending Follow up - HO</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

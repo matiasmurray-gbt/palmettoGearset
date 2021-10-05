@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>COP_Email</fullName>
+        <description>COP Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Opp_admin_contact__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>cop@palmetto.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Emails/COP_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Change_Order_Case</fullName>
+        <description>New Change Order Case</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Opp_admin_contact__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Sales_Rep_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>cop@palmetto.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Emails/New_Change_Order_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Retension_Case_Opened</fullName>
+        <description>New Retension Case Opened</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Opp_admin_contact__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Sales_Rep_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>customer.care@palmetto.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Emails/New_Retention_Case_Created</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Salesforce_Case_Type</fullName>
+        <field>Type</field>
+        <literalValue>Salesforce</literalValue>
+        <name>Salesforce Case Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Case_Status</fullName>
+        <field>Status</field>
+        <literalValue>Closed</literalValue>
+        <name>Update Case Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Sales_Rep_Email</fullName>
+        <field>Sales_Rep_Email__c</field>
+        <formula>Opportunity__r.Sales_Rep_Email__c</formula>
+        <name>Update Sales Rep Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Service_Call_Req_Date</fullName>
+        <field>Service_Call_Requested_Date__c</field>
+        <formula>Today()</formula>
+        <name>Update Service Call Req Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Type</fullName>
+        <field>Type</field>
+        <literalValue>Training</literalValue>
+        <name>Update Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <outboundMessages>
+        <fullName>asknicely__CaseClosedOutbound</fullName>
+        <apiVersion>34.0</apiVersion>
+        <description>case closed</description>
+        <endpointUrl>https://salesforce.asknice.ly/salesforce/caseclosed</endpointUrl>
+        <fields>Id</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>bhargav.rentala@palmetto.com</integrationUser>
+        <name>CaseClosedOutbound</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <rules>
+        <fullName>1099 Onbarding Case Closed - 48 Hours Follow up</fullName>
+        <actions>
+            <name>X2_Day_Follow_up_on_1099_Training_Completion</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Stephanie Bower</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Training Support</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>contains</operation>
+            <value>1099 Onboarding</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Cancellation Case - 7 Day Follow-up</fullName>
+        <actions>
+            <name>Cancellation_Case_7_Day_Follow_up</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Type</field>
+            <operation>equals</operation>
+            <value>Cancellation</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Internal Notification - Case Closure</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Salesforce Support</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Change Order Case Created</fullName>
+        <actions>
+            <name>New_Change_Order_Case</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Change Order</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Sales_Rep_Email__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Retention Case Created</fullName>
+        <actions>
+            <name>New_Retension_Case_Opened</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Retention</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Sales_Rep_Email__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify Site Surveyors for Site Validation</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason_1__c</field>
+            <operation>equals</operation>
+            <value>Site Validation</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Sales Rep Email</fullName>
+        <actions>
+            <name>Update_Sales_Rep_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>This workflow rule populates the field 'Sales Rep Email' when the case has 'Reimbursement' record type</description>
+        <formula>AND(     RecordType.DeveloperName == 'Reimbursement',     NOT( ISBLANK( Opportunity__c ) ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Salesforce Request Case Data</fullName>
+        <actions>
+            <name>Salesforce_Case_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Salesforce_Request_Type__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Service Call Requested Date</fullName>
+        <actions>
+            <name>Update_Service_Call_Req_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Field Service Scheduling</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Training Support Data</fullName>
+        <actions>
+            <name>Update_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Stakeholders__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Timeline At Risk case resolved</fullName>
+        <actions>
+            <name>Update_Case_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( 	RecordType.DeveloperName == 'Timeline_At_Risk', 	 ISPICKVAL(Flow_Status__c, 'Resolved')  )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>asknicely__AskNicelyCaseClosedWebhook</fullName>
+        <actions>
+            <name>asknicely__CaseClosedOutbound</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <description>Trigger an AskNicely survey when a case is closed.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Cancellation_Case_7_Day_Follow_up</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Cancellation Case - 7 Day Follow up</subject>
+    </tasks>
+    <tasks>
+        <fullName>New_Salesforce_Case</fullName>
+        <assignedTo>bhargav.rentala@palmetto.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>New Salesforce Case</subject>
+    </tasks>
+    <tasks>
+        <fullName>X2_Day_Follow_up_on_1099_Training_Completion</fullName>
+        <assignedTo>andrew.catapano@palmetto.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>2 Day Follow up on 1099 Training Completion</subject>
+    </tasks>
+</Workflow>

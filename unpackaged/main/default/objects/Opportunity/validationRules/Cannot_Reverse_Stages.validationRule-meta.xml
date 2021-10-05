@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Reverse_Stages</fullName>
+    <active>false</active>
+    <errorConditionFormula>CASE( StageName , 
+"1. Appointment Set",1, 
+"2. Appointment Complete ",2, 
+"3. Proposal Presented",3, 
+"3a. Proposal Redesign",4, 
+"4. Verbal Committment",5, 
+"5. LOI (Letter of Intent) Signed",6, 
+"6. Contract Signed",7, 
+"7. Contract Received",8, 
+"8. Site Audit Scheduled",9,
+"9. Change Order Pending",10,
+"10. Site Approved",11,
+"11. Interconnection Sent",12,
+"12. Engineering Package Sent",13,
+"13. Engineering Design Complete",14,
+"14. Permit Sent",15,
+"15. Permit Ready",16,
+"16. Permit Received",17,
+"17. Install Ready",18,
+"18. Installation",19,
+"Closed Won",20,
+"Closed Lost",20,0)
+&lt; 
+CASE(PRIORVALUE(StageName) , 
+"1. Appointment Set",1, 
+"2. Appointment Complete ",2, 
+"3. Proposal Presented",3, 
+"3a. Proposal Redesign",4, 
+"4. Verbal Committment",5, 
+"5. LOI (Letter of Intent) Signed",6, 
+"6. Contract Signed",7, 
+"7. Contract Received",8, 
+"8. Site Audit Scheduled",9,
+"9. Change Order Pending",10,
+"10. Site Approved",11,
+"11. Interconnection Sent",12,
+"12. Engineering Package Sent",13,
+"13. Engineering Design Complete",14,
+"14. Permit Sent",15,
+"15. Permit Ready",16,
+"16. Permit Received",17,
+"17. Install Ready",18,
+"18. Installation",19,
+"Closed Won",20,
+"Closed Lost",20,0)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Stages cannot be reversed.</errorMessage>
+</ValidationRule>

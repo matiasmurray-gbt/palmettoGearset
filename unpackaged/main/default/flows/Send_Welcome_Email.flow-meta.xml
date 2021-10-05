@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Welcome_Email</name>
+        <label>Send Welcome Email</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>templateEmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>recipientEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>help@palmetto.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Palmetto Solar - Welcome Aboard!</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>52.0</apiVersion>
+    <description>This flow is invoked from &apos;Job flowstatus automation&apos; to send an email to the Contact related to the Job Opportunity.</description>
+    <interviewLabel>Send Welcome Email {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Send Welcome Email</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Send_Welcome_Email</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>templateEmailBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;div style=&quot;width: 40%; margin: auto;&quot;&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img style=&quot;width:100%; height: 100px;&quot; src=&quot;https://palmetto--qa--c.documentforce.com/servlet/servlet.ImageServer?id=0157d000000I1PZ&amp;oid=00D7d0000077l8x&amp;lastMod=1631277727000&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;Hello {!opportunityContactName},&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;Congratulations on going solar and making the most of the sun shining on your roof! You’ve taken the first step into a bright future. We understand going solar is a big decision, and we’re delighted you’ve chosen Palmetto to complete your solar project. Get ready for many years of best-in-class service.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;Our Customer Success team is committed to making your solar installation go as smoothly as possible and will be by your side at every stage of the process from this point forward. This email is designed to help our customers through the next steps in your solar journey.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;NEXT STEPS&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;Palmetto will take the next steps to get your system up and running, including:&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;Applying for required permits&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;Scheduling your installation&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;Installing your system&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;Facilitating inspections from your local permitting office &amp;amp; utility&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;Turning on your system&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;We’ll reach out along the way as we make progress - or if you have questions you can contact us through one of the methods listed below.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;THE PALMETTO HOME APP&amp;nbsp;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;The Palmetto Home app is the best way to stay up-to-date with the status of your installation and to communicate with our team. Once your solar panels are installed, the Palmetto Home app will also be your one-stop-shop for monitoring your system’s production. Palmetto will send you a separate email with your personal link to download and log in to the Palmetto App for the first time.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;HAVE QUESTIONS?&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;We have real people who will treat you really, really incredibly well.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;You can reach us via chat, email or phone (included below). As always, we’re here for you. Please reach out if you have any questions as your solar journey progresses. Thank you for being a Palmetto customer.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;We look forward to exceeding your expectations!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;i style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;The Future is Bright&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;Palmetto Customer Support&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;help@palmetto.com&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;855-339-1831&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px; font-family: Arial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;﻿&lt;/span&gt;&lt;img style=&quot;width:100%; height: 100px;&quot;  src=&quot;https://palmetto--qa--c.documentforce.com/servlet/servlet.ImageServer?id=0157d000000I1PY&amp;oid=00D7d0000077l8x&amp;lastMod=1631277726000&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>opportunityContactName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>recipientEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

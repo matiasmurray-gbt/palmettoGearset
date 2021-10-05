@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alchemy_User_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Alchemy User Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accounting/ Finance</fullName>
+                <default>false</default>
+                <label>Accounting/ Finance</label>
+            </value>
+            <value>
+                <fullName>External Administrator</fullName>
+                <default>false</default>
+                <label>External Administrator</label>
+            </value>
+            <value>
+                <fullName>Internal Administrator</fullName>
+                <default>false</default>
+                <label>Internal Administrator</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Seller</fullName>
+                <default>false</default>
+                <label>Seller</label>
+            </value>
+            <value>
+                <fullName>Setter</fullName>
+                <default>false</default>
+                <label>Setter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>
